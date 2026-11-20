@@ -1,0 +1,106 @@
+// A flat arithmetic expression keeps a running sum and one product term.
+// Multiplication and division therefore bind more tightly than addition.
+fn rounded(value: f64, scale: f64) -> f64 {
+    let adjusted = value * scale + 0.5;
+    (adjusted - adjusted % 1.0) / scale
+}
+
+fn reply_number(value: f64) {
+    let mut magnitude = value;
+    if value < 0.0 { print!("-"); magnitude = 0.0 - value; }
+    if magnitude % 1.0 == 0.0 { print!(magnitude); return; }
+    let mut scale = 100.0;
+    while scale <= 10000.0 {
+        let difference = magnitude - rounded(magnitude, scale);
+        if difference > -0.000000001 && difference < 0.000000001 {
+            print!(rounded(magnitude, scale));
+            return;
+        }
+        scale *= 10.0;
+    }
+    print!(rounded(magnitude, 100.0));
+}
+
+fn math_start() -> i64 {
+    if word(0) == "what" && (word(1) == "is" || word(1) == "'s") { return 2; }
+    if word(0) == "how" && word(1) == "much" && word(2) == "is" { return 3; }
+    if word(0) == "calculate" || word(0) == "whats" { return 1; }
+    0
+}
+
+// Status is 0 for an unrecognized expression, 1 for a result, and 2 for division by zero.
+fn evaluate_math(begin: i64, end: i64, depth: i64) -> vector {
+    if depth > 12 { return [0, 0]; }
+    let mut pos = begin;
+    let mut total = 0.0;
+    let mut term = 0.0;
+    let mut operation = "+";
+    let mut count = 0;
+    let mut status = 1;
+    while pos < end {
+        let mut sign = 1.0;
+        if word(pos) == "-" || word(pos) == "−" || word(pos) == "negative" { sign = -1.0; pos += 1; }
+        else if word(pos) == "+" { pos += 1; }
+        let mut value = 0.0;
+        if word(pos) == "(" {
+            let mut level = 1;
+            let mut close = pos + 1;
+            while close < end {
+                if word(close) == "(" { level += 1; }
+                if word(close) == ")" { level -= 1; }
+                if level == 0 { break; }
+                close += 1;
+            }
+            if close >= end { return [0, 0]; }
+            let group = evaluate_math(pos + 1, close, depth + 1);
+            if at(group, 0) == 0 { return [0, 0]; }
+            if at(group, 0) == 2 { status = 2; }
+            value = sign * at(group, 1);
+            pos = close;
+        } else {
+            if !is_number(pos) { return [0, 0]; }
+            value = sign * number_at(pos);
+        }
+        if operation == "+" { total += term; term = value; }
+        else if operation == "-" { total += term; term = 0.0 - value; }
+        else if operation == "*" { term *= value; }
+        else if operation == "%" { term = term / 100.0 * value; }
+        else {
+            if value == 0.0 { status = 2; }
+            else { term /= value; }
+        }
+        count += 1;
+        pos += 1;
+        if pos == end { break; }
+        let op = word(pos);
+        if op == "+" || op == "plus" { operation = "+"; }
+        else if op == "-" || op == "−" || op == "minus" { operation = "-"; }
+        else if op == "*" || op == "×" || op == "x" || op == "times" { operation = "*"; }
+        else if op == "/" || op == "÷" || op == "over" { operation = "/"; }
+        else if (op == "divided" || op == "multiplied") && word(pos + 1) == "by" {
+            if op == "divided" { operation = "/"; } else { operation = "*"; }
+            pos += 1;
+        }
+        else if (op == "percent" || op == "%") && word(pos + 1) == "of" { operation = "%"; pos += 1; }
+        else { return [0, 0]; }
+        pos += 1;
+        if pos >= end { return [0, 0]; }
+    }
+    if count == 0 { return [0, 0]; }
+    [status, total + term]
+}
+
+fn answer_math() -> bool {
+    let start = math_start();
+    if word_count() - start < 2 { return false; }
+    let result = evaluate_math(start, word_count(), 0);
+    if at(result, 0) == 0 { return false; }
+    if at(result, 0) == 2 { say_rule("maths", "Division by zero is undefined."); return true; }
+    let answer = at(result, 1);
+    if answer > 9007199254740991.0 || answer < -9007199254740991.0 {
+        say_rule("maths", "That calculation exceeds my exact number range.");
+        return true;
+    }
+    println!("maths"); print!("That's "); reply_number(answer); println!(".");
+    true
+}

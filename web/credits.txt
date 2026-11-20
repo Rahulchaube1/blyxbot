@@ -1,0 +1,13 @@
+BlyxBot includes material adapted from Hugging Face PyBot at commit
+7d63c7fbebb44c7e466e5c8b5c1f341ab767929e, distributed under Apache-2.0.
+https://github.com/huggingface/pybot/tree/7d63c7fbebb44c7e466e5c8b5c1f341ab767929e
+See BOT-LICENSE.txt. The capitals, calendar and everyday knowledge files
+identify the source of their data and rules.
+
+The portable Blyx interpreter and its JavaScript entry point are distributed
+from website/public/runtime in Rahulchaube1/blyxxxx at commit
+3a4a089145d589448a7f6aae228c01fcbd7733c8. See runtime/BLYX-LICENSE.txt.
+https://github.com/Rahulchaube1/blyxxxx/tree/3a4a089145d589448a7f6aae228c01fcbd7733c8/website/public/runtime
+
+DM Sans and Bricolage Grotesque are distributed under the SIL Open Font License.
+Material Symbols are distributed under Apache-2.0. See the license files in assets/.

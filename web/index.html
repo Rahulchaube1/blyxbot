@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#182920">
+  <meta name="description" content="Chat with BlyxBot, a rule-based chatbot written in Blyx. Conversations run in your browser and stay on this device.">
+  <title>BlyxBot Chat</title>
+  <link rel="icon" href="./assets/mark.png" type="image/png">
+  <link rel="preload" href="./assets/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./chat.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar" aria-label="Chat navigation">
+      <div class="side-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><i></i></span>
+          <span>BlyxBot</span>
+          <button id="close-nav" class="icon-button mobile-only" aria-label="Close chat menu"><span class="symbol">close</span></button>
+        </div>
+        <button id="new-chat" class="new-chat"><span class="symbol" aria-hidden="true">add</span>New chat</button>
+        <div class="history-heading">Recent chats</div>
+        <nav id="history" class="history" aria-label="Recent chats"></nav>
+        <footer class="side-footer">
+          <button id="about" class="about-button"><span class="footer-icon symbol" aria-hidden="true">code</span>About BlyxBot</button>
+        </footer>
+      </div>
+    </aside>
+    <button id="nav-backdrop" class="nav-backdrop" aria-label="Close chat menu" tabindex="-1" hidden></button>
+    <main id="main" class="workspace">
+      <header class="topbar">
+        <div class="chat-heading">
+          <button id="open-nav" class="icon-button mobile-only" aria-label="Open chat menu" aria-controls="sidebar" aria-expanded="false"><span class="symbol">menu</span></button>
+          <span class="symbol heading-icon" aria-hidden="true">chat_bubble</span>
+          <h1 id="chat-title">New conversation</h1>
+        </div>
+        <div class="top-actions">
+          <span id="engine-status" class="engine-status" role="status"><i></i><span>Starting engine</span></span>
+          <button id="retry-engine" class="text-button" hidden>Retry</button>
+          <button id="delete-chat" class="icon-button" aria-label="Delete this chat" title="Delete this chat" hidden><span class="symbol">delete</span></button>
+        </div>
+      </header>
+      <div id="scroll-area" class="scroll-area">
+        <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+          <div class="welcome-inner">
+            <div class="hero">
+              <div class="hero-text">
+                <h2 id="welcome-title">What’s on<br>your mind<span>?</span></h2>
+                <p>I’m BlyxBot, a rule-based chatbot that runs right in your browser.</p>
+              </div>
+              <div class="hero-art" aria-hidden="true"><img src="./assets/blyxbot.webp" alt="" width="420" height="350"></div>
+            </div>
+            <div class="prompt-section">
+              <h3>Try a prompt</h3>
+              <div class="prompt-list">
+                <button class="prompt" data-prompt="Why do onions make you cry?"><span class="prompt-icon science symbol" aria-hidden="true">science</span><span>Why do onions make you cry?</span></button>
+                <button class="prompt" data-prompt="What is 17 times 24?"><span class="prompt-icon math symbol" aria-hidden="true">calculate</span><span>What is 17 times 24?</span></button>
+                <button class="prompt" data-prompt="How do I care for a houseplant?"><span class="prompt-icon plant symbol" aria-hidden="true">local_florist</span><span>How do I care for a houseplant?</span></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="transcript" class="transcript" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions" hidden></div>
+      </div>
+      <div class="composer-area">
+        <div class="composer-inner">
+          <p id="notice" class="notice" role="status" hidden></p>
+          <form id="composer" class="composer">
+            <label class="sr-only" for="message">Message BlyxBot</label>
+            <textarea id="message" rows="1" placeholder="Message BlyxBot…" dir="auto"></textarea>
+            <button id="send" class="send" type="submit" aria-label="Send message" title="Send message" disabled><span class="symbol" aria-hidden="true">send</span></button>
+          </form>
+          <div class="composer-foot">
+            <span id="privacy"><span class="symbol" aria-hidden="true">lock</span><span>Chats stay on this device</span></span>
+            <span class="keyboard-hint"><kbd>Enter</kbd> to send <b>·</b> <kbd>Shift + Enter</kbd> for a new line</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <div class="dialog-content">
+      <div class="dialog-heading"><span class="brand-mark dialog-mark" aria-hidden="true"><i></i></span><button class="icon-button" data-close aria-label="Close"><span class="symbol">close</span></button></div>
+      <h2 id="about-title">About BlyxBot</h2>
+      <p>BlyxBot answers with rules written in Blyx. Ask about everyday topics, arithmetic, calendar dates, or national capitals. You can also give it your first name.</p>
+      <p>The official Blyx interpreter runs in your browser. Your conversation history is saved on this device when browser storage is available.</p>
+      <a class="source-link" href="https://github.com/Rahulchaube1/blyxbot" target="_blank" rel="noopener noreferrer"><span class="symbol" aria-hidden="true">code</span>View source on GitHub</a>
+    </div>
+  </dialog>
+  <dialog id="delete-dialog" aria-labelledby="delete-title">
+    <div class="dialog-content"><h2 id="delete-title">Delete this chat?</h2><p>This removes the conversation and its saved memory from this browser.</p>
+      <div class="dialog-actions"><button data-close class="secondary">Cancel</button><button id="confirm-delete" class="danger">Delete chat</button></div>
+    </div>
+  </dialog>
+  <noscript>Enable JavaScript to start the BlyxBot chat.</noscript>
+</body>
+</html>

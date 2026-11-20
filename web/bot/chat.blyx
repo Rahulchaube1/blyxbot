@@ -1,0 +1,70 @@
+// One turn prints the new first name, the selected topic, and the reply.
+// The host stores these values and supplies them on the next turn.
+fn say_rule(topic: str, reply: str) {
+    println!(topic);
+    println!(reply);
+}
+
+fn introduction() -> i64 {
+    if has_word("not") || has_word("don't") || has_word("dont") { return -1; }
+    let mut i = 0;
+    while i < word_count() {
+        if word(i) == "my" && word(i + 1) == "name" && word(i + 2) == "is" && name_token(i + 3) {
+            return i + 3;
+        }
+        if word(i) == "call" && word(i + 1) == "me" && name_token(i + 2) { return i + 2; }
+        if (word(i) == "i'm" || word(i) == "im") && name_token(i + 1) && is_titlecase(i + 1) { return i + 1; }
+        if word(i) == "i" && word(i + 1) == "am" && name_token(i + 2) && is_titlecase(i + 2) { return i + 2; }
+        i += 1;
+    }
+    return -1;
+}
+
+fn say_name(name: str) {
+    println!("memory");
+    if name == "" { println!("You haven't told me your name yet."); return; }
+    print!("You're "); print!(name); println!(".");
+}
+
+fn main() {
+    let index = introduction();
+    let mut name = stored_name();
+    if index >= 0 { name = raw_word(index); }
+    let forget = has_word("forget") && has_pair("my", "name");
+    if forget { name = ""; }
+    println!(name);
+    if oversized() {
+        say_rule("chat", "Could you send that in two shorter messages? This one exceeds my per-turn input budget.");
+        return;
+    }
+    if forget { say_rule("memory", "I've forgotten your name."); return; }
+    if has_pair("my", "name") && (has_word("what") || has_word("whats") || has_word("remember") || has_word("recall") || has_word("know")) {
+        say_name(name);
+        return;
+    }
+    if index >= 0 {
+        println!("memory"); print!("Nice to meet you, "); print!(name); println!(". What can I help with?");
+        return;
+    }
+    if has_pair("your", "name") || has_pair("who", "are") && has_word("you") || has_word("introduce") && has_word("yourself") {
+        say_rule("chat", "I'm BlyxBot, a rule-based chatbot written in Blyx.");
+        return;
+    }
+    if answer_calendar() || answer_math() { return; }
+    let capital = capital_answer();
+    if capital != "" { say_rule("capitals", capital); return; }
+    if everyday_answer() { return; }
+    if has_pair("you", "do") && has_word("what") || word_count() == 1 && word(0) == "help" {
+        say_rule("chat", "I can remember your first name, look up national capitals, calculate numbers and dates, and answer everyday questions.");
+        return;
+    }
+    if has_word("hello") || has_word("hi") || has_word("hey") {
+        println!("chat");
+        if name != "" { print!("Hi, "); print!(name); println!("! What can I help with?"); }
+        else { println!("Hi! What can I help with?"); }
+        return;
+    }
+    if has_word("thanks") || has_pair("thank", "you") { say_rule("chat", "You're welcome."); return; }
+    if has_word("goodbye") || has_word("bye") { say_rule("chat", "Goodbye!"); return; }
+    say_rule("fallback", "I don't know that one yet. You can ask me about everyday science, cooking, capitals, dates, or arithmetic.");
+}
