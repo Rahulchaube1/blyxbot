@@ -1,0 +1,53 @@
+use std::cli;
+use std::text;
+use understanding::text;
+use understanding::input;
+
+use knowledge::gregorian;
+
+fn named_month(tokens: arglist) -> i64 {
+    if has_word(tokens, "january") { return 1; }
+    if has_word(tokens, "february") { return 2; }
+    if has_word(tokens, "march") { return 3; }
+    if has_word(tokens, "april") { return 4; }
+    if has_word(tokens, "may") { return 5; }
+    if has_word(tokens, "june") { return 6; }
+    if has_word(tokens, "july") { return 7; }
+    if has_word(tokens, "august") { return 8; }
+    if has_word(tokens, "september") { return 9; }
+    if has_word(tokens, "october") { return 10; }
+    if has_word(tokens, "november") { return 11; }
+    if has_word(tokens, "december") { return 12; }
+    0
+}
+
+pub fn answer_calendar(tokens: arglist) -> arglist {
+    if !has_word(tokens, "easter") && !has_word(tokens, "leap") && !has_word(tokens, "days") { return args_new(); }
+    let mut year = 0;
+    let mut i = 0;
+    while i < word_count(tokens) {
+        let candidate = integer_at(tokens, i);
+        if candidate >= 1 && candidate <= 9999 { year = candidate; }
+        i += 1;
+    }
+    if has_word(tokens, "easter") && year > 0 && (has_word(tokens, "when") || has_word(tokens, "date") || word(tokens, 0) == "easter") {
+        let date = easter_day(year);
+        let mut reply = "Easter Sunday is April ";
+        if at(date, 0) == 3.0 { reply = "Easter Sunday is March "; }
+        reply = text_concat(reply, integer_text(whole_integer(at(date, 1))));
+        reply = text_concat(reply, text_concat(", ", integer_text(year)));
+        return pair("calendar", text_concat(reply, "."));
+    }
+    if has_word(tokens, "days") && has_word(tokens, "many") && !has_word(tokens, "left") && !has_word(tokens, "until") {
+        let month = named_month(tokens);
+        if month == 2 && year == 0 { return pair("calendar", "February has 28 days in an ordinary year and 29 in a leap year."); }
+        if month != 0 { return pair("calendar", text_concat(integer_text(days_in_month(year, month)), " days.")); }
+        if has_pair(tokens, "leap", "year") && year == 0 { return pair("calendar", "A leap year has 366 days."); }
+    }
+    if year > 0 && has_pair(tokens, "leap", "year") {
+        let mut ending = " is not a leap year.";
+        if is_leap_year(year) { ending = " is a leap year."; }
+        return pair("calendar", text_concat(integer_text(year), ending));
+    }
+    args_new()
+}

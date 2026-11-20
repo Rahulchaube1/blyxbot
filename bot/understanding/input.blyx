@@ -1,0 +1,189 @@
+use std::cli;
+use std::text;
+use characters;
+use text;
+
+// Every token carries its original text, its normalized text and a lexical tag.
+// Domain modules only see the accessor functions below.
+fn append_token(tokens: arglist, raw: str, normalized: str, tag: str) -> arglist {
+    args_push(args_push(args_push(tokens, raw), normalized), tag)
+}
+
+fn drop_possessive(value: str) -> str {
+    let pieces = split_text(value, "'");
+    let mut prefix = args_new();
+    let mut i = 0;
+    while i + 1 < args_len(pieces) { prefix = args_push(prefix, args_at(pieces, i)); i += 1; }
+    args_join(prefix, "'")
+}
+
+fn operator_token(ch: str) -> bool {
+    return ch == "+" || ch == "-" || ch == "−" || ch == "*" || ch == "×" || ch == "/"
+        || ch == "÷" || ch == "%" || ch == "^" || ch == "=" || ch == "(" || ch == ")";
+}
+
+fn digit_run(text: str) -> str {
+    let mut rest = text;
+    let mut run = "";
+    let mut count = 0;
+    while digit_head(rest) >= 0 && count < 129 {
+        let d = digit(digit_head(rest));
+        run = text_concat(run, d);
+        rest = text_after(rest, d);
+        count += 1;
+    }
+    run
+}
+
+fn up_to_three(digits: str) -> bool {
+    let mut rest = digits;
+    let mut i = 0;
+    while i < 3 && digit_head(rest) >= 0 { rest = text_after(rest, digit(digit_head(rest))); i += 1; }
+    rest == ""
+}
+
+fn numeric_prefix(text: str) -> str {
+    let mut prefix = digit_run(text);
+    let mut rest = text_after(text, prefix);
+    if prefix != "" && up_to_three(prefix) {
+        while text_starts(rest, ",") {
+            let tail = text_after(rest, ",");
+            let group = digit_run(tail);
+            if digit_count(group) != 3 { break; }
+            prefix = text_concat(prefix, text_concat(",", group));
+            rest = text_after(tail, group);
+        }
+    }
+    if text_starts(rest, ".") {
+        let fraction = digit_run(text_after(rest, "."));
+        if fraction != "" { prefix = text_concat(prefix, text_concat(".", fraction)); }
+    }
+    prefix
+}
+
+fn digit_count(value: str) -> i64 {
+    let mut rest = value;
+    let mut count = 0;
+    while digit_head(rest) >= 0 { rest = text_after(rest, digit(digit_head(rest))); count += 1; }
+    count
+}
+
+fn numeric_ok(value: str) -> bool {
+    let clean = replace_text(value, ",", "");
+    let integer = text_before(clean, ".");
+    let mut significant = integer;
+    while text_starts(significant, "0") { significant = text_after(significant, "0"); }
+    let fraction = text_after(text_after(clean, integer), ".");
+    return digit_count(significant) <= 15 && digit_count(fraction) <= 32;
+}
+
+pub fn tokenize(message: str) -> arglist {
+    let chars = alphabet();
+    let mut rest = message;
+    let mut result = args_new();
+    let mut scanned = 0;
+    while rest != "" {
+        if args_len(result) >= 192 * 3 || scanned >= 16384 { return args_push(args_new(), "oversized"); }
+        let ch = unit(rest, chars);
+        if ch == "" { break; }
+        let tail = text_after(rest, ch);
+        if letter_unit(ch) {
+            let mut raw = "";
+            let mut normalized = "";
+            let mut count = 0;
+            let mut cursor = rest;
+            while cursor != "" {
+                let part = unit(cursor, chars);
+                if !letter_unit(part) {
+                    if part != "'" && part != "’" && part != "-" { break; }
+                    if !letter_unit(unit(text_after(cursor, part), chars)) { break; }
+                }
+                let mut written = part;
+                if part == "’" { written = "'"; }
+                raw = text_concat(raw, written);
+                normalized = text_concat(normalized, fold_unit(written));
+                cursor = text_after(cursor, part);
+                count += 1;
+                if count > 128 { return args_push(args_new(), "oversized"); }
+            }
+            let mut tag = "word";
+            if ch != fold_unit(ch) { tag = "title"; }
+            if text_ends(normalized, "'s") {
+                result = append_token(result, drop_possessive(raw), drop_possessive(normalized), tag);
+                result = append_token(result, "'s", "'s", "suffix");
+            } else { result = append_token(result, raw, normalized, tag); }
+            rest = cursor;
+            scanned += count;
+        } else if digit_head(ch) >= 0 || ch == "." && digit_head(tail) >= 0 {
+            let raw = numeric_prefix(rest);
+            let mut tag = "number";
+            if !numeric_ok(raw) { tag = "outside-number-range"; }
+            result = append_token(result, raw, raw, tag);
+            rest = text_after(rest, raw);
+            scanned += 1;
+        } else {
+            if operator_token(ch) { result = append_token(result, ch, ch, "operator"); }
+            rest = tail;
+            scanned += 1;
+        }
+    }
+    result
+}
+
+pub fn input_oversized(tokens: arglist) -> bool { args_len(tokens) == 1 }
+pub fn word_count(tokens: arglist) -> i64 { args_len(tokens) / 3 }
+pub fn word(tokens: arglist, pos: i64) -> str { item(tokens, 3 * pos + 1) }
+pub fn raw_word(tokens: arglist, pos: i64) -> str { item(tokens, 3 * pos) }
+pub fn is_titlecase(tokens: arglist, pos: i64) -> bool { item(tokens, 3 * pos + 2) == "title" }
+pub fn name_token(tokens: arglist, pos: i64) -> bool {
+    let tag = item(tokens, 3 * pos + 2);
+    tag == "word" || tag == "title"
+}
+pub fn has_word(tokens: arglist, key: str) -> bool {
+    let mut pos = 0;
+    while pos < word_count(tokens) { if word(tokens, pos) == key { return true; } pos += 1; }
+    false
+}
+pub fn has_pair(tokens: arglist, first: str, second: str) -> bool {
+    let mut pos = 0;
+    while pos + 1 < word_count(tokens) {
+        if word(tokens, pos) == first && word(tokens, pos + 1) == second { return true; }
+        pos += 1;
+    }
+    false
+}
+pub fn is_number(tokens: arglist, pos: i64) -> bool { item(tokens, 3 * pos + 2) == "number" }
+
+pub fn integer_at(tokens: arglist, pos: i64) -> i64 {
+    if !is_number(tokens, pos) { return -1; }
+    let mut rest = replace_text(raw_word(tokens, pos), ",", "");
+    let mut value = 0;
+    while rest != "" {
+        let d = digit_head(rest);
+        if d < 0 { return -1; }
+        value = value * 10 + d;
+        rest = text_after(rest, digit(d));
+    }
+    value
+}
+
+pub fn number_at(tokens: arglist, pos: i64) -> f64 {
+    let mut rest = replace_text(raw_word(tokens, pos), ",", "");
+    let mut value = 0.0;
+    while digit_head(rest) >= 0 {
+        let d = digit_head(rest);
+        value = value * 10.0 + as_float(d);
+        rest = text_after(rest, digit(d));
+    }
+    if text_starts(rest, ".") {
+        rest = text_after(rest, ".");
+        let mut scale = 10.0;
+        while digit_head(rest) >= 0 {
+            let d = digit_head(rest);
+            value += as_float(d) / scale;
+            scale *= 10.0;
+            rest = text_after(rest, digit(d));
+        }
+    }
+    value
+}

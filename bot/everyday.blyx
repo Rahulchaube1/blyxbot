@@ -1,0 +1,49 @@
+use std::cli;
+use understanding::input;
+use understanding::text;
+
+use science;
+use kitchen;
+use plants;
+use phrases;
+
+// A duration follows the kettle only when these are the complete contents
+// of the question. A new subject such as "How long does rice take?" starts
+// its own topic even immediately after a descaling question.
+fn kettle_followup(tokens: arglist, previous_topic: str) -> arglist {
+    if previous_topic != "descale-kettle" || word_count(tokens) > 13 { return args_new(); }
+    let duration = has_pair(tokens, "how", "long") || has_pair(tokens, "many", "minutes");
+    let interval = has_pair(tokens, "how", "often");
+    if !duration && !interval { return args_new(); }
+    let mut pos = 0;
+    while pos < word_count(tokens) {
+        let term = word(tokens, pos);
+        if term != "and" && term != "so" && term != "then" && term != "for"
+            && term != "how" && term != "long" && term != "many" && term != "minutes"
+            && term != "often" && term != "does" && term != "do" && term != "did"
+            && term != "will" && term != "should" && term != "must" && term != "can"
+            && term != "i" && term != "we" && term != "it" && term != "that"
+            && term != "this" && term != "the" && term != "take" && term != "wait"
+            && term != "leave" && term != "sit" && term != "soak" && term != "repeat"
+            && term != "again" && term != "please" {
+            return args_new();
+        }
+        pos = pos + 1;
+    }
+    if duration {
+        return pair("descale-kettle", "Half an hour.");
+    } else {
+        return pair("descale-kettle", "In a hard-water area, every couple of months.");
+    }
+}
+
+pub fn everyday_answer(tokens: arglist, previous_topic: str) -> arglist {
+    let followup = kettle_followup(tokens, previous_topic);
+    if args_len(followup) > 0 { return followup; }
+    let kitchen = everyday_kitchen(tokens);
+    if args_len(kitchen) > 0 { return kitchen; }
+    let plants = everyday_plants(tokens);
+    if args_len(plants) > 0 { return plants; }
+    if everyday_explanation(tokens) { return everyday_sky_and_science(tokens); }
+    args_new()
+}

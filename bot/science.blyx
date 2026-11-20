@@ -1,0 +1,428 @@
+use std::cli;
+use understanding::input;
+use understanding::text;
+
+// Everyday knowledge ported from Hugging Face PyBot, commit 7d63c7f (Apache-2.0).
+// Source cards in bot/knowledge/ are identified at each reply. Subject and intent
+// are separate requirements; phrase alternatives match adjacent whole tokens.
+// These rules select only the named topics. A failed match passes to the next module.
+
+use phrases;
+
+pub fn everyday_sky_and_science(tokens: arglist) -> arglist {
+    // science.py: sky-blue
+    if has_word(tokens, "sky")
+        && (has_word(tokens, "blue") || has_word(tokens, "color") || has_word(tokens, "colour")
+              || has_word(tokens, "rayleigh"))
+        && !(has_word(tokens, "night") || has_word(tokens, "dark") || has_word(tokens, "black")
+              || has_word(tokens, "sunset") || has_word(tokens, "sunrise") || has_word(tokens, "rainbow")
+              || has_word(tokens, "scarf") || has_word(tokens, "shirt") || has_word(tokens, "dress")
+              || has_word(tokens, "paint") || has_word(tokens, "wall") || has_word(tokens, "flag") || has_word(tokens, "logo")
+              || has_word(tokens, "picture") || has_word(tokens, "storm") || has_word(tokens, "stormy")
+              || has_word(tokens, "overcast") || has_word(tokens, "grey") || has_word(tokens, "gray")
+              || has_word(tokens, "green") || has_word(tokens, "purple")) {
+        return pair("sky-blue", "Sunlight contains every colour, and air scatters the short blue wavelengths far more than the long red ones, so blue light reaches your eyes from all over the sky. That is also why the sky reddens at sunset: the light crosses more air, the blue is scattered away, and the reds come through.");
+    }
+
+    // science.py: sky-green
+    if has_word(tokens, "sky")
+        && has_word(tokens, "green")
+        && (has_word(tokens, "why") || has_word(tokens, "not") || has_word(tokens, "never") || has_word(tokens, "isnt")
+              || has_word(tokens, "isn't"))
+        && (has_word(tokens, "why") || has_word(tokens, "what") || has_word(tokens, "colour") || has_word(tokens, "color")
+              || has_word(tokens, "not") || has_word(tokens, "green") || has_word(tokens, "isnt") || has_word(tokens, "isn't"))
+        && !(has_word(tokens, "blue") || has_word(tokens, "tornado") || has_word(tokens, "storm")
+              || has_word(tokens, "stormy") || has_word(tokens, "thunderstorm")
+              || has_pair(tokens, "northern", "lights") || has_word(tokens, "aurora")) {
+        return pair("sky-green", "Blue is scattered much more strongly than green, so the green that is scattered arrives mixed with far more blue and the sky reads as pale blue. Violet is scattered even more, but there is less of it in sunlight and our eyes are less sensitive to it, so it never dominates.");
+    }
+
+    // science.py: sky-dark
+    if has_word(tokens, "sky")
+        && (has_word(tokens, "dark") || has_word(tokens, "black") || has_word(tokens, "darkness"))
+        && (has_word(tokens, "night") || has_word(tokens, "nighttime") || has_pair(tokens, "at", "midnight"))
+        && !(has_word(tokens, "blue") || has_word(tokens, "storm") || has_word(tokens, "stormy")
+              || has_word(tokens, "forecast") || has_word(tokens, "clouds") || has_word(tokens, "cloudy")
+              || has_word(tokens, "space") || has_word(tokens, "eclipse") || has_word(tokens, "tonight")) {
+        return pair("sky-dark", "Night is simply the side of the Earth turned away from the Sun: with no sunlight to scatter, the sky is dark. The stars are there all day too, but the bright blue scattered light drowns them out.");
+    }
+
+    // science.py: sunset-red
+    if (has_word(tokens, "sunset") || has_word(tokens, "sunsets") || has_word(tokens, "sunrise")
+              || has_word(tokens, "sunrises") || has_word(tokens, "dusk") || has_word(tokens, "dawn") || has_word(tokens, "sun"))
+        && (has_word(tokens, "red") || has_word(tokens, "orange") || has_word(tokens, "pink") || has_word(tokens, "colour")
+              || has_word(tokens, "color") || has_word(tokens, "yellow"))
+        && !(has_word(tokens, "hot") || has_word(tokens, "heat") || has_word(tokens, "burn") || has_word(tokens, "burning")
+              || has_word(tokens, "sunburn") || has_pair(tokens, "sun", "cream") || has_word(tokens, "sunscreen")
+              || has_word(tokens, "screen") || has_word(tokens, "exposure") || has_word(tokens, "vitamin")
+              || has_word(tokens, "lamp") || has_word(tokens, "bed") || has_word(tokens, "photo") || has_word(tokens, "picture")
+              || has_word(tokens, "paint") || has_word(tokens, "painting") || has_word(tokens, "tonight")
+              || has_word(tokens, "today") || has_word(tokens, "tomorrow") || has_word(tokens, "flag")) {
+        return pair("sunset-red", "Sunlight is white, but the air scatters the blue end of it away, so the Sun looks yellow and, low down, orange or red. At sunset the light crosses much more air, which takes out the blue and lets the reds through; dust and cloud deepen it.");
+    }
+
+    // science.py: sunrise-east
+    if (has_word(tokens, "sun") || has_word(tokens, "sunrise") || has_word(tokens, "sunset"))
+        && (has_word(tokens, "east") || has_word(tokens, "west") || has_word(tokens, "direction"))
+        && !(has_word(tokens, "red") || has_word(tokens, "orange") || has_word(tokens, "pink") || has_word(tokens, "colour")
+              || has_word(tokens, "color") || has_word(tokens, "glow") || has_word(tokens, "alarm") || has_word(tokens, "lamp")
+              || has_pair(tokens, "light", "therapy") || everyday_phrase3(tokens, "wake", "up", "light")
+              || has_pair(tokens, "wake-up", "light") || has_pair(tokens, "what", "time")
+              || has_pair(tokens, "when", "does") || has_pair(tokens, "when", "is") || has_pair(tokens, "time", "does")) {
+        return pair("sunrise-east", "The Sun does not move round the Earth: the Earth spins from west to east, so the Sun appears to come up in the east, cross the sky and set in the west. The ground is turning under you at about 1,000 mph at the equator.");
+    }
+
+    // science.py: sun-distance
+    if has_word(tokens, "sun")
+        && (has_word(tokens, "distance") || has_pair(tokens, "how", "far") || has_pair(tokens, "far", "away")
+              || has_pair(tokens, "light", "travel") || has_pair(tokens, "sunlight", "travel")
+              || has_pair(tokens, "sunlight", "reach"))
+        && !(has_word(tokens, "mars") || has_word(tokens, "jupiter") || has_word(tokens, "venus")
+              || has_word(tokens, "mercury") || has_word(tokens, "neptune") || has_word(tokens, "saturn")
+              || has_word(tokens, "uranus") || has_word(tokens, "pluto") || has_word(tokens, "moon")) {
+        return pair("sun-distance", "The Sun is about 150 million km (93 million miles) away, and sunlight takes 8 minutes 20 seconds to reach us. That is why you never see the Sun as it is now, only as it was eight minutes ago.");
+    }
+
+    // science.py: light-year
+    if (has_pair(tokens, "light", "year") || has_pair(tokens, "light", "years")
+              || has_word(tokens, "light-year") || has_word(tokens, "light-years") || has_word(tokens, "lightyear")
+              || has_word(tokens, "lightyears"))
+        && (has_word(tokens, "what") || has_pair(tokens, "how", "far") || has_word(tokens, "distance")
+              || has_word(tokens, "meaning") || has_word(tokens, "mean") || has_word(tokens, "measures")
+              || has_word(tokens, "measure") || has_word(tokens, "explain") || has_pair(tokens, "how", "long"))
+        && (has_word(tokens, "what") || has_word(tokens, "distance") || has_word(tokens, "long") || has_word(tokens, "far")
+              || has_word(tokens, "mean") || has_word(tokens, "explain") || has_word(tokens, "measure")
+              || has_word(tokens, "many"))
+        && !(has_pair(tokens, "how", "fast") || has_word(tokens, "speed") || has_pair(tokens, "travel", "at")
+              || has_word(tokens, "wavelength") || has_pair(tokens, "per", "second") || has_pair(tokens, "last", "year")
+              || has_pair(tokens, "this", "year") || has_pair(tokens, "next", "year") || has_pair(tokens, "new", "year")
+              || has_word(tokens, "buzz") || has_pair(tokens, "year", "old")) {
+        return pair("light-year", "A light year is a distance, not a time: it is how far light travels in a year, about 9.46 trillion kilometres (5.88 trillion miles). Proxima Centauri, the nearest star after the Sun, is about 4.2 light years away, and the Milky Way is about 100,000 light years across.");
+    }
+
+    // science.py: moon-horizon
+    if has_word(tokens, "moon")
+        && (has_word(tokens, "horizon") || everyday_phrase4(tokens, "low", "in", "the", "sky")
+              || everyday_phrase5(tokens, "low", "in", "the", "night", "sky"))
+        && (has_word(tokens, "big") || has_word(tokens, "bigger") || has_word(tokens, "large")
+              || has_word(tokens, "larger") || has_word(tokens, "huge") || has_word(tokens, "size")
+              || has_word(tokens, "illusion"))
+        && (has_word(tokens, "why") || has_word(tokens, "look") || has_word(tokens, "looks") || has_word(tokens, "seems")
+              || has_word(tokens, "appear") || has_word(tokens, "appears"))
+        && !(has_word(tokens, "photo") || has_word(tokens, "camera") || has_word(tokens, "lens")) {
+        return pair("moon-horizon", "The Moon looks bigger near the horizon because of an illusion in how your brain judges it against the landscape; photograph it and it comes out the same size as when it is high overhead. It also looks dimmer down there, not brighter, because its light is crossing more air.");
+    }
+
+    // science.py: moon-size
+    if has_word(tokens, "moon")
+        && (has_word(tokens, "size") || has_word(tokens, "diameter") || has_pair(tokens, "how", "big")
+              || has_pair(tokens, "how", "large") || has_pair(tokens, "how", "wide")
+              || everyday_phrase3(tokens, "how", "far", "across"))
+        && !(has_word(tokens, "photo") || has_word(tokens, "photos") || has_word(tokens, "photograph")
+              || has_word(tokens, "picture") || has_word(tokens, "pictures") || has_word(tokens, "camera")
+              || has_word(tokens, "phone") || has_word(tokens, "shoot") || has_word(tokens, "capture")
+              || has_word(tokens, "zoom") || has_word(tokens, "lens") || has_word(tokens, "telescope")
+              || has_word(tokens, "horizon") || has_word(tokens, "biggest") || has_word(tokens, "jupiter")
+              || has_word(tokens, "saturn") || has_word(tokens, "mars") || has_word(tokens, "venus") || has_word(tokens, "sun")
+              || has_word(tokens, "cheese")) {
+        return pair("moon-size", "The Moon is about 3,475 km across, a little over a quarter of the Earth's width, and you could fit about 50 Moons inside the Earth. It looks small only because it is about 384,000 km away.");
+    }
+
+    // science.py: space-dark
+    if has_word(tokens, "space")
+        && (has_word(tokens, "black") || has_word(tokens, "dark"))
+        && (has_word(tokens, "why") || has_pair(tokens, "how", "come"))
+        && !(has_word(tokens, "storage") || has_word(tokens, "disk") || has_word(tokens, "closet")
+              || has_word(tokens, "negative") || has_word(tokens, "screen") || has_word(tokens, "background")
+              || has_word(tokens, "parking") || everyday_phrase3(tokens, "deep", "space", "nine")) {
+        return pair("space-dark", "Space looks black because there is almost nothing there to scatter light into your eyes; light only reaches you if it comes straight from a star or a lit object. The sky is bright blue from Earth because our air scatters sunlight everywhere.");
+    }
+
+    // science.py: star-twinkle
+    if (has_word(tokens, "star") || has_word(tokens, "stars"))
+        && (has_word(tokens, "twinkle") || has_word(tokens, "twinkling") || has_word(tokens, "twinkles")
+              || has_word(tokens, "shimmer") || has_word(tokens, "flicker") || has_word(tokens, "flickering")
+              || has_word(tokens, "steady"))
+        && (has_word(tokens, "twinkle") || has_word(tokens, "twinkling") || has_word(tokens, "shimmer")
+              || has_word(tokens, "flicker") || has_word(tokens, "steady"))
+        && !(has_word(tokens, "song") || has_word(tokens, "lyrics") || has_word(tokens, "rhyme")
+              || has_word(tokens, "celebrity") || has_word(tokens, "starfish")) {
+        return pair("star-twinkle", "Stars twinkle because their light passes through moving layers of air, which bend it slightly this way and that before it reaches your eyes. Planets look steadier because they are close enough to show a tiny disc rather than a single point of light.");
+    }
+
+    // science.py: stars-night
+    if (has_word(tokens, "star") || has_word(tokens, "stars"))
+        && (has_word(tokens, "day") || has_word(tokens, "daytime") || has_word(tokens, "night"))
+        && (has_word(tokens, "see") || has_word(tokens, "seen") || has_word(tokens, "seeing")
+              || has_word(tokens, "visible") || has_word(tokens, "visibility") || has_word(tokens, "disappear")
+              || has_word(tokens, "appear") || everyday_phrase3(tokens, "only", "at", "night"))
+        && (has_word(tokens, "why") || has_word(tokens, "only") || has_word(tokens, "see") || has_word(tokens, "visible")
+              || has_word(tokens, "what"))
+        && !(has_word(tokens, "hotel") || has_word(tokens, "celebrity") || has_word(tokens, "song")
+              || has_word(tokens, "shooting") || has_word(tokens, "meteor") || has_word(tokens, "tonight")
+              || has_word(tokens, "forecast") || has_word(tokens, "sports") || has_word(tokens, "team")
+              || has_word(tokens, "match") || has_word(tokens, "game") || has_word(tokens, "won") || has_word(tokens, "win")
+              || has_word(tokens, "lose") || has_word(tokens, "lost")) {
+        return pair("stars-night", "The stars are there in the daytime too: the sun lights up the air above you so brightly that their faint light is drowned out. Away from city lights, and out of the sun's glare, thousands more of them come into view.");
+    }
+
+    // science.py: north-star
+    if (has_pair(tokens, "north", "star") || has_word(tokens, "polaris") || has_pair(tokens, "pole", "star"))
+        && (has_word(tokens, "what") || has_word(tokens, "where") || has_word(tokens, "which") || has_word(tokens, "find")
+              || has_word(tokens, "brightest") || has_word(tokens, "identify"))
+        && (has_word(tokens, "what") || has_word(tokens, "which") || has_word(tokens, "find")
+              || has_word(tokens, "brightest") || has_word(tokens, "where") || has_word(tokens, "how"))
+        && !(has_word(tokens, "photo") || has_word(tokens, "photograph") || has_word(tokens, "picture")
+              || has_word(tokens, "camera") || has_word(tokens, "shoot") || has_word(tokens, "capture")
+              || has_word(tokens, "exposure") || has_word(tokens, "lens") || has_word(tokens, "telescope")
+              || has_word(tokens, "trail") || has_pair(tokens, "night", "sky") || has_pair(tokens, "north", "pole")
+              || has_word(tokens, "hotel") || has_word(tokens, "brand") || has_word(tokens, "bus") || has_word(tokens, "song")) {
+        return pair("north-star", "Polaris sits almost exactly above the Earth's north pole, so the rest of the sky turns around it while it stays put. Find it from the two stars at the end of the Big Dipper's bowl: follow the line through them about five times their gap. It is not the brightest star in the sky, just the one that marks north.");
+    }
+
+    // science.py: gravity-space
+    if (has_word(tokens, "astronaut") || has_word(tokens, "astronauts") || has_pair(tokens, "space", "station")
+              || has_word(tokens, "iss") || has_word(tokens, "gravity"))
+        && (has_word(tokens, "space") || has_word(tokens, "orbit") || has_word(tokens, "orbital")
+              || has_word(tokens, "iss"))
+        && (has_word(tokens, "float") || has_word(tokens, "floating") || has_word(tokens, "weightless")
+              || has_word(tokens, "weightlessness") || has_pair(tokens, "zero", "gravity")
+              || has_pair(tokens, "no", "gravity"))
+        && (has_word(tokens, "why") || has_word(tokens, "how") || has_word(tokens, "what") || has_word(tokens, "float")
+              || has_word(tokens, "floating") || has_word(tokens, "weightless") || has_word(tokens, "space"))
+        && !(has_pair(tokens, "black", "hole") || has_pair(tokens, "the", "moon") || has_word(tokens, "mars")
+              || has_word(tokens, "planet") || has_word(tokens, "movie") || has_word(tokens, "film")) {
+        return pair("gravity-space", "There is gravity in space: astronauts on the space station float because they and the station are falling around the Earth together at the same speed, not because gravity has gone. At that height gravity is still about 90% as strong as it is on the ground.");
+    }
+
+    // science.py: earth-spin
+    if has_word(tokens, "earth")
+        && (has_word(tokens, "spin") || has_word(tokens, "spins") || has_word(tokens, "spinning")
+              || has_word(tokens, "rotate") || has_word(tokens, "rotates") || has_word(tokens, "rotation"))
+        && (has_word(tokens, "why") || has_pair(tokens, "what", "makes") || has_pair(tokens, "how", "come"))
+        && (has_word(tokens, "why") || has_word(tokens, "does") || has_word(tokens, "what") || has_word(tokens, "how"))
+        && !(has_word(tokens, "speed") || has_word(tokens, "fast") || has_word(tokens, "quickly")
+              || has_word(tokens, "long") || has_word(tokens, "stop") || has_word(tokens, "stopped")
+              || has_word(tokens, "direction") || has_pair(tokens, "axis", "tilt")) {
+        return pair("earth-spin", "The Earth spins because the cloud of dust and gas it formed from was already turning, and nothing has braked it much in 4.5 billion years. The Moon's tides are slowly slowing it, so the day grows about a second longer every 50,000 years or so.");
+    }
+
+    // science.py: summer-hot
+    if (has_word(tokens, "summer") || has_word(tokens, "summers"))
+        && (has_word(tokens, "hotter") || has_word(tokens, "hot") || has_word(tokens, "warmer") || has_word(tokens, "warm"))
+        && (has_word(tokens, "why") || has_pair(tokens, "how", "come"))
+        && (has_word(tokens, "why") || has_word(tokens, "than") || has_word(tokens, "winter") || has_word(tokens, "more")
+              || has_word(tokens, "cause"))
+        && !(has_word(tokens, "boiler") || has_word(tokens, "radiator") || has_word(tokens, "radiators")
+              || has_word(tokens, "thermostat") || has_word(tokens, "heating") || has_pair(tokens, "hot", "water")
+              || has_word(tokens, "plumber") || has_word(tokens, "kettle") || has_word(tokens, "flask")
+              || has_word(tokens, "forecast") || has_word(tokens, "tomorrow") || has_word(tokens, "today")
+              || has_pair(tokens, "this", "week") || has_pair(tokens, "this", "year")
+              || has_pair(tokens, "this", "summer")) {
+        return pair("summer-hot", "Summer is hotter because the Sun is higher in the sky and stays up longer, so the same patch of ground gets more direct sunlight and more hours of it. The Earth is actually farthest from the Sun in July, which is why distance is not the explanation.");
+    }
+
+    // science.py: popcorn-pop
+    if (has_word(tokens, "popcorn") || has_pair(tokens, "popping", "corn")
+              || has_pair(tokens, "corn", "kernels"))
+        && (has_word(tokens, "pop") || has_word(tokens, "pops") || has_word(tokens, "popping")
+              || has_word(tokens, "explode") || has_word(tokens, "explodes") || has_word(tokens, "burst")
+              || has_word(tokens, "bursts"))
+        && (has_word(tokens, "why") || has_word(tokens, "how") || has_pair(tokens, "what", "makes"))
+        && !(has_pair(tokens, "microwave", "time") || has_pair(tokens, "how", "long")
+              || has_pair(tokens, "how", "much") || has_pair(tokens, "how", "many")
+              || everyday_phrase3(tokens, "how", "to", "cook") || everyday_phrase3(tokens, "how", "to", "make")
+              || everyday_phrase4(tokens, "how", "do", "i", "make") || has_pair(tokens, "popcorn", "maker")) {
+        return pair("popcorn-pop", "Each kernel holds a little water inside a hard shell. Heat turns that water to steam, the pressure builds until the shell splits, and the starch inside puffs out and sets: the pop is the shell giving way, and a kernel that is too dry or has a cracked shell will not pop.");
+    }
+
+    // science.py: ice-floats
+    if (has_word(tokens, "ice") || has_word(tokens, "iceberg") || has_word(tokens, "icebergs"))
+        && (has_word(tokens, "float") || has_word(tokens, "floats") || has_word(tokens, "floating")
+              || has_word(tokens, "density") || has_pair(tokens, "less", "dense"))
+        && (has_word(tokens, "why") || has_word(tokens, "how") || has_word(tokens, "what"))
+        && !(has_word(tokens, "dry") || everyday_phrase3(tokens, "hot", "water", "bottle")
+              || everyday_phrase3(tokens, "heat", "or", "ice") || everyday_phrase3(tokens, "ice", "or", "heat")
+              || everyday_phrase3(tokens, "better", "than", "ice") || has_pair(tokens, "ice", "pack")
+              || has_word(tokens, "compress") || has_word(tokens, "sprain") || has_word(tokens, "sprained")
+              || has_word(tokens, "swelling") || has_word(tokens, "swollen") || has_word(tokens, "muscle")
+              || has_word(tokens, "sore") || has_word(tokens, "ache") || has_word(tokens, "aching")
+              || has_pair(tokens, "ice", "cream") || has_word(tokens, "skating")) {
+        return pair("ice-floats", "Water is unusual: it expands as it freezes, so ice is about 9% less dense than liquid water and floats. That is also why a full bottle left in the freezer can split.");
+    }
+
+    // science.py: ocean-blue
+    if (has_word(tokens, "ocean") || has_word(tokens, "oceans") || has_word(tokens, "sea") || has_word(tokens, "seas"))
+        && (has_word(tokens, "blue") || has_word(tokens, "colour") || has_word(tokens, "color"))
+        && (has_word(tokens, "why") || has_word(tokens, "what") || has_word(tokens, "how"))
+        && !(has_word(tokens, "salty") || has_word(tokens, "salt") || has_word(tokens, "saltier")
+              || has_word(tokens, "sunset") || has_word(tokens, "sunrise") || has_word(tokens, "green")
+              || has_pair(tokens, "red", "sea") || has_pair(tokens, "black", "sea") || has_word(tokens, "paint")
+              || has_word(tokens, "flag") || has_word(tokens, "shirt")) {
+        return pair("ocean-blue", "Water absorbs red light much more strongly than blue, so the deeper the water the more the reds disappear and the blue is left. The sky's reflection adds to it, but the colour is mostly the water itself.");
+    }
+
+    // science.py: sea-salty
+    if (has_word(tokens, "sea") || has_word(tokens, "seas") || has_word(tokens, "ocean") || has_word(tokens, "oceans"))
+        && (has_word(tokens, "salty") || has_word(tokens, "salt") || has_word(tokens, "saltiness"))
+        && (has_word(tokens, "why") || has_word(tokens, "how") || has_pair(tokens, "where", "from")
+              || has_pair(tokens, "where", "does"))
+        && !(has_word(tokens, "blue") || has_word(tokens, "colour") || has_word(tokens, "color")
+              || everyday_phrase3(tokens, "salt", "on", "roads") || has_pair(tokens, "salt", "lamp")
+              || has_pair(tokens, "salt", "mine") || has_pair(tokens, "how", "much") || has_pair(tokens, "how", "many")) {
+        return pair("sea-salty", "Rain wears minerals out of rocks and carries them to the sea, and when the water evaporates the salt stays behind. Rivers keep adding a little, so the sea has become salty over hundreds of millions of years.");
+    }
+
+    // science.py: rain
+    if has_word(tokens, "rain")
+        && (has_word(tokens, "form") || has_word(tokens, "forms") || has_word(tokens, "formed")
+              || has_word(tokens, "falls") || everyday_phrase4(tokens, "how", "is", "rain", "made")
+              || everyday_phrase4(tokens, "how", "is", "rain", "produced")
+              || everyday_phrase4(tokens, "why", "does", "it", "rain")
+              || everyday_phrase4(tokens, "why", "does", "rain", "fall"))
+        && !(has_word(tokens, "bow") || has_word(tokens, "bows") || has_word(tokens, "coat") || has_word(tokens, "jacket")
+              || has_word(tokens, "tomorrow") || has_word(tokens, "forecast") || has_word(tokens, "today")
+              || has_word(tokens, "tonight") || has_pair(tokens, "next", "week") || has_word(tokens, "umbrella")
+              || has_pair(tokens, "storm", "drain")) {
+        return pair("rain", "Water evaporates, rises and cools, and its vapour condenses into tiny droplets that make clouds. Those droplets collide and grow until they are too heavy to stay up, and then they fall as rain.");
+    }
+
+    // science.py: thunder
+    if has_word(tokens, "thunder")
+        && (has_pair(tokens, "thunder", "sound") || has_pair(tokens, "thunder", "sounds")
+              || has_pair(tokens, "after", "lightning") || has_pair(tokens, "before", "lightning")
+              || has_word(tokens, "cause") || has_word(tokens, "causes") || has_pair(tokens, "makes", "thunder")
+              || has_pair(tokens, "produces", "thunder") || everyday_phrase3(tokens, "what", "is", "thunder")
+              || has_pair(tokens, "come", "from") || has_pair(tokens, "comes", "from")
+              || everyday_phrase4(tokens, "why", "do", "we", "hear"))
+        && !(has_word(tokens, "song") || has_word(tokens, "film") || has_word(tokens, "movie") || has_word(tokens, "team")
+              || has_word(tokens, "sports")) {
+        return pair("thunder", "Lightning heats the air along its path to about 30,000°C in a split second, and the air expands violently, making a shock wave we hear as thunder. You see the flash first because light travels far faster than sound.");
+    }
+
+    // science.py: sound-travel
+    if has_word(tokens, "sound")
+        && (has_word(tokens, "travel") || has_word(tokens, "travels") || has_word(tokens, "speed")
+              || has_word(tokens, "vacuum") || has_word(tokens, "vibration") || has_word(tokens, "faster"))
+        && (has_word(tokens, "how") || has_word(tokens, "what") || has_word(tokens, "why") || has_word(tokens, "speed"))
+        && (has_word(tokens, "how") || has_word(tokens, "why") || has_word(tokens, "fast") || has_word(tokens, "speed")
+              || has_word(tokens, "travel"))
+        && !(has_word(tokens, "bluetooth") || has_word(tokens, "volume") || has_word(tokens, "music")
+              || has_word(tokens, "speaker") || has_pair(tokens, "sound", "card")
+              || everyday_phrase3(tokens, "sound", "travel", "agency")) {
+        return pair("sound-travel", "Sound is a vibration that travels as a wave through air, water or solids; in air it moves at about 343 metres per second. It travels faster in water and fastest in solids, and it cannot travel through a vacuum because there is nothing to vibrate.");
+    }
+
+    // science.py: birds-migrate
+    if (has_word(tokens, "bird") || has_word(tokens, "birds"))
+        && (has_word(tokens, "migrate") || has_word(tokens, "migration") || has_pair(tokens, "fly", "south")
+              || has_pair(tokens, "flying", "south") || has_pair(tokens, "head", "south"))
+        && (has_word(tokens, "why") || has_word(tokens, "winter") || has_pair(tokens, "how", "come"))
+        && (has_word(tokens, "why") || has_word(tokens, "south") || has_word(tokens, "winter") || has_word(tokens, "when")
+              || has_word(tokens, "do"))
+        && !(has_word(tokens, "home") || has_word(tokens, "job") || has_word(tokens, "city") || has_word(tokens, "nest")
+              || has_pair(tokens, "leaving", "me") || has_word(tokens, "app") || has_word(tokens, "game")) {
+        return pair("birds-migrate", "Birds head off in autumn because the insects, worms and berries they live on run out as the days shorten; the trip costs a lot of energy but beats starving. They find their way by the sun, the stars, landmarks and the Earth's magnetic field, and many come back to the same nest site.");
+    }
+
+    // science.py: photosynthesis
+    if has_word(tokens, "photosynthesis")
+        && (has_word(tokens, "what") || has_word(tokens, "why") || has_word(tokens, "how") || has_word(tokens, "explain")
+              || has_word(tokens, "means") || has_word(tokens, "define"))
+        && !(has_word(tokens, "equation") || has_pair(tokens, "chemical", "formula")
+              || has_word(tokens, "experiment") || has_word(tokens, "laboratory")
+              || has_pair(tokens, "reaction", "rate")) {
+        return pair("photosynthesis", "Plants use sunlight to turn carbon dioxide from the air and water from the soil into sugar, which is their food, and they release oxygen as a by-product. The green chlorophyll in their leaves captures the light that powers it.");
+    }
+
+    // science.py: plants-make-food
+    if (has_word(tokens, "plants") || has_word(tokens, "plant") || has_word(tokens, "trees")
+              || has_word(tokens, "tree"))
+        && (has_word(tokens, "food") || has_word(tokens, "energy"))
+        && (has_word(tokens, "make") || has_word(tokens, "makes") || has_word(tokens, "made") || has_word(tokens, "get")
+              || has_pair(tokens, "own", "food"))
+        && !(has_word(tokens, "cat") || has_word(tokens, "cats") || has_word(tokens, "dog") || has_word(tokens, "dogs")
+              || has_word(tokens, "puppy") || has_word(tokens, "pet") || has_word(tokens, "pets") || has_word(tokens, "cow")
+              || has_word(tokens, "cows") || has_word(tokens, "rabbit") || has_word(tokens, "rabbits")
+              || has_word(tokens, "horse") || has_word(tokens, "horses") || has_word(tokens, "sheep")
+              || has_word(tokens, "deer") || has_word(tokens, "slug") || has_word(tokens, "slugs") || has_word(tokens, "snail")
+              || has_word(tokens, "snails") || has_word(tokens, "aphid") || has_word(tokens, "aphids")
+              || has_word(tokens, "caterpillar") || has_word(tokens, "caterpillars") || has_word(tokens, "pest")
+              || has_word(tokens, "pests") || has_word(tokens, "bug") || has_word(tokens, "bugs") || has_word(tokens, "insect")
+              || has_word(tokens, "insects") || has_pair(tokens, "eating", "my") || has_pair(tokens, "eats", "my")
+              || has_pair(tokens, "ate", "my") || has_pair(tokens, "rid", "of") || has_word(tokens, "stop")
+              || has_word(tokens, "killed") || has_word(tokens, "kill") || has_word(tokens, "dying") || has_word(tokens, "dead")
+              || has_word(tokens, "droop") || has_word(tokens, "drooping") || has_word(tokens, "wilt")
+              || has_word(tokens, "wilted") || has_pair(tokens, "yellow", "leaves") || has_word(tokens, "repot")
+              || has_word(tokens, "fertiliser") || has_word(tokens, "fertilizer") || has_pair(tokens, "feed", "my")
+              || has_word(tokens, "prune") || has_word(tokens, "lawn") || has_word(tokens, "weed") || has_word(tokens, "weeds")
+              || has_pair(tokens, "look", "after") || has_pair(tokens, "care", "for") || has_pair(tokens, "water", "my")
+              || has_pair(tokens, "water", "them") || has_pair(tokens, "water", "it")
+              || has_pair(tokens, "how", "often") || everyday_phrase3(tokens, "how", "much", "water")
+              || everyday_phrase3(tokens, "once", "a", "week") || has_word(tokens, "shade") || has_word(tokens, "frost")
+              || has_pair(tokens, "tomato", "plant") || has_pair(tokens, "my", "leaves")
+              || has_pair(tokens, "leaves", "yellow") || everyday_phrase3(tokens, "leaves", "are", "yellow")
+              || has_word(tokens, "houseplant") || has_word(tokens, "houseplants") || has_pair(tokens, "plant", "food")
+              || has_word(tokens, "gardening")) {
+        return pair("plants-make-food", "Plants make their own food by photosynthesis: they take carbon dioxide from the air and water from the soil and use sunlight to turn them into sugar. The green chlorophyll in their leaves captures the light, and oxygen is released as a by-product.");
+    }
+
+    // science.py: green-plants
+    if (has_word(tokens, "plant") || has_word(tokens, "plants") || has_word(tokens, "grass")
+              || has_word(tokens, "leaves"))
+        && has_word(tokens, "green")
+        && (has_word(tokens, "why") || has_pair(tokens, "how", "come") || has_pair(tokens, "what", "makes"))
+        && (has_word(tokens, "green") || has_word(tokens, "colour") || has_word(tokens, "color"))
+        && !(has_word(tokens, "cat") || has_word(tokens, "cats") || has_word(tokens, "dog") || has_word(tokens, "dogs")
+              || has_word(tokens, "puppy") || has_word(tokens, "pet") || has_word(tokens, "pets") || has_word(tokens, "cow")
+              || has_word(tokens, "cows") || has_word(tokens, "rabbit") || has_word(tokens, "rabbits")
+              || has_word(tokens, "horse") || has_word(tokens, "horses") || has_word(tokens, "sheep")
+              || has_word(tokens, "deer") || has_word(tokens, "slug") || has_word(tokens, "slugs") || has_word(tokens, "snail")
+              || has_word(tokens, "snails") || has_word(tokens, "aphid") || has_word(tokens, "aphids")
+              || has_word(tokens, "caterpillar") || has_word(tokens, "caterpillars") || has_word(tokens, "pest")
+              || has_word(tokens, "pests") || has_word(tokens, "bug") || has_word(tokens, "bugs") || has_word(tokens, "insect")
+              || has_word(tokens, "insects") || has_word(tokens, "dying") || has_word(tokens, "dead")
+              || has_word(tokens, "droop") || has_word(tokens, "drooping") || has_word(tokens, "wilt")
+              || has_word(tokens, "wilted") || has_word(tokens, "repot") || has_word(tokens, "fertiliser")
+              || has_word(tokens, "fertilizer") || has_word(tokens, "prune") || has_word(tokens, "lawn")
+              || has_word(tokens, "weed") || has_word(tokens, "weeds") || has_pair(tokens, "look", "after")
+              || has_pair(tokens, "care", "for") || has_pair(tokens, "water", "my") || has_pair(tokens, "how", "often")
+              || has_word(tokens, "houseplant") || has_word(tokens, "houseplants") || has_word(tokens, "autumn")
+              || has_word(tokens, "fall") || has_word(tokens, "winter") || has_word(tokens, "drop")
+              || has_word(tokens, "dropping") || has_word(tokens, "fallen") || has_word(tokens, "bulb")
+              || has_word(tokens, "bulbs") || has_word(tokens, "sow") || has_word(tokens, "sowing")
+              || has_pair(tokens, "plant", "out") || everyday_phrase3(tokens, "when", "to", "plant")
+              || everyday_phrase3(tokens, "in", "the", "green")
+              || everyday_phrase3(tokens, "plant", "a", "green")
+              || everyday_phrase4(tokens, "when", "do", "i", "plant")
+              || everyday_phrase4(tokens, "when", "should", "i", "plant")
+              || everyday_phrase4(tokens, "how", "do", "i", "plant")
+              || everyday_phrase4(tokens, "where", "do", "i", "plant") || has_pair(tokens, "green", "manure")
+              || has_pair(tokens, "green", "roof") || has_pair(tokens, "green", "wall")
+              || has_pair(tokens, "green", "beans") || has_pair(tokens, "green", "fingers")
+              || everyday_phrase3(tokens, "how", "do", "i") || everyday_phrase3(tokens, "how", "can", "i")
+              || has_pair(tokens, "how", "to") || everyday_phrase3(tokens, "how", "do", "you")
+              || everyday_phrase3(tokens, "how", "should", "i") || has_word(tokens, "paint")
+              || has_word(tokens, "drawing") || everyday_phrase3(tokens, "light", "green", "shirt")) {
+        return pair("green-plants", "Leaves look green because chlorophyll, the pigment that captures sunlight for photosynthesis, reflects green light and absorbs the reds and blues. In autumn the chlorophyll breaks down and the yellow and orange pigments underneath show through.");
+    }
+
+    // nature.py: rainbow
+    if (has_word(tokens, "rainbow") || has_word(tokens, "rainbows"))
+        && (has_word(tokens, "form") || has_word(tokens, "forms") || has_word(tokens, "formed")
+              || has_word(tokens, "appear") || has_word(tokens, "appears") || has_word(tokens, "made")
+              || has_pair(tokens, "come", "from") || has_pair(tokens, "comes", "from") || has_word(tokens, "colours")
+              || has_word(tokens, "colors") || everyday_phrase3(tokens, "where", "do", "rainbows")
+              || everyday_phrase4(tokens, "why", "are", "there", "rainbows")
+              || everyday_phrase5(tokens, "why", "is", "there", "a", "rainbow")
+              || everyday_phrase4(tokens, "what", "makes", "a", "rainbow")
+              || everyday_phrase3(tokens, "what", "makes", "rainbows"))
+        && !(has_word(tokens, "fish") || has_word(tokens, "trout") || has_word(tokens, "flag") || has_word(tokens, "paint")
+              || has_word(tokens, "pride") || has_word(tokens, "cake")
+              || everyday_phrase4(tokens, "rainbow", "colours", "in", "order")
+              || everyday_phrase4(tokens, "rainbow", "colors", "in", "order") || has_pair(tokens, "how", "many")
+              || has_pair(tokens, "colour", "order") || has_pair(tokens, "color", "order")) {
+        return pair("rainbow", "Sunlight bends as it enters raindrops, reflects off the back and bends again on the way out, which splits it into colours. You only see one with the sun behind you and rain in front, and the red band is always on the outside of the arc.");
+    }
+    args_new()
+}

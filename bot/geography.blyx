@@ -1,0 +1,26 @@
+use std::text;
+use std::cli;
+use understanding::input;
+use knowledge::capitals;
+
+pub fn capital_answer(tokens: arglist) -> str {
+    if !has_word(tokens, "capital") && !has_word(tokens, "capitals") { return ""; }
+    let mut words = args_new();
+    let mut pos = 0;
+    while pos < word_count(tokens) {
+        words = args_push(words, word(tokens, pos));
+        pos += 1;
+    }
+    let question = text_concat(" ", text_concat(args_join(words, " "), " "));
+    let mut entries = capital_table();
+    while entries != "" {
+        let row = text_before(entries, "\n");
+        let place = text_before(row, "|");
+        let phrase = text_concat(" ", text_concat(place, " "));
+        if text_before(question, phrase) != question {
+            return text_after(text_after(row, place), "|");
+        }
+        entries = text_after(text_after(entries, row), "\n");
+    }
+    ""
+}

@@ -1,0 +1,97 @@
+use text;
+use std::cli;
+use std::text;
+
+// The native text API exposes prefix/split operations. A sorted alphabet makes
+// a common character a binary lookup. Other scripts are kept intact in names.
+pub fn alphabet() -> arglist {
+    split_text("\t¦\n¦\r¦ ¦!¦\"¦#¦$¦%¦&¦'¦(¦)¦*¦+¦,¦-¦.¦/¦0¦1¦2¦3¦4¦5¦6¦7¦8¦9¦:¦;¦<¦=¦>¦?¦@¦A¦B¦C¦D¦E¦F¦G¦H¦I¦J¦K¦L¦M¦N¦O¦P¦Q¦R¦S¦T¦U¦V¦W¦X¦Y¦Z¦[¦\\¦]¦^¦_¦`¦a¦b¦c¦d¦e¦f¦g¦h¦i¦j¦k¦l¦m¦n¦o¦p¦q¦r¦s¦t¦u¦v¦w¦x¦y¦z¦{¦|¦}¦~¦ ¦¡¦¢¦£¦¤¦¥¦§¦¨¦©¦ª¦«¦¬¦­¦®¦¯¦°¦±¦²¦³¦´¦µ¦¶¦·¦¸¦¹¦º¦»¦¼¦½¦¾¦¿¦À¦Á¦Â¦Ã¦Ä¦Å¦Æ¦Ç¦È¦É¦Ê¦Ë¦Ì¦Í¦Î¦Ï¦Ð¦Ñ¦Ò¦Ó¦Ô¦Õ¦Ö¦×¦Ø¦Ù¦Ú¦Û¦Ü¦Ý¦Þ¦ß¦à¦á¦â¦ã¦ä¦å¦æ¦ç¦è¦é¦ê¦ë¦ì¦í¦î¦ï¦ð¦ñ¦ò¦ó¦ô¦õ¦ö¦÷¦ø¦ù¦ú¦û¦ü¦ý¦þ¦ÿ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦ ¦​¦‐¦‑¦‒¦–¦—¦―¦‘¦’¦‚¦“¦”¦„¦•¦…¦‧¦ ¦ ¦ ¦‹¦›¦⁄¦−¦　¦、¦。¦《¦》¦「¦」¦『¦』¦！¦（¦）¦，¦：¦；¦？¦､", "¦")
+}
+
+pub fn unit(rest: str, chars: arglist) -> str {
+    let mut lo = 0;
+    let mut hi = args_len(chars);
+    while lo < hi {
+        let mid = lo + (hi - lo) / 2;
+        if args_at(chars, mid) <= rest { lo = mid + 1; } else { hi = mid; }
+    }
+    if lo > 0 {
+        let candidate = args_at(chars, lo - 1);
+        if text_starts(rest, candidate) { return candidate; }
+    }
+    let mut run = rest;
+    let mut i = 0;
+    while i < args_len(chars) { run = text_before(run, args_at(chars, i)); i += 1; }
+    run
+}
+
+pub fn fold_unit(ch: str) -> str {
+    if ch == "A" { return "a"; }
+    if ch == "B" { return "b"; }
+    if ch == "C" { return "c"; }
+    if ch == "D" { return "d"; }
+    if ch == "E" { return "e"; }
+    if ch == "F" { return "f"; }
+    if ch == "G" { return "g"; }
+    if ch == "H" { return "h"; }
+    if ch == "I" { return "i"; }
+    if ch == "J" { return "j"; }
+    if ch == "K" { return "k"; }
+    if ch == "L" { return "l"; }
+    if ch == "M" { return "m"; }
+    if ch == "N" { return "n"; }
+    if ch == "O" { return "o"; }
+    if ch == "P" { return "p"; }
+    if ch == "Q" { return "q"; }
+    if ch == "R" { return "r"; }
+    if ch == "S" { return "s"; }
+    if ch == "T" { return "t"; }
+    if ch == "U" { return "u"; }
+    if ch == "V" { return "v"; }
+    if ch == "W" { return "w"; }
+    if ch == "X" { return "x"; }
+    if ch == "Y" { return "y"; }
+    if ch == "Z" { return "z"; }
+    if ch == "À" { return "à"; }
+    if ch == "Á" { return "á"; }
+    if ch == "Â" { return "â"; }
+    if ch == "Ã" { return "ã"; }
+    if ch == "Ä" { return "ä"; }
+    if ch == "Å" { return "å"; }
+    if ch == "Æ" { return "æ"; }
+    if ch == "Ç" { return "ç"; }
+    if ch == "È" { return "è"; }
+    if ch == "É" { return "é"; }
+    if ch == "Ê" { return "ê"; }
+    if ch == "Ë" { return "ë"; }
+    if ch == "Ì" { return "ì"; }
+    if ch == "Í" { return "í"; }
+    if ch == "Î" { return "î"; }
+    if ch == "Ï" { return "ï"; }
+    if ch == "Ð" { return "ð"; }
+    if ch == "Ñ" { return "ñ"; }
+    if ch == "Ò" { return "ò"; }
+    if ch == "Ó" { return "ó"; }
+    if ch == "Ô" { return "ô"; }
+    if ch == "Õ" { return "õ"; }
+    if ch == "Ö" { return "ö"; }
+    if ch == "Ø" { return "ø"; }
+    if ch == "Ù" { return "ù"; }
+    if ch == "Ú" { return "ú"; }
+    if ch == "Û" { return "û"; }
+    if ch == "Ü" { return "ü"; }
+    if ch == "Ý" { return "ý"; }
+    if ch == "Þ" { return "þ"; }
+    ch
+}
+
+pub fn letter_unit(ch: str) -> bool {
+    if ch == "" { return false; }
+    if ch >= "A" && ch <= "Z" || ch >= "a" && ch <= "z" { return true; }
+    if ch >= "À" && ch <= "ÿ" { return ch != "×" && ch != "÷"; }
+    // Combining marks, letters of other scripts, and CJK ideographs.
+    return ch >= "Ā" && ch < " " || ch >= "Ⰰ" && ch < "⸀"
+        || ch >= "ぁ" && ch < "꜀" || ch >= "꜀" && ch < "힤"
+        || ch >= "豈" && ch < "﷐" || ch >= "𐀀" && ch < "𞿠"
+        || ch >= "𠀀" && ch < "𲎰";
+}

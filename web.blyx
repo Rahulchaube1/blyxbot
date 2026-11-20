@@ -1,0 +1,120 @@
+use std::cli;
+use std::fs;
+use std::text;
+use bot::chat;
+use bot::understanding::text;
+
+// Form values travel as UTF-8 text. All user-controlled text is escaped at output.
+fn html(value: str) -> str {
+    let escaped = replace_text(value, "&", "&amp;");
+    let angles = replace_text(replace_text(escaped, "<", "&lt;"), ">", "&gt;");
+    replace_text(angles, "\"", "&quot;")
+}
+
+fn field(name: str, value: str) {
+    print!("<input type=\"hidden\" name=\"");
+    print!(name);
+    print!("\" value=\"");
+    print!(html(value));
+    println!("\">");
+}
+
+fn heading(speaker: str, message: str) {
+    print!("<dt><strong>");
+    print!(speaker);
+    print!("</strong></dt><dd>");
+    print!(html(message));
+    println!("</dd>");
+}
+
+fn page(history: arglist, name: str, topic: str) {
+    println!("Content-Type: text/html; charset=utf-8\r\nCache-Control: no-store\r\nX-Content-Type-Options: nosniff\r\n\r");
+    println!("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>BlyxBot</title></head><body><main>");
+    println!("<h1>BlyxBot</h1>");
+    let mut first = 0;
+    // Carry the last 20 exchanges in the form. Name and topic are independent of history.
+    if args_len(history) > 40 { first = args_len(history) - 40; }
+    if first == args_len(history) {
+        println!("<p>Ask me about capitals, arithmetic, dates, cooking, or everyday science.</p>");
+    } else {
+        println!("<h2>Conversation</h2><dl>");
+        let mut i = first;
+        while i + 1 < args_len(history) {
+            heading("You", args_at(history, i));
+            heading("BlyxBot", args_at(history, i + 1));
+            i += 2;
+        }
+        println!("</dl>");
+    }
+    println!("<form method=\"post\" enctype=\"text/plain\" accept-charset=\"UTF-8\">");
+    field("name", name);
+    field("topic", topic);
+    let mut i = first;
+    while i + 1 < args_len(history) {
+        field("you", args_at(history, i));
+        field("reply", args_at(history, i + 1));
+        i += 2;
+    }
+    println!("<p><label for=\"message\">Your message</label><br><input id=\"message\" name=\"message\" type=\"text\" size=\"36\" maxlength=\"1024\" autocomplete=\"off\" required autofocus> <button type=\"submit\">Send</button></p></form>");
+    if args_len(history) > 0 { println!("<form method=\"get\"><button type=\"submit\">New chat</button></form>"); }
+    println!("</main></body></html>");
+}
+
+fn error_page(status: str, message: str) {
+    println!(text_concat("Status: ", status));
+    println!("Content-Type: text/plain; charset=utf-8\r\nCache-Control: no-store\r\n\r");
+    println!(message);
+}
+
+fn body_allowed(length: str) -> bool {
+    let mut rest = length;
+    let mut size = 0;
+    if rest == "" { return false; }
+    while rest != "" {
+        let d = digit_head(rest);
+        if d < 0 { return false; }
+        size = size * 10 + d;
+        if size > 131072 { return false; }
+        rest = text_after(rest, digit(d));
+    }
+    true
+}
+
+fn main() {
+    let method = env_get("REQUEST_METHOD", "GET");
+    if method == "GET" { page(args_new(), "", ""); return; }
+    if method != "POST" { error_page("405 Method Not Allowed", "Open the chat with GET, then send a message with POST."); return; }
+    if !text_starts(env_get("CONTENT_TYPE", ""), "text/plain") {
+        error_page("415 Unsupported Media Type", "Send the chat form as UTF-8 plain text.");
+        return;
+    }
+    if !body_allowed(env_get("CONTENT_LENGTH", "")) {
+        error_page("413 Content Too Large", "This conversation is too large. Open a new chat.");
+        return;
+    }
+    let lines = split_text(read_text("/dev/stdin"), "\n");
+    let mut name = "";
+    let mut topic = "";
+    let mut history = args_new();
+    let mut previous = "";
+    let mut message = "";
+    let mut i = 0;
+    while i < args_len(lines) {
+        let line = text_before(args_at(lines, i), "\r");
+        if text_starts(line, "name=") { name = text_after(line, "name="); }
+        else if text_starts(line, "topic=") { topic = text_after(line, "topic="); }
+        else if text_starts(line, "you=") { previous = text_after(line, "you="); }
+        else if text_starts(line, "reply=") && previous != "" {
+            history = args_push(args_push(history, previous), text_after(line, "reply="));
+            previous = "";
+        } else if text_starts(line, "message=") { message = text_after(line, "message="); }
+        i += 1;
+    }
+    if message != "" {
+        let result = turn(message, name, topic);
+        name = args_at(result, 0);
+        topic = args_at(result, 1);
+        history = args_push(args_push(history, message), args_at(result, 2));
+    }
+    page(history, name, topic);
+}

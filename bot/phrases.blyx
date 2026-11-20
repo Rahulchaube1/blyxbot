@@ -1,0 +1,45 @@
+use understanding::input;
+
+pub fn everyday_phrase3(tokens: arglist, first: str, second: str, third: str) -> bool {
+    let mut pos = 0;
+    while pos + 3 <= word_count(tokens) {
+        if word(tokens, pos) == first && word(tokens, pos + 1) == second && word(tokens, pos + 2) == third { return true; }
+        pos = pos + 1;
+    }
+    false
+}
+
+pub fn everyday_phrase4(tokens: arglist, first: str, second: str, third: str, fourth: str) -> bool {
+    let mut pos = 0;
+    while pos + 4 <= word_count(tokens) {
+        if word(tokens, pos) == first && word(tokens, pos + 1) == second && word(tokens, pos + 2) == third
+            && word(tokens, pos + 3) == fourth { return true; }
+        pos = pos + 1;
+    }
+    false
+}
+
+pub fn everyday_phrase5(tokens: arglist, first: str, second: str, third: str, fourth: str, fifth: str) -> bool {
+    let mut pos = 0;
+    while pos + 5 <= word_count(tokens) {
+        if word(tokens, pos) == first && word(tokens, pos + 1) == second && word(tokens, pos + 2) == third
+            && word(tokens, pos + 3) == fourth && word(tokens, pos + 4) == fifth { return true; }
+        pos = pos + 1;
+    }
+    false
+}
+
+// An explanation needs a question or a request to explain. Mentions in a
+// poem, a piece of fiction, or a request for a translation are other tasks.
+pub fn everyday_explanation(tokens: arglist) -> bool {
+    if has_word(tokens, "poem") || has_word(tokens, "song") || has_word(tokens, "lyrics")
+        || has_word(tokens, "translate") || has_word(tokens, "fiction") || has_word(tokens, "riddle")
+        || has_word(tokens, "metaphor") || has_pair(tokens, "write", "about") {
+        return false;
+    }
+    return has_word(tokens, "why") || has_word(tokens, "how") || has_word(tokens, "what") || has_word(tokens, "whats")
+        || has_word(tokens, "which") || has_word(tokens, "where") || has_word(tokens, "when")
+        || has_word(tokens, "explain") || has_word(tokens, "define") || has_word(tokens, "describe")
+        || has_pair(tokens, "tell", "me") || word(tokens, 0) == "is" || word(tokens, 0) == "are"
+        || word(tokens, 0) == "does" || word(tokens, 0) == "do";
+}

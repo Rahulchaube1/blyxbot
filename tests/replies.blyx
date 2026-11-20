@@ -1,0 +1,21 @@
+// Fixed examples check externally visible answers, including the upstream wording.
+pub fn reply_examples() -> str {
+    "What is your name?|I'm BlyxBot, a rule-based chatbot written in Blyx.
+What is the capital of Peru?|Lima.
+Capital of the Democratic Republic of the Congo?|Kinshasa.
+What is the capital of New Zealand?|Wellington, not Auckland.
+Canada's capital?|Ottawa, not Toronto.
+What is 17 times 24?|That's 408.
+2 × (3 + 4)|That's 14.
+4 + 3 * 2|That's 10.
+1,200 + 3|That's 1203.
+-2 * -(1 + 2)|That's 6.
+What is 12 percent of 250?|That's 30.
+1 divided by 3|That's 0.33.
+0.1 + 0.2|That's 0.3.
+1 / 0|Division by zero is undefined.
+How many days in February 1900?|28 days.
+How many days in February 2000?|29 days.
+Is 2025 a leap year?|2025 is not a leap year.
+When is Easter in 2026?|Easter Sunday is April 5, 2026."
+}

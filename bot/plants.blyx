@@ -1,0 +1,224 @@
+use std::cli;
+use understanding::input;
+use understanding::text;
+
+// Everyday knowledge ported from Hugging Face PyBot, commit 7d63c7f (Apache-2.0).
+// Source cards in bot/knowledge/ are identified at each reply. Subject and intent
+// are separate requirements; phrase alternatives match adjacent whole tokens.
+// These rules select only the named topics. A failed match passes to the next module.
+
+use phrases;
+
+pub fn everyday_plants(tokens: arglist) -> arglist {
+    // garden.py: repot-a-plant
+    if (has_word(tokens, "repot") || has_word(tokens, "repotting") || has_pair(tokens, "pot", "bound")
+              || has_pair(tokens, "root", "bound") || has_pair(tokens, "bigger", "pot"))
+        && (has_word(tokens, "plant") || has_word(tokens, "plants") || has_word(tokens, "houseplant")
+              || has_word(tokens, "monstera") || has_word(tokens, "pothos") || has_word(tokens, "roots")
+              || has_word(tokens, "soil") || has_word(tokens, "compost") || has_word(tokens, "aloe") || has_word(tokens, "fern"))
+        && !(has_word(tokens, "cat") || has_word(tokens, "cats") || has_word(tokens, "kitten")
+              || has_word(tokens, "kittens") || has_word(tokens, "dog") || has_word(tokens, "dogs") || has_word(tokens, "puppy")
+              || has_word(tokens, "puppies") || has_word(tokens, "pet") || has_word(tokens, "pets") || has_word(tokens, "eat")
+              || has_word(tokens, "ate") || has_word(tokens, "eats") || has_word(tokens, "eating") || has_word(tokens, "eaten")
+              || has_word(tokens, "poison") || has_word(tokens, "poisoned") || has_word(tokens, "toxic")
+              || has_word(tokens, "tree") || has_word(tokens, "trees") || has_word(tokens, "rose") || has_word(tokens, "roses")
+              || has_word(tokens, "hydrangea") || has_word(tokens, "orchid")) {
+        return pair("repot-a-plant", "Move it up one pot size, no bigger: roots circling the bottom of the old pot, or water running straight through, mean it is ready, and a pot that is far too big holds water round the roots and rots them. Use fresh compost, tease the roots out a little, and keep it out of direct sun for a week after.");
+    }
+
+    // garden.py: houseplant-yellow-leaves
+    if (has_word(tokens, "houseplant") || has_word(tokens, "houseplants") || has_pair(tokens, "house", "plant")
+              || has_pair(tokens, "house", "plants") || has_pair(tokens, "indoor", "plant")
+              || has_pair(tokens, "indoor", "plants") || has_pair(tokens, "pot", "plant")
+              || has_pair(tokens, "pot", "plants") || has_word(tokens, "monstera") || has_word(tokens, "pothos")
+              || has_pair(tokens, "peace", "lily") || has_pair(tokens, "spider", "plant")
+              || has_pair(tokens, "snake", "plant") || has_word(tokens, "fern") || has_word(tokens, "orchid")
+              || has_word(tokens, "calathea") || has_pair(tokens, "zz", "plant") || has_word(tokens, "dracaena")
+              || has_pair(tokens, "fiddle", "leaf") || has_pair(tokens, "rubber", "plant") || has_word(tokens, "yucca")
+              || has_word(tokens, "poinsettia") || has_word(tokens, "cyclamen") || has_word(tokens, "aloe")
+              || has_pair(tokens, "jade", "plant"))
+        && (has_word(tokens, "yellow") || has_word(tokens, "yellowing"))
+        && (has_word(tokens, "leaf") || has_word(tokens, "leaves"))
+        && !(has_word(tokens, "tomato") || has_word(tokens, "tomatoes") || has_word(tokens, "basil")
+              || has_word(tokens, "lawn") || has_word(tokens, "grass") || has_word(tokens, "tree") || has_word(tokens, "rose")
+              || has_word(tokens, "roses") || has_word(tokens, "cucumber") || has_word(tokens, "courgette")
+              || has_word(tokens, "pepper") || has_word(tokens, "chilli") || has_word(tokens, "outside")
+              || has_pair(tokens, "garden", "bed") || has_word(tokens, "brown") || has_word(tokens, "crisp")
+              || has_word(tokens, "tips") || has_word(tokens, "edges") || has_word(tokens, "cat") || has_word(tokens, "cats")
+              || has_word(tokens, "kitten") || has_word(tokens, "kittens") || has_word(tokens, "dog")
+              || has_word(tokens, "dogs") || has_word(tokens, "puppy") || has_word(tokens, "puppies") || has_word(tokens, "pet")
+              || has_word(tokens, "pets") || has_word(tokens, "eat") || has_word(tokens, "ate") || has_word(tokens, "eats")
+              || has_word(tokens, "eating") || has_word(tokens, "eaten") || has_word(tokens, "poison")
+              || has_word(tokens, "poisoned") || has_word(tokens, "toxic") || has_word(tokens, "flower")
+              || has_word(tokens, "flowers")) {
+        return pair("houseplant-yellow-leaves", "Overwatering is the usual cause: yellow, soft leaves on a plant in soggy compost means stop watering and let the top inch of soil dry out, and check the pot has holes. Yellow lower leaves that are dry and crisp are the other story — that is just age, or a plant that needs feeding.");
+    }
+
+    // garden.py: plant-pothos
+    if (has_word(tokens, "pothos") || has_pair(tokens, "devils", "ivy"))
+        && (has_word(tokens, "water") || has_word(tokens, "watering") || has_word(tokens, "care")
+              || has_pair(tokens, "look", "after") || has_word(tokens, "light") || has_pair(tokens, "keep", "alive")
+              || has_word(tokens, "drooping") || has_word(tokens, "repot"))
+        && !(has_word(tokens, "light") || has_word(tokens, "sun") || has_word(tokens, "sunlight")
+              || has_word(tokens, "sunny") || has_word(tokens, "sunshine") || has_word(tokens, "shade")
+              || has_word(tokens, "shady") || has_word(tokens, "bright") || has_word(tokens, "dark")
+              || has_word(tokens, "window") || has_word(tokens, "windowsill") || has_pair(tokens, "south", "facing")
+              || has_pair(tokens, "north", "facing") || has_pair(tokens, "east", "facing")
+              || has_pair(tokens, "west", "facing") || has_word(tokens, "cat") || has_word(tokens, "cats")
+              || has_word(tokens, "kitten") || has_word(tokens, "kittens") || has_word(tokens, "dog")
+              || has_word(tokens, "dogs") || has_word(tokens, "puppy") || has_word(tokens, "puppies") || has_word(tokens, "pet")
+              || has_word(tokens, "pets") || has_word(tokens, "eat") || has_word(tokens, "ate") || has_word(tokens, "eats")
+              || has_word(tokens, "eating") || has_word(tokens, "eaten") || has_word(tokens, "poison")
+              || has_word(tokens, "poisoned") || has_word(tokens, "toxic")) {
+        return pair("plant-pothos", "Water a pothos about once a week, when the compost is dry and the leaves are just starting to look limp: it forgives a missed week but rots in a pot that never dries. It grows in almost any light, and a cutting in a glass of water roots in a few weeks.");
+    }
+
+    // garden.py: plant-snake-plant
+    if (has_pair(tokens, "snake", "plant") || has_pair(tokens, "snake", "plants")
+              || has_word(tokens, "sansevieria"))
+        && (has_word(tokens, "water") || has_word(tokens, "watering") || has_word(tokens, "care")
+              || has_pair(tokens, "look", "after") || has_word(tokens, "light") || has_pair(tokens, "keep", "alive")
+              || has_word(tokens, "drooping") || has_word(tokens, "repot"))
+        && !(has_word(tokens, "light") || has_word(tokens, "sun") || has_word(tokens, "sunlight")
+              || has_word(tokens, "sunny") || has_word(tokens, "sunshine") || has_word(tokens, "shade")
+              || has_word(tokens, "shady") || has_word(tokens, "bright") || has_word(tokens, "dark")
+              || has_word(tokens, "window") || has_word(tokens, "windowsill") || has_pair(tokens, "south", "facing")
+              || has_pair(tokens, "north", "facing") || has_pair(tokens, "east", "facing")
+              || has_pair(tokens, "west", "facing") || has_word(tokens, "cat") || has_word(tokens, "cats")
+              || has_word(tokens, "kitten") || has_word(tokens, "kittens") || has_word(tokens, "dog")
+              || has_word(tokens, "dogs") || has_word(tokens, "puppy") || has_word(tokens, "puppies") || has_word(tokens, "pet")
+              || has_word(tokens, "pets") || has_word(tokens, "eat") || has_word(tokens, "ate") || has_word(tokens, "eats")
+              || has_word(tokens, "eating") || has_word(tokens, "eaten") || has_word(tokens, "poison")
+              || has_word(tokens, "poisoned") || has_word(tokens, "toxic")) {
+        return pair("plant-snake-plant", "Water a snake plant every two to three weeks in summer and once a month or less in winter, and only when the compost is dry all the way down. It stores water in its leaves and rots in wet soil, so the surest way to kill one is to water it on a schedule.");
+    }
+
+    // garden.py: cactus-care
+    if (has_word(tokens, "cactus") || has_word(tokens, "cacti") || has_word(tokens, "succulent")
+              || has_word(tokens, "succulents"))
+        && (has_word(tokens, "water") || has_word(tokens, "watering") || has_word(tokens, "care")
+              || has_pair(tokens, "look", "after") || has_pair(tokens, "keep", "alive") || has_word(tokens, "dying")
+              || has_word(tokens, "shrivel") || has_word(tokens, "wrinkled"))
+        && !(has_word(tokens, "cat") || has_word(tokens, "cats") || has_word(tokens, "kitten")
+              || has_word(tokens, "kittens") || has_word(tokens, "dog") || has_word(tokens, "dogs") || has_word(tokens, "puppy")
+              || has_word(tokens, "puppies") || has_word(tokens, "pet") || has_word(tokens, "pets") || has_word(tokens, "eat")
+              || has_word(tokens, "ate") || has_word(tokens, "eats") || has_word(tokens, "eating") || has_word(tokens, "eaten")
+              || has_word(tokens, "poison") || has_word(tokens, "poisoned") || has_word(tokens, "toxic")
+              || has_pair(tokens, "christmas", "cactus") || has_pair(tokens, "christmas", "cacti")
+              || has_word(tokens, "outdoors")) {
+        return pair("cactus-care", "Cacti and succulents want a sunny windowsill, gritty compost and far less water than they get: soak the pot, let it dry right through, and that is every two to three weeks in summer and barely at all from November to March. A Christmas cactus is the exception - it is a forest cactus - so give it bright light out of full sun, water when the top half of the pot is dry, and cool nights in autumn, which is what sets the buds.");
+    }
+
+    // garden.py: houseplant-light
+    if (has_word(tokens, "houseplant") || has_word(tokens, "houseplants") || has_pair(tokens, "house", "plant")
+              || has_pair(tokens, "house", "plants") || has_pair(tokens, "indoor", "plant")
+              || has_pair(tokens, "indoor", "plants") || has_pair(tokens, "pot", "plant")
+              || has_pair(tokens, "pot", "plants") || has_word(tokens, "monstera") || has_word(tokens, "pothos")
+              || has_pair(tokens, "peace", "lily") || has_pair(tokens, "spider", "plant")
+              || has_pair(tokens, "snake", "plant") || has_word(tokens, "fern") || has_word(tokens, "orchid")
+              || has_word(tokens, "calathea") || has_pair(tokens, "zz", "plant") || has_word(tokens, "dracaena")
+              || has_pair(tokens, "fiddle", "leaf") || has_pair(tokens, "rubber", "plant") || has_word(tokens, "yucca")
+              || has_word(tokens, "poinsettia") || has_word(tokens, "cyclamen") || has_word(tokens, "aloe")
+              || has_pair(tokens, "jade", "plant"))
+        && (has_word(tokens, "light") || has_word(tokens, "sunlight") || has_word(tokens, "bright")
+              || has_word(tokens, "brighter") || has_word(tokens, "window") || has_word(tokens, "windowsill")
+              || has_pair(tokens, "direct", "sun") || has_word(tokens, "shade") || has_pair(tokens, "dark", "corner")
+              || has_word(tokens, "sunny") || everyday_phrase4(tokens, "where", "should", "i", "put"))
+        && !(has_word(tokens, "tomato") || has_word(tokens, "tomatoes") || has_word(tokens, "basil")
+              || has_word(tokens, "lawn") || has_word(tokens, "grass") || has_word(tokens, "tree") || has_word(tokens, "trees")
+              || has_word(tokens, "rose") || has_word(tokens, "roses") || has_word(tokens, "cucumber")
+              || has_word(tokens, "courgette") || has_word(tokens, "pepper") || has_word(tokens, "chilli")
+              || has_word(tokens, "outside") || has_word(tokens, "lamp") || has_word(tokens, "ceiling")
+              || has_word(tokens, "fairy") || has_pair(tokens, "light", "fitting") || has_pair(tokens, "light", "bulb")
+              || has_word(tokens, "headlight") || has_pair(tokens, "sun", "cream") || has_word(tokens, "sunscreen")
+              || has_word(tokens, "sunburn") || has_word(tokens, "garden") || has_word(tokens, "gardens")
+              || has_word(tokens, "gardener") || has_word(tokens, "border") || has_word(tokens, "flowerbed")
+              || has_word(tokens, "allotment") || has_word(tokens, "outdoors") || has_word(tokens, "outdoor")
+              || has_word(tokens, "shrub") || has_word(tokens, "shrubs") || has_word(tokens, "hedge")
+              || has_word(tokens, "perennial") || has_word(tokens, "perennials")
+              || has_pair(tokens, "planting", "flowers") || has_pair(tokens, "plant", "flowers")
+              || everyday_phrase3(tokens, "plant", "some", "flowers") || has_pair(tokens, "planting", "out")
+              || has_pair(tokens, "plant", "out") || has_word(tokens, "seedlings") || has_word(tokens, "bed")
+              || has_word(tokens, "beds") || has_word(tokens, "borders") || has_word(tokens, "soil")
+              || has_word(tokens, "ground") || has_word(tokens, "veg") || has_word(tokens, "vegetable")
+              || has_word(tokens, "vegetables") || has_pair(tokens, "plant", "shade")
+              || has_pair(tokens, "plants", "shade") || has_word(tokens, "fell") || has_word(tokens, "fallen")
+              || has_word(tokens, "falls") || has_word(tokens, "dropped") || has_word(tokens, "dropping")
+              || has_word(tokens, "knocked") || has_word(tokens, "tipped") || has_word(tokens, "broke")
+              || has_word(tokens, "broken") || has_word(tokens, "cracked") || has_word(tokens, "smashed")
+              || has_word(tokens, "shattered") || has_word(tokens, "spilled") || has_word(tokens, "spilt")
+              || has_pair(tokens, "upside", "down") || everyday_phrase3(tokens, "on", "its", "side")
+              || has_word(tokens, "cat") || has_word(tokens, "cats") || has_word(tokens, "kitten")
+              || has_word(tokens, "kittens") || has_word(tokens, "dog") || has_word(tokens, "dogs") || has_word(tokens, "puppy")
+              || has_word(tokens, "puppies") || has_word(tokens, "pet") || has_word(tokens, "pets") || has_word(tokens, "eat")
+              || has_word(tokens, "ate") || has_word(tokens, "eats") || has_word(tokens, "eating") || has_word(tokens, "eaten")
+              || has_word(tokens, "poison") || has_word(tokens, "poisoned") || has_word(tokens, "toxic")) {
+        return pair("houseplant-light", "Bright but out of direct midday sun is what most houseplants want: an east window, or a metre or two back from a south or west one. Move it closer to the glass if the stems are pale and stretched with gaps between the leaves, and further back if the leaves have brown scorched patches on the side facing the window. Turn the pot a quarter turn each time you water so it grows evenly, and give it a few weeks to settle - a plant moved into suddenly stronger light can scorch before it adjusts.");
+    }
+
+    // garden.py: houseplants-watering
+    if (has_word(tokens, "houseplant") || has_word(tokens, "houseplants") || has_pair(tokens, "house", "plant")
+              || has_pair(tokens, "house", "plants") || has_pair(tokens, "indoor", "plant")
+              || has_pair(tokens, "indoor", "plants") || has_pair(tokens, "pot", "plant")
+              || has_pair(tokens, "pot", "plants") || has_word(tokens, "monstera") || has_word(tokens, "pothos")
+              || has_pair(tokens, "peace", "lily") || has_pair(tokens, "spider", "plant")
+              || has_pair(tokens, "snake", "plant") || has_word(tokens, "fern") || has_word(tokens, "orchid")
+              || has_word(tokens, "calathea") || has_pair(tokens, "zz", "plant") || has_word(tokens, "dracaena")
+              || has_pair(tokens, "fiddle", "leaf") || has_pair(tokens, "rubber", "plant") || has_word(tokens, "yucca")
+              || has_word(tokens, "poinsettia") || has_word(tokens, "cyclamen") || has_word(tokens, "aloe")
+              || has_pair(tokens, "jade", "plant"))
+        && (has_word(tokens, "water") || has_word(tokens, "watering") || has_pair(tokens, "how", "often")
+              || has_pair(tokens, "how", "much") || has_pair(tokens, "look", "after") || has_word(tokens, "care")
+              || has_word(tokens, "dying") || has_word(tokens, "drooping") || has_word(tokens, "droopy")
+              || has_pair(tokens, "keep", "alive") || has_pair(tokens, "keeping", "alive")
+              || has_word(tokens, "healthy") || has_word(tokens, "thriving") || has_word(tokens, "unhappy"))
+        && !(has_word(tokens, "lawn") || has_word(tokens, "lawns") || has_word(tokens, "grass") || has_word(tokens, "mow")
+              || has_word(tokens, "mowing") || has_pair(tokens, "hanging", "basket")
+              || has_pair(tokens, "hanging", "baskets") || has_pair(tokens, "window", "box")
+              || has_pair(tokens, "window", "boxes") || has_word(tokens, "border") || has_word(tokens, "borders")
+              || has_word(tokens, "allotment") || has_word(tokens, "plot") || has_word(tokens, "beds")
+              || has_word(tokens, "roses") || has_word(tokens, "rose") || has_word(tokens, "hydrangea")
+              || has_word(tokens, "lavender") || has_word(tokens, "tomato") || has_word(tokens, "tomatoes")
+              || has_word(tokens, "potato") || has_word(tokens, "potatoes") || has_word(tokens, "tree")
+              || has_word(tokens, "trees") || has_word(tokens, "shrub") || has_word(tokens, "shrubs")
+              || has_word(tokens, "hedge") || has_word(tokens, "hedges") || has_word(tokens, "seeds")
+              || has_word(tokens, "seedlings") || has_word(tokens, "sow") || has_word(tokens, "sowing")
+              || has_word(tokens, "greenhouse") || has_pair(tokens, "compost", "heap") || has_word(tokens, "weeds")
+              || has_word(tokens, "slug") || has_word(tokens, "slugs") || has_word(tokens, "snails") || has_word(tokens, "cats")
+              || has_word(tokens, "cat") || has_word(tokens, "dog") || has_word(tokens, "dogs") || has_word(tokens, "puppy")
+              || has_word(tokens, "puppies") || has_word(tokens, "pup") || has_word(tokens, "kitten")
+              || has_word(tokens, "kittens") || has_word(tokens, "rabbit") || has_word(tokens, "hamster")
+              || has_pair(tokens, "guinea", "pig") || has_word(tokens, "budgie") || has_word(tokens, "tattoo")
+              || has_word(tokens, "tattoos") || has_word(tokens, "pet") || has_word(tokens, "pets") || has_word(tokens, "eat")
+              || has_word(tokens, "ate") || has_word(tokens, "eats") || has_word(tokens, "eating") || has_word(tokens, "eaten")
+              || has_word(tokens, "poison") || has_word(tokens, "poisoned") || has_word(tokens, "toxic")
+              || has_word(tokens, "feed") || has_word(tokens, "feeding") || has_word(tokens, "fertiliser")
+              || has_word(tokens, "fertilizer")) {
+        return pair("houseplants-watering", "Water when the top couple of centimetres of compost is dry, not on a fixed day, and let it drain away rather than sitting in water. Most houseplants die of too much water rather than too little: a pot with no drainage hole, or a saucer left full, rots the roots and the leaves go yellow and drop. If the compost smells sour, repot in fresh compost and water less; if it is bone dry and light, soak the pot in a bowl for ten minutes. Beyond that it is light - most want a bright spot out of direct sun - and a feed every few weeks in spring and summer only.");
+    }
+
+    // garden.py: watering-plants
+    if (has_word(tokens, "plant") || has_word(tokens, "plants"))
+        && (has_word(tokens, "water") || has_word(tokens, "watering"))
+        && (has_pair(tokens, "how", "often") || has_pair(tokens, "how", "much") || has_word(tokens, "when")
+              || everyday_phrase4(tokens, "how", "do", "i", "know")
+              || everyday_phrase4(tokens, "how", "can", "i", "tell"))
+        && !(has_word(tokens, "yellow") || has_word(tokens, "yellowing") || has_word(tokens, "brown")
+              || has_word(tokens, "drooping") || has_word(tokens, "droopy") || has_word(tokens, "dying")
+              || has_word(tokens, "turning") || has_word(tokens, "photosynthesis") || has_word(tokens, "basil")
+              || has_word(tokens, "hydrangea") || has_word(tokens, "tomato") || has_word(tokens, "tomatoes")
+              || has_word(tokens, "drink") || has_word(tokens, "drinks") || has_word(tokens, "drinking")
+              || has_word(tokens, "absorb") || has_word(tokens, "stems") || has_word(tokens, "stem") || has_word(tokens, "feed")
+              || has_word(tokens, "feeds") || has_word(tokens, "feeding") || has_word(tokens, "fertiliser")
+              || has_word(tokens, "fertilizer") || has_pair(tokens, "plant", "food") || has_word(tokens, "nutrients")
+              || has_word(tokens, "cat") || has_word(tokens, "cats") || has_word(tokens, "kitten")
+              || has_word(tokens, "kittens") || has_word(tokens, "dog") || has_word(tokens, "dogs") || has_word(tokens, "puppy")
+              || has_word(tokens, "puppies") || has_word(tokens, "pet") || has_word(tokens, "pets") || has_word(tokens, "eat")
+              || has_word(tokens, "ate") || has_word(tokens, "eats") || has_word(tokens, "eating") || has_word(tokens, "eaten")
+              || has_word(tokens, "poison") || has_word(tokens, "poisoned") || has_word(tokens, "toxic")
+              || has_word(tokens, "factory") || has_pair(tokens, "power", "plant")
+              || has_pair(tokens, "chemical", "plant") || has_word(tokens, "industrial")) {
+        return pair("watering-plants", "Check the soil before you water, not the calendar: push a finger in and water only when the top few centimetres are dry, then water until it runs out of the bottom. Plants in pots need it far more often than plants in a border, and in hot weather a big soak twice a week beats a sprinkle every day, because it gets water down to the roots.");
+    }
+    args_new()
+}

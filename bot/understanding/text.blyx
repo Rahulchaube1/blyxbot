@@ -1,0 +1,68 @@
+use std::cli;
+use std::text;
+
+pub fn split_text(value: str, separator: str) -> arglist {
+    let mut parts = args_new();
+    let mut rest = value;
+    while separator != "" {
+        let part = text_before(rest, separator);
+        if part == rest { break; }
+        parts = args_push(parts, part);
+        rest = text_after(text_after(rest, part), separator);
+    }
+    args_push(parts, rest)
+}
+
+pub fn replace_text(value: str, from: str, to: str) -> str {
+    args_join(split_text(value, from), to)
+}
+
+pub fn pair(first: str, second: str) -> arglist {
+    args_push(args_push(args_new(), first), second)
+}
+
+pub fn item(xs: arglist, i: i64) -> str {
+    if i >= 0 && i < args_len(xs) { return args_at(xs, i); }
+    ""
+}
+
+pub fn digit_head(text: str) -> i64 {
+    if text_starts(text, "0") { return 0; }
+    if text_starts(text, "1") { return 1; }
+    if text_starts(text, "2") { return 2; }
+    if text_starts(text, "3") { return 3; }
+    if text_starts(text, "4") { return 4; }
+    if text_starts(text, "5") { return 5; }
+    if text_starts(text, "6") { return 6; }
+    if text_starts(text, "7") { return 7; }
+    if text_starts(text, "8") { return 8; }
+    if text_starts(text, "9") { return 9; }
+    return -1;
+}
+
+pub fn digit(n: i64) -> str {
+    if n == 0 { return "0"; } if n == 1 { return "1"; }
+    if n == 2 { return "2"; } if n == 3 { return "3"; }
+    if n == 4 { return "4"; } if n == 5 { return "5"; }
+    if n == 6 { return "6"; } if n == 7 { return "7"; }
+    if n == 8 { return "8"; } return "9";
+}
+
+pub fn integer_text(n: i64) -> str {
+    if n < 0 { return text_concat("-", integer_text(0 - n)); }
+    if n < 10 { return digit(n); }
+    text_concat(integer_text(n / 10), digit(n % 10))
+}
+
+pub fn as_float(n: i64) -> f64 { at([n], 0) }
+
+// Convert a nonnegative whole f64 in the exact-integer range without a cast.
+pub fn whole_integer(n: f64) -> i64 {
+    let mut low = 0;
+    let mut high = 9007199254740991;
+    while low < high {
+        let mid = low + (high - low + 1) / 2;
+        if as_float(mid) <= n { low = mid; } else { high = mid - 1; }
+    }
+    low
+}

@@ -1,0 +1,119 @@
+use std::cli;
+use std::text;
+use understanding::text;
+use understanding::input;
+
+fn math_start(tokens: arglist) -> i64 {
+    if word(tokens, 0) == "what" && (word(tokens, 1) == "is" || word(tokens, 1) == "'s") { return 2; }
+    if word(tokens, 0) == "how" && word(tokens, 1) == "much" && word(tokens, 2) == "is" { return 3; }
+    if word(tokens, 0) == "calculate" || word(tokens, 0) == "whats" { return 1; }
+    0
+}
+
+// Status is 0 for an unrecognized expression, 1 for a result, and 2 for division by zero.
+fn evaluate_math(tokens: arglist, begin: i64, end: i64, depth: i64) -> vector {
+    if depth > 12 { return [0, 0]; }
+    let mut pos = begin;
+    let mut total = 0.0;
+    let mut term = 0.0;
+    let mut operation = "+";
+    let mut count = 0;
+    let mut status = 1;
+    while pos < end {
+        let mut sign = 1.0;
+        if word(tokens, pos) == "-" || word(tokens, pos) == "−" || word(tokens, pos) == "negative" { sign = -1.0; pos += 1; }
+        else if word(tokens, pos) == "+" { pos += 1; }
+        let mut value = 0.0;
+        if word(tokens, pos) == "(" {
+            let mut level = 1;
+            let mut close = pos + 1;
+            while close < end {
+                if word(tokens, close) == "(" { level += 1; }
+                if word(tokens, close) == ")" { level -= 1; }
+                if level == 0 { break; }
+                close += 1;
+            }
+            if close >= end { return [0, 0]; }
+            let group = evaluate_math(tokens, pos + 1, close, depth + 1);
+            if at(group, 0) == 0.0 { return [0, 0]; }
+            if at(group, 0) == 2.0 { status = 2; }
+            value = sign * at(group, 1);
+            pos = close;
+        } else {
+            if !is_number(tokens, pos) { return [0, 0]; }
+            value = sign * number_at(tokens, pos);
+        }
+        if operation == "+" { total += term; term = value; }
+        else if operation == "-" { total += term; term = 0.0 - value; }
+        else if operation == "*" { term *= value; }
+        else if operation == "%" { term = term / 100.0 * value; }
+        else {
+            if value == 0.0 { status = 2; }
+            else { term /= value; }
+        }
+        count += 1;
+        pos += 1;
+        if pos == end { break; }
+        let op = word(tokens, pos);
+        if op == "+" || op == "plus" { operation = "+"; }
+        else if op == "-" || op == "−" || op == "minus" { operation = "-"; }
+        else if op == "*" || op == "×" || op == "x" || op == "times" { operation = "*"; }
+        else if op == "/" || op == "÷" || op == "over" { operation = "/"; }
+        else if (op == "divided" || op == "multiplied") && word(tokens, pos + 1) == "by" {
+            if op == "divided" { operation = "/"; } else { operation = "*"; }
+            pos += 1;
+        }
+        else if (op == "percent" || op == "%") && word(tokens, pos + 1) == "of" { operation = "%"; pos += 1; }
+        else { return [0, 0]; }
+        pos += 1;
+        if pos >= end { return [0, 0]; }
+    }
+    if count == 0 { return [0, 0]; }
+    [status, total + term]
+}
+
+fn round_scaled(magnitude: f64, scale: f64) -> f64 {
+    let adjusted = magnitude * scale + 0.5;
+    adjusted - adjusted % 1.0
+}
+
+fn magnitude_text(magnitude: f64) -> str {
+    if magnitude % 1.0 == 0.0 { return integer_text(whole_integer(magnitude)); }
+    let mut scale = 100.0;
+    while scale < 10000.0 {
+        let difference = magnitude - round_scaled(magnitude, scale) / scale;
+        if difference > -0.000000001 && difference < 0.000000001 { break; }
+        scale *= 10.0;
+    }
+    let difference = magnitude - round_scaled(magnitude, scale) / scale;
+    if difference <= -0.000000001 || difference >= 0.000000001 { scale = 100.0; }
+    let scaled = round_scaled(magnitude, scale);
+    let mut fraction = scaled % scale;
+    let mut output = integer_text(whole_integer((scaled - fraction) / scale));
+    if fraction == 0.0 { return output; }
+    output = text_concat(output, ".");
+    let mut place = scale / 10.0;
+    while place >= 1.0 && fraction > 0.0 {
+        let remainder = fraction % place;
+        output = text_concat(output, digit(whole_integer((fraction - remainder) / place)));
+        fraction = remainder;
+        place /= 10.0;
+    }
+    output
+}
+
+pub fn answer_math(tokens: arglist) -> arglist {
+    let start = math_start(tokens);
+    if word_count(tokens) - start < 2 { return args_new(); }
+    let result = evaluate_math(tokens, start, word_count(tokens), 0);
+    if at(result, 0) == 0.0 { return args_new(); }
+    if at(result, 0) == 2.0 { return pair("maths", "Division by zero is undefined."); }
+    let answer = at(result, 1);
+    if answer != answer || answer > 9007199254740991.0 || answer < -9007199254740991.0 {
+        return pair("maths", "That calculation exceeds my exact number range.");
+    }
+    let mut shown = "";
+    if answer < 0.0 { shown = text_concat("-", magnitude_text(0.0 - answer)); }
+    else { shown = magnitude_text(answer); }
+    pair("maths", text_concat("That's ", text_concat(shown, ".")))
+}

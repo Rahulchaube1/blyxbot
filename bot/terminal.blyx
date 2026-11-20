@@ -1,0 +1,106 @@
+use std::cli;
+use std::fs;
+use std::text;
+use chat;
+use understanding::input;
+use understanding::text;
+
+fn trim_line(line: str) -> str {
+    let pieces = split_text(replace_text(line, "\t", " "), " ");
+    let mut first = 0;
+    let mut last = args_len(pieces);
+    while first < last && args_at(pieces, first) == "" { first += 1; }
+    while last > first && args_at(pieces, last - 1) == "" { last -= 1; }
+    let mut kept = args_new();
+    while first < last {
+        kept = args_push(kept, args_at(pieces, first));
+        first += 1;
+    }
+    args_join(kept, " ")
+}
+
+pub fn show_reply(result: arglist, verbose: bool, interactive: bool) {
+    if interactive { print!("BlyxBot: "); }
+    println!(args_at(result, 2));
+    if verbose { stderr_line(text_concat("[", text_concat(args_at(result, 1), "]"))); }
+}
+
+// Two fields carry the session between lines. An empty list signals the end.
+fn handle_line(line: str, state: arglist, verbose: bool, interactive: bool) -> arglist {
+    let message = trim_line(text_before(line, "\r"));
+    if message == "" { return state; }
+    if text_starts(message, "/") {
+        let tokens = tokenize(message);
+        if word_count(tokens) == 2 {
+            let command = word(tokens, 1);
+            if command == "exit" || command == "quit" { return args_new(); }
+            if command == "reset" {
+                if interactive { println!("New conversation."); }
+                return pair("", "");
+            }
+            if command == "help" {
+                println!("Type a message, /reset to start a new chat, or /exit to quit.");
+                return state;
+            }
+        }
+    }
+    let result = turn(message, args_at(state, 0), args_at(state, 1));
+    show_reply(result, verbose, interactive);
+    pair(args_at(result, 0), args_at(result, 1))
+}
+
+fn run_batch(verbose: bool) {
+    let mut input = read_text("/dev/stdin");
+    let mut state = pair("", "");
+    while input != "" {
+        let line = text_before(input, "\n");
+        state = handle_line(line, state, verbose, false);
+        if args_len(state) == 0 { break; }
+        input = text_after(text_after(input, line), "\n");
+    }
+}
+
+// The current native host can read a file, but has no line-read binding.
+// In canonical terminal mode dd's single read returns when the user presses Enter.
+fn terminal_directory() -> str {
+    let mut suffix = "session";
+    if is_file("/proc/self/stat") { suffix = text_before(read_text("/proc/self/stat"), " "); }
+    let base = path_join(env_get("TMPDIR", "/tmp"), text_concat("blyxbot-", suffix));
+    let mut attempt = 0;
+    while attempt < 8 {
+        let directory = text_concat(base, text_concat("-", integer_text(attempt)));
+        let args = args_push(pair("-m", "700"), directory);
+        if process_run("mkdir", args, args_new()) == 0 { return directory; }
+        attempt += 1;
+    }
+    ""
+}
+
+pub fn terminal_chat(verbose: bool) {
+    if process_run("test", pair("-t", "0"), args_new()) != 0 {
+        run_batch(verbose);
+        return;
+    }
+    let directory = terminal_directory();
+    if directory == "" {
+        stderr_line("BlyxBot could not create a private input directory.");
+        process_exit(1);
+    }
+    let path = path_join(directory, "input");
+    let dd = args_push(args_push(pair("bs=65536", "count=1"), "status=none"), text_concat("of=", path));
+    let mut state = pair("", "");
+    let display = stdout_terminal();
+    if display { println!("BlyxBot\nType a message, /reset for a new chat, or /exit to quit."); }
+    let mut status = 0;
+    while args_len(state) > 0 {
+        if display { println!("You:"); }
+        status = process_run("dd", dd, args_new());
+        if status != 0 { break; }
+        let line = read_text(path);
+        if line == "" { break; }
+        state = handle_line(text_before(line, "\n"), state, verbose, display);
+    }
+    process_run("rm", pair("-f", path), args_new());
+    process_run("rmdir", args_push(args_new(), directory), args_new());
+    if status != 0 { process_exit(status); }
+}

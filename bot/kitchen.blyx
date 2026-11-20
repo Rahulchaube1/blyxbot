@@ -1,0 +1,285 @@
+use std::cli;
+use understanding::input;
+use understanding::text;
+
+// Everyday knowledge ported from Hugging Face PyBot, commit 7d63c7f (Apache-2.0).
+// Source cards in bot/knowledge/ are identified at each reply. Subject and intent
+// are separate requirements; phrase alternatives match adjacent whole tokens.
+// These rules select only the named topics. A failed match passes to the next module.
+
+use phrases;
+
+pub fn everyday_kitchen(tokens: arglist) -> arglist {
+    // cooking_entries.py: onion-cry
+    if (has_word(tokens, "onion") || has_word(tokens, "onions"))
+        && (has_word(tokens, "cry") || has_word(tokens, "crying") || has_word(tokens, "tears")
+              || has_pair(tokens, "tear", "up") || has_pair(tokens, "eyes", "water")
+              || has_pair(tokens, "eyes", "watering") || has_pair(tokens, "watering", "eyes")
+              || has_pair(tokens, "eyes", "sting") || has_pair(tokens, "stinging", "eyes")
+              || has_pair(tokens, "eyes", "burn") || everyday_phrase3(tokens, "makes", "my", "eyes")
+              || everyday_phrase3(tokens, "make", "my", "eyes"))
+        && !(has_word(tokens, "dog") || has_word(tokens, "dogs") || has_word(tokens, "puppy") || has_word(tokens, "puppies")
+              || has_word(tokens, "cat") || has_word(tokens, "cats") || has_word(tokens, "kitten")
+              || has_word(tokens, "kittens") || has_word(tokens, "pet") || has_word(tokens, "pets") || has_word(tokens, "ate")
+              || has_word(tokens, "eaten") || has_word(tokens, "eat") || has_word(tokens, "eats") || has_word(tokens, "eating")
+              || has_word(tokens, "poison") || has_word(tokens, "poisoned") || has_word(tokens, "poisonous")
+              || has_word(tokens, "toxic")) {
+        return pair("onion-cry", "Cutting an onion breaks its cells and releases a gas that irritates your eyes, so they make tears to wash it away. A sharp knife and a chilled onion release less of it, and the root end holds most of it, so cut that last.");
+    }
+
+    // cleaning.py: descale-kettle
+    if (has_word(tokens, "kettle") || has_word(tokens, "kettles"))
+        && (has_word(tokens, "descale") || has_word(tokens, "descaled") || has_word(tokens, "descaler")
+              || has_word(tokens, "descaling") || has_word(tokens, "limescale") || has_word(tokens, "scale")
+              || has_word(tokens, "scaled") || has_word(tokens, "furred") || has_word(tokens, "furring")
+              || has_word(tokens, "chalky") || has_pair(tokens, "white", "bits") || has_pair(tokens, "white", "marks")
+              || has_pair(tokens, "white", "stuff") || has_pair(tokens, "white", "flakes") || has_word(tokens, "clean")
+              || has_word(tokens, "cleaning") || has_word(tokens, "rinse") || has_word(tokens, "rinsed")
+              || everyday_phrase3(tokens, "hard", "water", "ruining")
+              || everyday_phrase4(tokens, "ruined", "by", "hard", "water"))
+        && !(has_word(tokens, "toilet") || has_word(tokens, "shower") || has_word(tokens, "bath") || has_word(tokens, "tap")
+              || has_word(tokens, "taps") || has_word(tokens, "iron") || has_pair(tokens, "washing", "machine")
+              || has_word(tokens, "coffee") || has_word(tokens, "dishwasher") || has_word(tokens, "bleach")
+              || has_word(tokens, "ammonia") || has_word(tokens, "electrical") || has_word(tokens, "cord")
+              || has_word(tokens, "plug") || has_word(tokens, "base") || has_word(tokens, "outside")
+              || has_word(tokens, "exterior") || has_word(tokens, "fire") || has_word(tokens, "leaking")
+              || has_word(tokens, "leak") || has_word(tokens, "rust") || has_word(tokens, "rusty") || has_word(tokens, "toxic")
+              || has_word(tokens, "poisoned") || has_pair(tokens, "with", "soap")) {
+        return pair("descale-kettle", "Half fill the kettle with equal parts water and white vinegar, or a sachet of citric acid, boil it and leave it half an hour, then tip it out and boil fresh water twice before you use it again. In a hard-water area do it every couple of months: the scale forms because hard water leaves calcium behind as it boils, and a thick layer makes the kettle slow and puts a scum on the tea.");
+    }
+
+    // cooking_entries.py: rice-rinse
+    if (has_word(tokens, "rice") || has_word(tokens, "basmati") || has_word(tokens, "jasmine"))
+        && (has_word(tokens, "rinse") || has_word(tokens, "rinsing") || has_word(tokens, "wash")
+              || has_word(tokens, "washing") || has_word(tokens, "washed"))
+        && !(has_word(tokens, "cooker") || has_word(tokens, "pot") || has_word(tokens, "pan") || has_word(tokens, "machine")
+              || has_word(tokens, "appliance") || has_pair(tokens, "the", "washing")
+              || has_pair(tokens, "washing", "up") || has_word(tokens, "laundry") || has_word(tokens, "clothes")
+              || has_word(tokens, "dishes") || has_pair(tokens, "is", "done") || has_pair(tokens, "done", "yet")
+              || has_word(tokens, "line") || has_word(tokens, "basket") || has_word(tokens, "darks")
+              || has_word(tokens, "lights") || has_word(tokens, "phone") || has_word(tokens, "mobile")
+              || has_word(tokens, "leftover") || has_word(tokens, "yesterday") || has_word(tokens, "reheat")
+              || has_word(tokens, "baby")) {
+        return pair("rice-rinse", "For a risotto or a rice pudding, don't rinse it: that surface starch is what makes it creamy. For separate, fluffy grains, rinse in a sieve until the water runs clear, which washes the starch off. It was never about hygiene.");
+    }
+
+    // cooking_entries.py: rice-portion
+    if (has_word(tokens, "rice") || has_word(tokens, "basmati") || has_word(tokens, "jasmine"))
+        && (has_word(tokens, "portion") || has_word(tokens, "portions") || has_word(tokens, "serving")
+              || has_word(tokens, "servings") || has_pair(tokens, "per", "person") || has_pair(tokens, "per", "adult")
+              || everyday_phrase3(tokens, "for", "one", "person")
+              || everyday_phrase3(tokens, "for", "two", "people"))
+        && !(has_word(tokens, "leftover") || has_word(tokens, "leftovers") || has_word(tokens, "yesterday")
+              || has_pair(tokens, "left", "out") || has_word(tokens, "overnight") || has_word(tokens, "reheat")
+              || has_word(tokens, "reheating") || has_word(tokens, "sushi") || has_word(tokens, "risotto")
+              || has_word(tokens, "pudding") || has_word(tokens, "paella") || has_word(tokens, "wild")
+              || has_word(tokens, "cauliflower") || has_word(tokens, "noodle") || has_word(tokens, "noodles")
+              || has_word(tokens, "phone") || has_word(tokens, "mobile") || has_word(tokens, "battery")
+              || has_word(tokens, "microwave") || has_word(tokens, "cooker") || has_pair(tokens, "instant", "pot")
+              || has_word(tokens, "steamer") || has_word(tokens, "water")) {
+        return pair("rice-portion", "Allow about 75g of dry rice per person, or a mugful for two: it swells to two or three times its size, and leftover rice is better under- than over-estimated.");
+    }
+
+    // cooking_entries.py: rice-sticky
+    if has_word(tokens, "rice")
+        && (has_word(tokens, "sticky") || has_word(tokens, "sticking") || has_word(tokens, "sticks")
+              || has_word(tokens, "mushy") || has_word(tokens, "gluey") || has_word(tokens, "clumpy")
+              || has_word(tokens, "clumps"))
+        && (has_word(tokens, "why") || has_word(tokens, "stop") || has_word(tokens, "stops") || has_word(tokens, "prevent")
+              || has_word(tokens, "avoid") || has_word(tokens, "keeps") || has_word(tokens, "gone")
+              || has_word(tokens, "always") || has_word(tokens, "too") || has_pair(tokens, "came", "out")
+              || has_pair(tokens, "comes", "out"))
+        && !(has_word(tokens, "leftover") || has_word(tokens, "leftovers") || has_word(tokens, "yesterday")
+              || has_pair(tokens, "left", "out") || has_word(tokens, "overnight") || has_word(tokens, "reheat")
+              || has_word(tokens, "reheating") || has_word(tokens, "sushi") || has_word(tokens, "risotto")
+              || has_word(tokens, "pudding") || has_word(tokens, "paella") || has_word(tokens, "wild")
+              || has_word(tokens, "cauliflower") || has_word(tokens, "noodle") || has_word(tokens, "noodles")
+              || has_word(tokens, "phone") || has_word(tokens, "mobile") || has_word(tokens, "battery")
+              || has_word(tokens, "microwave") || has_word(tokens, "cooker") || has_pair(tokens, "instant", "pot")
+              || has_word(tokens, "steamer")) {
+        return pair("rice-sticky", "Rinse the rice until the water runs clear, cook it 1 part rice to 1.5 parts water with the lid on, and leave it alone: 12 minutes on a low simmer, then 10 minutes off the heat. Stirring while it cooks is what makes rice gluey.");
+    }
+
+    // cooking_entries.py: rice-fluffy
+    if (has_word(tokens, "rice") || has_word(tokens, "basmati") || has_word(tokens, "jasmine"))
+        && (has_word(tokens, "fluffy") || has_word(tokens, "separate") || has_word(tokens, "perfect"))
+        && !(has_word(tokens, "sticky") || has_word(tokens, "sushi") || has_word(tokens, "pudding")
+              || has_word(tokens, "risotto") || has_word(tokens, "paella") || has_word(tokens, "mushy")
+              || has_word(tokens, "stuck") || has_word(tokens, "burnt") || has_word(tokens, "microwave")
+              || has_word(tokens, "leftover") || has_word(tokens, "reheat") || has_pair(tokens, "how", "long")
+              || has_pair(tokens, "per", "person") || has_word(tokens, "freeze") || has_word(tokens, "yesterday")
+              || has_word(tokens, "yesterdays") || has_pair(tokens, "last", "night")
+              || has_pair(tokens, "this", "morning") || everyday_phrase3(tokens, "the", "day", "before")
+              || has_pair(tokens, "day", "before") || everyday_phrase3(tokens, "the", "day", "after")
+              || has_pair(tokens, "day", "after") || has_pair(tokens, "day", "later")
+              || everyday_phrase3(tokens, "a", "day", "later") || has_pair(tokens, "days", "ago")
+              || everyday_phrase5(tokens, "a", "couple", "of", "days", "ago")
+              || everyday_phrase3(tokens, "2", "days", "ago") || everyday_phrase3(tokens, "two", "days", "ago")
+              || has_pair(tokens, "good", "for") || has_word(tokens, "leftovers") || has_pair(tokens, "left", "out")
+              || has_word(tokens, "overnight") || has_word(tokens, "reheating") || has_word(tokens, "wild")
+              || has_word(tokens, "cauliflower") || has_word(tokens, "noodle") || has_word(tokens, "noodles")
+              || has_word(tokens, "phone") || has_word(tokens, "mobile") || has_word(tokens, "battery")
+              || has_word(tokens, "cooker") || has_pair(tokens, "instant", "pot") || has_word(tokens, "steamer")) {
+        return pair("rice-fluffy", "Rinse it until the water runs clear, use 1 part rice to 1.5 parts water, bring it to a boil, then turn it right down, put the lid on and leave it 10 minutes without stirring. Take it off the heat and let it sit 5 minutes with the lid on, then fork it through from the bottom - that steam is what makes the grains separate.");
+    }
+
+    // cooking_entries.py: rice-water
+    if (has_word(tokens, "rice") || has_word(tokens, "basmati") || has_word(tokens, "jasmine"))
+        && (has_word(tokens, "water") || has_word(tokens, "ratio") || has_pair(tokens, "how", "long")
+              || has_word(tokens, "cook") || has_word(tokens, "cooking") || has_word(tokens, "boil")
+              || has_word(tokens, "boiling") || has_word(tokens, "prepare") || has_word(tokens, "make")
+              || has_word(tokens, "minutes") || has_word(tokens, "time"))
+        && !(has_word(tokens, "fridge") || has_word(tokens, "keep") || has_word(tokens, "keeps")
+              || has_word(tokens, "leftover") || has_pair(tokens, "left", "out") || has_word(tokens, "freeze")
+              || has_word(tokens, "freezer") || has_pair(tokens, "leave", "it")
+              || everyday_phrase3(tokens, "leave", "it", "in") || everyday_phrase3(tokens, "left", "it", "in")
+              || has_word(tokens, "phone") || has_word(tokens, "mobile") || has_word(tokens, "iphone")
+              || has_word(tokens, "device") || has_word(tokens, "battery") || has_word(tokens, "bath")
+              || has_pair(tokens, "water", "damage") || everyday_phrase3(tokens, "wont", "turn", "on")
+              || has_word(tokens, "drained") || has_word(tokens, "pudding") || has_word(tokens, "paella")
+              || has_word(tokens, "risotto") || has_word(tokens, "pilau") || has_word(tokens, "sushi")
+              || has_word(tokens, "milk") || has_word(tokens, "sugar") || has_word(tokens, "cooker")
+              || has_word(tokens, "microwave") || has_word(tokens, "pressure") || has_word(tokens, "steamer")
+              || has_word(tokens, "instant") || has_word(tokens, "uncooked") || has_word(tokens, "store")
+              || has_word(tokens, "storing") || has_word(tokens, "stored") || has_word(tokens, "last")
+              || has_word(tokens, "lasts") || has_word(tokens, "jar") || has_word(tokens, "airtight")
+              || has_word(tokens, "wild") || has_word(tokens, "cauliflower") || has_word(tokens, "noodles")
+              || has_word(tokens, "leftovers") || has_word(tokens, "yesterday") || has_word(tokens, "overnight")
+              || has_word(tokens, "reheat") || has_word(tokens, "reheating") || has_word(tokens, "noodle")
+              || has_word(tokens, "cost") || has_word(tokens, "price") || has_word(tokens, "grow") || has_word(tokens, "grew")
+              || has_word(tokens, "grown") || has_word(tokens, "growing") || has_word(tokens, "cultivate")
+              || has_word(tokens, "paddy") || has_word(tokens, "paddies") || has_word(tokens, "farm")
+              || has_word(tokens, "salad") || has_word(tokens, "flour") || has_pair(tokens, "rice", "paper")
+              || has_word(tokens, "pasta") || has_word(tokens, "bake") || has_word(tokens, "baked") || has_word(tokens, "fried")
+              || has_word(tokens, "fry")) {
+        if has_word(tokens, "brown") || has_word(tokens, "wholegrain") || has_pair(tokens, "whole", "grain") {
+            return pair("brown-rice", "Brown rice takes 25 to 30 minutes, with a little more water: 1 part rice to 2 parts water, lid on, low simmer. Let it sit 5 minutes off the heat, still covered, before you fork it through. White long grain is 1 part rice to 1.5 parts water for 12 minutes, then 10 minutes off the heat. Too much water is what turns rice to porridge.");
+        } else if has_pair(tokens, "how", "long") || has_word(tokens, "minutes") || has_word(tokens, "time") {
+            return pair("rice-water", "White long grain takes 10 to 12 minutes on a low simmer with the lid on, then 10 more off the heat. Use 1 part rice to about 1.5 parts water by volume, or the fingertip test: water one knuckle above the rice. Brown and wholegrain are the ones that take longer. Too much water is what turns rice to porridge.");
+        } else {
+            return pair("rice-water", "Use 1 part rice to about 1.5 parts water by volume for long grain, or the fingertip test: water one knuckle above the rice, and give it 12 minutes on a low simmer with the lid on, then 10 more off the heat. Brown and wholegrain rice are the ones that take longer. Too much water is what turns rice to porridge.");
+        }
+    }
+
+    // cooking_entries.py: quinoa
+    if has_word(tokens, "quinoa")
+        && (has_word(tokens, "cook") || has_word(tokens, "cooking") || has_word(tokens, "water")
+              || has_word(tokens, "bitter") || has_pair(tokens, "how", "long") || has_word(tokens, "simmer"))
+        && !(has_pair(tokens, "salad", "dressing") || has_word(tokens, "grow") || has_word(tokens, "grown")
+              || has_word(tokens, "farm") || has_word(tokens, "price") || has_word(tokens, "cost") || has_word(tokens, "cooker")
+              || has_word(tokens, "microwave") || has_word(tokens, "leftover") || has_word(tokens, "leftovers")) {
+        return pair("quinoa", "Rinse quinoa well, simmer it in twice its volume of salted water for 15 minutes, then drain and let it steam with the lid on for 5. Rinsing takes off the bitter coating; the grains are done when the little tails pop out.");
+    }
+
+    // cooking_entries.py: couscous
+    if has_word(tokens, "couscous")
+        && (has_word(tokens, "cook") || has_word(tokens, "cooking") || has_word(tokens, "fluffy")
+              || has_word(tokens, "lumpy") || everyday_phrase3(tokens, "how", "much", "water")
+              || everyday_phrase3(tokens, "how", "to", "prepare"))
+        && !(has_word(tokens, "pearl") || has_word(tokens, "giant") || has_word(tokens, "israeli")
+              || has_word(tokens, "leftover") || has_word(tokens, "leftovers") || has_word(tokens, "microwave")
+              || has_word(tokens, "cooker")) {
+        return pair("couscous", "Pour boiling water or stock over the couscous to just cover it, cover the bowl and leave it 5 minutes, then fork it through with a little olive oil. Never stir it with a spoon: that's what makes it clumpy.");
+    }
+
+    // cooking_entries.py: simmer-or-boil
+    if (has_word(tokens, "simmer") || has_word(tokens, "simmering") || has_word(tokens, "simmered"))
+        && (has_word(tokens, "boil") || has_word(tokens, "boiling") || has_word(tokens, "boils")
+              || has_word(tokens, "difference") || has_word(tokens, "rolling") || has_word(tokens, "gentle")
+              || has_word(tokens, "mean") || has_word(tokens, "means"))
+        && !(has_pair(tokens, "soup", "maker") || has_pair(tokens, "slow", "cooker")
+              || has_pair(tokens, "air", "fryer") || has_word(tokens, "metaphor") || has_word(tokens, "figuratively")) {
+        return pair("simmer-or-boil", "A boil is a churn of big bubbles you cannot stir down; a simmer is a lazy tremble of small bubbles, about 90C against 100C. Stews, sauces and rice want the simmer, because a hard boil toughens meat and breaks the grains, while pasta and potatoes want the boil. When in doubt turn it down until the bubbles just keep coming.");
+    }
+
+    // cooking_entries.py: pasta-rinse
+    if (has_word(tokens, "pasta") || has_word(tokens, "spaghetti") || has_word(tokens, "penne")
+              || has_word(tokens, "macaroni") || has_word(tokens, "linguine") || has_word(tokens, "fusilli")
+              || has_word(tokens, "tagliatelle"))
+        && (has_word(tokens, "rinse") || has_word(tokens, "rinsing") || has_word(tokens, "wash")
+              || has_word(tokens, "washing"))
+        && (has_word(tokens, "rinse") || has_word(tokens, "rinsing") || has_word(tokens, "rinsed")
+              || has_word(tokens, "wash") || has_word(tokens, "washing") || has_word(tokens, "washed")
+              || has_pair(tokens, "cold", "water") || everyday_phrase3(tokens, "with", "cold", "water")
+              || everyday_phrase3(tokens, "under", "cold", "water") || has_word(tokens, "tap")
+              || has_word(tokens, "salad") || has_pair(tokens, "can", "i") || has_pair(tokens, "can", "we")
+              || has_pair(tokens, "could", "i") || everyday_phrase3(tokens, "is", "it", "ok")
+              || everyday_phrase3(tokens, "is", "it", "okay") || has_pair(tokens, "ok", "to")
+              || has_pair(tokens, "okay", "to"))
+        && !(has_pair(tokens, "left", "out") || has_word(tokens, "leftover") || has_pair(tokens, "left", "over")
+              || has_word(tokens, "reheat") || has_word(tokens, "fridge") || has_word(tokens, "freezer")
+              || has_word(tokens, "freeze") || has_pair(tokens, "how", "long") || has_word(tokens, "tomorrow")
+              || has_word(tokens, "sauce") || has_word(tokens, "bake") || has_word(tokens, "oven") || has_word(tokens, "cheese")
+              || has_word(tokens, "jar") || has_word(tokens, "jars") || has_word(tokens, "tinned") || has_word(tokens, "tin")
+              || has_word(tokens, "pan") || has_word(tokens, "dishwasher") || has_word(tokens, "stain")
+              || has_word(tokens, "shirt")) {
+        return pair("pasta-rinse", "No, pasta does not need rinsing: it comes out of the pot already wet, and rinsing cools it and washes off the surface starch that makes a sauce cling. Drain it and toss it straight into the sauce, keeping a mugful of the cooking water to loosen things if it looks dry. The one exception is pasta for a cold salad, where a quick rinse under cold water stops it clumping - then drain it well and dress it while it is still slightly warm so it takes up the dressing.");
+    }
+
+    // cooking_entries.py: pasta-portion
+    if (has_word(tokens, "pasta") || has_word(tokens, "spaghetti") || has_word(tokens, "penne"))
+        && (has_pair(tokens, "per", "person") || has_word(tokens, "portion") || has_word(tokens, "portions")
+              || has_word(tokens, "serving") || has_word(tokens, "servings") || has_pair(tokens, "per", "adult"))
+        && !(has_word(tokens, "sauce") || has_word(tokens, "dressing") || has_word(tokens, "salad")
+              || has_word(tokens, "water") || has_word(tokens, "pan") || has_word(tokens, "salted") || has_word(tokens, "salt")
+              || has_word(tokens, "boiling") || has_word(tokens, "protein") || has_word(tokens, "calories")) {
+        return pair("pasta-portion", "Allow 75 to 100g of dry pasta per person as a main, or 50g as a starter: a bunch of spaghetti as thick as a 10p coin is about 80g. Pasta roughly doubles in weight when cooked, so a 500g packet feeds four or five.");
+    }
+
+    // cooking_entries.py: pasta-water
+    if (has_word(tokens, "pasta") || has_word(tokens, "spaghetti") || has_word(tokens, "penne")
+              || has_word(tokens, "macaroni") || has_word(tokens, "fusilli"))
+        && (everyday_phrase3(tokens, "how", "much", "water")
+              || everyday_phrase3(tokens, "litres", "of", "water")
+              || everyday_phrase3(tokens, "liters", "of", "water")
+              || everyday_phrase3(tokens, "how", "much", "salt")
+              || everyday_phrase3(tokens, "salt", "the", "water"))
+        && !(has_pair(tokens, "per", "person") || has_word(tokens, "portion") || has_word(tokens, "sauce")
+              || has_word(tokens, "dressing") || has_word(tokens, "salad") || has_word(tokens, "bake")
+              || has_word(tokens, "lasagne") || has_word(tokens, "lasagna") || has_word(tokens, "soup")
+              || has_word(tokens, "pudding") || has_pair(tokens, "how", "long") || has_word(tokens, "gluten")
+              || everyday_phrase4(tokens, "pasta", "water", "for", "plants")
+              || everyday_phrase3(tokens, "water", "my", "plants") || has_word(tokens, "washing")
+              || has_word(tokens, "wash") || has_word(tokens, "leftover") || has_word(tokens, "leftovers")) {
+        return pair("pasta-water", "About a litre of water for every 100g of pasta: a big pan filled about two thirds, at a rolling boil before the pasta goes in, and a teaspoon of salt per four litres. Keep it boiling and stir for the first minute so the pieces do not stick together - there is no need for oil in the water, which only makes the sauce slide off.");
+    }
+
+    // cooking_entries.py: avocado-ripen
+    if (has_word(tokens, "avocado") || has_word(tokens, "avocados"))
+        && (has_word(tokens, "ripen") || has_word(tokens, "ripening") || has_word(tokens, "ripe")
+              || has_word(tokens, "hard") || has_word(tokens, "unripe")
+              || everyday_phrase3(tokens, "choose", "a", "good")
+              || everyday_phrase3(tokens, "pick", "a", "good"))
+        && !(has_word(tokens, "tree") || has_word(tokens, "pit") || has_word(tokens, "seed") || has_word(tokens, "grow")
+              || has_word(tokens, "grown") || has_word(tokens, "growing") || has_word(tokens, "plant")
+              || has_pair(tokens, "brown", "inside") || has_word(tokens, "storage")) {
+        return pair("avocado-ripen", "Put a hard avocado in a paper bag with a banana and leave it on the counter for a day or two; the banana's gas speeds it up. Once it gives slightly at the stem end it's ready, and lemon juice stops a cut one going brown.");
+    }
+
+    // cooking_entries.py: banana-ripe
+    if (has_word(tokens, "banana") || has_word(tokens, "bananas"))
+        && (has_word(tokens, "ripen") || has_word(tokens, "ripening") || has_word(tokens, "ripe")
+              || has_word(tokens, "unripe") || has_pair(tokens, "too", "green") || has_pair(tokens, "still", "green")
+              || has_word(tokens, "soften"))
+        && !(has_word(tokens, "plant") || has_word(tokens, "plants") || has_word(tokens, "tree")
+              || has_word(tokens, "bread") || has_word(tokens, "cake") || has_word(tokens, "peel") || has_word(tokens, "flies")
+              || has_word(tokens, "garden")) {
+        return pair("banana-ripe", "Bananas ripen fastest in a paper bag on the counter, especially with an apple; the fridge slows them right down but turns the skin black. Black-spotted skin is a sweet banana, and overripe ones are perfect for banana bread.");
+    }
+
+    // cooking_entries.py: butter-soften
+    if has_word(tokens, "butter")
+        && (has_word(tokens, "soften") || has_word(tokens, "softening")
+              || everyday_phrase3(tokens, "hard", "to", "spread") || has_pair(tokens, "too", "hard")
+              || has_pair(tokens, "room", "temperature"))
+        && !(has_pair(tokens, "how", "long") || has_word(tokens, "keep") || has_word(tokens, "keeps")
+              || has_word(tokens, "keeping") || has_word(tokens, "last") || has_word(tokens, "lasts")
+              || has_pair(tokens, "still", "good") || has_pair(tokens, "gone", "off") || has_pair(tokens, "go", "off")
+              || has_pair(tokens, "shelf", "life") || has_word(tokens, "fridge") || has_word(tokens, "freeze")
+              || has_word(tokens, "frozen") || everyday_phrase4(tokens, "safe", "to", "leave", "out")
+              || has_pair(tokens, "leave", "out") || has_word(tokens, "peanut") || has_word(tokens, "almond")
+              || has_word(tokens, "shea") || has_word(tokens, "cocoa") || has_pair(tokens, "body", "butter")) {
+        return pair("butter-soften", "Cut cold butter into small cubes and leave it 15 minutes, or grate it; both soften it fast without melting it. Don't microwave it, because butter that's too warm splits a cake mix.");
+    }
+    args_new()
+}

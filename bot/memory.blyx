@@ -1,0 +1,16 @@
+use understanding::input;
+
+pub fn introduction(tokens: arglist) -> i64 {
+    if has_word(tokens, "not") || has_word(tokens, "don't") || has_word(tokens, "dont") { return -1; }
+    let mut i = 0;
+    while i < word_count(tokens) {
+        if word(tokens, i) == "my" && word(tokens, i + 1) == "name" && word(tokens, i + 2) == "is" && name_token(tokens, i + 3) {
+            return i + 3;
+        }
+        if word(tokens, i) == "call" && word(tokens, i + 1) == "me" && name_token(tokens, i + 2) { return i + 2; }
+        if (word(tokens, i) == "i'm" || word(tokens, i) == "im") && name_token(tokens, i + 1) && is_titlecase(tokens, i + 1) { return i + 1; }
+        if word(tokens, i) == "i" && word(tokens, i + 1) == "am" && name_token(tokens, i + 2) && is_titlecase(tokens, i + 2) { return i + 2; }
+        i += 1;
+    }
+    return -1;
+}

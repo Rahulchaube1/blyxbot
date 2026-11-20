@@ -1,0 +1,84 @@
+use std::cli;
+use std::text;
+use bot::chat;
+use bot::understanding::text;
+use bot::knowledge::capitals;
+use tests::topics;
+use tests::replies;
+
+fn equal(label: str, actual: str, expected: str) {
+    if actual != expected {
+        stderr_line(text_concat("Failed: ", label));
+        stderr_line(text_concat("Expected: ", expected));
+        stderr_line(text_concat("Received: ", actual));
+        process_exit(1);
+    }
+}
+
+fn check_replies() -> i64 {
+    let examples = split_text(reply_examples(), "\n");
+    let mut i = 0;
+    while i < args_len(examples) {
+        let fields = split_text(args_at(examples, i), "|");
+        let prompt = args_at(fields, 0);
+        equal(prompt, args_at(turn(prompt, "", ""), 2), args_at(fields, 1));
+        i += 1;
+    }
+    i
+}
+
+fn check_topics() -> i64 {
+    let examples = split_text(topic_examples(), "\n");
+    let mut i = 0;
+    while i < args_len(examples) {
+        let fields = split_text(args_at(examples, i), "|");
+        let prompt = args_at(fields, 2);
+        equal(prompt, args_at(turn(prompt, "", args_at(fields, 1)), 1), args_at(fields, 0));
+        i += 1;
+    }
+    i
+}
+
+fn check_places() -> i64 {
+    let entries = split_text(capital_table(), "\n");
+    let mut i = 0;
+    while i < args_len(entries) {
+        let fields = split_text(args_at(entries, i), "|");
+        let prompt = text_concat("What is the capital of ", text_concat(args_at(fields, 0), "?"));
+        equal(prompt, args_at(turn(prompt, "", ""), 2), args_at(fields, 1));
+        i += 1;
+    }
+    i
+}
+
+fn check_conversation() {
+    let intro = turn("Hi, I’m Zoë.", "", "");
+    equal("introduction", args_at(intro, 0), "Zoë");
+    let recall = turn("What's my name?", args_at(intro, 0), args_at(intro, 1));
+    equal("remember name", args_at(recall, 2), "You're Zoë.");
+    let forgot = turn("Forget my name.", args_at(recall, 0), args_at(recall, 1));
+    equal("forget name", args_at(forgot, 0), "");
+    equal("independent session", args_at(turn("What's my name?", "", ""), 2), "You haven't told me your name yet.");
+    let kettle = turn("How do I descale a kettle?", "", "");
+    equal("use previous topic", args_at(turn("How long does that take?", "", args_at(kettle, 1)), 2), "Half an hour.");
+    equal("switch topic", args_at(turn("How long does rice take?", "", args_at(kettle, 1)), 1), "rice-water");
+    let mut long = "";
+    let mut count = 0;
+    while count < 220 { long = text_concat(long, "sun "); count += 1; }
+    let response = turn(long, "Mira", "");
+    equal("long input preserves name", args_at(response, 0), "Mira");
+    equal("long input", args_at(response, 2), "Could you send that in two shorter messages? This one exceeds my per-turn input budget.");
+    equal("unmatched phrase", args_at(turn("Capital of the Roman Empire?", "", ""), 1), "fallback");
+    equal("unclosed group", args_at(turn("2 * (3 + 4", "", ""), 1), "fallback");
+}
+
+fn main() {
+    let replies = check_replies();
+    let topics = check_topics();
+    let places = check_places();
+    check_conversation();
+    println!(text_concat(integer_text(replies), " exact replies passed"));
+    println!(text_concat(integer_text(topics), " topic examples passed"));
+    println!(text_concat(integer_text(places), " capital lookups passed"));
+    println!("Conversation memory, follow-ups, input limits, and fallback checks passed");
+}

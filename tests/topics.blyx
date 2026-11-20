@@ -1,0 +1,83 @@
+// Each row records the expected topic, the previous topic, and the next message.
+pub fn topic_examples() -> str {
+    "sky-blue||Why is the sky blue?
+sky-green||Why isn't the sky green?
+sky-dark||Why is the sky dark at night?
+sunset-red||Why are sunsets red?
+sunrise-east||Which direction does the sun rise?
+sun-distance||How far away is the Sun?
+light-year||What is a light year?
+moon-horizon||Why does the moon look bigger on the horizon?
+moon-size||How big is the Moon?
+space-dark||Why is space dark?
+star-twinkle||Why do stars twinkle?
+stars-night||Why can't I see the stars in the daytime?
+north-star||How do I find the North Star?
+gravity-space||Why do astronauts float in space?
+earth-spin||Why does Earth spin?
+summer-hot||Why is summer warmer than winter?
+popcorn-pop||Why does popcorn pop?
+ice-floats||Why does ice float?
+ocean-blue||Why is the ocean blue?
+sea-salty||Why is the sea salty?
+rain||How does rain form?
+thunder||What causes thunder?
+sound-travel||How fast does sound travel?
+birds-migrate||Why do birds migrate?
+photosynthesis||What is photosynthesis?
+plants-make-food||How do plants make their own food?
+green-plants||Why are leaves green?
+rainbow||How do rainbows form?
+onion-cry||Why do onions make you cry?
+descale-kettle||My kettle is full of limescale. How do I get rid of it?
+descale-kettle|descale-kettle|how long does that take
+descale-kettle|descale-kettle|And how often should I repeat that?
+rice-water|descale-kettle|How long does rice take?
+brown-rice||How long should I cook brown rice?
+rice-water||How much water do I need for basmati rice?
+rice-rinse||Should I rinse my rice before I cook it?
+rice-portion||How much rice per person?
+rice-sticky||Why is my rice always sticky?
+rice-fluffy||How do I make rice fluffy?
+quinoa||How do you cook quinoa?
+couscous||How do I cook couscous?
+simmer-or-boil||What is the difference between simmering and boiling?
+pasta-rinse||Should I rinse spaghetti?
+pasta-portion||How much pasta per person?
+pasta-water||How much water for pasta?
+avocado-ripen||How can I ripen an avocado?
+banana-ripe||How do I ripen green bananas?
+butter-soften||How can I soften cold butter?
+houseplants-watering||How do I care for a houseplant?
+houseplant-light||How much light does my houseplant need?
+plant-pothos||How do I water pothos?
+plant-snake-plant||How do I water my snake plant?
+houseplant-yellow-leaves||Why are my monstera leaves turning yellow?
+repot-a-plant||How do I repot a houseplant?
+cactus-care||How often should I water a cactus?
+watering-plants||When should I water my potted plants?
+fallback||My dog ate an onion and has watering eyes
+capitals||Tell me the capital of Spain
+fallback||How do I care for a cat?
+fallback||Why is my shirt sky blue?
+fallback||How do I descale a shower with my kettle?
+fallback||What time does the sun rise?
+fallback|descale-kettle|How long does a train take?
+fallback||How long does that take?
+fallback||My phone fell in water. How long in rice?
+fallback||How long should I cook wild rice?
+fallback||Does a telescope make the moon look bigger?
+fallback||Why is the sea noisy?
+fallback||Write a poem about why stars twinkle.
+fallback||Does the dark sky mean a storm is coming?
+fallback||My houseplant is toxic to my cat?
+fallback||Why do baby birds leave the nest?
+fallback||How do I care for a lawn in winter?
+fallback||What is a pasta meal with onions?
+fallback||Why did the stars win the game last night?
+fallback||Why is a rainbow called a rainbow?
+fallback||Why do the stars move at night?
+light-year||What is a light-year?
+fallback||Why do owls hunt in the night sky?
+fallback||Is rice growing in water?"
+}

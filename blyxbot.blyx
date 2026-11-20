@@ -1,0 +1,44 @@
+use std::cli;
+use std::text;
+use bot::chat;
+use bot::terminal;
+
+fn usage() {
+    println!("BlyxBot\n  blyxbot                 Start a conversation\n  blyxbot -p \"message\"    Ask a single question\n  blyxbot -v               Show the selected topic");
+}
+
+fn main() {
+    let args = cli_args();
+    if args_len(args) == 4 && args_at(args, 0) == "--wire" {
+        let result = turn(args_at(args, 1), args_at(args, 2), args_at(args, 3));
+        println!(args_at(result, 0));
+        println!(args_at(result, 1));
+        println!(args_at(result, 2));
+        return;
+    }
+    let mut verbose = false;
+    let mut has_prompt = false;
+    let mut prompt = "";
+    let mut pos = 0;
+    while pos < args_len(args) {
+        let flag = args_at(args, pos);
+        if flag == "--help" || flag == "-h" { usage(); return; }
+        if flag == "--verbose" || flag == "-v" {
+            verbose = true;
+        } else if (flag == "-p" || flag == "--prompt") && pos + 1 < args_len(args) && !has_prompt {
+            pos += 1;
+            has_prompt = true;
+            prompt = args_at(args, pos);
+        } else {
+            stderr_line(text_concat("Unknown or incomplete option: ", flag));
+            process_exit(2);
+        }
+        pos += 1;
+    }
+    if has_prompt {
+        if prompt == "" { stderr_line("Enter a message."); process_exit(2); }
+        show_reply(turn(prompt, "", ""), verbose, false);
+    } else {
+        terminal_chat(verbose);
+    }
+}

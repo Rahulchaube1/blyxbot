@@ -1,0 +1,52 @@
+use std::cli;
+use std::text;
+use understanding::text;
+use understanding::input;
+use calendar;
+use arithmetic;
+use geography;
+use everyday;
+use memory;
+
+fn response(tokens: arglist, name: str, previous_topic: str, introduced: bool, forgot: bool) -> arglist {
+    if input_oversized(tokens) { return pair("chat", "Could you send that in two shorter messages? This one exceeds my per-turn input budget."); }
+    if forgot { return pair("memory", "I've forgotten your name."); }
+    if has_pair(tokens, "my", "name") && (has_word(tokens, "what") || has_word(tokens, "whats") || has_word(tokens, "remember") || has_word(tokens, "recall") || has_word(tokens, "know")) {
+        if name == "" { return pair("memory", "You haven't told me your name yet."); }
+        return pair("memory", text_concat("You're ", text_concat(name, ".")));
+    }
+    if introduced { return pair("memory", text_concat("Nice to meet you, ", text_concat(name, ". What can I help with?"))); }
+    if has_pair(tokens, "your", "name") || has_pair(tokens, "who", "are") && has_word(tokens, "you") || has_word(tokens, "introduce") && has_word(tokens, "yourself") {
+        return pair("chat", "I'm BlyxBot, a rule-based chatbot written in Blyx.");
+    }
+    let cal = answer_calendar(tokens);
+    if args_len(cal) > 0 { return cal; }
+    let math = answer_math(tokens);
+    if args_len(math) > 0 { return math; }
+    let city = capital_answer(tokens);
+    if city != "" { return pair("capitals", city); }
+    let everyday = everyday_answer(tokens, previous_topic);
+    if args_len(everyday) > 0 { return everyday; }
+    if has_pair(tokens, "you", "do") && has_word(tokens, "what") || word_count(tokens) == 1 && word(tokens, 0) == "help" {
+        return pair("chat", "I can remember your first name, look up national capitals, calculate numbers and dates, and answer everyday questions.");
+    }
+    if has_word(tokens, "hello") || has_word(tokens, "hi") || has_word(tokens, "hey") {
+        if name != "" { return pair("chat", text_concat("Hi, ", text_concat(name, "! What can I help with?"))); }
+        return pair("chat", "Hi! What can I help with?");
+    }
+    if has_word(tokens, "thanks") || has_pair(tokens, "thank", "you") { return pair("chat", "You're welcome."); }
+    if has_word(tokens, "goodbye") || has_word(tokens, "bye") { return pair("chat", "Goodbye!"); }
+    pair("fallback", "I don't know that one yet. You can ask me about everyday science, cooking, capitals, dates, or arithmetic.")
+}
+
+// State is a value owned by this conversation. A turn returns [name, topic, reply].
+pub fn turn(message: str, previous_name: str, previous_topic: str) -> arglist {
+    let tokens = tokenize(message);
+    let index = introduction(tokens);
+    let forgot = has_word(tokens, "forget") && has_pair(tokens, "my", "name");
+    let mut name = previous_name;
+    if index >= 0 { name = raw_word(tokens, index); }
+    if forgot { name = ""; }
+    let result = response(tokens, name, previous_topic, index >= 0, forgot);
+    args_concat(args_push(args_new(), name), result)
+}

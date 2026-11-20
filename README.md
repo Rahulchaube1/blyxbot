@@ -1,48 +1,80 @@
 # BlyxBot
 
-BlyxBot is a rule-based chatbot written in [Blyx](https://github.com/Rahulchaube1/blyxxxx). The terminal and browser run the same `.blyx` rules through the official WebAssembly interpreter. JavaScript handles input, output and saving conversation state.
+BlyxBot is a rule-based chatbot written in Blyx. You can talk to it in a terminal or a browser. Both entry points call the same conversation engine, which reads the question, picks a reply and carries your name and the current topic into the next turn.
 
-## Run it
+```text
+You       My name is Mira.
+BlyxBot   Nice to meet you, Mira. What can I help with?
+You       What's my name?
+BlyxBot   You're Mira.
+You       What is 17 times 24?
+BlyxBot   That's 408.
+```
 
-With Node.js 18 or later, clone this repository and run
+## Run the terminal chat
+
+On GNU/Linux, install Rust 1.90 or later with Cargo and a native linker. Then install the Blyx compiler revision that supports native text, command-line and file operations. The interactive terminal uses GNU coreutils to read one line at a time. [Blyx compiler](https://github.com/Rahulchaube1/blyxxxx/tree/3a4a089145d589448a7f6aae228c01fcbd7733c8)
 
 ```sh
+cargo install --locked --git https://github.com/Rahulchaube1/blyxxxx --rev 3a4a089145d589448a7f6aae228c01fcbd7733c8 blyxc
 git clone https://github.com/Rahulchaube1/blyxbot.git
 cd blyxbot
-npm start
+mkdir -p build
+blyxc build blyxbot.blyx -o build/blyxbot
+./build/blyxbot
 ```
 
-Type a message and press Enter. Use `/reset` to clear the conversation and `/exit` to quit. For a single reply or a piped conversation, use
+Type a message and press Enter. Use `/reset` for a fresh conversation and `/exit` to quit. For a single answer or a batch of messages, run
 
 ```sh
-node cli.mjs -p "What is 17 times 24?"
-printf '%s\n' "My name is Mira" "What's my name?" | node cli.mjs
+./build/blyxbot -p "What is the capital of Peru?"
+printf '%s\n' "My name is Mira" "What's my name?" | ./build/blyxbot
 ```
 
-For the interactive browser interface, run `npm run web` and open the URL it prints. The browser stores chat history on the device. The `web/` directory can also be served by a static web host. All fonts, rules and the interpreter are bundled with the project.
+## Run the browser chat
 
-## Port coverage
-
-This is a working port of selected features from Hugging Face’s 528-module PyBot. It supports
-
-- First-name introductions, recall and forgetting a name
-- National capital answers for all 274 country names and aliases in the original table
-- Arithmetic with signed decimals, grouping, percentages and operator precedence
-- Gregorian leap years, month lengths and Easter dates
-- 52 everyday knowledge cards, including cooking, plant care and science, plus two kettle-descaling follow-ups
-
-The original arbiter, general conversation memory and remaining specialist modules are outside this version’s coverage. The released Blyx interpreter supports a smaller set of text and collection operations than those Python modules use. [Upstream PyBot](https://github.com/huggingface/pybot/tree/7d63c7fbebb44c7e466e5c8b5c1f341ab767929e)
-
-## Run a turn with the Blyx CLI
-
-The portable interpreter takes a parameterless `main()`. The input adapter supplies each message as literal data. To inspect a complete turn or execute it with `blyxc` 0.2.0, run
+Compile the web entry point and serve it locally with a CGI-enabled BusyBox HTTP server. On Debian or Ubuntu, the `busybox-static` package provides the server.
 
 ```sh
-node cli.mjs --emit-blyx "What is the capital of Peru?" > turn.blyx
-blyxc check turn.blyx
-blyxc run turn.blyx
+mkdir -p build/cgi-bin
+blyxc build web.blyx -o build/cgi-bin/chat
+busybox httpd -f -p 127.0.0.1:8080 -h build
 ```
 
-The program prints the remembered name on the first line, the selected topic on the second, and the reply after that. A new conversation has a blank first line. In a normal chat the interface handles these fields for you.
+Open [the local chat](http://127.0.0.1:8080/cgi-bin/chat). Type a question and press Enter or choose **Send**. The page carries the last 20 exchanges and the conversation state between turns. **New chat** clears both. The Blyx executable renders the form and replies directly, including when browser scripting is disabled.
 
-Run `npm test` to check chat, arithmetic, calendar dates, capital matching, everyday prompts and the terminal entry point. The bot source is in [web/bot](web/bot). [Source credits and licenses](web/credits.txt)
+## Find your way around
+
+| File or directory | What you'll find |
+| --- | --- |
+| [blyxbot.blyx](blyxbot.blyx) and [web.blyx](web.blyx) | Terminal and browser entry points |
+| [bot/chat.blyx](bot/chat.blyx) and [bot/memory.blyx](bot/memory.blyx) | Reply selection, introductions, name recall and forgetting |
+| [bot/understanding/](bot/understanding) | Tokenization, word matching and number parsing |
+| [bot/knowledge/](bot/knowledge) | The capital table and Gregorian date calculations |
+| [bot/](bot) | Handlers for geography, arithmetic, dates, science, cooking, plants and follow-up questions |
+| [test.blyx](test.blyx) and [tests/](tests) | The test runner and example conversations |
+
+Every application and test source file here uses the `.blyx` extension. GitHub's Linguist catalog does not currently include Blyx, so GitHub can leave the repository's Languages panel empty. [Linguist language catalog](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml)
+
+## What you can ask
+
+| Topic | Try it |
+| --- | --- |
+| Place capitals | “What is the capital of New Zealand?” The table covers all 274 place names and aliases in PyBot's original capitals table. |
+| Arithmetic | “What is 12 percent of 250?” Signed decimals, parentheses and operator precedence work too. |
+| Calendar | “When is Easter in 2026?” The bot also calculates leap years and month lengths. |
+| Everyday knowledge | “Why do onions make you cry?” or “How often should I water a cactus?” There are 52 science, kitchen and plant topics. |
+| Follow-ups | Ask “How do I descale a kettle?” and then “How long does that take?” |
+| Name memory | Say “My name is Mira”, ask “What's my name?”, then say “Forget my name”. |
+
+BlyxBot ports these features from Hugging Face's PyBot. The larger Python project has 528 modules. Its general conversation engine and remaining specialist topics are outside this port's coverage. The adapted knowledge and rules are distributed under Apache 2.0. [Original PyBot revision](https://github.com/huggingface/pybot/tree/7d63c7fbebb44c7e466e5c8b5c1f341ab767929e) · [License](LICENSE)
+
+## Run the tests
+
+```sh
+mkdir -p build
+blyxc build test.blyx -o build/tests
+./build/tests
+```
+
+The suite checks exact replies, topic selection, every capital lookup, and multi-turn conversations. It exits with the first question and mismatched answer if a check fails.
