@@ -1,0 +1,17 @@
+// throat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_throat(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05547508
+    if sense == 1 {
+        return "noun\tthe passage to the stomach and lungs; in the front part of the neck below the chin and above the collarbone\tpharynx\t";
+    }
+    // noun 04428920
+    if sense == 2 {
+        return "noun\tan opening in the vamp of a shoe at the instep\t\t";
+    }
+    // noun 04428763
+    if sense == 3 {
+        return "noun\ta passage resembling a throat in shape or function\t\tthe throat of the vase";
+    }
+    ""
+}

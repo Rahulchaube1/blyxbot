@@ -1,0 +1,21 @@
+// shout — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shout(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00912473
+    if sense == 1 {
+        return "verb\tutter in a loud voice; talk in a loud voice (usually denoting characteristic manner of speaking)\t\tMy grandmother is hard of hearing--you'll have to shout";
+    }
+    // verb 00913065
+    if sense == 2 {
+        return "verb\tutter a sudden loud cry\tshout out, cry, call, yell, scream, holler, hollo, squall\t";
+    }
+    // noun 07120524
+    if sense == 3 {
+        return "noun\ta loud utterance; often in protest or opposition\tcry, outcry, call, yell, vociferation\t";
+    }
+    // verb 00912048
+    if sense == 4 {
+        return "verb\tutter aloud; often with surprise, horror, or joy\texclaim, cry, cry out, outcry, call out\t`I'm here,' the mother shouted when she saw her child looking lost";
+    }
+    ""
+}

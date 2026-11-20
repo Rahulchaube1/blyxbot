@@ -1,0 +1,21 @@
+// quality — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_quality(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04723816
+    if sense == 1 {
+        return "noun\tan essential and distinguishing attribute of something or someone\t\tthe quality of mercy is not strained";
+    }
+    // noun 04728068
+    if sense == 2 {
+        return "noun\ta degree or grade of excellence or worth\tcaliber, calibre\tthe quality of students has risen";
+    }
+    // noun 05849284
+    if sense == 3 {
+        return "noun\ta characteristic property that defines the apparent individual nature of something\tcharacter, lineament\teach town has a quality all its own";
+    }
+    // noun 04987620
+    if sense == 4 {
+        return "noun\t(music) the distinctive property of a complex sound (a voice or noise or musical sound)\ttimbre, timber, tone\t";
+    }
+    ""
+}

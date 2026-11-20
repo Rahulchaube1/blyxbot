@@ -1,0 +1,17 @@
+// combat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_combat(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00964343
+    if sense == 1 {
+        return "noun\tan engagement fought between two military forces\tarmed combat\t";
+    }
+    // verb 01092366
+    if sense == 2 {
+        return "verb\tbattle or contend against in or as if in a battle\tbattle\tThe Kurds are combating Iraqi troops in Northern Iraq";
+    }
+    // noun 01170962
+    if sense == 3 {
+        return "noun\tthe act of fighting; any contest or struggle\tfight, fighting, scrap\t";
+    }
+    ""
+}

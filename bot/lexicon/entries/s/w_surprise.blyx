@@ -1,0 +1,21 @@
+// surprise — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_surprise(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00725274
+    if sense == 1 {
+        return "verb\tcause to be surprised\t\tThe news really surprised me";
+    }
+    // noun 07510348
+    if sense == 2 {
+        return "noun\tthe astonishment you feel when something totally unexpected happens to you\t\t";
+    }
+    // noun 07298154
+    if sense == 3 {
+        return "noun\ta sudden unexpected event\t\t";
+    }
+    // verb 02596493
+    if sense == 4 {
+        return "verb\tcome upon or take unawares\t\tShe surprised the couple";
+    }
+    ""
+}

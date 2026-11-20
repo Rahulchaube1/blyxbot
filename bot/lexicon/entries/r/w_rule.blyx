@@ -1,0 +1,41 @@
+// rule — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rule(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 05846054
+    if sense == 1 {
+        return "noun\ta principle or condition that customarily governs behavior\tregulation\tit was his rule to take a walk before breakfast";
+    }
+    // noun 05667613
+    if sense == 2 {
+        return "noun\tsomething regarded as a normative example\tconvention, normal, pattern, formula\tviolence is the rule not the exception";
+    }
+    // verb 02586619
+    if sense == 3 {
+        return "verb\texercise authority over; as of nations\tgovern\t";
+    }
+    // noun 06652242
+    if sense == 4 {
+        return "noun\tprescribed guide for conduct or action\tprescript\t";
+    }
+    // verb 00715868
+    if sense == 5 {
+        return "verb\tdecide with authority\tdecree\t";
+    }
+    // noun 07259772
+    if sense == 6 {
+        return "noun\t(linguistics) a rule describing (or prescribing) a linguistic practice\tlinguistic rule\t";
+    }
+    // noun 05913538
+    if sense == 7 {
+        return "noun\ta basic generalization that is accepted as true and that can be used as a basis for reasoning or conduct\tprinciple\t";
+    }
+    // verb 02644234
+    if sense == 8 {
+        return "verb\tbe larger in number, quantity, power, status or importance\tpredominate, dominate, reign, prevail\t";
+    }
+    // verb 00971999
+    if sense == 9 {
+        return "verb\tdecide on and make a declaration about\tfind\t";
+    }
+    ""
+}

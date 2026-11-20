@@ -1,0 +1,596 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::s::w_safe;
+use entries::s::w_sale;
+use entries::s::w_salesman;
+use entries::s::w_saline;
+use entries::s::w_same;
+use entries::s::w_sample;
+use entries::s::w_satisfactory;
+use entries::s::w_satisfy;
+use entries::s::w_saturday;
+use entries::s::w_save;
+use entries::s::w_say;
+use entries::s::w_scale;
+use entries::s::w_scene;
+use entries::s::w_schedule;
+use entries::s::w_school;
+use entries::s::w_scientific;
+use entries::s::w_score;
+use entries::s::w_scream;
+use entries::s::w_sea;
+use entries::s::w_search;
+use entries::s::w_season;
+use entries::s::w_seat;
+use entries::s::w_second;
+use entries::s::w_secret;
+use entries::s::w_secretary;
+use entries::s::w_section;
+use entries::s::w_secure;
+use entries::s::w_security;
+use entries::s::w_see;
+use entries::s::w_seek;
+use entries::s::w_seem;
+use entries::s::w_seize;
+use entries::s::w_select;
+use entries::s::w_self;
+use entries::s::w_sell;
+use entries::s::w_send;
+use entries::s::w_sense;
+use entries::s::w_sensitive;
+use entries::s::w_sentence;
+use entries::s::w_separate;
+use entries::s::w_sequence;
+use entries::s::w_series;
+use entries::s::w_serious;
+use entries::s::w_seriously;
+use entries::s::w_serum;
+use entries::s::w_serve;
+use entries::s::w_service;
+use entries::s::w_services;
+use entries::s::w_session;
+use entries::s::w_set;
+use entries::s::w_set_up;
+use entries::s::w_settle;
+use entries::s::w_seven;
+use entries::s::w_several;
+use entries::s::w_sex;
+use entries::s::w_shade;
+use entries::s::w_shadow;
+use entries::s::w_shake;
+use entries::s::w_shape;
+use entries::s::w_share;
+use entries::s::w_sharp;
+use entries::s::w_shear;
+use entries::s::w_sheet;
+use entries::s::w_shell;
+use entries::s::w_shelter;
+use entries::s::w_shift;
+use entries::s::w_shine;
+use entries::s::w_ship;
+use entries::s::w_shock;
+use entries::s::w_shoe;
+use entries::s::w_shoot;
+use entries::s::w_shooting;
+use entries::s::w_short;
+use entries::s::w_shot;
+use entries::s::w_shoulder;
+use entries::s::w_shout;
+use entries::s::w_show;
+use entries::s::w_shut;
+use entries::s::w_side;
+use entries::s::w_sigh;
+use entries::s::w_sight;
+use entries::s::w_sign;
+use entries::s::w_signal;
+use entries::s::w_significance;
+use entries::s::w_significant;
+use entries::s::w_silence;
+use entries::s::w_silent;
+use entries::s::w_similar;
+use entries::s::w_similarly;
+use entries::s::w_simple;
+use entries::s::w_simply;
+use entries::s::w_simultaneously;
+use entries::s::w_sin;
+use entries::s::w_sing;
+use entries::s::w_single;
+use entries::s::w_sink;
+use entries::s::w_sister;
+use entries::s::w_sit;
+use entries::s::w_sit_down;
+use entries::s::w_site;
+use entries::s::w_situation;
+use entries::s::w_six;
+use entries::s::w_size;
+use entries::s::w_sketch;
+use entries::s::w_skill;
+use entries::s::w_sky;
+use entries::s::w_sleep;
+use entries::s::w_slide;
+use entries::s::w_slightly;
+use entries::s::w_slip;
+use entries::s::w_slow;
+use entries::s::w_slowly;
+use entries::s::w_small;
+use entries::s::w_smaller;
+use entries::s::w_smell;
+use entries::s::w_smile;
+use entries::s::w_smoke;
+use entries::s::w_smooth;
+use entries::s::w_snake;
+use entries::s::w_snap;
+use entries::s::w_snow;
+use entries::s::w_so;
+use entries::s::w_social;
+use entries::s::w_society;
+use entries::s::w_soft;
+use entries::s::w_softly;
+use entries::s::w_soil;
+use entries::s::w_soldier;
+use entries::s::w_solid;
+use entries::s::w_solution;
+use entries::s::w_solve;
+use entries::s::w_some;
+use entries::s::w_somehow;
+use entries::s::w_sometimes;
+use entries::s::w_somewhat;
+use entries::s::w_somewhere;
+use entries::s::w_son;
+use entries::s::w_song;
+use entries::s::w_soon;
+use entries::s::w_sort;
+use entries::s::w_soul;
+use entries::s::w_sound;
+use entries::s::w_source;
+use entries::s::w_south;
+use entries::s::w_southern;
+use entries::s::w_soviet;
+use entries::s::w_space;
+use entries::s::w_spare;
+use entries::s::w_speak;
+use entries::s::w_special;
+use entries::s::w_specialist;
+use entries::s::w_species;
+use entries::s::w_specific;
+use entries::s::w_spectrum;
+use entries::s::w_speech;
+use entries::s::w_speed;
+use entries::s::w_spend;
+use entries::s::w_spirit;
+use entries::s::w_sponsor;
+use entries::s::w_spot;
+use entries::s::w_spread;
+use entries::s::w_spring;
+use entries::s::w_square;
+use entries::s::w_squeeze;
+use entries::s::w_staff;
+use entries::s::w_stage;
+use entries::s::w_stain;
+use entries::s::w_staining;
+use entries::s::w_stand;
+use entries::s::w_stand_up;
+use entries::s::w_standard;
+use entries::s::w_stare;
+use entries::s::w_start;
+use entries::s::w_state;
+use entries::s::w_statement;
+use entries::s::w_station;
+use entries::s::w_status;
+use entries::s::w_stay;
+use entries::s::w_steal;
+use entries::s::w_steel;
+use entries::s::w_stem;
+use entries::s::w_step;
+use entries::s::w_steps;
+use entries::s::w_stick;
+use entries::s::w_still;
+use entries::s::w_stimulate;
+use entries::s::w_stir;
+use entries::s::w_stock;
+use entries::s::w_stomach;
+use entries::s::w_stone;
+use entries::s::w_stop;
+use entries::s::w_store;
+use entries::s::w_story;
+use entries::s::w_straight;
+use entries::s::w_strain;
+use entries::s::w_strange;
+use entries::s::w_stream;
+use entries::s::w_street;
+use entries::s::w_strength;
+use entries::s::w_strengthen;
+use entries::s::w_stress;
+use entries::s::w_stretch;
+use entries::s::w_strike;
+use entries::s::w_strip;
+use entries::s::w_strong;
+use entries::s::w_structure;
+use entries::s::w_struggle;
+use entries::s::w_student;
+use entries::s::w_study;
+use entries::s::w_stuff;
+use entries::s::w_stumble;
+use entries::s::w_style;
+use entries::s::w_subject;
+use entries::s::w_submit;
+use entries::s::w_substance;
+use entries::s::w_substantial;
+use entries::s::w_substitute;
+use entries::s::w_suburban;
+use entries::s::w_succeed;
+use entries::s::w_success;
+use entries::s::w_successful;
+use entries::s::w_such;
+use entries::s::w_sudden;
+use entries::s::w_suddenly;
+use entries::s::w_suffer;
+use entries::s::w_suffering;
+use entries::s::w_sufficient;
+use entries::s::w_sufficiently;
+use entries::s::w_suggest;
+use entries::s::w_suggestion;
+use entries::s::w_suit;
+use entries::s::w_summer;
+use entries::s::w_sun;
+use entries::s::w_sunday;
+use entries::s::w_superior;
+use entries::s::w_supplement;
+use entries::s::w_supply;
+use entries::s::w_support;
+use entries::s::w_suppose;
+use entries::s::w_sure;
+use entries::s::w_surface;
+use entries::s::w_surprise;
+use entries::s::w_survey;
+use entries::s::w_survive;
+use entries::s::w_swallow;
+use entries::s::w_swear;
+use entries::s::w_sweep;
+use entries::s::w_sweet;
+use entries::s::w_swell;
+use entries::s::w_swing;
+use entries::s::w_symbol;
+use entries::s::w_sympathetic;
+use entries::s::w_sympathy;
+use entries::s::w_system;
+
+fn through_w_scientific(term: str, sense: i64) -> str {
+    if term == "safe" { return w_safe(sense); }
+    if term == "sale" { return w_sale(sense); }
+    if term == "salesman" { return w_salesman(sense); }
+    if term == "saline" { return w_saline(sense); }
+    if term == "same" { return w_same(sense); }
+    if term == "sample" { return w_sample(sense); }
+    if term == "satisfactory" { return w_satisfactory(sense); }
+    if term == "satisfy" { return w_satisfy(sense); }
+    if term == "saturday" { return w_saturday(sense); }
+    if term == "save" { return w_save(sense); }
+    if term == "say" { return w_say(sense); }
+    if term == "scale" { return w_scale(sense); }
+    if term == "scene" { return w_scene(sense); }
+    if term == "schedule" { return w_schedule(sense); }
+    if term == "school" { return w_school(sense); }
+    if term == "scientific" { return w_scientific(sense); }
+    ""
+}
+
+fn through_w_seize(term: str, sense: i64) -> str {
+    if term == "score" { return w_score(sense); }
+    if term == "scream" { return w_scream(sense); }
+    if term == "sea" { return w_sea(sense); }
+    if term == "search" { return w_search(sense); }
+    if term == "season" { return w_season(sense); }
+    if term == "seat" { return w_seat(sense); }
+    if term == "second" { return w_second(sense); }
+    if term == "secret" { return w_secret(sense); }
+    if term == "secretary" { return w_secretary(sense); }
+    if term == "section" { return w_section(sense); }
+    if term == "secure" { return w_secure(sense); }
+    if term == "security" { return w_security(sense); }
+    if term == "see" { return w_see(sense); }
+    if term == "seek" { return w_seek(sense); }
+    if term == "seem" { return w_seem(sense); }
+    if term == "seize" { return w_seize(sense); }
+    ""
+}
+
+fn through_w_services(term: str, sense: i64) -> str {
+    if term == "select" { return w_select(sense); }
+    if term == "self" { return w_self(sense); }
+    if term == "sell" { return w_sell(sense); }
+    if term == "send" { return w_send(sense); }
+    if term == "sense" { return w_sense(sense); }
+    if term == "sensitive" { return w_sensitive(sense); }
+    if term == "sentence" { return w_sentence(sense); }
+    if term == "separate" { return w_separate(sense); }
+    if term == "sequence" { return w_sequence(sense); }
+    if term == "series" { return w_series(sense); }
+    if term == "serious" { return w_serious(sense); }
+    if term == "seriously" { return w_seriously(sense); }
+    if term == "serum" { return w_serum(sense); }
+    if term == "serve" { return w_serve(sense); }
+    if term == "service" { return w_service(sense); }
+    if term == "services" { return w_services(sense); }
+    ""
+}
+
+fn through_w_shell(term: str, sense: i64) -> str {
+    if term == "session" { return w_session(sense); }
+    if term == "set" { return w_set(sense); }
+    if term == "set up" { return w_set_up(sense); }
+    if term == "settle" { return w_settle(sense); }
+    if term == "seven" { return w_seven(sense); }
+    if term == "several" { return w_several(sense); }
+    if term == "sex" { return w_sex(sense); }
+    if term == "shade" { return w_shade(sense); }
+    if term == "shadow" { return w_shadow(sense); }
+    if term == "shake" { return w_shake(sense); }
+    if term == "shape" { return w_shape(sense); }
+    if term == "share" { return w_share(sense); }
+    if term == "sharp" { return w_sharp(sense); }
+    if term == "shear" { return w_shear(sense); }
+    if term == "sheet" { return w_sheet(sense); }
+    if term == "shell" { return w_shell(sense); }
+    ""
+}
+
+fn through_w_sigh(term: str, sense: i64) -> str {
+    if term == "shelter" { return w_shelter(sense); }
+    if term == "shift" { return w_shift(sense); }
+    if term == "shine" { return w_shine(sense); }
+    if term == "ship" { return w_ship(sense); }
+    if term == "shock" { return w_shock(sense); }
+    if term == "shoe" { return w_shoe(sense); }
+    if term == "shoot" { return w_shoot(sense); }
+    if term == "shooting" { return w_shooting(sense); }
+    if term == "short" { return w_short(sense); }
+    if term == "shot" { return w_shot(sense); }
+    if term == "shoulder" { return w_shoulder(sense); }
+    if term == "shout" { return w_shout(sense); }
+    if term == "show" { return w_show(sense); }
+    if term == "shut" { return w_shut(sense); }
+    if term == "side" { return w_side(sense); }
+    if term == "sigh" { return w_sigh(sense); }
+    ""
+}
+
+fn through_w_sink(term: str, sense: i64) -> str {
+    if term == "sight" { return w_sight(sense); }
+    if term == "sign" { return w_sign(sense); }
+    if term == "signal" { return w_signal(sense); }
+    if term == "significance" { return w_significance(sense); }
+    if term == "significant" { return w_significant(sense); }
+    if term == "silence" { return w_silence(sense); }
+    if term == "silent" { return w_silent(sense); }
+    if term == "similar" { return w_similar(sense); }
+    if term == "similarly" { return w_similarly(sense); }
+    if term == "simple" { return w_simple(sense); }
+    if term == "simply" { return w_simply(sense); }
+    if term == "simultaneously" { return w_simultaneously(sense); }
+    if term == "sin" { return w_sin(sense); }
+    if term == "sing" { return w_sing(sense); }
+    if term == "single" { return w_single(sense); }
+    if term == "sink" { return w_sink(sense); }
+    ""
+}
+
+fn through_w_slowly(term: str, sense: i64) -> str {
+    if term == "sister" { return w_sister(sense); }
+    if term == "sit" { return w_sit(sense); }
+    if term == "sit down" { return w_sit_down(sense); }
+    if term == "site" { return w_site(sense); }
+    if term == "situation" { return w_situation(sense); }
+    if term == "six" { return w_six(sense); }
+    if term == "size" { return w_size(sense); }
+    if term == "sketch" { return w_sketch(sense); }
+    if term == "skill" { return w_skill(sense); }
+    if term == "sky" { return w_sky(sense); }
+    if term == "sleep" { return w_sleep(sense); }
+    if term == "slide" { return w_slide(sense); }
+    if term == "slightly" { return w_slightly(sense); }
+    if term == "slip" { return w_slip(sense); }
+    if term == "slow" { return w_slow(sense); }
+    if term == "slowly" { return w_slowly(sense); }
+    ""
+}
+
+fn through_w_soldier(term: str, sense: i64) -> str {
+    if term == "small" { return w_small(sense); }
+    if term == "smaller" { return w_smaller(sense); }
+    if term == "smell" { return w_smell(sense); }
+    if term == "smile" { return w_smile(sense); }
+    if term == "smoke" { return w_smoke(sense); }
+    if term == "smooth" { return w_smooth(sense); }
+    if term == "snake" { return w_snake(sense); }
+    if term == "snap" { return w_snap(sense); }
+    if term == "snow" { return w_snow(sense); }
+    if term == "so" { return w_so(sense); }
+    if term == "social" { return w_social(sense); }
+    if term == "society" { return w_society(sense); }
+    if term == "soft" { return w_soft(sense); }
+    if term == "softly" { return w_softly(sense); }
+    if term == "soil" { return w_soil(sense); }
+    if term == "soldier" { return w_soldier(sense); }
+    ""
+}
+
+fn through_w_south(term: str, sense: i64) -> str {
+    if term == "solid" { return w_solid(sense); }
+    if term == "solution" { return w_solution(sense); }
+    if term == "solve" { return w_solve(sense); }
+    if term == "some" { return w_some(sense); }
+    if term == "somehow" { return w_somehow(sense); }
+    if term == "sometimes" { return w_sometimes(sense); }
+    if term == "somewhat" { return w_somewhat(sense); }
+    if term == "somewhere" { return w_somewhere(sense); }
+    if term == "son" { return w_son(sense); }
+    if term == "song" { return w_song(sense); }
+    if term == "soon" { return w_soon(sense); }
+    if term == "sort" { return w_sort(sense); }
+    if term == "soul" { return w_soul(sense); }
+    if term == "sound" { return w_sound(sense); }
+    if term == "source" { return w_source(sense); }
+    if term == "south" { return w_south(sense); }
+    ""
+}
+
+fn through_w_spot(term: str, sense: i64) -> str {
+    if term == "southern" { return w_southern(sense); }
+    if term == "soviet" { return w_soviet(sense); }
+    if term == "space" { return w_space(sense); }
+    if term == "spare" { return w_spare(sense); }
+    if term == "speak" { return w_speak(sense); }
+    if term == "special" { return w_special(sense); }
+    if term == "specialist" { return w_specialist(sense); }
+    if term == "species" { return w_species(sense); }
+    if term == "specific" { return w_specific(sense); }
+    if term == "spectrum" { return w_spectrum(sense); }
+    if term == "speech" { return w_speech(sense); }
+    if term == "speed" { return w_speed(sense); }
+    if term == "spend" { return w_spend(sense); }
+    if term == "spirit" { return w_spirit(sense); }
+    if term == "sponsor" { return w_sponsor(sense); }
+    if term == "spot" { return w_spot(sense); }
+    ""
+}
+
+fn through_w_station(term: str, sense: i64) -> str {
+    if term == "spread" { return w_spread(sense); }
+    if term == "spring" { return w_spring(sense); }
+    if term == "square" { return w_square(sense); }
+    if term == "squeeze" { return w_squeeze(sense); }
+    if term == "staff" { return w_staff(sense); }
+    if term == "stage" { return w_stage(sense); }
+    if term == "stain" { return w_stain(sense); }
+    if term == "staining" { return w_staining(sense); }
+    if term == "stand" { return w_stand(sense); }
+    if term == "stand up" { return w_stand_up(sense); }
+    if term == "standard" { return w_standard(sense); }
+    if term == "stare" { return w_stare(sense); }
+    if term == "start" { return w_start(sense); }
+    if term == "state" { return w_state(sense); }
+    if term == "statement" { return w_statement(sense); }
+    if term == "station" { return w_station(sense); }
+    ""
+}
+
+fn through_w_store(term: str, sense: i64) -> str {
+    if term == "status" { return w_status(sense); }
+    if term == "stay" { return w_stay(sense); }
+    if term == "steal" { return w_steal(sense); }
+    if term == "steel" { return w_steel(sense); }
+    if term == "stem" { return w_stem(sense); }
+    if term == "step" { return w_step(sense); }
+    if term == "steps" { return w_steps(sense); }
+    if term == "stick" { return w_stick(sense); }
+    if term == "still" { return w_still(sense); }
+    if term == "stimulate" { return w_stimulate(sense); }
+    if term == "stir" { return w_stir(sense); }
+    if term == "stock" { return w_stock(sense); }
+    if term == "stomach" { return w_stomach(sense); }
+    if term == "stone" { return w_stone(sense); }
+    if term == "stop" { return w_stop(sense); }
+    if term == "store" { return w_store(sense); }
+    ""
+}
+
+fn through_w_student(term: str, sense: i64) -> str {
+    if term == "story" { return w_story(sense); }
+    if term == "straight" { return w_straight(sense); }
+    if term == "strain" { return w_strain(sense); }
+    if term == "strange" { return w_strange(sense); }
+    if term == "stream" { return w_stream(sense); }
+    if term == "street" { return w_street(sense); }
+    if term == "strength" { return w_strength(sense); }
+    if term == "strengthen" { return w_strengthen(sense); }
+    if term == "stress" { return w_stress(sense); }
+    if term == "stretch" { return w_stretch(sense); }
+    if term == "strike" { return w_strike(sense); }
+    if term == "strip" { return w_strip(sense); }
+    if term == "strong" { return w_strong(sense); }
+    if term == "structure" { return w_structure(sense); }
+    if term == "struggle" { return w_struggle(sense); }
+    if term == "student" { return w_student(sense); }
+    ""
+}
+
+fn through_w_suddenly(term: str, sense: i64) -> str {
+    if term == "study" { return w_study(sense); }
+    if term == "stuff" { return w_stuff(sense); }
+    if term == "stumble" { return w_stumble(sense); }
+    if term == "style" { return w_style(sense); }
+    if term == "subject" { return w_subject(sense); }
+    if term == "submit" { return w_submit(sense); }
+    if term == "substance" { return w_substance(sense); }
+    if term == "substantial" { return w_substantial(sense); }
+    if term == "substitute" { return w_substitute(sense); }
+    if term == "suburban" { return w_suburban(sense); }
+    if term == "succeed" { return w_succeed(sense); }
+    if term == "success" { return w_success(sense); }
+    if term == "successful" { return w_successful(sense); }
+    if term == "such" { return w_such(sense); }
+    if term == "sudden" { return w_sudden(sense); }
+    if term == "suddenly" { return w_suddenly(sense); }
+    ""
+}
+
+fn through_w_sure(term: str, sense: i64) -> str {
+    if term == "suffer" { return w_suffer(sense); }
+    if term == "suffering" { return w_suffering(sense); }
+    if term == "sufficient" { return w_sufficient(sense); }
+    if term == "sufficiently" { return w_sufficiently(sense); }
+    if term == "suggest" { return w_suggest(sense); }
+    if term == "suggestion" { return w_suggestion(sense); }
+    if term == "suit" { return w_suit(sense); }
+    if term == "summer" { return w_summer(sense); }
+    if term == "sun" { return w_sun(sense); }
+    if term == "sunday" { return w_sunday(sense); }
+    if term == "superior" { return w_superior(sense); }
+    if term == "supplement" { return w_supplement(sense); }
+    if term == "supply" { return w_supply(sense); }
+    if term == "support" { return w_support(sense); }
+    if term == "suppose" { return w_suppose(sense); }
+    if term == "sure" { return w_sure(sense); }
+    ""
+}
+
+fn through_w_system(term: str, sense: i64) -> str {
+    if term == "surface" { return w_surface(sense); }
+    if term == "surprise" { return w_surprise(sense); }
+    if term == "survey" { return w_survey(sense); }
+    if term == "survive" { return w_survive(sense); }
+    if term == "swallow" { return w_swallow(sense); }
+    if term == "swear" { return w_swear(sense); }
+    if term == "sweep" { return w_sweep(sense); }
+    if term == "sweet" { return w_sweet(sense); }
+    if term == "swell" { return w_swell(sense); }
+    if term == "swing" { return w_swing(sense); }
+    if term == "symbol" { return w_symbol(sense); }
+    if term == "sympathetic" { return w_sympathetic(sense); }
+    if term == "sympathy" { return w_sympathy(sense); }
+    if term == "system" { return w_system(sense); }
+    ""
+}
+
+pub fn lookup_s(term: str, sense: i64) -> str {
+    if term <= "scientific" { return through_w_scientific(term, sense); }
+    if term <= "seize" { return through_w_seize(term, sense); }
+    if term <= "services" { return through_w_services(term, sense); }
+    if term <= "shell" { return through_w_shell(term, sense); }
+    if term <= "sigh" { return through_w_sigh(term, sense); }
+    if term <= "sink" { return through_w_sink(term, sense); }
+    if term <= "slowly" { return through_w_slowly(term, sense); }
+    if term <= "soldier" { return through_w_soldier(term, sense); }
+    if term <= "south" { return through_w_south(term, sense); }
+    if term <= "spot" { return through_w_spot(term, sense); }
+    if term <= "station" { return through_w_station(term, sense); }
+    if term <= "store" { return through_w_store(term, sense); }
+    if term <= "student" { return through_w_student(term, sense); }
+    if term <= "suddenly" { return through_w_suddenly(term, sense); }
+    if term <= "sure" { return through_w_sure(term, sense); }
+    through_w_system(term, sense)
+}
+
+pub fn words_s() -> str {
+    "safe|sale|salesman|saline|same|sample|satisfactory|satisfy|saturday|save|say|scale|scene|schedule|school|scientific|score|scream|sea|search|season|seat|second|secret|secretary|section|secure|security|see|seek|seem|seize|select|self|sell|send|sense|sensitive|sentence|separate|sequence|series|serious|seriously|serum|serve|service|services|session|set|set up|settle|seven|several|sex|shade|shadow|shake|shape|share|sharp|shear|sheet|shell|shelter|shift|shine|ship|shock|shoe|shoot|shooting|short|shot|shoulder|shout|show|shut|side|sigh|sight|sign|signal|significance|significant|silence|silent|similar|similarly|simple|simply|simultaneously|sin|sing|single|sink|sister|sit|sit down|site|situation|six|size|sketch|skill|sky|sleep|slide|slightly|slip|slow|slowly|small|smaller|smell|smile|smoke|smooth|snake|snap|snow|so|social|society|soft|softly|soil|soldier|solid|solution|solve|some|somehow|sometimes|somewhat|somewhere|son|song|soon|sort|soul|sound|source|south|southern|soviet|space|spare|speak|special|specialist|species|specific|spectrum|speech|speed|spend|spirit|sponsor|spot|spread|spring|square|squeeze|staff|stage|stain|staining|stand|stand up|standard|stare|start|state|statement|station|status|stay|steal|steel|stem|step|steps|stick|still|stimulate|stir|stock|stomach|stone|stop|store|story|straight|strain|strange|stream|street|strength|strengthen|stress|stretch|strike|strip|strong|structure|struggle|student|study|stuff|stumble|style|subject|submit|substance|substantial|substitute|suburban|succeed|success|successful|such|sudden|suddenly|suffer|suffering|sufficient|sufficiently|suggest|suggestion|suit|summer|sun|sunday|superior|supplement|supply|support|suppose|sure|surface|surprise|survey|survive|swallow|swear|sweep|sweet|swell|swing|symbol|sympathetic|sympathy|system"
+}

@@ -1,0 +1,29 @@
+// short — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_short(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 01442186
+    if sense == 1 {
+        return "adjective\tprimarily temporal sense; indicating or being or seeming to be limited in duration\t\ta short life";
+    }
+    // adj 01436003
+    if sense == 2 {
+        return "adjective\t(primarily spatial sense) having little length or lacking in length\t\tshort skirts";
+    }
+    // adj 02386612
+    if sense == 3 {
+        return "adjective\tlow in stature; not tall\tlittle\the was short and stocky";
+    }
+    // noun 04204619
+    if sense == 4 {
+        return "noun\tthe location on a baseball field where the shortstop is stationed\t\t";
+    }
+    // adj 02336904
+    if sense == 5 {
+        return "adjective\tnot sufficient to meet a need\tinadequate, poor\tmoney is short";
+    }
+    // adv 00061528
+    if sense == 6 {
+        return "adverb\tquickly and without warning\tabruptly, suddenly, dead\t";
+    }
+    ""
+}

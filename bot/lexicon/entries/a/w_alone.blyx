@@ -1,0 +1,25 @@
+// alone — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_alone(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adv 00008600
+    if sense == 1 {
+        return "adverb\twithout any others being included or involved\tentirely, exclusively, solely, only\tthe burden of proof rests on the prosecution alone";
+    }
+    // adv 00157967
+    if sense == 2 {
+        return "adverb\twithout anybody else or anything else\tsolo, unaccompanied\tthe child stayed home alone";
+    }
+    // adj 02249766
+    if sense == 3 {
+        return "adjective\tisolated from others\t\tcould be alone in a crowded room";
+    }
+    // adj 02251212
+    if sense == 4 {
+        return "adjective\tlacking companions or companionship\tlone, lonely, solitary\the was alone when we met him";
+    }
+    // adj 01862697
+    if sense == 5 {
+        return "adjective\texclusive of anyone or anything else\tonly\tshe alone believed him";
+    }
+    ""
+}

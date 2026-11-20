@@ -1,0 +1,33 @@
+// occupy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_occupy(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02415831
+    if sense == 1 {
+        return "verb\tkeep busy with\tbusy\t";
+    }
+    // verb 02648639
+    if sense == 2 {
+        return "verb\tlive (in a certain place)\treside, lodge in\the occupies two rooms on the top floor";
+    }
+    // verb 02649042
+    if sense == 3 {
+        return "verb\toccupy the whole of\tfill\t";
+    }
+    // verb 02678438
+    if sense == 4 {
+        return "verb\tbe on the mind of\tconcern, interest, worry\t";
+    }
+    // verb 01126360
+    if sense == 5 {
+        return "verb\tmarch aggressively into another's territory by military force for the purposes of conquest and occupation\tinvade\t";
+    }
+    // verb 02267989
+    if sense == 6 {
+        return "verb\trequire (time or space)\ttake, use up\tThis event occupied a very short time";
+    }
+    // verb 00600370
+    if sense == 7 {
+        return "verb\tconsume all of one's attention or time\tabsorb, engross, engage\t";
+    }
+    ""
+}

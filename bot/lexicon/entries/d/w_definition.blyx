@@ -1,0 +1,13 @@
+// definition — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_definition(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 06744396
+    if sense == 1 {
+        return "noun\ta concise explanation of the meaning of a word or phrase or symbol\t\t";
+    }
+    // noun 04702957
+    if sense == 2 {
+        return "noun\tclarity of outline\t\texercise had given his muscles superior definition";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// prepare — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_prepare(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00406243
+    if sense == 1 {
+        return "verb\tmake ready or suitable or equip in advance for a particular purpose or for some use, event, etc\tfix, set up, ready, gear up, set\tprepare for war";
+    }
+    // verb 01664172
+    if sense == 2 {
+        return "verb\tprepare for eating by applying heat\tcook, fix, ready, make\t";
+    }
+    // verb 01754271
+    if sense == 3 {
+        return "verb\tto prepare verbally, either for written or spoken delivery\t\tprepare a report";
+    }
+    // verb 01651444
+    if sense == 4 {
+        return "verb\tarrange by systematic planning and united effort\torganize, organise, devise, get up, machinate\t";
+    }
+    // verb 02387034
+    if sense == 5 {
+        return "verb\teducate for a future role or function\tgroom, train\tThe prince was prepared to become King one day";
+    }
+    // verb 00603298
+    if sense == 6 {
+        return "verb\tcreate by training and teaching\ttrain, develop, educate\t";
+    }
+    ""
+}

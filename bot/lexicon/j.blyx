@@ -1,0 +1,41 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::j::w_jerk;
+use entries::j::w_jew;
+use entries::j::w_jewish;
+use entries::j::w_job;
+use entries::j::w_join;
+use entries::j::w_joy;
+use entries::j::w_judge;
+use entries::j::w_judgment;
+use entries::j::w_jump;
+use entries::j::w_june;
+use entries::j::w_jury;
+use entries::j::w_just;
+use entries::j::w_justice;
+use entries::j::w_justify;
+
+fn through_w_justify(term: str, sense: i64) -> str {
+    if term == "jerk" { return w_jerk(sense); }
+    if term == "jew" { return w_jew(sense); }
+    if term == "jewish" { return w_jewish(sense); }
+    if term == "job" { return w_job(sense); }
+    if term == "join" { return w_join(sense); }
+    if term == "joy" { return w_joy(sense); }
+    if term == "judge" { return w_judge(sense); }
+    if term == "judgment" { return w_judgment(sense); }
+    if term == "jump" { return w_jump(sense); }
+    if term == "june" { return w_june(sense); }
+    if term == "jury" { return w_jury(sense); }
+    if term == "just" { return w_just(sense); }
+    if term == "justice" { return w_justice(sense); }
+    if term == "justify" { return w_justify(sense); }
+    ""
+}
+
+pub fn lookup_j(term: str, sense: i64) -> str {
+    through_w_justify(term, sense)
+}
+
+pub fn words_j() -> str {
+    "jerk|jew|jewish|job|join|joy|judge|judgment|jump|june|jury|just|justice|justify"
+}

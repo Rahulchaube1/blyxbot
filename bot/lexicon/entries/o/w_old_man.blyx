@@ -1,0 +1,17 @@
+// old man — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_old_man(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10375506
+    if sense == 1 {
+        return "noun\ta man who is very old\tgreybeard, graybeard, Methuselah\t";
+    }
+    // noun 10375214
+    if sense == 2 {
+        return "noun\ta familiar term of address for a man\told boy\t";
+    }
+    // noun 10375402
+    if sense == 3 {
+        return "noun\tan informal term for your father\t\t";
+    }
+    ""
+}

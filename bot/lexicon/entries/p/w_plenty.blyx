@@ -1,0 +1,17 @@
+// plenty — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_plenty(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05115568
+    if sense == 1 {
+        return "noun\ta full supply\tplentifulness, plenteousness, plenitude, plentitude\tthere was plenty of food for everyone";
+    }
+    // adv 00145713
+    if sense == 2 {
+        return "adverb\tas much as necessary\tenough\tI've had plenty, thanks";
+    }
+    // noun 13774404
+    if sense == 3 {
+        return "noun\t(often followed by `of') a large number or amount or extent\tbatch, deal, flock, good deal, great deal, hatful, heap, lot, mass, mess, mickle, mint, mountain, muckle, passel, peck, pile, pot, quite a little, raft, sight, slew, spate, stack, tidy sum, wad\tit must have cost plenty";
+    }
+    ""
+}

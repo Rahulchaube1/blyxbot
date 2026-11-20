@@ -1,0 +1,29 @@
+// divide — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_divide(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02467662
+    if sense == 1 {
+        return "verb\tseparate into parts or portions\tsplit, split up, separate, dissever, carve up\tdivide the cake into three equal parts";
+    }
+    // verb 00642098
+    if sense == 2 {
+        return "verb\tperform a division\tfraction\tCan you divide 49 by seven?";
+    }
+    // verb 02621853
+    if sense == 3 {
+        return "verb\tact as a barrier between; stand between\tseparate\tThe mountain range divides the two countries";
+    }
+    // verb 01557774
+    if sense == 4 {
+        return "verb\tcome apart\tseparate, part\t";
+    }
+    // verb 02031158
+    if sense == 5 {
+        return "verb\tmake a division or separation\tseparate\t";
+    }
+    // verb 01556921
+    if sense == 6 {
+        return "verb\tforce, take, or pull apart\tseparate, disunite, part\t";
+    }
+    ""
+}

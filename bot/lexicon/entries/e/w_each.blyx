@@ -1,0 +1,13 @@
+// each — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_each(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02269635
+    if sense == 1 {
+        return "adjective\t(used of count nouns) every one considered individually\t\teach person is mortal";
+    }
+    // adv 00239908
+    if sense == 2 {
+        return "adverb\tto or from every one of two or more (considered individually)\tto each one, for each one, from each one, apiece\tthey received $10 each";
+    }
+    ""
+}

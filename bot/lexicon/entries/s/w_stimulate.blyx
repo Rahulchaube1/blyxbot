@@ -1,0 +1,29 @@
+// stimulate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stimulate(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00503164
+    if sense == 1 {
+        return "verb\tact as a stimulant\texcite\tThe book stimulated her imagination";
+    }
+    // verb 00770437
+    if sense == 2 {
+        return "verb\tcause to do; cause to act in a specified manner\tinduce, cause, have, get, make\t";
+    }
+    // verb 01761706
+    if sense == 3 {
+        return "verb\tstir the feelings, emotions, or peace of\tshake, shake up, excite, stir\t";
+    }
+    // verb 00022686
+    if sense == 4 {
+        return "verb\tcause to be alert and energetic\tarouse, brace, energize, energise, perk up\tCoffee and tea stimulate me";
+    }
+    // verb 01644522
+    if sense == 5 {
+        return "verb\tcause to occur rapidly\tinduce, rush, hasten\t";
+    }
+    // verb 02116118
+    if sense == 6 {
+        return "verb\tstir feelings in\texcite, stir\tstimulate my appetite";
+    }
+    ""
+}

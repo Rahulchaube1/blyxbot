@@ -1,0 +1,21 @@
+// pocket — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pocket(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 03972524
+    if sense == 1 {
+        return "noun\ta small pouch inside a garment for carrying small articles\t\t";
+    }
+    // noun 13914473
+    if sense == 2 {
+        return "noun\tan enclosed space\tpouch, sac, sack\tthe trapped miners found a pocket of air";
+    }
+    // noun 13356774
+    if sense == 3 {
+        return "noun\ta supply of money\t\tthey dipped into the taxpayers' pockets";
+    }
+    // verb 02278592
+    if sense == 4 {
+        return "verb\tput in one's pocket\t\tHe pocketed the change";
+    }
+    ""
+}

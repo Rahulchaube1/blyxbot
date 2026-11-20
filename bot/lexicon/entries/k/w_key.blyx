@@ -1,0 +1,29 @@
+// key — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_key(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 03613294
+    if sense == 1 {
+        return "noun\tmetal device shaped in such a way that when it is inserted into the appropriate lock the lock's mechanism can be rotated\t\t";
+    }
+    // adj 01277097
+    if sense == 2 {
+        return "adjective\tserving as an essential component\tcardinal, central, fundamental, primal\t";
+    }
+    // noun 05794057
+    if sense == 3 {
+        return "noun\tsomething crucial for explaining\t\tthe key to development is economic integration";
+    }
+    // noun 04986147
+    if sense == 4 {
+        return "noun\tpitch of the voice\t\the spoke in a low key";
+    }
+    // noun 06863751
+    if sense == 5 {
+        return "noun\tany of 24 major or minor diatonic scales that provide the tonal framework for a piece of music\ttonality\t";
+    }
+    // verb 00652346
+    if sense == 6 {
+        return "verb\tidentify as in botany or biology, for example\tidentify, discover, key out, distinguish, describe, name\t";
+    }
+    ""
+}

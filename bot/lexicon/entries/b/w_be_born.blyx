@@ -1,0 +1,9 @@
+// be born — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_be_born(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00360932
+    if sense == 1 {
+        return "verb\tcome into existence through birth\t\t";
+    }
+    ""
+}

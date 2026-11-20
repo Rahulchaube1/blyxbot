@@ -1,0 +1,17 @@
+// impose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_impose(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02560424
+    if sense == 1 {
+        return "verb\tcompel to behave in a certain way\tenforce\tSocial relations impose courtesy";
+    }
+    // verb 00748282
+    if sense == 2 {
+        return "verb\timpose something unpleasant\tinflict, bring down, visit\t";
+    }
+    // verb 02306462
+    if sense == 3 {
+        return "verb\timpose and collect\tlevy\t";
+    }
+    ""
+}

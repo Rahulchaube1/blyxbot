@@ -1,0 +1,17 @@
+// federal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_federal(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01106129
+    if sense == 1 {
+        return "adjective\tnational; especially in reference to the government of the United States as distinct from that of its member units\t\tthe Federal Bureau of Investigation";
+    }
+    // adj 02725829
+    if sense == 2 {
+        return "adjective\tof or relating to the central government of a federation\t\ta federal district is one set aside as the seat of the national government";
+    }
+    // adj 01606214
+    if sense == 3 {
+        return "adjective\tbeing of or having to do with the northern United States and those loyal to the Union during the American Civil War\tUnion\tFederal forces";
+    }
+    ""
+}

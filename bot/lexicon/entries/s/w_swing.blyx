@@ -1,0 +1,57 @@
+// swing — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_swing(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 02087745
+    if sense == 1 {
+        return "verb\tmove in a curve or arc, usually with the intent of hitting\t\tswing a bat";
+    }
+    // verb 01877355
+    if sense == 2 {
+        return "verb\tmove or walk in a swinging or swaying manner\tsway\t";
+    }
+    // verb 01877620
+    if sense == 3 {
+        return "verb\tchange direction with a swinging motion; turn\t\tswing back";
+    }
+    // verb 02537238
+    if sense == 4 {
+        return "verb\tinfluence decisively\tswing over\t";
+    }
+    // verb 01593763
+    if sense == 5 {
+        return "verb\tmake a big sweeping gesture or movement\tsweep, swing out\t";
+    }
+    // verb 02717472
+    if sense == 6 {
+        return "verb\thang freely\tdangle, drop\t";
+    }
+    // verb 01152040
+    if sense == 7 {
+        return "verb\thit or aim at with a sweeping arm movement\t\tThe soccer player began to swing at the referee";
+    }
+    // verb 00557216
+    if sense == 8 {
+        return "verb\talternate dramatically between high and low values\t\this mood swings";
+    }
+    // noun 14009946
+    if sense == 9 {
+        return "noun\ta state of steady vigorous action that is characteristic of an activity\t\tthe party went with a swing";
+    }
+    // noun 04371774
+    if sense == 10 {
+        return "noun\tmechanical device used as a plaything to support someone swinging back and forth\t\t";
+    }
+    // noun 01173660
+    if sense == 11 {
+        return "noun\ta sweeping blow or stroke\t\the took a wild swing at my head";
+    }
+    // noun 00327824
+    if sense == 12 {
+        return "noun\tchanging location by moving back and forth\tswinging, vacillation\t";
+    }
+    // verb 02615140
+    if sense == 13 {
+        return "verb\tlive in a lively, modern, and relaxed style\t\tThe Woodstock generation attempted to swing freely";
+    }
+    ""
+}

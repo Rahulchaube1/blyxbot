@@ -1,0 +1,29 @@
+// dance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dance(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01894649
+    if sense == 1 {
+        return "verb\tmove in a graceful and rhythmical way\t\tThe young girl danced into the room";
+    }
+    // noun 07020538
+    if sense == 2 {
+        return "noun\tan artistic form of nonverbal communication\t\t";
+    }
+    // verb 01708676
+    if sense == 3 {
+        return "verb\tmove in a pattern; usually to musical accompaniment; do or perform a dance\ttrip the light fantastic, trip the light fantastic toe\tMy husband and I like to dance at home to the radio";
+    }
+    // noun 08253141
+    if sense == 4 {
+        return "noun\ta party of people assembled for dancing\t\t";
+    }
+    // verb 02099075
+    if sense == 5 {
+        return "verb\tskip, leap, or move up and down or sideways\t\tDancing flames";
+    }
+    // noun 00428270
+    if sense == 6 {
+        return "noun\ttaking a series of rhythmical steps (and movements) in time to music\tdancing, terpsichore, saltation\t";
+    }
+    ""
+}

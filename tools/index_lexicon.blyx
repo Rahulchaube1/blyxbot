@@ -1,0 +1,148 @@
+use std::cli;
+use std::text;
+use std::fs;
+
+// Emit one native import index to stdout. Pass a letter and that directory's
+// w_*.blyx files, or "catalog" and the entries/ directories.
+fn fail_index(message: str) { stderr_line(message); process_exit(2); }
+
+fn basename(path: str) -> str {
+    let mut tail = path;
+    while text_before(tail, "/") != tail {
+        tail = text_after(text_after(tail, text_before(tail, "/")), "/");
+    }
+    tail
+}
+
+fn replace(value: str, needle: str, replacement: str) -> str {
+    let mut out = "";
+    let mut rest = value;
+    while text_before(rest, needle) != rest {
+        let prefix = text_before(rest, needle);
+        out = text_concat(text_concat(out, prefix), replacement);
+        rest = text_after(text_after(rest, prefix), needle);
+    }
+    text_concat(out, rest)
+}
+
+fn symbol(term: str) -> str {
+    text_concat("w_", replace(replace(term, "-", "_hyphen_"), " ", "_"))
+}
+
+// Sort by the displayed headword, including spaces and hyphens, independently
+// of how the caller's locale sorted the filenames.
+fn sorted_unique(values: arglist) -> arglist {
+    let mut out = args_new();
+    let mut prior = "";
+    while args_len(out) < args_len(values) {
+        let mut next = "";
+        let mut i = 0;
+        while i < args_len(values) {
+            let candidate = args_at(values, i);
+            if candidate > prior && (next == "" || candidate < next) { next = candidate; }
+            i += 1;
+        }
+        if next == "" { fail_index("Empty or duplicate index entry."); }
+        out = args_push(out, next);
+        prior = next;
+    }
+    out
+}
+
+fn line(first: str, middle: str, last: str) {
+    print!(first); print!(middle); println!(last);
+}
+
+fn letter_ok(letter: str) -> bool {
+    let letters = "|a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|";
+    let key = text_concat("|", text_concat(letter, "|"));
+    text_before(letters, key) != letters && text_before(letter, "|") == letter
+}
+
+fn emit_letter(letter: str, terms: arglist) {
+    println!("// Compiled word index. The entry modules hold the dictionary content.");
+    let mut i = 0;
+    while i < args_len(terms) {
+        print!("use entries::"); print!(letter); line("::", symbol(args_at(terms, i)), ";");
+        i += 1;
+    }
+    let mut start = 0;
+    while start < args_len(terms) {
+        let mut stop = start + 16;
+        if stop > args_len(terms) { stop = args_len(terms); }
+        println!("");
+        line("fn through_", symbol(args_at(terms, stop - 1)), "(term: str, sense: i64) -> str {");
+        i = start;
+        while i < stop {
+            let term = args_at(terms, i);
+            print!("    if term == \""); print!(term); line("\" { return ", symbol(term), "(sense); }");
+            i += 1;
+        }
+        println!("    \"\"\n}");
+        start = stop;
+    }
+    println!("");
+    line("pub fn lookup_", letter, "(term: str, sense: i64) -> str {");
+    let mut end = 16;
+    while end < args_len(terms) {
+        let last = args_at(terms, end - 1);
+        print!("    if term <= \""); print!(last); line("\" { return through_", symbol(last), "(term, sense); }");
+        end += 16;
+    }
+    line("    through_", symbol(args_at(terms, args_len(terms) - 1)), "(term, sense)");
+    println!("}\n");
+    line("pub fn words_", letter, "() -> str {");
+    line("    \"", args_join(terms, "|"), "\"");
+    println!("}");
+}
+
+fn emit_catalog(letters: arglist) {
+    println!("use std::text;");
+    let mut i = 0;
+    while i < args_len(letters) { line("use ", args_at(letters, i), ";"); i += 1; }
+    println!("\n// Sense zero returns the count. Missing terms and senses return an empty string.");
+    println!("pub fn dictionary_lookup(term: str, sense: i64) -> str {");
+    i = 0;
+    while i < args_len(letters) {
+        let letter = args_at(letters, i);
+        print!("    if text_starts(term, \""); print!(letter); line("\") { return lookup_", letter, "(term, sense); }");
+        i += 1;
+    }
+    println!("    \"\"\n}\n");
+    println!("pub fn headwords_for(prefix: str) -> str {");
+    i = 0;
+    while i < args_len(letters) {
+        let letter = args_at(letters, i);
+        print!("    if text_starts(prefix, \""); print!(letter); line("\") { return words_", letter, "(); }");
+        i += 1;
+    }
+    println!("    \"\"\n}");
+}
+
+fn main() {
+    let args = cli_args();
+    if args_len(args) < 2 { fail_index("Pass a letter and its entry files, or catalog and its letter directories."); }
+    let mode = args_at(args, 0);
+    if mode != "catalog" && !letter_ok(mode) { fail_index("Expected a lowercase initial letter."); }
+    let mut entries = args_new();
+    let mut i = 1;
+    while i < args_len(args) {
+        let path = args_at(args, i);
+        let name = basename(path);
+        if mode == "catalog" {
+            if !letter_ok(name) { fail_index(text_concat("Invalid letter directory: ", path)); }
+            entries = args_push(entries, name);
+        } else {
+            if !is_file(path) || !text_starts(name, "w_") || !text_ends(name, ".blyx") {
+                fail_index(text_concat("Invalid entry path: ", path));
+            }
+            let slug = text_before(text_after(name, "w_"), ".blyx");
+            let term = replace(replace(slug, "_hyphen_", "-"), "_", " ");
+            if !text_starts(term, mode) { fail_index(text_concat("Wrong letter for ", term)); }
+            entries = args_push(entries, term);
+        }
+        i += 1;
+    }
+    entries = sorted_unique(entries);
+    if mode == "catalog" { emit_catalog(entries); } else { emit_letter(mode, entries); }
+}

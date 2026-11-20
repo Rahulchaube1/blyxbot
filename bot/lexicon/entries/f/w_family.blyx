@@ -1,0 +1,29 @@
+// family — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_family(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 08078020
+    if sense == 1 {
+        return "noun\ta social unit living together\thousehold, house, home, menage\the moved his family to Virginia";
+    }
+    // noun 07970406
+    if sense == 2 {
+        return "noun\tprimary social group; parents and children\tfamily unit\the wanted to have a good job before starting a family";
+    }
+    // noun 07997703
+    if sense == 3 {
+        return "noun\ta collection of things sharing a common attribute\tclass, category\t";
+    }
+    // noun 07970721
+    if sense == 4 {
+        return "noun\tpeople descended from a common ancestor\tfamily line, folk, kinfolk, kinsfolk, sept, phratry\this family has lived in Massachusetts since the Mayflower";
+    }
+    // noun 10236304
+    if sense == 5 {
+        return "noun\ta person having kinship with another or others\tkin, kinsperson\the's family";
+    }
+    // noun 08107499
+    if sense == 6 {
+        return "noun\t(biology) a taxonomic group containing one or more genera\t\tsharks belong to the fish family";
+    }
+    ""
+}

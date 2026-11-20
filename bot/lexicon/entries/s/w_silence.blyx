@@ -1,0 +1,25 @@
+// silence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_silence(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13925550
+    if sense == 1 {
+        return "noun\tthe state of being silent (as when no one is speaking)\t\tthere was a shocked silence";
+    }
+    // noun 04982207
+    if sense == 2 {
+        return "noun\tthe absence of sound\tquiet\the needed silence in order to sleep";
+    }
+    // noun 04651974
+    if sense == 3 {
+        return "noun\ta refusal to speak when expected\tmuteness\this silence about my contribution was surprising";
+    }
+    // verb 00461493
+    if sense == 4 {
+        return "verb\tcause to be quiet or not talk\thush, quieten, still, shut up, hush up\tPlease silence the children in the church!";
+    }
+    // noun 04652177
+    if sense == 5 {
+        return "noun\tthe trait of keeping things secret\tsecrecy, secretiveness\t";
+    }
+    ""
+}

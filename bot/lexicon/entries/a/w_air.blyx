@@ -1,0 +1,29 @@
+// air — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_air(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 14841267
+    if sense == 1 {
+        return "noun\ta mixture of gases (especially oxygen) required for breathing; the stuff that the wind consists of\t\tair pollution";
+    }
+    // noun 08653314
+    if sense == 2 {
+        return "noun\tthe region above the ground\t\ther hand stopped in mid air";
+    }
+    // noun 04727214
+    if sense == 3 {
+        return "noun\ta distinctive but intangible quality surrounding a person or thing\taura, atmosphere\tan air of mystery";
+    }
+    // noun 11431754
+    if sense == 4 {
+        return "noun\ta slight wind (usually refreshing)\tbreeze, zephyr, gentle wind\tas he waited he could feel the air on his neck";
+    }
+    // noun 08499057
+    if sense == 5 {
+        return "noun\tthe mass of air surrounding the Earth\tatmosphere\tit was exposed to the air";
+    }
+    // verb 02112891
+    if sense == 6 {
+        return "verb\texpose to fresh air\tair out, aerate\t";
+    }
+    ""
+}

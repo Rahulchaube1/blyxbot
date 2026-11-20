@@ -1,0 +1,49 @@
+// serve — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_serve(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 02670890
+    if sense == 1 {
+        return "verb\tserve a purpose, role, or function\tfunction\tThe tree stump serves as a table";
+    }
+    // verb 01095218
+    if sense == 2 {
+        return "verb\tdo duty or hold offices; serve in a specific function\t\tHe served as head of the department for three years";
+    }
+    // verb 02670398
+    if sense == 3 {
+        return "verb\tcontribute or conduce to\t\tThe scandal served to increase his popularity";
+    }
+    // verb 02541251
+    if sense == 4 {
+        return "verb\tbe used by; as of a utility\tservice\tThe sewage plant served the neighboring communities";
+    }
+    // verb 01181295
+    if sense == 5 {
+        return "verb\thelp to some food; help with food or drink\thelp\tI served him three times, and after that he helped himself";
+    }
+    // verb 01180351
+    if sense == 6 {
+        return "verb\tprovide (usually but not necessarily food)\tserve up, dish out, dish up, dish\tWe serve meals for the homeless";
+    }
+    // verb 02593107
+    if sense == 7 {
+        return "verb\tdevote (part of) one's life or efforts to, as of countries, institutions, or ideas\t\tShe served the art of music";
+    }
+    // verb 02670578
+    if sense == 8 {
+        return "verb\tpromote, benefit, or be useful or beneficial to\tserve well\tArt serves commerce";
+    }
+    // verb 02709107
+    if sense == 9 {
+        return "verb\tspend time in prison or in a labor camp\tdo\t";
+    }
+    // verb 02540670
+    if sense == 10 {
+        return "verb\twork for or be a servant to\tattend to, wait on, attend, assist\tMay I serve you?";
+    }
+    // verb 01438681
+    if sense == 11 {
+        return "verb\tdeliver a warrant or summons to someone\tprocess, swear out\t";
+    }
+    ""
+}

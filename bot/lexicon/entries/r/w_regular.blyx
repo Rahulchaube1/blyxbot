@@ -1,0 +1,37 @@
+// regular — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_regular(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 01959294
+    if sense == 1 {
+        return "adjective\tin accordance with fixed order or procedure or principle\t\this regular calls on his customers";
+    }
+    // adj 02469577
+    if sense == 2 {
+        return "adjective\toften used as intensifiers\tveritable\ta regular morass of details";
+    }
+    // adj 02296632
+    if sense == 3 {
+        return "adjective\tconforming to a standard or pattern\t\tfollowing the regular procedure of the legislature";
+    }
+    // adj 02366927
+    if sense == 4 {
+        return "adjective\tregularly scheduled for fixed times\t\tat a regular meeting of the PTA";
+    }
+    // adj 00489863
+    if sense == 5 {
+        return "adjective\tin accord with regular practice or procedure\t\ttook his regular morning walk";
+    }
+    // noun 10517405
+    if sense == 6 {
+        return "noun\ta regular patron\thabitue, fixture\t";
+    }
+    // adj 02302187
+    if sense == 7 {
+        return "adjective\toccurring at fixed intervals\teven\ta regular beat";
+    }
+    // adj 01067003
+    if sense == 8 {
+        return "adjective\trelating to a person who does something regularly\tsteady\ta regular customer";
+    }
+    ""
+}

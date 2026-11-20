@@ -1,0 +1,17 @@
+// technical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_technical(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02809220
+    if sense == 1 {
+        return "adjective\tof or relating to technique or proficiency in a practical skill\tproficient\this technical innovation was his brushwork";
+    }
+    // adj 01108716
+    if sense == 2 {
+        return "adjective\tcharacterizing or showing skill in or specialized knowledge of applied arts and sciences\t\ta technical problem";
+    }
+    // adj 02809692
+    if sense == 3 {
+        return "adjective\tof or relating to a practical subject that is organized according to scientific principles\ttechnological\ttechnical college";
+    }
+    ""
+}

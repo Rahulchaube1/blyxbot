@@ -1,0 +1,17 @@
+// poor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_poor(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01050890
+    if sense == 1 {
+        return "adjective\tdeserving or inciting pity\thapless, miserable, misfortunate, pathetic, piteous, pitiable, pitiful, wretched\tOh, you poor thing";
+    }
+    // adj 02022953
+    if sense == 2 {
+        return "adjective\thaving little money or few possessions\t\tdeplored the gap between rich and poor countries";
+    }
+    // adj 02025498
+    if sense == 3 {
+        return "adjective\tcharacterized by or indicating poverty\t\tthe country had a poor economy";
+    }
+    ""
+}

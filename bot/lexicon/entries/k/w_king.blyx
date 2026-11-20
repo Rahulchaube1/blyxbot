@@ -1,0 +1,17 @@
+// king — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_king(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10231515
+    if sense == 1 {
+        return "noun\ta male sovereign; ruler of a kingdom\tmale monarch, Rex\t";
+    }
+    // noun 10235024
+    if sense == 2 {
+        return "noun\ta competitor who holds a preeminent position\tqueen, world-beater\t";
+    }
+    // noun 09840217
+    if sense == 3 {
+        return "noun\ta very wealthy or powerful businessman\tbaron, big businessman, business leader, magnate, mogul, power, top executive, tycoon\t";
+    }
+    ""
+}

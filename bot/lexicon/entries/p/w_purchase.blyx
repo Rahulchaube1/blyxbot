@@ -1,0 +1,21 @@
+// purchase — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_purchase(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02207206
+    if sense == 1 {
+        return "verb\tobtain by purchase; acquire by means of a financial transaction\tbuy\tThe family purchased a new car";
+    }
+    // noun 00079018
+    if sense == 2 {
+        return "noun\tthe acquisition of something for payment\t\tthey closed the purchase with a handshake";
+    }
+    // noun 13253612
+    if sense == 3 {
+        return "noun\tsomething acquired by purchase\t\t";
+    }
+    // noun 11415342
+    if sense == 4 {
+        return "noun\ta means of exerting influence or gaining advantage\t\the could get no purchase on the situation";
+    }
+    ""
+}

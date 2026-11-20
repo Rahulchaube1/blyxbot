@@ -1,0 +1,17 @@
+// dominate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dominate(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02644234
+    if sense == 1 {
+        return "verb\tbe larger in number, quantity, power, status or importance\tpredominate, rule, reign, prevail\t";
+    }
+    // verb 02646931
+    if sense == 2 {
+        return "verb\tbe in control\t\tHer husband completely dominates her";
+    }
+    // verb 02539334
+    if sense == 3 {
+        return "verb\thave dominance or the power to defeat over\tmaster\t";
+    }
+    ""
+}

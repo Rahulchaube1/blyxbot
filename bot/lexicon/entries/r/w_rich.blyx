@@ -1,0 +1,29 @@
+// rich — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rich(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02021905
+    if sense == 1 {
+        return "adjective\tpossessing material wealth\t\ther father is extremely rich";
+    }
+    // adj 02024143
+    if sense == 2 {
+        return "adjective\thaving an abundant supply of desirable qualities or substances (especially natural resources)\t\tblessed with a land rich in minerals";
+    }
+    // adj 02501693
+    if sense == 3 {
+        return "adjective\tof great worth or quality\t\ta rich collection of antiques";
+    }
+    // adj 01081340
+    if sense == 4 {
+        return "adjective\tmarked by great fruitfulness\tfat, fertile, productive\trich soil";
+    }
+    // adj 00403385
+    if sense == 5 {
+        return "adjective\tstrong; intense\tdeep\ta rich red";
+    }
+    // adj 01866429
+    if sense == 6 {
+        return "adjective\tvery productive\t\trich seams of coal";
+    }
+    ""
+}

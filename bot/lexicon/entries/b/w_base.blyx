@@ -1,0 +1,49 @@
+// base — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_base(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 00636888
+    if sense == 1 {
+        return "verb\tuse as a basis for; found on\testablish, ground, found\tbase a claim on some observation";
+    }
+    // adj 01856066
+    if sense == 2 {
+        return "adjective\tserving as or forming a base\tbasal\tthe painter applied a base coat followed by two finishing coats";
+    }
+    // noun 02798290
+    if sense == 3 {
+        return "noun\tinstallation from which a military force initiates operations\tbase of operations\tthe attack wiped out our forward bases";
+    }
+    // noun 03387016
+    if sense == 4 {
+        return "noun\tlowest support of a structure\tfoundation, fundament, foot, groundwork, substructure, understructure\tit was built on a base of solid rock";
+    }
+    // noun 02797881
+    if sense == 5 {
+        return "noun\ta place that the runner must touch before scoring\tbag\t";
+    }
+    // noun 09215315
+    if sense == 6 {
+        return "noun\tthe bottom or lowest part\t\tthe base of the mountain";
+    }
+    // noun 08511777
+    if sense == 7 {
+        return "noun\t(anatomy) the part of an organ nearest its point of attachment\t\tthe base of the skull";
+    }
+    // noun 06658118
+    if sense == 8 {
+        return "noun\ta lower limit\tfloor\t";
+    }
+    // noun 05793554
+    if sense == 9 {
+        return "noun\tthe fundamental assumptions from which something is begun or developed or calculated or explained\tbasis, foundation, fundament, groundwork, cornerstone\t";
+    }
+    // noun 02797692
+    if sense == 10 {
+        return "noun\ta support or foundation\tpedestal, stand\tthe base of the lamp";
+    }
+    // adj 01592857
+    if sense == 11 {
+        return "adjective\tof low birth or station (`base' is archaic in this sense)\tbaseborn, humble, lowly\t";
+    }
+    ""
+}

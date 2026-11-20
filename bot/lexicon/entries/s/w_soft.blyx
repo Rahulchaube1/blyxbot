@@ -1,0 +1,25 @@
+// soft — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_soft(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01152746
+    if sense == 1 {
+        return "adjective\tyielding readily to pressure or weight\t\t";
+    }
+    // adj 01156112
+    if sense == 2 {
+        return "adjective\tcompassionate and kind; conciliatory\t\the was soft on his children";
+    }
+    // adj 01454636
+    if sense == 3 {
+        return "adjective\t(of sound) relatively low in volume\t\tsoft voices";
+    }
+    // adj 02448324
+    if sense == 4 {
+        return "adjective\teasily hurt\tdelicate\tsoft hands";
+    }
+    // adv 00148139
+    if sense == 5 {
+        return "adverb\tin a relaxed manner; or without hardship\teasy\t";
+    }
+    ""
+}

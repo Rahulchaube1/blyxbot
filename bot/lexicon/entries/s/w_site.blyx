@@ -1,0 +1,13 @@
+// site — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_site(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08651247
+    if sense == 1 {
+        return "noun\tthe piece of land on which something is located (or is to be located)\tland site\ta good site for the school";
+    }
+    // noun 08622950
+    if sense == 2 {
+        return "noun\tphysical position in relation to the surroundings\tsituation\tthe sites are determined by highly specific sequences of nucleotides";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// sigh — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sigh(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00004032
+    if sense == 1 {
+        return "verb\theave or utter a sigh; breathe deeply and heavily\tsuspire\tShe sighed sadly";
+    }
+    // noun 07129602
+    if sense == 2 {
+        return "noun\tan utterance made by exhaling audibly\tsuspiration\t";
+    }
+    // verb 00985800
+    if sense == 3 {
+        return "verb\tutter with a sigh\t\t";
+    }
+    ""
+}

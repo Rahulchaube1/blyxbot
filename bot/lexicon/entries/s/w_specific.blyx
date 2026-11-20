@@ -1,0 +1,13 @@
+// specific — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_specific(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01103021
+    if sense == 1 {
+        return "adjective\t(sometimes followed by `to') applying to or characterized by or distinguishing something particular or special or unique\t\trules with specific application";
+    }
+    // adj 01099951
+    if sense == 2 {
+        return "adjective\tstated explicitly or in detail\t\tneeded a specific amount";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// illustrate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_illustrate(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01021128
+    if sense == 1 {
+        return "verb\tclarify by giving an example of\texemplify, instance\t";
+    }
+    // verb 01687401
+    if sense == 2 {
+        return "verb\tdepict with an illustration\t\t";
+    }
+    // verb 01668421
+    if sense == 3 {
+        return "verb\tsupply with illustrations\t\tillustrate a book with drawings";
+    }
+    ""
+}

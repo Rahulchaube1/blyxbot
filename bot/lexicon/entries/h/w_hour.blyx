@@ -1,0 +1,17 @@
+// hour — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hour(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 15227846
+    if sense == 1 {
+        return "noun\ta period of time equal to 1/24th of a day\thr, 60 minutes\tthe job will take more than an hour";
+    }
+    // noun 15228378
+    if sense == 2 {
+        return "noun\tclock time\ttime of day\tthe hour is getting late";
+    }
+    // noun 15228910
+    if sense == 3 {
+        return "noun\ta special and memorable period\t\tit was their finest hour";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// climb — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_climb(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01921964
+    if sense == 1 {
+        return "verb\tgo upward with gradual or continuous progress\tclimb up, mount, go up\tDid you ever climb up the hill behind your house?";
+    }
+    // verb 01923909
+    if sense == 2 {
+        return "verb\tmove with difficulty, by grasping\t\t";
+    }
+    // verb 00433232
+    if sense == 3 {
+        return "verb\tgo up or advance\twax, mount, rise\tSales were climbing after prices were lowered";
+    }
+    ""
+}

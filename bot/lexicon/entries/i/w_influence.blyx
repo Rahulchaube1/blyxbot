@@ -1,0 +1,29 @@
+// influence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_influence(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05194151
+    if sense == 1 {
+        return "noun\ta power to affect persons or events especially power based on prestige etc\t\tused her parents' influence to get the job";
+    }
+    // verb 02536557
+    if sense == 2 {
+        return "verb\thave and exert influence or effect\tact upon, work\tThe artist's work influenced the young painter";
+    }
+    // noun 00157081
+    if sense == 3 {
+        return "noun\tcausing something without any direct or apparent effort\t\t";
+    }
+    // noun 05692910
+    if sense == 4 {
+        return "noun\ta cognitive factor that tends to have an effect on what you do\t\ther wishes had a great influence on his thinking";
+    }
+    // verb 00701040
+    if sense == 5 {
+        return "verb\tshape or influence; give direction to\tdetermine, shape, mold, regulate\t";
+    }
+    // noun 11414608
+    if sense == 6 {
+        return "noun\tthe effect of one thing (or person) on another\t\tthe influence of mechanical action";
+    }
+    ""
+}

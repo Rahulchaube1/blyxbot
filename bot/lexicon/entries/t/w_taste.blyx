@@ -1,0 +1,33 @@
+// taste — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_taste(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02194286
+    if sense == 1 {
+        return "verb\thave flavor; taste of something\tsavor, savour\t";
+    }
+    // noun 05715283
+    if sense == 2 {
+        return "noun\tthe sensation that results when taste buds in the tongue and throat convey information about the chemical composition of a soluble stimulus\ttaste sensation, gustatory sensation, taste perception, gustatory perception\tthe candy left him with a bad taste";
+    }
+    // noun 07498210
+    if sense == 3 {
+        return "noun\ta strong liking\tpreference, penchant, predilection\t";
+    }
+    // noun 05749619
+    if sense == 4 {
+        return "noun\tdelicate discrimination (especially of aesthetic values)\tappreciation, discernment, perceptiveness\tarrogance and lack of taste contributed to his rapid success";
+    }
+    // verb 02191546
+    if sense == 5 {
+        return "verb\tperceive by the sense of taste\t\tCan you taste the garlic?";
+    }
+    // verb 01195299
+    if sense == 6 {
+        return "verb\ttake a sample of\tsample, try, try out\t";
+    }
+    // noun 07288024
+    if sense == 7 {
+        return "noun\ta brief experience of something\t\the got a taste of life on the wild side";
+    }
+    ""
+}

@@ -1,0 +1,45 @@
+// voice — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_voice(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 04981941
+    if sense == 1 {
+        return "noun\tthe distinctive quality or pitch or condition of a person's speech\t\tA shrill voice sounded behind us";
+    }
+    // noun 07110615
+    if sense == 2 {
+        return "noun\tthe sound made by the vibration of vocal folds modified by the resonance of the vocal tract\tvocalization, vocalisation, vocalism, phonation, vox\ta singer takes good care of his voice";
+    }
+    // noun 07399452
+    if sense == 3 {
+        return "noun\ta sound suggestive of a vocal utterance\t\tthe noisy voice of the waterfall";
+    }
+    // noun 07073208
+    if sense == 4 {
+        return "noun\texpressing in coherent verbal form\tarticulation\tI gave voice to my feelings";
+    }
+    // noun 00179683
+    if sense == 5 {
+        return "noun\ta means or agency by which something is expressed or communicated\t\tthe voice of the law";
+    }
+    // verb 00933403
+    if sense == 6 {
+        return "verb\tgive voice to\t\tHe voiced his concern";
+    }
+    // noun 07277697
+    if sense == 7 {
+        return "noun\tsomething suggestive of speech in being a medium of expression\t\tthe wee small voice of conscience";
+    }
+    // noun 10758713
+    if sense == 8 {
+        return "noun\t(metonymy) a singer\t\the wanted to hear trained voices sing it";
+    }
+    // noun 10638385
+    if sense == 9 {
+        return "noun\tan advocate who represents someone else's policy or purpose\tspokesperson, interpreter, representative\t";
+    }
+    // noun 05202284
+    if sense == 10 {
+        return "noun\tthe ability to speak\t\the lost his voice";
+    }
+    ""
+}

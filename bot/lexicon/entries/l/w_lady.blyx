@@ -1,0 +1,13 @@
+// lady — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lady(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 10243137
+    if sense == 1 {
+        return "noun\ta polite name for any woman\t\ta nice lady at the library helped me";
+    }
+    // noun 09989290
+    if sense == 2 {
+        return "noun\ta woman of refinement\tdame, madam, ma'am, gentlewoman\ta chauffeur opened the door of the limousine for the grand lady";
+    }
+    ""
+}

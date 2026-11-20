@@ -1,0 +1,17 @@
+// table — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_table(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08266235
+    if sense == 1 {
+        return "noun\ta set of data arranged in rows and columns\ttabular array\tsee table 1";
+    }
+    // noun 04379243
+    if sense == 2 {
+        return "noun\ta piece of furniture having a smooth flat top that is usually supported by one or more vertical legs\t\tit was a sturdy table";
+    }
+    // noun 04379964
+    if sense == 3 {
+        return "noun\ta piece of furniture with tableware for a meal laid out on it\t\tI reserved a table at my favorite restaurant";
+    }
+    ""
+}

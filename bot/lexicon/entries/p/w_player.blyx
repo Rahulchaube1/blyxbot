@@ -1,0 +1,17 @@
+// player — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_player(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10439851
+    if sense == 1 {
+        return "noun\ta person who participates in or is skilled at some game\tparticipant\t";
+    }
+    // noun 10340312
+    if sense == 2 {
+        return "noun\tsomeone who plays a musical instrument (as a profession)\tmusician, instrumentalist\t";
+    }
+    // noun 09765278
+    if sense == 3 {
+        return "noun\ta theatrical performer\tactor, histrion, thespian, role player\t";
+    }
+    ""
+}

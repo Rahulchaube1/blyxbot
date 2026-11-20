@@ -1,0 +1,25 @@
+// response — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_response(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 11416988
+    if sense == 1 {
+        return "noun\ta result\t\tthis situation developed in response to events in Africa";
+    }
+    // noun 00859001
+    if sense == 2 {
+        return "noun\ta bodily process occurring due to the effect of some antecedent stimulus or agent\treaction\this responses have slowed with age";
+    }
+    // noun 06746005
+    if sense == 3 {
+        return "noun\ta statement (either spoken or written) that is made to reply to a question or request or criticism or accusation\tanswer, reply\t";
+    }
+    // noun 06630852
+    if sense == 4 {
+        return "noun\tthe manner in which something is greeted\treception\t";
+    }
+    // noun 06385582
+    if sense == 5 {
+        return "noun\ta phrase recited or sung by the congregation following a versicle by the priest or minister\t\t";
+    }
+    ""
+}

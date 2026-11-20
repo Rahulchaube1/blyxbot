@@ -1,0 +1,489 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::c::w_c;
+use entries::c::w_calculate;
+use entries::c::w_call;
+use entries::c::w_call_for;
+use entries::c::w_calm;
+use entries::c::w_camera;
+use entries::c::w_camp;
+use entries::c::w_campaign;
+use entries::c::w_candidate;
+use entries::c::w_capable;
+use entries::c::w_capacity;
+use entries::c::w_capital;
+use entries::c::w_captain;
+use entries::c::w_car;
+use entries::c::w_care;
+use entries::c::w_career;
+use entries::c::w_careful;
+use entries::c::w_carefully;
+use entries::c::w_carry;
+use entries::c::w_carry_out;
+use entries::c::w_case;
+use entries::c::w_cast;
+use entries::c::w_catch;
+use entries::c::w_category;
+use entries::c::w_catholic;
+use entries::c::w_cattle;
+use entries::c::w_cause;
+use entries::c::w_cease;
+use entries::c::w_cell;
+use entries::c::w_center;
+use entries::c::w_century;
+use entries::c::w_certain;
+use entries::c::w_certainly;
+use entries::c::w_chain;
+use entries::c::w_chair;
+use entries::c::w_challenge;
+use entries::c::w_chance;
+use entries::c::w_change;
+use entries::c::w_chapter;
+use entries::c::w_character;
+use entries::c::w_characteristic;
+use entries::c::w_charge;
+use entries::c::w_check;
+use entries::c::w_cheek;
+use entries::c::w_chemical;
+use entries::c::w_chest;
+use entries::c::w_chicago;
+use entries::c::w_chicken;
+use entries::c::w_chief;
+use entries::c::w_child;
+use entries::c::w_chlorine;
+use entries::c::w_choice;
+use entries::c::w_choose;
+use entries::c::w_christ;
+use entries::c::w_christian;
+use entries::c::w_church;
+use entries::c::w_circle;
+use entries::c::w_circumstance;
+use entries::c::w_cite;
+use entries::c::w_citizen;
+use entries::c::w_city;
+use entries::c::w_claim;
+use entries::c::w_class;
+use entries::c::w_clean;
+use entries::c::w_clear;
+use entries::c::w_clearly;
+use entries::c::w_climb;
+use entries::c::w_close;
+use entries::c::w_closed;
+use entries::c::w_closely;
+use entries::c::w_clothes;
+use entries::c::w_cloud;
+use entries::c::w_club;
+use entries::c::w_clutch;
+use entries::c::w_cm;
+use entries::c::w_coach;
+use entries::c::w_coast;
+use entries::c::w_coat;
+use entries::c::w_coffee;
+use entries::c::w_cold;
+use entries::c::w_collapse;
+use entries::c::w_collect;
+use entries::c::w_college;
+use entries::c::w_colonel;
+use entries::c::w_color;
+use entries::c::w_colored;
+use entries::c::w_column;
+use entries::c::w_combat;
+use entries::c::w_combine;
+use entries::c::w_come;
+use entries::c::w_come_in;
+use entries::c::w_come_out;
+use entries::c::w_come_to;
+use entries::c::w_come_up;
+use entries::c::w_comedy;
+use entries::c::w_command;
+use entries::c::w_comment;
+use entries::c::w_commercial;
+use entries::c::w_commission;
+use entries::c::w_commit;
+use entries::c::w_common;
+use entries::c::w_communication;
+use entries::c::w_communism;
+use entries::c::w_communist;
+use entries::c::w_community;
+use entries::c::w_companion;
+use entries::c::w_company;
+use entries::c::w_compare;
+use entries::c::w_comparison;
+use entries::c::w_compel;
+use entries::c::w_compete;
+use entries::c::w_competition;
+use entries::c::w_complain;
+use entries::c::w_complement;
+use entries::c::w_complete;
+use entries::c::w_completely;
+use entries::c::w_complex;
+use entries::c::w_component;
+use entries::c::w_compose;
+use entries::c::w_composer;
+use entries::c::w_compute;
+use entries::c::w_comrade;
+use entries::c::w_concede;
+use entries::c::w_conceive;
+use entries::c::w_concentrate;
+use entries::c::w_concentration;
+use entries::c::w_concept;
+use entries::c::w_concern;
+use entries::c::w_concerned;
+use entries::c::w_conclude;
+use entries::c::w_conclusion;
+use entries::c::w_concrete;
+use entries::c::w_condemn;
+use entries::c::w_condition;
+use entries::c::w_conduct;
+use entries::c::w_confidence;
+use entries::c::w_confirm;
+use entries::c::w_conflict;
+use entries::c::w_confront;
+use entries::c::w_confusion;
+use entries::c::w_congregation;
+use entries::c::w_congress;
+use entries::c::w_conjugate;
+use entries::c::w_connect;
+use entries::c::w_connection;
+use entries::c::w_consciousness;
+use entries::c::w_consequence;
+use entries::c::w_consider;
+use entries::c::w_considerable;
+use entries::c::w_consideration;
+use entries::c::w_constant;
+use entries::c::w_constitute;
+use entries::c::w_construct;
+use entries::c::w_construction;
+use entries::c::w_consult;
+use entries::c::w_contact;
+use entries::c::w_contain;
+use entries::c::w_contemplate;
+use entries::c::w_content;
+use entries::c::w_continually;
+use entries::c::w_continue;
+use entries::c::w_continuous;
+use entries::c::w_contract;
+use entries::c::w_contrast;
+use entries::c::w_contribute;
+use entries::c::w_contribution;
+use entries::c::w_control;
+use entries::c::w_conversation;
+use entries::c::w_convert;
+use entries::c::w_conviction;
+use entries::c::w_cook;
+use entries::c::w_cool;
+use entries::c::w_cooperate;
+use entries::c::w_cop;
+use entries::c::w_copy;
+use entries::c::w_corner;
+use entries::c::w_corporation;
+use entries::c::w_corpse;
+use entries::c::w_correct;
+use entries::c::w_cost;
+use entries::c::w_count;
+use entries::c::w_country;
+use entries::c::w_county;
+use entries::c::w_couple;
+use entries::c::w_course;
+use entries::c::w_court;
+use entries::c::w_cover;
+use entries::c::w_cow;
+use entries::c::w_crack;
+use entries::c::w_crash;
+use entries::c::w_crawl;
+use entries::c::w_create;
+use entries::c::w_credit;
+use entries::c::w_crime;
+use entries::c::w_critical;
+use entries::c::w_cross;
+use entries::c::w_crowd;
+use entries::c::w_cry;
+use entries::c::w_cultural;
+use entries::c::w_culture;
+use entries::c::w_cup;
+use entries::c::w_cure;
+use entries::c::w_curious;
+use entries::c::w_current;
+use entries::c::w_curse;
+use entries::c::w_curve;
+use entries::c::w_customer;
+use entries::c::w_cut;
+
+fn through_w_career(term: str, sense: i64) -> str {
+    if term == "c" { return w_c(sense); }
+    if term == "calculate" { return w_calculate(sense); }
+    if term == "call" { return w_call(sense); }
+    if term == "call for" { return w_call_for(sense); }
+    if term == "calm" { return w_calm(sense); }
+    if term == "camera" { return w_camera(sense); }
+    if term == "camp" { return w_camp(sense); }
+    if term == "campaign" { return w_campaign(sense); }
+    if term == "candidate" { return w_candidate(sense); }
+    if term == "capable" { return w_capable(sense); }
+    if term == "capacity" { return w_capacity(sense); }
+    if term == "capital" { return w_capital(sense); }
+    if term == "captain" { return w_captain(sense); }
+    if term == "car" { return w_car(sense); }
+    if term == "care" { return w_care(sense); }
+    if term == "career" { return w_career(sense); }
+    ""
+}
+
+fn through_w_certain(term: str, sense: i64) -> str {
+    if term == "careful" { return w_careful(sense); }
+    if term == "carefully" { return w_carefully(sense); }
+    if term == "carry" { return w_carry(sense); }
+    if term == "carry out" { return w_carry_out(sense); }
+    if term == "case" { return w_case(sense); }
+    if term == "cast" { return w_cast(sense); }
+    if term == "catch" { return w_catch(sense); }
+    if term == "category" { return w_category(sense); }
+    if term == "catholic" { return w_catholic(sense); }
+    if term == "cattle" { return w_cattle(sense); }
+    if term == "cause" { return w_cause(sense); }
+    if term == "cease" { return w_cease(sense); }
+    if term == "cell" { return w_cell(sense); }
+    if term == "center" { return w_center(sense); }
+    if term == "century" { return w_century(sense); }
+    if term == "certain" { return w_certain(sense); }
+    ""
+}
+
+fn through_w_chicken(term: str, sense: i64) -> str {
+    if term == "certainly" { return w_certainly(sense); }
+    if term == "chain" { return w_chain(sense); }
+    if term == "chair" { return w_chair(sense); }
+    if term == "challenge" { return w_challenge(sense); }
+    if term == "chance" { return w_chance(sense); }
+    if term == "change" { return w_change(sense); }
+    if term == "chapter" { return w_chapter(sense); }
+    if term == "character" { return w_character(sense); }
+    if term == "characteristic" { return w_characteristic(sense); }
+    if term == "charge" { return w_charge(sense); }
+    if term == "check" { return w_check(sense); }
+    if term == "cheek" { return w_cheek(sense); }
+    if term == "chemical" { return w_chemical(sense); }
+    if term == "chest" { return w_chest(sense); }
+    if term == "chicago" { return w_chicago(sense); }
+    if term == "chicken" { return w_chicken(sense); }
+    ""
+}
+
+fn through_w_clean(term: str, sense: i64) -> str {
+    if term == "chief" { return w_chief(sense); }
+    if term == "child" { return w_child(sense); }
+    if term == "chlorine" { return w_chlorine(sense); }
+    if term == "choice" { return w_choice(sense); }
+    if term == "choose" { return w_choose(sense); }
+    if term == "christ" { return w_christ(sense); }
+    if term == "christian" { return w_christian(sense); }
+    if term == "church" { return w_church(sense); }
+    if term == "circle" { return w_circle(sense); }
+    if term == "circumstance" { return w_circumstance(sense); }
+    if term == "cite" { return w_cite(sense); }
+    if term == "citizen" { return w_citizen(sense); }
+    if term == "city" { return w_city(sense); }
+    if term == "claim" { return w_claim(sense); }
+    if term == "class" { return w_class(sense); }
+    if term == "clean" { return w_clean(sense); }
+    ""
+}
+
+fn through_w_cold(term: str, sense: i64) -> str {
+    if term == "clear" { return w_clear(sense); }
+    if term == "clearly" { return w_clearly(sense); }
+    if term == "climb" { return w_climb(sense); }
+    if term == "close" { return w_close(sense); }
+    if term == "closed" { return w_closed(sense); }
+    if term == "closely" { return w_closely(sense); }
+    if term == "clothes" { return w_clothes(sense); }
+    if term == "cloud" { return w_cloud(sense); }
+    if term == "club" { return w_club(sense); }
+    if term == "clutch" { return w_clutch(sense); }
+    if term == "cm" { return w_cm(sense); }
+    if term == "coach" { return w_coach(sense); }
+    if term == "coast" { return w_coast(sense); }
+    if term == "coat" { return w_coat(sense); }
+    if term == "coffee" { return w_coffee(sense); }
+    if term == "cold" { return w_cold(sense); }
+    ""
+}
+
+fn through_w_command(term: str, sense: i64) -> str {
+    if term == "collapse" { return w_collapse(sense); }
+    if term == "collect" { return w_collect(sense); }
+    if term == "college" { return w_college(sense); }
+    if term == "colonel" { return w_colonel(sense); }
+    if term == "color" { return w_color(sense); }
+    if term == "colored" { return w_colored(sense); }
+    if term == "column" { return w_column(sense); }
+    if term == "combat" { return w_combat(sense); }
+    if term == "combine" { return w_combine(sense); }
+    if term == "come" { return w_come(sense); }
+    if term == "come in" { return w_come_in(sense); }
+    if term == "come out" { return w_come_out(sense); }
+    if term == "come to" { return w_come_to(sense); }
+    if term == "come up" { return w_come_up(sense); }
+    if term == "comedy" { return w_comedy(sense); }
+    if term == "command" { return w_command(sense); }
+    ""
+}
+
+fn through_w_competition(term: str, sense: i64) -> str {
+    if term == "comment" { return w_comment(sense); }
+    if term == "commercial" { return w_commercial(sense); }
+    if term == "commission" { return w_commission(sense); }
+    if term == "commit" { return w_commit(sense); }
+    if term == "common" { return w_common(sense); }
+    if term == "communication" { return w_communication(sense); }
+    if term == "communism" { return w_communism(sense); }
+    if term == "communist" { return w_communist(sense); }
+    if term == "community" { return w_community(sense); }
+    if term == "companion" { return w_companion(sense); }
+    if term == "company" { return w_company(sense); }
+    if term == "compare" { return w_compare(sense); }
+    if term == "comparison" { return w_comparison(sense); }
+    if term == "compel" { return w_compel(sense); }
+    if term == "compete" { return w_compete(sense); }
+    if term == "competition" { return w_competition(sense); }
+    ""
+}
+
+fn through_w_concern(term: str, sense: i64) -> str {
+    if term == "complain" { return w_complain(sense); }
+    if term == "complement" { return w_complement(sense); }
+    if term == "complete" { return w_complete(sense); }
+    if term == "completely" { return w_completely(sense); }
+    if term == "complex" { return w_complex(sense); }
+    if term == "component" { return w_component(sense); }
+    if term == "compose" { return w_compose(sense); }
+    if term == "composer" { return w_composer(sense); }
+    if term == "compute" { return w_compute(sense); }
+    if term == "comrade" { return w_comrade(sense); }
+    if term == "concede" { return w_concede(sense); }
+    if term == "conceive" { return w_conceive(sense); }
+    if term == "concentrate" { return w_concentrate(sense); }
+    if term == "concentration" { return w_concentration(sense); }
+    if term == "concept" { return w_concept(sense); }
+    if term == "concern" { return w_concern(sense); }
+    ""
+}
+
+fn through_w_connect(term: str, sense: i64) -> str {
+    if term == "concerned" { return w_concerned(sense); }
+    if term == "conclude" { return w_conclude(sense); }
+    if term == "conclusion" { return w_conclusion(sense); }
+    if term == "concrete" { return w_concrete(sense); }
+    if term == "condemn" { return w_condemn(sense); }
+    if term == "condition" { return w_condition(sense); }
+    if term == "conduct" { return w_conduct(sense); }
+    if term == "confidence" { return w_confidence(sense); }
+    if term == "confirm" { return w_confirm(sense); }
+    if term == "conflict" { return w_conflict(sense); }
+    if term == "confront" { return w_confront(sense); }
+    if term == "confusion" { return w_confusion(sense); }
+    if term == "congregation" { return w_congregation(sense); }
+    if term == "congress" { return w_congress(sense); }
+    if term == "conjugate" { return w_conjugate(sense); }
+    if term == "connect" { return w_connect(sense); }
+    ""
+}
+
+fn through_w_continually(term: str, sense: i64) -> str {
+    if term == "connection" { return w_connection(sense); }
+    if term == "consciousness" { return w_consciousness(sense); }
+    if term == "consequence" { return w_consequence(sense); }
+    if term == "consider" { return w_consider(sense); }
+    if term == "considerable" { return w_considerable(sense); }
+    if term == "consideration" { return w_consideration(sense); }
+    if term == "constant" { return w_constant(sense); }
+    if term == "constitute" { return w_constitute(sense); }
+    if term == "construct" { return w_construct(sense); }
+    if term == "construction" { return w_construction(sense); }
+    if term == "consult" { return w_consult(sense); }
+    if term == "contact" { return w_contact(sense); }
+    if term == "contain" { return w_contain(sense); }
+    if term == "contemplate" { return w_contemplate(sense); }
+    if term == "content" { return w_content(sense); }
+    if term == "continually" { return w_continually(sense); }
+    ""
+}
+
+fn through_w_corner(term: str, sense: i64) -> str {
+    if term == "continue" { return w_continue(sense); }
+    if term == "continuous" { return w_continuous(sense); }
+    if term == "contract" { return w_contract(sense); }
+    if term == "contrast" { return w_contrast(sense); }
+    if term == "contribute" { return w_contribute(sense); }
+    if term == "contribution" { return w_contribution(sense); }
+    if term == "control" { return w_control(sense); }
+    if term == "conversation" { return w_conversation(sense); }
+    if term == "convert" { return w_convert(sense); }
+    if term == "conviction" { return w_conviction(sense); }
+    if term == "cook" { return w_cook(sense); }
+    if term == "cool" { return w_cool(sense); }
+    if term == "cooperate" { return w_cooperate(sense); }
+    if term == "cop" { return w_cop(sense); }
+    if term == "copy" { return w_copy(sense); }
+    if term == "corner" { return w_corner(sense); }
+    ""
+}
+
+fn through_w_create(term: str, sense: i64) -> str {
+    if term == "corporation" { return w_corporation(sense); }
+    if term == "corpse" { return w_corpse(sense); }
+    if term == "correct" { return w_correct(sense); }
+    if term == "cost" { return w_cost(sense); }
+    if term == "count" { return w_count(sense); }
+    if term == "country" { return w_country(sense); }
+    if term == "county" { return w_county(sense); }
+    if term == "couple" { return w_couple(sense); }
+    if term == "course" { return w_course(sense); }
+    if term == "court" { return w_court(sense); }
+    if term == "cover" { return w_cover(sense); }
+    if term == "cow" { return w_cow(sense); }
+    if term == "crack" { return w_crack(sense); }
+    if term == "crash" { return w_crash(sense); }
+    if term == "crawl" { return w_crawl(sense); }
+    if term == "create" { return w_create(sense); }
+    ""
+}
+
+fn through_w_cut(term: str, sense: i64) -> str {
+    if term == "credit" { return w_credit(sense); }
+    if term == "crime" { return w_crime(sense); }
+    if term == "critical" { return w_critical(sense); }
+    if term == "cross" { return w_cross(sense); }
+    if term == "crowd" { return w_crowd(sense); }
+    if term == "cry" { return w_cry(sense); }
+    if term == "cultural" { return w_cultural(sense); }
+    if term == "culture" { return w_culture(sense); }
+    if term == "cup" { return w_cup(sense); }
+    if term == "cure" { return w_cure(sense); }
+    if term == "curious" { return w_curious(sense); }
+    if term == "current" { return w_current(sense); }
+    if term == "curse" { return w_curse(sense); }
+    if term == "curve" { return w_curve(sense); }
+    if term == "customer" { return w_customer(sense); }
+    if term == "cut" { return w_cut(sense); }
+    ""
+}
+
+pub fn lookup_c(term: str, sense: i64) -> str {
+    if term <= "career" { return through_w_career(term, sense); }
+    if term <= "certain" { return through_w_certain(term, sense); }
+    if term <= "chicken" { return through_w_chicken(term, sense); }
+    if term <= "clean" { return through_w_clean(term, sense); }
+    if term <= "cold" { return through_w_cold(term, sense); }
+    if term <= "command" { return through_w_command(term, sense); }
+    if term <= "competition" { return through_w_competition(term, sense); }
+    if term <= "concern" { return through_w_concern(term, sense); }
+    if term <= "connect" { return through_w_connect(term, sense); }
+    if term <= "continually" { return through_w_continually(term, sense); }
+    if term <= "corner" { return through_w_corner(term, sense); }
+    if term <= "create" { return through_w_create(term, sense); }
+    through_w_cut(term, sense)
+}
+
+pub fn words_c() -> str {
+    "c|calculate|call|call for|calm|camera|camp|campaign|candidate|capable|capacity|capital|captain|car|care|career|careful|carefully|carry|carry out|case|cast|catch|category|catholic|cattle|cause|cease|cell|center|century|certain|certainly|chain|chair|challenge|chance|change|chapter|character|characteristic|charge|check|cheek|chemical|chest|chicago|chicken|chief|child|chlorine|choice|choose|christ|christian|church|circle|circumstance|cite|citizen|city|claim|class|clean|clear|clearly|climb|close|closed|closely|clothes|cloud|club|clutch|cm|coach|coast|coat|coffee|cold|collapse|collect|college|colonel|color|colored|column|combat|combine|come|come in|come out|come to|come up|comedy|command|comment|commercial|commission|commit|common|communication|communism|communist|community|companion|company|compare|comparison|compel|compete|competition|complain|complement|complete|completely|complex|component|compose|composer|compute|comrade|concede|conceive|concentrate|concentration|concept|concern|concerned|conclude|conclusion|concrete|condemn|condition|conduct|confidence|confirm|conflict|confront|confusion|congregation|congress|conjugate|connect|connection|consciousness|consequence|consider|considerable|consideration|constant|constitute|construct|construction|consult|contact|contain|contemplate|content|continually|continue|continuous|contract|contrast|contribute|contribution|control|conversation|convert|conviction|cook|cool|cooperate|cop|copy|corner|corporation|corpse|correct|cost|count|country|county|couple|course|court|cover|cow|crack|crash|crawl|create|credit|crime|critical|cross|crowd|cry|cultural|culture|cup|cure|curious|current|curse|curve|customer|cut"
+}

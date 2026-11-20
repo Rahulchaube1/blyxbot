@@ -1,0 +1,45 @@
+// save — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_save(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02550868
+    if sense == 1 {
+        return "verb\tsave from ruin, destruction, or harm\tsalvage, salve, relieve\t";
+    }
+    // verb 02225492
+    if sense == 2 {
+        return "verb\tto keep up and reserve for personal or special use\tpreserve\tShe saved the old family photographs in a drawer";
+    }
+    // verb 02551832
+    if sense == 3 {
+        return "verb\tbring into safety\tcarry through, pull through, bring through\t";
+    }
+    // verb 02266920
+    if sense == 4 {
+        return "verb\tspend less; buy at a reduced price\t\t";
+    }
+    // verb 02265979
+    if sense == 5 {
+        return "verb\taccumulate money for future use\tlay aside, save up\tHe saves half his salary";
+    }
+    // verb 00549552
+    if sense == 6 {
+        return "verb\tmake unnecessary an expenditure or effort\tmake unnecessary\tThis will save money";
+    }
+    // verb 02551602
+    if sense == 7 {
+        return "verb\tsave from sins\tdeliver, redeem\t";
+    }
+    // verb 02464583
+    if sense == 8 {
+        return "verb\trefrain from harming\tspare\t";
+    }
+    // verb 02357228
+    if sense == 9 {
+        return "verb\tspend sparingly, avoid the waste of\teconomize, economise\tThis move will save money";
+    }
+    // verb 02283716
+    if sense == 10 {
+        return "verb\tretain rights to\tkeep open, hold open, keep\t";
+    }
+    ""
+}

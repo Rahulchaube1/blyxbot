@@ -1,0 +1,21 @@
+// economy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_economy(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08366753
+    if sense == 1 {
+        return "noun\tthe system of production and distribution and consumption\teconomic system\t";
+    }
+    // noun 05644727
+    if sense == 2 {
+        return "noun\tthe efficient use of resources\t\teconomy of effort";
+    }
+    // noun 04893787
+    if sense == 3 {
+        return "noun\tfrugality in the expenditure of money or resources\tthriftiness\tthe Scots are famous for their economy";
+    }
+    // noun 00192613
+    if sense == 4 {
+        return "noun\tan act of economizing; reduction in cost\tsaving\tit was a small economy to walk to work every day";
+    }
+    ""
+}

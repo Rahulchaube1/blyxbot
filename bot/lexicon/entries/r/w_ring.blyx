@@ -1,0 +1,33 @@
+// ring — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ring(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02180898
+    if sense == 1 {
+        return "verb\tsound loudly and sonorously\tpeal\t";
+    }
+    // verb 02183787
+    if sense == 2 {
+        return "verb\tring or echo with sound\tresound, echo, reverberate\t";
+    }
+    // verb 02181538
+    if sense == 3 {
+        return "verb\tmake (bells) ring, often for the purposes of musical edification\tknell\tRing the bells";
+    }
+    // noun 04981658
+    if sense == 4 {
+        return "noun\ta characteristic sound\t\tit has the ring of sincerity";
+    }
+    // noun 13875392
+    if sense == 5 {
+        return "noun\ta toroidal shape\thalo, annulus, doughnut, anchor ring\ta ring of ships in the harbor";
+    }
+    // noun 03533972
+    if sense == 6 {
+        return "noun\ta rigid circular band of metal or wood or other material used for holding or fastening or hanging or pulling\thoop\t";
+    }
+    // verb 00789448
+    if sense == 7 {
+        return "verb\tget or try to get into communication (with someone) by telephone\tcall, telephone, call up, phone\t";
+    }
+    ""
+}

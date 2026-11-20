@@ -1,0 +1,17 @@
+// choose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_choose(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00674607
+    if sense == 1 {
+        return "verb\tpick out, select, or choose from a number of alternatives\ttake, select, pick out\tChoose a good husband for your daughter";
+    }
+    // verb 00679389
+    if sense == 2 {
+        return "verb\tselect as an alternative over another\tprefer, opt\tI always choose the fish over the meat courses in this restaurant";
+    }
+    // verb 00679937
+    if sense == 3 {
+        return "verb\tsee fit or proper to act in a certain way; decide to act in a certain way\t\t";
+    }
+    ""
+}

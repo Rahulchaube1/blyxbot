@@ -1,0 +1,29 @@
+// lot — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lot(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 13774404
+    if sense == 1 {
+        return "noun\t(often followed by `of') a large number or amount or extent\tbatch, deal, flock, good deal, great deal, hatful, heap, mass, mess, mickle, mint, mountain, muckle, passel, peck, pile, plenty, pot, quite a little, raft, sight, slew, spate, stack, tidy sum, wad\ta lot of money";
+    }
+    // noun 08674970
+    if sense == 2 {
+        return "noun\ta parcel of land having fixed boundaries\t\the bought a lot on the lake";
+    }
+    // noun 08240169
+    if sense == 3 {
+        return "noun\tan unofficial association of people or groups\tset, circle, band\tthey were an angry lot";
+    }
+    // noun 14473222
+    if sense == 4 {
+        return "noun\tyour overall circumstances or condition in life (including everything that happens to you)\tfortune, destiny, fate, luck, circumstances, portion\thas a happy lot";
+    }
+    // noun 03233423
+    if sense == 5 {
+        return "noun\tanything (straws or pebbles etc.) taken or chosen at random\tdraw\tthey drew lots for it";
+    }
+    // noun 07954731
+    if sense == 6 {
+        return "noun\tany collection in its entirety\tbunch, caboodle\t";
+    }
+    ""
+}

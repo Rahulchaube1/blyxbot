@@ -1,0 +1,13 @@
+// recommend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_recommend(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00875141
+    if sense == 1 {
+        return "verb\tpush for something\turge, advocate\tThe travel agent recommended strongly that we not travel on Thanksgiving Day";
+    }
+    // verb 00882948
+    if sense == 2 {
+        return "verb\texpress a good opinion of\tcommend\t";
+    }
+    ""
+}

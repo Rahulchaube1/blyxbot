@@ -1,0 +1,17 @@
+// lower — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lower(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01973125
+    if sense == 1 {
+        return "verb\tmove something or somebody to a lower position\ttake down, let down, get down, bring down\t";
+    }
+    // verb 00531489
+    if sense == 2 {
+        return "verb\tset lower\tlour\tlower a rating";
+    }
+    // verb 00267855
+    if sense == 3 {
+        return "verb\tmake lower or quieter\tturn down, lour\t";
+    }
+    ""
+}

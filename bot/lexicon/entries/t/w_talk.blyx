@@ -1,0 +1,37 @@
+// talk — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_talk(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00962447
+    if sense == 1 {
+        return "verb\texchange thoughts; talk with\tspeak\tWe often talk business";
+    }
+    // verb 00941990
+    if sense == 2 {
+        return "verb\texpress in speech\tspeak, utter, mouth, verbalize, verbalise\tShe talks a lot of nonsense";
+    }
+    // noun 07135734
+    if sense == 3 {
+        return "noun\tan exchange of ideas via conversation\ttalking\tlet's have more work and less talk around here";
+    }
+    // verb 00963570
+    if sense == 4 {
+        return "verb\tuse language\tspeak\tthe baby talks already";
+    }
+    // verb 00952841
+    if sense == 5 {
+        return "verb\treveal information\tspill\tIf you don't oblige me, I'll talk!";
+    }
+    // verb 00937208
+    if sense == 6 {
+        return "verb\tdivulge confidential information or secrets\tspill the beans, let the cat out of the bag, tattle, blab, peach, babble, sing, babble out, blab out\tBe careful--his secretary talks";
+    }
+    // noun 07139316
+    if sense == 7 {
+        return "noun\tdiscussion; (`talk about' is a less formal alternative for `discussion of')\t\this poetry contains much talk about love and anger";
+    }
+    // noun 00893243
+    if sense == 8 {
+        return "noun\tthe act of giving a talk to an audience\t\tI attended an interesting talk on local history";
+    }
+    ""
+}

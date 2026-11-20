@@ -1,0 +1,29 @@
+// protest — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_protest(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00910135
+    if sense == 1 {
+        return "verb\tutter words of protest\t\t";
+    }
+    // noun 07210225
+    if sense == 2 {
+        return "noun\ta formal and solemn declaration of objection\tprotestation\tthey finished the game under protest to the league president";
+    }
+    // verb 02521410
+    if sense == 3 {
+        return "verb\texpress opposition through action or words\tresist, dissent\t";
+    }
+    // noun 01177033
+    if sense == 4 {
+        return "noun\tthe act of protesting; a public (often organized) manifestation of dissent\tobjection, dissent\t";
+    }
+    // noun 07210553
+    if sense == 5 {
+        return "noun\tthe act of making a strong public expression of disagreement and disapproval\t\the shouted his protests at the umpire";
+    }
+    // verb 01011542
+    if sense == 6 {
+        return "verb\taffirm or avow formally or solemnly\t\tThe suspect protested his innocence";
+    }
+    ""
+}

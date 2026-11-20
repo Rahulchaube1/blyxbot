@@ -1,0 +1,21 @@
+// experiment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_experiment(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00639556
+    if sense == 1 {
+        return "noun\tthe act of conducting a controlled test or investigation\texperimentation\t";
+    }
+    // verb 02532595
+    if sense == 2 {
+        return "verb\tto conduct a test or investigation\t\tWe are experimenting with the new drug in order to fight this disease";
+    }
+    // noun 05798043
+    if sense == 3 {
+        return "noun\tthe testing of an idea\texperimentation\tit was an experiment in living";
+    }
+    // noun 00785959
+    if sense == 4 {
+        return "noun\ta venture at something new or different\t\tas an experiment he decided to grow a beard";
+    }
+    ""
+}

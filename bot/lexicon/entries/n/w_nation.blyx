@@ -1,0 +1,13 @@
+// nation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_nation(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08168978
+    if sense == 1 {
+        return "noun\ta politically organized body of people under a single government\tstate, country, land, commonwealth, res publica, body politic\tAfrican nations";
+    }
+    // noun 08166552
+    if sense == 2 {
+        return "noun\tthe people who live in a nation or country\tland, country\ta statement that sums up the nation's mood";
+    }
+    ""
+}

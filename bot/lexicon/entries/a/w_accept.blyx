@@ -1,0 +1,33 @@
+// accept — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_accept(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00686447
+    if sense == 1 {
+        return "verb\tconsider or hold as true\t\tI cannot accept the dogma of this church";
+    }
+    // verb 02236124
+    if sense == 2 {
+        return "verb\treceive willingly something given or offered\ttake, have\tPlease accept my present";
+    }
+    // verb 00797697
+    if sense == 3 {
+        return "verb\tgive an affirmative reply to; respond favorably to\tconsent, go for\tI cannot accept your invitation";
+    }
+    // verb 00719231
+    if sense == 4 {
+        return "verb\treact favorably to; consider right and proper\t\tPeople did not accept atonal music at that time";
+    }
+    // verb 02236624
+    if sense == 5 {
+        return "verb\tadmit into a group or community\tadmit, take, take on\taccept students for graduate study";
+    }
+    // verb 02301825
+    if sense == 6 {
+        return "verb\ttake on as one's own the expenses or debts of another person\tbear, take over, assume\tI'll accept the charges";
+    }
+    // verb 00668805
+    if sense == 7 {
+        return "verb\ttolerate or accommodate oneself to\tlive with, swallow\tI shall have to accept these unpleasant working conditions";
+    }
+    ""
+}

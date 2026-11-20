@@ -1,0 +1,13 @@
+// minimum — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_minimum(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01496021
+    if sense == 1 {
+        return "adjective\tthe least possible\tminimal\tminimum wage";
+    }
+    // noun 13763384
+    if sense == 2 {
+        return "noun\tthe smallest possible quantity\tlower limit\t";
+    }
+    ""
+}

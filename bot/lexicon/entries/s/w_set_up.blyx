@@ -1,0 +1,45 @@
+// set up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_set_up(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02427103
+    if sense == 1 {
+        return "verb\tset up or found\testablish, found, launch\tShe set up a literacy program";
+    }
+    // verb 01656788
+    if sense == 2 {
+        return "verb\tcreate by putting components or members together\tassemble, piece, put together, tack, tack together\tThey set up a committee";
+    }
+    // verb 01661243
+    if sense == 3 {
+        return "verb\tconstruct, build, or erect\traise, erect, rear, put up\t";
+    }
+    // verb 00407848
+    if sense == 4 {
+        return "verb\tget ready for a particular purpose or event\tlay out, set\tset up an experiment";
+    }
+    // verb 01463963
+    if sense == 5 {
+        return "verb\tput into a proper or systematic order\tarrange\t";
+    }
+    // verb 01661472
+    if sense == 6 {
+        return "verb\tbegin, or enable someone else to begin, a venture by providing the means, logistics, etc.\t\tset up an election";
+    }
+    // verb 02578008
+    if sense == 7 {
+        return "verb\ttake or catch as if in a snare or trap\tensnare, entrap, frame\tI was set up!";
+    }
+    // verb 01642924
+    if sense == 8 {
+        return "verb\tproduce\teffect, effectuate\tThe scientists set up a shock wave";
+    }
+    // verb 01569566
+    if sense == 9 {
+        return "verb\tset up for use\tinstall, instal, put in\t";
+    }
+    // verb 01570108
+    if sense == 10 {
+        return "verb\tplace\tinstall, instal, establish\t";
+    }
+    ""
+}

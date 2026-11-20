@@ -1,0 +1,21 @@
+// community — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_community(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08223802
+    if sense == 1 {
+        return "noun\ta group of people living in a particular local area\t\tthe team is drawn from all parts of the community";
+    }
+    // noun 13240839
+    if sense == 2 {
+        return "noun\tcommon ownership\t\tthey shared a community of possessions";
+    }
+    // noun 08224274
+    if sense == 3 {
+        return "noun\ta group of nations having common interests\t\tthey hoped to join the NATO community";
+    }
+    // noun 13971382
+    if sense == 4 {
+        return "noun\tagreement as to goals\tcommunity of interests\tthe preachers and the bootleggers found they had a community of interests";
+    }
+    ""
+}

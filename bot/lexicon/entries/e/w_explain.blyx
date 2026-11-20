@@ -1,0 +1,17 @@
+// explain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_explain(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00939277
+    if sense == 1 {
+        return "verb\tmake plain and comprehensible\texplicate\tHe explained the laws of physics to his students";
+    }
+    // verb 01065456
+    if sense == 2 {
+        return "verb\tdefine\t\tThe committee explained their plan for fund-raising to the Dean";
+    }
+    // verb 00893435
+    if sense == 3 {
+        return "verb\tserve as a reason or cause or justification of\texcuse\tHer recent divorce may explain her reluctance to date again";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// night — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_night(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 15167027
+    if sense == 1 {
+        return "noun\tthe time after sunset and before sunrise while it is dark outside\tnighttime, dark\t";
+    }
+    // noun 15167577
+    if sense == 2 {
+        return "noun\ta period of ignorance or backwardness or gloom\t\t";
+    }
+    // noun 15167474
+    if sense == 3 {
+        return "noun\tthe period spent sleeping\t\tI had a restless night";
+    }
+    // noun 15155747
+    if sense == 4 {
+        return "noun\tthe dark part of the diurnal cycle considered a time unit\t\tthree nights later he collapsed";
+    }
+    // noun 13983717
+    if sense == 5 {
+        return "noun\tdarkness\t\tit vanished into the night";
+    }
+    ""
+}

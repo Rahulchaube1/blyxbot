@@ -1,0 +1,9 @@
+// accuse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_accuse(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00842989
+    if sense == 1 {
+        return "verb\tbring an accusation against; level a charge against\timpeach, incriminate, criminate\tThe neighbors accused the man of spousal abuse";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// need — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_need(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02627934
+    if sense == 1 {
+        return "verb\trequire as useful, just, or proper\tnecessitate, ask, postulate, require, take, involve, call for, demand\t";
+    }
+    // verb 01188725
+    if sense == 2 {
+        return "verb\thave need of\twant, require\t";
+    }
+    // noun 14449126
+    if sense == 3 {
+        return "noun\ta condition requiring relief\tdemand\tshe satisfied his need for affection";
+    }
+    // noun 09367991
+    if sense == 4 {
+        return "noun\tanything that is necessary but lacking\twant\the had sufficient means to meet his simple needs";
+    }
+    // noun 00023773
+    if sense == 5 {
+        return "noun\tthe psychological feature that arouses an organism to action toward a desired goal; the reason for the action; that which gives purpose and direction to behavior\tmotivation, motive\t";
+    }
+    // noun 14493716
+    if sense == 6 {
+        return "noun\ta state of extreme poverty or destitution\tindigence, penury, pauperism, pauperization\ta general state of need exists among the homeless";
+    }
+    // verb 01189113
+    if sense == 7 {
+        return "verb\thave or feel a need for\t\talways needing friends and money";
+    }
+    ""
+}

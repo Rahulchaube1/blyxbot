@@ -1,0 +1,13 @@
+// conviction — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_conviction(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05942888
+    if sense == 1 {
+        return "noun\tan unshakable belief in something without need for proof or evidence\tstrong belief, article of faith\t";
+    }
+    // noun 01189282
+    if sense == 2 {
+        return "noun\t(criminal law) a final judgment of guilty in a criminal case and the punishment that is imposed\tjudgment of conviction, condemnation, sentence\tthe conviction came as no surprise";
+    }
+    ""
+}

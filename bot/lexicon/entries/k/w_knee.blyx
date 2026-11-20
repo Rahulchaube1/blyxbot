@@ -1,0 +1,17 @@
+// knee — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_knee(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05573602
+    if sense == 1 {
+        return "noun\thinge joint in the human leg connecting the tibia and fibula with the femur and protected in front by the patella\tknee joint, human knee, articulatio genus, genu\t";
+    }
+    // noun 02464065
+    if sense == 2 {
+        return "noun\tjoint between the femur and tibia in a quadruped; corresponds to the human knee\tstifle\t";
+    }
+    // noun 03622698
+    if sense == 3 {
+        return "noun\tthe part of a trouser leg that provides the cloth covering for the knee\t\t";
+    }
+    ""
+}

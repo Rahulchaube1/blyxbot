@@ -1,0 +1,29 @@
+// wild — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wild(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02390335
+    if sense == 1 {
+        return "adjective\tmarked by extreme lack of restraint or control\t\twild talk";
+    }
+    // adj 02389220
+    if sense == 2 {
+        return "adjective\tin a natural state; not tamed or domesticated or cultivated\tuntamed\twild geese";
+    }
+    // adj 01727303
+    if sense == 3 {
+        return "adjective\tin a state of extreme emotion\t\twild with anger";
+    }
+    // adj 00601650
+    if sense == 4 {
+        return "adjective\tdeviating widely from an intended course\t\ta wild bullet";
+    }
+    // adj 01514141
+    if sense == 5 {
+        return "adjective\t(of colors or sounds) intensely vivid or loud\tviolent\twild colors";
+    }
+    // adv 00439257
+    if sense == 6 {
+        return "adverb\tin an uncontrolled and rampant manner\trampantly\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// mine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mine(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 03768346
+    if sense == 1 {
+        return "noun\texcavation in the earth from which ores and minerals are extracted\t\t";
+    }
+    // noun 03768132
+    if sense == 2 {
+        return "noun\texplosive device that explodes on contact; designed to destroy vehicles or ships or to kill or maim personnel\t\t";
+    }
+    // verb 01163620
+    if sense == 3 {
+        return "verb\tget from the earth by excavation\t\tmine ores and metals";
+    }
+    ""
+}

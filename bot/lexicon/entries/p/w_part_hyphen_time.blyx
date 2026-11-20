@@ -1,0 +1,9 @@
+// part-time — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_part_hyphen_time(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01089369
+    if sense == 1 {
+        return "adjective\tinvolving less than the standard or customary time for an activity\tparttime\tpart-time employees";
+    }
+    ""
+}

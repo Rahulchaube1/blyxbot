@@ -1,0 +1,29 @@
+// engage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_engage(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02375131
+    if sense == 1 {
+        return "verb\tcarry out or participate in an activity; be involved in\tprosecute, pursue\tThey engaged in a discussion";
+    }
+    // verb 00600370
+    if sense == 2 {
+        return "verb\tconsume all of one's attention or time\tabsorb, engross, occupy\t";
+    }
+    // verb 02409412
+    if sense == 3 {
+        return "verb\tengage or hire for work\thire, employ\t";
+    }
+    // verb 02401399
+    if sense == 4 {
+        return "verb\task to represent; of legal counsel\t\t";
+    }
+    // verb 00886602
+    if sense == 5 {
+        return "verb\tgive to in marriage\tbetroth, affiance, plight\t";
+    }
+    // verb 00220115
+    if sense == 6 {
+        return "verb\tget caught\t\tmake sure the gear is engaged";
+    }
+    ""
+}

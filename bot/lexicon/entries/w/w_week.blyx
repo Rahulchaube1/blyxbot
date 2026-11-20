@@ -1,0 +1,17 @@
+// week — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_week(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 15169873
+    if sense == 1 {
+        return "noun\tany period of seven consecutive days\thebdomad\tit rained for a week";
+    }
+    // noun 15135996
+    if sense == 2 {
+        return "noun\thours or days of work in a calendar week\tworkweek\tthey worked a 40-hour week";
+    }
+    // noun 15136147
+    if sense == 3 {
+        return "noun\ta period of seven consecutive days starting on Sunday\tcalendar week\t";
+    }
+    ""
+}

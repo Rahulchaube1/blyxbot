@@ -1,0 +1,33 @@
+// surface — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_surface(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 04362025
+    if sense == 1 {
+        return "noun\tthe outer boundary of an artifact or a material layer constituting or resembling such a boundary\t\tthere is a special cleaner for these surfaces";
+    }
+    // noun 08660339
+    if sense == 2 {
+        return "noun\tthe extended two-dimensional outer boundary of a three-dimensional object\t\tthey skimmed over the surface of the water";
+    }
+    // noun 09451517
+    if sense == 3 {
+        return "noun\tthe outermost level of the land or sea\tEarth's surface\tearthquakes originate far below the surface";
+    }
+    // noun 05853449
+    if sense == 4 {
+        return "noun\ta superficial aspect as opposed to the real nature of something\t\tit was not what it appeared to be on the surface";
+    }
+    // adj 02471091
+    if sense == 5 {
+        return "adjective\ton the surface\t\tsurface materials of the moon";
+    }
+    // noun 05612809
+    if sense == 6 {
+        return "noun\tinformation that has become public\topen\tthe facts had been brought to the surface";
+    }
+    // verb 01990281
+    if sense == 7 {
+        return "verb\tcome to the surface\tcome up, rise up, rise\t";
+    }
+    ""
+}

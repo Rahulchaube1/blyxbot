@@ -1,0 +1,13 @@
+// army — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_army(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08191230
+    if sense == 1 {
+        return "noun\ta permanent organization of the military land forces of a nation or state\tregular army, ground forces\t";
+    }
+    // noun 08183290
+    if sense == 2 {
+        return "noun\ta large number of people united for some specific purpose\t\t";
+    }
+    ""
+}

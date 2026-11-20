@@ -1,0 +1,21 @@
+// true — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_true(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02460502
+    if sense == 1 {
+        return "adjective\tconsistent with fact or reality; not false\t\tthe story is true";
+    }
+    // adj 00023120
+    if sense == 2 {
+        return "adjective\taccurately placed or thrown\tdead on target\this aim was true";
+    }
+    // adj 00959530
+    if sense == 3 {
+        return "adjective\tdevoted (sometimes fanatically) to a cause or concept or truth\t\ttrue believers bonded together against all who disagreed with them";
+    }
+    // adv 00184284
+    if sense == 4 {
+        return "adverb\tas acknowledged\tadmittedly, avowedly, confessedly\ttrue, she is the smartest in her class";
+    }
+    ""
+}

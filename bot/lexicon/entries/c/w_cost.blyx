@@ -1,0 +1,25 @@
+// cost — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cost(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13275847
+    if sense == 1 {
+        return "noun\tthe total spent for goods or services including money and time and labor\t\t";
+    }
+    // verb 02702508
+    if sense == 2 {
+        return "verb\tbe priced at\tbe\tThese shoes cost $100";
+    }
+    // verb 02628961
+    if sense == 3 {
+        return "verb\trequire to lose, suffer, or sacrifice\t\tThis mistake cost him his job";
+    }
+    // noun 05145118
+    if sense == 4 {
+        return "noun\tthe property of having material worth (often indicated by the amount of money something would bring if sold)\tmonetary value, price\the couldn't calculate the cost of the collection";
+    }
+    // noun 05163807
+    if sense == 5 {
+        return "noun\tvalue measured by what must be given or done or undergone to obtain something\tprice, toll\tthe cost in human life was enormous";
+    }
+    ""
+}

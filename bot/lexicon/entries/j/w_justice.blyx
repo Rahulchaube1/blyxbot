@@ -1,0 +1,17 @@
+// justice — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_justice(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04850117
+    if sense == 1 {
+        return "noun\tthe quality of being just or fair\tjustness\t";
+    }
+    // noun 00694681
+    if sense == 2 {
+        return "noun\tjudgment involved in the determination of rights and the assignment of rewards and punishments\t\t";
+    }
+    // noun 10225219
+    if sense == 3 {
+        return "noun\ta public official authorized to decide questions brought before a court of justice\tjudge, jurist\t";
+    }
+    ""
+}

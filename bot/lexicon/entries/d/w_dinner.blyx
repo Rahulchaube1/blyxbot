@@ -1,0 +1,13 @@
+// dinner — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dinner(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07575726
+    if sense == 1 {
+        return "noun\tthe main meal of the day served in the evening or at midday\t\tdinner will be at 8";
+    }
+    // noun 08253815
+    if sense == 2 {
+        return "noun\ta party of people assembled to have dinner together\tdinner party\tguests should never be late to a dinner party";
+    }
+    ""
+}

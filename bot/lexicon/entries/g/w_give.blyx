@@ -1,0 +1,117 @@
+// give — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_give(sense: i64) -> str {
+    if sense == 0 { return "28"; }
+    // verb 02316868
+    if sense == 1 {
+        return "verb\tcause to have, in the abstract sense or physical sense\t\t";
+    }
+    // verb 02339171
+    if sense == 2 {
+        return "verb\tbe the cause or source of\tyield, afford\t";
+    }
+    // verb 02199590
+    if sense == 3 {
+        return "verb\ttransfer possession of something concrete or abstract to somebody\t\tcan you give me lessons?";
+    }
+    // verb 02235842
+    if sense == 4 {
+        return "verb\tconvey or reveal information\t\tGive one's name";
+    }
+    // verb 01060494
+    if sense == 5 {
+        return "verb\tconvey, as of a compliment, regards, attention, etc.; bestow\tpay\tgive the orders";
+    }
+    // verb 01733477
+    if sense == 6 {
+        return "verb\torganize or be responsible for\thold, throw, have, make\tgive a course";
+    }
+    // verb 01060317
+    if sense == 7 {
+        return "verb\tconvey or communicate; of a smile, a look, a physical gesture\tthrow\t";
+    }
+    // verb 02200686
+    if sense == 8 {
+        return "verb\tgive as a present; make a gift of\tgift, present\tWhat will you give her for her birthday?";
+    }
+    // verb 01629403
+    if sense == 9 {
+        return "verb\tcause to happen or be responsible for\tyield\t";
+    }
+    // verb 00732224
+    if sense == 10 {
+        return "verb\tdedicate\tpay, devote\tgive thought to";
+    }
+    // verb 01629000
+    if sense == 11 {
+        return "verb\tgive or supply\trender, yield, return, generate\t";
+    }
+    // verb 02296153
+    if sense == 12 {
+        return "verb\ttransmit (knowledge or skills)\timpart, leave, pass on\tgive a secret to the Russians";
+    }
+    // verb 01647672
+    if sense == 13 {
+        return "verb\tbring about\testablish\t";
+    }
+    // verb 02200498
+    if sense == 14 {
+        return "verb\tleave with; give temporarily\t\tCan I give you my keys while I go in the pool?";
+    }
+    // verb 02562901
+    if sense == 15 {
+        return "verb\temit or utter\t\tGive a gulp";
+    }
+    // verb 02343595
+    if sense == 16 {
+        return "verb\tendure the loss of\tsacrifice\t";
+    }
+    // verb 02230772
+    if sense == 17 {
+        return "verb\tplace into the hands or custody of\tpass, hand, reach, pass on, turn over\t";
+    }
+    // verb 00887463
+    if sense == 18 {
+        return "verb\tgive entirely to a specific person, activity, or cause\tdedicate, consecrate, commit, devote\tgive one's talents to a good cause";
+    }
+    // verb 02309374
+    if sense == 19 {
+        return "verb\tgive (as medicine)\t\t";
+    }
+    // verb 02309165
+    if sense == 20 {
+        return "verb\tgive or convey physically\tapply\t";
+    }
+    // verb 01060746
+    if sense == 21 {
+        return "verb\tbestow\trender\tgive homage";
+    }
+    // verb 02317094
+    if sense == 22 {
+        return "verb\tbestow, especially officially\tgrant\tgive a divorce";
+    }
+    // verb 01848465
+    if sense == 23 {
+        return "verb\tmove in order to make room for someone for something\tmove over, give way, ease up, yield\t";
+    }
+    // verb 01178565
+    if sense == 24 {
+        return "verb\tgive food to\tfeed\tdon't give the child this tough meat";
+    }
+    // verb 02308741
+    if sense == 25 {
+        return "verb\tcontribute to some cause\tcontribute, chip in, kick in\t";
+    }
+    // noun 05021151
+    if sense == 26 {
+        return "noun\tthe elasticity of something that can be stretched and returns to its original length\tspring, springiness\t";
+    }
+    // verb 01989053
+    if sense == 27 {
+        return "verb\tbreak down, literally or metaphorically\tcollapse, fall in, cave in, give way, break, founder\t";
+    }
+    // verb 00673571
+    if sense == 28 {
+        return "verb\testimate the duration or outcome of something\t\t";
+    }
+    ""
+}

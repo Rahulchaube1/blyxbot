@@ -1,0 +1,276 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::t::w_table;
+use entries::t::w_take;
+use entries::t::w_take_care;
+use entries::t::w_take_off;
+use entries::t::w_take_on;
+use entries::t::w_take_out;
+use entries::t::w_take_over;
+use entries::t::w_take_place;
+use entries::t::w_take_up;
+use entries::t::w_tale;
+use entries::t::w_talk;
+use entries::t::w_talk_about;
+use entries::t::w_tall;
+use entries::t::w_task;
+use entries::t::w_taste;
+use entries::t::w_tattered;
+use entries::t::w_tax;
+use entries::t::w_teach;
+use entries::t::w_teacher;
+use entries::t::w_team;
+use entries::t::w_tear;
+use entries::t::w_technical;
+use entries::t::w_technique;
+use entries::t::w_telephone;
+use entries::t::w_tell;
+use entries::t::w_temperature;
+use entries::t::w_ten;
+use entries::t::w_tend;
+use entries::t::w_tendency;
+use entries::t::w_term;
+use entries::t::w_test;
+use entries::t::w_text;
+use entries::t::w_then;
+use entries::t::w_theory;
+use entries::t::w_there;
+use entries::t::w_therefore;
+use entries::t::w_thermal;
+use entries::t::w_thick;
+use entries::t::w_thin;
+use entries::t::w_thing;
+use entries::t::w_think;
+use entries::t::w_think_about;
+use entries::t::w_think_of;
+use entries::t::w_third;
+use entries::t::w_thought;
+use entries::t::w_thousand;
+use entries::t::w_threat;
+use entries::t::w_threaten;
+use entries::t::w_three;
+use entries::t::w_throat;
+use entries::t::w_throw;
+use entries::t::w_thrust;
+use entries::t::w_thus;
+use entries::t::w_thyroid;
+use entries::t::w_tie;
+use entries::t::w_tight;
+use entries::t::w_time;
+use entries::t::w_tip;
+use entries::t::w_tissue;
+use entries::t::w_title;
+use entries::t::w_today;
+use entries::t::w_together;
+use entries::t::w_tomorrow;
+use entries::t::w_tone;
+use entries::t::w_tongue;
+use entries::t::w_tonight;
+use entries::t::w_too;
+use entries::t::w_too_much;
+use entries::t::w_tool;
+use entries::t::w_tooth;
+use entries::t::w_top;
+use entries::t::w_toss;
+use entries::t::w_total;
+use entries::t::w_touch;
+use entries::t::w_tough;
+use entries::t::w_town;
+use entries::t::w_trace;
+use entries::t::w_trade;
+use entries::t::w_tradition;
+use entries::t::w_traditional;
+use entries::t::w_trail;
+use entries::t::w_train;
+use entries::t::w_training;
+use entries::t::w_transfer;
+use entries::t::w_transform;
+use entries::t::w_translate;
+use entries::t::w_travel;
+use entries::t::w_treat;
+use entries::t::w_treatment;
+use entries::t::w_tree;
+use entries::t::w_tremendous;
+use entries::t::w_trend;
+use entries::t::w_trial;
+use entries::t::w_trip;
+use entries::t::w_troops;
+use entries::t::w_trouble;
+use entries::t::w_truck;
+use entries::t::w_true;
+use entries::t::w_truly;
+use entries::t::w_trust;
+use entries::t::w_truth;
+use entries::t::w_try;
+use entries::t::w_tsunami;
+use entries::t::w_tube;
+use entries::t::w_turn;
+use entries::t::w_turn_out;
+use entries::t::w_turn_to;
+use entries::t::w_twelve;
+use entries::t::w_twenty;
+use entries::t::w_twice;
+use entries::t::w_twist;
+use entries::t::w_two;
+use entries::t::w_type;
+use entries::t::w_typical;
+
+fn through_w_tattered(term: str, sense: i64) -> str {
+    if term == "table" { return w_table(sense); }
+    if term == "take" { return w_take(sense); }
+    if term == "take care" { return w_take_care(sense); }
+    if term == "take off" { return w_take_off(sense); }
+    if term == "take on" { return w_take_on(sense); }
+    if term == "take out" { return w_take_out(sense); }
+    if term == "take over" { return w_take_over(sense); }
+    if term == "take place" { return w_take_place(sense); }
+    if term == "take up" { return w_take_up(sense); }
+    if term == "tale" { return w_tale(sense); }
+    if term == "talk" { return w_talk(sense); }
+    if term == "talk about" { return w_talk_about(sense); }
+    if term == "tall" { return w_tall(sense); }
+    if term == "task" { return w_task(sense); }
+    if term == "taste" { return w_taste(sense); }
+    if term == "tattered" { return w_tattered(sense); }
+    ""
+}
+
+fn through_w_text(term: str, sense: i64) -> str {
+    if term == "tax" { return w_tax(sense); }
+    if term == "teach" { return w_teach(sense); }
+    if term == "teacher" { return w_teacher(sense); }
+    if term == "team" { return w_team(sense); }
+    if term == "tear" { return w_tear(sense); }
+    if term == "technical" { return w_technical(sense); }
+    if term == "technique" { return w_technique(sense); }
+    if term == "telephone" { return w_telephone(sense); }
+    if term == "tell" { return w_tell(sense); }
+    if term == "temperature" { return w_temperature(sense); }
+    if term == "ten" { return w_ten(sense); }
+    if term == "tend" { return w_tend(sense); }
+    if term == "tendency" { return w_tendency(sense); }
+    if term == "term" { return w_term(sense); }
+    if term == "test" { return w_test(sense); }
+    if term == "text" { return w_text(sense); }
+    ""
+}
+
+fn through_w_threaten(term: str, sense: i64) -> str {
+    if term == "then" { return w_then(sense); }
+    if term == "theory" { return w_theory(sense); }
+    if term == "there" { return w_there(sense); }
+    if term == "therefore" { return w_therefore(sense); }
+    if term == "thermal" { return w_thermal(sense); }
+    if term == "thick" { return w_thick(sense); }
+    if term == "thin" { return w_thin(sense); }
+    if term == "thing" { return w_thing(sense); }
+    if term == "think" { return w_think(sense); }
+    if term == "think about" { return w_think_about(sense); }
+    if term == "think of" { return w_think_of(sense); }
+    if term == "third" { return w_third(sense); }
+    if term == "thought" { return w_thought(sense); }
+    if term == "thousand" { return w_thousand(sense); }
+    if term == "threat" { return w_threat(sense); }
+    if term == "threaten" { return w_threaten(sense); }
+    ""
+}
+
+fn through_w_tone(term: str, sense: i64) -> str {
+    if term == "three" { return w_three(sense); }
+    if term == "throat" { return w_throat(sense); }
+    if term == "throw" { return w_throw(sense); }
+    if term == "thrust" { return w_thrust(sense); }
+    if term == "thus" { return w_thus(sense); }
+    if term == "thyroid" { return w_thyroid(sense); }
+    if term == "tie" { return w_tie(sense); }
+    if term == "tight" { return w_tight(sense); }
+    if term == "time" { return w_time(sense); }
+    if term == "tip" { return w_tip(sense); }
+    if term == "tissue" { return w_tissue(sense); }
+    if term == "title" { return w_title(sense); }
+    if term == "today" { return w_today(sense); }
+    if term == "together" { return w_together(sense); }
+    if term == "tomorrow" { return w_tomorrow(sense); }
+    if term == "tone" { return w_tone(sense); }
+    ""
+}
+
+fn through_w_traditional(term: str, sense: i64) -> str {
+    if term == "tongue" { return w_tongue(sense); }
+    if term == "tonight" { return w_tonight(sense); }
+    if term == "too" { return w_too(sense); }
+    if term == "too much" { return w_too_much(sense); }
+    if term == "tool" { return w_tool(sense); }
+    if term == "tooth" { return w_tooth(sense); }
+    if term == "top" { return w_top(sense); }
+    if term == "toss" { return w_toss(sense); }
+    if term == "total" { return w_total(sense); }
+    if term == "touch" { return w_touch(sense); }
+    if term == "tough" { return w_tough(sense); }
+    if term == "town" { return w_town(sense); }
+    if term == "trace" { return w_trace(sense); }
+    if term == "trade" { return w_trade(sense); }
+    if term == "tradition" { return w_tradition(sense); }
+    if term == "traditional" { return w_traditional(sense); }
+    ""
+}
+
+fn through_w_trouble(term: str, sense: i64) -> str {
+    if term == "trail" { return w_trail(sense); }
+    if term == "train" { return w_train(sense); }
+    if term == "training" { return w_training(sense); }
+    if term == "transfer" { return w_transfer(sense); }
+    if term == "transform" { return w_transform(sense); }
+    if term == "translate" { return w_translate(sense); }
+    if term == "travel" { return w_travel(sense); }
+    if term == "treat" { return w_treat(sense); }
+    if term == "treatment" { return w_treatment(sense); }
+    if term == "tree" { return w_tree(sense); }
+    if term == "tremendous" { return w_tremendous(sense); }
+    if term == "trend" { return w_trend(sense); }
+    if term == "trial" { return w_trial(sense); }
+    if term == "trip" { return w_trip(sense); }
+    if term == "troops" { return w_troops(sense); }
+    if term == "trouble" { return w_trouble(sense); }
+    ""
+}
+
+fn through_w_two(term: str, sense: i64) -> str {
+    if term == "truck" { return w_truck(sense); }
+    if term == "true" { return w_true(sense); }
+    if term == "truly" { return w_truly(sense); }
+    if term == "trust" { return w_trust(sense); }
+    if term == "truth" { return w_truth(sense); }
+    if term == "try" { return w_try(sense); }
+    if term == "tsunami" { return w_tsunami(sense); }
+    if term == "tube" { return w_tube(sense); }
+    if term == "turn" { return w_turn(sense); }
+    if term == "turn out" { return w_turn_out(sense); }
+    if term == "turn to" { return w_turn_to(sense); }
+    if term == "twelve" { return w_twelve(sense); }
+    if term == "twenty" { return w_twenty(sense); }
+    if term == "twice" { return w_twice(sense); }
+    if term == "twist" { return w_twist(sense); }
+    if term == "two" { return w_two(sense); }
+    ""
+}
+
+fn through_w_typical(term: str, sense: i64) -> str {
+    if term == "type" { return w_type(sense); }
+    if term == "typical" { return w_typical(sense); }
+    ""
+}
+
+pub fn lookup_t(term: str, sense: i64) -> str {
+    if term <= "tattered" { return through_w_tattered(term, sense); }
+    if term <= "text" { return through_w_text(term, sense); }
+    if term <= "threaten" { return through_w_threaten(term, sense); }
+    if term <= "tone" { return through_w_tone(term, sense); }
+    if term <= "traditional" { return through_w_traditional(term, sense); }
+    if term <= "trouble" { return through_w_trouble(term, sense); }
+    if term <= "two" { return through_w_two(term, sense); }
+    through_w_typical(term, sense)
+}
+
+pub fn words_t() -> str {
+    "table|take|take care|take off|take on|take out|take over|take place|take up|tale|talk|talk about|tall|task|taste|tattered|tax|teach|teacher|team|tear|technical|technique|telephone|tell|temperature|ten|tend|tendency|term|test|text|then|theory|there|therefore|thermal|thick|thin|thing|think|think about|think of|third|thought|thousand|threat|threaten|three|throat|throw|thrust|thus|thyroid|tie|tight|time|tip|tissue|title|today|together|tomorrow|tone|tongue|tonight|too|too much|tool|tooth|top|toss|total|touch|tough|town|trace|trade|tradition|traditional|trail|train|training|transfer|transform|translate|travel|treat|treatment|tree|tremendous|trend|trial|trip|troops|trouble|truck|true|truly|trust|truth|try|tsunami|tube|turn|turn out|turn to|twelve|twenty|twice|twist|two|type|typical"
+}

@@ -1,0 +1,13 @@
+// continuous — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_continuous(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00594413
+    if sense == 1 {
+        return "adjective\tcontinuing in time or space without interruption\tuninterrupted\ta continuous rearrangement of electrons in the solar atoms results in the emission of light";
+    }
+    // adj 00597424
+    if sense == 2 {
+        return "adjective\tof a function or curve; extending without break or irregularity\t\t";
+    }
+    ""
+}

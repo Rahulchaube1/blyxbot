@@ -1,0 +1,33 @@
+// movement — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_movement(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 00331950
+    if sense == 1 {
+        return "noun\ta change of position that does not entail a change of location\tmotion, move, motility\tmovement is a sign of life";
+    }
+    // noun 00279835
+    if sense == 2 {
+        return "noun\tthe act of changing location from one place to another\tmotion, move\tthe movement of people from the farms to the cities";
+    }
+    // noun 07309781
+    if sense == 3 {
+        return "noun\ta natural event that involves a change in the position or location of something\tmotion\t";
+    }
+    // noun 08464601
+    if sense == 4 {
+        return "noun\ta group of people with a common ideology who try together to achieve certain general goals\tsocial movement, front\the was a charter member of the movement";
+    }
+    // noun 07046339
+    if sense == 5 {
+        return "noun\ta major self-contained part of a symphony or sonata\t\tthe second movement is slow and melodic";
+    }
+    // noun 00798245
+    if sense == 6 {
+        return "noun\ta series of actions advancing a principle or tending toward a particular end\tcampaign, cause, crusade, drive, effort\tthe movement to end slavery";
+    }
+    // noun 11425088
+    if sense == 7 {
+        return "noun\tan optical illusion of motion produced by viewing a rapid succession of still pictures of a moving object\tapparent motion, motion, apparent movement\tthe succession of flashing lights gave an illusion of movement";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// devil — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_devil(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 09543353
+    if sense == 1 {
+        return "noun\t(Judeo-Christian and Islamic religions) chief spirit of evil and adversary of God; tempter of mankind; master of Hell\tSatan, Old Nick, Lucifer, Beelzebub, the Tempter, Prince of Darkness\t";
+    }
+    // noun 09542339
+    if sense == 2 {
+        return "noun\tan evil supernatural being\tfiend, demon, daemon, daimon\t";
+    }
+    // noun 07125786
+    if sense == 3 {
+        return "noun\ta word used in exclamations of confusion\tdeuce, dickens\twhat the devil";
+    }
+    // noun 10169419
+    if sense == 4 {
+        return "noun\ta rowdy or mischievous person (usually a young man)\thellion, heller\t";
+    }
+    ""
+}

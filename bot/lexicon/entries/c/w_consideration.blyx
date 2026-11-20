@@ -1,0 +1,21 @@
+// consideration — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_consideration(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05784831
+    if sense == 1 {
+        return "noun\tthe process of giving careful thought to something\t\t";
+    }
+    // noun 05822746
+    if sense == 2 {
+        return "noun\tinformation that should be kept in mind when making a decision\tcircumstance, condition\tanother consideration is the time it would take";
+    }
+    // noun 07138915
+    if sense == 3 {
+        return "noun\ta discussion of a topic (as in a meeting)\t\tconsideration of the traffic problem took more than an hour";
+    }
+    // noun 04841358
+    if sense == 4 {
+        return "noun\tkind and considerate regard for others\tconsiderateness, thoughtfulness\the showed no consideration for her feelings";
+    }
+    ""
+}

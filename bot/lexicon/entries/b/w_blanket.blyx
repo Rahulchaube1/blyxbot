@@ -1,0 +1,17 @@
+// blanket — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_blanket(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 02849154
+    if sense == 1 {
+        return "noun\tbedding that keeps a person warm in bed\tcover\t";
+    }
+    // noun 09223725
+    if sense == 2 {
+        return "noun\tanything that covers\tmantle\tthere was a blanket of snow";
+    }
+    // verb 01359007
+    if sense == 3 {
+        return "verb\tcover as if with a blanket\t\tsnow blanketed the fields";
+    }
+    ""
+}

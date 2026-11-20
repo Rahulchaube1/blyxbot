@@ -1,0 +1,21 @@
+// brain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_brain(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05481095
+    if sense == 1 {
+        return "noun\tthat part of the central nervous system that includes all the higher nervous centers; enclosed within the skull; continuous with the spinal cord\tencephalon\t";
+    }
+    // noun 05618056
+    if sense == 2 {
+        return "noun\tmental ability\tbrainpower, learning ability, mental capacity, mentality, wit\the's got plenty of brains but no common sense";
+    }
+    // noun 05611302
+    if sense == 3 {
+        return "noun\tthat which is responsible for one's thoughts and feelings; the seat of the faculty of reason\tmind, head, psyche, nous\t";
+    }
+    // noun 10126926
+    if sense == 4 {
+        return "noun\tsomeone who has exceptional intellectual ability and originality\tgenius, mastermind, brainiac, Einstein\t";
+    }
+    ""
+}

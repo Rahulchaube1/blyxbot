@@ -1,0 +1,13 @@
+// fifty — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fifty(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02191232
+    if sense == 1 {
+        return "adjective\tbeing ten more than forty\t50, l\t";
+    }
+    // noun 13749644
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the product of ten and five\t50, L\t";
+    }
+    ""
+}

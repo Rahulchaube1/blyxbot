@@ -1,0 +1,29 @@
+// rush — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rush(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02058994
+    if sense == 1 {
+        return "verb\tmove fast\thotfoot, hasten, hie, speed, race, pelt along, rush along, cannonball along, bucket along, belt along, step on it\tHe rushed down the hall to receive his guests";
+    }
+    // noun 00555648
+    if sense == 2 {
+        return "noun\tthe act of moving hurriedly and in a careless manner\thaste, hurry, rushing\t";
+    }
+    // verb 01119950
+    if sense == 3 {
+        return "verb\tattack suddenly\t\t";
+    }
+    // noun 07440240
+    if sense == 4 {
+        return "noun\ta sudden forceful flow\tspate, surge, upsurge\t";
+    }
+    // verb 00459296
+    if sense == 5 {
+        return "verb\turge to an unnatural speed\thurry\tDon't rush me, please!";
+    }
+    // verb 00459498
+    if sense == 6 {
+        return "verb\tact or move at high speed\thasten, hurry, look sharp, festinate\tWe have to rush!";
+    }
+    ""
+}

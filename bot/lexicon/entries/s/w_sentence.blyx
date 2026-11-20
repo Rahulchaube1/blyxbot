@@ -1,0 +1,21 @@
+// sentence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sentence(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06285090
+    if sense == 1 {
+        return "noun\ta string of words satisfying the grammatical rules of a language\t\the always spoke in grammatical sentences";
+    }
+    // verb 00906735
+    if sense == 2 {
+        return "verb\tpronounce a sentence on (somebody) in a court of law\tcondemn, doom\t";
+    }
+    // noun 01189282
+    if sense == 3 {
+        return "noun\t(criminal law) a final judgment of guilty in a criminal case and the punishment that is imposed\tconviction, judgment of conviction, condemnation\t";
+    }
+    // noun 15224692
+    if sense == 4 {
+        return "noun\tthe period of time a prisoner is imprisoned\tprison term, time\this sentence was 5 to 10 years";
+    }
+    ""
+}

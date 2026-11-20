@@ -1,0 +1,37 @@
+// wrong — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wrong(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 00632438
+    if sense == 1 {
+        return "adjective\tnot correct; not in conformity with fact or truth\tincorrect\tthe report in the paper is wrong";
+    }
+    // adj 02035337
+    if sense == 2 {
+        return "adjective\tcontrary to conscience or morality or law\t\tit is wrong for the rich to take advantage of the poor";
+    }
+    // adj 00136185
+    if sense == 3 {
+        return "adjective\tnot appropriate for a purpose or occasion\timproper\tsaid all the wrong things";
+    }
+    // adj 01092371
+    if sense == 4 {
+        return "adjective\tnot functioning properly\tamiss, awry, haywire\tsomething is wrong with the engine";
+    }
+    // noun 04854604
+    if sense == 5 {
+        return "noun\tthat which is contrary to the principles of justice or law\twrongfulness\the feels that you are in the wrong";
+    }
+    // noun 00744131
+    if sense == 6 {
+        return "noun\tany harm or injury resulting from a violation of a legal right\tlegal injury, damage\t";
+    }
+    // verb 02513989
+    if sense == 7 {
+        return "verb\ttreat unjustly; do wrong to\t\t";
+    }
+    // adv 00204125
+    if sense == 8 {
+        return "adverb\tin an inaccurate manner\tincorrectly, wrongly\tshe guessed wrong";
+    }
+    ""
+}

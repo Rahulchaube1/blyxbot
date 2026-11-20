@@ -1,0 +1,13 @@
+// meaning — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_meaning(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 06601327
+    if sense == 1 {
+        return "noun\tthe message that is intended or expressed or signified\tsignificance, signification, import\twhat is the meaning of this sentence";
+    }
+    // noun 05919866
+    if sense == 2 {
+        return "noun\tthe idea that is intended\tsubstance\tWhat is the meaning of this proverb?";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// party — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_party(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08256968
+    if sense == 1 {
+        return "noun\tan organization to gain political power\tpolitical party\tin 1992 Perot tried to organize a third party at the national level";
+    }
+    // noun 08252602
+    if sense == 2 {
+        return "noun\ta group of people gathered together for pleasure\t\tshe joined the party after dinner";
+    }
+    // noun 08264897
+    if sense == 3 {
+        return "noun\ta band of people associated temporarily in some activity\tcompany\tthey organized a party to search for food";
+    }
+    // noun 07447641
+    if sense == 4 {
+        return "noun\tan occasion on which people can assemble for social interaction and entertainment\t\the planned a party to celebrate Bastille Day";
+    }
+    // noun 10402824
+    if sense == 5 {
+        return "noun\ta person involved in legal proceedings\t\tthe party of the first part";
+    }
+    ""
+}

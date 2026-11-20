@@ -1,0 +1,33 @@
+// man — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_man(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 10287213
+    if sense == 1 {
+        return "noun\tan adult person who is male (as opposed to a woman)\tadult male\t";
+    }
+    // noun 10582746
+    if sense == 2 {
+        return "noun\tsomeone who serves in the armed forces; a member of a military force\tserviceman, military man, military personnel\t";
+    }
+    // noun 10289039
+    if sense == 3 {
+        return "noun\tthe generic use of the word to refer to any human being\t\tit was every man for himself";
+    }
+    // noun 02472293
+    if sense == 4 {
+        return "noun\tany living or extinct member of the family Hominidae characterized by superior intelligence, articulate speech, and erect carriage\thomo, human being, human\t";
+    }
+    // noun 10289176
+    if sense == 5 {
+        return "noun\ta male subordinate\t\the awaited word from his man in Havana";
+    }
+    // noun 10288763
+    if sense == 6 {
+        return "noun\tan adult male person who has a manly character (virile and courageous competent)\t\tthe army will make a man of you";
+    }
+    // verb 02420991
+    if sense == 7 {
+        return "verb\ttake charge of a certain job; occupy a certain work place\t\tMr. Smith manned the reception desk in the morning";
+    }
+    ""
+}

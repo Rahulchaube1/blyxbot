@@ -1,0 +1,25 @@
+// pair — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pair(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 07985223
+    if sense == 1 {
+        return "noun\ta set of two similar things considered as a unit\tbrace\t";
+    }
+    // noun 13743605
+    if sense == 2 {
+        return "noun\ttwo items of the same kind\tcouple, twosome, twain, brace, span, yoke, couplet, distich, duo, duet, dyad, duad\t";
+    }
+    // noun 07976936
+    if sense == 3 {
+        return "noun\ttwo people considered as a unit\t\t";
+    }
+    // verb 02490430
+    if sense == 4 {
+        return "verb\tform a pair or pairs\tpair off, partner off, couple\tThe two old friends paired off";
+    }
+    // verb 01292885
+    if sense == 5 {
+        return "verb\tbring two objects, ideas, or people together\tmatch, mate, couple, twin\tThe student was paired with a partner for collaboration on the project";
+    }
+    ""
+}

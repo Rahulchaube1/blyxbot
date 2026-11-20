@@ -1,0 +1,29 @@
+// gay — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gay(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 00363938
+    if sense == 1 {
+        return "adjective\tbright and pleasant; promoting a feeling of cheer\tcheery, sunny\ta gay sunny room";
+    }
+    // adj 01367651
+    if sense == 2 {
+        return "adjective\tfull of or showing high-spirited merriment\tjocund, jolly, jovial, merry, mirthful\twhen hearts were young and gay";
+    }
+    // adj 01298708
+    if sense == 3 {
+        return "adjective\tgiven to social pleasures often including dissipation\t\tled a gay Bohemian life";
+    }
+    // adj 00407151
+    if sense == 4 {
+        return "adjective\tbrightly colored and showy\tbrave, braw\ta dress a bit too gay for her years";
+    }
+    // adj 01367431
+    if sense == 5 {
+        return "adjective\toffering fun and gaiety\tfestal, festive, merry\tgay and exciting night life";
+    }
+    // adj 01201937
+    if sense == 6 {
+        return "adjective\thomosexual or arousing homosexual desires\tqueer, homophile\t";
+    }
+    ""
+}

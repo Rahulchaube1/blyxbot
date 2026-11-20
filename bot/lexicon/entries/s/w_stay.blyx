@@ -1,0 +1,33 @@
+// stay — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stay(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00117985
+    if sense == 1 {
+        return "verb\tstay the same; remain in a certain state\tremain, rest\tstay alone";
+    }
+    // verb 01857392
+    if sense == 2 {
+        return "verb\tstay put (in a certain place)\tstick, stick around, stay put\tWe are staying in Detroit; we are not moving to Cincinnati";
+    }
+    // verb 02637202
+    if sense == 3 {
+        return "verb\tdwell\tbide, abide\tYou can stay with me while you are in town";
+    }
+    // verb 02727462
+    if sense == 4 {
+        return "verb\tcontinue in a place, position, or situation\tstay on, continue, remain\tAfter graduation, she stayed on in Cambridge as a student adviser";
+    }
+    // verb 02009200
+    if sense == 5 {
+        return "verb\tremain behind\t\tI had to stay at home and watch the children";
+    }
+    // verb 00460900
+    if sense == 6 {
+        return "verb\tstop or halt\tdetain, delay\tPlease stay the bloodshed!";
+    }
+    // noun 01053617
+    if sense == 7 {
+        return "noun\tcontinuing or remaining in a place or state\t\tthey had a nice stay in Paris";
+    }
+    ""
+}

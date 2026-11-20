@@ -1,0 +1,13 @@
+// every — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_every(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02269794
+    if sense == 1 {
+        return "adjective\t(used of count nouns) each and all of the members of a group considered singly and without exception\t\tevery person is mortal";
+    }
+    // adj 02270186
+    if sense == 2 {
+        return "adjective\teach and all of a series of entities or intervals as specified\t\tevery third seat";
+    }
+    ""
+}

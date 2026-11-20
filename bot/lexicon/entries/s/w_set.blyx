@@ -1,0 +1,105 @@
+// set — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_set(sense: i64) -> str {
+    if sense == 0 { return "25"; }
+    // verb 01494310
+    if sense == 1 {
+        return "verb\tput into a certain place or abstract location\tput, place, pose, position, lay\tSet the tray down";
+    }
+    // verb 00699815
+    if sense == 2 {
+        return "verb\tfix conclusively or authoritatively\tdetermine\tset the rules";
+    }
+    // noun 07996689
+    if sense == 3 {
+        return "noun\ta group of things of the same kind that belong together and are so used\t\ta set of books";
+    }
+    // noun 07999699
+    if sense == 4 {
+        return "noun\t(mathematics) an abstract collection of numbers or symbols\t\tthe set of prime numbers is infinite";
+    }
+    // verb 00947077
+    if sense == 5 {
+        return "verb\tdecide upon or fix definitely\tspecify, determine, define, fix, limit\t";
+    }
+    // verb 01062395
+    if sense == 6 {
+        return "verb\testablish as the highest level or best performance\tmark\tset a record";
+    }
+    // verb 00298896
+    if sense == 7 {
+        return "verb\tput into a certain state; cause to be in a certain state\t\tset the house afire";
+    }
+    // noun 00625699
+    if sense == 8 {
+        return "noun\tseveral exercises intended to be done in series\texercise set\the did four sets of the incline bench press";
+    }
+    // verb 01607445
+    if sense == 9 {
+        return "verb\tfix in a border\t\tThe goldsmith set the diamond";
+    }
+    // verb 00406243
+    if sense == 10 {
+        return "verb\tmake ready or suitable or equip in advance for a particular purpose or for some use, event, etc\tfix, prepare, set up, ready, gear up\t";
+    }
+    // verb 00298556
+    if sense == 11 {
+        return "verb\tset to a certain position or cause to operate correctly\t\tset clocks or instruments";
+    }
+    // adj 01931203
+    if sense == 12 {
+        return "adjective\t(usually followed by `to' or `for') on the point of or strongly disposed\tfit, primed\twe are set to go at any time";
+    }
+    // noun 04297476
+    if sense == 13 {
+        return "noun\trepresentation consisting of the scenery and other properties used to identify the location of a dramatic production\tstage set\tthe sets were meticulously authentic";
+    }
+    // verb 01711749
+    if sense == 14 {
+        return "verb\tlocate\tlocalize, localise, place\tThe film is set in Africa";
+    }
+    // adj 01564603
+    if sense == 15 {
+        return "adjective\tfixed and unmoving\tfixed, rigid\twith eyes set in a fixed glassy stare";
+    }
+    // noun 08240169
+    if sense == 16 {
+        return "noun\tan unofficial association of people or groups\tcircle, band, lot\tthe smart set goes there";
+    }
+    // verb 01970646
+    if sense == 17 {
+        return "verb\tdisappear beyond the horizon\tgo down, go under\tthe sun sets early these days";
+    }
+    // verb 01706129
+    if sense == 18 {
+        return "verb\tadapt for performance in a different way\tarrange\tset this poem to music";
+    }
+    // verb 01567275
+    if sense == 19 {
+        return "verb\tput or set (seeds, seedlings, or plants) into the ground\tplant\t";
+    }
+    // adj 02126430
+    if sense == 20 {
+        return "adjective\tsituated in a particular spot or position\tlocated, placed, situated\ta house set on a hilltop";
+    }
+    // noun 06199702
+    if sense == 21 {
+        return "noun\ta relatively permanent inclination to react in a particular way\tbent\tthe set of his mind was obvious";
+    }
+    // noun 01052853
+    if sense == 22 {
+        return "noun\tthe act of putting something in position\t\the gave a final set to his hat";
+    }
+    // verb 01628899
+    if sense == 23 {
+        return "verb\tapply or start\t\tset fire to a building";
+    }
+    // verb 00442669
+    if sense == 24 {
+        return "verb\tbecome gelatinous\tjell, congeal\t";
+    }
+    // adj 01681307
+    if sense == 25 {
+        return "adjective\tset down according to a plan:\"a carefully laid table with places set for four people\"\tlaid\t";
+    }
+    ""
+}

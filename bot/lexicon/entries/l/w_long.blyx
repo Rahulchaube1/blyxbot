@@ -1,0 +1,25 @@
+// long — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_long(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01437963
+    if sense == 1 {
+        return "adjective\tprimarily temporal sense; being or indicating a relatively great or greater than average duration or passage of time or a duration as specified\t\ta long life";
+    }
+    // adj 01433493
+    if sense == 2 {
+        return "adjective\tprimarily spatial sense; of relatively great or greater than average spatial extension or extension as specified\t\ta long road";
+    }
+    // adv 00166025
+    if sense == 3 {
+        return "adverb\tfor an extended time or at a distant time\t\ta promotion long overdue";
+    }
+    // verb 01828405
+    if sense == 4 {
+        return "verb\tdesire strongly or persistently\thanker, yearn\t";
+    }
+    // adj 02386125
+    if sense == 5 {
+        return "adjective\tof relatively great height\t\ta race of long gaunt men";
+    }
+    ""
+}

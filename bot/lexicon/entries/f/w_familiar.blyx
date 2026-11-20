@@ -1,0 +1,17 @@
+// familiar — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_familiar(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00965606
+    if sense == 1 {
+        return "adjective\twell known or easily recognized\t\ta familiar figure";
+    }
+    // adj 00970249
+    if sense == 2 {
+        return "adjective\twithin normal everyday experience; common and ordinary; not strange\t\tfamiliar ordinary objects found in every home";
+    }
+    // adj 01307067
+    if sense == 3 {
+        return "adjective\t(usually followed by `with') well informed about or knowing thoroughly\tconversant\tfamiliar with the complex machinery";
+    }
+    ""
+}

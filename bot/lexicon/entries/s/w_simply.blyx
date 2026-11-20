@@ -1,0 +1,21 @@
+// simply — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_simply(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00004722
+    if sense == 1 {
+        return "adverb\tand nothing more\tmerely, just, only, but\tit is simply a matter of time";
+    }
+    // adv 00246296
+    if sense == 2 {
+        return "adverb\tabsolutely\tjust\tit's simply beautiful!";
+    }
+    // adv 00004967
+    if sense == 3 {
+        return "adverb\tabsolutely; altogether; really\t\twe are simply broke";
+    }
+    // adv 00005055
+    if sense == 4 {
+        return "adverb\tin a simple manner; without extravagance or embellishment\tplainly\tthey lived very simply";
+    }
+    ""
+}

@@ -1,0 +1,45 @@
+// corner — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_corner(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 08544419
+    if sense == 1 {
+        return "noun\ta place off to the side of an area\t\the tripled to the rightfield corner";
+    }
+    // noun 08544275
+    if sense == 2 {
+        return "noun\tthe point where two lines meet or intersect\t\tthe corners of a rectangle";
+    }
+    // noun 03109881
+    if sense == 3 {
+        return "noun\tan interior angle formed by two meeting walls\tnook\ta piano was in one corner of the room";
+    }
+    // noun 03109486
+    if sense == 4 {
+        return "noun\tthe intersection of two streets\tstreet corner, turning point\tstanding on the corner watching all the girls go by";
+    }
+    // noun 08659993
+    if sense == 5 {
+        return "noun\tthe point where three areas or surfaces meet or intersect\t\tthe corners of a cube";
+    }
+    // noun 13872421
+    if sense == 6 {
+        return "noun\ta small concavity\trecess, recession, niche\t";
+    }
+    // noun 14445072
+    if sense == 7 {
+        return "noun\ta temporary monopoly on a kind of commercial trade\t\ta corner on the silver market";
+    }
+    // noun 14408951
+    if sense == 8 {
+        return "noun\ta predicament from which a skillful or graceful escape is impossible\tbox\this lying got him into a tight corner";
+    }
+    // noun 09257011
+    if sense == 9 {
+        return "noun\ta projecting part where two sides or edges meet\t\the knocked off the corners";
+    }
+    // verb 02442924
+    if sense == 10 {
+        return "verb\tgain control over\t\tcorner the gold market";
+    }
+    ""
+}

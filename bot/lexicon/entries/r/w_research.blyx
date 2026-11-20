@@ -1,0 +1,17 @@
+// research — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_research(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00636921
+    if sense == 1 {
+        return "noun\tsystematic investigation to establish facts\t\t";
+    }
+    // noun 05797597
+    if sense == 2 {
+        return "noun\ta search for knowledge\tinquiry, enquiry\ttheir pottery deserves more research than it has received";
+    }
+    // verb 00877327
+    if sense == 3 {
+        return "verb\tattempt to find out in a systematically and scientific manner\t\tThe student researched the history of that word";
+    }
+    ""
+}

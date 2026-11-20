@@ -1,0 +1,13 @@
+// discuss — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_discuss(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01034312
+    if sense == 1 {
+        return "verb\tto consider or examine in speech or writing\tdiscourse, talk about\tThe class discussed Dante's `Inferno'";
+    }
+    // verb 00813978
+    if sense == 2 {
+        return "verb\tspeak with others about (something); talk (something) over in detail; have a discussion\thash out, talk over\tWe discussed our household budget";
+    }
+    ""
+}

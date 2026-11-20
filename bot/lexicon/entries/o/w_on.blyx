@@ -1,0 +1,21 @@
+// on — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_on(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00068368
+    if sense == 1 {
+        return "adverb\twith a forward motion\talong\tthe circus traveled on to the next city";
+    }
+    // adj 01651196
+    if sense == 2 {
+        return "adjective\tin operation or operational\t\tleft the oven on";
+    }
+    // adv 00069346
+    if sense == 3 {
+        return "adverb\tindicates continuity or persistence or concentration\t\this spirit lives on";
+    }
+    // adv 00069472
+    if sense == 4 {
+        return "adverb\tin a state required for something to function or be effective\t\tturn the lights on";
+    }
+    ""
+}

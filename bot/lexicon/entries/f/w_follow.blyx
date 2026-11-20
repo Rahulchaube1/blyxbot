@@ -1,0 +1,69 @@
+// follow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_follow(sense: i64) -> str {
+    if sense == 0 { return "16"; }
+    // verb 01998432
+    if sense == 1 {
+        return "verb\tto travel behind, go after, come after\t\tThe ducklings followed their mother around the pond";
+    }
+    // verb 02712772
+    if sense == 2 {
+        return "verb\tbe later in time\tpostdate\tTuesday always follows Monday";
+    }
+    // verb 02720149
+    if sense == 3 {
+        return "verb\tcome as a logical consequence; follow logically\tfall out\tIt follows that your assertion is false";
+    }
+    // verb 01991931
+    if sense == 4 {
+        return "verb\ttravel along a certain course\ttravel along\tfollow the road";
+    }
+    // verb 02542280
+    if sense == 5 {
+        return "verb\tact in accordance with someone's rules, commands, or wishes\tcomply, abide by\tFollow these simple rules";
+    }
+    // verb 02720354
+    if sense == 6 {
+        return "verb\tcome after in time, as a result\tcome after\tA terrible tsunami followed the earthquake";
+    }
+    // verb 00150776
+    if sense == 7 {
+        return "verb\tbehave in accordance or in agreement with\tconform to\tFollow a pattern";
+    }
+    // verb 02720544
+    if sense == 8 {
+        return "verb\tbe next\t\tMary plays best, with John and Sue following";
+    }
+    // verb 02346895
+    if sense == 9 {
+        return "verb\tchoose and follow; as of theories, ideas, policies, strategies or plans\tadopt, espouse\tShe followed the feminist movement";
+    }
+    // verb 02720697
+    if sense == 10 {
+        return "verb\tto bring something about at a later time than\t\tShe followed dinner with a brandy";
+    }
+    // verb 01744450
+    if sense == 11 {
+        return "verb\timitate in behavior; take as a model\ttake after\tTeenagers follow their friends in everything";
+    }
+    // verb 00729109
+    if sense == 12 {
+        return "verb\tfollow, discover, or ascertain the course of development of something\ttrace\tWe must follow closely the economic development is Cuba";
+    }
+    // verb 02455407
+    if sense == 13 {
+        return "verb\tfollow with the eyes or the mind\twatch, observe, watch over, keep an eye on\tShe followed the men with the binoculars";
+    }
+    // verb 02406585
+    if sense == 14 {
+        return "verb\tbe the successor (of)\tsucceed, come after\tCarter followed Ford";
+    }
+    // verb 01728355
+    if sense == 15 {
+        return "verb\tperform an accompaniment to\tplay along, accompany\tThe orchestra could barely follow the frequent pitch changes of the soprano";
+    }
+    // verb 00118764
+    if sense == 16 {
+        return "verb\tkeep informed\tkeep up, keep abreast\t";
+    }
+    ""
+}

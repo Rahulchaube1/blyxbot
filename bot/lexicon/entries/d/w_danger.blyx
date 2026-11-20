@@ -1,0 +1,21 @@
+// danger — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_danger(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 14540765
+    if sense == 1 {
+        return "noun\tthe condition of being susceptible to harm or injury\t\tyou are in no danger";
+    }
+    // noun 00802238
+    if sense == 2 {
+        return "noun\ta venture undertaken without regard to possible loss or injury\trisk, peril\tthere was a danger he would do the wrong thing";
+    }
+    // noun 14541044
+    if sense == 3 {
+        return "noun\ta cause of pain or injury or loss\t\the feared the dangers of traveling by air";
+    }
+    // noun 08644213
+    if sense == 4 {
+        return "noun\ta dangerous place\t\tHe moved out of danger";
+    }
+    ""
+}

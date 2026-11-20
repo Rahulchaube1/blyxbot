@@ -1,0 +1,29 @@
+// grip — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_grip(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01224001
+    if sense == 1 {
+        return "verb\thold fast or firmly\t\tHe gripped the steering wheel";
+    }
+    // noun 00812526
+    if sense == 2 {
+        return "noun\tthe act of grasping\tclasp, clench, clutch, clutches, grasp, hold\the has a strong grip for an old man";
+    }
+    // verb 01574292
+    if sense == 3 {
+        return "verb\tto grip or seize, as in a wrestling match\tgrapple\t";
+    }
+    // verb 01821132
+    if sense == 4 {
+        return "verb\tto render motionless, as with a fixed stare or by arousing terror or awe\tfascinate, transfix, spellbind\t";
+    }
+    // noun 03485997
+    if sense == 5 {
+        return "noun\tthe appendage to an object that is designed to be held in order to use or move it\thandle, handgrip, hold\tit was an old briefcase but it still had a good grip";
+    }
+    // noun 02773838
+    if sense == 6 {
+        return "noun\ta portable rectangular container for carrying clothes\tbag, traveling bag, travelling bag, suitcase\t";
+    }
+    ""
+}

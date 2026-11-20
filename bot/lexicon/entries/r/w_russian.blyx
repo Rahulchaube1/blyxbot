@@ -1,0 +1,17 @@
+// russian — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_russian(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02957276
+    if sense == 1 {
+        return "adjective\tof or pertaining to or characteristic of Russia or its people or culture or language\t\tRussian dancing";
+    }
+    // noun 09728403
+    if sense == 2 {
+        return "noun\ta native or inhabitant of Russia\t\t";
+    }
+    // noun 06944348
+    if sense == 3 {
+        return "noun\tthe Slavic language that is the official language of Russia\t\t";
+    }
+    ""
+}

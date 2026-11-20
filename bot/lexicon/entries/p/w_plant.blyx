@@ -1,0 +1,25 @@
+// plant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_plant(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 03956922
+    if sense == 1 {
+        return "noun\tbuildings for carrying on industrial labor\tworks, industrial plant\tthey built a large plant to manufacture automobiles";
+    }
+    // noun 00017222
+    if sense == 2 {
+        return "noun\t(botany) a living organism lacking the power of locomotion\tflora, plant life\t";
+    }
+    // verb 01567275
+    if sense == 3 {
+        return "verb\tput or set (seeds, seedlings, or plants) into the ground\tset\tLet's plant flowers in the garden";
+    }
+    // verb 01528821
+    if sense == 4 {
+        return "verb\tfix or set securely or deeply\timplant, engraft, embed, imbed\tHe planted a knee in the back of his opponent";
+    }
+    // verb 01647229
+    if sense == 5 {
+        return "verb\tset up or lay the groundwork for\testablish, found, constitute, institute\t";
+    }
+    ""
+}

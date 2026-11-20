@@ -1,0 +1,33 @@
+// discover — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_discover(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02154508
+    if sense == 1 {
+        return "verb\tdiscover or determine the existence, presence, or fact of\tdetect, observe, find, notice\t";
+    }
+    // verb 00598954
+    if sense == 2 {
+        return "verb\tget to know or become aware of, usually accidentally\tlearn, hear, get word, get wind, pick up, find out, get a line, see\t";
+    }
+    // verb 01637982
+    if sense == 3 {
+        return "verb\tmake a discovery, make a new finding\tfind\tRoentgen discovered X-rays";
+    }
+    // verb 00721437
+    if sense == 4 {
+        return "verb\tmake a discovery\tfind\tThe story is false, so far as I can discover";
+    }
+    // verb 02286687
+    if sense == 5 {
+        return "verb\tfind unexpectedly\tfall upon, strike, come upon, light upon, chance upon, come across, chance on, happen upon, attain\t";
+    }
+    // verb 00933821
+    if sense == 6 {
+        return "verb\tmake known to the public information that was previously known only to a few people or that was meant to be kept a secret\tunwrap, disclose, let on, bring out, reveal, expose, divulge, break, give away, let out\t";
+    }
+    // verb 02128066
+    if sense == 7 {
+        return "verb\tsee for the first time; make a discovery\t\tWho discovered the North Pole?";
+    }
+    ""
+}

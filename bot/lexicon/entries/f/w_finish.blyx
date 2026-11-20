@@ -1,0 +1,29 @@
+// finish — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_finish(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00484166
+    if sense == 1 {
+        return "verb\tcome or bring to a finish or an end\tcomplete\tHe finished the dishes";
+    }
+    // verb 00352558
+    if sense == 2 {
+        return "verb\tfinally be or do something\tfinish up, land up, fetch up, end up, wind up\t";
+    }
+    // verb 02609764
+    if sense == 3 {
+        return "verb\thave an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical\tend, stop, terminate, cease\t";
+    }
+    // noun 04700642
+    if sense == 4 {
+        return "noun\ta decorative texture or appearance of a surface (or the substance that gives it that appearance)\tcoating, finishing\tthe boat had a metallic finish";
+    }
+    // verb 01265989
+    if sense == 5 {
+        return "verb\tprovide with a finish\t\tThe carpenter finished the table beautifully";
+    }
+    // verb 01196802
+    if sense == 6 {
+        return "verb\tfinish eating all the food on one's plate or on the table\teat up, polish off\t";
+    }
+    ""
+}

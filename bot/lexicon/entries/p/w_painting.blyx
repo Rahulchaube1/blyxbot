@@ -1,0 +1,21 @@
+// painting — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_painting(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 03876519
+    if sense == 1 {
+        return "noun\tgraphic art consisting of an artistic composition made by applying paints to a surface\tpicture\ta small painting by Picasso";
+    }
+    // noun 00936620
+    if sense == 2 {
+        return "noun\tcreating a picture with paints\t\the studied painting and sculpture for many years";
+    }
+    // noun 00717208
+    if sense == 3 {
+        return "noun\tthe act of applying paint to a surface\t\tyou can finish the job of painting faster with a roller than with a brush";
+    }
+    // noun 00609236
+    if sense == 4 {
+        return "noun\tthe occupation of a house painter\thouse painting\thouse painting was the only craft he knew";
+    }
+    ""
+}

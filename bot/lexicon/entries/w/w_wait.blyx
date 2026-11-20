@@ -1,0 +1,29 @@
+// wait — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wait(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02637938
+    if sense == 1 {
+        return "verb\tstay in one place and anticipate or expect something\t\tI had to wait on line for an hour to get the tickets";
+    }
+    // verb 02641463
+    if sense == 2 {
+        return "verb\twait before acting\thold off, hold back\t";
+    }
+    // verb 00720063
+    if sense == 3 {
+        return "verb\tlook forward to the probable occurrence of\texpect, look, await\the is waiting to be drafted";
+    }
+    // noun 15272029
+    if sense == 4 {
+        return "noun\ttime during which some action is awaited\tdelay, hold, time lag, postponement\t";
+    }
+    // noun 01063939
+    if sense == 5 {
+        return "noun\tthe act of waiting (remaining inactive in one place while expecting something)\twaiting\tthe wait was an ordeal for him";
+    }
+    // verb 02413290
+    if sense == 6 {
+        return "verb\tserve as a waiter or waitress in a restaurant\twaitress\tI'm waiting on tables at Maxim's";
+    }
+    ""
+}

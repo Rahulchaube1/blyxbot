@@ -1,0 +1,21 @@
+// signal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_signal(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06791372
+    if sense == 1 {
+        return "noun\tany nonverbal action or gesture that encodes a message\tsignaling, sign\tsignals from the boat suddenly stopped";
+    }
+    // verb 01039330
+    if sense == 2 {
+        return "verb\tcommunicate silently and non-verbally by signals or signs\tsign, signalize, signalise\tThe diner signaled the waiters to bring the menu";
+    }
+    // verb 00921300
+    if sense == 3 {
+        return "verb\tbe a signal for or a symptom of\tbespeak, betoken, indicate, point\tThe economic indicators signal that the euro is undervalued";
+    }
+    // noun 09185280
+    if sense == 4 {
+        return "noun\tany incitement to action\t\the awaited the signal to start";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// scene — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_scene(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 08645963
+    if sense == 1 {
+        return "noun\tthe place where some action occurs\t\tthe police returned to the scene of the crime";
+    }
+    // noun 07360841
+    if sense == 2 {
+        return "noun\tan incident (real or imaginary)\t\ttheir parting was a sad scene";
+    }
+    // noun 05933246
+    if sense == 3 {
+        return "noun\tthe visual percept of a region\tview, aspect, prospect, vista, panorama\t";
+    }
+    // noun 06614729
+    if sense == 4 {
+        return "noun\ta consecutive series of pictures that constitutes a unit of action in a film\tshot\t";
+    }
+    // noun 13937075
+    if sense == 5 {
+        return "noun\ta situation treated as an observable object\tpicture\tthe religious scene in England has changed in the last century";
+    }
+    // noun 07009808
+    if sense == 6 {
+        return "noun\ta subdivision of an act of a play\t\tthe first act has three scenes";
+    }
+    // noun 14406303
+    if sense == 7 {
+        return "noun\ta display of bad temper\tfit, tantrum, conniption\the made a scene";
+    }
+    // noun 04144782
+    if sense == 8 {
+        return "noun\tgraphic art consisting of the graphic or photographic representation of a visual percept\tview\the painted scenes from everyday life";
+    }
+    ""
+}

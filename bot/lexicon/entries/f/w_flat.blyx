@@ -1,0 +1,33 @@
+// flat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_flat(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 00910101
+    if sense == 1 {
+        return "adjective\thaving a surface without slope, tilt in which no part is higher or lower than another\tlevel, plane\ta flat desk";
+    }
+    // adj 00659259
+    if sense == 2 {
+        return "adjective\thaving a relatively broad surface in relation to depth or thickness\t\tflat computer monitors";
+    }
+    // noun 09281411
+    if sense == 3 {
+        return "noun\ta level tract of land\t\tthe salt flats of Utah";
+    }
+    // adj 01913931
+    if sense == 4 {
+        return "adjective\tnot modified or restricted by reservations\tcategoric, categorical, unconditional\ta flat refusal";
+    }
+    // adj 01239040
+    if sense == 5 {
+        return "adjective\tstretched out and lying at full length along the ground\tprostrate\tfound himself lying flat on the floor";
+    }
+    // noun 03360038
+    if sense == 6 {
+        return "noun\ta shallow box in which seedlings are started\t\t";
+    }
+    // adj 01021794
+    if sense == 7 {
+        return "adjective\tlacking contrast or shading between tones\t\t";
+    }
+    ""
+}

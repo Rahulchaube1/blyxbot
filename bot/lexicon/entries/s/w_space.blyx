@@ -1,0 +1,37 @@
+// space — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_space(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 00028651
+    if sense == 1 {
+        return "noun\tthe unlimited expanse in which everything is located\tinfinite\tthey tested his ability to locate objects in space";
+    }
+    // noun 13910384
+    if sense == 2 {
+        return "noun\tan empty area (usually bounded in some way between things)\t\tthe architect left space in front of the building";
+    }
+    // noun 08652970
+    if sense == 3 {
+        return "noun\tan area reserved for some particular purpose\t\tthe laboratory's floor space";
+    }
+    // noun 08500433
+    if sense == 4 {
+        return "noun\tany location outside the Earth's atmosphere\touter space\tthe astronauts walked in outer space without a tether";
+    }
+    // verb 01988080
+    if sense == 5 {
+        return "verb\tplace at intervals\t\tSpace the interviews so that you have some time between the different candidates";
+    }
+    // noun 06839190
+    if sense == 6 {
+        return "noun\ta blank character used to separate successive words in writing or printing\tblank\the said the space is the most important character in the alphabet";
+    }
+    // noun 15172212
+    if sense == 7 {
+        return "noun\tthe interval between two times\tdistance\tit all happened in the space of 10 minutes";
+    }
+    // noun 06389553
+    if sense == 8 {
+        return "noun\ta blank area\tblank space, place\twrite your name in the space provided";
+    }
+    ""
+}

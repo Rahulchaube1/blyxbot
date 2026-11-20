@@ -1,0 +1,29 @@
+// get up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_get_up(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01983264
+    if sense == 1 {
+        return "verb\trise to one's feet\tarise, rise, uprise, stand up\t";
+    }
+    // verb 00018158
+    if sense == 2 {
+        return "verb\tget up and out of bed\tturn out, arise, uprise, rise\tI get up at 7 A.M. every day";
+    }
+    // verb 01974062
+    if sense == 3 {
+        return "verb\traise from a lower to a higher position\traise, lift, elevate, bring up\t";
+    }
+    // verb 00018405
+    if sense == 4 {
+        return "verb\tcause to rise\t\t";
+    }
+    // verb 00096648
+    if sense == 5 {
+        return "verb\tdevelop\twork up\t";
+    }
+    // verb 00044149
+    if sense == 6 {
+        return "verb\tput on special clothes to appear particularly appealing and attractive\toverdress, dress up, fig out, fig up, deck up, gussy up, fancy up, trick up, deck out, trick out, prink, attire, rig out, tog up, tog out\t";
+    }
+    ""
+}

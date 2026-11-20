@@ -1,0 +1,37 @@
+// blue — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_blue(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 00370869
+    if sense == 1 {
+        return "adjective\tof the color intermediate between green and violet; having a color similar to that of a clear unclouded sky\tbluish, blueish\tOctober's bright blue weather";
+    }
+    // adj 01606058
+    if sense == 2 {
+        return "adjective\tused to signify the Union forces in the American Civil War (who wore blue uniforms)\t\ta ragged blue line";
+    }
+    // noun 04968895
+    if sense == 3 {
+        return "noun\tblue color or pigment; resembling the color of the clear sky in the daytime\tblueness\the had eyes of bright blue";
+    }
+    // noun 02855925
+    if sense == 4 {
+        return "noun\tblue clothing\t\tshe was wearing blue";
+    }
+    // noun 08480847
+    if sense == 5 {
+        return "noun\tany organization or party whose uniforms or badges are blue\t\tthe Union army was a vast blue";
+    }
+    // noun 09224566
+    if sense == 6 {
+        return "noun\tthe sky as viewed during daylight\tblue sky, blue air, wild blue yonder\the shot an arrow into the blue";
+    }
+    // adj 00703615
+    if sense == 7 {
+        return "adjective\tfilled with melancholy and despondency\tgloomy, grim, depressed, dispirited, down, downcast, downhearted, down in the mouth, low, low-spirited\tlonely and blue in a strange city";
+    }
+    // adj 00425002
+    if sense == 8 {
+        return "adjective\tcharacterized by profanity or cursing\tblasphemous, profane\tblue language";
+    }
+    ""
+}

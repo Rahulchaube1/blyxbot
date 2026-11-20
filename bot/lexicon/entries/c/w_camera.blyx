@@ -1,0 +1,13 @@
+// camera — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_camera(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 02942699
+    if sense == 1 {
+        return "noun\tequipment for taking photographs (usually consisting of a lightproof box with a lens at one end and light-sensitive film at the other)\tphotographic camera\t";
+    }
+    // noun 04404997
+    if sense == 2 {
+        return "noun\ttelevision equipment consisting of a lens system that focuses an image on a photosensitive mosaic that is scanned by an electron beam\ttelevision camera, tv camera\t";
+    }
+    ""
+}

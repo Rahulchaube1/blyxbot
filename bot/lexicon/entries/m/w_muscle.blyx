@@ -1,0 +1,13 @@
+// muscle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_muscle(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05289297
+    if sense == 1 {
+        return "noun\tone of the contractile organs of the body\tmusculus\t";
+    }
+    // noun 05289057
+    if sense == 2 {
+        return "noun\tanimal tissue consisting predominantly of contractile cells\tmuscular tissue\t";
+    }
+    ""
+}

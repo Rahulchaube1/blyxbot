@@ -1,0 +1,17 @@
+// sheet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sheet(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 09432060
+    if sense == 1 {
+        return "noun\tany broad thin expanse or surface\t\ta sheet of ice";
+    }
+    // noun 06255777
+    if sense == 2 {
+        return "noun\tpaper used for writing or printing\tpiece of paper, sheet of paper\t";
+    }
+    // noun 04188179
+    if sense == 3 {
+        return "noun\tbed linen consisting of a large rectangular piece of cotton or linen cloth; used in pairs\tbed sheet\t";
+    }
+    ""
+}

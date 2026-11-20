@@ -1,0 +1,29 @@
+// repeat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_repeat(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00958334
+    if sense == 1 {
+        return "verb\tto say, state, or perform again\treiterate, ingeminate, iterate, restate, retell\t";
+    }
+    // verb 01734502
+    if sense == 2 {
+        return "verb\tmake or do or perform again\tduplicate, reduplicate, double, replicate\t";
+    }
+    // verb 00343334
+    if sense == 3 {
+        return "verb\thappen or occur again\trecur\t";
+    }
+    // verb 00957679
+    if sense == 4 {
+        return "verb\tto say again or imitate\techo\t";
+    }
+    // verb 02595662
+    if sense == 5 {
+        return "verb\tdo over\ttake over\t";
+    }
+    // noun 07342049
+    if sense == 6 {
+        return "noun\tan event that repeats\trepetition\tthe events today were a repeat of yesterday's";
+    }
+    ""
+}

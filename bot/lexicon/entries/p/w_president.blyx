@@ -1,0 +1,29 @@
+// president — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_president(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 10468559
+    if sense == 1 {
+        return "noun\tan executive officer of a firm or corporation\t\t";
+    }
+    // noun 10467395
+    if sense == 2 {
+        return "noun\tthe person who holds the office of head of state of the United States government\tPresident of the United States, United States President, Chief Executive\tthe President likes to jog every morning";
+    }
+    // noun 10467179
+    if sense == 3 {
+        return "noun\tthe chief executive of a republic\t\t";
+    }
+    // noun 10468962
+    if sense == 4 {
+        return "noun\tthe officer who presides at the meetings of an organization\tchairman, chairwoman, chair, chairperson\t";
+    }
+    // noun 10468750
+    if sense == 5 {
+        return "noun\tthe head administrative officer of a college or university\tprexy\t";
+    }
+    // noun 00597265
+    if sense == 6 {
+        return "noun\tthe office of the United States head of state\tPresident of the United States, Chief Executive\ta President is elected every four years";
+    }
+    ""
+}

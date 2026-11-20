@@ -1,0 +1,21 @@
+// public — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_public(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01861205
+    if sense == 1 {
+        return "adjective\tnot private; open to or concerning the people as a whole\t\tthe public good";
+    }
+    // noun 08179689
+    if sense == 2 {
+        return "noun\tpeople in general considered as a whole\tpopulace, world\the is a hero in the eyes of the public";
+    }
+    // adj 00493297
+    if sense == 3 {
+        return "adjective\taffecting the people or community as a whole\t\tthe public welfare";
+    }
+    // noun 07965817
+    if sense == 4 {
+        return "noun\ta body of people sharing some common interest\t\tthe reading public";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// actually — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_actually(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00149510
+    if sense == 1 {
+        return "adverb\tin actual fact\treally\tto be nominally but not actually independent";
+    }
+    // adv 00149138
+    if sense == 2 {
+        return "adverb\tused to imply that one would expect the fact to be the opposite of that stated; surprisingly\tin reality\tyou may actually be doing the right thing by walking out";
+    }
+    ""
+}

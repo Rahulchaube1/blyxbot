@@ -1,0 +1,21 @@
+// replace — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_replace(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00162688
+    if sense == 1 {
+        return "verb\tsubstitute a person or thing for (another that is broken or inefficient or lost or no longer working or yielding what is expected)\t\tHe replaced the old razor blade";
+    }
+    // verb 02405390
+    if sense == 2 {
+        return "verb\ttake the place or move into the position of\tsupplant, supersede, supervene upon, supercede\tSmith replaced Miller as CEO after Miller left";
+    }
+    // verb 01308381
+    if sense == 3 {
+        return "verb\tput something back where it belongs\tput back\treplace the book on the shelf after you have finished reading it";
+    }
+    // verb 02257767
+    if sense == 4 {
+        return "verb\tput in the place of another; switch seemingly equivalent items\tsubstitute, interchange, exchange\tthe con artist replaced the original with a fake Rembrandt";
+    }
+    ""
+}

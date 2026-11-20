@@ -1,0 +1,13 @@
+// scientific — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_scientific(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02793273
+    if sense == 1 {
+        return "adjective\tof or relating to the practice of science\t\tscientific journals";
+    }
+    // adj 02084804
+    if sense == 2 {
+        return "adjective\tconforming with the principles or methods used in science\t\ta scientific approach";
+    }
+    ""
+}

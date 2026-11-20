@@ -1,0 +1,21 @@
+// reject — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reject(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00685683
+    if sense == 1 {
+        return "verb\trefuse to accept or acknowledge\t\tI reject the idea of starting a war";
+    }
+    // verb 02237338
+    if sense == 2 {
+        return "verb\trefuse to accept\trefuse, pass up, turn down, decline\t";
+    }
+    // verb 00807178
+    if sense == 3 {
+        return "verb\tdeem wrong or inappropriate\tdisapprove\t";
+    }
+    // verb 00796976
+    if sense == 4 {
+        return "verb\treject with contempt\tspurn, freeze off, scorn, pooh-pooh, disdain, turn down\t";
+    }
+    ""
+}

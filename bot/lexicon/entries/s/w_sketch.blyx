@@ -1,0 +1,25 @@
+// sketch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sketch(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 04227144
+    if sense == 1 {
+        return "noun\tpreliminary drawing for later elaboration\tstudy\t";
+    }
+    // noun 07203016
+    if sense == 2 {
+        return "noun\ta brief literary description\tvignette\t";
+    }
+    // verb 01697628
+    if sense == 3 {
+        return "verb\tmake a sketch of\tchalk out\tsketch the building";
+    }
+    // noun 06469694
+    if sense == 4 {
+        return "noun\tshort descriptive summary (of events)\tsurvey, resume\t";
+    }
+    // verb 01006421
+    if sense == 5 {
+        return "verb\tdescribe roughly or briefly or give the main points or summary of\toutline, adumbrate\tsketch the outline of the book";
+    }
+    ""
+}

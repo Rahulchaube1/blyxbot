@@ -1,0 +1,13 @@
+// prominent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_prominent(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00580805
+    if sense == 1 {
+        return "adjective\thaving a quality that thrusts itself into attention\toutstanding, salient, spectacular, striking\ta new theory is the most prominent feature of the book";
+    }
+    // adj 00579622
+    if sense == 2 {
+        return "adjective\tconspicuous in position or importance\tbig, large\ta prominent citizen";
+    }
+    ""
+}

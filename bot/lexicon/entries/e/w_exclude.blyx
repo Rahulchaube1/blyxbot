@@ -1,0 +1,21 @@
+// exclude — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_exclude(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00615774
+    if sense == 1 {
+        return "verb\tprevent from being included or considered or accepted\texcept, leave out, leave off, omit, take out\tThe bad results were excluded from the report";
+    }
+    // verb 02449340
+    if sense == 2 {
+        return "verb\tprevent from entering; shut out\tkeep out, shut out, shut\tThis policy excludes people who have a criminal record from entering the country";
+    }
+    // verb 02633714
+    if sense == 3 {
+        return "verb\tlack or fail to include\t\tThe cost for the trip excludes food and beverages";
+    }
+    // verb 00796588
+    if sense == 4 {
+        return "verb\tprevent from entering; keep out\tbar, debar\t";
+    }
+    ""
+}

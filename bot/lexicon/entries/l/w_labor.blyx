@@ -1,0 +1,21 @@
+// labor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_labor(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08180639
+    if sense == 1 {
+        return "noun\ta social class comprising those who do manual labor or work for wages\tlabour, working class, proletariat\tthere is a shortage of skilled labor in this field";
+    }
+    // noun 00620752
+    if sense == 2 {
+        return "noun\tproductive work (especially physical work done for wages)\tlabour, toil\this labor did not require a great deal of skill";
+    }
+    // verb 02406916
+    if sense == 3 {
+        return "verb\tstrive and make an effort to reach a goal\ttug, labour, push, drive\t";
+    }
+    // verb 02419773
+    if sense == 4 {
+        return "verb\twork hard\tlabour, toil, fag, travail, grind, drudge, dig, moil\t";
+    }
+    ""
+}

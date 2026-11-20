@@ -1,0 +1,33 @@
+// narrow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_narrow(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 02561888
+    if sense == 1 {
+        return "adjective\tnot wide\t\ta narrow bridge";
+    }
+    // verb 00305109
+    if sense == 2 {
+        return "verb\tmake or become more narrow or restricted\tcontract\tThe selection was narrowed";
+    }
+    // adj 01415480
+    if sense == 3 {
+        return "adjective\tlimited in size or scope\t\tthe narrow sense of a word";
+    }
+    // verb 00715541
+    if sense == 4 {
+        return "verb\tdefine clearly\tpin down, peg down, nail down, narrow down, specify\tI cannot narrow down the rules for this game";
+    }
+    // verb 00437449
+    if sense == 5 {
+        return "verb\tbecome more focus on an area of activity or field of study\tspecialize, specialise, narrow down\t";
+    }
+    // verb 00304422
+    if sense == 6 {
+        return "verb\tbecome tight or as if tight\tconstrict, constringe\t";
+    }
+    // adj 00287640
+    if sense == 7 {
+        return "adjective\tlacking tolerance or flexibility or breadth of view\tnarrow-minded\ta brilliant but narrow-minded judge";
+    }
+    ""
+}

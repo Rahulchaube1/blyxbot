@@ -1,0 +1,37 @@
+// foot — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_foot(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 05563266
+    if sense == 1 {
+        return "noun\tthe part of the leg of a human being below the ankle joint\thuman foot, pes\tarmored from head to foot";
+    }
+    // noun 13650045
+    if sense == 2 {
+        return "noun\ta linear unit of length equal to 12 inches or a third of a yard\tft\t";
+    }
+    // noun 08511570
+    if sense == 3 {
+        return "noun\tthe lower part of anything\t\tcurled up on the foot of the bed";
+    }
+    // noun 02153445
+    if sense == 4 {
+        return "noun\tthe pedal extremity of vertebrates other than human beings\tanimal foot\t";
+    }
+    // noun 03387016
+    if sense == 5 {
+        return "noun\tlowest support of a structure\tfoundation, base, fundament, groundwork, substructure, understructure\the stood at the foot of the tower";
+    }
+    // noun 02322213
+    if sense == 6 {
+        return "noun\tany of various organs of locomotion or attachment in invertebrates\tinvertebrate foot\t";
+    }
+    // noun 00284665
+    if sense == 7 {
+        return "noun\ttravel by walking\t\the followed on foot";
+    }
+    // verb 02287209
+    if sense == 8 {
+        return "verb\tpay for something\tpick\tfoot the bill";
+    }
+    ""
+}

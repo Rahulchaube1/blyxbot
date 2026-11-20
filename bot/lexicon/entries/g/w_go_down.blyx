@@ -1,0 +1,29 @@
+// go down — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_go_down(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01970826
+    if sense == 1 {
+        return "verb\tmove downward and lower, but not necessarily all the way\tdescend, fall, come down\t";
+    }
+    // verb 01989873
+    if sense == 2 {
+        return "verb\tgo under, \"The raft sank and its occupants drowned\"\tsink, settle, go under\t";
+    }
+    // verb 00431826
+    if sense == 3 {
+        return "verb\tgrow smaller\tdecline, wane\t";
+    }
+    // verb 02733806
+    if sense == 4 {
+        return "verb\tbe recorded or remembered\t\tShe will go down as the first feminist";
+    }
+    // verb 01205331
+    if sense == 5 {
+        return "verb\tbe ingested\t\tThe food wouldn't go down";
+    }
+    // verb 01099866
+    if sense == 6 {
+        return "verb\tbe defeated\t\tIf America goes down, the free world will go down, too";
+    }
+    ""
+}

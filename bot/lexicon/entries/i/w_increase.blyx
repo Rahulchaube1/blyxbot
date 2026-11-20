@@ -1,0 +1,33 @@
+// increase — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_increase(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00156601
+    if sense == 1 {
+        return "verb\tbecome bigger or greater in amount\t\tThe amount of work increased";
+    }
+    // verb 00153263
+    if sense == 2 {
+        return "verb\tmake bigger or more\t\tThe boss finally increased her salary";
+    }
+    // noun 13754293
+    if sense == 3 {
+        return "noun\ta quantity that is added\taddition, gain\t";
+    }
+    // noun 07356676
+    if sense == 4 {
+        return "noun\ta change resulting in an increase\t\tthe increase is scheduled for next month";
+    }
+    // noun 13497135
+    if sense == 5 {
+        return "noun\ta process of becoming larger or longer or more numerous or more important\tincrement, growth\tthe increase in unemployment";
+    }
+    // noun 05108947
+    if sense == 6 {
+        return "noun\tthe amount by which something increases\tincrement\tthey proposed an increase of 15 percent in the fare";
+    }
+    // noun 00363260
+    if sense == 7 {
+        return "noun\tthe act of increasing something\tstep-up\the gave me an increase in salary";
+    }
+    ""
+}

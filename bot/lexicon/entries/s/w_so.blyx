@@ -1,0 +1,37 @@
+// so — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_so(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adv 00146594
+    if sense == 1 {
+        return "adverb\tto a very great extent or degree\t\tthe idea is so obvious";
+    }
+    // adv 00118363
+    if sense == 2 {
+        return "adverb\tin a manner that facilitates\t\the observed the snakes so he could describe their behavior";
+    }
+    // adv 00146926
+    if sense == 3 {
+        return "adverb\tin such a condition or manner, especially as expressed or implied\t\tThey're happy and I hope they will remain so";
+    }
+    // adv 00147126
+    if sense == 4 {
+        return "adverb\tto a certain unspecified extent or degree\t\tI can only go so far with this student";
+    }
+    // adv 00147272
+    if sense == 5 {
+        return "adverb\tin the same way; also\t\tI was offended and so was he";
+    }
+    // adv 00121135
+    if sense == 6 {
+        return "adverb\tin the way indicated\tthus, thusly\thold the brush so";
+    }
+    // adv 00146763
+    if sense == 7 {
+        return "adverb\t(usually followed by `that') to an extent or degree as expressed\t\the was so tired he could hardly stand";
+    }
+    // adv 00117620
+    if sense == 8 {
+        return "adverb\tsubsequently or soon afterward (often used as sentence connectors)\tthen, and so, and then\tand so home and to bed";
+    }
+    ""
+}

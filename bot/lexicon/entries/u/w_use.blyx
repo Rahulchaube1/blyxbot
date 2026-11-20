@@ -1,0 +1,41 @@
+// use — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_use(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 01158872
+    if sense == 1 {
+        return "verb\tput into service; make work or employ for a particular purpose or for its inherent or natural purpose\tutilize, utilise, apply, employ\tuse your head!";
+    }
+    // noun 00947128
+    if sense == 2 {
+        return "noun\tthe act of using\tusage, utilization, utilisation, employment, exercise\the warned against the use of narcotic drugs";
+    }
+    // noun 05149325
+    if sense == 3 {
+        return "noun\twhat something is used for\tfunction, purpose, role\tballet is beautiful but what use is it?";
+    }
+    // verb 01165043
+    if sense == 4 {
+        return "verb\ttake or consume (regularly or habitually)\thabituate\tShe uses drugs rarely";
+    }
+    // verb 01158572
+    if sense == 5 {
+        return "verb\tuse up, consume fully\texpend\t";
+    }
+    // noun 05149978
+    if sense == 6 {
+        return "noun\ta particular service\t\the put his knowledge to good use";
+    }
+    // noun 13451804
+    if sense == 7 {
+        return "noun\t(economics) the utilization of economic goods to satisfy needs or in manufacturing\tconsumption, economic consumption, usance, use of goods and services\t";
+    }
+    // noun 00414179
+    if sense == 8 {
+        return "noun\t(psychology) an automatic pattern of behavior in reaction to a specific situation; may be inherited or acquired through frequent repetition\thabit\tlong use had hardened him to it";
+    }
+    // noun 00158185
+    if sense == 9 {
+        return "noun\texerting shrewd or devious influence especially for one's own advantage\tmanipulation\t";
+    }
+    ""
+}

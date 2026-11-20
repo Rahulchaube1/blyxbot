@@ -1,0 +1,21 @@
+// coat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_coat(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 03057021
+    if sense == 1 {
+        return "noun\tan outer garment that has sleeves and covers the body from shoulder down; worn outdoors\t\t";
+    }
+    // verb 01264283
+    if sense == 2 {
+        return "verb\tput a coat on; cover the surface of; furnish with a surface\tsurface\tcoat the cake with chocolate";
+    }
+    // noun 03058107
+    if sense == 3 {
+        return "noun\ta thin layer covering something\tcoating\ta second coat of paint";
+    }
+    // verb 00051511
+    if sense == 4 {
+        return "verb\tcover or provide with a coat\t\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// weather — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_weather(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 11524662
+    if sense == 1 {
+        return "noun\tthe atmospheric conditions that comprise the state of the atmosphere in terms of temperature and wind and clouds and precipitation\tweather condition, conditions, atmospheric condition\tthey were hoping for good weather";
+    }
+    // adj 01400464
+    if sense == 2 {
+        return "adjective\ttowards the side exposed to wind\tupwind\t";
+    }
+    ""
+}

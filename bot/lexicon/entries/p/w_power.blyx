@@ -1,0 +1,41 @@
+// power — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_power(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 05190804
+    if sense == 1 {
+        return "noun\tpossession of controlling influence\tpowerfulness\tthe deterrent power of nuclear weapons";
+    }
+    // noun 11453016
+    if sense == 2 {
+        return "noun\t(physics) the rate of doing work; measured in watts (= joules/second)\t\t";
+    }
+    // noun 05616246
+    if sense == 3 {
+        return "noun\tpossession of the qualities (especially mental qualities) required to do something or get something done\tability\tdanger heightened his powers of discrimination";
+    }
+    // noun 13945102
+    if sense == 4 {
+        return "noun\t(of a government or government official) holding an office means being in power\toffice\tduring his first year in power";
+    }
+    // noun 10461424
+    if sense == 5 {
+        return "noun\tone possessing or exercising power or influence or authority\tforce\tthe mysterious presence of an evil power";
+    }
+    // noun 06812417
+    if sense == 6 {
+        return "noun\ta mathematical notation indicating the number of times a quantity is multiplied by itself\texponent, index\t";
+    }
+    // noun 05030680
+    if sense == 7 {
+        return "noun\tphysical strength\tmight, mightiness\t";
+    }
+    // verb 01181559
+    if sense == 8 {
+        return "verb\tsupply the force or power for the functioning of\t\tThe gasoline powers the engines";
+    }
+    // noun 08177592
+    if sense == 9 {
+        return "noun\ta state powerful enough to influence events throughout the world\tworld power, major power, great power, superpower\t";
+    }
+    ""
+}

@@ -1,0 +1,61 @@
+// burn — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_burn(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 00378664
+    if sense == 1 {
+        return "verb\tdestroy by fire\tfire, burn down\tThey burned the house and his diaries";
+    }
+    // verb 02768874
+    if sense == 2 {
+        return "verb\tshine intensely, as if with heat\tglow\tThe candles were burning";
+    }
+    // verb 00377002
+    if sense == 3 {
+        return "verb\tundergo combustion\tcombust\tMaple wood burns well";
+    }
+    // verb 02120451
+    if sense == 4 {
+        return "verb\tcause a sharp or stinging pain or discomfort\tbite, sting\tThe sun burned his face";
+    }
+    // verb 02762468
+    if sense == 5 {
+        return "verb\tcause to burn or combust\tcombust\tThe sun burned off the fog";
+    }
+    // verb 01829292
+    if sense == 6 {
+        return "verb\tfeel strong emotion, especially anger or passion\t\tShe was burning with anger";
+    }
+    // verb 00378042
+    if sense == 7 {
+        return "verb\tcause to undergo combustion\tincinerate\tburn garbage";
+    }
+    // noun 14325437
+    if sense == 8 {
+        return "noun\tpain that feels hot as if it were on fire\tburning\t";
+    }
+    // noun 14290534
+    if sense == 9 {
+        return "noun\ta browning of the skin resulting from exposure to the rays of the sun\ttan, suntan, sunburn\t";
+    }
+    // verb 02485322
+    if sense == 10 {
+        return "verb\tburn at the stake\t\tWitches were burned in Salem";
+    }
+    // verb 02268881
+    if sense == 11 {
+        return "verb\tspend (significant amounts of money)\t\tHe has money to burn";
+    }
+    // verb 02121048
+    if sense == 12 {
+        return "verb\tfeel hot or painful\t\tMy eyes are burning";
+    }
+    // verb 00373766
+    if sense == 13 {
+        return "verb\tburn, sear, or freeze (tissue) using a hot iron or electric current or a caustic agent\tcauterize, cauterise\t";
+    }
+    // verb 00104299
+    if sense == 14 {
+        return "verb\tget a sunburn by overexposure to the sun\tsunburn\t";
+    }
+    ""
+}

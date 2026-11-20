@@ -1,0 +1,29 @@
+// remove — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_remove(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00173338
+    if sense == 1 {
+        return "verb\tremove something concrete, as by lifting, pushing, or taking off, or remove something abstract\ttake, take away, withdraw\tremove a threat";
+    }
+    // verb 02404224
+    if sense == 2 {
+        return "verb\tremove from a position or an office\t\t";
+    }
+    // verb 02224055
+    if sense == 3 {
+        return "verb\tdispose of\tget rid of\t";
+    }
+    // verb 02404904
+    if sense == 4 {
+        return "verb\tcause to leave\ttake out, move out\t";
+    }
+    // verb 02086458
+    if sense == 5 {
+        return "verb\tshift the position or location of, as for business, legal, educational, or military purposes\ttransfer\tHe removed his children to the countryside";
+    }
+    // verb 00421535
+    if sense == 6 {
+        return "verb\tgo away or leave\tabsent\t";
+    }
+    ""
+}

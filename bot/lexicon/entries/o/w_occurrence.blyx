@@ -1,0 +1,13 @@
+// occurrence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_occurrence(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07283608
+    if sense == 1 {
+        return "noun\tan event that happens\thappening, occurrent, natural event\t";
+    }
+    // noun 13959069
+    if sense == 2 {
+        return "noun\tan instance of something occurring\t\ta disease of frequent occurrence";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// security — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_security(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14539268
+    if sense == 1 {
+        return "noun\tthe state of being free from danger or injury\t\twe support the armed services in the name of national security";
+    }
+    // noun 13344071
+    if sense == 2 {
+        return "noun\tdefense against financial failure; financial independence\tprotection\this pension gave him security in his old age";
+    }
+    // noun 07526338
+    if sense == 3 {
+        return "noun\tfreedom from anxiety or fear\t\tthe watch dog gave her a feeling of security";
+    }
+    ""
+}

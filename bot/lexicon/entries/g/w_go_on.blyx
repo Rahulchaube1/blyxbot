@@ -1,0 +1,25 @@
+// go on — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_go_on(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02684924
+    if sense == 1 {
+        return "verb\tcontinue a certain state, condition, or activity\tcontinue, proceed, go along, keep\t";
+    }
+    // verb 00339934
+    if sense == 2 {
+        return "verb\tcome to pass\thappen, hap, pass off, occur, pass, fall out, come about, take place\t";
+    }
+    // verb 01992503
+    if sense == 3 {
+        return "verb\tmove forward, also in the metaphorical sense\tadvance, progress, pass on, move on, march on\t";
+    }
+    // verb 00781000
+    if sense == 4 {
+        return "verb\tcontinue talking\tcontinue, carry on, proceed\t";
+    }
+    // verb 01526605
+    if sense == 5 {
+        return "verb\tstart running, functioning, or operating\tcome up, come on\t";
+    }
+    ""
+}

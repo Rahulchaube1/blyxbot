@@ -1,0 +1,13 @@
+// skill — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_skill(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05637558
+    if sense == 1 {
+        return "noun\tan ability that has been acquired by training\taccomplishment, acquirement, acquisition, attainment\t";
+    }
+    // noun 05636887
+    if sense == 2 {
+        return "noun\tability to produce solutions in some problem domain\tscience\tthe skill of a well-trained boxer";
+    }
+    ""
+}

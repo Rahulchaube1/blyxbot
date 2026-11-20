@@ -1,0 +1,37 @@
+// concentrate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_concentrate(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00237511
+    if sense == 1 {
+        return "verb\tmake denser, stronger, or purer\t\tconcentrate juice";
+    }
+    // verb 00722232
+    if sense == 2 {
+        return "verb\tdirect one's attention on something\tfocus, center, centre, pore, rivet\t";
+    }
+    // verb 00405236
+    if sense == 3 {
+        return "verb\tmake central\tcentralize, centralise\t";
+    }
+    // noun 14837506
+    if sense == 4 {
+        return "noun\tthe desired mineral that is left after impurities have been removed from mined ore\tdressed ore\t";
+    }
+    // verb 00244625
+    if sense == 5 {
+        return "verb\tmake more concise\tdigest, condense\t";
+    }
+    // noun 07567390
+    if sense == 6 {
+        return "noun\ta concentrated form of a foodstuff; the bulk is reduced by removing water\t\t";
+    }
+    // noun 05937878
+    if sense == 7 {
+        return "noun\ta concentrated example of something\t\tthe concentrate of contemporary despair";
+    }
+    // verb 02032934
+    if sense == 8 {
+        return "verb\tdraw together or meet in one common center\t\tThese groups concentrate in the inner cities";
+    }
+    ""
+}

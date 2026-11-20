@@ -1,0 +1,13 @@
+// existence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_existence(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13954253
+    if sense == 1 {
+        return "noun\tthe state or fact of existing\tbeing, beingness\tlaws in existence for centuries";
+    }
+    // noun 09466280
+    if sense == 2 {
+        return "noun\teverything that exists anywhere\tuniverse, creation, world, cosmos, macrocosm\tthe biggest tree in existence";
+    }
+    ""
+}

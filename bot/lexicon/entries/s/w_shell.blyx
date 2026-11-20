@@ -1,0 +1,21 @@
+// shell — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shell(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04190464
+    if sense == 1 {
+        return "noun\tammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile; fired from a large gun\t\t";
+    }
+    // noun 14758536
+    if sense == 2 {
+        return "noun\tthe material that forms the hard outer covering of many animals\t\t";
+    }
+    // noun 01903756
+    if sense == 3 {
+        return "noun\thard outer covering or case of certain organisms such as arthropods and turtles\tcarapace, cuticle, shield\t";
+    }
+    // verb 01135922
+    if sense == 4 {
+        return "verb\tuse explosives on\tblast\tThe enemy has been shelling us all day";
+    }
+    ""
+}

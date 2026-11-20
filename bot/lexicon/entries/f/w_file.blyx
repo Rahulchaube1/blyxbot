@@ -1,0 +1,41 @@
+// file — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_file(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 01001857
+    if sense == 1 {
+        return "verb\trecord in a public office or in a court of law\tregister\tfile for divorce";
+    }
+    // noun 06508816
+    if sense == 2 {
+        return "noun\ta set of related records (either written or electronic) kept together\tdata file\t";
+    }
+    // verb 01387022
+    if sense == 3 {
+        return "verb\tsmooth with a file\t\tfile one's fingernails";
+    }
+    // verb 01920048
+    if sense == 4 {
+        return "verb\tproceed in line\t\tThe students filed into the classroom";
+    }
+    // verb 00869931
+    if sense == 5 {
+        return "verb\tfile a formal charge against\tcharge, lodge\t";
+    }
+    // noun 08428756
+    if sense == 6 {
+        return "noun\ta line of persons or things ranged one behind the other\tsingle file, Indian file\t";
+    }
+    // noun 03337140
+    if sense == 7 {
+        return "noun\toffice furniture consisting of a container for keeping papers in order\tfile cabinet, filing cabinet\t";
+    }
+    // noun 03336839
+    if sense == 8 {
+        return "noun\ta steel hand tool with small sharp teeth on some or all of its surfaces; used for smoothing wood or metal\t\t";
+    }
+    // verb 01001643
+    if sense == 9 {
+        return "verb\tplace in a container for keeping records\tfile away\tFile these bills, please";
+    }
+    ""
+}

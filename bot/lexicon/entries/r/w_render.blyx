@@ -1,0 +1,25 @@
+// render — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_render(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00120675
+    if sense == 1 {
+        return "verb\tcause to become\t\tThe shot rendered her immobile";
+    }
+    // verb 02327200
+    if sense == 2 {
+        return "verb\tgive something useful or necessary to\tsupply, provide, furnish\t";
+    }
+    // verb 01732172
+    if sense == 3 {
+        return "verb\tgive an interpretation or rendition of\tinterpret\tThe pianist rendered the Beethoven sonata beautifully";
+    }
+    // verb 01629000
+    if sense == 4 {
+        return "verb\tgive or supply\tyield, return, give, generate\tThe estate renders some revenue for the family";
+    }
+    // verb 01062253
+    if sense == 5 {
+        return "verb\tpass down\tdeliver, return\trender a verdict";
+    }
+    ""
+}

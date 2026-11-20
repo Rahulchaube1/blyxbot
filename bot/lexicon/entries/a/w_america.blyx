@@ -1,0 +1,13 @@
+// america — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_america(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09044862
+    if sense == 1 {
+        return "noun\tNorth American republic containing 50 states - 48 conterminous states in North America plus Alaska in northwest North America and the Hawaiian Islands in the Pacific Ocean; achieved independence in 1776\tUnited States, United States of America, the States, US, U.S., USA, U.S.A.\t";
+    }
+    // noun 09195615
+    if sense == 2 {
+        return "noun\tNorth America and South America and Central America\t\t";
+    }
+    ""
+}

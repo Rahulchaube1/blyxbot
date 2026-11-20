@@ -1,0 +1,21 @@
+// particular — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_particular(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01104026
+    if sense == 1 {
+        return "adjective\tunique or specific to a person or thing or category\tpeculiar, special\tthe particular demands of the job";
+    }
+    // adj 01104460
+    if sense == 2 {
+        return "adjective\tseparate and distinct from others of the same group or category\t\tinterested in one particular artist";
+    }
+    // noun 05818182
+    if sense == 3 {
+        return "noun\ta fact about some part (as opposed to general)\tspecific\the always reasons from the particular to the general";
+    }
+    // adj 00488187
+    if sense == 4 {
+        return "adjective\tsurpassing what is common or usual or expected\tespecial, exceptional, special\ta matter of particular and unusual importance";
+    }
+    ""
+}

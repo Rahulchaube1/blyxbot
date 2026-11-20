@@ -1,0 +1,17 @@
+// trend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_trend(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08681777
+    if sense == 1 {
+        return "noun\ta general direction in which something tends to move\ttendency\tthe trend of the stock market";
+    }
+    // noun 08681222
+    if sense == 2 {
+        return "noun\tgeneral line of orientation\tcourse\tthe northeastern trend of the coast";
+    }
+    // noun 06197664
+    if sense == 3 {
+        return "noun\ta general tendency to change (as of opinion)\tdrift, movement\tnot openly liberal but that is the trend of the book";
+    }
+    ""
+}

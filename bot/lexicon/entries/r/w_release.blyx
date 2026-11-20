@@ -1,0 +1,57 @@
+// release — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_release(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 01474550
+    if sense == 1 {
+        return "verb\trelease, as from one's grip\tlet go of, let go, relinquish\t";
+    }
+    // noun 04073208
+    if sense == 2 {
+        return "noun\tmerchandise issued for sale or public showing (especially a record or film)\t\ta new release from the London Symphony Orchestra";
+    }
+    // verb 02421374
+    if sense == 3 {
+        return "verb\tgrant freedom to; free from confinement\tfree, liberate, unloose, unloosen, loose\t";
+    }
+    // verb 01436518
+    if sense == 4 {
+        return "verb\tlet (something) fall or spill from a container\tturn\t";
+    }
+    // noun 00095502
+    if sense == 5 {
+        return "noun\tthe act of liberating someone or something\tliberation, freeing\t";
+    }
+    // verb 00967625
+    if sense == 6 {
+        return "verb\tprepare and issue for public distribution or sale\tpublish, bring out, put out, issue\t";
+    }
+    // verb 00104868
+    if sense == 7 {
+        return "verb\teliminate (a substance)\texhaust, discharge, expel, eject\tthe plant releases a gas";
+    }
+    // verb 00069295
+    if sense == 8 {
+        return "verb\tgenerate and separate from cells or bodily fluids\tsecrete\trelease a hormone into the blood stream";
+    }
+    // noun 13549672
+    if sense == 9 {
+        return "noun\ta process that liberates or discharges something\t\tthere was a sudden release of oxygen";
+    }
+    // noun 06747484
+    if sense == 10 {
+        return "noun\tan announcement distributed to members of the press in order to supplement or replace an oral presentation\thandout, press release\t";
+    }
+    // noun 00216174
+    if sense == 11 {
+        return "noun\tthe termination of someone's employment (leaving them free to depart)\tdismissal, dismission, discharge, firing, liberation, sack, sacking\t";
+    }
+    // noun 07333649
+    if sense == 12 {
+        return "noun\teuphemistic expressions for death\tpassing, loss, departure, exit, expiration, going\t";
+    }
+    // verb 02494047
+    if sense == 13 {
+        return "verb\tmake (information) available for publication\tfree\trelease the list with the names of the prisoners";
+    }
+    ""
+}

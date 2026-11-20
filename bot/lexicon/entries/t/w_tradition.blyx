@@ -1,0 +1,13 @@
+// tradition — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tradition(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05809745
+    if sense == 1 {
+        return "noun\tan inherited pattern of thought or action\t\t";
+    }
+    // noun 05667404
+    if sense == 2 {
+        return "noun\ta specific practice of long standing\tcustom\t";
+    }
+    ""
+}

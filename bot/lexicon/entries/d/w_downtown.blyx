@@ -1,0 +1,13 @@
+// downtown — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_downtown(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02494716
+    if sense == 1 {
+        return "adjective\tof or located in the lower part of a town, or in the business center\t\tdowntown Manhattan";
+    }
+    // noun 08539072
+    if sense == 2 {
+        return "noun\tthe central area or commercial center of a town or city\tbusiness district\tthe heart of Birmingham's downtown";
+    }
+    ""
+}

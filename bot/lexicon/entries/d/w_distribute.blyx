@@ -1,0 +1,29 @@
+// distribute — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_distribute(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02294436
+    if sense == 1 {
+        return "verb\tadminister or bestow, as in small portions\tadminister, mete out, deal, parcel out, lot, dispense, shell out, deal out, dish out, allot, dole out\t";
+    }
+    // verb 01378556
+    if sense == 2 {
+        return "verb\tdistribute or disperse widely\tspread\t";
+    }
+    // verb 02479990
+    if sense == 3 {
+        return "verb\tmake available\t\tThe publisher wants to distribute the book in Asia";
+    }
+    // verb 02201644
+    if sense == 4 {
+        return "verb\tgive to several people\tgive out, hand out, pass out\t";
+    }
+    // verb 02043190
+    if sense == 5 {
+        return "verb\tcause be distributed\tcirculate, pass around, pass on\t";
+    }
+    // verb 00968211
+    if sense == 6 {
+        return "verb\tcause to become widely known\tcirculate, circularize, circularise, disseminate, propagate, broadcast, spread, diffuse, disperse, pass around\t";
+    }
+    ""
+}

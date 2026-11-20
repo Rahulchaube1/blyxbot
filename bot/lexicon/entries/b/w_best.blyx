@@ -1,0 +1,29 @@
+// best — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_best(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 00227507
+    if sense == 1 {
+        return "adjective\t(superlative of `good') having the most positive qualities\t\tthe best film of the year";
+    }
+    // adv 00188137
+    if sense == 2 {
+        return "adverb\tin a most excellent way or manner\t\the played best after a couple of martinis";
+    }
+    // noun 00127531
+    if sense == 3 {
+        return "noun\tthe supreme effort one can make\t\tthey did their best";
+    }
+    // adv 00188057
+    if sense == 4 {
+        return "adverb\tit would be sensible\t\tyou'd best stay at home";
+    }
+    // noun 09851165
+    if sense == 5 {
+        return "noun\tthe person who is most outstanding or excellent; someone who tops all others\ttopper\the could beat the best of them";
+    }
+    // verb 01109259
+    if sense == 6 {
+        return "verb\tget the better of\toutdo, outflank, trump, scoop\tthe goal was to best the competition";
+    }
+    ""
+}

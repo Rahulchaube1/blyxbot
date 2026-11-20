@@ -1,0 +1,13 @@
+// discussion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_discussion(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07138085
+    if sense == 1 {
+        return "noun\tan extended communication (often interactive) dealing with some particular topic\ttreatment, discourse\tthe book contains an excellent discussion of modal logic";
+    }
+    // noun 07140659
+    if sense == 2 {
+        return "noun\tan exchange of views on some topic\tgive-and-take, word\twe had a good discussion";
+    }
+    ""
+}

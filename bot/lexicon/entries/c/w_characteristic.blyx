@@ -1,0 +1,17 @@
+// characteristic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_characteristic(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00356926
+    if sense == 1 {
+        return "adjective\ttypical or distinctive\t\theard my friend's characteristic laugh";
+    }
+    // noun 05849789
+    if sense == 2 {
+        return "noun\ta prominent attribute or aspect of something\tfeature\tgenerosity is one of his best characteristics";
+    }
+    // noun 04731497
+    if sense == 3 {
+        return "noun\ta distinguishing quality\t\t";
+    }
+    ""
+}

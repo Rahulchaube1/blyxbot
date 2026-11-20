@@ -1,0 +1,17 @@
+// director — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_director(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10014939
+    if sense == 1 {
+        return "noun\tsomeone who controls resources and expenditures\tmanager, managing director\t";
+    }
+    // noun 10015485
+    if sense == 2 {
+        return "noun\tmember of a board of directors\t\t";
+    }
+    // noun 10015215
+    if sense == 3 {
+        return "noun\tsomeone who supervises the actors and directs the action in the production of a show\ttheater director, theatre director\t";
+    }
+    ""
+}

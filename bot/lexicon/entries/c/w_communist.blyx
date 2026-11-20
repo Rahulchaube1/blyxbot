@@ -1,0 +1,17 @@
+// communist — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_communist(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02874876
+    if sense == 1 {
+        return "adjective\trelating to or marked by communism\tcommunistic\tCommunist Party";
+    }
+    // noun 09945603
+    if sense == 2 {
+        return "noun\ta member of the communist party\t\t";
+    }
+    // noun 09945319
+    if sense == 3 {
+        return "noun\ta socialist who advocates communism\tcommie\t";
+    }
+    ""
+}

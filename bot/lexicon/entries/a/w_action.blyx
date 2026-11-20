@@ -1,0 +1,37 @@
+// action — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_action(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 00037396
+    if sense == 1 {
+        return "noun\tsomething done (usually as opposed to something said)\t\tthere were stories of murders and other unnatural actions";
+    }
+    // noun 14006945
+    if sense == 2 {
+        return "noun\tthe state of being active\tactivity, activeness\the is out of action";
+    }
+    // noun 00952963
+    if sense == 3 {
+        return "noun\ta military engagement\tmilitary action\the saw action in Korea";
+    }
+    // noun 13518963
+    if sense == 4 {
+        return "noun\ta process existing in or produced by nature (rather than by the intent of human beings)\tnatural process, natural action, activity\tthe action of natural forces";
+    }
+    // noun 06373513
+    if sense == 5 {
+        return "noun\tthe series of events that form a plot\t\this novels always have a lot of action";
+    }
+    // noun 04835950
+    if sense == 6 {
+        return "noun\tthe trait of being active and energetic and forceful\t\ta man of action";
+    }
+    // noun 02677718
+    if sense == 7 {
+        return "noun\tthe operating part that transmits power to a mechanism\taction mechanism\tthe piano had a very stiff action";
+    }
+    // noun 01181902
+    if sense == 8 {
+        return "noun\ta judicial proceeding brought by one party against another; one party prosecutes another for a wrong done or for protection of a right or for prevention of a wrong\tlegal action, action at law\t";
+    }
+    ""
+}

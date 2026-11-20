@@ -1,0 +1,9 @@
+// few — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_few(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01552885
+    if sense == 1 {
+        return "adjective\ta quantifier that can be used with count nouns and is often preceded by `a'; a small but indefinite number\t\ta few weeks ago";
+    }
+    ""
+}

@@ -1,0 +1,121 @@
+// play — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_play(sense: i64) -> str {
+    if sense == 0 { return "29"; }
+    // verb 01072949
+    if sense == 1 {
+        return "verb\tparticipate in games or sport\t\tWe played hockey all afternoon";
+    }
+    // verb 02370650
+    if sense == 2 {
+        return "verb\tact or have an effect in a specified way or with a specific effect or outcome\t\tThis factor played only a minor part in his decision";
+    }
+    // noun 07007945
+    if sense == 3 {
+        return "noun\ta dramatic work intended for performance by actors on a stage\tdrama, dramatic play\the wrote several plays but only one was produced on Broadway";
+    }
+    // verb 01725051
+    if sense == 4 {
+        return "verb\tplay on an instrument\t\tThe band played all night long";
+    }
+    // verb 01719302
+    if sense == 5 {
+        return "verb\tplay a role or part\tact, represent\tGielgud played Hamlet";
+    }
+    // verb 02418686
+    if sense == 6 {
+        return "verb\tbe at play; be engaged in playful activity; amuse oneself in a way characteristic of children\t\tThe kids were playing outside all day";
+    }
+    // verb 01724459
+    if sense == 7 {
+        return "verb\treplay (as a melody)\tspiel\tPlay it again, Sam";
+    }
+    // noun 07018931
+    if sense == 8 {
+        return "noun\ta theatrical performance of a drama\t\tthe play lasted two hours";
+    }
+    // noun 00557588
+    if sense == 9 {
+        return "noun\ta preset plan of action in team sports\t\tthe coach drew up the plays for her team";
+    }
+    // verb 01726172
+    if sense == 10 {
+        return "verb\tperform music on (a musical instrument)\t\tHe plays the flute";
+    }
+    // noun 00556313
+    if sense == 11 {
+        return "noun\ta deliberate coordinated movement requiring dexterity and skill\tmaneuver, manoeuvre\tthe runner was out on a play by the shortstop";
+    }
+    // verb 00013615
+    if sense == 12 {
+        return "verb\tpretend to have certain qualities or state of mind\tact, act as\tShe plays deaf when the news are bad";
+    }
+    // verb 01903385
+    if sense == 13 {
+        return "verb\tmove or seem to move quickly, lightly, or irregularly\t\tThe spotlights played on the politicians";
+    }
+    // verb 01138911
+    if sense == 14 {
+        return "verb\tbet or wager (money)\t\tHe played $20 on the new horse";
+    }
+    // verb 02418421
+    if sense == 15 {
+        return "verb\tengage in recreational activities rather than work; occupy oneself in a diversion\trecreate\tOn weekends I play";
+    }
+    // verb 01722077
+    if sense == 16 {
+        return "verb\tpretend to be somebody in the framework of a game or playful activity\t\tLet's play like I am mommy";
+    }
+    // verb 01717436
+    if sense == 17 {
+        return "verb\temit recorded sound\t\tThe tape was playing for hours";
+    }
+    // noun 14009763
+    if sense == 18 {
+        return "noun\ta state in which action is feasible\t\tthe ball was still in play";
+    }
+    // verb 01716619
+    if sense == 19 {
+        return "verb\tperform on a certain location\t\tThe prodigy played Carnegie Hall at the age of 16";
+    }
+    // verb 01149470
+    if sense == 20 {
+        return "verb\tput (a card or piece) into play during a game, or act strategically as if in a card game\t\tHe is playing his cards close to his chest";
+    }
+    // verb 00013328
+    if sense == 21 {
+        return "verb\tengage in an activity as if it were a game rather than take it seriously\ttoy\tThey played games on their opponents";
+    }
+    // noun 00947596
+    if sense == 22 {
+        return "noun\tutilization or exercise\t\tthe play of the imagination";
+    }
+    // noun 00786887
+    if sense == 23 {
+        return "noun\tan attempt to get something\tbid\tthey made a futile play for power";
+    }
+    // noun 00431893
+    if sense == 24 {
+        return "noun\tactivity by children that is guided more by imagination than by fixed rules\tchild's play\tFreud believed in the utility of play to a small child";
+    }
+    // verb 02597601
+    if sense == 25 {
+        return "verb\tbehave in a certain way\t\tplay safe";
+    }
+    // verb 01717169
+    if sense == 26 {
+        return "verb\tcause to emit recorded audio or video\trun\tI'll play you my favorite record";
+    }
+    // verb 01586278
+    if sense == 27 {
+        return "verb\tmanipulate manually or in one's mind or imagination\ttoy, fiddle, diddle\tShe played nervously with her wedding ring";
+    }
+    // verb 01163355
+    if sense == 28 {
+        return "verb\tuse to one's advantage\t\tShe plays on her clients' emotions";
+    }
+    // verb 00711932
+    if sense == 29 {
+        return "verb\tconsider not very seriously\tdally, trifle\tShe plays with the thought of moving to Tasmania";
+    }
+    ""
+}

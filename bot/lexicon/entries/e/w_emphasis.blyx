@@ -1,0 +1,17 @@
+// emphasis — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_emphasis(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14434866
+    if sense == 1 {
+        return "noun\tspecial importance or significance\taccent\tthe red light gave the central figure increased emphasis";
+    }
+    // noun 05037394
+    if sense == 2 {
+        return "noun\tintensity or forcefulness of expression\tvehemence\this emphasis on civil rights";
+    }
+    // noun 07102945
+    if sense == 3 {
+        return "noun\tspecial and significant stress by means of position or repetition e.g.\t\t";
+    }
+    ""
+}

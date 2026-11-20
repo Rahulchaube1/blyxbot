@@ -1,0 +1,17 @@
+// representation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_representation(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05926676
+    if sense == 1 {
+        return "noun\ta presentation to the mind in the form of an idea or image\tmental representation, internal representation\t";
+    }
+    // noun 04076846
+    if sense == 2 {
+        return "noun\ta creation that is a visual or tangible rendering of someone or something\t\t";
+    }
+    // noun 01217499
+    if sense == 3 {
+        return "noun\tthe act of representing; standing in for someone or some group and speaking with authority in their behalf\t\t";
+    }
+    ""
+}

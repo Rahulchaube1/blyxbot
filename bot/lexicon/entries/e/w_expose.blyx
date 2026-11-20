@@ -1,0 +1,29 @@
+// expose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_expose(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02112029
+    if sense == 1 {
+        return "verb\texpose or make accessible to some action or influence\t\tExpose your students to art";
+    }
+    // verb 00933821
+    if sense == 2 {
+        return "verb\tmake known to the public information that was previously known only to a few people or that was meant to be kept a secret\tunwrap, disclose, let on, bring out, reveal, discover, divulge, break, give away, let out\t";
+    }
+    // verb 02140033
+    if sense == 3 {
+        return "verb\tto show, make visible or apparent\texhibit, display\t";
+    }
+    // verb 01339505
+    if sense == 4 {
+        return "verb\tremove all or part of one's clothes to show one's body\tuncover\tThe man exposed himself in the subway";
+    }
+    // verb 02137710
+    if sense == 5 {
+        return "verb\tdisclose to view as by removing a cover\tdisclose\t";
+    }
+    // verb 01036319
+    if sense == 6 {
+        return "verb\tput in a dangerous, disadvantageous, or difficult position\tqueer, scupper, endanger, peril\t";
+    }
+    ""
+}

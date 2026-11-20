@@ -1,0 +1,29 @@
+// thin — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_thin(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02412164
+    if sense == 1 {
+        return "adjective\tof relatively small extent from one surface to the opposite or in cross section\t\tthin wire";
+    }
+    // adj 00988232
+    if sense == 2 {
+        return "adjective\tlacking excess flesh\tlean\tyou can't be too rich or too thin";
+    }
+    // adj 02562566
+    if sense == 3 {
+        return "adjective\tvery narrow\tslender\ta thin line across the page";
+    }
+    // verb 00430999
+    if sense == 4 {
+        return "verb\tlose thickness; become thin or thinner\t\t";
+    }
+    // adj 00542359
+    if sense == 5 {
+        return "adjective\tnot dense\tsparse\ta thin beard";
+    }
+    // adj 02417301
+    if sense == 6 {
+        return "adjective\trelatively thin in consistency or low in density; not viscous\t\tair is thin at high altitudes";
+    }
+    ""
+}

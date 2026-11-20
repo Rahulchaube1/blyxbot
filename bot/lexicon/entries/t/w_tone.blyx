@@ -1,0 +1,33 @@
+// tone — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tone(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 07082573
+    if sense == 1 {
+        return "noun\tthe quality of a person's voice\ttone of voice\the began in a conversational tone";
+    }
+    // noun 04986883
+    if sense == 2 {
+        return "noun\t(linguistics) a pitch or change in pitch of the voice that serves to distinguish words in tonal languages\t\tthe Beijing dialect uses four tones";
+    }
+    // noun 04987620
+    if sense == 3 {
+        return "noun\t(music) the distinctive property of a complex sound (a voice or noise or musical sound)\ttimbre, timber, quality\tthe muffled tones of the broken bell summoned them to meet";
+    }
+    // noun 14526182
+    if sense == 4 {
+        return "noun\tthe general atmosphere of a place or situation and the effect that it has on people\tspirit, feel, feeling, flavor, flavour, look, smell\ta clergyman improved the tone of the meeting";
+    }
+    // noun 04959230
+    if sense == 5 {
+        return "noun\ta quality of a given color that differs slightly from another color\tshade, tint, tincture\t";
+    }
+    // noun 06865345
+    if sense == 6 {
+        return "noun\ta notation representing the pitch and duration of a musical sound\tnote, musical note\t";
+    }
+    // noun 05719605
+    if sense == 7 {
+        return "noun\ta steady sound without overtones\tpure tone\tthey tested his hearing with pure tones of different frequencies";
+    }
+    ""
+}

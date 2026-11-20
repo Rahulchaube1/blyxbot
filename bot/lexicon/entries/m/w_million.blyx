@@ -1,0 +1,13 @@
+// million — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_million(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02199177
+    if sense == 1 {
+        return "adjective\t(in Roman numerals, M written with a macron over it) denoting a quantity consisting of 1,000,000 items or units\t\t";
+    }
+    // noun 13751533
+    if sense == 2 {
+        return "noun\tthe number that is represented as a one followed by 6 zeros\t1000000, one thousand thousand, meg\t";
+    }
+    ""
+}

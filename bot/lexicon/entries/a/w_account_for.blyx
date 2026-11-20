@@ -1,0 +1,13 @@
+// account for — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_account_for(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02635033
+    if sense == 1 {
+        return "verb\tbe the reason or explanation for\t\t";
+    }
+    // verb 00939621
+    if sense == 2 {
+        return "verb\tgive reasons for\t\tCan you account for all these absences?";
+    }
+    ""
+}

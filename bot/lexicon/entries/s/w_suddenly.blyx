@@ -1,0 +1,17 @@
+// suddenly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_suddenly(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00061677
+    if sense == 1 {
+        return "adverb\thappening unexpectedly\tall of a sudden, of a sudden\tsuddenly she felt a sharp pain in her side";
+    }
+    // adv 00061528
+    if sense == 2 {
+        return "adverb\tquickly and without warning\tabruptly, short, dead\the stopped suddenly";
+    }
+    // adv 00171135
+    if sense == 3 {
+        return "adverb\ton impulse; without premeditation\ton the spur of the moment\the made up his mind suddenly";
+    }
+    ""
+}

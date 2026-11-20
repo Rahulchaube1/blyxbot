@@ -1,0 +1,13 @@
+// importance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_importance(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05168261
+    if sense == 1 {
+        return "noun\tthe quality of being important and worthy of note\t\tthe importance of a well-balanced diet";
+    }
+    // noun 14434681
+    if sense == 2 {
+        return "noun\ta prominent status\tgrandness\ta person of importance";
+    }
+    ""
+}

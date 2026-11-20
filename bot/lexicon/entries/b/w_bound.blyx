@@ -1,0 +1,49 @@
+// bound — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bound(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 01963942
+    if sense == 1 {
+        return "verb\tmove forward by leaps and bounds\tjump, leap, spring\tThe horse bounded across the meadow";
+    }
+    // adj 00252954
+    if sense == 2 {
+        return "adjective\tconfined by bonds\t\tbound and gagged hostages";
+    }
+    // adj 01058854
+    if sense == 3 {
+        return "adjective\theld with another element, substance or material in chemical or physical union\t\t";
+    }
+    // verb 02710673
+    if sense == 4 {
+        return "verb\tform the boundary of; be contiguous to\tborder\t";
+    }
+    // verb 00233335
+    if sense == 5 {
+        return "verb\tplace limits on (extent or access)\trestrict, restrain, trammel, limit, confine, throttle\t";
+    }
+    // adj 00256636
+    if sense == 6 {
+        return "adjective\tsecured with a cover or binding; often used as a combining form\t\tbound volumes";
+    }
+    // adj 00340626
+    if sense == 7 {
+        return "adjective\t(usually followed by `to') governed by fate\tdestined\tbound to happen";
+    }
+    // noun 13903079
+    if sense == 8 {
+        return "noun\ta line determining the limits of an area\tboundary, edge\t";
+    }
+    // verb 01892104
+    if sense == 9 {
+        return "verb\tspring back; spring away from an impact\tbounce, resile, take a hop, spring, rebound, recoil, reverberate, ricochet\t";
+    }
+    // adj 01955494
+    if sense == 10 {
+        return "adjective\tcovered or wrapped with a bandage\tbandaged\tan injury bound in fresh gauze";
+    }
+    // adj 01682822
+    if sense == 11 {
+        return "adjective\theaded or intending to head in a certain direction; often used as a combining form as in `college-bound students'\tdestined\tchildren bound for school";
+    }
+    ""
+}

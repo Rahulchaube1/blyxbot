@@ -1,0 +1,9 @@
+// gram — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gram(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 13723712
+    if sense == 1 {
+        return "noun\ta metric unit of weight equal to one thousandth of a kilogram\tgramme, gm, g\t";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// pack — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pack(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01482449
+    if sense == 1 {
+        return "verb\tarrange in a container\t\tpack the books into the boxes";
+    }
+    // verb 02086963
+    if sense == 2 {
+        return "verb\tfill to capacity\t\tThis singer always packs the concert halls";
+    }
+    // verb 01483779
+    if sense == 3 {
+        return "verb\tcompress into a wad\tbundle, wad, compact\t";
+    }
+    // verb 01451176
+    if sense == 4 {
+        return "verb\tcarry, as on one's back\t\tPack your tents to the top of the mountain";
+    }
+    // noun 13775093
+    if sense == 5 {
+        return "noun\ta large indefinite number\tbattalion, large number, multitude, plurality\t";
+    }
+    // noun 07956426
+    if sense == 6 {
+        return "noun\ta complete collection of similar things\t\t";
+    }
+    // noun 03870546
+    if sense == 7 {
+        return "noun\ta convenient package or parcel (as of cigarettes or film)\t\t";
+    }
+    // verb 02396536
+    if sense == 8 {
+        return "verb\tset up a committee or legislative body with one's own supporters so as to influence the outcome\t\tpack a jury";
+    }
+    ""
+}

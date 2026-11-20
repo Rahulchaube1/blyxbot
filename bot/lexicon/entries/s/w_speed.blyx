@@ -1,0 +1,37 @@
+// speed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_speed(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 15282696
+    if sense == 1 {
+        return "noun\tdistance travelled per unit time\tvelocity\t";
+    }
+    // noun 05058140
+    if sense == 2 {
+        return "noun\ta rate (usually rapid) at which something happens\tswiftness, fastness\tthe project advanced with gratifying speed";
+    }
+    // verb 02058994
+    if sense == 3 {
+        return "verb\tmove fast\trush, hotfoot, hasten, hie, race, pelt along, rush along, cannonball along, bucket along, belt along, step on it\t";
+    }
+    // verb 00438178
+    if sense == 4 {
+        return "verb\tmove faster\taccelerate, speed up, quicken\t";
+    }
+    // noun 00330160
+    if sense == 5 {
+        return "noun\tchanging location rapidly\tspeeding, hurrying\t";
+    }
+    // verb 02055649
+    if sense == 6 {
+        return "verb\tmove very fast\ttravel rapidly, hurry, zip\tThe runner zipped past us at breakneck speed";
+    }
+    // verb 02055975
+    if sense == 7 {
+        return "verb\ttravel at an excessive or illegal velocity\t\tI got a ticket for speeding";
+    }
+    // verb 00439343
+    if sense == 8 {
+        return "verb\tcause to move faster\taccelerate, speed up\t";
+    }
+    ""
+}

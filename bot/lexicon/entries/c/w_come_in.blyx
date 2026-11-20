@@ -1,0 +1,21 @@
+// come in — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_come_in(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02016523
+    if sense == 1 {
+        return "verb\tto come or go into\tenter, get into, get in, go into, go in, move into\t";
+    }
+    // verb 02006709
+    if sense == 2 {
+        return "verb\tbe received\tcome\t";
+    }
+    // verb 02667419
+    if sense == 3 {
+        return "verb\tcome into fashion; become fashionable\t\t";
+    }
+    // verb 00914769
+    if sense == 4 {
+        return "verb\tto insert between other elements\tinterject, interpose, put in, throw in, inject\t";
+    }
+    ""
+}

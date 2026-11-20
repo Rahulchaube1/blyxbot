@@ -1,0 +1,21 @@
+// weigh — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_weigh(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02704818
+    if sense == 1 {
+        return "verb\thave a certain weight\t\t";
+    }
+    // verb 00950431
+    if sense == 2 {
+        return "verb\tshow consideration for; take into account\tconsider, count\t";
+    }
+    // verb 02704617
+    if sense == 3 {
+        return "verb\tdetermine the weight of\tlibrate\tThe butcher weighed the chicken";
+    }
+    // verb 02645839
+    if sense == 4 {
+        return "verb\thave weight; have import, carry weight\tcount, matter\t";
+    }
+    ""
+}

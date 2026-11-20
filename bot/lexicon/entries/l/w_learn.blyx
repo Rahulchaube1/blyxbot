@@ -1,0 +1,25 @@
+// learn — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_learn(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00597915
+    if sense == 1 {
+        return "verb\tgain knowledge or skills\tlarn, acquire\tShe learned dancing from her sister";
+    }
+    // verb 00598954
+    if sense == 2 {
+        return "verb\tget to know or become aware of, usually accidentally\thear, get word, get wind, pick up, find out, get a line, discover, see\tI learned that she has two grown-up children";
+    }
+    // verb 00604576
+    if sense == 3 {
+        return "verb\tcommit to memory; learn by heart\tmemorize, memorise, con\t";
+    }
+    // verb 00599992
+    if sense == 4 {
+        return "verb\tbe a student of a certain subject\tstudy, read, take\t";
+    }
+    // verb 00829107
+    if sense == 5 {
+        return "verb\timpart skills or knowledge to\tteach, instruct\t";
+    }
+    ""
+}

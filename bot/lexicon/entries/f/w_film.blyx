@@ -1,0 +1,25 @@
+// film — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_film(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 06613686
+    if sense == 1 {
+        return "noun\ta form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement\tmovie, picture, moving picture, moving-picture show, motion picture, motion-picture show, picture show, pic, flick\tthe film was shot on location";
+    }
+    // noun 06262567
+    if sense == 2 {
+        return "noun\ta medium that disseminates moving pictures\tcinema, celluloid\tfilm coverage of sporting events";
+    }
+    // noun 03338821
+    if sense == 3 {
+        return "noun\tphotographic material consisting of a base of celluloid covered with a photographic emulsion; used to make negatives or transparencies\tphotographic film\t";
+    }
+    // noun 03338648
+    if sense == 4 {
+        return "noun\ta thin coating or layer\t\tthe table was covered with a film of dust";
+    }
+    // verb 01002740
+    if sense == 5 {
+        return "verb\tmake a film or photograph of something\tshoot, take\t";
+    }
+    ""
+}

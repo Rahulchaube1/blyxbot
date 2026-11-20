@@ -1,0 +1,13 @@
+// usual — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_usual(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00489108
+    if sense == 1 {
+        return "adjective\toccurring or encountered or experienced or observed frequently or in accordance with regular practice or procedure\t\tgrew the usual vegetables";
+    }
+    // adj 00970610
+    if sense == 2 {
+        return "adjective\tcommonly encountered\tcommon\tthe usual greeting";
+    }
+    ""
+}

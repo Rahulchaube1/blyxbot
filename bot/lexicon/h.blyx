@@ -1,0 +1,148 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::h::w_hair;
+use entries::h::w_half;
+use entries::h::w_hall;
+use entries::h::w_halt;
+use entries::h::w_hand;
+use entries::h::w_handle;
+use entries::h::w_hang;
+use entries::h::w_happen;
+use entries::h::w_happy;
+use entries::h::w_hard;
+use entries::h::w_hardly;
+use entries::h::w_hat;
+use entries::h::w_hate;
+use entries::h::w_have;
+use entries::h::w_head;
+use entries::h::w_health;
+use entries::h::w_hear;
+use entries::h::w_heart;
+use entries::h::w_heat;
+use entries::h::w_heavily;
+use entries::h::w_heavy;
+use entries::h::w_help;
+use entries::h::w_hen;
+use entries::h::w_hence;
+use entries::h::w_here;
+use entries::h::w_hero;
+use entries::h::w_hesitate;
+use entries::h::w_hide;
+use entries::h::w_high;
+use entries::h::w_high_school;
+use entries::h::w_hill;
+use entries::h::w_hire;
+use entries::h::w_historian;
+use entries::h::w_historical;
+use entries::h::w_history;
+use entries::h::w_hit;
+use entries::h::w_hold;
+use entries::h::w_holder;
+use entries::h::w_hole;
+use entries::h::w_home;
+use entries::h::w_honor;
+use entries::h::w_hope;
+use entries::h::w_horse;
+use entries::h::w_hospital;
+use entries::h::w_host;
+use entries::h::w_hot;
+use entries::h::w_hotel;
+use entries::h::w_hour;
+use entries::h::w_house;
+use entries::h::w_however;
+use entries::h::w_hr;
+use entries::h::w_huge;
+use entries::h::w_human;
+use entries::h::w_human_being;
+use entries::h::w_humor;
+use entries::h::w_hundred;
+use entries::h::w_hurry;
+use entries::h::w_hurt;
+use entries::h::w_husband;
+use entries::h::w_hypothalamic;
+
+fn through_w_health(term: str, sense: i64) -> str {
+    if term == "hair" { return w_hair(sense); }
+    if term == "half" { return w_half(sense); }
+    if term == "hall" { return w_hall(sense); }
+    if term == "halt" { return w_halt(sense); }
+    if term == "hand" { return w_hand(sense); }
+    if term == "handle" { return w_handle(sense); }
+    if term == "hang" { return w_hang(sense); }
+    if term == "happen" { return w_happen(sense); }
+    if term == "happy" { return w_happy(sense); }
+    if term == "hard" { return w_hard(sense); }
+    if term == "hardly" { return w_hardly(sense); }
+    if term == "hat" { return w_hat(sense); }
+    if term == "hate" { return w_hate(sense); }
+    if term == "have" { return w_have(sense); }
+    if term == "head" { return w_head(sense); }
+    if term == "health" { return w_health(sense); }
+    ""
+}
+
+fn through_w_hire(term: str, sense: i64) -> str {
+    if term == "hear" { return w_hear(sense); }
+    if term == "heart" { return w_heart(sense); }
+    if term == "heat" { return w_heat(sense); }
+    if term == "heavily" { return w_heavily(sense); }
+    if term == "heavy" { return w_heavy(sense); }
+    if term == "help" { return w_help(sense); }
+    if term == "hen" { return w_hen(sense); }
+    if term == "hence" { return w_hence(sense); }
+    if term == "here" { return w_here(sense); }
+    if term == "hero" { return w_hero(sense); }
+    if term == "hesitate" { return w_hesitate(sense); }
+    if term == "hide" { return w_hide(sense); }
+    if term == "high" { return w_high(sense); }
+    if term == "high school" { return w_high_school(sense); }
+    if term == "hill" { return w_hill(sense); }
+    if term == "hire" { return w_hire(sense); }
+    ""
+}
+
+fn through_w_hour(term: str, sense: i64) -> str {
+    if term == "historian" { return w_historian(sense); }
+    if term == "historical" { return w_historical(sense); }
+    if term == "history" { return w_history(sense); }
+    if term == "hit" { return w_hit(sense); }
+    if term == "hold" { return w_hold(sense); }
+    if term == "holder" { return w_holder(sense); }
+    if term == "hole" { return w_hole(sense); }
+    if term == "home" { return w_home(sense); }
+    if term == "honor" { return w_honor(sense); }
+    if term == "hope" { return w_hope(sense); }
+    if term == "horse" { return w_horse(sense); }
+    if term == "hospital" { return w_hospital(sense); }
+    if term == "host" { return w_host(sense); }
+    if term == "hot" { return w_hot(sense); }
+    if term == "hotel" { return w_hotel(sense); }
+    if term == "hour" { return w_hour(sense); }
+    ""
+}
+
+fn through_w_hypothalamic(term: str, sense: i64) -> str {
+    if term == "house" { return w_house(sense); }
+    if term == "however" { return w_however(sense); }
+    if term == "hr" { return w_hr(sense); }
+    if term == "huge" { return w_huge(sense); }
+    if term == "human" { return w_human(sense); }
+    if term == "human being" { return w_human_being(sense); }
+    if term == "humor" { return w_humor(sense); }
+    if term == "hundred" { return w_hundred(sense); }
+    if term == "hurry" { return w_hurry(sense); }
+    if term == "hurt" { return w_hurt(sense); }
+    if term == "husband" { return w_husband(sense); }
+    if term == "hypothalamic" { return w_hypothalamic(sense); }
+    ""
+}
+
+pub fn lookup_h(term: str, sense: i64) -> str {
+    if term <= "health" { return through_w_health(term, sense); }
+    if term <= "hire" { return through_w_hire(term, sense); }
+    if term <= "hour" { return through_w_hour(term, sense); }
+    through_w_hypothalamic(term, sense)
+}
+
+pub fn words_h() -> str {
+    "hair|half|hall|halt|hand|handle|hang|happen|happy|hard|hardly|hat|hate|have|head|health|hear|heart|heat|heavily|heavy|help|hen|hence|here|hero|hesitate|hide|high|high school|hill|hire|historian|historical|history|hit|hold|holder|hole|home|honor|hope|horse|hospital|host|hot|hotel|hour|house|however|hr|huge|human|human being|humor|hundred|hurry|hurt|husband|hypothalamic"
+}

@@ -1,0 +1,37 @@
+// title — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_title(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 06345993
+    if sense == 1 {
+        return "noun\ta heading that names a statute or legislative bill; may give a brief summary of the matters it deals with\tstatute title, rubric\tTitle 8 provided federal help for schools";
+    }
+    // noun 06343520
+    if sense == 2 {
+        return "noun\tthe name of a work of art or literary composition etc.\t\the looked for books with the word `jazz' in the title";
+    }
+    // noun 06346461
+    if sense == 3 {
+        return "noun\ta general or descriptive heading for a section of a written work\t\tthe novel had chapter titles";
+    }
+    // verb 01029500
+    if sense == 4 {
+        return "verb\tgive a title to\tentitle\t";
+    }
+    // noun 13948912
+    if sense == 5 {
+        return "noun\tthe status of being a champion\tchampionship\the held the title for two years";
+    }
+    // noun 06545137
+    if sense == 6 {
+        return "noun\ta legal document signed and sealed and delivered to effect a transfer of property and to show the legal right to possess it\tdeed, deed of conveyance\the kept the title to his car in the glove compartment";
+    }
+    // noun 06339416
+    if sense == 7 {
+        return "noun\tan identifying appellation signifying status or function: e.g. `Mr.' or `General'\ttitle of respect, form of address\tthe professor didn't like his friends to use his formal title";
+    }
+    // noun 05181199
+    if sense == 8 {
+        return "noun\tan established or recognized right\tclaim\the had no documents confirming his title to his father's estate";
+    }
+    ""
+}

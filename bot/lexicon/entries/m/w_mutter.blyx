@@ -1,0 +1,13 @@
+// mutter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mutter(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01044533
+    if sense == 1 {
+        return "verb\ttalk indistinctly; usually in a low voice\tmumble, maunder, mussitate\t";
+    }
+    // verb 00909219
+    if sense == 2 {
+        return "verb\tmake complaining remarks or noises under one's breath\tmurmur, grumble, croak, gnarl\t";
+    }
+    ""
+}

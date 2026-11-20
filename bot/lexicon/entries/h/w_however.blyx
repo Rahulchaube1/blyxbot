@@ -1,0 +1,21 @@
+// however — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_however(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00027384
+    if sense == 1 {
+        return "adverb\tdespite anything to the contrary (usually following a concession)\tnevertheless, withal, still, yet, all the same, even so, nonetheless, notwithstanding\talthough I'm a little afraid, however I'd like to try it";
+    }
+    // adv 00028797
+    if sense == 2 {
+        return "adverb\tby contrast; on the other hand\t\tthe first part was easy; the second, however, took hours";
+    }
+    // adv 00028578
+    if sense == 3 {
+        return "adverb\tto whatever degree or extent\t\tThe results, however general, are important";
+    }
+    // adv 00028424
+    if sense == 4 {
+        return "adverb\tin whatever way or manner\t\tVictory, however it was brought about, was sweet";
+    }
+    ""
+}

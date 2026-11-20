@@ -1,0 +1,9 @@
+// slowly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_slowly(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00161630
+    if sense == 1 {
+        return "adverb\twithout speed (`slow' is sometimes used informally for `slowly')\tslow, easy, tardily\the spoke slowly";
+    }
+    ""
+}

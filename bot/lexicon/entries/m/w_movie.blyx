@@ -1,0 +1,9 @@
+// movie — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_movie(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 06613686
+    if sense == 1 {
+        return "noun\ta form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement\tfilm, picture, moving picture, moving-picture show, motion picture, motion-picture show, picture show, pic, flick\tthey went to a movie every Saturday night";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// domestic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_domestic(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01038102
+    if sense == 1 {
+        return "adjective\tof concern to or concerning the internal affairs of a nation\t\tdomestic issues such as tax rate and highway construction";
+    }
+    // adj 02919594
+    if sense == 2 {
+        return "adjective\tof or relating to the home\t\tdomestic servant";
+    }
+    // adj 01038808
+    if sense == 3 {
+        return "adjective\tof or involving the home or family\t\tdomestic worries";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// mouth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mouth(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 05302499
+    if sense == 1 {
+        return "noun\tthe opening through which food is taken in and vocalizations emerge\toral cavity, oral fissure, rima oris\the stuffed his mouth with candy";
+    }
+    // noun 05301908
+    if sense == 2 {
+        return "noun\tthe externally visible part of the oral cavity on the face and the system of organs surrounding the opening\t\tshe wiped lipstick from her mouth";
+    }
+    // verb 00941990
+    if sense == 3 {
+        return "verb\texpress in speech\ttalk, speak, utter, verbalize, verbalise\t";
+    }
+    // noun 09362469
+    if sense == 4 {
+        return "noun\tan opening that resembles a mouth (as of a cave or a gorge)\t\the rode into the mouth of the canyon";
+    }
+    // noun 09362316
+    if sense == 5 {
+        return "noun\tthe point where a stream issues into a larger body of water\t\tNew York is at the mouth of the Hudson";
+    }
+    // noun 10335679
+    if sense == 6 {
+        return "noun\ta person conceived as a consumer of food\t\the has four mouths to feed";
+    }
+    // verb 01040707
+    if sense == 7 {
+        return "verb\tarticulate silently; form words with the lips only\t\tShe mouthed a swear word";
+    }
+    ""
+}

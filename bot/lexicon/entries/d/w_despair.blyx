@@ -1,0 +1,17 @@
+// despair — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_despair(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14486274
+    if sense == 1 {
+        return "noun\ta state in which all hope is lost or absent\tdesperation\tin the depths of despair";
+    }
+    // noun 07541923
+    if sense == 2 {
+        return "noun\tthe feeling that everything is wrong and nothing will turn out well\t\tthey moaned in despair and dismay";
+    }
+    // verb 01810933
+    if sense == 3 {
+        return "verb\tabandon hope; give up hope; lose heart\t\tDon't despair--help is on the way!";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// uniform — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_uniform(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04509592
+    if sense == 1 {
+        return "noun\tclothing of distinctive design worn by members of a particular group as a means of identification\t\t";
+    }
+    // adj 01966488
+    if sense == 2 {
+        return "adjective\talways the same; showing a single form or character in all occurrences\tunvarying\ta street of uniform tall white buildings";
+    }
+    // adj 01200095
+    if sense == 3 {
+        return "adjective\tthe same throughout in structure or composition\tconsistent\t";
+    }
+    ""
+}

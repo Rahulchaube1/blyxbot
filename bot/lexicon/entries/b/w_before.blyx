@@ -1,0 +1,9 @@
+// before — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_before(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00060939
+    if sense == 1 {
+        return "adverb\tearlier in time; previously\tearlier\tI had known her before";
+    }
+    ""
+}

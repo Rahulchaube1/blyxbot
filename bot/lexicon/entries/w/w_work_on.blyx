@@ -1,0 +1,13 @@
+// work on — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_work_on(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02415039
+    if sense == 1 {
+        return "verb\tto exert effort in order to do, make, or perform something\twork at\t";
+    }
+    // verb 01668603
+    if sense == 2 {
+        return "verb\tshape, form, or improve a material\twork, process\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// status — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_status(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13945919
+    if sense == 1 {
+        return "noun\tthe relative position or standing of things or especially persons in a society\tposition\the had the status of a minor";
+    }
+    // noun 13920835
+    if sense == 2 {
+        return "noun\ta state at a particular time\tcondition\tthe current status of the arms negotiations";
+    }
+    ""
+}

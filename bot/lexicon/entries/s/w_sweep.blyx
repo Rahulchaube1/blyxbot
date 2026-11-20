@@ -1,0 +1,37 @@
+// sweep — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sweep(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01870043
+    if sense == 1 {
+        return "verb\tsweep across or over\tbrush\t";
+    }
+    // verb 01869563
+    if sense == 2 {
+        return "verb\tmove with sweeping, effortless, gliding motions\tsail\t";
+    }
+    // verb 01393714
+    if sense == 3 {
+        return "verb\tsweep with a broom or as if with a broom\tbroom\tSweep the crumbs off the table";
+    }
+    // noun 05127959
+    if sense == 4 {
+        return "noun\ta wide scope\texpanse\tthe sweep of the plains";
+    }
+    // verb 02677797
+    if sense == 5 {
+        return "verb\tforce into some kind of situation, condition, or course of action\tembroil, tangle, sweep up, drag, drag in\t";
+    }
+    // verb 02685390
+    if sense == 6 {
+        return "verb\tto cover or extend over an area or time period\tcross, traverse, span\t";
+    }
+    // verb 01393996
+    if sense == 7 {
+        return "verb\tclean by sweeping\t\tPlease sweep the floor";
+    }
+    // verb 01100952
+    if sense == 8 {
+        return "verb\twin an overwhelming victory in or on\t\t";
+    }
+    ""
+}

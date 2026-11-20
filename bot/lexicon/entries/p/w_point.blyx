@@ -1,0 +1,85 @@
+// point — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_point(sense: i64) -> str {
+    if sense == 0 { return "20"; }
+    // noun 05865998
+    if sense == 1 {
+        return "noun\ta geometric element that has position but no extension\t\ta point is defined by its coordinates";
+    }
+    // verb 00923793
+    if sense == 2 {
+        return "verb\tindicate a place, direction, person, or thing; either spatially or figuratively\tindicate, designate, show\tHe pointed to the empty parking space";
+    }
+    // noun 08620061
+    if sense == 3 {
+        return "noun\tthe precise location of something; a spatially limited location\t\tshe walked to a point where she could survey the whole street";
+    }
+    // noun 06606808
+    if sense == 4 {
+        return "noun\ta brief version of the essential meaning of something\t\tget to the point";
+    }
+    // noun 05817845
+    if sense == 5 {
+        return "noun\tan isolated fact that is considered separately from the whole\tdetail, item\ta point of information";
+    }
+    // noun 13939892
+    if sense == 6 {
+        return "noun\ta specific identifiable position in a continuum or series or especially in a process\tdegree, level, stage\t";
+    }
+    // noun 15180528
+    if sense == 7 {
+        return "noun\tan instant of time\tpoint in time\tat that point I had to leave";
+    }
+    // verb 02713184
+    if sense == 8 {
+        return "verb\tbe oriented\torient\tThe weather vane points North";
+    }
+    // verb 01152214
+    if sense == 9 {
+        return "verb\tdirect into a position for use\tcharge, level\tpoint a gun";
+    }
+    // noun 05984066
+    if sense == 10 {
+        return "noun\tthe object of an activity\t\twhat is the point of discussing it?";
+    }
+    // verb 01931768
+    if sense == 11 {
+        return "verb\tdirect the course; determine the direction of travelling\tsteer, maneuver, manoeuver, manoeuvre, direct, head, guide, channelize, channelise\t";
+    }
+    // noun 13902482
+    if sense == 12 {
+        return "noun\ta V shape\ttip, peak\tthe cannibal's teeth were filed to sharp points";
+    }
+    // noun 13911872
+    if sense == 13 {
+        return "noun\ta very small circular shape\tdot\ta row of points";
+    }
+    // noun 13610162
+    if sense == 14 {
+        return "noun\tthe unit of counting in scoring a game or contest\t\the scored 20 points in the first half";
+    }
+    // noun 09396465
+    if sense == 15 {
+        return "noun\ta promontory extending out into a large body of water\t\tthey sailed south around the point";
+    }
+    // noun 06482401
+    if sense == 16 {
+        return "noun\ta distinct part that can be specified separately in a group of things that could be enumerated on a list\titem\tthe main point on the agenda was taken up first";
+    }
+    // noun 13794885
+    if sense == 17 {
+        return "noun\ta style in speech or writing that arrests attention and has a penetrating or convincing quality or effect\t\t";
+    }
+    // noun 04731925
+    if sense == 18 {
+        return "noun\tan outstanding characteristic\tspot\this acting was one of the high points of the movie";
+    }
+    // noun 03974215
+    if sense == 19 {
+        return "noun\tsharp end\t\the stuck the point of the knife into a tree";
+    }
+    // verb 00921300
+    if sense == 20 {
+        return "verb\tbe a signal for or a symptom of\tbespeak, betoken, indicate, signal\tHer behavior points to a severe neurosis";
+    }
+    ""
+}

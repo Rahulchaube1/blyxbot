@@ -1,0 +1,13 @@
+// bet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bet(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00918580
+    if sense == 1 {
+        return "verb\tmaintain with or as if with a bet\twager\tI bet she will be there!";
+    }
+    // noun 13343526
+    if sense == 2 {
+        return "noun\tthe money risked on a gamble\tstake, stakes, wager\t";
+    }
+    ""
+}

@@ -1,0 +1,61 @@
+// well — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_well(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // adv 00011093
+    if sense == 1 {
+        return "adverb\t(often used as a combining form) in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')\tgood\tthe children behaved well";
+    }
+    // adv 00012779
+    if sense == 2 {
+        return "adverb\tthoroughly or completely; fully; often used as a combining form\t\tThe problem is well understood";
+    }
+    // adv 00012531
+    if sense == 3 {
+        return "adverb\tindicating high probability; in all likelihood\teasily\tI might well do it";
+    }
+    // noun 04572344
+    if sense == 4 {
+        return "noun\ta deep hole or shaft dug or drilled to obtain water or oil or gas or brine\t\t";
+    }
+    // adv 00015135
+    if sense == 5 {
+        return "adverb\t(used for emphasis or as an intensifier) entirely or fully\t\ta book well worth reading";
+    }
+    // adj 02540578
+    if sense == 6 {
+        return "adjective\tin good health especially after having suffered illness or injury\t\tappears to be entirely well";
+    }
+    // adv 00013429
+    if sense == 7 {
+        return "adverb\tto a suitable or appropriate extent or degree\t\tthe project was well underway";
+    }
+    // adv 00013092
+    if sense == 8 {
+        return "adverb\tfavorably; with approval\t\ttheir neighbors spoke well of them";
+    }
+    // verb 01991204
+    if sense == 9 {
+        return "verb\tcome up, as of a liquid\tswell\tTears well in her eyes";
+    }
+    // adj 01048762
+    if sense == 10 {
+        return "adjective\tresulting favorably\tgood\tit is well that no one saw you";
+    }
+    // adj 00067638
+    if sense == 11 {
+        return "adjective\twise or advantageous and hence advisable\t\tit would be well to start early";
+    }
+    // adv 00014285
+    if sense == 12 {
+        return "adverb\tto a great extent or degree\tconsiderably, substantially\tI'm afraid the film was well over budget";
+    }
+    // noun 04572935
+    if sense == 13 {
+        return "noun\ta cavity or vessel used to contain liquid\t\t";
+    }
+    // adv 00015007
+    if sense == 14 {
+        return "adverb\twith great or especially intimate knowledge\tintimately\twe knew them well";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// c — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_c(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 13714491
+    if sense == 1 {
+        return "noun\ta degree on the centigrade scale of temperature\tdegree centigrade, degree Celsius\t";
+    }
+    ""
+}

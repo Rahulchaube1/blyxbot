@@ -1,0 +1,17 @@
+// likely — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_likely(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01411451
+    if sense == 1 {
+        return "adjective\thas a good chance of being the case or of coming about\t\tthese services are likely to be available to us all before long";
+    }
+    // adv 00138611
+    if sense == 2 {
+        return "adverb\twith considerable certainty; without much doubt\tprobably, in all likelihood, in all probability, belike\t";
+    }
+    // adj 01413247
+    if sense == 3 {
+        return "adjective\tlikely but not certain to be or become true or real\tprobable\ta likely result";
+    }
+    ""
+}

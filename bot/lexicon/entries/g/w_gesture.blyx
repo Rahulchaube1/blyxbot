@@ -1,0 +1,21 @@
+// gesture — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gesture(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00334509
+    if sense == 1 {
+        return "noun\tmotion of hands or body to emphasize or help to express a thought or feeling\t\t";
+    }
+    // noun 06876309
+    if sense == 2 {
+        return "noun\tthe use of movements (especially of the hands) to communicate familiar or prearranged signals\tmotion\t";
+    }
+    // noun 01228380
+    if sense == 3 {
+        return "noun\tsomething done as an indication of intention\t\ta political gesture";
+    }
+    // verb 00992041
+    if sense == 4 {
+        return "verb\tshow, express or direct through movement\tgesticulate, motion\tHe gestured his desire to leave";
+    }
+    ""
+}

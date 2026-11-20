@@ -1,0 +1,25 @@
+// third — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_third(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 02202307
+    if sense == 1 {
+        return "adjective\tcoming next after the second and just before the fourth in position\t3rd, tertiary\t";
+    }
+    // noun 13737190
+    if sense == 2 {
+        return "noun\tone of three equal parts of a divisible whole\tone-third, tierce\tit contains approximately a third of the minimum daily requirement";
+    }
+    // noun 00724168
+    if sense == 3 {
+        return "noun\tthe fielding position of the player on a baseball team who is stationed near the third of the bases in the infield (counting counterclockwise from home plate)\tthird base\the is playing third";
+    }
+    // noun 13846900
+    if sense == 4 {
+        return "noun\tfollowing the second position in an ordering or series\t\ta distant third";
+    }
+    // adv 00102986
+    if sense == 5 {
+        return "adverb\tin the third place\tthirdly\tthird we must consider unemployment";
+    }
+    ""
+}

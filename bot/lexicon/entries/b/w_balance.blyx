@@ -1,0 +1,33 @@
+// balance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_balance(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 14002279
+    if sense == 1 {
+        return "noun\ta state of equilibrium\t\t";
+    }
+    // verb 02673134
+    if sense == 2 {
+        return "verb\tbring into balance or equilibrium\tequilibrate, equilibrize, equilibrise\tShe has to balance work and her domestic duties";
+    }
+    // noun 13408980
+    if sense == 3 {
+        return "noun\tequality between the totals of the credit and debit sides of an account\t\t";
+    }
+    // verb 02264967
+    if sense == 4 {
+        return "verb\tcompute credits and debits of an account\t\t";
+    }
+    // verb 01602318
+    if sense == 5 {
+        return "verb\thold or carry in equilibrium\tpoise\t";
+    }
+    // noun 05076827
+    if sense == 6 {
+        return "noun\tharmonious arrangement or relation of parts or elements within a whole (as in a design)\tproportion, proportionality\tin all perfectly beautiful objects there is found the opposition of one part to another and a reciprocal balance";
+    }
+    // verb 02743020
+    if sense == 7 {
+        return "verb\tbe in equilibrium\t\tHe was balancing on one foot";
+    }
+    ""
+}

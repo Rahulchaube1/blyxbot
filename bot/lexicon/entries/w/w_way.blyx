@@ -1,0 +1,53 @@
+// way — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_way(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // noun 04928903
+    if sense == 1 {
+        return "noun\thow something is done or how it happens\tmanner, mode, style, fashion\ta lonely way of life";
+    }
+    // noun 00172710
+    if sense == 2 {
+        return "noun\thow a result is obtained or an end is achieved\tmeans, agency\tthe true way to success";
+    }
+    // noun 08679972
+    if sense == 3 {
+        return "noun\ta line leading to a place or point\tdirection\tdidn't know the way home";
+    }
+    // noun 13939604
+    if sense == 4 {
+        return "noun\tthe condition of things generally\t\tthat's the way it is";
+    }
+    // noun 00415676
+    if sense == 5 {
+        return "noun\ta course of conduct\tpath, way of life\twe went our separate ways";
+    }
+    // noun 04564698
+    if sense == 6 {
+        return "noun\tany artifact consisting of a road or path affording passage from one place to another\t\the said he was looking for the way out";
+    }
+    // noun 00312691
+    if sense == 7 {
+        return "noun\ta journey or passage\t\tthey are on the way";
+    }
+    // noun 13777764
+    if sense == 8 {
+        return "noun\tspace for movement\troom, elbow room\tmake way for";
+    }
+    // noun 05084733
+    if sense == 9 {
+        return "noun\tthe property of distance in general\t\tit's a long way to Moscow";
+    }
+    // adv 00101752
+    if sense == 10 {
+        return "adverb\tto a great degree or by a great distance; very much (`right smart' is regional in the United States)\tright smart\tway over budget";
+    }
+    // noun 05791764
+    if sense == 11 {
+        return "noun\tdoing as one pleases or chooses\t\tif I had my way";
+    }
+    // noun 05839910
+    if sense == 12 {
+        return "noun\ta general category of things; used in the expression `in the way of'\t\tthey didn't have much in the way of clothing";
+    }
+    ""
+}

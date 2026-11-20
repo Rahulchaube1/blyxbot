@@ -1,0 +1,13 @@
+// pray — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pray(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00759944
+    if sense == 1 {
+        return "verb\taddress a deity, a prophet, a saint or an object of worship; say a prayer\t\tpray to the Lord";
+    }
+    // verb 00759269
+    if sense == 2 {
+        return "verb\tcall upon in supplication; entreat\tbeg, implore\t";
+    }
+    ""
+}

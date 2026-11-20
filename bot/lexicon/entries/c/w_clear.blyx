@@ -1,0 +1,85 @@
+// clear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_clear(sense: i64) -> str {
+    if sense == 0 { return "20"; }
+    // adj 00428404
+    if sense == 1 {
+        return "adjective\treadily apparent to the mind\t\ta clear and present danger";
+    }
+    // verb 00181664
+    if sense == 2 {
+        return "verb\trid of obstructions\tunclutter\tClear your desk";
+    }
+    // adj 00435190
+    if sense == 3 {
+        return "adjective\tfree from confusion or doubt\t\ta complex problem requiring a clear head";
+    }
+    // adj 01622505
+    if sense == 4 {
+        return "adjective\taffording free passage or view\topen\ta clear view";
+    }
+    // verb 00195617
+    if sense == 5 {
+        return "verb\tmake a way or path by removing objects\t\tClear a path through the dense forest";
+    }
+    // adj 00431447
+    if sense == 6 {
+        return "adjective\tallowing light to pass through\t\tclear water";
+    }
+    // adj 01062938
+    if sense == 7 {
+        return "adjective\tfree from contact or proximity or connection\t\twe were clear of the danger";
+    }
+    // adv 00285854
+    if sense == 8 {
+        return "adverb\tcompletely\tall the way\tread the book clear to the end";
+    }
+    // verb 02771169
+    if sense == 9 {
+        return "verb\tbecome clear\tclear up, light up, brighten\tThe sky cleared after the storm";
+    }
+    // verb 00803325
+    if sense == 10 {
+        return "verb\tgrant authorization or clearance for\tauthorize, authorise, pass\tClear the manuscript for publication";
+    }
+    // verb 00195342
+    if sense == 11 {
+        return "verb\tremove\t\tclear the leaves from the lawn";
+    }
+    // verb 02523351
+    if sense == 12 {
+        return "verb\tgo unchallenged; be approved\tpass\tThe bill cleared the House";
+    }
+    // verb 02289134
+    if sense == 13 {
+        return "verb\tbe debited and credited to the proper bank accounts\t\tThe check will clear within 2 business days";
+    }
+    // verb 02156844
+    if sense == 14 {
+        return "verb\tgo away or disappear\t\tThe fog cleared in the afternoon";
+    }
+    // verb 02081178
+    if sense == 15 {
+        return "verb\tpass by, over, or under without making contact\ttop\tthe balloon cleared the tree tops";
+    }
+    // verb 00621058
+    if sense == 16 {
+        return "verb\tmake free from confusion or ambiguity; make clear\tclear up, shed light on, crystallize, crystallise, crystalize, crystalise, straighten out, sort out, enlighten, illuminate, elucidate\tClear up the question of who is at fault";
+    }
+    // adj 02459667
+    if sense == 17 {
+        return "adjective\tcharacterized by freedom from troubling thoughts (especially guilt)\t\ta clear conscience";
+    }
+    // adj 01906464
+    if sense == 18 {
+        return "adjective\t(of sound or color) free from anything that dulls or dims\tclean, light, unclouded\tclear laughter like a waterfall";
+    }
+    // adj 00869253
+    if sense == 19 {
+        return "adjective\t(especially of a title) free from any encumbrance or limitation that presents a question of fact or law\tunmortgaged\tI have clear title to this property";
+    }
+    // adj 00780011
+    if sense == 20 {
+        return "adjective\tclear and distinct to the senses; easily perceptible\tclean-cut, clear-cut\tas clear as a whistle";
+    }
+    ""
+}

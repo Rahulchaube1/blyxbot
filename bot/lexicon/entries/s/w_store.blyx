@@ -1,0 +1,25 @@
+// store — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_store(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 04202417
+    if sense == 1 {
+        return "noun\ta mercantile establishment for the retail sale of goods or services\tshop\t";
+    }
+    // verb 02281093
+    if sense == 2 {
+        return "verb\tkeep or lay aside for future use\thive away, lay in, put in, salt away, stack away, stash away\tstore grain for the winter";
+    }
+    // verb 02282506
+    if sense == 3 {
+        return "verb\tfind a place for and put away for storage\t\tI couldn't store all the books in the attic so I sold some";
+    }
+    // noun 13367070
+    if sense == 4 {
+        return "noun\ta supply of something available for future use\tstock, fund\the brought back a large store of Cuban cigars";
+    }
+    // noun 03744276
+    if sense == 5 {
+        return "noun\tan electronic memory device\tmemory, computer memory, storage, computer storage, memory board\t";
+    }
+    ""
+}

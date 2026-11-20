@@ -1,0 +1,33 @@
+// plan — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_plan(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 05898568
+    if sense == 1 {
+        return "noun\ta series of steps to be carried out or goals to be accomplished\tprogram, programme\tthey drew up a six-step plan";
+    }
+    // verb 00705227
+    if sense == 2 {
+        return "verb\thave the will and intention to carry out some action\tbe after\tHe plans to be in graduate school next year";
+    }
+    // verb 00704690
+    if sense == 3 {
+        return "verb\tmake plans for something\t\tHe is planning a trip with his family";
+    }
+    // verb 01638368
+    if sense == 4 {
+        return "verb\tmake or work out a plan for; devise\tproject, contrive, design\tplan an attack";
+    }
+    // noun 05728678
+    if sense == 5 {
+        return "noun\tan arrangement scheme\tdesign\ta plan for seating guests";
+    }
+    // noun 03954199
+    if sense == 6 {
+        return "noun\tscale drawing of a structure\tarchitectural plan\tthe plans for City Hall were on file";
+    }
+    // verb 01639714
+    if sense == 7 {
+        return "verb\tmake a design of; plan out in systematic, often graphic form\tdesign\tplan the new wing of the museum";
+    }
+    ""
+}

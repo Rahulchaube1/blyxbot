@@ -1,0 +1,25 @@
+// pure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pure(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01905653
+    if sense == 1 {
+        return "adjective\tfree of extraneous elements of any kind\t\tpure air and water";
+    }
+    // adj 01520091
+    if sense == 2 {
+        return "adjective\twithout qualification; used informally as (often pejorative) intensifiers\tarrant, complete, consummate, double-dyed, everlasting, gross, perfect, sodding, stark, staring, thoroughgoing, utter, unadulterated\tpure folly";
+    }
+    // adj 00393508
+    if sense == 3 {
+        return "adjective\t(of color) being chromatically pure; not diluted with white or grey or black\tsaturated\t";
+    }
+    // adj 01163860
+    if sense == 4 {
+        return "adjective\tfree from discordant qualities\t\t";
+    }
+    // adj 00862911
+    if sense == 5 {
+        return "adjective\tconcerned with theory and data rather than practice; opposed to applied\t\tpure science";
+    }
+    ""
+}

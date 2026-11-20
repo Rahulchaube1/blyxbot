@@ -1,0 +1,21 @@
+// different — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_different(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02064745
+    if sense == 1 {
+        return "adjective\tunlike in nature or quality or form or degree\t\ttook different approaches to the problem";
+    }
+    // adj 02070030
+    if sense == 2 {
+        return "adjective\tdistinctly separate from the first\t\tthat's another (or different) issue altogether";
+    }
+    // adj 00490413
+    if sense == 3 {
+        return "adjective\tdiffering from all others; not ordinary\t\tadvertising that strives continually to be different";
+    }
+    // adj 01410363
+    if sense == 4 {
+        return "adjective\tmarked by dissimilarity\tunlike, dissimilar\tpeople are profoundly different";
+    }
+    ""
+}

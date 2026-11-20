@@ -1,0 +1,13 @@
+// confusion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_confusion(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13975752
+    if sense == 1 {
+        return "noun\tdisorder resulting from a failure to behave predictably\t\tthe army retreated in confusion";
+    }
+    // noun 05683582
+    if sense == 2 {
+        return "noun\ta mental state characterized by a lack of clear and orderly thought and behavior\tmental confusion, confusedness, muddiness, disarray\ta confusion of impressions";
+    }
+    ""
+}

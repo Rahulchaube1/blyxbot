@@ -1,0 +1,13 @@
+// private — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_private(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01858094
+    if sense == 1 {
+        return "adjective\tconfined to particular persons or groups or providing privacy\t\ta private place";
+    }
+    // noun 10476467
+    if sense == 2 {
+        return "noun\tan enlisted man of the lowest rank in the Army or Marines\tbuck private, common soldier\tour prisoner was just a private and knew nothing of value";
+    }
+    ""
+}

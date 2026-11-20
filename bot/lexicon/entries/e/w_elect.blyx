@@ -1,0 +1,13 @@
+// elect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_elect(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02400760
+    if sense == 1 {
+        return "verb\tselect by a vote for an office or membership\t\tWe elected him chairman of the board";
+    }
+    // verb 00676864
+    if sense == 2 {
+        return "verb\tchoose\t\tI elected to have my funds deposited automatically";
+    }
+    ""
+}

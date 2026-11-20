@@ -1,0 +1,49 @@
+// walk — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_walk(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 01904930
+    if sense == 1 {
+        return "verb\tuse one's feet to advance; advance by steps\t\tWalk, don't run!";
+    }
+    // noun 00283568
+    if sense == 2 {
+        return "noun\tthe act of traveling by foot\twalking\twalking is a healthy form of exercise";
+    }
+    // noun 00127286
+    if sense == 3 {
+        return "noun\t(baseball) an advance to first base by a batter who receives four balls\tbase on balls, pass\t";
+    }
+    // noun 05003090
+    if sense == 4 {
+        return "noun\tmanner of walking\tmanner of walking\the had a funny walk";
+    }
+    // verb 01907076
+    if sense == 5 {
+        return "verb\taccompany or escort\t\tI'll walk you to your car";
+    }
+    // verb 01113473
+    if sense == 6 {
+        return "verb\tobtain a base on balls\t\t";
+    }
+    // noun 00284798
+    if sense == 7 {
+        return "noun\tthe act of walking somewhere\t\the took a walk after lunch";
+    }
+    // noun 04544979
+    if sense == 8 {
+        return "noun\ta path set aside for walking\twalkway, paseo\tafter the blizzard he shoveled the front walk";
+    }
+    // noun 00287142
+    if sense == 9 {
+        return "noun\ta slow gait of a horse in which two feet are always on the ground\t\t";
+    }
+    // verb 01912893
+    if sense == 10 {
+        return "verb\ttraverse or cover by walking\t\tWalk the tightrope";
+    }
+    // verb 01140654
+    if sense == 11 {
+        return "verb\tgive a base on balls to\t\t";
+    }
+    ""
+}

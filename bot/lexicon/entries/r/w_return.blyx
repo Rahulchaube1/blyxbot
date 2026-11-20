@@ -1,0 +1,73 @@
+// return — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_return(sense: i64) -> str {
+    if sense == 0 { return "17"; }
+    // verb 02004874
+    if sense == 1 {
+        return "verb\tgo or come back to place, condition, or activity where one has been before\t\treturn to your native land";
+    }
+    // noun 06548671
+    if sense == 2 {
+        return "noun\tdocument giving the tax collector information about the taxpayer's tax liability\ttax return, income tax return\this gross income was enough that he had to file a tax return";
+    }
+    // verb 02310007
+    if sense == 3 {
+        return "verb\tgive back\trender\t";
+    }
+    // verb 00387310
+    if sense == 4 {
+        return "verb\tgo back to a previous state\trevert, retrovert, regress, turn back\t";
+    }
+    // noun 00051192
+    if sense == 5 {
+        return "noun\ta coming to or returning home\thomecoming\ton his return from Australia we gave him a welcoming party";
+    }
+    // verb 00959524
+    if sense == 6 {
+        return "verb\tgo back to something earlier\thark back, come back, recall\t";
+    }
+    // noun 07447022
+    if sense == 7 {
+        return "noun\tthe occurrence of a change in direction back in the opposite direction\tcoming back\t";
+    }
+    // noun 00089351
+    if sense == 8 {
+        return "noun\tgetting something back again\trestitution, restoration, regaining\t";
+    }
+    // verb 02078294
+    if sense == 9 {
+        return "verb\tbring back to the point of departure\ttake back, bring back\t";
+    }
+    // noun 00328015
+    if sense == 10 {
+        return "noun\tthe act of going back to a prior location\t\tthey set out on their return to the base camp";
+    }
+    // verb 02357072
+    if sense == 11 {
+        return "verb\treturn in kind\t\treturn a compliment";
+    }
+    // verb 01433159
+    if sense == 12 {
+        return "verb\tmake a return\t\treturn a kickback";
+    }
+    // verb 00816353
+    if sense == 13 {
+        return "verb\tanswer back\tretort, come back, repay, riposte, rejoin\t";
+    }
+    // verb 00548153
+    if sense == 14 {
+        return "verb\tbe restored\tcome back\tHer old vigor returned";
+    }
+    // noun 13260190
+    if sense == 15 {
+        return "noun\tthe income or profit arising from such transactions as the sale of land or other property\tissue, take, takings, proceeds, yield, payoff\tthe average return was about 5%";
+    }
+    // verb 02284951
+    if sense == 16 {
+        return "verb\tpay back\trefund, repay, give back\t";
+    }
+    // verb 01062253
+    if sense == 17 {
+        return "verb\tpass down\trender, deliver\t";
+    }
+    ""
+}

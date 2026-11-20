@@ -1,0 +1,9 @@
+// at last — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_at_last(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00047903
+    if sense == 1 {
+        return "adverb\tas the end result of a succession or process\tultimately, finally, in the end, at long last\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// somehow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_somehow(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00026137
+    if sense == 1 {
+        return "adverb\tin some unspecified way or manner; or by some unspecified means\tsomeway, someways, in some way, in some manner\tthey managed somehow";
+    }
+    // adv 00026416
+    if sense == 2 {
+        return "adverb\tfor some unspecified reason\t\tIt doesn't seem fair somehow";
+    }
+    ""
+}

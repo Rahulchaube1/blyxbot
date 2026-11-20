@@ -1,0 +1,21 @@
+// hear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hear(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02169702
+    if sense == 1 {
+        return "verb\tperceive (sound) via the auditory sense\t\t";
+    }
+    // verb 00598954
+    if sense == 2 {
+        return "verb\tget to know or become aware of, usually accidentally\tlearn, get word, get wind, pick up, find out, get a line, discover, see\t";
+    }
+    // verb 02500902
+    if sense == 3 {
+        return "verb\texamine or hear (evidence or a case) by judicial process\ttry\tThe jury had heard all the evidence";
+    }
+    // verb 02107442
+    if sense == 4 {
+        return "verb\treceive a communication from someone\t\tWe heard nothing from our son for five years";
+    }
+    ""
+}

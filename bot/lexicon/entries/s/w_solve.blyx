@@ -1,0 +1,13 @@
+// solve — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_solve(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00634906
+    if sense == 1 {
+        return "verb\tfind the solution to (a problem or question) or understand the meaning of\twork out, figure out, puzzle out, lick, work\tdid you solve the problem?";
+    }
+    // verb 00733044
+    if sense == 2 {
+        return "verb\tfind the solution\tresolve\tsolve an equation";
+    }
+    ""
+}

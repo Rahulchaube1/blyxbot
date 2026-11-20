@@ -1,0 +1,37 @@
+// mind — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mind(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 05611302
+    if sense == 1 {
+        return "noun\tthat which is responsible for one's thoughts and feelings; the seat of the faculty of reason\thead, brain, psyche, nous\this mind wandered";
+    }
+    // verb 00848707
+    if sense == 2 {
+        return "verb\tbe offended or bothered by; take offense with, be bothered by\t\tI don't mind your behavior";
+    }
+    // noun 05762149
+    if sense == 3 {
+        return "noun\trecall or remembrance\t\tit came to mind";
+    }
+    // noun 05837957
+    if sense == 4 {
+        return "noun\tan opinion formed by judging something\tjudgment, judgement\tshe changed her mind";
+    }
+    // verb 00724492
+    if sense == 5 {
+        return "verb\tbe concerned with or about something or somebody\t\t";
+    }
+    // noun 10708292
+    if sense == 6 {
+        return "noun\tan important intellectual\tthinker, creative thinker\tthe great minds of the 17th century";
+    }
+    // verb 02437707
+    if sense == 7 {
+        return "verb\tbe in charge of or deal with\ttake care\t";
+    }
+    // noun 05703956
+    if sense == 8 {
+        return "noun\tattention\t\tdon't pay him any mind";
+    }
+    ""
+}

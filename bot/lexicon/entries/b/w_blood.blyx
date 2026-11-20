@@ -1,0 +1,21 @@
+// blood — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_blood(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05399847
+    if sense == 1 {
+        return "noun\tthe fluid (red in vertebrates) that is pumped through the body by the heart and contains plasma, blood cells, and platelets\t\tblood carries oxygen and nutrients to the tissues and carries away waste products";
+    }
+    // noun 04628747
+    if sense == 2 {
+        return "noun\ttemperament or disposition\t\ta person of hot blood";
+    }
+    // noun 10505942
+    if sense == 3 {
+        return "noun\ta dissolute man in fashionable society\trake, rakehell, profligate, rip, roue\t";
+    }
+    // noun 08101937
+    if sense == 4 {
+        return "noun\tthe descendants of one individual\tlineage, line, line of descent, descent, bloodline, blood line, pedigree, ancestry, origin, parentage, stemma, stock\t";
+    }
+    ""
+}

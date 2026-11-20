@@ -1,0 +1,13 @@
+// approve — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_approve(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00806502
+    if sense == 1 {
+        return "verb\tgive sanction to\tO.K., okay, sanction\tI approve of his educational policies";
+    }
+    // verb 00673983
+    if sense == 2 {
+        return "verb\tjudge to be right or commendable; think well of\t\t";
+    }
+    ""
+}

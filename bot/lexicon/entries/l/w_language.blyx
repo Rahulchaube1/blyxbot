@@ -1,0 +1,25 @@
+// language — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_language(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 06282651
+    if sense == 1 {
+        return "noun\ta systematic means of communicating by the use of sounds or conventional symbols\tlinguistic communication\the taught foreign languages";
+    }
+    // noun 07109196
+    if sense == 2 {
+        return "noun\t(language) communication by word of mouth\tspeech, speech communication, spoken communication, spoken language, voice communication, oral communication\the uttered harsh language";
+    }
+    // noun 07051975
+    if sense == 3 {
+        return "noun\tthe text of a popular song or musical-comedy number\tlyric, words\tthe song uses colloquial language";
+    }
+    // noun 05808557
+    if sense == 4 {
+        return "noun\tthe cognitive processes involved in producing and understanding linguistic communication\tlinguistic process\the didn't have the language to express his feelings";
+    }
+    // noun 05650820
+    if sense == 5 {
+        return "noun\tthe mental faculty or power of vocal communication\tspeech\tlanguage sets homo sapiens apart from all other animals";
+    }
+    ""
+}

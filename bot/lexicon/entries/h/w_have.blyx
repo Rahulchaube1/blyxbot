@@ -1,0 +1,81 @@
+// have — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_have(sense: i64) -> str {
+    if sense == 0 { return "19"; }
+    // verb 02203362
+    if sense == 1 {
+        return "verb\thave or possess, either in a concrete or an abstract sense\thave got, hold\t";
+    }
+    // verb 02630189
+    if sense == 2 {
+        return "verb\thave as a feature\tfeature\t";
+    }
+    // verb 02108026
+    if sense == 3 {
+        return "verb\tgo through (mental or physical states or experiences)\texperience, receive, get\thave a feeling";
+    }
+    // verb 02204692
+    if sense == 4 {
+        return "verb\thave ownership or possession of\town, possess\tHow many cars does she have?";
+    }
+    // verb 00120796
+    if sense == 5 {
+        return "verb\tcause to move; cause to be in a certain position or condition\tget, let\t";
+    }
+    // verb 01156834
+    if sense == 6 {
+        return "verb\tserve oneself to, or consume regularly\tconsume, ingest, take in, take\tHave another bowl of chicken soup!";
+    }
+    // verb 02378453
+    if sense == 7 {
+        return "verb\thave a personal or business relationship with someone\t\thave a postdoc";
+    }
+    // verb 01733477
+    if sense == 8 {
+        return "verb\torganize or be responsible for\thold, throw, make, give\thave, throw, or make a party";
+    }
+    // verb 02205098
+    if sense == 9 {
+        return "verb\thave left\t\tI have two years left";
+    }
+    // verb 02740745
+    if sense == 10 {
+        return "verb\tbe confronted with\t\tWhat do we have here?";
+    }
+    // verb 00121046
+    if sense == 11 {
+        return "verb\tundergo\texperience\t";
+    }
+    // verb 00065370
+    if sense == 12 {
+        return "verb\tsuffer from; be ill with\t\t";
+    }
+    // verb 00770437
+    if sense == 13 {
+        return "verb\tcause to do; cause to act in a specified manner\tinduce, stimulate, cause, get, make\t";
+    }
+    // verb 02236124
+    if sense == 14 {
+        return "verb\treceive willingly something given or offered\taccept, take\tThe only girl who would have him was the miller's daughter";
+    }
+    // verb 02210119
+    if sense == 15 {
+        return "verb\tget something; come into possession of\treceive\t";
+    }
+    // verb 00065639
+    if sense == 16 {
+        return "verb\tundergo (as of injuries and illnesses)\tsuffer, sustain, get\t";
+    }
+    // verb 02355596
+    if sense == 17 {
+        return "verb\tachieve a point or goal\tget, make\t";
+    }
+    // verb 00056930
+    if sense == 18 {
+        return "verb\tcause to be born\tgive birth, deliver, bear, birth\t";
+    }
+    // verb 01427127
+    if sense == 19 {
+        return "verb\thave sex with; archaic use\ttake\t";
+    }
+    ""
+}

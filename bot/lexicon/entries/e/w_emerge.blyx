@@ -1,0 +1,21 @@
+// emerge — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_emerge(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00423971
+    if sense == 1 {
+        return "verb\tcome out into view, as from concealment\t\tSuddenly, the proprietor emerged from his office";
+    }
+    // verb 00528990
+    if sense == 2 {
+        return "verb\tcome out of\tissue, come out, come forth, go forth, egress\t";
+    }
+    // verb 00426581
+    if sense == 3 {
+        return "verb\tbecome known or apparent\t\tSome nice results emerged from the study";
+    }
+    // verb 01990694
+    if sense == 4 {
+        return "verb\tcome up to the surface of or rise\t\tHe felt new emotions emerge";
+    }
+    ""
+}

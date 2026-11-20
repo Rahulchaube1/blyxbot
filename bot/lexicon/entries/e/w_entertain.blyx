@@ -1,0 +1,13 @@
+// entertain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_entertain(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02492198
+    if sense == 1 {
+        return "verb\tprovide entertainment for\t\t";
+    }
+    // verb 00711715
+    if sense == 2 {
+        return "verb\ttake into consideration, have in view\tthink of, toy with, flirt with, think about\tHe entertained the notion of moving to South America";
+    }
+    ""
+}

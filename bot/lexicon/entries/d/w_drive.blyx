@@ -1,0 +1,81 @@
+// drive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_drive(sense: i64) -> str {
+    if sense == 0 { return "19"; }
+    // verb 01930874
+    if sense == 1 {
+        return "verb\toperate or control a vehicle\t\tdrive a car or bus";
+    }
+    // verb 01930117
+    if sense == 2 {
+        return "verb\ttravel or be transported in a vehicle\tmotor\t";
+    }
+    // verb 02056971
+    if sense == 3 {
+        return "verb\tcause someone or something to move by driving\t\t";
+    }
+    // verb 01516534
+    if sense == 4 {
+        return "verb\tforce into or from an action or state, either physically or metaphorically\tforce, ram\tHe drives me mad";
+    }
+    // noun 00103834
+    if sense == 5 {
+        return "noun\tthe act of applying force to propel something\tthrust, driving force\tafter reaching the desired velocity the drive is cut off";
+    }
+    // verb 02505358
+    if sense == 6 {
+        return "verb\tto compel or force or urge relentlessly or exert coercive pressure on, or motivate strongly\t\t";
+    }
+    // noun 03242995
+    if sense == 7 {
+        return "noun\ta mechanism by which force or power is transmitted in a machine\t\ta variable speed drive permitted operation through a range of speeds";
+    }
+    // verb 01506157
+    if sense == 8 {
+        return "verb\tcause to move back by force or influence\trepel, repulse, force back, push back, beat back\t";
+    }
+    // noun 00798245
+    if sense == 9 {
+        return "noun\ta series of actions advancing a principle or tending toward a particular end\tcampaign, cause, crusade, movement, effort\tthe team was ready for a drive toward the pennant";
+    }
+    // verb 01646300
+    if sense == 10 {
+        return "verb\tcompel somebody to do something, often against his own will or judgment\t\t";
+    }
+    // noun 03244388
+    if sense == 11 {
+        return "noun\ta road leading up to a private house\tdriveway, private road\t";
+    }
+    // verb 01512259
+    if sense == 12 {
+        return "verb\tpush, propel, or press with force\t\tDrive a nail into the wall";
+    }
+    // verb 01509584
+    if sense == 13 {
+        return "verb\tcause to move rapidly by striking or throwing with force\t\tdrive the ball far out into the field";
+    }
+    // noun 04835724
+    if sense == 14 {
+        return "noun\tthe trait of being highly motivated\t\this drive and energy exhausted his co-workers";
+    }
+    // noun 00572489
+    if sense == 15 {
+        return "noun\thitting a golf ball off of a tee with a driver\tdriving\the sliced his drive out of bounds";
+    }
+    // noun 00317594
+    if sense == 16 {
+        return "noun\tthe act of driving a herd of animals overland\t\t";
+    }
+    // noun 00307631
+    if sense == 17 {
+        return "noun\ta journey in a vehicle (usually an automobile)\tride\the took the family for a drive in his new car";
+    }
+    // verb 02406916
+    if sense == 18 {
+        return "verb\tstrive and make an effort to reach a goal\ttug, labor, labour, push\tShe is driving away at her doctoral thesis";
+    }
+    // verb 01026975
+    if sense == 19 {
+        return "verb\tmove into a desired direction of discourse\tget, aim\tWhat are you driving at?";
+    }
+    ""
+}

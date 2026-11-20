@@ -1,0 +1,25 @@
+// beginning — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_beginning(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 07290905
+    if sense == 1 {
+        return "noun\tthe event consisting of the start of something\t\tthe beginning of the war";
+    }
+    // noun 15265518
+    if sense == 2 {
+        return "noun\tthe time at which something is supposed to begin\tcommencement, first, outset, get-go, start, kickoff, starting time, showtime, offset\t";
+    }
+    // noun 05868051
+    if sense == 3 {
+        return "noun\tthe first part or section of something\t\t`It was a dark and stormy night' is a hackneyed beginning for a story";
+    }
+    // noun 08507558
+    if sense == 4 {
+        return "noun\tthe place where something begins, where it springs into being\torigin, root, rootage, source\tthe Italian beginning of the Renaissance";
+    }
+    // noun 00235435
+    if sense == 5 {
+        return "noun\tthe act of starting something\tstart, commencement\the was responsible for the beginning of negotiations";
+    }
+    ""
+}

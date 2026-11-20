@@ -1,0 +1,37 @@
+// establish — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_establish(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02427103
+    if sense == 1 {
+        return "verb\tset up or found\tset up, found, launch\t";
+    }
+    // verb 01647229
+    if sense == 2 {
+        return "verb\tset up or lay the groundwork for\tfound, plant, constitute, institute\testablish a new department";
+    }
+    // verb 00664788
+    if sense == 3 {
+        return "verb\testablish the validity of something, as by an example, explanation or experiment\tprove, demonstrate, show, shew\t";
+    }
+    // verb 00665476
+    if sense == 4 {
+        return "verb\tinstitute, enact, or establish\tlay down, make\t";
+    }
+    // verb 01647672
+    if sense == 5 {
+        return "verb\tbring about\tgive\tThe trompe l'oeil-illusion establishes depth";
+    }
+    // verb 01570108
+    if sense == 6 {
+        return "verb\tplace\tinstall, instal, set up\t";
+    }
+    // verb 01655505
+    if sense == 7 {
+        return "verb\tbuild or establish something abstract\tbuild\t";
+    }
+    // verb 00636888
+    if sense == 8 {
+        return "verb\tuse as a basis for; found on\tbase, ground, found\t";
+    }
+    ""
+}

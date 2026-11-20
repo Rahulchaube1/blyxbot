@@ -1,0 +1,17 @@
+// limited — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_limited(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01415021
+    if sense == 1 {
+        return "adjective\tsmall in range or scope\t\tlimited war";
+    }
+    // adj 02002470
+    if sense == 2 {
+        return "adjective\tsubject to limits or subjected to limits\tcircumscribed\t";
+    }
+    // adj 00529191
+    if sense == 3 {
+        return "adjective\tincluding only a part\t\t";
+    }
+    ""
+}

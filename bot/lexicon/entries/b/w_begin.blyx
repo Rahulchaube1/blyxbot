@@ -1,0 +1,21 @@
+// begin — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_begin(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00345761
+    if sense == 1 {
+        return "verb\ttake the first step or steps in carrying out an action\tget down, get, start out, start, set about, set out, commence\t";
+    }
+    // verb 02608347
+    if sense == 2 {
+        return "verb\thave a beginning, in a temporal, spatial, or evaluative sense\tstart\tThe DMZ begins right over the hill";
+    }
+    // verb 00348746
+    if sense == 3 {
+        return "verb\tset in motion, cause to start\tlead off, start, commence\tbegin a new chapter in your life";
+    }
+    // verb 00747640
+    if sense == 4 {
+        return "verb\tbegin to speak or say\t\t";
+    }
+    ""
+}

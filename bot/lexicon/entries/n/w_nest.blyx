@@ -1,0 +1,21 @@
+// nest — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_nest(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 09369169
+    if sense == 1 {
+        return "noun\ta structure in which animals lay eggs or give birth to their young\t\t";
+    }
+    // verb 02654947
+    if sense == 2 {
+        return "verb\tinhabit a nest, usually after building\t\tbirds are nesting outside my window every Spring";
+    }
+    // verb 01529766
+    if sense == 3 {
+        return "verb\tfit together or fit inside\t\tnested bowls";
+    }
+    // noun 03819217
+    if sense == 4 {
+        return "noun\ta kind of gun emplacement\t\ta machine-gun nest";
+    }
+    ""
+}

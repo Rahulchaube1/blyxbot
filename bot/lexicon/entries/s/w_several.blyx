@@ -1,0 +1,17 @@
+// several — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_several(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02268268
+    if sense == 1 {
+        return "adjective\t(used with count nouns) of an indefinite number more than 2 or 3 but not many\t\tseveral letters came in the mail";
+    }
+    // adj 00494409
+    if sense == 2 {
+        return "adjective\tconsidered individually\trespective, various\tspecialists in their several fields";
+    }
+    // adj 02068174
+    if sense == 3 {
+        return "adjective\tdistinct and individual\t\tthree several times";
+    }
+    ""
+}

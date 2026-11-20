@@ -1,0 +1,13 @@
+// talk about — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_talk_about(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01034312
+    if sense == 1 {
+        return "verb\tto consider or examine in speech or writing\tdiscourse, discuss\t";
+    }
+    // verb 00943563
+    if sense == 2 {
+        return "verb\tdiscuss or mention\ttalk of\t";
+    }
+    ""
+}

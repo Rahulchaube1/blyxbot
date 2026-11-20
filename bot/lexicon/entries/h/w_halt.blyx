@@ -1,0 +1,29 @@
+// halt — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_halt(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01859586
+    if sense == 1 {
+        return "verb\tcause to stop\thold, arrest\tHalt the engines";
+    }
+    // verb 01860795
+    if sense == 2 {
+        return "verb\tcome to a halt, stop moving\tstop\t";
+    }
+    // verb 02559752
+    if sense == 3 {
+        return "verb\tstop from happening or developing\tstop, block, kibosh\tHalt the process";
+    }
+    // noun 14010927
+    if sense == 4 {
+        return "noun\tthe state of inactivity following an interruption\tarrest, check, hitch, stay, stop, stoppage\tduring the halt he got some lunch";
+    }
+    // noun 07365849
+    if sense == 5 {
+        return "noun\tthe event of something ending\tstop\t";
+    }
+    // noun 01063697
+    if sense == 6 {
+        return "noun\tan interruption or temporary suspension of progress or movement\tfreeze\ta halt in the arms race";
+    }
+    ""
+}

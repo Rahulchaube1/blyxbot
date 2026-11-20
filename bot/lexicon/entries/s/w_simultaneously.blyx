@@ -1,0 +1,9 @@
+// simultaneously — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_simultaneously(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00120095
+    if sense == 1 {
+        return "adverb\tat the same instant\tat the same time\tthey spoke simultaneously";
+    }
+    ""
+}

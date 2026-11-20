@@ -1,0 +1,13 @@
+// flesh — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_flesh(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05268112
+    if sense == 1 {
+        return "noun\tthe soft tissue of the body of a vertebrate: mainly muscle tissue and fat\t\t";
+    }
+    // noun 05217168
+    if sense == 2 {
+        return "noun\talternative names for the body of a human being\thuman body, physical body, material body, soma, build, figure, physique, anatomy, shape, bod, chassis, frame, form\tthe spirit is willing but the flesh is weak";
+    }
+    ""
+}

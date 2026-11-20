@@ -1,0 +1,17 @@
+// conceive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_conceive(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01633343
+    if sense == 1 {
+        return "verb\thave the idea for\tgestate, conceptualize, conceptualise\tHe conceived of a robot that would help paralyzed patients";
+    }
+    // verb 00689344
+    if sense == 2 {
+        return "verb\tjudge or regard; look upon; judge\tthink, believe, consider\tThe racist conceives such people to be inferior";
+    }
+    // verb 00054285
+    if sense == 3 {
+        return "verb\tbecome pregnant; undergo conception\t\tShe cannot conceive";
+    }
+    ""
+}

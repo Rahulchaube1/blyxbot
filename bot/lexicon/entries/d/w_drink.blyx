@@ -1,0 +1,33 @@
+// drink — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_drink(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01170052
+    if sense == 1 {
+        return "verb\ttake in liquids\timbibe\tThe patient must drink several liters each day";
+    }
+    // noun 07885223
+    if sense == 2 {
+        return "noun\ta single serving of a beverage\t\tI asked for a hot drink";
+    }
+    // verb 01171183
+    if sense == 3 {
+        return "verb\tconsume alcohol\tbooze, fuddle\tWe were up drinking all night";
+    }
+    // noun 00748515
+    if sense == 4 {
+        return "noun\tthe act of drinking alcoholic beverages to excess\tdrinking, boozing, drunkenness, crapulence\tdrink was his downfall";
+    }
+    // noun 07881800
+    if sense == 5 {
+        return "noun\tany liquid suitable for drinking\tbeverage, drinkable, potable\t";
+    }
+    // verb 01175467
+    if sense == 6 {
+        return "verb\tpropose a toast to\ttoast, pledge, salute, wassail\tLet's drink to the New Year";
+    }
+    // verb 00737005
+    if sense == 7 {
+        return "verb\tbe fascinated or spell-bound by; pay close attention to\tdrink in\tThe mother drinks in every word of her son on the stage";
+    }
+    ""
+}

@@ -1,0 +1,57 @@
+// throw — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_throw(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 01508368
+    if sense == 1 {
+        return "verb\tpropel through the air\t\tthrow a frisbee";
+    }
+    // verb 02097204
+    if sense == 2 {
+        return "verb\tmove violently, energetically, or carelessly\t\t";
+    }
+    // verb 01513430
+    if sense == 3 {
+        return "verb\tget rid of\tshed, cast, cast off, shake off, throw off, throw away, drop\t";
+    }
+    // verb 01499265
+    if sense == 4 {
+        return "verb\tplace or put with great energy\tthrust\t";
+    }
+    // verb 01060317
+    if sense == 5 {
+        return "verb\tconvey or communicate; of a smile, a look, a physical gesture\tgive\tThrow a glance";
+    }
+    // verb 01510173
+    if sense == 6 {
+        return "verb\tcause to go on or to be engaged or set in operation\tflip, switch\tthrow the lever";
+    }
+    // noun 00104539
+    if sense == 7 {
+        return "noun\tthe act of throwing (propelling something with a rapid movement of the arm and wrist)\t\tthe catcher made a good throw to second base";
+    }
+    // verb 01632897
+    if sense == 8 {
+        return "verb\tput or send forth\tproject, cast, contrive\t";
+    }
+    // verb 02097341
+    if sense == 9 {
+        return "verb\tto put into a state or activity hastily, suddenly, or carelessly\t\tthrow the car into reverse";
+    }
+    // verb 01791232
+    if sense == 10 {
+        return "verb\tcause to be confused emotionally\tbewilder, bemuse, discombobulate\t";
+    }
+    // verb 01067664
+    if sense == 11 {
+        return "verb\tutter with force; utter vehemently\thurl\tthrow accusations at someone";
+    }
+    // noun 14485990
+    if sense == 12 {
+        return "noun\ta single chance or instance\t\the couldn't afford $50 a throw";
+    }
+    // verb 01733477
+    if sense == 13 {
+        return "verb\torganize or be responsible for\thold, have, make, give\thave, throw, or make a party";
+    }
+    ""
+}

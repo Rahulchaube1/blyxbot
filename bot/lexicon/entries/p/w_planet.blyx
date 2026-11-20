@@ -1,0 +1,13 @@
+// planet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_planet(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09394007
+    if sense == 1 {
+        return "noun\t(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their proximity to the sun; viewed from the constellation Hercules, all the planets rotate around the sun in a counterclockwise direction\tmajor planet\t";
+    }
+    // noun 10552639
+    if sense == 2 {
+        return "noun\ta person who follows or serves another\tsatellite\t";
+    }
+    ""
+}

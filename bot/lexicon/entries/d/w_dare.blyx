@@ -1,0 +1,17 @@
+// dare — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dare(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02374924
+    if sense == 1 {
+        return "verb\ttake upon oneself; act presumptuously, without permission\tmake bold, presume\tHow dare you call my lawyer?";
+    }
+    // verb 02545045
+    if sense == 2 {
+        return "verb\tto be courageous enough to try or do something\t\tI don't dare call him";
+    }
+    // verb 00868097
+    if sense == 3 {
+        return "verb\tchallenge\tdefy\tI dare you!";
+    }
+    ""
+}

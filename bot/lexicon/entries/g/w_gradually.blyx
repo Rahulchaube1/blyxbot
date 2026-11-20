@@ -1,0 +1,9 @@
+// gradually — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gradually(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00107987
+    if sense == 1 {
+        return "adverb\tin a gradual manner\tbit by bit, step by step\tthe snake moved gradually toward its victim";
+    }
+    ""
+}

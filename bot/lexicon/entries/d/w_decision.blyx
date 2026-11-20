@@ -1,0 +1,21 @@
+// decision — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_decision(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00162632
+    if sense == 1 {
+        return "noun\tthe act of making up your mind about something\tdetermination, conclusion\tthe burden of decision was his";
+    }
+    // noun 05838176
+    if sense == 2 {
+        return "noun\ta position or opinion or judgment reached after consideration\tdetermination, conclusion\ta decision unfavorable to the opposition";
+    }
+    // noun 07293678
+    if sense == 3 {
+        return "noun\t(boxing) a victory won on points when no knockout has occurred\t\thad little trouble in taking a unanimous decision over his opponent";
+    }
+    // noun 07293546
+    if sense == 4 {
+        return "noun\tthe outcome of a game or contest\t\tthe team dropped three decisions in a row";
+    }
+    ""
+}

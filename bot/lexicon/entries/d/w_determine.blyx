@@ -1,0 +1,33 @@
+// determine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_determine(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00918872
+    if sense == 1 {
+        return "verb\testablish after a calculation, investigation, experiment, survey, or study\tfind, find out, ascertain\t";
+    }
+    // verb 00701040
+    if sense == 2 {
+        return "verb\tshape or influence; give direction to\tshape, mold, influence, regulate\texperience often determines ability";
+    }
+    // verb 00699815
+    if sense == 3 {
+        return "verb\tfix conclusively or authoritatively\tset\t";
+    }
+    // verb 00947077
+    if sense == 4 {
+        return "verb\tdecide upon or fix definitely\tspecify, set, define, fix, limit\t";
+    }
+    // verb 00697589
+    if sense == 5 {
+        return "verb\treach, make, or come to a decision about something\tdecide, make up one's mind\t";
+    }
+    // verb 00700708
+    if sense == 6 {
+        return "verb\tfix in scope; fix the boundaries of\t\tthe tree determines the border of the property";
+    }
+    // verb 00763399
+    if sense == 7 {
+        return "verb\tsettle conclusively; come to terms\tsettle, square off, square up\t";
+    }
+    ""
+}

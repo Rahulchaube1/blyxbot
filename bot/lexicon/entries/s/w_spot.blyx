@@ -1,0 +1,41 @@
+// spot — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_spot(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 08664443
+    if sense == 1 {
+        return "noun\ta point located with respect to surface features of some region\ttopographic point, place\ta bright spot on a planet";
+    }
+    // verb 02154312
+    if sense == 2 {
+        return "verb\tcatch sight of\tdescry, espy, spy\t";
+    }
+    // noun 06396644
+    if sense == 3 {
+        return "noun\ta short section or illustration (as between radio or tv programs or in a magazine) that is often used for advertising\t\t";
+    }
+    // noun 04731925
+    if sense == 4 {
+        return "noun\tan outstanding characteristic\tpoint\t";
+    }
+    // noun 04694441
+    if sense == 5 {
+        return "noun\ta blemish made by dirt\tsmudge, blot, daub, smear, smirch, slur\t";
+    }
+    // noun 04682462
+    if sense == 6 {
+        return "noun\ta small contrasting part of something\tspeckle, dapple, patch, fleck, maculation\ta bald spot";
+    }
+    // noun 06396468
+    if sense == 7 {
+        return "noun\ta section of an entertainment that is assigned to a specific performer or performance\t\tthey changed his spot on the program";
+    }
+    // noun 04286128
+    if sense == 8 {
+        return "noun\ta business establishment for entertainment\t\tnight spot";
+    }
+    // noun 00586262
+    if sense == 9 {
+        return "noun\ta job in an organization\tposition, post, berth, office, billet, place, situation\t";
+    }
+    ""
+}

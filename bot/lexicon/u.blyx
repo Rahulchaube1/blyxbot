@@ -1,0 +1,58 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::u::w_ultimate;
+use entries::u::w_unable;
+use entries::u::w_understand;
+use entries::u::w_understanding;
+use entries::u::w_undertake;
+use entries::u::w_uniform;
+use entries::u::w_union;
+use entries::u::w_unit;
+use entries::u::w_united_states;
+use entries::u::w_unity;
+use entries::u::w_universal;
+use entries::u::w_university;
+use entries::u::w_unknown;
+use entries::u::w_unusual;
+use entries::u::w_up;
+use entries::u::w_upper;
+use entries::u::w_urge;
+use entries::u::w_use;
+use entries::u::w_usual;
+use entries::u::w_usually;
+
+fn through_w_upper(term: str, sense: i64) -> str {
+    if term == "ultimate" { return w_ultimate(sense); }
+    if term == "unable" { return w_unable(sense); }
+    if term == "understand" { return w_understand(sense); }
+    if term == "understanding" { return w_understanding(sense); }
+    if term == "undertake" { return w_undertake(sense); }
+    if term == "uniform" { return w_uniform(sense); }
+    if term == "union" { return w_union(sense); }
+    if term == "unit" { return w_unit(sense); }
+    if term == "united states" { return w_united_states(sense); }
+    if term == "unity" { return w_unity(sense); }
+    if term == "universal" { return w_universal(sense); }
+    if term == "university" { return w_university(sense); }
+    if term == "unknown" { return w_unknown(sense); }
+    if term == "unusual" { return w_unusual(sense); }
+    if term == "up" { return w_up(sense); }
+    if term == "upper" { return w_upper(sense); }
+    ""
+}
+
+fn through_w_usually(term: str, sense: i64) -> str {
+    if term == "urge" { return w_urge(sense); }
+    if term == "use" { return w_use(sense); }
+    if term == "usual" { return w_usual(sense); }
+    if term == "usually" { return w_usually(sense); }
+    ""
+}
+
+pub fn lookup_u(term: str, sense: i64) -> str {
+    if term <= "upper" { return through_w_upper(term, sense); }
+    through_w_usually(term, sense)
+}
+
+pub fn words_u() -> str {
+    "ultimate|unable|understand|understanding|undertake|uniform|union|unit|united states|unity|universal|university|unknown|unusual|up|upper|urge|use|usual|usually"
+}

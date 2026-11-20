@@ -1,0 +1,29 @@
+// term — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_term(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 06303888
+    if sense == 1 {
+        return "noun\ta word or expression used for some particular thing\t\the learned many medical terms";
+    }
+    // verb 01029642
+    if sense == 2 {
+        return "verb\tname formally or designate with a term\t\t";
+    }
+    // noun 15224486
+    if sense == 3 {
+        return "noun\ta limited period of time\t\ta prison term";
+    }
+    // noun 06770875
+    if sense == 4 {
+        return "noun\t(usually plural) a statement of what is required as part of an agreement\tcondition\tthe terms of the treaty were generous";
+    }
+    // noun 05855904
+    if sense == 5 {
+        return "noun\tany distinct quantity contained in a polynomial\t\tthe general term of an algebraic equation of the n-th degree";
+    }
+    // noun 06751974
+    if sense == 6 {
+        return "noun\tone of the substantive phrases in a logical proposition\t\tthe major term of a syllogism must occur twice";
+    }
+    ""
+}

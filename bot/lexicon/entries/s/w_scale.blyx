@@ -1,0 +1,29 @@
+// scale — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_scale(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 13850304
+    if sense == 1 {
+        return "noun\tan ordered reference standard\tscale of measurement, graduated table, ordered series\tjudging on a scale of 1 to 10";
+    }
+    // noun 13815342
+    if sense == 2 {
+        return "noun\trelative magnitude\t\tthey entertained on a grand scale";
+    }
+    // noun 13816862
+    if sense == 3 {
+        return "noun\tthe ratio between the size of something and a representation of it\t\tthe scale of the map";
+    }
+    // noun 13155759
+    if sense == 4 {
+        return "noun\ta specialized leaf or bract that protects a bud or catkin\tscale leaf\t";
+    }
+    // verb 02728388
+    if sense == 5 {
+        return "verb\tmeasure by or as if by a scale\t\tThis bike scales only 25 pounds";
+    }
+    // verb 01744082
+    if sense == 6 {
+        return "verb\tpattern, make, regulate, set, measure, or estimate according to some rate or standard\t\t";
+    }
+    ""
+}

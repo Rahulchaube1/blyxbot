@@ -1,0 +1,9 @@
+// marketing — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_marketing(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 01113068
+    if sense == 1 {
+        return "noun\tthe exchange of goods for an agreed sum of money\tselling, merchandising\t";
+    }
+    ""
+}

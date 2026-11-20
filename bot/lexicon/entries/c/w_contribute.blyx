@@ -1,0 +1,21 @@
+// contribute — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_contribute(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02324478
+    if sense == 1 {
+        return "verb\tbestow a quality on\tlend, impart, bestow, add, bring\t";
+    }
+    // verb 02308741
+    if sense == 2 {
+        return "verb\tcontribute to some cause\tgive, chip in, kick in\t";
+    }
+    // verb 02555908
+    if sense == 3 {
+        return "verb\tbe conducive to\tlead, conduce\t";
+    }
+    // verb 02237782
+    if sense == 4 {
+        return "verb\tprovide\tput up\t";
+    }
+    ""
+}

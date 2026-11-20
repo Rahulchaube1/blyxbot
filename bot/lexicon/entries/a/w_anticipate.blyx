@@ -1,0 +1,29 @@
+// anticipate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_anticipate(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00719734
+    if sense == 1 {
+        return "verb\tregard something as probable or likely\texpect\t";
+    }
+    // verb 02565491
+    if sense == 2 {
+        return "verb\tact in advance of; deal with ahead of time\tforesee, forestall, counter\t";
+    }
+    // verb 00720808
+    if sense == 3 {
+        return "verb\trealize beforehand\tprevise, foreknow, foresee\t";
+    }
+    // verb 00917772
+    if sense == 4 {
+        return "verb\tmake a prediction about; tell in advance\tpredict, foretell, prognosticate, call, forebode, promise\t";
+    }
+    // verb 01804961
+    if sense == 5 {
+        return "verb\tbe excited or anxious about\tlook for, look to\t";
+    }
+    // verb 00342640
+    if sense == 6 {
+        return "verb\tbe a forerunner of or occur earlier than\t\tThis composition anticipates Impressionism";
+    }
+    ""
+}

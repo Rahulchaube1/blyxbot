@@ -1,0 +1,17 @@
+// substance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_substance(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00019613
+    if sense == 1 {
+        return "noun\tthe real physical matter of which a person or thing consists\t\tDNA is the substance of our genes";
+    }
+    // noun 05921123
+    if sense == 2 {
+        return "noun\tthe choicest or most essential or most vital part of some idea or experience\tkernel, core, center, centre, essence, gist, heart, heart and soul, inwardness, marrow, meat, nub, pith, sum, nitty-gritty\t";
+    }
+    // noun 05919866
+    if sense == 3 {
+        return "noun\tthe idea that is intended\tmeaning\t";
+    }
+    ""
+}

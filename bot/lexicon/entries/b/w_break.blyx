@@ -1,0 +1,117 @@
+// break — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_break(sense: i64) -> str {
+    if sense == 0 { return "28"; }
+    // verb 00364064
+    if sense == 1 {
+        return "verb\tterminate\tinterrupt\tbreak a lucky streak";
+    }
+    // verb 00334186
+    if sense == 2 {
+        return "verb\tbecome separated into pieces or fragments\tseparate, split up, fall apart, come apart\t";
+    }
+    // verb 00258665
+    if sense == 3 {
+        return "verb\trender inoperable or ineffective\t\t";
+    }
+    // verb 01369758
+    if sense == 4 {
+        return "verb\truin completely\tbust\t";
+    }
+    // verb 00334996
+    if sense == 5 {
+        return "verb\tdestroy the integrity of; usually by force; cause to separate into pieces or fragments\t\t";
+    }
+    // verb 02566528
+    if sense == 6 {
+        return "verb\tact in disregard of laws, rules, contracts, or promises\ttransgress, offend, infract, violate, go against, breach\tbreak a law";
+    }
+    // verb 02073233
+    if sense == 7 {
+        return "verb\tmove away or escape suddenly\tbreak out, break away\tNobody can break out--this prison is high security";
+    }
+    // verb 02029369
+    if sense == 8 {
+        return "verb\tscatter or part\t\t";
+    }
+    // verb 01785395
+    if sense == 9 {
+        return "verb\tforce out or release suddenly and often violently something pent up\tburst, erupt\tbreak into tears";
+    }
+    // verb 00362348
+    if sense == 10 {
+        return "verb\tprevent completion\tbreak off, discontinue, stop\tbreak off the negotiations";
+    }
+    // noun 07367812
+    if sense == 11 {
+        return "noun\tsome abrupt occurrence that interrupts an ongoing activity\tinterruption\tthere was a break in the action when a player was hurt";
+    }
+    // verb 02570684
+    if sense == 12 {
+        return "verb\tenter someone's (virtual or real) property in an unauthorized manner, usually with the intent to steal or commit a violent act\tbreak in\t";
+    }
+    // verb 00202569
+    if sense == 13 {
+        return "verb\tmake submissive, obedient, or useful\tbreak in\tThe horse was tough to break";
+    }
+    // noun 07316856
+    if sense == 14 {
+        return "noun\tan unexpected piece of good luck\tgood luck, happy chance\the finally got his big break";
+    }
+    // verb 02668523
+    if sense == 15 {
+        return "verb\tfail to agree with; be in violation of; as of rules or patterns\tviolate, go against\t";
+    }
+    // verb 01106864
+    if sense == 16 {
+        return "verb\tsurpass in excellence\tbetter\tbreak a record";
+    }
+    // verb 00933821
+    if sense == 17 {
+        return "verb\tmake known to the public information that was previously known only to a few people or that was meant to be kept a secret\tunwrap, disclose, let on, bring out, reveal, discover, expose, divulge, give away, let out\t";
+    }
+    // verb 00558536
+    if sense == 18 {
+        return "verb\tcome into being\t\t";
+    }
+    // verb 00434374
+    if sense == 19 {
+        return "verb\tstop operating or functioning\tfail, go bad, give way, die, give out, conk out, go, break down\t";
+    }
+    // noun 09278537
+    if sense == 20 {
+        return "noun\t(geology) a crack in the earth's crust resulting from the displacement of one side with respect to the other\tfault, faulting, geological fault, shift, fracture\t";
+    }
+    // noun 07313814
+    if sense == 21 {
+        return "noun\ta personal or social separation (as between opposing factions)\trupture, breach, severance, rift, falling out\tthey hoped to avoid a break in relations";
+    }
+    // noun 01062997
+    if sense == 22 {
+        return "noun\ta pause from doing something (as work)\trespite, recess, time out\twe took a 10-minute break";
+    }
+    // noun 00376400
+    if sense == 23 {
+        return "noun\tthe act of breaking something\tbreakage, breaking\t";
+    }
+    // verb 02535716
+    if sense == 24 {
+        return "verb\tinterrupt a continued activity\tbreak away\t";
+    }
+    // verb 02030764
+    if sense == 25 {
+        return "verb\tmake a rupture in the ranks of the enemy or one's own by quitting or fleeing\t\t";
+    }
+    // verb 01972976
+    if sense == 26 {
+        return "verb\tcurl over and fall apart in surf or foam, of waves\t\t";
+    }
+    // verb 00390215
+    if sense == 27 {
+        return "verb\tlessen in force or effect\tdampen, damp, soften, weaken\tbreak a fall";
+    }
+    // verb 00202784
+    if sense == 28 {
+        return "verb\tbe broken in\t\tIf the new teacher won't break, we'll add some stress";
+    }
+    ""
+}

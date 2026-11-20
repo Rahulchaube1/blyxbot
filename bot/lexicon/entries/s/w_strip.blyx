@@ -1,0 +1,41 @@
+// strip — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_strip(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 09449510
+    if sense == 1 {
+        return "noun\ta relatively long narrow piece of something\t\the felt a flat strip of muscle";
+    }
+    // verb 02314275
+    if sense == 2 {
+        return "verb\ttake away possessions from someone\tdeprive, divest\tThe Nazis stripped the Jews of all their assets";
+    }
+    // noun 04339291
+    if sense == 3 {
+        return "noun\tartifact consisting of a narrow flat piece of material\tslip\t";
+    }
+    // noun 02693070
+    if sense == 4 {
+        return "noun\tan airfield without normal airport facilities\tairstrip, flight strip, landing strip\t";
+    }
+    // verb 00049900
+    if sense == 5 {
+        return "verb\tget undressed\tundress, discase, uncase, unclothe, strip down, disrobe, peel\tShe strips in front of strangers every night for a living";
+    }
+    // noun 07003352
+    if sense == 6 {
+        return "noun\ta sequence of drawings telling a story in a newspaper or comic book\tcomic strip, cartoon strip, funnies\t";
+    }
+    // verb 01263479
+    if sense == 7 {
+        return "verb\tremove the surface from\t\tstrip wood";
+    }
+    // verb 00488617
+    if sense == 8 {
+        return "verb\tremove substances from by a percolating liquid\tleach\t";
+    }
+    // verb 00194912
+    if sense == 9 {
+        return "verb\tlay bare\tdenude, bare, denudate\t";
+    }
+    ""
+}

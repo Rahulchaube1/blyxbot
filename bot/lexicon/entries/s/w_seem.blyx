@@ -1,0 +1,13 @@
+// seem — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_seem(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02133435
+    if sense == 1 {
+        return "verb\tgive a certain impression or have a certain outward aspect\tlook, appear\tShe seems to be sleeping";
+    }
+    // verb 02134672
+    if sense == 2 {
+        return "verb\tseem to be true, probable, or apparent\tappear\tIt seems that he is very gifted";
+    }
+    ""
+}

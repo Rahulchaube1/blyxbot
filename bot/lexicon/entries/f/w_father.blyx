@@ -1,0 +1,33 @@
+// father — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_father(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 10080869
+    if sense == 1 {
+        return "noun\ta male parent (also used as a term of address to your father)\tmale parent, begetter\this father was born in Atlanta";
+    }
+    // noun 10102800
+    if sense == 2 {
+        return "noun\tthe founder of a family\tforefather, sire\t";
+    }
+    // noun 10081204
+    if sense == 3 {
+        return "noun\t`Father' is a term of address for priests in some churches (especially the Roman Catholic Church or the Orthodox Catholic Church); `Padre' is frequently used in the military\tPadre\t";
+    }
+    // noun 09921792
+    if sense == 4 {
+        return "noun\t(Christianity) any of about 70 theologians in the period from the 2nd to the 7th century whose writing established and confirmed official church doctrine; in the Roman Catholic Church some were later declared saints and became Doctor of the Church; the best known Latin Church Fathers are Ambrose, Augustine, Gregory the Great, and Jerome; those who wrote in Greek include Athanasius, Basil, Gregory Nazianzen, and John Chrysostom\tChurch Father, Father of the Church\t";
+    }
+    // verb 00054628
+    if sense == 5 {
+        return "verb\tmake children\tbeget, get, engender, mother, sire, generate, bring forth\tMen often father children but don't recognize them";
+    }
+    // noun 10081456
+    if sense == 6 {
+        return "noun\ta person who holds an important or distinguished position in some organization\t\tthe tennis fathers ruled in her favor";
+    }
+    // noun 09536973
+    if sense == 7 {
+        return "noun\tGod when considered as the first person in the Trinity\tFather-God, Fatherhood\thear our prayers, Heavenly Father";
+    }
+    ""
+}

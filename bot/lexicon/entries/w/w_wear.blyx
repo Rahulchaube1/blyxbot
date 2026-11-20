@@ -1,0 +1,29 @@
+// wear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wear(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00052374
+    if sense == 1 {
+        return "verb\tbe dressed in\thave on\tShe was wearing yellow that day";
+    }
+    // verb 00047745
+    if sense == 2 {
+        return "verb\thave on one's person\tbear\t";
+    }
+    // verb 02740034
+    if sense == 3 {
+        return "verb\thave in one's aspect; wear an expression of one's attitude or personality\t\tHe always wears a smile";
+    }
+    // verb 00469382
+    if sense == 4 {
+        return "verb\tdeteriorate through use or stress\twear off, wear out, wear down, wear thin\t";
+    }
+    // verb 00047610
+    if sense == 5 {
+        return "verb\thave or show an appearance of\t\twear one's hair in a certain way";
+    }
+    // verb 02705132
+    if sense == 6 {
+        return "verb\tlast and be usable\thold out, endure\t";
+    }
+    ""
+}

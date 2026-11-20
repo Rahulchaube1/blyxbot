@@ -1,0 +1,13 @@
+// emphasize — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_emphasize(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01013367
+    if sense == 1 {
+        return "verb\tto stress, single out as important\tstress, emphasise, punctuate, accent, accentuate\tDr. Jones emphasizes exercise in addition to a change in diet";
+    }
+    // verb 01014609
+    if sense == 2 {
+        return "verb\tgive extra weight to (a communication)\tunderscore, underline, emphasise\tHer gesture emphasized her words";
+    }
+    ""
+}

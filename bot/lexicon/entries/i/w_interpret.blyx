@@ -1,0 +1,29 @@
+// interpret — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_interpret(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00623151
+    if sense == 1 {
+        return "verb\tmake sense of; assign a meaning to\tconstrue, see\tHow do you interpret his behavior?";
+    }
+    // verb 00938247
+    if sense == 2 {
+        return "verb\tgive an interpretation or explanation to\trede\t";
+    }
+    // verb 01732172
+    if sense == 3 {
+        return "verb\tgive an interpretation or rendition of\trender\t";
+    }
+    // verb 01686132
+    if sense == 4 {
+        return "verb\tcreate an image or likeness of\trepresent\t";
+    }
+    // verb 00959827
+    if sense == 5 {
+        return "verb\trestate (words) from one language into another language\ttranslate, render\tCan you interpret the speech of the visiting dignitaries?";
+    }
+    // verb 00593852
+    if sense == 6 {
+        return "verb\tmake sense of a language\tunderstand, read, translate\t";
+    }
+    ""
+}

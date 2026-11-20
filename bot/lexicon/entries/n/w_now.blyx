@@ -1,0 +1,29 @@
+// now — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_now(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00049433
+    if sense == 1 {
+        return "adverb\tin the historical present; at this point in the narration of a series of past events\t\tPresident Kennedy now calls in the National Guard";
+    }
+    // adv 00048475
+    if sense == 2 {
+        return "adverb\tin these times\tnowadays, today\twe now rarely see horse-drawn vehicles on city streets";
+    }
+    // adv 00049102
+    if sense == 3 {
+        return "adverb\tused to preface a command or reproof or request\t\tnow hear this!";
+    }
+    // adv 00049220
+    if sense == 4 {
+        return "adverb\tat the present moment\tat present\tgoods now on sale";
+    }
+    // noun 15119919
+    if sense == 5 {
+        return "noun\tthe momentary present\t\tNow is a good time to do it";
+    }
+    // adv 00048739
+    if sense == 6 {
+        return "adverb\twithout delay or hesitation; with no time intervening\timmediately, instantly, straightaway, straight off, directly, right away, at once, forthwith, like a shot\tCome here now!";
+    }
+    ""
+}

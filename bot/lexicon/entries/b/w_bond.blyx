@@ -1,0 +1,33 @@
+// bond — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bond(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 11436283
+    if sense == 1 {
+        return "noun\tan electrical force linking atoms\tchemical bond\t";
+    }
+    // noun 13417410
+    if sense == 2 {
+        return "noun\ta certificate of debt (usually interest-bearing or discounted) that is issued by a government or corporation in order to raise money; the issuer is required to pay a fixed sum annually until maturity and then a fixed sum to repay the principal\tbond certificate\t";
+    }
+    // noun 13792183
+    if sense == 3 {
+        return "noun\ta connection based on kinship or marriage or common interest\talliance\ttheir friendship constitutes a powerful bond between them";
+    }
+    // noun 13350976
+    if sense == 4 {
+        return "noun\t(criminal law) money that must be forfeited by the bondsman if an accused person fails to appear in court for trial\tbail, bail bond\ta $10,000 bond was furnished by an alderman";
+    }
+    // noun 04181228
+    if sense == 5 {
+        return "noun\ta restraint that confines or restricts freedom (especially something used to tie down or restrain a prisoner)\tshackle, hamper, trammel\t";
+    }
+    // noun 02755352
+    if sense == 6 {
+        return "noun\ta connection that fastens things together\tattachment\t";
+    }
+    // verb 01356750
+    if sense == 7 {
+        return "verb\tstick to firmly\tadhere, hold fast, bind, stick, stick to\t";
+    }
+    ""
+}

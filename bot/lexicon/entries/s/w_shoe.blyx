@@ -1,0 +1,9 @@
+// shoe — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shoe(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 04199027
+    if sense == 1 {
+        return "noun\tfootwear shaped to fit the foot (below the ankle) with a flexible upper of leather or plastic and a sole and heel of heavier material\t\t";
+    }
+    ""
+}

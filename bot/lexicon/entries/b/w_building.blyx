@@ -1,0 +1,17 @@
+// building — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_building(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 02913152
+    if sense == 1 {
+        return "noun\ta structure that has a roof and walls and stands more or less permanently in one place\tedifice\tthere was a three-story building on the corner";
+    }
+    // noun 00911048
+    if sense == 2 {
+        return "noun\tthe act of constructing something\tconstruction\this hobby was the building of boats";
+    }
+    // noun 01104637
+    if sense == 3 {
+        return "noun\tthe commercial activity involved in repairing old structures or constructing new ones\tconstruction\tworkers in the building trades";
+    }
+    ""
+}

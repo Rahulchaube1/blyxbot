@@ -1,0 +1,85 @@
+// stand — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stand(sense: i64) -> str {
+    if sense == 0 { return "20"; }
+    // verb 01546111
+    if sense == 1 {
+        return "verb\tbe standing; be upright\tstand up\tWe had to stand for the entire performance!";
+    }
+    // verb 02611373
+    if sense == 2 {
+        return "verb\tbe in some specified state or condition\t\tI stand corrected";
+    }
+    // verb 02734488
+    if sense == 3 {
+        return "verb\toccupy a place or location, also metaphorically\t\tWe stand on common ground";
+    }
+    // verb 02702120
+    if sense == 4 {
+        return "verb\thold one's ground; maintain a position; be steadfast or upright\tremain firm\tI am standing my ground and won't give in!";
+    }
+    // verb 00668099
+    if sense == 5 {
+        return "verb\tput up with something or somebody unpleasant\tdigest, endure, stick out, stomach, bear, tolerate, support, brook, abide, suffer, put up\t";
+    }
+    // verb 00670991
+    if sense == 6 {
+        return "verb\thave or maintain a position or stand on an issue\t\tWhere do you stand on the War?";
+    }
+    // verb 02707125
+    if sense == 7 {
+        return "verb\tremain inactive or immobile\t\tstanding water";
+    }
+    // noun 02797692
+    if sense == 8 {
+        return "noun\ta support or foundation\tbase, pedestal\t";
+    }
+    // verb 02703018
+    if sense == 9 {
+        return "verb\tbe in effect; be or remain in force\t\tThe law stands!";
+    }
+    // noun 08653706
+    if sense == 10 {
+        return "noun\tthe position where a thing or person stands\t\t";
+    }
+    // noun 08438384
+    if sense == 11 {
+        return "noun\ta growth of similar plants (usually trees) in a particular area\t\tthey cut down a stand of trees";
+    }
+    // noun 04301000
+    if sense == 12 {
+        return "noun\ta small table for holding articles of various kinds\t\ta bedside stand";
+    }
+    // noun 04038440
+    if sense == 13 {
+        return "noun\ta support for displaying various articles\track\t";
+    }
+    // verb 02702368
+    if sense == 14 {
+        return "verb\tbe tall; have a height of; copula\t\tShe stands 6 feet tall";
+    }
+    // noun 07366145
+    if sense == 15 {
+        return "noun\tan interruption of normal activity\tstandstill, tie-up\t";
+    }
+    // noun 06210363
+    if sense == 16 {
+        return "noun\ta mental position from which things are viewed\tpoint of view, viewpoint, standpoint\t";
+    }
+    // noun 04299215
+    if sense == 17 {
+        return "noun\ta booth where articles are displayed for sale\tstall, sales booth\t";
+    }
+    // noun 01057053
+    if sense == 18 {
+        return "noun\ta stop made by a touring musical or theatrical group to give a performance\t\ta one-night stand";
+    }
+    // verb 01546768
+    if sense == 19 {
+        return "verb\tput into an upright position\tstand up, place upright\tCan you stand the bookshelf up?";
+    }
+    // verb 01115916
+    if sense == 20 {
+        return "verb\twithstand the force of something\tresist, fend\tstand the test of time";
+    }
+    ""
+}

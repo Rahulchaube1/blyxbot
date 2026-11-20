@@ -1,0 +1,45 @@
+// blow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_blow(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 01173038
+    if sense == 1 {
+        return "noun\ta powerful stroke with the fist or a weapon\t\ta blow on the head";
+    }
+    // noun 07338681
+    if sense == 2 {
+        return "noun\tan impact (as from a collision)\tbump\t";
+    }
+    // verb 00007012
+    if sense == 3 {
+        return "verb\texhale hard\t\tblow on the soup to cool it down";
+    }
+    // verb 02769241
+    if sense == 4 {
+        return "verb\tbe blowing or storming\t\t";
+    }
+    // verb 00034948
+    if sense == 5 {
+        return "verb\tfree of obstruction by blowing air through\t\tblow one's nose";
+    }
+    // noun 07475870
+    if sense == 6 {
+        return "noun\tan unfortunate happening that hinders or impedes; something that is thwarting or frustrating\treverse, reversal, setback, black eye\t";
+    }
+    // verb 01902783
+    if sense == 7 {
+        return "verb\tbe in motion due to some air or water current\tfloat, drift, be adrift\tThe leaves were blowing in the wind";
+    }
+    // noun 07298982
+    if sense == 8 {
+        return "noun\tan unpleasant or disappointing surprise\tshock\t";
+    }
+    // verb 02135877
+    if sense == 9 {
+        return "verb\tmake a sound as if blown\t\t";
+    }
+    // verb 00477247
+    if sense == 10 {
+        return "verb\tshape by blowing\t\tBlow a glass vase";
+    }
+    ""
+}

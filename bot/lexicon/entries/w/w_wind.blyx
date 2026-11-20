@@ -1,0 +1,29 @@
+// wind — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wind(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 11525955
+    if sense == 1 {
+        return "noun\tair moving (sometimes with considerable force) from an area of high pressure to an area of low pressure\tair current, current of air\ttrees bent under the fierce winds";
+    }
+    // verb 01882814
+    if sense == 2 {
+        return "verb\tto move or cause to move in a sinuous, spiral, or circular course\tweave, thread, meander, wander\tthe river winds through the hills";
+    }
+    // verb 02738701
+    if sense == 3 {
+        return "verb\textend in curves and turns\ttwist, curve\tThe road winds around the lake";
+    }
+    // verb 01522276
+    if sense == 4 {
+        return "verb\tarrange or or coil around\twrap, roll, twine\t";
+    }
+    // noun 11415492
+    if sense == 5 {
+        return "noun\ta tendency or force that influences events\t\tthe winds of change";
+    }
+    // noun 00836537
+    if sense == 6 {
+        return "noun\tbreath\t\tthe collision knocked the wind out of him";
+    }
+    ""
+}

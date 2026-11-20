@@ -1,0 +1,25 @@
+// distance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_distance(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05084201
+    if sense == 1 {
+        return "noun\tthe property created by the space between two objects or points\t\t";
+    }
+    // noun 08556386
+    if sense == 2 {
+        return "noun\ta distant region\t\tI could see it in the distance";
+    }
+    // noun 05129565
+    if sense == 3 {
+        return "noun\tsize of the gap between two places\tlength\tthe distance from New York to Chicago";
+    }
+    // noun 07505871
+    if sense == 4 {
+        return "noun\tindifference by personal withdrawal\taloofness\temotional distance";
+    }
+    // noun 15172212
+    if sense == 5 {
+        return "noun\tthe interval between two times\tspace\tthe distance from birth to death";
+    }
+    ""
+}

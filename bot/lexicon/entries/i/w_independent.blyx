@@ -1,0 +1,13 @@
+// independent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_independent(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00727564
+    if sense == 1 {
+        return "adjective\tfree from external control and constraint\t\tan independent mind";
+    }
+    // adj 01062393
+    if sense == 2 {
+        return "adjective\t(of political bodies) not controlled by outside forces\tautonomous, self-governing, sovereign\t";
+    }
+    ""
+}

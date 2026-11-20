@@ -1,0 +1,21 @@
+// proclaim — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_proclaim(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00978173
+    if sense == 1 {
+        return "verb\tdeclare formally; declare someone to be something; of titles\t\tHe was proclaimed King";
+    }
+    // verb 00977336
+    if sense == 2 {
+        return "verb\tstate or announce\texclaim, promulgate\tThe King will proclaim an amnesty";
+    }
+    // verb 01017001
+    if sense == 3 {
+        return "verb\taffirm or declare as an attribute or quality of\tpredicate\t";
+    }
+    // verb 00860620
+    if sense == 4 {
+        return "verb\tpraise, glorify, or honor\tlaud, extol, exalt, glorify\t";
+    }
+    ""
+}

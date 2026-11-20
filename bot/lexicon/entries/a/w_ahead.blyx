@@ -1,0 +1,25 @@
+// ahead — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ahead(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adv 00066781
+    if sense == 1 {
+        return "adverb\tat or in the front\tin front, before\tI see the lights of a town ahead";
+    }
+    // adv 00075442
+    if sense == 2 {
+        return "adverb\ttoward the future; forward in time\tforward\tI like to look ahead in imagination to what the future may bring";
+    }
+    // adv 00067265
+    if sense == 3 {
+        return "adverb\tin a forward direction\tonward, onwards, forward, forwards, forrader\tgo ahead";
+    }
+    // adj 02490631
+    if sense == 4 {
+        return "adjective\thaving the leading position or higher score in a contest\tin the lead, leading\the is ahead by a pawn";
+    }
+    // adv 00067045
+    if sense == 5 {
+        return "adverb\tahead of time; in anticipation\tin advance, beforehand\twhen you pay ahead (or in advance) you receive a discount";
+    }
+    ""
+}

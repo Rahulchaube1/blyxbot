@@ -1,0 +1,13 @@
+// accomplish — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_accomplish(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01640855
+    if sense == 1 {
+        return "verb\tput in effect\tcarry through, execute, carry out, action, fulfill, fulfil\t";
+    }
+    // verb 02526085
+    if sense == 2 {
+        return "verb\tto gain with effort\tachieve, attain, reach\t";
+    }
+    ""
+}

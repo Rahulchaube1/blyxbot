@@ -1,0 +1,13 @@
+// station — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_station(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 04306080
+    if sense == 1 {
+        return "noun\ta facility equipped with special equipment and personnel for a particular purpose\t\the started looking for a gas station";
+    }
+    // verb 01088923
+    if sense == 2 {
+        return "verb\tassign to a station\tpost, send, place\t";
+    }
+    ""
+}

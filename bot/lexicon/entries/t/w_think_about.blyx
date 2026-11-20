@@ -1,0 +1,13 @@
+// think about — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_think_about(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00734348
+    if sense == 1 {
+        return "verb\thave on one's mind, think about actively\t\t";
+    }
+    // verb 00711715
+    if sense == 2 {
+        return "verb\ttake into consideration, have in view\tentertain, think of, toy with, flirt with\t";
+    }
+    ""
+}

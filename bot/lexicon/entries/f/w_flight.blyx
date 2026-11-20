@@ -1,0 +1,29 @@
+// flight — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_flight(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 08220534
+    if sense == 1 {
+        return "noun\ta formation of aircraft in flight\t\t";
+    }
+    // noun 00302394
+    if sense == 2 {
+        return "noun\tan instance of traveling by air\tflying\t";
+    }
+    // noun 03363059
+    if sense == 3 {
+        return "noun\ta stairway (set of steps) between one floor or landing and the next\tflight of stairs, flight of steps\t";
+    }
+    // noun 00058743
+    if sense == 4 {
+        return "noun\tthe act of escaping physically\tescape\this flight was an indication of his guilt";
+    }
+    // noun 08220440
+    if sense == 5 {
+        return "noun\tan air force unit smaller than a squadron\t\t";
+    }
+    // noun 05625210
+    if sense == 6 {
+        return "noun\tpassing above and beyond ordinary bounds\t\ta flight of fancy";
+    }
+    ""
+}

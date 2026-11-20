@@ -1,0 +1,29 @@
+// arouse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_arouse(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01759326
+    if sense == 1 {
+        return "verb\tcall forth (emotions, feelings, and responses)\telicit, enkindle, kindle, evoke, fire, raise, provoke\tarouse pity";
+    }
+    // verb 00018526
+    if sense == 2 {
+        return "verb\tstop sleeping\twake up, awake, awaken, wake, come alive, waken\t";
+    }
+    // verb 01629958
+    if sense == 3 {
+        return "verb\tsummon into action or bring into existence, often as if by magic\traise, conjure, conjure up, invoke, evoke, stir, call down, bring up, put forward, call forth\t";
+    }
+    // verb 00022686
+    if sense == 4 {
+        return "verb\tcause to be alert and energetic\tstimulate, brace, energize, energise, perk up\t";
+    }
+    // verb 00018813
+    if sense == 5 {
+        return "verb\tcause to become awake or conscious\tawaken, wake, waken, rouse, wake up\t";
+    }
+    // verb 01894164
+    if sense == 6 {
+        return "verb\tto begin moving, \"As the thunder started the sleeping children began to stir\"\tstir\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// finding — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_finding(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00151497
+    if sense == 1 {
+        return "noun\tthe act of determining the properties of something, usually by research or calculation\tdetermination\t";
+    }
+    // noun 01191975
+    if sense == 2 {
+        return "noun\tthe decision of a court on issues of fact or law\t\t";
+    }
+    // noun 09279458
+    if sense == 3 {
+        return "noun\tsomething that is found\t\tthe findings in the gastrointestinal tract indicate that he died several hours after dinner";
+    }
+    ""
+}

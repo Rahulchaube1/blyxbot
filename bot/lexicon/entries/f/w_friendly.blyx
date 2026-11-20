@@ -1,0 +1,13 @@
+// friendly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_friendly(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01074650
+    if sense == 1 {
+        return "adjective\tcharacteristic of or befitting a friend\t\tfriendly advice";
+    }
+    // adj 01246801
+    if sense == 2 {
+        return "adjective\tinclined to help or support; not antagonistic or hostile\tfavorable, well-disposed\ta government friendly to our interests";
+    }
+    ""
+}

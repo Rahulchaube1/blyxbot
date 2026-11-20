@@ -1,0 +1,25 @@
+// future — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_future(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 15121625
+    if sense == 1 {
+        return "noun\tthe time yet to come\thereafter, futurity, time to come\t";
+    }
+    // adj 01732270
+    if sense == 2 {
+        return "adjective\tyet to be or coming\t\tsome future historian will evaluate him";
+    }
+    // adj 01884353
+    if sense == 3 {
+        return "adjective\teffective in or looking toward the future\t\the was preparing for future employment opportunities";
+    }
+    // adj 01294975
+    if sense == 4 {
+        return "adjective\t(of elected officers) elected but not yet serving\tnext, succeeding\t";
+    }
+    // noun 06330401
+    if sense == 5 {
+        return "noun\ta verb tense that expresses actions or states in the future\tfuture tense\t";
+    }
+    ""
+}

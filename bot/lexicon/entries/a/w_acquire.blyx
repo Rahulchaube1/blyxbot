@@ -1,0 +1,17 @@
+// acquire — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_acquire(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02210855
+    if sense == 1 {
+        return "verb\tcome into the possession of something concrete or abstract\tget\tThey acquired a new pet";
+    }
+    // verb 00524682
+    if sense == 2 {
+        return "verb\ttake on a certain form, attribute, or aspect\tassume, adopt, take on, take\t";
+    }
+    // verb 00094460
+    if sense == 3 {
+        return "verb\tcome to have or undergo a change of (physical features and attributes)\tgrow, develop, produce, get\t";
+    }
+    ""
+}

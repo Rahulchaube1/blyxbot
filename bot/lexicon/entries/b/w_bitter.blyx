@@ -1,0 +1,25 @@
+// bitter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bitter(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 00116744
+    if sense == 1 {
+        return "adjective\tmarked by strong resentment or cynicism\tacrimonious\tbitter about the divorce";
+    }
+    // adj 02435901
+    if sense == 2 {
+        return "adjective\tvery difficult to accept or bear\t\tthe bitter truth";
+    }
+    // adj 01802165
+    if sense == 3 {
+        return "adjective\tharsh or corrosive in tone\tacerb, acerbic, acid, acrid, blistering, caustic, sulfurous, sulphurous, virulent, vitriolic\tbitter words";
+    }
+    // adj 01364993
+    if sense == 4 {
+        return "adjective\texpressive of severe grief or regret\t\tshed bitter tears";
+    }
+    // adj 01245610
+    if sense == 5 {
+        return "adjective\tproceeding from or exhibiting great hostility or animosity\t\ta bitter struggle";
+    }
+    ""
+}

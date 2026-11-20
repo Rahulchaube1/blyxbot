@@ -1,0 +1,21 @@
+// provision — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_provision(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06755947
+    if sense == 1 {
+        return "noun\ta stipulated condition\tproviso\the accepted subject to one provision";
+    }
+    // noun 01057200
+    if sense == 2 {
+        return "noun\tthe activity of supplying or providing something\tsupply, supplying\t";
+    }
+    // noun 05794694
+    if sense == 3 {
+        return "noun\tthe cognitive process of thinking about what you will do in the event of something happening\tplanning, preparation\t";
+    }
+    // verb 02338975
+    if sense == 4 {
+        return "verb\tsupply with provisions\tpurvey\t";
+    }
+    ""
+}

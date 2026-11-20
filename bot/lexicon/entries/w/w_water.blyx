@@ -1,0 +1,33 @@
+// water — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_water(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 14845743
+    if sense == 1 {
+        return "noun\tbinary compound that occurs at room temperature as a clear colorless odorless tasteless liquid; freezes into ice below 0 degrees centigrade and boils above 100 degrees centigrade; widely used as a solvent\tH2O\t";
+    }
+    // noun 09225146
+    if sense == 2 {
+        return "noun\tthe part of the earth's surface covered with water (such as a river or lake or ocean)\tbody of water\tthey invaded our territorial waters";
+    }
+    // verb 00228236
+    if sense == 3 {
+        return "verb\tsupply with water, as with channels or ditches or streams\tirrigate\tWater the fields";
+    }
+    // noun 14847357
+    if sense == 4 {
+        return "noun\tonce thought to be one of four elements composing the universe (Empedocles)\t\t";
+    }
+    // noun 04562658
+    if sense == 5 {
+        return "noun\ta facility that provides a source of water\twater system, water supply\tthe town debated the purification of the water supply";
+    }
+    // verb 02357873
+    if sense == 6 {
+        return "verb\tprovide with water\t\tWe watered the buffalo";
+    }
+    // verb 00069570
+    if sense == 7 {
+        return "verb\tsecrete or form water, as tears or saliva\t\tMy mouth watered at the prospect of a good dinner";
+    }
+    ""
+}

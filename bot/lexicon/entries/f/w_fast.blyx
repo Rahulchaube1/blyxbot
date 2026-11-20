@@ -1,0 +1,21 @@
+// fast — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fast(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00976508
+    if sense == 1 {
+        return "adjective\tacting or moving or capable of acting or moving quickly\t\tfast film";
+    }
+    // adv 00086000
+    if sense == 2 {
+        return "adverb\tquickly or rapidly (often used as a combining form)\t\thow fast can he get here?";
+    }
+    // noun 01069980
+    if sense == 3 {
+        return "noun\tabstaining from food\tfasting\t";
+    }
+    // adv 00086404
+    if sense == 4 {
+        return "adverb\tfirmly or closely\ttight\theld fast to the rope";
+    }
+    ""
+}

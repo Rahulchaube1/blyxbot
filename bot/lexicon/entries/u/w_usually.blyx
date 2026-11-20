@@ -1,0 +1,9 @@
+// usually — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_usually(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00106921
+    if sense == 1 {
+        return "adverb\tunder normal conditions\tnormally, unremarkably, commonly, ordinarily\tusually she was late";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// left — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_left(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 02032953
+    if sense == 1 {
+        return "adjective\tbeing or located on or directed toward the side of the body to the west when facing north\t\tmy left hand";
+    }
+    // noun 08625462
+    if sense == 2 {
+        return "noun\tlocation near or direction toward the left side; i.e. the side to the north when a person or object faces east\t\tshe stood on the left";
+    }
+    // adj 00926505
+    if sense == 3 {
+        return "adjective\tnot used up\tleftover, left over, odd, remaining, unexpended\tshe had a little money left over so she went to a movie";
+    }
+    // adv 00387666
+    if sense == 4 {
+        return "adverb\ttoward or on the left; also used figuratively\t\the looked right and left";
+    }
+    // noun 08416328
+    if sense == 5 {
+        return "noun\tthose who support varying degrees of social or political or economic change designed to promote the public welfare\tleft wing\t";
+    }
+    // noun 05565548
+    if sense == 6 {
+        return "noun\tthe hand that is on the left side of the body\tleft hand\tjab with your left";
+    }
+    // noun 03654374
+    if sense == 7 {
+        return "noun\tthe piece of ground in the outfield on the catcher's left\tleft field, leftfield\tthe batter flied out to left";
+    }
+    // adj 02029438
+    if sense == 8 {
+        return "adjective\tintended for the left hand\tleft-hand\tI rarely lose a left-hand glove";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// exhibit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_exhibit(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02631856
+    if sense == 1 {
+        return "verb\tshow an attribute, property, knowledge, or skill\t\the exhibits a great talent";
+    }
+    // verb 02140033
+    if sense == 2 {
+        return "verb\tto show, make visible or apparent\texpose, display\tThe Metropolitan Museum is exhibiting Goya's works this month";
+    }
+    // verb 02148788
+    if sense == 3 {
+        return "verb\tgive an exhibition of to an interested audience\tshow, demo, present, demonstrate\t";
+    }
+    // noun 06734322
+    if sense == 4 {
+        return "noun\tan object or statement produced before a court of law and referred to while giving evidence\t\t";
+    }
+    ""
+}

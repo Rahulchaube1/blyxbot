@@ -1,0 +1,41 @@
+// rough — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rough(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // adj 02238462
+    if sense == 1 {
+        return "adjective\thaving or caused by an irregular surface\tunsmooth\ttrees with rough bark";
+    }
+    // adj 01951197
+    if sense == 2 {
+        return "adjective\t(of persons or behavior) lacking refinement or finesse\t\tshe was a diamond in the rough";
+    }
+    // adj 00915976
+    if sense == 3 {
+        return "adjective\tnot quite exact or correct\tapproximate, approximative\ta rough guess";
+    }
+    // verb 01754452
+    if sense == 4 {
+        return "verb\tprepare in preliminary or sketchy form\trough in, rough out\t";
+    }
+    // adj 00747910
+    if sense == 5 {
+        return "adjective\tfull of hardship or trials\trocky\tthey were having a rough time";
+    }
+    // adj 00304949
+    if sense == 6 {
+        return "adjective\tviolently agitated and turbulent\tboisterous, fierce\trough weather";
+    }
+    // adj 00299476
+    if sense == 7 {
+        return "adjective\tunpleasantly harsh or grating in sound\tgrating, gravelly, rasping, raspy, scratchy\t";
+    }
+    // adj 00084353
+    if sense == 8 {
+        return "adjective\tready and able to resort to force or violence\tpugnacious\tthey were rough and determined fighting men";
+    }
+    // adv 00354033
+    if sense == 9 {
+        return "adverb\twith roughness or violence (`rough' is an informal variant for `roughly')\troughly\tthey treated him rough";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// neck — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_neck(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 05546540
+    if sense == 1 {
+        return "noun\tthe part of an organism (human or animal) that connects the head to the rest of the body\tcervix\the admired her long graceful neck";
+    }
+    ""
+}

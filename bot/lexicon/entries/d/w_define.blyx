@@ -1,0 +1,21 @@
+// define — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_define(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02611630
+    if sense == 1 {
+        return "verb\tdetermine the essential quality of\tspecify, delineate, delimit, delimitate\t";
+    }
+    // verb 00957378
+    if sense == 2 {
+        return "verb\tgive a definition for the meaning of a word\t\tDefine `sadness'";
+    }
+    // verb 02698319
+    if sense == 3 {
+        return "verb\tdetermine the nature of\t\tWhat defines a good wine?";
+    }
+    // verb 02736778
+    if sense == 4 {
+        return "verb\tshow the form or outline of\tdelineate\tThe tree was clearly defined by the light";
+    }
+    ""
+}

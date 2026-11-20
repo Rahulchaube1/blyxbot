@@ -1,0 +1,21 @@
+// series — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_series(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08457976
+    if sense == 1 {
+        return "noun\tsimilar things placed in order or happening one after another\t\tthey were investigating a series of bank robberies";
+    }
+    // noun 06621447
+    if sense == 2 {
+        return "noun\ta serialized set of programs\tserial\ta comedy series";
+    }
+    // noun 06593803
+    if sense == 3 {
+        return "noun\ta periodical that appears at scheduled times\tserial, serial publication\t";
+    }
+    // noun 07465448
+    if sense == 4 {
+        return "noun\t(sports) several contests played successively by the same teams\t\tthe visiting team swept the series";
+    }
+    ""
+}

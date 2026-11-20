@@ -1,0 +1,17 @@
+// concede — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_concede(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00818553
+    if sense == 1 {
+        return "verb\tadmit (to a wrongdoing)\tprofess, confess\t";
+    }
+    // verb 00806049
+    if sense == 2 {
+        return "verb\tbe willing to concede\tyield, grant\t";
+    }
+    // verb 02316649
+    if sense == 3 {
+        return "verb\tgive over; surrender or relinquish to the physical control of another\tyield, cede, grant\t";
+    }
+    ""
+}

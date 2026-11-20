@@ -1,0 +1,45 @@
+// spring — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_spring(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 15237044
+    if sense == 1 {
+        return "noun\tthe season of growth\tspringtime\tthe emerging buds were a sure sign of spring";
+    }
+    // verb 01963942
+    if sense == 2 {
+        return "verb\tmove forward by leaps and bounds\tjump, leap, bound\t";
+    }
+    // verb 02623906
+    if sense == 3 {
+        return "verb\tdevelop into a distinctive entity\tform, take form, take shape\t";
+    }
+    // noun 04288272
+    if sense == 4 {
+        return "noun\ta metal elastic device that returns to its shape or position when pushed or pulled or pressed\t\tthe spring was broken";
+    }
+    // noun 09443453
+    if sense == 5 {
+        return "noun\ta natural flow of ground water\tfountain, outflow, outpouring, natural spring\t";
+    }
+    // verb 01892104
+    if sense == 6 {
+        return "verb\tspring back; spring away from an impact\tbounce, resile, take a hop, bound, rebound, recoil, reverberate, ricochet\t";
+    }
+    // noun 08508361
+    if sense == 7 {
+        return "noun\ta point at which water issues forth\t\t";
+    }
+    // noun 05021151
+    if sense == 8 {
+        return "noun\tthe elasticity of something that can be stretched and returns to its original length\tgive, springiness\t";
+    }
+    // noun 00120202
+    if sense == 9 {
+        return "noun\ta light, self-propelled movement upwards or forwards\tleap, leaping, saltation, bound, bounce\t";
+    }
+    // verb 00095271
+    if sense == 10 {
+        return "verb\tdevelop suddenly\t\t";
+    }
+    ""
+}

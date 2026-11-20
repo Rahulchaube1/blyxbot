@@ -1,0 +1,13 @@
+// seven — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_seven(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02186970
+    if sense == 1 {
+        return "adjective\tbeing one more than six\t7, vii\t";
+    }
+    // noun 13744916
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of six and one\t7, VII, sevener, heptad, septet, septenary\t";
+    }
+    ""
+}

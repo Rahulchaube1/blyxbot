@@ -1,0 +1,9 @@
+// vocational — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_vocational(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 02840478
+    if sense == 1 {
+        return "adjective\tof or relating to a vocation or occupation; especially providing or undergoing training in special skills\t\tvocational school";
+    }
+    ""
+}

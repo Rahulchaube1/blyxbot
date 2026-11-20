@@ -1,0 +1,21 @@
+// work out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_work_out(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00251270
+    if sense == 1 {
+        return "verb\tcome up with\twork up\t";
+    }
+    // verb 02611106
+    if sense == 2 {
+        return "verb\thappen in a certain way, leading to, producing, or resulting in a certain outcome, often well\t\t";
+    }
+    // verb 00251463
+    if sense == 3 {
+        return "verb\twork out in detail\telaborate\t";
+    }
+    // verb 00099721
+    if sense == 4 {
+        return "verb\tdo physical exercise\texercise\t";
+    }
+    ""
+}

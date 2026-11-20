@@ -1,0 +1,13 @@
+// negro — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_negro(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09636339
+    if sense == 1 {
+        return "noun\ta person with dark skin who comes from Africa (or whose ancestors came from Africa)\tBlack, Black person, blackamoor, Negroid\t";
+    }
+    // adj 00242832
+    if sense == 2 {
+        return "adjective\trelating to or characteristic of or being a member of the traditional racial division of mankind having brown to black pigmentation and tightly curled hair\t\t";
+    }
+    ""
+}

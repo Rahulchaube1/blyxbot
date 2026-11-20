@@ -1,0 +1,29 @@
+// die — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_die(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00358431
+    if sense == 1 {
+        return "verb\tpass from physical life and lose all bodily attributes and functions necessary to sustain life\tdecease, perish, go, exit, pass away, expire, pass, kick the bucket, cash in one's chips, buy the farm, conk, give-up the ghost, drop dead, pop off, choke, croak, snuff it\tShe died from cancer";
+    }
+    // noun 03191029
+    if sense == 2 {
+        return "noun\ta small cube with 1 to 6 spots on the six faces; used in gambling to generate random numbers\tdice\t";
+    }
+    // noun 03192790
+    if sense == 3 {
+        return "noun\ta device used for shaping metal\t\t";
+    }
+    // verb 02109818
+    if sense == 4 {
+        return "verb\tsuffer or face the pain of death\t\tMartyrs may die every day for their faith";
+    }
+    // verb 01784953
+    if sense == 5 {
+        return "verb\tbe brought to or as if to the point of death by an intense emotion such as embarrassment, amusement, or shame\t\tWe almost died laughing during the show";
+    }
+    // verb 00434374
+    if sense == 6 {
+        return "verb\tstop operating or functioning\tfail, go bad, give way, give out, conk out, go, break, break down\tThe car died on the road";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// brief — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_brief(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01442826
+    if sense == 1 {
+        return "adjective\tof short duration or distance\t\ta brief stay in the country";
+    }
+    // adj 00547166
+    if sense == 2 {
+        return "adjective\tconcise and succinct\t\tcovered the matter in a brief statement";
+    }
+    // noun 06543781
+    if sense == 3 {
+        return "noun\ta document stating the facts and points of law of a client's case\tlegal brief\t";
+    }
+    // verb 00831273
+    if sense == 4 {
+        return "verb\tgive essential information to someone\t\tThe reporters were briefed about the President's plan to invade";
+    }
+    // adj 01436432
+    if sense == 5 {
+        return "adjective\t(of clothing) very short\tabbreviated\ta brief bikini";
+    }
+    ""
+}

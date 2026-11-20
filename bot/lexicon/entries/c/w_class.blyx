@@ -1,0 +1,29 @@
+// class — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_class(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 07997703
+    if sense == 1 {
+        return "noun\ta collection of things sharing a common attribute\tcategory, family\tthere are two classes of detergents";
+    }
+    // noun 08238463
+    if sense == 2 {
+        return "noun\ta body of students who are taught together\tform, grade, course\tearly morning classes are always sleepy";
+    }
+    // noun 07974025
+    if sense == 3 {
+        return "noun\tpeople having the same social, economic, or educational status\tstratum, social class, socio-economic class\tthe working class";
+    }
+    // noun 00884466
+    if sense == 4 {
+        return "noun\teducation imparted in a series of lessons or meetings\tcourse, course of study, course of instruction\tflirting is not unknown in college classes";
+    }
+    // noun 08239808
+    if sense == 5 {
+        return "noun\ta league ranked by quality\tdivision\the played baseball in class D for two years";
+    }
+    // verb 00654625
+    if sense == 6 {
+        return "verb\tarrange or order by classes or categories\tclassify, sort, assort, sort out, separate\t";
+    }
+    ""
+}

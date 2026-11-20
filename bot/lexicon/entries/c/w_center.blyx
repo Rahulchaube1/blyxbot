@@ -1,0 +1,65 @@
+// center — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_center(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // noun 08523483
+    if sense == 1 {
+        return "noun\tan area that is approximately central within some larger region\tcentre, middle, heart, eye\tit is in the center of town";
+    }
+    // verb 02676496
+    if sense == 2 {
+        return "verb\tcenter upon\tfocus on, center on, revolve around, revolve about, concentrate on\tHer entire attention centered on her children";
+    }
+    // noun 02994219
+    if sense == 3 {
+        return "noun\tthe piece of ground in the outfield directly ahead of the catcher\tcenter field, centerfield\the hit the ball to deep center";
+    }
+    // noun 02993546
+    if sense == 4 {
+        return "noun\ta building dedicated to a particular activity\tcentre\tthey were raising money to build a new center for research";
+    }
+    // noun 08521816
+    if sense == 5 {
+        return "noun\ta point equidistant from the ends of a line or the extremities of a figure\tcentre, midpoint\t";
+    }
+    // verb 00722232
+    if sense == 6 {
+        return "verb\tdirect one's attention on something\tconcentrate, focus, centre, pore, rivet\t";
+    }
+    // noun 05921123
+    if sense == 7 {
+        return "noun\tthe choicest or most essential or most vital part of some idea or experience\tkernel, substance, core, centre, essence, gist, heart, heart and soul, inwardness, marrow, meat, nub, pith, sum, nitty-gritty\t";
+    }
+    // noun 05812038
+    if sense == 8 {
+        return "noun\tthe object upon which interest and attention focuses\tcentre, center of attention, centre of attention\this stories made him the center of the party";
+    }
+    // noun 05463533
+    if sense == 9 {
+        return "noun\ta cluster of nerve cells governing a specific bodily process\tcentre, nerve center, nerve centre\tin most people the speech center is in the left hemisphere";
+    }
+    // noun 08481832
+    if sense == 10 {
+        return "noun\tthe middle of a military or naval formation\t\tthey had to reinforce the center";
+    }
+    // adj 00330506
+    if sense == 11 {
+        return "adjective\tequally distant from the extremes\thalfway, middle, midway\t";
+    }
+    // noun 09904556
+    if sense == 12 {
+        return "noun\t(basketball) the person who plays center on a basketball team\t\t";
+    }
+    // noun 09904321
+    if sense == 13 {
+        return "noun\t(football) the person who plays center on the line of scrimmage and snaps the ball to the quarterback\tsnapper\tthe center fumbled the handoff";
+    }
+    // noun 08514034
+    if sense == 14 {
+        return "noun\ta place where some particular activity is concentrated\tcentre\tthey received messages from several centers";
+    }
+    // noun 08416523
+    if sense == 15 {
+        return "noun\tpolitically moderate persons; centrists\t\t";
+    }
+    ""
+}

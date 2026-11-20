@@ -1,0 +1,41 @@
+// hand — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hand(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 05564590
+    if sense == 1 {
+        return "noun\tthe (prehensile) extremity of the superior limb\tmanus, mitt, paw\the had the hands of a surgeon";
+    }
+    // verb 02230772
+    if sense == 2 {
+        return "verb\tplace into the hands or custody of\tpass, reach, pass on, turn over, give\thand me the spoon, please";
+    }
+    // noun 10176679
+    if sense == 3 {
+        return "noun\ta hired laborer on a farm or ranch\thired hand, hired man\tthe hired hand fixed the railing";
+    }
+    // noun 06403393
+    if sense == 4 {
+        return "noun\tsomething written by hand\thandwriting, script\this hand was illegible";
+    }
+    // noun 05637965
+    if sense == 5 {
+        return "noun\tability\t\the wanted to try his hand at singing";
+    }
+    // noun 08650157
+    if sense == 6 {
+        return "noun\ta position given by its location to the side of an object\t\tobjections were voiced on every hand";
+    }
+    // noun 07956887
+    if sense == 7 {
+        return "noun\tthe cards held in a card game by a given player at any given time\tdeal\tI didn't hold a good hand all evening";
+    }
+    // noun 05852973
+    if sense == 8 {
+        return "noun\tone of two sides of an issue\t\ton the one hand..., but on the other hand...";
+    }
+    // noun 03482523
+    if sense == 9 {
+        return "noun\ta rotating pointer on the face of a timepiece\t\tthe big hand counts the minutes";
+    }
+    ""
+}

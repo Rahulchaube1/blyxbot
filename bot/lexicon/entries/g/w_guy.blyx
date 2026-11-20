@@ -1,0 +1,13 @@
+// guy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_guy(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 10153414
+    if sense == 1 {
+        return "noun\tan informal term for a youth or man\tcat, hombre, bozo\ta nice guy";
+    }
+    // noun 03471974
+    if sense == 2 {
+        return "noun\tan effigy of Guy Fawkes that is burned on a bonfire on Guy Fawkes Day\t\t";
+    }
+    ""
+}

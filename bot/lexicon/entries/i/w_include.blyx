@@ -1,0 +1,21 @@
+// include — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_include(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02632940
+    if sense == 1 {
+        return "verb\thave as a part, be made up out of\t\tThe list includes the names of many famous writers";
+    }
+    // verb 00684838
+    if sense == 2 {
+        return "verb\tconsider as part of something\t\tI include you in the list of culprits";
+    }
+    // verb 00183879
+    if sense == 3 {
+        return "verb\tadd as part of something else; put in as part of a set, group, or category\t\tWe must include this chemical element in the group";
+    }
+    // verb 02449847
+    if sense == 4 {
+        return "verb\tallow participation in or the right to be part of; permit to exercise the rights, functions, and responsibilities of\tadmit, let in\t";
+    }
+    ""
+}

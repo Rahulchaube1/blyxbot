@@ -1,0 +1,17 @@
+// town — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_town(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08665504
+    if sense == 1 {
+        return "noun\tan urban area with a fixed boundary that is smaller than a city\t\tthey drive through town on their way to work";
+    }
+    // noun 08226514
+    if sense == 2 {
+        return "noun\tthe people living in a municipality smaller than a city\ttownspeople, townsfolk\tthe whole town cheered the team";
+    }
+    // noun 08672199
+    if sense == 3 {
+        return "noun\tan administrative division of a county\ttownship\tthe town is responsible for snow removal";
+    }
+    ""
+}

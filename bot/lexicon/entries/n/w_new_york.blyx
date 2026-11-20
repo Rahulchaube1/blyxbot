@@ -1,0 +1,13 @@
+// new york — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_new_york(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09119277
+    if sense == 1 {
+        return "noun\tthe largest city in New York State and in the United States; located in southeastern New York at the mouth of the Hudson river; a major financial and cultural center\tNew York City, Greater New York\t";
+    }
+    // noun 09117351
+    if sense == 2 {
+        return "noun\ta Mid-Atlantic state; one of the original 13 colonies\tNew York State, Empire State, NY\t";
+    }
+    ""
+}

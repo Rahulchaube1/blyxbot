@@ -1,0 +1,21 @@
+// inner — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_inner(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00951831
+    if sense == 1 {
+        return "adjective\tlocated inward\tinterior, internal\tBeethoven's manuscript looks like a bloody record of a tremendous inner battle";
+    }
+    // adj 00950272
+    if sense == 2 {
+        return "adjective\tlocated or occurring within or closer to a center\t\tan inner room";
+    }
+    // adj 01348835
+    if sense == 3 {
+        return "adjective\tinnermost or essential\tinternal, intimate\tthe inner logic of Cubism";
+    }
+    // adj 01863066
+    if sense == 4 {
+        return "adjective\tconfined to an exclusive group\tinside, privileged\tprivy to inner knowledge";
+    }
+    ""
+}

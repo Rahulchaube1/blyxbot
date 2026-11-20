@@ -1,0 +1,255 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::e::w_each;
+use entries::e::w_eager;
+use entries::e::w_ear;
+use entries::e::w_earlier;
+use entries::e::w_early;
+use entries::e::w_earn;
+use entries::e::w_earth;
+use entries::e::w_easily;
+use entries::e::w_east;
+use entries::e::w_easy;
+use entries::e::w_eat;
+use entries::e::w_economic;
+use entries::e::w_economy;
+use entries::e::w_edge;
+use entries::e::w_education;
+use entries::e::w_effect;
+use entries::e::w_effective;
+use entries::e::w_efficiency;
+use entries::e::w_effort;
+use entries::e::w_egg;
+use entries::e::w_eight;
+use entries::e::w_elaborate;
+use entries::e::w_elect;
+use entries::e::w_election;
+use entries::e::w_element;
+use entries::e::w_eliminate;
+use entries::e::w_emerge;
+use entries::e::w_emotion;
+use entries::e::w_emotional;
+use entries::e::w_emphasis;
+use entries::e::w_emphasize;
+use entries::e::w_employ;
+use entries::e::w_employee;
+use entries::e::w_employment;
+use entries::e::w_empty;
+use entries::e::w_enable;
+use entries::e::w_encounter;
+use entries::e::w_encourage;
+use entries::e::w_end;
+use entries::e::w_enemy;
+use entries::e::w_energy;
+use entries::e::w_enforce;
+use entries::e::w_engage;
+use entries::e::w_england;
+use entries::e::w_english;
+use entries::e::w_enjoy;
+use entries::e::w_enough;
+use entries::e::w_enter;
+use entries::e::w_entertain;
+use entries::e::w_entire;
+use entries::e::w_entirely;
+use entries::e::w_entitle;
+use entries::e::w_environment;
+use entries::e::w_equal;
+use entries::e::w_equipment;
+use entries::e::w_erect;
+use entries::e::w_error;
+use entries::e::w_escape;
+use entries::e::w_especially;
+use entries::e::w_essential;
+use entries::e::w_essentially;
+use entries::e::w_establish;
+use entries::e::w_establishment;
+use entries::e::w_estimate;
+use entries::e::w_europe;
+use entries::e::w_even;
+use entries::e::w_evening;
+use entries::e::w_event;
+use entries::e::w_ever;
+use entries::e::w_every;
+use entries::e::w_evidence;
+use entries::e::w_evident;
+use entries::e::w_evil;
+use entries::e::w_exactly;
+use entries::e::w_examine;
+use entries::e::w_example;
+use entries::e::w_exceed;
+use entries::e::w_exception;
+use entries::e::w_exchange;
+use entries::e::w_excitement;
+use entries::e::w_exclude;
+use entries::e::w_exercise;
+use entries::e::w_exert;
+use entries::e::w_exhibit;
+use entries::e::w_exist;
+use entries::e::w_existence;
+use entries::e::w_existing;
+use entries::e::w_expand;
+use entries::e::w_expect;
+use entries::e::w_expenditure;
+use entries::e::w_expense;
+use entries::e::w_experience;
+use entries::e::w_experiment;
+use entries::e::w_expert;
+use entries::e::w_explain;
+use entries::e::w_explanation;
+use entries::e::w_explode;
+use entries::e::w_explore;
+use entries::e::w_expose;
+use entries::e::w_express;
+use entries::e::w_expression;
+use entries::e::w_extend;
+use entries::e::w_extension;
+use entries::e::w_extent;
+use entries::e::w_extreme;
+use entries::e::w_eye;
+
+fn through_w_effect(term: str, sense: i64) -> str {
+    if term == "each" { return w_each(sense); }
+    if term == "eager" { return w_eager(sense); }
+    if term == "ear" { return w_ear(sense); }
+    if term == "earlier" { return w_earlier(sense); }
+    if term == "early" { return w_early(sense); }
+    if term == "earn" { return w_earn(sense); }
+    if term == "earth" { return w_earth(sense); }
+    if term == "easily" { return w_easily(sense); }
+    if term == "east" { return w_east(sense); }
+    if term == "easy" { return w_easy(sense); }
+    if term == "eat" { return w_eat(sense); }
+    if term == "economic" { return w_economic(sense); }
+    if term == "economy" { return w_economy(sense); }
+    if term == "edge" { return w_edge(sense); }
+    if term == "education" { return w_education(sense); }
+    if term == "effect" { return w_effect(sense); }
+    ""
+}
+
+fn through_w_employ(term: str, sense: i64) -> str {
+    if term == "effective" { return w_effective(sense); }
+    if term == "efficiency" { return w_efficiency(sense); }
+    if term == "effort" { return w_effort(sense); }
+    if term == "egg" { return w_egg(sense); }
+    if term == "eight" { return w_eight(sense); }
+    if term == "elaborate" { return w_elaborate(sense); }
+    if term == "elect" { return w_elect(sense); }
+    if term == "election" { return w_election(sense); }
+    if term == "element" { return w_element(sense); }
+    if term == "eliminate" { return w_eliminate(sense); }
+    if term == "emerge" { return w_emerge(sense); }
+    if term == "emotion" { return w_emotion(sense); }
+    if term == "emotional" { return w_emotional(sense); }
+    if term == "emphasis" { return w_emphasis(sense); }
+    if term == "emphasize" { return w_emphasize(sense); }
+    if term == "employ" { return w_employ(sense); }
+    ""
+}
+
+fn through_w_enter(term: str, sense: i64) -> str {
+    if term == "employee" { return w_employee(sense); }
+    if term == "employment" { return w_employment(sense); }
+    if term == "empty" { return w_empty(sense); }
+    if term == "enable" { return w_enable(sense); }
+    if term == "encounter" { return w_encounter(sense); }
+    if term == "encourage" { return w_encourage(sense); }
+    if term == "end" { return w_end(sense); }
+    if term == "enemy" { return w_enemy(sense); }
+    if term == "energy" { return w_energy(sense); }
+    if term == "enforce" { return w_enforce(sense); }
+    if term == "engage" { return w_engage(sense); }
+    if term == "england" { return w_england(sense); }
+    if term == "english" { return w_english(sense); }
+    if term == "enjoy" { return w_enjoy(sense); }
+    if term == "enough" { return w_enough(sense); }
+    if term == "enter" { return w_enter(sense); }
+    ""
+}
+
+fn through_w_estimate(term: str, sense: i64) -> str {
+    if term == "entertain" { return w_entertain(sense); }
+    if term == "entire" { return w_entire(sense); }
+    if term == "entirely" { return w_entirely(sense); }
+    if term == "entitle" { return w_entitle(sense); }
+    if term == "environment" { return w_environment(sense); }
+    if term == "equal" { return w_equal(sense); }
+    if term == "equipment" { return w_equipment(sense); }
+    if term == "erect" { return w_erect(sense); }
+    if term == "error" { return w_error(sense); }
+    if term == "escape" { return w_escape(sense); }
+    if term == "especially" { return w_especially(sense); }
+    if term == "essential" { return w_essential(sense); }
+    if term == "essentially" { return w_essentially(sense); }
+    if term == "establish" { return w_establish(sense); }
+    if term == "establishment" { return w_establishment(sense); }
+    if term == "estimate" { return w_estimate(sense); }
+    ""
+}
+
+fn through_w_excitement(term: str, sense: i64) -> str {
+    if term == "europe" { return w_europe(sense); }
+    if term == "even" { return w_even(sense); }
+    if term == "evening" { return w_evening(sense); }
+    if term == "event" { return w_event(sense); }
+    if term == "ever" { return w_ever(sense); }
+    if term == "every" { return w_every(sense); }
+    if term == "evidence" { return w_evidence(sense); }
+    if term == "evident" { return w_evident(sense); }
+    if term == "evil" { return w_evil(sense); }
+    if term == "exactly" { return w_exactly(sense); }
+    if term == "examine" { return w_examine(sense); }
+    if term == "example" { return w_example(sense); }
+    if term == "exceed" { return w_exceed(sense); }
+    if term == "exception" { return w_exception(sense); }
+    if term == "exchange" { return w_exchange(sense); }
+    if term == "excitement" { return w_excitement(sense); }
+    ""
+}
+
+fn through_w_explanation(term: str, sense: i64) -> str {
+    if term == "exclude" { return w_exclude(sense); }
+    if term == "exercise" { return w_exercise(sense); }
+    if term == "exert" { return w_exert(sense); }
+    if term == "exhibit" { return w_exhibit(sense); }
+    if term == "exist" { return w_exist(sense); }
+    if term == "existence" { return w_existence(sense); }
+    if term == "existing" { return w_existing(sense); }
+    if term == "expand" { return w_expand(sense); }
+    if term == "expect" { return w_expect(sense); }
+    if term == "expenditure" { return w_expenditure(sense); }
+    if term == "expense" { return w_expense(sense); }
+    if term == "experience" { return w_experience(sense); }
+    if term == "experiment" { return w_experiment(sense); }
+    if term == "expert" { return w_expert(sense); }
+    if term == "explain" { return w_explain(sense); }
+    if term == "explanation" { return w_explanation(sense); }
+    ""
+}
+
+fn through_w_eye(term: str, sense: i64) -> str {
+    if term == "explode" { return w_explode(sense); }
+    if term == "explore" { return w_explore(sense); }
+    if term == "expose" { return w_expose(sense); }
+    if term == "express" { return w_express(sense); }
+    if term == "expression" { return w_expression(sense); }
+    if term == "extend" { return w_extend(sense); }
+    if term == "extension" { return w_extension(sense); }
+    if term == "extent" { return w_extent(sense); }
+    if term == "extreme" { return w_extreme(sense); }
+    if term == "eye" { return w_eye(sense); }
+    ""
+}
+
+pub fn lookup_e(term: str, sense: i64) -> str {
+    if term <= "effect" { return through_w_effect(term, sense); }
+    if term <= "employ" { return through_w_employ(term, sense); }
+    if term <= "enter" { return through_w_enter(term, sense); }
+    if term <= "estimate" { return through_w_estimate(term, sense); }
+    if term <= "excitement" { return through_w_excitement(term, sense); }
+    if term <= "explanation" { return through_w_explanation(term, sense); }
+    through_w_eye(term, sense)
+}
+
+pub fn words_e() -> str {
+    "each|eager|ear|earlier|early|earn|earth|easily|east|easy|eat|economic|economy|edge|education|effect|effective|efficiency|effort|egg|eight|elaborate|elect|election|element|eliminate|emerge|emotion|emotional|emphasis|emphasize|employ|employee|employment|empty|enable|encounter|encourage|end|enemy|energy|enforce|engage|england|english|enjoy|enough|enter|entertain|entire|entirely|entitle|environment|equal|equipment|erect|error|escape|especially|essential|essentially|establish|establishment|estimate|europe|even|evening|event|ever|every|evidence|evident|evil|exactly|examine|example|exceed|exception|exchange|excitement|exclude|exercise|exert|exhibit|exist|existence|existing|expand|expect|expenditure|expense|experience|experiment|expert|explain|explanation|explode|explore|expose|express|expression|extend|extension|extent|extreme|eye"
+}

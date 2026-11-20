@@ -1,0 +1,25 @@
+// education — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_education(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00883297
+    if sense == 1 {
+        return "noun\tthe activities of educating or instructing; activities that impart knowledge or skill\tinstruction, teaching, pedagogy, didactics, educational activity\the received no formal education";
+    }
+    // noun 05984287
+    if sense == 2 {
+        return "noun\tknowledge acquired by learning and instruction\t\tit was clear that he had a very broad education";
+    }
+    // noun 05753564
+    if sense == 3 {
+        return "noun\tthe gradual process of acquiring knowledge\t\teducation is a preparation for life";
+    }
+    // noun 00611433
+    if sense == 4 {
+        return "noun\tthe profession of teaching (especially at a school or college or university)\t\t";
+    }
+    // noun 04921900
+    if sense == 5 {
+        return "noun\tthe result of good upbringing (especially knowledge of correct social behavior)\ttraining, breeding\t";
+    }
+    ""
+}

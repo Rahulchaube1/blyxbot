@@ -1,0 +1,21 @@
+// imitation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_imitation(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05962602
+    if sense == 1 {
+        return "noun\tthe doctrine that representations of nature or human behavior should be accurate imitations\t\t";
+    }
+    // noun 03562126
+    if sense == 2 {
+        return "noun\tsomething copied or derived from an original\t\t";
+    }
+    // noun 01020936
+    if sense == 3 {
+        return "noun\tcopying (or trying to copy) the actions of someone else\t\t";
+    }
+    // adj 01573238
+    if sense == 4 {
+        return "adjective\tnot genuine or real; being an imitation of the genuine article\tfake, false, faux, simulated\tdecorated with imitation palm leaves";
+    }
+    ""
+}

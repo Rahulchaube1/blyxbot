@@ -1,0 +1,13 @@
+// technique — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_technique(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05665146
+    if sense == 1 {
+        return "noun\ta practical method or art applied to some particular task\t\t";
+    }
+    // noun 05643190
+    if sense == 2 {
+        return "noun\tskillfulness in the command of fundamentals deriving from practice and familiarity\tproficiency\t";
+    }
+    ""
+}

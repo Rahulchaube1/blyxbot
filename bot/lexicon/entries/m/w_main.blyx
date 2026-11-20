@@ -1,0 +1,9 @@
+// main — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_main(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01277426
+    if sense == 1 {
+        return "adjective\tmost important element\tchief, primary, principal, master\tthe main doors were of solid glass";
+    }
+    ""
+}

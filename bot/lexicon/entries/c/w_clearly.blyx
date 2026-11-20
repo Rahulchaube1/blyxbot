@@ -1,0 +1,21 @@
+// clearly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_clearly(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00039058
+    if sense == 1 {
+        return "adverb\twithout doubt or question\t\tthey were clearly lost";
+    }
+    // adv 00202341
+    if sense == 2 {
+        return "adverb\tin an intelligible manner\tintelligibly, understandably\t";
+    }
+    // adv 00181901
+    if sense == 3 {
+        return "adverb\tclear to the mind; with distinct mental discernment\tdistinctly\tI could clearly see myself in his situation";
+    }
+    // adv 00285687
+    if sense == 4 {
+        return "adverb\tin an easily perceptible manner\tclear\tcould be seen clearly under the microscope";
+    }
+    ""
+}

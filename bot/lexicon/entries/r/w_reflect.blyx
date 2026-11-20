@@ -1,0 +1,21 @@
+// reflect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reflect(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02136892
+    if sense == 1 {
+        return "verb\tmanifest or bring back\t\tThis action reflects his true beliefs";
+    }
+    // verb 00630380
+    if sense == 2 {
+        return "verb\treflect deeply on a subject\tchew over, think over, meditate, ponder, excogitate, contemplate, muse, mull, mull over, ruminate, speculate\t";
+    }
+    // verb 02136271
+    if sense == 3 {
+        return "verb\tto throw or bend back (from a surface)\treverberate\tSound is reflected well in this auditorium";
+    }
+    // verb 02765924
+    if sense == 4 {
+        return "verb\tbe bright by reflecting or casting light\tshine\tDrive carefully--the wet road reflects";
+    }
+    ""
+}

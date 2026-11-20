@@ -1,0 +1,41 @@
+// pitch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pitch(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 01512625
+    if sense == 1 {
+        return "verb\tthrow or toss with a light motion\tflip, toss, sky\t";
+    }
+    // noun 04985198
+    if sense == 2 {
+        return "noun\tthe property of sound that varies with variation in the frequency of vibration\t\t";
+    }
+    // verb 01864634
+    if sense == 3 {
+        return "verb\tmove abruptly\tlurch, shift\t";
+    }
+    // noun 00106272
+    if sense == 4 {
+        return "noun\t(baseball) the act of throwing a baseball by a pitcher to a batter\tdelivery\t";
+    }
+    // verb 01978436
+    if sense == 5 {
+        return "verb\tfall or plunge forward\t\tShe pitched over the railing of the balcony";
+    }
+    // noun 08624656
+    if sense == 6 {
+        return "noun\ta vendor's position (especially on the sidewalk)\t\the was employed to see that his paper's news pitches were not trespassed upon by rival vendors";
+    }
+    // noun 07248653
+    if sense == 7 {
+        return "noun\tpromotion by means of an argument and demonstration\tsales talk, sales pitch\t";
+    }
+    // noun 05069199
+    if sense == 8 {
+        return "noun\tdegree of deviation from a horizontal plane\trake, slant\tthe roof had a steep pitch";
+    }
+    // verb 00298420
+    if sense == 9 {
+        return "verb\tset to a certain pitch\t\tHe pitched his voice very low";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// formation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_formation(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08426461
+    if sense == 1 {
+        return "noun\tan arrangement of people or things acting as a unit\t\ta defensive formation";
+    }
+    // noun 00925207
+    if sense == 2 {
+        return "noun\tthe act of fabricating something in a particular shape\tshaping\t";
+    }
+    // noun 00237078
+    if sense == 3 {
+        return "noun\tthe act of forming or establishing something\tconstitution, establishment, organization, organisation\t";
+    }
+    // noun 09287968
+    if sense == 4 {
+        return "noun\t(geology) the geological features of the earth\tgeological formation\t";
+    }
+    // noun 03385117
+    if sense == 5 {
+        return "noun\ta particular spatial arrangement\t\t";
+    }
+    ""
+}

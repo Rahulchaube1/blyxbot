@@ -1,0 +1,25 @@
+// understanding — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_understanding(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05805475
+    if sense == 1 {
+        return "noun\tthe cognitive condition of someone who understands\tapprehension, discernment, savvy\the has virtually no understanding of social cause and effect";
+    }
+    // noun 06770275
+    if sense == 2 {
+        return "noun\tthe statement (oral or written) of an exchange of promises\tagreement\tthere was an understanding between management and the workers";
+    }
+    // noun 06199142
+    if sense == 3 {
+        return "noun\tan inclination to support or be loyal to or to agree with an opinion\tsympathy\tI knew I could count on his understanding";
+    }
+    // noun 05651680
+    if sense == 4 {
+        return "noun\tthe capacity for rational thought or inference or discrimination\treason, intellect\t";
+    }
+    // adj 01745946
+    if sense == 5 {
+        return "adjective\tcharacterized by understanding based on comprehension and discernment and empathy\t\tan understanding friend";
+    }
+    ""
+}

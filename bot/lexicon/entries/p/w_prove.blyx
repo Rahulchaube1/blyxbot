@@ -1,0 +1,21 @@
+// prove — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_prove(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02633881
+    if sense == 1 {
+        return "verb\tbe shown or be found to be\tturn out, turn up\tShe proved to be right";
+    }
+    // verb 00664788
+    if sense == 2 {
+        return "verb\testablish the validity of something, as by an example, explanation or experiment\tdemonstrate, establish, show, shew\t";
+    }
+    // verb 01015244
+    if sense == 3 {
+        return "verb\tprovide evidence for\ttestify, bear witness, evidence, show\t";
+    }
+    // verb 00665630
+    if sense == 4 {
+        return "verb\tprove formally; demonstrate by a mathematical, formal proof\t\t";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// push — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_push(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01871979
+    if sense == 1 {
+        return "verb\tmove with force, \"He pushed the table into a corner\"\tforce\t";
+    }
+    // verb 00765977
+    if sense == 2 {
+        return "verb\tpress, drive, or impel (someone) to action or completion of an action\tbear on\tHe pushed her to finish her doctorate";
+    }
+    // verb 00976653
+    if sense == 3 {
+        return "verb\tmake publicity for; try to sell (a product)\tadvertise, advertize, promote\tThe salesman is aggressively pushing the new computer model";
+    }
+    // noun 00112312
+    if sense == 4 {
+        return "noun\tthe act of applying force in order to move something away\tpushing\the gave the door a hard push";
+    }
+    // verb 02406916
+    if sense == 5 {
+        return "verb\tstrive and make an effort to reach a goal\ttug, labor, labour, drive\tWe have to push a little to make the deadline!";
+    }
+    // verb 01872645
+    if sense == 6 {
+        return "verb\tpress against forcefully without moving\t\tshe pushed against the wall with all her strength";
+    }
+    // noun 11498203
+    if sense == 7 {
+        return "noun\tthe force used in pushing\tthrust\tthe push of the water on the walls of the tank";
+    }
+    // verb 02054864
+    if sense == 8 {
+        return "verb\tapproach a certain age or speed\tcrowd\tShe is pushing fifty";
+    }
+    ""
+}

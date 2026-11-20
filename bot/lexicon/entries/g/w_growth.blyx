@@ -1,0 +1,25 @@
+// growth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_growth(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13489037
+    if sense == 1 {
+        return "noun\t(biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level\tgrowing, maturation, development, ontogeny, ontogenesis\t";
+    }
+    // noun 13490343
+    if sense == 2 {
+        return "noun\ta progression from simpler to more complex forms\t\tthe growth of culture";
+    }
+    // noun 13497135
+    if sense == 3 {
+        return "noun\ta process of becoming larger or longer or more numerous or more important\tincrease, increment\tthe growth of population";
+    }
+    // noun 08438067
+    if sense == 4 {
+        return "noun\tvegetation that has grown\t\ta growth of trees";
+    }
+    // noun 07324673
+    if sense == 5 {
+        return "noun\tthe gradual beginning or coming forth\temergence, outgrowth\t";
+    }
+    ""
+}

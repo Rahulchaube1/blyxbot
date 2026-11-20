@@ -1,0 +1,29 @@
+// empty — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_empty(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 01086545
+    if sense == 1 {
+        return "adjective\tholding or containing nothing\t\tan empty glass";
+    }
+    // adj 01498084
+    if sense == 2 {
+        return "adjective\tdevoid of significance or point\thollow, vacuous\tempty promises";
+    }
+    // verb 00449692
+    if sense == 3 {
+        return "verb\tmake void or empty of contents\t\tEmpty the box";
+    }
+    // verb 00448680
+    if sense == 4 {
+        return "verb\tbecome empty or void of its content\tdischarge\tThe room emptied";
+    }
+    // verb 02076676
+    if sense == 5 {
+        return "verb\tleave behind empty; move out of\tvacate, abandon\t";
+    }
+    // verb 01488313
+    if sense == 6 {
+        return "verb\tremove\t\tEmpty the water";
+    }
+    ""
+}

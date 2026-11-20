@@ -1,0 +1,13 @@
+// crime — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_crime(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00766234
+    if sense == 1 {
+        return "noun\t(criminal law) an act punishable by law; usually considered an evil act\toffense, criminal offense, criminal offence, offence, law-breaking\ta long record of crimes";
+    }
+    // noun 00767477
+    if sense == 2 {
+        return "noun\tan evil act not necessarily punishable by law\t\tcrimes of the heart";
+    }
+    ""
+}

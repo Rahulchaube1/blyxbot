@@ -1,0 +1,29 @@
+// ride — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ride(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01957529
+    if sense == 1 {
+        return "verb\tsit and travel on the back of animal, usually while controlling its motions\tsit\tDid you ever ride a camel?";
+    }
+    // verb 01955984
+    if sense == 2 {
+        return "verb\tbe carried or travel on or in a vehicle\t\tI ride to work in a bus";
+    }
+    // noun 00307631
+    if sense == 3 {
+        return "noun\ta journey in a vehicle (usually an automobile)\tdrive\t";
+    }
+    // verb 02684644
+    if sense == 4 {
+        return "verb\tcontinue undisturbed and without interference\t\tLet it ride";
+    }
+    // verb 01839538
+    if sense == 5 {
+        return "verb\tmove like a floating object\t\t";
+    }
+    // verb 00850501
+    if sense == 6 {
+        return "verb\tharass with persistent criticism or carping\ttease, razz, rag, cod, tantalize, tantalise, bait, taunt, twit, rally\tDon't ride me so hard over my failure";
+    }
+    ""
+}

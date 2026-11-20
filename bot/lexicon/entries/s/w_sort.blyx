@@ -1,0 +1,17 @@
+// sort — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sort(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05839024
+    if sense == 1 {
+        return "noun\ta category of things distinguished by some common characteristic or quality\tkind, form, variety\t";
+    }
+    // noun 04746262
+    if sense == 2 {
+        return "noun\tan approximate definition or example\t\tshe wore a sort of magenta dress";
+    }
+    // noun 10626722
+    if sense == 3 {
+        return "noun\ta person of a particular character or nature\t\twhat sort of person is he?";
+    }
+    ""
+}

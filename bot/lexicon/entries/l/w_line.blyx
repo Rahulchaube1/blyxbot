@@ -1,0 +1,105 @@
+// line — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_line(sense: i64) -> str {
+    if sense == 0 { return "25"; }
+    // noun 08430568
+    if sense == 1 {
+        return "noun\ta formation of people or things one beside another\t\tthe line of soldiers advanced with their bayonets fixed";
+    }
+    // noun 06799897
+    if sense == 2 {
+        return "noun\ta mark that is long relative to its width\t\tHe drew a line on the chart";
+    }
+    // noun 08430203
+    if sense == 3 {
+        return "noun\ta formation of people or things one behind another\t\tthe line stretched clear around the corner";
+    }
+    // noun 13863771
+    if sense == 4 {
+        return "noun\ta length (straight or curved) without breadth or thickness; the trace of a moving point\t\t";
+    }
+    // noun 07012534
+    if sense == 5 {
+        return "noun\ttext consisting of a row of words written across a page or computer screen\t\tthe letter consisted of three short lines";
+    }
+    // noun 11474637
+    if sense == 6 {
+        return "noun\ta single frequency (or very narrow band) of radiation in a spectrum\t\t";
+    }
+    // noun 08594286
+    if sense == 7 {
+        return "noun\ta fortified position (especially one marking the most forward position of troops)\t\tthey attacked the enemy's line";
+    }
+    // noun 05773049
+    if sense == 8 {
+        return "noun\ta course of reasoning aimed at demonstrating a truth or falsehood; the methodical process of logical reasoning\targumentation, logical argument, argument, line of reasoning\tI can't follow your line of reasoning";
+    }
+    // noun 02934168
+    if sense == 9 {
+        return "noun\ta conductor for transmitting electrical or optical signals or electric power\tcable, transmission line\t";
+    }
+    // noun 08377085
+    if sense == 10 {
+        return "noun\ta connected series of events or actions or developments\tcourse\thistorians can only point out those lines for which evidence is available";
+    }
+    // verb 02703539
+    if sense == 11 {
+        return "verb\tbe in line with; form a line along\trun along\ttrees line the riverbank";
+    }
+    // noun 08593262
+    if sense == 12 {
+        return "noun\ta spatial location defined by a real or imaginary unidimensional extent\t\t";
+    }
+    // noun 13905792
+    if sense == 13 {
+        return "noun\ta slight depression in the smoothness of a surface\twrinkle, furrow, crease, crinkle, seam\this face has many lines";
+    }
+    // verb 01270784
+    if sense == 14 {
+        return "verb\tcover the interior of\t\tline the gloves";
+    }
+    // noun 03946325
+    if sense == 15 {
+        return "noun\ta pipe used to transport liquids or gases\tpipeline\t";
+    }
+    // noun 03671272
+    if sense == 16 {
+        return "noun\tthe road consisting of railroad track and roadbed\trailway line, rail line\t";
+    }
+    // noun 04402057
+    if sense == 17 {
+        return "noun\ta telephone connection\ttelephone line, phone line, telephone circuit, subscriber line\t";
+    }
+    // noun 01204294
+    if sense == 18 {
+        return "noun\tacting in conformity\t\tin line with";
+    }
+    // noun 08101937
+    if sense == 19 {
+        return "noun\tthe descendants of one individual\tlineage, line of descent, descent, bloodline, blood line, blood, pedigree, ancestry, origin, parentage, stemma, stock\t";
+    }
+    // noun 03670849
+    if sense == 20 {
+        return "noun\tsomething (as a cord or rope) that is long and thin and flexible\t\ta washing line";
+    }
+    // noun 00582388
+    if sense == 21 {
+        return "noun\tthe principal activity in your life that you do to earn money\toccupation, business, job, line of work\the's not in my line of business";
+    }
+    // noun 08593924
+    if sense == 22 {
+        return "noun\tin games or sports; a mark indicating positions or bounds of the playing area\t\t";
+    }
+    // noun 06260121
+    if sense == 23 {
+        return "noun\t(often plural) a means of communication or access\tchannel, communication channel\tlines of communication were set up between the two firms";
+    }
+    // noun 03671668
+    if sense == 24 {
+        return "noun\ta particular kind of product or merchandise\tproduct line, line of products, line of merchandise, business line, line of business\ta nice line of shoes";
+    }
+    // noun 03671473
+    if sense == 25 {
+        return "noun\ta commercial organization serving as a common carrier\t\t";
+    }
+    ""
+}

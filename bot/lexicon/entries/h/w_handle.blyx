@@ -1,0 +1,29 @@
+// handle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_handle(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02436349
+    if sense == 1 {
+        return "verb\tbe in charge of, act on, or dispose of\tmanage, deal, care\tThis blender can't handle nuts";
+    }
+    // verb 02514187
+    if sense == 2 {
+        return "verb\tinteract in a certain way\ttreat, do by\tHandle the press reporters gently";
+    }
+    // noun 03485997
+    if sense == 3 {
+        return "noun\tthe appendage to an object that is designed to be held in order to use or move it\tgrip, handgrip, hold\the grabbed the hammer by the handle";
+    }
+    // verb 01033527
+    if sense == 4 {
+        return "verb\tact on verbally or in some form of artistic expression\tcover, treat, plow, deal, address\t";
+    }
+    // verb 01210737
+    if sense == 5 {
+        return "verb\ttouch, lift, or hold with the hands\tpalm\tDon't handle the merchandise";
+    }
+    // verb 01224415
+    if sense == 6 {
+        return "verb\thandle effectively\twield, manage\t";
+    }
+    ""
+}

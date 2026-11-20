@@ -1,0 +1,25 @@
+// reflection — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reflection(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05785508
+    if sense == 1 {
+        return "noun\ta calm, lengthy, intent consideration\tcontemplation, reflexion, rumination, musing, thoughtfulness\t";
+    }
+    // noun 11503060
+    if sense == 2 {
+        return "noun\tthe phenomenon of a propagating wave (light or sound) being thrown back from a surface\treflexion\t";
+    }
+    // noun 06880249
+    if sense == 3 {
+        return "noun\texpression without words\texpression, manifestation, reflexion\tthe pulse is a reflection of the heart's condition";
+    }
+    // noun 04747115
+    if sense == 4 {
+        return "noun\ta likeness in which left and right are reversed\tmirror image, reflexion\t";
+    }
+    // noun 04068976
+    if sense == 5 {
+        return "noun\tthe image of something as reflected by a mirror (or other reflective material)\treflexion\the studied his reflection in the mirror";
+    }
+    ""
+}

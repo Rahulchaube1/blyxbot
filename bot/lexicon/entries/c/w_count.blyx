@@ -1,0 +1,37 @@
+// count — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_count(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00948071
+    if sense == 1 {
+        return "verb\tdetermine the number or amount of\tnumber, enumerate, numerate\tCan you count the books on your shelf?";
+    }
+    // verb 02645839
+    if sense == 2 {
+        return "verb\thave weight; have import, carry weight\tmatter, weigh\t";
+    }
+    // noun 13591761
+    if sense == 3 {
+        return "noun\tthe total number counted\t\ta blood count";
+    }
+    // noun 00634586
+    if sense == 4 {
+        return "noun\tthe act of counting; reciting numbers in ascending order\tcounting, numeration, enumeration, reckoning, tally\tthe counting continued for several hours";
+    }
+    // verb 00950431
+    if sense == 5 {
+        return "verb\tshow consideration for; take into account\tconsider, weigh\t";
+    }
+    // verb 00947857
+    if sense == 6 {
+        return "verb\tname or recite the numbers in ascending order\t\tThe toddler could count to 100";
+    }
+    // verb 02731632
+    if sense == 7 {
+        return "verb\tput into a group\tnumber\tThe academy counts several Nobel Prize winners among its members";
+    }
+    // verb 00685081
+    if sense == 8 {
+        return "verb\tinclude as if by counting\t\tI can count my colleagues in the opposition";
+    }
+    ""
+}

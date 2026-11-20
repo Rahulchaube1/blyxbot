@@ -1,0 +1,21 @@
+// qualify — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_qualify(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02679012
+    if sense == 1 {
+        return "verb\tprove capable or fit; meet requirements\tmeasure up\t";
+    }
+    // verb 00972191
+    if sense == 2 {
+        return "verb\tpronounce fit or able\t\tShe was qualified to run the marathon";
+    }
+    // verb 00199309
+    if sense == 3 {
+        return "verb\tmake more specific\trestrict\tqualify these remarks";
+    }
+    // verb 00300761
+    if sense == 4 {
+        return "verb\tmake fit or prepared\tdispose\tYour education qualifies you for this job";
+    }
+    ""
+}

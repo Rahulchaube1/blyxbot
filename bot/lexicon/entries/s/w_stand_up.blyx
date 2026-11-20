@@ -1,0 +1,25 @@
+// stand up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stand_up(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01983264
+    if sense == 1 {
+        return "verb\trise to one's feet\tarise, rise, uprise, get up\t";
+    }
+    // verb 01117086
+    if sense == 2 {
+        return "verb\trefuse to back down; remain solid under criticism or attack\t\t";
+    }
+    // verb 01546768
+    if sense == 3 {
+        return "verb\tput into an upright position\tstand, place upright\t";
+    }
+    // verb 01546111
+    if sense == 4 {
+        return "verb\tbe standing; be upright\tstand\t";
+    }
+    // verb 00895641
+    if sense == 5 {
+        return "verb\tdefend against attack or criticism\tstick up\t";
+    }
+    ""
+}

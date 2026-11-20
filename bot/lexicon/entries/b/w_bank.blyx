@@ -1,0 +1,29 @@
+// bank — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bank(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 09213565
+    if sense == 1 {
+        return "noun\tsloping land (especially the slope beside a body of water)\t\tthey pulled the canoe up on the bank";
+    }
+    // noun 08420278
+    if sense == 2 {
+        return "noun\ta financial institution that accepts deposits and channels the money into lending activities\tdepository financial institution, banking concern, banking company\the cashed a check at the bank";
+    }
+    // noun 09213434
+    if sense == 3 {
+        return "noun\ta long ridge or pile\t\ta huge bank of earth";
+    }
+    // verb 02039413
+    if sense == 4 {
+        return "verb\ttip laterally\t\tthe pilot had to bank the aircraft";
+    }
+    // noun 08462066
+    if sense == 5 {
+        return "noun\tan arrangement of similar objects in a row or in tiers\t\the operated a bank of switches";
+    }
+    // verb 01587705
+    if sense == 6 {
+        return "verb\tenclose with a bank\t\tbank roads";
+    }
+    ""
+}

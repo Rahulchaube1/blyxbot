@@ -1,0 +1,13 @@
+// prevent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_prevent(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02452885
+    if sense == 1 {
+        return "verb\tkeep from happening or arising; make impossible\tforestall, foreclose, preclude, forbid\t";
+    }
+    // verb 02450505
+    if sense == 2 {
+        return "verb\tstop (someone or something) from doing something or being in a certain state\tkeep\tWe must prevent the cancer from spreading";
+    }
+    ""
+}

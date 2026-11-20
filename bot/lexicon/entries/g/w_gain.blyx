@@ -1,0 +1,53 @@
+// gain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gain(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // verb 02292125
+    if sense == 1 {
+        return "verb\tobtain\tderive\t";
+    }
+    // verb 02288295
+    if sense == 2 {
+        return "verb\twin something through one's efforts\tacquire, win\tGain an understanding of international finance";
+    }
+    // verb 02290461
+    if sense == 3 {
+        return "verb\tderive a benefit from\tprofit, benefit\t";
+    }
+    // noun 13754293
+    if sense == 4 {
+        return "noun\ta quantity that is added\taddition, increase\tthey recorded the cattle's gain in weight over a period of weeks";
+    }
+    // verb 02020590
+    if sense == 5 {
+        return "verb\treach a destination, either real or abstract\treach, make, attain, hit, arrive at\t";
+    }
+    // noun 05157574
+    if sense == 6 {
+        return "noun\tthe advantageous quality of being beneficial\tprofit\t";
+    }
+    // noun 05109324
+    if sense == 7 {
+        return "noun\tthe amount of increase in signal power or voltage or current expressed as the ratio of output to input\tamplification\t";
+    }
+    // verb 01111028
+    if sense == 8 {
+        return "verb\tobtain advantages, such as points, etc.\tadvance, win, pull ahead, make headway, get ahead, gain ground\tThe home team was gaining ground";
+    }
+    // verb 00158222
+    if sense == 9 {
+        return "verb\trise in rate or price\tadvance\tThe stock market gained 24 points today";
+    }
+    // verb 00157462
+    if sense == 10 {
+        return "verb\tincrease or develop\tgather\tthe peace movement gained momentum";
+    }
+    // noun 13254805
+    if sense == 11 {
+        return "noun\tthe amount by which the revenue of a business exceeds its cost of operating\t\t";
+    }
+    // verb 02289295
+    if sense == 12 {
+        return "verb\tearn on some commercial or business transaction; earn as salary or wages\ttake in, clear, make, earn, realize, realise, pull in, bring in\t";
+    }
+    ""
+}

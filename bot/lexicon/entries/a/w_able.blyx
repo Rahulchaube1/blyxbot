@@ -1,0 +1,17 @@
+// able — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_able(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00001740
+    if sense == 1 {
+        return "adjective\t(usually followed by `to') having the necessary means or skill or know-how or authority to do something\t\table to swim";
+    }
+    // adj 00510348
+    if sense == 2 {
+        return "adjective\thave the skills and qualifications to do things well\tcapable\table teachers";
+    }
+    // adj 00306663
+    if sense == 3 {
+        return "adjective\thaving inherent physical or mental ability or capacity\t\table to learn";
+    }
+    ""
+}

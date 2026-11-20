@@ -1,0 +1,77 @@
+// support — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_support(sense: i64) -> str {
+    if sense == 0 { return "18"; }
+    // verb 02556126
+    if sense == 1 {
+        return "verb\tgive moral or psychological support, aid, or courage to\tback up\tShe supported him during the illness";
+    }
+    // verb 02219094
+    if sense == 2 {
+        return "verb\tsupport materially or financially\t\the does not support his natural children";
+    }
+    // noun 01215902
+    if sense == 3 {
+        return "noun\tthe activity of providing for or maintaining by supplying with money or necessities\t\this support kept the family together";
+    }
+    // verb 02453889
+    if sense == 4 {
+        return "verb\tbe behind; approve of\tback, endorse, indorse, plump for, plunk for\t";
+    }
+    // verb 01217043
+    if sense == 5 {
+        return "verb\tbe the physical support of; carry the weight of\thold, sustain, hold up\tHe supported me with one hand while I balanced on the beam";
+    }
+    // noun 01212519
+    if sense == 6 {
+        return "noun\taiding the cause or policy or interests of\t\tthe president no longer has the support of his own party";
+    }
+    // verb 00665886
+    if sense == 7 {
+        return "verb\testablish or strengthen as with new evidence or facts\tconfirm, corroborate, sustain, substantiate, affirm\tThe evidence supports the defendant";
+    }
+    // noun 05693919
+    if sense == 8 {
+        return "noun\tsomething providing immaterial assistance to a person or cause or interest\t\tthe policy found little public support";
+    }
+    // noun 00971463
+    if sense == 9 {
+        return "noun\ta military operation (often involving new supplies of men and materiel) to strengthen a military force or aid in the performance of its mission\treinforcement, reenforcement\tthey called for artillery support";
+    }
+    // noun 00154433
+    if sense == 10 {
+        return "noun\tdocumentary validation\tdocumentation\tthe strongest support for this view is the work of Jones";
+    }
+    // verb 00806314
+    if sense == 11 {
+        return "verb\tadopt as a belief\tsubscribe\t";
+    }
+    // noun 13365286
+    if sense == 12 {
+        return "noun\tthe financial means whereby one lives\tkeep, livelihood, living, bread and butter, sustenance\the applied to the state for support";
+    }
+    // noun 04360501
+    if sense == 13 {
+        return "noun\tsupporting structure that holds up or provides a foundation\t\tthe statue stood on a marble support";
+    }
+    // noun 01017320
+    if sense == 14 {
+        return "noun\tthe act of bearing the weight of or strengthening\tsupporting\the leaned against the wall for support";
+    }
+    // verb 02663340
+    if sense == 15 {
+        return "verb\tsupport with evidence or authority or make more certain or confirm\tcorroborate, underpin, bear out\t";
+    }
+    // verb 00895304
+    if sense == 16 {
+        return "verb\targue or speak in defense of\tdefend, fend for\tShe supported the motion to strike";
+    }
+    // noun 07031752
+    if sense == 17 {
+        return "noun\ta musical part (vocal or instrumental) that supports or provides background for other musical parts\taccompaniment, musical accompaniment, backup\t";
+    }
+    // noun 04359589
+    if sense == 18 {
+        return "noun\tany device that bears the weight of another thing\t\tthere was no place to attach supports for a shelf";
+    }
+    ""
+}

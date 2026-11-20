@@ -1,0 +1,17 @@
+// publish — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_publish(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01745722
+    if sense == 1 {
+        return "verb\tput into print\tprint\tThe newspaper published the news of the royal couple's divorce";
+    }
+    // verb 00967625
+    if sense == 2 {
+        return "verb\tprepare and issue for public distribution or sale\tbring out, put out, issue, release\tpublish a magazine or newspaper";
+    }
+    // verb 01744611
+    if sense == 3 {
+        return "verb\thave (one's written work) issued for publication\twrite\tShe published 25 books during her long career";
+    }
+    ""
+}

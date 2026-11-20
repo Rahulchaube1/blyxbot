@@ -1,0 +1,25 @@
+// affect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_affect(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00137313
+    if sense == 1 {
+        return "verb\thave an effect upon\timpact, bear upon, bear on, touch on, touch\tWill the new rules affect me?";
+    }
+    // verb 00019448
+    if sense == 2 {
+        return "verb\tact physically on; have an effect upon\t\tthe medicine affects my heart rate";
+    }
+    // verb 02677097
+    if sense == 3 {
+        return "verb\tconnect closely and often incriminatingly\tinvolve, regard\tThis new ruling affects your business";
+    }
+    // verb 00838043
+    if sense == 4 {
+        return "verb\tmake believe with the intent to deceive\tfeign, sham, pretend, dissemble\t";
+    }
+    // noun 07479926
+    if sense == 5 {
+        return "noun\tthe conscious subjective aspect of feeling or emotion\t\t";
+    }
+    ""
+}

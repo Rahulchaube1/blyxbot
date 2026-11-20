@@ -1,0 +1,37 @@
+// label — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_label(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01029852
+    if sense == 1 {
+        return "verb\tassign a label to; designate with a label\t\tThese students were labelled `learning disabled'";
+    }
+    // noun 07202579
+    if sense == 2 {
+        return "noun\ta brief description given for purposes of identification\t\tthe label Modern is applied to many different kinds of architecture";
+    }
+    // verb 01588493
+    if sense == 3 {
+        return "verb\tattach a tag or label to\ttag, mark\tlabel these bottles";
+    }
+    // verb 00971650
+    if sense == 4 {
+        return "verb\tpronounce judgment on\tpronounce, judge\tThey labeled him unfit to work here";
+    }
+    // noun 06851516
+    if sense == 5 {
+        return "noun\ttrade name of a company that produces musical recordings\trecording label\tthe artists and repertoire department of a recording label is responsible for finding new talent";
+    }
+    // noun 14620066
+    if sense == 6 {
+        return "noun\ta radioactive isotope that is used in a compound in order to trace the mechanism of a chemical reaction\t\t";
+    }
+    // noun 07272172
+    if sense == 7 {
+        return "noun\tan identifying or descriptive marker that is attached to an object\t\t";
+    }
+    // verb 00651480
+    if sense == 8 {
+        return "verb\tdistinguish (as a compound or molecule) by introducing a labeled atom\t\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// l — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_l(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13624190
+    if sense == 1 {
+        return "noun\ta metric unit of capacity, formerly defined as the volume of one kilogram of pure water under standard conditions; now equal to 1,000 cubic centimeters (or approximately 1.75 pints)\tliter, litre, cubic decimeter, cubic decimetre\t";
+    }
+    // adj 02191232
+    if sense == 2 {
+        return "adjective\tbeing ten more than forty\tfifty, 50\t";
+    }
+    ""
+}

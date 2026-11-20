@@ -1,0 +1,21 @@
+// leadership — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_leadership(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 01256417
+    if sense == 1 {
+        return "noun\tthe activity of leading\tleading\this leadership inspired the team";
+    }
+    // noun 08381436
+    if sense == 2 {
+        return "noun\tthe body of people who lead a group\tleaders\tthe national leadership adopted his plan";
+    }
+    // noun 14433361
+    if sense == 3 {
+        return "noun\tthe status of a leader\t\tthey challenged his leadership of the union";
+    }
+    // noun 05617310
+    if sense == 4 {
+        return "noun\tthe ability to lead\t\the believed that leadership can be taught";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// factor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_factor(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 07327805
+    if sense == 1 {
+        return "noun\tanything that contributes causally to a result\t\ta number of factors determined the outcome";
+    }
+    // noun 05868954
+    if sense == 2 {
+        return "noun\tan abstract part of something\tcomponent, constituent, element, ingredient\ta key factor in her success";
+    }
+    // noun 13733402
+    if sense == 3 {
+        return "noun\tone of two or more integers that can be exactly divided into another integer\tdivisor\twhat are the 4 factors of 6?";
+    }
+    // verb 00640385
+    if sense == 4 {
+        return "verb\tresolve into factors\tfactor in, factor out\ta quantum computer can factor the number 15";
+    }
+    // noun 09777012
+    if sense == 5 {
+        return "noun\ta businessman who buys or sells for another in exchange for a commission\tagent, broker\t";
+    }
+    ""
+}

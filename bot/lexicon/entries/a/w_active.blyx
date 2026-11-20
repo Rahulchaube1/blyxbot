@@ -1,0 +1,41 @@
+// active — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_active(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 14776804
+    if sense == 1 {
+        return "noun\tchemical agent capable of activity\tactive agent\t";
+    }
+    // adj 00037457
+    if sense == 2 {
+        return "adjective\ttending to become more severe or wider in scope\t\tactive tuberculosis";
+    }
+    // adj 01660444
+    if sense == 3 {
+        return "adjective\tengaged in or ready for military or naval operations\tcombat-ready, fighting\ton active duty";
+    }
+    // adj 00038750
+    if sense == 4 {
+        return "adjective\tdisposed to take action or effectuate change\t\ta director who takes an active interest in corporate operations";
+    }
+    // adj 01515280
+    if sense == 5 {
+        return "adjective\ttaking part in an activity\tparticipating\tan active member of the club";
+    }
+    // adj 00031974
+    if sense == 6 {
+        return "adjective\tcharacterized by energetic activity\t\tan active toddler";
+    }
+    // adj 00042457
+    if sense == 7 {
+        return "adjective\texerting influence or producing a change or effect\t\tan active ingredient";
+    }
+    // adj 00035465
+    if sense == 8 {
+        return "adjective\tfull of activity or engaged in continuous activity\t\tan active seaport";
+    }
+    // adj 00927373
+    if sense == 9 {
+        return "adjective\tin operation\talive\tan active tradition";
+    }
+    ""
+}

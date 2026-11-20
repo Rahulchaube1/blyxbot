@@ -1,0 +1,21 @@
+// happen — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_happen(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00339934
+    if sense == 1 {
+        return "verb\tcome to pass\thap, go on, pass off, occur, pass, fall out, come about, take place\tWhat is happening?";
+    }
+    // verb 00344643
+    if sense == 2 {
+        return "verb\thappen, occur, or be the case in the course of events or by chance\tbefall, bechance\tIt happens that today is my birthday";
+    }
+    // verb 02593912
+    if sense == 3 {
+        return "verb\tchance to be or do something, without intention or causation\t\tI happen to have just what you need!";
+    }
+    // verb 00344174
+    if sense == 4 {
+        return "verb\tcome into being; become reality\tmaterialize, materialise\t";
+    }
+    ""
+}

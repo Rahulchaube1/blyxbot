@@ -1,0 +1,17 @@
+// medical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_medical(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02760116
+    if sense == 1 {
+        return "adjective\trelating to the study or practice of medicine\t\tthe medical profession";
+    }
+    // adj 01168988
+    if sense == 2 {
+        return "adjective\trequiring or amenable to treatment by medicine especially as opposed to surgery\t\tmedical treatment";
+    }
+    // adj 02607455
+    if sense == 3 {
+        return "adjective\tof or belonging to Aesculapius or the healing art\taesculapian\t";
+    }
+    ""
+}

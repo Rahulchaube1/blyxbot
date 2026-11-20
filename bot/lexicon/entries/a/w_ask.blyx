@@ -1,0 +1,25 @@
+// ask — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ask(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00784342
+    if sense == 1 {
+        return "verb\tinquire about\tinquire, enquire\tI asked about their special today";
+    }
+    // verb 00752493
+    if sense == 2 {
+        return "verb\tmake a request or demand for something to somebody\t\tShe asked him for a loan";
+    }
+    // verb 00784727
+    if sense == 3 {
+        return "verb\tdirect or put; seek an answer to\t\task a question";
+    }
+    // verb 00755745
+    if sense == 4 {
+        return "verb\tconsider obligatory; request and expect\trequire, expect\tAren't we asking too much of these children?";
+    }
+    // verb 00897746
+    if sense == 5 {
+        return "verb\taddress a question to and expect an answer from\t\tAsk your teacher about trigonometry";
+    }
+    ""
+}

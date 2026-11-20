@@ -1,0 +1,17 @@
+// worse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_worse(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00231252
+    if sense == 1 {
+        return "adjective\t(comparative of `bad') inferior to another in quality or condition or desirability\t\tthis road is worse than the first one we took";
+    }
+    // adv 00017077
+    if sense == 2 {
+        return "adverb\t(comparative of `ill') in a less effective or successful or desirable manner\t\the did worse on the second exam";
+    }
+    // noun 05144453
+    if sense == 3 {
+        return "noun\tsomething inferior in quality or condition or effect\t\tfor better or for worse";
+    }
+    ""
+}

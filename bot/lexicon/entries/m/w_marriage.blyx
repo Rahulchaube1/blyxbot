@@ -1,0 +1,17 @@
+// marriage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_marriage(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13963970
+    if sense == 1 {
+        return "noun\tthe state of being a married couple voluntarily joined for life (or until divorce)\tmatrimony, union, spousal relationship, wedlock\ta long and happy marriage";
+    }
+    // noun 07989373
+    if sense == 2 {
+        return "noun\ttwo people who are married to each other\tmarried couple, man and wife\this second marriage was happier than the first";
+    }
+    // noun 01036996
+    if sense == 3 {
+        return "noun\tthe act of marrying; the nuptial ceremony\twedding, marriage ceremony\ttheir marriage was conducted in the chapel";
+    }
+    ""
+}

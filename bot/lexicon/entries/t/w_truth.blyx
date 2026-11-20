@@ -1,0 +1,21 @@
+// truth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_truth(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05819453
+    if sense == 1 {
+        return "noun\ta fact that has been verified\t\tat last he knew the truth";
+    }
+    // noun 13956488
+    if sense == 2 {
+        return "noun\tconformity to reality or actuality\tthe true, verity, trueness\tthey debated the truth of the proposition";
+    }
+    // noun 06724066
+    if sense == 3 {
+        return "noun\ta true statement\ttrue statement\the told the truth";
+    }
+    // noun 04802907
+    if sense == 4 {
+        return "noun\tthe quality of being near to the true value\taccuracy\tthe lawyer questioned the truth of my account";
+    }
+    ""
+}

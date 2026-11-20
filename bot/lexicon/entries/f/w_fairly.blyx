@@ -1,0 +1,13 @@
+// fairly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fairly(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00035718
+    if sense == 1 {
+        return "adverb\tto a moderately sufficient extent or degree\treasonably, moderately, pretty, jolly, somewhat, middling, passably\the is fairly clever with computers";
+    }
+    // adv 00106759
+    if sense == 2 {
+        return "adverb\twithout favoring one party, in a fair evenhanded manner\tfair, evenhandedly\tdeal fairly with one another";
+    }
+    ""
+}

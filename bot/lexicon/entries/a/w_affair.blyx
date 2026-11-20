@@ -1,0 +1,17 @@
+// affair — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_affair(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05671325
+    if sense == 1 {
+        return "noun\ta vaguely specified concern\tmatter, thing\tit is none of your affair";
+    }
+    // noun 13931889
+    if sense == 2 {
+        return "noun\ta usually secretive or illicit sexual relationship\taffaire, intimacy, liaison, involvement, amour\t";
+    }
+    // noun 07447261
+    if sense == 3 {
+        return "noun\ta vaguely specified social event\toccasion, social occasion, function, social function\tthe party was quite an affair";
+    }
+    ""
+}

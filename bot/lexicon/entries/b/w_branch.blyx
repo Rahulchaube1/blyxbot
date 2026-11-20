@@ -1,0 +1,17 @@
+// branch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_branch(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08401248
+    if sense == 1 {
+        return "noun\ta division of some larger or more complex organization\tsubdivision, arm\ta branch of Congress";
+    }
+    // noun 13163250
+    if sense == 2 {
+        return "noun\ta division of a stem, or secondary stem arising from the main stem of a plant\t\t";
+    }
+    // noun 13913849
+    if sense == 3 {
+        return "noun\ta part of a forked or branching shape\tleg, ramification\the broke off one of the branches";
+    }
+    ""
+}

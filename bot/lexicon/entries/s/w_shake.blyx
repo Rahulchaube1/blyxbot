@@ -1,0 +1,37 @@
+// shake — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shake(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01889610
+    if sense == 1 {
+        return "verb\tmove or cause to move back and forth\tagitate\tMy hands were shaking";
+    }
+    // verb 00014034
+    if sense == 2 {
+        return "verb\tmove with or as if with a tremor\tdidder\t";
+    }
+    // verb 01891638
+    if sense == 3 {
+        return "verb\tshake or vibrate rapidly and intensively\tjudder\t";
+    }
+    // verb 01875295
+    if sense == 4 {
+        return "verb\tmove back and forth or sideways\trock, sway\t";
+    }
+    // verb 00167385
+    if sense == 5 {
+        return "verb\tundermine or cause to waver\t\t";
+    }
+    // verb 01761706
+    if sense == 6 {
+        return "verb\tstir the feelings, emotions, or peace of\tstimulate, shake up, excite, stir\t";
+    }
+    // verb 02073545
+    if sense == 7 {
+        return "verb\tget rid of\tshake off, throw off, escape from\tI couldn't shake the car that was following me";
+    }
+    // verb 00559556
+    if sense == 8 {
+        return "verb\tbring to a specified condition by or as if by shaking\t\tshake the salt out of the salt shaker";
+    }
+    ""
+}

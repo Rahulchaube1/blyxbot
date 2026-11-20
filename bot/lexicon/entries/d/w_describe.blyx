@@ -1,0 +1,21 @@
+// describe — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_describe(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00987071
+    if sense == 1 {
+        return "verb\tgive a description of\tdepict, draw\t";
+    }
+    // verb 00965035
+    if sense == 2 {
+        return "verb\tto give an account or representation of in words\treport, account\tDiscreet Italian police described it in a manner typically continental";
+    }
+    // verb 01582645
+    if sense == 3 {
+        return "verb\tmake a mark or lines on a surface\ttrace, draw, line, delineate\t";
+    }
+    // verb 00652346
+    if sense == 4 {
+        return "verb\tidentify as in botany or biology, for example\tidentify, discover, key, key out, distinguish, name\t";
+    }
+    ""
+}

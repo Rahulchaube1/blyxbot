@@ -1,0 +1,13 @@
+// police — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_police(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08209687
+    if sense == 1 {
+        return "noun\tthe force of policemen and officers\tpolice force, constabulary, law\t";
+    }
+    // verb 02454939
+    if sense == 2 {
+        return "verb\tmaintain the security of by carrying out a patrol\tpatrol\t";
+    }
+    ""
+}

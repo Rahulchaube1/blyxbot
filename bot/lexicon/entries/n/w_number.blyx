@@ -1,0 +1,53 @@
+// number — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_number(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // noun 05121418
+    if sense == 1 {
+        return "noun\tthe property possessed by a sum or total or indefinite quantity of units or individuals\tfigure\the had a number of chores to do";
+    }
+    // noun 13582013
+    if sense == 2 {
+        return "noun\ta concept of quantity involving zero and units\t\tevery number has a unique position in the sequence";
+    }
+    // verb 02645007
+    if sense == 3 {
+        return "verb\tadd up in number or quantity\ttotal, add up, come, amount\t";
+    }
+    // noun 06892016
+    if sense == 4 {
+        return "noun\ta short theatrical performance that is part of a longer program\tact, routine, turn, bit\tit was one of the best numbers he ever did";
+    }
+    // noun 06426111
+    if sense == 5 {
+        return "noun\tthe number is used in calling a particular telephone\tphone number, telephone number\the has an unlisted number";
+    }
+    // noun 06807198
+    if sense == 6 {
+        return "noun\ta symbol used to represent a number\tnumeral\t";
+    }
+    // noun 06596978
+    if sense == 7 {
+        return "noun\tone of a series published periodically\tissue\t";
+    }
+    // verb 00948853
+    if sense == 8 {
+        return "verb\tgive numbers to\t\tYou should number the pages of the thesis";
+    }
+    // noun 08480512
+    if sense == 9 {
+        return "noun\ta select company of people\t\tI hope to become one of their number before I die";
+    }
+    // noun 06425065
+    if sense == 10 {
+        return "noun\ta numeral or string of numerals that is used for identification\tidentification number\tshe refused to give them her Social Security number";
+    }
+    // noun 05096294
+    if sense == 11 {
+        return "noun\ta clothing measurement\t\ta number 13 shoe";
+    }
+    // verb 00946755
+    if sense == 12 {
+        return "verb\tenumerate\tlist\tWe must number the names of the great mathematicians";
+    }
+    ""
+}

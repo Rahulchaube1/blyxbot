@@ -1,0 +1,13 @@
+// management — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_management(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 01133281
+    if sense == 1 {
+        return "noun\tthe act of managing something\tdirection\the was given overall management of the program";
+    }
+    // noun 08381165
+    if sense == 2 {
+        return "noun\tthose in charge of running a business\t\t";
+    }
+    ""
+}

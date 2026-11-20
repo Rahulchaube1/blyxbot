@@ -1,0 +1,41 @@
+// flow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_flow(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 07405893
+    if sense == 1 {
+        return "noun\tthe motion characteristic of fluids (liquids or gases)\tflowing\t";
+    }
+    // verb 02066510
+    if sense == 2 {
+        return "verb\tmove or progress freely as if in a stream\tflux\tThe crowd flowed out of the stadium";
+    }
+    // verb 02066939
+    if sense == 3 {
+        return "verb\tmove along, of liquids\trun, feed, course\tWater flowed into the cave";
+    }
+    // noun 15277730
+    if sense == 4 {
+        return "noun\tthe amount of fluid that flows in a given time\tflow rate, rate of flow\t";
+    }
+    // noun 00329227
+    if sense == 5 {
+        return "noun\tthe act of flowing or streaming; continuous progression\tstream\t";
+    }
+    // noun 13482330
+    if sense == 6 {
+        return "noun\tany uninterrupted stream or discharge\t\t";
+    }
+    // noun 14005892
+    if sense == 7 {
+        return "noun\tsomething that resembles a flowing stream in moving continuously\tstream\tthe museum had planned carefully for the flow of visitors";
+    }
+    // noun 08461595
+    if sense == 8 {
+        return "noun\tdominant course (suggestive of running water) of successive events or ideas\tstream, current\tthe flow of thought";
+    }
+    // verb 02067689
+    if sense == 9 {
+        return "verb\tcause to flow\t\tThe artist flowed the washes on the paper";
+    }
+    ""
+}

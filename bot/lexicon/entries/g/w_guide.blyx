@@ -1,0 +1,33 @@
+// guide — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_guide(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01931768
+    if sense == 1 {
+        return "verb\tdirect the course; determine the direction of travelling\tsteer, maneuver, manoeuver, manoeuvre, direct, point, head, channelize, channelise\t";
+    }
+    // verb 01999798
+    if sense == 2 {
+        return "verb\ttake somebody somewhere\tlead, take, direct, conduct\t";
+    }
+    // verb 02439732
+    if sense == 3 {
+        return "verb\tbe a guiding or motivating force or drive\tsteer\t";
+    }
+    // noun 10741821
+    if sense == 4 {
+        return "noun\tsomeone employed to conduct others\tusher\t";
+    }
+    // noun 10151570
+    if sense == 5 {
+        return "noun\tsomeone who shows the way by leading or advising\t\t";
+    }
+    // noun 06422740
+    if sense == 6 {
+        return "noun\tsomething that offers basic information or instruction\tguidebook\t";
+    }
+    // noun 05938976
+    if sense == 7 {
+        return "noun\ta model or standard for making comparisons\ttemplate, templet\t";
+    }
+    ""
+}

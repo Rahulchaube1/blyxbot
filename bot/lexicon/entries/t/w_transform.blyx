@@ -1,0 +1,17 @@
+// transform — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_transform(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00544011
+    if sense == 1 {
+        return "verb\tsubject to a mathematical transformation\t\t";
+    }
+    // verb 00382635
+    if sense == 2 {
+        return "verb\tchange or alter in form, appearance, or nature\ttransmute, transubstantiate\tThis experience transformed her completely";
+    }
+    // verb 00381601
+    if sense == 3 {
+        return "verb\tchange in outward structure or looks\ttransmute, metamorphose\tHe transformed into a monster";
+    }
+    ""
+}

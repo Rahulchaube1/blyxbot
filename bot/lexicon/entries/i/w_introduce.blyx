@@ -1,0 +1,37 @@
+// introduce — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_introduce(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00901103
+    if sense == 1 {
+        return "verb\tcause to come to know personally\tpresent, acquaint\tintroduce the new neighbors to the community";
+    }
+    // verb 01642437
+    if sense == 2 {
+        return "verb\tbring something new to an environment\tinnovate\tA new word processor was introduced";
+    }
+    // verb 00187526
+    if sense == 3 {
+        return "verb\tintroduce\tinsert, enclose, inclose, stick in, put in\t";
+    }
+    // verb 02078591
+    if sense == 4 {
+        return "verb\tbring in a new person or object into a familiar environment\tbring in\tThe new secretary introduced a nasty rumor";
+    }
+    // verb 01618693
+    if sense == 5 {
+        return "verb\tbring in or establish in a new place or environment\t\tintroduce a rule";
+    }
+    // verb 01421622
+    if sense == 6 {
+        return "verb\tput or introduce into something\tinsert, infix, enter\t";
+    }
+    // verb 01065115
+    if sense == 7 {
+        return "verb\tbring before the public for the first time, as of an actor, song, etc.\tbring out\t";
+    }
+    // verb 00706693
+    if sense == 8 {
+        return "verb\tput before (a body)\t\tintroduce legislation";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// band — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_band(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 08240169
+    if sense == 1 {
+        return "noun\tan unofficial association of people or groups\tset, circle, lot\t";
+    }
+    // noun 08249038
+    if sense == 2 {
+        return "noun\tinstrumentalists not including string players\t\t";
+    }
+    // noun 04680465
+    if sense == 3 {
+        return "noun\ta stripe or stripes of contrasting color\tbanding, stria, striation\tchromosomes exhibit characteristic bands";
+    }
+    // noun 02784732
+    if sense == 4 {
+        return "noun\tan adornment consisting of a strip of a contrasting color or material\tbanding, stripe\t";
+    }
+    // noun 08249960
+    if sense == 5 {
+        return "noun\ta group of musicians playing popular music for dancing\tdance band, dance orchestra\t";
+    }
+    // noun 06260518
+    if sense == 6 {
+        return "noun\ta range of frequencies between two limits\t\t";
+    }
+    // noun 02784218
+    if sense == 7 {
+        return "noun\ta thin flat strip of flexible material that is worn around the body or one of the limbs (especially to decorate the body)\t\t";
+    }
+    // verb 01304342
+    if sense == 8 {
+        return "verb\tbind or tie together, as with a band\t\t";
+    }
+    ""
+}

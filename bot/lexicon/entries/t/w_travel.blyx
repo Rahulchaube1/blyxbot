@@ -1,0 +1,33 @@
+// travel — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_travel(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01835496
+    if sense == 1 {
+        return "verb\tchange location; move, travel, or proceed, also metaphorically\tgo, move, locomote\tWe travelled from Rome to Naples by bus";
+    }
+    // verb 01845720
+    if sense == 2 {
+        return "verb\tundertake a journey or trip\tjourney\t";
+    }
+    // noun 00295701
+    if sense == 3 {
+        return "noun\tthe act of going from one place to another\ttraveling, travelling\the enjoyed selling but he hated the travel";
+    }
+    // verb 01843055
+    if sense == 4 {
+        return "verb\tmake a trip for pleasure\ttrip, jaunt\t";
+    }
+    // verb 01846916
+    if sense == 5 {
+        return "verb\ttravel upon or across\tjourney\ttravel the oceans";
+    }
+    // noun 07311115
+    if sense == 6 {
+        return "noun\ta movement through space that changes the location of something\tchange of location\t";
+    }
+    // verb 01841079
+    if sense == 7 {
+        return "verb\tundergo transportation as in a vehicle\t\tWe travelled North on Rte. 508";
+    }
+    ""
+}

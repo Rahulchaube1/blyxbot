@@ -1,0 +1,17 @@
+// anger — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_anger(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 07516354
+    if sense == 1 {
+        return "noun\ta strong emotion; a feeling that is oriented toward some real or supposed grievance\tcholer, ire\t";
+    }
+    // noun 14036539
+    if sense == 2 {
+        return "noun\tthe state of being angry\tangriness\t";
+    }
+    // verb 01785971
+    if sense == 3 {
+        return "verb\tmake angry\t\tThe news angered him";
+    }
+    ""
+}

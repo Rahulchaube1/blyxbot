@@ -1,0 +1,25 @@
+// result — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_result(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 11410625
+    if sense == 1 {
+        return "noun\ta phenomenon that follows and is caused by some previous phenomenon\tconsequence, effect, outcome, event, issue, upshot\t";
+    }
+    // verb 02634265
+    if sense == 2 {
+        return "verb\tissue or terminate (in a specified way, state, etc.); end\tensue\tresult in tragedy";
+    }
+    // verb 02635659
+    if sense == 3 {
+        return "verb\thave as a result or residue\tleave, lead\t";
+    }
+    // noun 06743506
+    if sense == 4 {
+        return "noun\ta statement that solves a problem or explains how to solve the problem\tsolution, answer, resolution, solvent\the computed the result to four decimal places";
+    }
+    // noun 07292694
+    if sense == 5 {
+        return "noun\tsomething that results\tresultant, final result, outcome, termination\the listened for the results on the radio";
+    }
+    ""
+}

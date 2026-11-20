@@ -1,0 +1,13 @@
+// sensitive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sensitive(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02103481
+    if sense == 1 {
+        return "adjective\tresponsive to physical stimuli\t\ta mimosa's leaves are sensitive to touch";
+    }
+    // adj 02105990
+    if sense == 2 {
+        return "adjective\tbeing susceptible to the attitudes, feelings, or circumstances of others\t\tsensitive to the local community and its needs";
+    }
+    ""
+}

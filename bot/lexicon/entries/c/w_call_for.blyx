@@ -1,0 +1,17 @@
+// call for — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_call_for(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00752764
+    if sense == 1 {
+        return "verb\texpress the need or desire for; ask for\trequest, bespeak, quest\t";
+    }
+    // verb 02627934
+    if sense == 2 {
+        return "verb\trequire as useful, just, or proper\tnecessitate, ask, postulate, need, require, take, involve, demand\t";
+    }
+    // verb 01063695
+    if sense == 3 {
+        return "verb\trequest the participation or presence of\tinvite\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// stain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stain(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00286008
+    if sense == 1 {
+        return "verb\tcolor with a liquid dye or tint\t\tStain this table a beautiful walnut color";
+    }
+    // noun 04695176
+    if sense == 2 {
+        return "noun\ta soiled or discolored appearance\tdiscoloration, discolouration\tthe wine left a dark stain";
+    }
+    // noun 15052970
+    if sense == 3 {
+        return "noun\t(microscopy) a dye or other coloring material that is used in microscopy to make structures visible\t\t";
+    }
+    // verb 00286605
+    if sense == 4 {
+        return "verb\tproduce or leave stains\t\tRed wine stains the table cloth";
+    }
+    // noun 14498096
+    if sense == 5 {
+        return "noun\tthe state of being covered with unclean things\tdirt, filth, grime, soil, grease, grunge\t";
+    }
+    ""
+}

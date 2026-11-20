@@ -1,0 +1,29 @@
+// withdraw — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_withdraw(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01994442
+    if sense == 1 {
+        return "verb\tpull back or move away or backward\tretreat, pull away, draw back, recede, pull back, retire, move back\t";
+    }
+    // verb 02380009
+    if sense == 2 {
+        return "verb\twithdraw from active participation\tretire\t";
+    }
+    // verb 01511380
+    if sense == 3 {
+        return "verb\trelease from something that holds fast, connects, or entangles\tdisengage\t";
+    }
+    // verb 02312478
+    if sense == 4 {
+        return "verb\tcause to be returned\trecall, call in, call back\t";
+    }
+    // verb 00799076
+    if sense == 5 {
+        return "verb\ttake back what one has said\tswallow, take back, unsay\t";
+    }
+    // verb 00495998
+    if sense == 6 {
+        return "verb\tkeep away from others\tseclude, sequester, sequestrate\t";
+    }
+    ""
+}

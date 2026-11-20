@@ -1,0 +1,25 @@
+// association — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_association(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08049401
+    if sense == 1 {
+        return "noun\ta formal organization of people or groups of people\t\the joined the Modern Language Association";
+    }
+    // noun 01081628
+    if sense == 2 {
+        return "noun\tthe act of consorting with or joining with others\t\tyou cannot be convicted of criminal guilt by association";
+    }
+    // noun 14421139
+    if sense == 3 {
+        return "noun\tthe state of being connected together as in memory or imagination\t\this association of his father with being beaten was too strong to break";
+    }
+    // noun 05763916
+    if sense == 4 {
+        return "noun\tthe process of bringing ideas or events together in memory or imagination\tconnection, connexion\tconditioning is a form of learning by association";
+    }
+    // noun 13930385
+    if sense == 5 {
+        return "noun\ta social or business relationship\taffiliation, tie, tie-up\tmany close associations with England";
+    }
+    ""
+}

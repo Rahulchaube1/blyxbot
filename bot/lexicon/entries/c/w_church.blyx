@@ -1,0 +1,17 @@
+// church — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_church(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08082602
+    if sense == 1 {
+        return "noun\tone of the groups of Christians who have their own beliefs and forms of worship\tChristian church\t";
+    }
+    // noun 03028079
+    if sense == 2 {
+        return "noun\ta place for public (especially Christian) worship\tchurch building\tthe church was empty";
+    }
+    // noun 01032368
+    if sense == 3 {
+        return "noun\ta service conducted in a house of worship\tchurch service\tdon't be late for church";
+    }
+    ""
+}

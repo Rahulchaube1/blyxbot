@@ -1,0 +1,17 @@
+// promote — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_promote(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02554922
+    if sense == 1 {
+        return "verb\tcontribute to the progress or growth of\tadvance, boost, further, encourage\tI am promoting the use of computers in the classroom";
+    }
+    // verb 02397637
+    if sense == 2 {
+        return "verb\tgive a promotion to or assign to a higher position\tupgrade, advance, kick upstairs, raise, elevate\tI got promoted after many years of hard work";
+    }
+    // verb 00976653
+    if sense == 3 {
+        return "verb\tmake publicity for; try to sell (a product)\tadvertise, advertize, push\t";
+    }
+    ""
+}

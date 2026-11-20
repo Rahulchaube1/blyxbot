@@ -1,0 +1,13 @@
+// succeed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_succeed(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02524171
+    if sense == 1 {
+        return "verb\tattain success or reach a desired goal\twin, come through, bring home the bacon, deliver the goods\tThe enterprise succeeded";
+    }
+    // verb 02406585
+    if sense == 2 {
+        return "verb\tbe the successor (of)\tcome after, follow\tWill Charles succeed to the throne?";
+    }
+    ""
+}

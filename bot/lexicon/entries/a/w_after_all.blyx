@@ -1,0 +1,13 @@
+// after all — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_after_all(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00151149
+    if sense == 1 {
+        return "adverb\temphasizes something to be considered\t\tafter all, she is your boss, so invite her";
+    }
+    // adv 00151305
+    if sense == 2 {
+        return "adverb\tin spite of expectations\t\tcame to the party after all";
+    }
+    ""
+}

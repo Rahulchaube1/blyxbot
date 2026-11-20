@@ -1,0 +1,13 @@
+// chair — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_chair(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 03001627
+    if sense == 1 {
+        return "noun\ta seat for one person, with a support for the back\t\the put his coat over the back of the chair and sat down";
+    }
+    // noun 00598056
+    if sense == 2 {
+        return "noun\tthe position of professor\tprofessorship\the was awarded an endowed chair in economics";
+    }
+    ""
+}

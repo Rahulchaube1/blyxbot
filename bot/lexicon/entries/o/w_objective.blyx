@@ -1,0 +1,13 @@
+// objective — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_objective(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05981230
+    if sense == 1 {
+        return "noun\tthe goal intended to be attained (and which is believed to be attainable)\taim, object, target\t";
+    }
+    // adj 01615180
+    if sense == 2 {
+        return "adjective\tundistorted by emotion or personal bias; based on observable phenomena\tnonsubjective\tan objective appraisal";
+    }
+    ""
+}

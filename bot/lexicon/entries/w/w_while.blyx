@@ -1,0 +1,9 @@
+// while — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_while(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 15246353
+    if sense == 1 {
+        return "noun\ta period of indeterminate length (usually short) marked by some action or condition\tpiece, spell, patch\the was here for a little while";
+    }
+    ""
+}

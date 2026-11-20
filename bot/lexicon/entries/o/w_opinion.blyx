@@ -1,0 +1,25 @@
+// opinion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_opinion(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05945642
+    if sense == 1 {
+        return "noun\ta personal belief or judgment that is not founded on proof or certainty\tsentiment, persuasion, view, thought\tmy opinion differs from yours";
+    }
+    // noun 06782019
+    if sense == 2 {
+        return "noun\ta message expressing a belief about something; the expression of a belief that is held with confidence but not substantiated by positive knowledge or proof\tview\this opinions appeared frequently on the editorial page";
+    }
+    // noun 05949726
+    if sense == 3 {
+        return "noun\ta belief or sentiment shared by most people; the voice of the people\tpublic opinion, popular opinion, vox populi\the asked for a poll of public opinion";
+    }
+    // noun 06551784
+    if sense == 4 {
+        return "noun\tthe legal document stating the reasons for a judicial decision\tlegal opinion, judgment, judgement\topinions are usually written by a single judge";
+    }
+    // noun 01191158
+    if sense == 5 {
+        return "noun\tthe reason for a court's judgment (as opposed to the decision itself)\truling\t";
+    }
+    ""
+}

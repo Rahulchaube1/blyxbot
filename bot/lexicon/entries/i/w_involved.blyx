@@ -1,0 +1,17 @@
+// involved — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_involved(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01514827
+    if sense == 1 {
+        return "adjective\tconnected by participation or association or use\t\twe accomplished nothing, simply because of the large number of people involved";
+    }
+    // adj 00868603
+    if sense == 2 {
+        return "adjective\tentangled or hindered as if e.g. in mire\tmired\tthe difficulties in which the question is involved";
+    }
+    // adj 00158332
+    if sense == 3 {
+        return "adjective\temotionally involved\t\t";
+    }
+    ""
+}

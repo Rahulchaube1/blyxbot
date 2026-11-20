@@ -1,0 +1,29 @@
+// program — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_program(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05898568
+    if sense == 1 {
+        return "noun\ta series of steps to be carried out or goals to be accomplished\tplan, programme\t";
+    }
+    // noun 05899087
+    if sense == 2 {
+        return "noun\ta system of projects or services intended to meet a public need\tprogramme\the proposed an elaborate program of public works";
+    }
+    // noun 06619428
+    if sense == 3 {
+        return "noun\ta radio or television show\tbroadcast, programme\tdid you see his program last night?";
+    }
+    // verb 00795264
+    if sense == 4 {
+        return "verb\tarrange a program of or for\tprogramme\tprogram the 80th birthday party";
+    }
+    // noun 06501311
+    if sense == 5 {
+        return "noun\ta document stating the aims and principles of a political party\tplatform, political platform, political program\tthey won the election even though they offered no positive program";
+    }
+    // verb 01747717
+    if sense == 6 {
+        return "verb\twrite a computer program\tprogramme\t";
+    }
+    ""
+}

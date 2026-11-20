@@ -1,0 +1,21 @@
+// pain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pain(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 14322699
+    if sense == 1 {
+        return "noun\ta symptom of some physical hurt or disorder\thurting\tthe patient developed severe pain and distension";
+    }
+    // noun 07494363
+    if sense == 2 {
+        return "noun\temotional distress; a fundamental feeling that people try to avoid\tpainfulness\tthe pain of loneliness";
+    }
+    // noun 05724694
+    if sense == 3 {
+        return "noun\ta somatic sensation of acute discomfort\tpain sensation, painful sensation\tas the intensity increased the sensation changed from tickle to pain";
+    }
+    // verb 00070816
+    if sense == 4 {
+        return "verb\tcause bodily suffering to and make sick or indisposed\ttrouble, ail\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// patient — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_patient(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 10405694
+    if sense == 1 {
+        return "noun\ta person who requires medical care\t\tthe number of emergency patients has grown rapidly";
+    }
+    // adj 01735736
+    if sense == 2 {
+        return "adjective\tenduring trying circumstances with even temper or characterized by such endurance\t\ta patient smile";
+    }
+    ""
+}

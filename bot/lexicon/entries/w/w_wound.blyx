@@ -1,0 +1,17 @@
+// wound — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wound(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14298815
+    if sense == 1 {
+        return "noun\tan injury to living tissue (especially an injury involving a cut or break in the skin)\tlesion\t";
+    }
+    // verb 00069879
+    if sense == 2 {
+        return "verb\tcause injuries or bodily harm to\tinjure\t";
+    }
+    // noun 07340249
+    if sense == 3 {
+        return "noun\ta casualty to military personnel resulting from combat\tinjury, combat injury\t";
+    }
+    ""
+}

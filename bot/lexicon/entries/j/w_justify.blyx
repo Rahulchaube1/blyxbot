@@ -1,0 +1,17 @@
+// justify — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_justify(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00896803
+    if sense == 1 {
+        return "verb\tshow to be reasonable or provide adequate ground for\twarrant\tThe end justifies the means";
+    }
+    // verb 00896141
+    if sense == 2 {
+        return "verb\tshow to be right by providing justification or proof\tvindicate\t";
+    }
+    // verb 00894738
+    if sense == 3 {
+        return "verb\tdefend, explain, clear away, or make excuses for by reasoning\tapologize, apologise, excuse, rationalize, rationalise\t";
+    }
+    ""
+}

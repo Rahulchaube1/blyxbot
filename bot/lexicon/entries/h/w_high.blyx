@@ -1,0 +1,37 @@
+// high — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_high(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 01210854
+    if sense == 1 {
+        return "adjective\tgreater than normal in degree or intensity or amount\t\ta high temperature";
+    }
+    // adj 01204557
+    if sense == 2 {
+        return "adjective\t(literal meaning) being at or having a relatively great or specific elevation or upward extension (sometimes used in combinations like `knee-high')\t\ta high mountain";
+    }
+    // adj 02339120
+    if sense == 3 {
+        return "adjective\tstanding above others in quality or position\teminent\tpeople in high places";
+    }
+    // adv 00356957
+    if sense == 4 {
+        return "adverb\tat a great altitude\thigh up\the climbed high on the ladder";
+    }
+    // adj 01213197
+    if sense == 5 {
+        return "adjective\tused of sounds and voices; high in pitch or frequency\thigh-pitched\t";
+    }
+    // noun 05097536
+    if sense == 6 {
+        return "noun\ta lofty level or position or degree\t\tsummer temperatures reached an all-time high";
+    }
+    // adj 00705498
+    if sense == 7 {
+        return "adjective\thappy and excited and energetic\tin high spirits\t";
+    }
+    // adv 00357139
+    if sense == 8 {
+        return "adverb\tin or to a high position, amount, or degree\t\tprices have gone up far too high";
+    }
+    ""
+}

@@ -1,0 +1,45 @@
+// train — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_train(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 04468005
+    if sense == 1 {
+        return "noun\tpublic transport provided by a line of railway cars coupled together and drawn by a locomotive\trailroad train\texpress trains don't stop at Princeton Junction";
+    }
+    // verb 00603298
+    if sense == 2 {
+        return "verb\tcreate by training and teaching\tdevelop, prepare, educate\tThe old master is training world-class violinists";
+    }
+    // verb 00602805
+    if sense == 3 {
+        return "verb\tundergo training or instruction in preparation for a particular role, function, or profession\tprepare\tShe is training to be a teacher";
+    }
+    // verb 02553697
+    if sense == 4 {
+        return "verb\tdevelop (children's) behavior by instruction and practice; especially to teach self-control\tdiscipline, check, condition\tIs this dog trained?";
+    }
+    // verb 02387034
+    if sense == 5 {
+        return "verb\teducate for a future role or function\tprepare, groom\tThey trained him to be a warrior";
+    }
+    // noun 08459648
+    if sense == 6 {
+        return "noun\ta sequentially ordered set of things or events or ideas in which each successive member is related to the preceding\tstring\ttrain of mourners";
+    }
+    // verb 02388403
+    if sense == 7 {
+        return "verb\tteach or refine to be discriminative in taste or judgment\teducate, school, cultivate, civilize, civilise\tTrain your tastebuds";
+    }
+    // verb 01151110
+    if sense == 8 {
+        return "verb\tpoint or cause to go (blows, weapons, or objects such as photographic equipment) towards\taim, take, take aim, direct\tHe trained his gun on the burglar";
+    }
+    // verb 00833702
+    if sense == 9 {
+        return "verb\tteach and supervise (someone); act as a trainer or coach (to), as in sports\tcoach\tHe is training our Olympic team";
+    }
+    // verb 00100044
+    if sense == 10 {
+        return "verb\texercise in order to prepare for an event or competition\t\tShe is training for the Olympics";
+    }
+    ""
+}

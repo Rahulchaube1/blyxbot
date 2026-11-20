@@ -1,0 +1,17 @@
+// alter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_alter(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00126264
+    if sense == 1 {
+        return "verb\tcause to change; make different; cause a transformation\tchange, modify\tThe advent of the automobile may have altered the growth pattern of the city";
+    }
+    // verb 00123170
+    if sense == 2 {
+        return "verb\tbecome different in some particular way, without permanently losing one's or its former characteristics or essence\tchange, vary\t";
+    }
+    // verb 01667132
+    if sense == 3 {
+        return "verb\tmake an alteration to\t\tThis dress needs to be altered";
+    }
+    ""
+}

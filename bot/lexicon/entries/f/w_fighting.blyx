@@ -1,0 +1,13 @@
+// fighting — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fighting(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 01170962
+    if sense == 1 {
+        return "noun\tthe act of fighting; any contest or struggle\tfight, combat, scrap\tthere was fighting in the streets";
+    }
+    // adj 01660444
+    if sense == 2 {
+        return "adjective\tengaged in or ready for military or naval operations\tactive, combat-ready\treview the fighting forces";
+    }
+    ""
+}

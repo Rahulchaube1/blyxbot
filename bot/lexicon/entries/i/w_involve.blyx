@@ -1,0 +1,25 @@
+// involve — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_involve(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02677097
+    if sense == 1 {
+        return "verb\tconnect closely and often incriminatingly\taffect, regard\t";
+    }
+    // verb 02677567
+    if sense == 2 {
+        return "verb\tengage as a participant\t\tDon't involve me in your family affairs!";
+    }
+    // verb 02636132
+    if sense == 3 {
+        return "verb\thave as a necessary feature\timply\tThis decision involves many changes";
+    }
+    // verb 02627934
+    if sense == 4 {
+        return "verb\trequire as useful, just, or proper\tnecessitate, ask, postulate, need, require, take, call for, demand\t";
+    }
+    // verb 02633218
+    if sense == 5 {
+        return "verb\tcontain as a part\t\tDinner at Joe's always involves at least six courses";
+    }
+    ""
+}

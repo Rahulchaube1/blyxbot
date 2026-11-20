@@ -1,0 +1,25 @@
+// flag — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_flag(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 03354903
+    if sense == 1 {
+        return "noun\temblem usually consisting of a rectangular piece of cloth of distinctive design\t\t";
+    }
+    // noun 06493158
+    if sense == 2 {
+        return "noun\ta listing printed in all issues of a newspaper or magazine (usually on the editorial page) that gives the name of the publication and the names of the editorial staff, etc.\tmasthead\t";
+    }
+    // noun 12411922
+    if sense == 3 {
+        return "noun\tplants with sword-shaped leaves and erect stalks bearing bright-colored flowers composed of three petals and three drooping sepals\tiris, fleur-de-lis, sword lily\t";
+    }
+    // verb 01040550
+    if sense == 4 {
+        return "verb\tcommunicate or signal with a flag\t\t";
+    }
+    // verb 00511040
+    if sense == 5 {
+        return "verb\tprovide with a flag\t\tFlag this file so that I can recognize it immediately";
+    }
+    ""
+}

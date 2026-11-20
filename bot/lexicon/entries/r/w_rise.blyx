@@ -1,0 +1,93 @@
+// rise — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rise(sense: i64) -> str {
+    if sense == 0 { return "22"; }
+    // verb 01968569
+    if sense == 1 {
+        return "verb\tmove upward\tlift, arise, move up, go up, come up, uprise\t";
+    }
+    // verb 00155143
+    if sense == 2 {
+        return "verb\tincrease in value or to a higher point\tgo up, climb\t";
+    }
+    // verb 01983264
+    if sense == 3 {
+        return "verb\trise to one's feet\tarise, uprise, get up, stand up\t";
+    }
+    // noun 07324917
+    if sense == 4 {
+        return "noun\ta growth in strength or number or importance\t\t";
+    }
+    // verb 02696801
+    if sense == 5 {
+        return "verb\trise up\tlift, rear\t";
+    }
+    // verb 01990281
+    if sense == 6 {
+        return "verb\tcome to the surface\tsurface, come up, rise up\t";
+    }
+    // verb 02624263
+    if sense == 7 {
+        return "verb\tcome into existence; take on form or shape\toriginate, arise, develop, uprise, spring up, grow\t";
+    }
+    // verb 01969779
+    if sense == 8 {
+        return "verb\tmove to a better position in life or to a better job\tascend, move up\t";
+    }
+    // verb 00433232
+    if sense == 9 {
+        return "verb\tgo up or advance\twax, mount, climb\t";
+    }
+    // verb 00432436
+    if sense == 10 {
+        return "verb\tbecome more extreme\theighten\t";
+    }
+    // verb 00018158
+    if sense == 11 {
+        return "verb\tget up and out of bed\tget up, turn out, arise, uprise\t";
+    }
+    // noun 00324384
+    if sense == 12 {
+        return "noun\tthe act of changing location in an upward direction\tascent, ascension, ascending\t";
+    }
+    // verb 00155547
+    if sense == 13 {
+        return "verb\trise in rank or status\tjump, climb up\t";
+    }
+    // verb 01818116
+    if sense == 14 {
+        return "verb\tbecome heartened or elated\t\t";
+    }
+    // verb 01155545
+    if sense == 15 {
+        return "verb\texert oneself to meet a challenge\t\trise to a challenge";
+    }
+    // noun 09206985
+    if sense == 16 {
+        return "noun\tan upward slope or grade (as in a road)\tascent, acclivity, raise, climb, upgrade\tthe car couldn't make it up the rise";
+    }
+    // noun 07445480
+    if sense == 17 {
+        return "noun\ta movement upward\trising, ascent, ascension\tthey cheered the rise of the hot-air balloon";
+    }
+    // noun 05110185
+    if sense == 18 {
+        return "noun\tthe amount a salary is increased\traise, wage hike, hike, wage increase, salary increase\t";
+    }
+    // noun 05068918
+    if sense == 19 {
+        return "noun\tthe property possessed by a slope or surface that rises\tupgrade, rising slope\t";
+    }
+    // verb 02583139
+    if sense == 20 {
+        return "verb\ttake part in a rebellion; renounce a former allegiance\trebel, arise, rise up\t";
+    }
+    // verb 01983134
+    if sense == 21 {
+        return "verb\tincrease in volume\tprove\t";
+    }
+    // verb 01970348
+    if sense == 22 {
+        return "verb\tcome up, of celestial bodies\tcome up, uprise, ascend\tThe sun also rises";
+    }
+    ""
+}

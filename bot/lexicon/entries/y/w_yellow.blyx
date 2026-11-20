@@ -1,0 +1,25 @@
+// yellow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_yellow(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 00385756
+    if sense == 1 {
+        return "adjective\tof the color intermediate between green and orange in the color spectrum; of something resembling the color of an egg yolk\tyellowish, xanthous\t";
+    }
+    // noun 04965661
+    if sense == 2 {
+        return "noun\tyellow color or pigment; the chromatic color resembling the hue of sunflowers or ripe lemons\tyellowness\t";
+    }
+    // verb 00289840
+    if sense == 3 {
+        return "verb\tturn yellow\t\tThe pages of the book began to yellow";
+    }
+    // adj 00265314
+    if sense == 4 {
+        return "adjective\teasily frightened\tchicken, chickenhearted, lily-livered, white-livered, yellow-bellied\t";
+    }
+    // adj 01640729
+    if sense == 5 {
+        return "adjective\tchanged to a yellowish color by age\tyellowed\tyellowed parchment";
+    }
+    ""
+}

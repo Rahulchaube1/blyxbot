@@ -1,0 +1,13 @@
+// rifle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rifle(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 04090263
+    if sense == 1 {
+        return "noun\ta shoulder firearm with a long barrel and a rifled bore\t\the lifted the rifle to his shoulder and fired";
+    }
+    // verb 02344568
+    if sense == 2 {
+        return "verb\tsteal goods; take as spoils\tplunder, despoil, loot, reave, strip, ransack, pillage, foray\t";
+    }
+    ""
+}

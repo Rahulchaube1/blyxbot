@@ -1,0 +1,41 @@
+// square — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_square(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 13878634
+    if sense == 1 {
+        return "noun\t(geometry) a plane rectangle with four equal sides and four right angles; a four-sided regular polygon\tfoursquare\tyou can compute the area of a square if you know the length of its sides";
+    }
+    // adj 02043217
+    if sense == 2 {
+        return "adjective\thaving four equal sides and four right angles or forming a right angle\t\ta square peg in a round hole";
+    }
+    // verb 00145448
+    if sense == 3 {
+        return "verb\tmake square\tsquare up\tSquare the circle";
+    }
+    // noun 13731021
+    if sense == 4 {
+        return "noun\tthe product of two equal terms\tsecond power\tgravity is inversely proportional to the square of the distance";
+    }
+    // noun 08619620
+    if sense == 5 {
+        return "noun\tan open area at the meeting of two or more streets\tpublic square\t";
+    }
+    // verb 00640136
+    if sense == 6 {
+        return "verb\traise to the second power\t\t";
+    }
+    // adv 00052026
+    if sense == 7 {
+        return "adverb\tin a straight direct way\tsquarely\tran square into me";
+    }
+    // verb 02659656
+    if sense == 8 {
+        return "verb\tcause to match, as of ideas or acts\t\t";
+    }
+    // verb 01987493
+    if sense == 9 {
+        return "verb\tposition so as to be square\t\tHe squared his shoulders";
+    }
+    ""
+}

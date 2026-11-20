@@ -1,0 +1,37 @@
+// slip — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_slip(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01888295
+    if sense == 1 {
+        return "verb\tmove stealthily\tsteal\tThe ship slipped away in the darkness";
+    }
+    // verb 00189669
+    if sense == 2 {
+        return "verb\tinsert inconspicuously or quickly or quietly\t\tHe slipped some money into the waiter's hand";
+    }
+    // verb 01870275
+    if sense == 3 {
+        return "verb\tmove obliquely or sideways, usually in an uncontrolled manner\tskid, slue, slew, slide\t";
+    }
+    // noun 00076196
+    if sense == 4 {
+        return "noun\ta socially awkward or tactless act\tfaux pas, gaffe, solecism, gaucherie\t";
+    }
+    // verb 00204391
+    if sense == 5 {
+        return "verb\tget worse\tdrop off, drop away, fall away\tMy grades are slipping";
+    }
+    // verb 02076280
+    if sense == 6 {
+        return "verb\tmove smoothly and easily\t\tthe bolt slipped into place";
+    }
+    // noun 00073828
+    if sense == 7 {
+        return "noun\ta minor inadvertent mistake usually observed in speech or writing or in small accidents or memory lapses etc.\tslip-up, miscue, parapraxis\t";
+    }
+    // verb 00617748
+    if sense == 8 {
+        return "verb\tto make a mistake or be incorrect\terr, mistake\t";
+    }
+    ""
+}

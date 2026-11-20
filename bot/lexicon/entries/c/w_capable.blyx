@@ -1,0 +1,25 @@
+// capable — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_capable(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 00306314
+    if sense == 1 {
+        return "adjective\t(usually followed by `of') having capacity or ability\t\tcapable of winning";
+    }
+    // adj 02361540
+    if sense == 2 {
+        return "adjective\tpossibly accepting or permitting\topen, subject\ta passage capable of misinterpretation";
+    }
+    // adj 00308015
+    if sense == 3 {
+        return "adjective\t(followed by `of') having the temperament or inclination for\t\tno one believed her capable of murder";
+    }
+    // adj 00051373
+    if sense == 4 {
+        return "adjective\thaving the requisite qualities for\tadequate to, equal to, up to\t";
+    }
+    // adj 00510348
+    if sense == 5 {
+        return "adjective\thave the skills and qualifications to do things well\table\ta capable administrator";
+    }
+    ""
+}

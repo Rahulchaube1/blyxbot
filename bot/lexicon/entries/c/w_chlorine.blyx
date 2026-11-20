@@ -1,0 +1,9 @@
+// chlorine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_chlorine(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 14634591
+    if sense == 1 {
+        return "noun\ta common nonmetallic element belonging to the halogens; best known as a heavy yellow irritating toxic gas; used to purify water and as a bleaching agent and disinfectant; occurs naturally only as a salt (as in sea water)\tCl, atomic number 17\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// schedule — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_schedule(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00678282
+    if sense == 1 {
+        return "verb\tplan for an activity or event\t\tI've scheduled a concert next week";
+    }
+    // noun 05910940
+    if sense == 2 {
+        return "noun\ta temporally organized plan for matters to be attended to\tagenda, docket\t";
+    }
+    // noun 06495328
+    if sense == 3 {
+        return "noun\tan ordered list of times at which things are planned to occur\t\t";
+    }
+    // verb 00794981
+    if sense == 4 {
+        return "verb\tmake a schedule; plan the time and place for events\t\tI scheduled an exam for this afternoon";
+    }
+    ""
+}

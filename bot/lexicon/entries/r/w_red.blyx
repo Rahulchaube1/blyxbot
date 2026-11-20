@@ -1,0 +1,29 @@
+// red — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_red(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 00381097
+    if sense == 1 {
+        return "adjective\tof a color at the end of the color spectrum (next to orange); resembling the color of blood or cherries or tomatoes or rubies\treddish, ruddy, blood-red, carmine, cerise, cherry, cherry-red, crimson, ruby, ruby-red, scarlet\t";
+    }
+    // noun 04962784
+    if sense == 2 {
+        return "noun\tred color or pigment; the chromatic color resembling the hue of blood\tredness\t";
+    }
+    // adj 00248560
+    if sense == 3 {
+        return "adjective\tcharacterized by violence or bloodshed\tcrimson, violent\tconvulsed with red rage";
+    }
+    // noun 09405949
+    if sense == 4 {
+        return "noun\ta tributary of the Mississippi River that flows eastward from Texas along the southern boundary of Oklahoma and through Louisiana\tRed River\t";
+    }
+    // adj 00395626
+    if sense == 5 {
+        return "adjective\t(especially of the face) reddened or suffused with or as if with blood from emotion or exertion\tcrimson, reddened, red-faced, flushed\tturned red from exertion";
+    }
+    // noun 09863749
+    if sense == 6 {
+        return "noun\temotionally charged terms used to refer to extreme radicals or revolutionaries\tBolshevik, Marxist, bolshie, bolshy\t";
+    }
+    ""
+}

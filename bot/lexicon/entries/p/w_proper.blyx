@@ -1,0 +1,21 @@
+// proper — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_proper(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01878466
+    if sense == 1 {
+        return "adjective\tmarked by suitability or rightness or appropriateness\t\tproper medical treatment";
+    }
+    // adj 01938322
+    if sense == 2 {
+        return "adjective\thaving all the qualities typical of the thing specified\t\twanted a proper dinner; not just a snack";
+    }
+    // adj 01104889
+    if sense == 3 {
+        return "adjective\tlimited to the thing specified\t\tthe city proper";
+    }
+    // adj 00135455
+    if sense == 4 {
+        return "adjective\tappropriate for a condition or purpose or occasion or a person's character, needs\tright\teverything in its proper place";
+    }
+    ""
+}

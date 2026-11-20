@@ -1,0 +1,29 @@
+// liberal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_liberal(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 10256756
+    if sense == 1 {
+        return "noun\ta person who favors a political philosophy of progress and reform and the protection of civil liberties\tliberalist, progressive\t";
+    }
+    // adj 00286837
+    if sense == 2 {
+        return "adjective\tshowing or characterized by broad-mindedness\tbroad, large-minded, tolerant\ta liberal newspaper";
+    }
+    // adj 02031473
+    if sense == 3 {
+        return "adjective\thaving political or social views favoring reform and progress\t\t";
+    }
+    // adj 00575230
+    if sense == 4 {
+        return "adjective\ttolerant of change; not bound by authoritarianism, orthodoxy, or tradition\t\t";
+    }
+    // adj 01111418
+    if sense == 5 {
+        return "adjective\tgiven or giving freely\tbig, bighearted, bounteous, bountiful, freehanded, handsome, giving, openhanded\ta liberal backer of the arts";
+    }
+    // noun 10257084
+    if sense == 6 {
+        return "noun\ta person who favors an economic theory of laissez-faire and self-regulating markets\t\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// frequency — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_frequency(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 15278281
+    if sense == 1 {
+        return "noun\tthe number of occurrences within a given time period\tfrequence, oftenness\tthe frequency of modulation was 40 cycles per second";
+    }
+    // noun 13821570
+    if sense == 2 {
+        return "noun\tthe ratio of the number of observations in a statistical category to the total number of observations\trelative frequency\t";
+    }
+    // noun 13598237
+    if sense == 3 {
+        return "noun\tthe number of observations in a given statistical category\tabsolute frequency\t";
+    }
+    ""
+}

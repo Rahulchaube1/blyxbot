@@ -1,0 +1,33 @@
+// guard — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_guard(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 10150071
+    if sense == 1 {
+        return "noun\ta person who keeps watch over something or someone\t\t";
+    }
+    // verb 02456031
+    if sense == 2 {
+        return "verb\tto keep watch over\t\tthere would be men guarding the horses";
+    }
+    // verb 01129337
+    if sense == 3 {
+        return "verb\twatch over or shield from danger or harm; protect\tward\tguard my possessions while I'm away";
+    }
+    // noun 10149720
+    if sense == 4 {
+        return "noun\tthe person who plays that position on a football team\t\tthe left guard was injured on the play";
+    }
+    // noun 03464467
+    if sense == 5 {
+        return "noun\ta device designed to prevent injury or accidents\tsafety, safety device\t";
+    }
+    // verb 01129876
+    if sense == 6 {
+        return "verb\tprotect against a challenge or attack\tdefend, hold\t";
+    }
+    // noun 05082222
+    if sense == 7 {
+        return "noun\ta posture of defence in boxing or fencing\t\tkeep your guard up";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// realize — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_realize(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00728617
+    if sense == 1 {
+        return "verb\tbe fully aware or cognizant of\trecognize, recognise, realise, agnize, agnise\t";
+    }
+    // verb 00591115
+    if sense == 2 {
+        return "verb\tperceive (an idea or situation) mentally\tunderstand, realise, see\tDoes she realize how important this decision is?";
+    }
+    // verb 01644746
+    if sense == 3 {
+        return "verb\tmake real or concrete; give reality or substance to\trealise, actualize, actualise, substantiate\t";
+    }
+    // verb 02289295
+    if sense == 4 {
+        return "verb\tearn on some commercial or business transaction; earn as salary or wages\tgain, take in, clear, make, earn, realise, pull in, bring in\t";
+    }
+    ""
+}

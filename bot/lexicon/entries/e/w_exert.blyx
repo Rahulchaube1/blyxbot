@@ -1,0 +1,17 @@
+// exert — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_exert(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01166093
+    if sense == 1 {
+        return "verb\tput to use\texercise\texert one's power or influence";
+    }
+    // verb 02204564
+    if sense == 2 {
+        return "verb\thave and exercise\twield, maintain\t";
+    }
+    // verb 02371811
+    if sense == 3 {
+        return "verb\tmake a great effort at a mental or physical task\t\texert oneself";
+    }
+    ""
+}

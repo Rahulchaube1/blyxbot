@@ -1,0 +1,13 @@
+// shooting — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shooting(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00122661
+    if sense == 1 {
+        return "noun\tthe act of firing a projectile\tshot\this shooting was slow but accurate";
+    }
+    // noun 00225150
+    if sense == 2 {
+        return "noun\tkilling someone by gunfire\t\twhen the shooting stopped there were three dead bodies";
+    }
+    ""
+}

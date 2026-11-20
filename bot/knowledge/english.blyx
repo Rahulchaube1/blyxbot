@@ -1,0 +1,116 @@
+// Adapted from PyBot’s bot/knowledge/language.py, Apache-2.0.
+pub fn word_choice(term: str) -> str {
+    if term == "angry" { return "Cross, annoyed, furious, irritated, livid. Cross is the mild everyday word, annoyed and irritated are about a thing, and furious and livid are the top end."; }
+    if term == "bad" { return "Poor, weak, awful, dreadful, rubbish. Poor and weak are the calm written ones; awful and rubbish are how people say it out loud."; }
+    if term == "beautiful" { return "Lovely, stunning, gorgeous, striking, handsome. Beautiful is the safe one, stunning is a reaction, and handsome works for a building as well as a face."; }
+    if term == "big" { return "Large, huge, enormous, vast, sizeable. Large is neutral and fits writing; huge and enormous are the spoken ones, and vast is for space rather than a thing."; }
+    if term == "brave" { return "Courageous, bold, gutsy, plucky, fearless. Courageous is the formal one, bold is about a decision, and gutsy is doing it while scared."; }
+    if term == "busy" { return "Flat out, rushed, swamped, hectic, tied up. Flat out and swamped are the spoken ones, hectic is about the day, and tied up is the polite one."; }
+    if term == "clever" { return "Bright, sharp, smart, inventive, quick. Bright and smart are the everyday ones, sharp is fast on the uptake, and inventive is about ideas."; }
+    if term == "congratulations" { return "Well done, nice one, many congratulations, thrilled for you. Well done is for effort, congratulations for the news itself."; }
+    if term == "delicious" { return "Tasty, mouthwatering, lovely, moreish, scrumptious. Tasty is the everyday one, mouthwatering is for how it looks, and moreish means you want more of it."; }
+    if term == "difficult" { return "Hard, tricky, demanding, awkward, challenging. Tricky is a puzzle, demanding is effort, and awkward is a person or a corner rather than a task."; }
+    if term == "easy" { return "Simple, straightforward, effortless, quick, painless. Simple is about the steps, straightforward is about the instructions, and effortless is how it felt."; }
+    if term == "funny" { return "Amusing, comical, hilarious, witty, odd. Witty is clever, hilarious is loud, and odd is the other meaning of funny."; }
+    if term == "good" { return "Fine, solid, strong, decent, excellent. Fine is faint praise, decent is a real compliment in speech, and excellent is for something you would single out."; }
+    if term == "good luck" { return "Best of luck, all the best, fingers crossed, break a leg. Fingers crossed is the friendly one, and break a leg is only for performers."; }
+    if term == "great" { return "Excellent, brilliant, superb, terrific, first-rate. Brilliant is the British spoken one, superb is the calm written one, and terrific is louder."; }
+    if term == "happy" { return "Glad, cheerful, pleased, content, delighted. Glad is the everyday one, content means quietly satisfied, and delighted is a big thing."; }
+    if term == "hungry" { return "Starving, peckish, famished, ravenous. Peckish is a bit, starving is an exaggeration everyone uses, and ravenous is the real thing."; }
+    if term == "i dont know" { return "I'm not sure, I'm not certain, I couldn't say, I'd have to check. I'd have to check is the one that keeps you honest without sounding helpless."; }
+    if term == "important" { return "Key, vital, crucial, significant, essential. Significant is the calm report word; crucial and essential mean it cannot be left out."; }
+    if term == "interesting" { return "Intriguing, absorbing, fascinating, notable, worth a look. Absorbing means it held your attention, fascinating is stronger, and notable is the neutral written one."; }
+    if term == "nice" { return "Kind, friendly, thoughtful, pleasant, lovely. Kind and thoughtful are about what someone did; pleasant and lovely are about how something felt."; }
+    if term == "no" { return "Not this time, I can't, I'd rather not, that doesn't work for me. I'd rather not is the kindest firm one, and adding a reason of one clause is plenty."; }
+    if term == "quick" { return "Fast, swift, speedy, brisk, prompt. Fast is about speed, brisk is a pace you set, and prompt means on time."; }
+    if term == "sad" { return "Unhappy, down, miserable, low, gutted. Down and low are for a flat week, miserable and gutted for something that has actually happened."; }
+    if term == "said" { return "Said, asked, replied, muttered, shouted, whispered. Said is invisible and usually the right word - save the others for the two or three places where how it was said matters."; }
+    if term == "scared" { return "Frightened, afraid, nervous, anxious, terrified. Nervous is before, frightened is now, and terrified is the extreme of either."; }
+    if term == "small" { return "Little, tiny, slight, compact, minor. Tiny is smaller than little, and minor is for importance rather than size."; }
+    if term == "sorry" { return "I apologise, my apologies, I'm sorry about that, excuse me. I apologise is the written one for a mistake, and sorry is warmer when you mean it."; }
+    if term == "thank you" { return "Thanks, many thanks, thank you so much, I really appreciate it, much appreciated. Thanks is fine in a message and the longer ones belong in a card or after a real favour."; }
+    if term == "tired" { return "Weary, worn out, exhausted, drained, sleepy. Sleepy means ready for bed, exhausted means past it, and drained is the one after a hard week."; }
+    ""
+}
+
+// Base form -> simple past and past participle. Include both standard forms of be and get.
+pub fn irregular_forms(term: str) -> str {
+    if term == "be" { return "was / were|been"; }
+    if term == "become" { return "became|become"; }
+    if term == "begin" { return "began|begun"; }
+    if term == "bet" { return "bet|bet"; }
+    if term == "break" { return "broke|broken"; }
+    if term == "bring" { return "brought|brought"; }
+    if term == "build" { return "built|built"; }
+    if term == "burst" { return "burst|burst"; }
+    if term == "buy" { return "bought|bought"; }
+    if term == "cast" { return "cast|cast"; }
+    if term == "catch" { return "caught|caught"; }
+    if term == "choose" { return "chose|chosen"; }
+    if term == "come" { return "came|come"; }
+    if term == "cost" { return "cost|cost"; }
+    if term == "cut" { return "cut|cut"; }
+    if term == "do" { return "did|done"; }
+    if term == "drink" { return "drank|drunk"; }
+    if term == "drive" { return "drove|driven"; }
+    if term == "eat" { return "ate|eaten"; }
+    if term == "fall" { return "fell|fallen"; }
+    if term == "feel" { return "felt|felt"; }
+    if term == "fight" { return "fought|fought"; }
+    if term == "find" { return "found|found"; }
+    if term == "flee" { return "fled|fled"; }
+    if term == "fly" { return "flew|flown"; }
+    if term == "forget" { return "forgot|forgotten"; }
+    if term == "get" { return "got|got / gotten"; }
+    if term == "give" { return "gave|given"; }
+    if term == "go" { return "went|gone"; }
+    if term == "grow" { return "grew|grown"; }
+    if term == "have" { return "had|had"; }
+    if term == "hear" { return "heard|heard"; }
+    if term == "hide" { return "hid|hidden"; }
+    if term == "hit" { return "hit|hit"; }
+    if term == "hold" { return "held|held"; }
+    if term == "hurt" { return "hurt|hurt"; }
+    if term == "keep" { return "kept|kept"; }
+    if term == "know" { return "knew|known"; }
+    if term == "leave" { return "left|left"; }
+    if term == "let" { return "let|let"; }
+    if term == "lose" { return "lost|lost"; }
+    if term == "make" { return "made|made"; }
+    if term == "meet" { return "met|met"; }
+    if term == "pay" { return "paid|paid"; }
+    if term == "put" { return "put|put"; }
+    if term == "quit" { return "quit|quit"; }
+    if term == "read" { return "read|read"; }
+    if term == "ride" { return "rode|ridden"; }
+    if term == "ring" { return "rang|rung"; }
+    if term == "rise" { return "rose|risen"; }
+    if term == "run" { return "ran|run"; }
+    if term == "say" { return "said|said"; }
+    if term == "see" { return "saw|seen"; }
+    if term == "sell" { return "sold|sold"; }
+    if term == "send" { return "sent|sent"; }
+    if term == "set" { return "set|set"; }
+    if term == "shut" { return "shut|shut"; }
+    if term == "sing" { return "sang|sung"; }
+    if term == "sit" { return "sat|sat"; }
+    if term == "sleep" { return "slept|slept"; }
+    if term == "speak" { return "spoke|spoken"; }
+    if term == "spend" { return "spent|spent"; }
+    if term == "split" { return "split|split"; }
+    if term == "spread" { return "spread|spread"; }
+    if term == "stand" { return "stood|stood"; }
+    if term == "steal" { return "stole|stolen"; }
+    if term == "swim" { return "swam|swum"; }
+    if term == "take" { return "took|taken"; }
+    if term == "teach" { return "taught|taught"; }
+    if term == "tell" { return "told|told"; }
+    if term == "think" { return "thought|thought"; }
+    if term == "throw" { return "threw|thrown"; }
+    if term == "understand" { return "understood|understood"; }
+    if term == "wake" { return "woke|woken"; }
+    if term == "wear" { return "wore|worn"; }
+    if term == "win" { return "won|won"; }
+    if term == "write" { return "wrote|written"; }
+    ""
+}

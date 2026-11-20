@@ -1,0 +1,41 @@
+// trade — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_trade(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 01091905
+    if sense == 1 {
+        return "noun\tthe commercial exchange (buying and selling on domestic or international markets) of goods and services\t\tVenice was an important center of trade with the East";
+    }
+    // noun 00606370
+    if sense == 2 {
+        return "noun\tthe skilled practice of a practical occupation\tcraft\the learned his trade as an apprentice";
+    }
+    // noun 01096454
+    if sense == 3 {
+        return "noun\tthe business given to a commercial establishment by its customers\tpatronage\t";
+    }
+    // verb 02260362
+    if sense == 4 {
+        return "verb\tengage in the trade of\tmerchandise\t";
+    }
+    // verb 02260085
+    if sense == 5 {
+        return "verb\tturn in as payment or part payment for a purchase\ttrade in\ttrade in an old car for a new one";
+    }
+    // noun 01110274
+    if sense == 6 {
+        return "noun\ta particular instance of buying or selling\tdeal, business deal\tI had no further trade with him";
+    }
+    // noun 08436562
+    if sense == 7 {
+        return "noun\tpeople who perform a particular kind of skilled work\tcraft\tas they say in the trade";
+    }
+    // verb 02728784
+    if sense == 8 {
+        return "verb\tbe traded at a certain price or under certain conditions\t\tThe stock traded around $20 a share";
+    }
+    // verb 02259005
+    if sense == 9 {
+        return "verb\texchange or give (something) in exchange for\tswap, swop, switch\t";
+    }
+    ""
+}

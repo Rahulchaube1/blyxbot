@@ -1,0 +1,21 @@
+// glass — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_glass(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 14881303
+    if sense == 1 {
+        return "noun\ta brittle transparent solid with irregular atomic structure\t\t";
+    }
+    // noun 03438257
+    if sense == 2 {
+        return "noun\ta container for holding liquids while drinking\tdrinking glass\t";
+    }
+    // noun 13767239
+    if sense == 3 {
+        return "noun\tthe quantity a glass will hold\tglassful\t";
+    }
+    // noun 03333129
+    if sense == 4 {
+        return "noun\ta small refracting telescope\tfield glass, spyglass\t";
+    }
+    ""
+}

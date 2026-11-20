@@ -1,0 +1,13 @@
+// analyze — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_analyze(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00644583
+    if sense == 1 {
+        return "verb\tconsider in detail and subject to an analysis in order to discover essential features or meaning\tanalyse, study, examine, canvass, canvas\tanalyze a sonnet by Shakespeare";
+    }
+    // verb 00643473
+    if sense == 2 {
+        return "verb\tmake a mathematical, chemical, or grammatical analysis of; break down into components or essential features\tanalyse, break down, dissect, take apart\tanalyze a specimen";
+    }
+    ""
+}

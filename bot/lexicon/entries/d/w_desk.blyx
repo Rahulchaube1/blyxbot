@@ -1,0 +1,9 @@
+// desk — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_desk(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 03179701
+    if sense == 1 {
+        return "noun\ta piece of furniture with a writing surface and usually drawers or other compartments\t\t";
+    }
+    ""
+}

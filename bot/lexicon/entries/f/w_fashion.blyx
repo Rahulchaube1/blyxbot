@@ -1,0 +1,21 @@
+// fashion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fashion(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04928903
+    if sense == 1 {
+        return "noun\thow something is done or how it happens\tmanner, mode, style, way\tin an abrasive fashion";
+    }
+    // verb 01658188
+    if sense == 2 {
+        return "verb\tmake out of components (often in an improvising manner)\tforge\tShe fashioned a tent out of a sheet and a few sticks";
+    }
+    // noun 00415226
+    if sense == 3 {
+        return "noun\tcharacteristic or habitual practice\t\t";
+    }
+    // noun 05750657
+    if sense == 4 {
+        return "noun\tthe latest and most admired style in clothes and cosmetics and behavior\t\t";
+    }
+    ""
+}

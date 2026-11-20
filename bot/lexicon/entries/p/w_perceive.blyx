@@ -1,0 +1,13 @@
+// perceive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_perceive(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02106506
+    if sense == 1 {
+        return "verb\tto become aware of through the senses\tcomprehend\tI could perceive the ship coming over the horizon";
+    }
+    // verb 00591519
+    if sense == 2 {
+        return "verb\tbecome conscious of\t\tShe finally perceived the futility of her protest";
+    }
+    ""
+}

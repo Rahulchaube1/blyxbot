@@ -1,0 +1,21 @@
+// permit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_permit(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00802318
+    if sense == 1 {
+        return "verb\tconsent to, give permission\tallow, let, countenance\tShe permitted her son to visit her estranged husband";
+    }
+    // verb 02423183
+    if sense == 2 {
+        return "verb\tmake it possible through a specific action or lack of action for something to happen\tlet, allow\tThis permits the water to rush in";
+    }
+    // noun 06549661
+    if sense == 3 {
+        return "noun\ta legal document giving official permission to do something\tlicense, licence\t";
+    }
+    // noun 01139194
+    if sense == 4 {
+        return "noun\tthe act of giving a formal (usually written) authorization\tlicense, permission\t";
+    }
+    ""
+}

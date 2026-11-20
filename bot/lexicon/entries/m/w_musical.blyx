@@ -1,0 +1,17 @@
+// musical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_musical(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02867783
+    if sense == 1 {
+        return "adjective\tcharacterized by or capable of producing music\t\ta musical evening";
+    }
+    // noun 07019172
+    if sense == 2 {
+        return "noun\ta play or film whose action and dialogue is interspersed with singing and dancing\tmusical comedy, musical theater\t";
+    }
+    // adj 01505462
+    if sense == 3 {
+        return "adjective\ttalented in or devoted to music\t\tcomes from a very musical family";
+    }
+    ""
+}

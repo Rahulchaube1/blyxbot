@@ -1,0 +1,21 @@
+// contribution — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_contribution(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00787465
+    if sense == 1 {
+        return "noun\tthe part played by a person in bringing about a result\tpart, share\tI am proud of my contribution in advancing the project";
+    }
+    // noun 13270038
+    if sense == 2 {
+        return "noun\ta voluntary gift (as of money or service or ideas) made to some worthwhile cause\tdonation\t";
+    }
+    // noun 01089778
+    if sense == 3 {
+        return "noun\tact of giving in common with others for a common purpose especially to a charity\tdonation\t";
+    }
+    // noun 13269890
+    if sense == 4 {
+        return "noun\tan amount of money contributed\t\the expected his contribution to be repaid with interest";
+    }
+    ""
+}

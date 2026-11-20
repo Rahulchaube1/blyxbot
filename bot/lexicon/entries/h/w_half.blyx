@@ -1,0 +1,21 @@
+// half — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_half(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 13736799
+    if sense == 1 {
+        return "noun\tone of two equal parts of a divisible whole\tone-half\thalf a loaf";
+    }
+    // adj 00517554
+    if sense == 2 {
+        return "adjective\tconsisting of one of two equivalent parts in value or quantity\t\ta half chicken";
+    }
+    // adv 00007884
+    if sense == 3 {
+        return "adverb\tpartially or to the extent of a half\t\the was half hidden by the bushes";
+    }
+    // adj 00524496
+    if sense == 4 {
+        return "adjective\tpartial\t\tgave me a half smile";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// choice — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_choice(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05790242
+    if sense == 1 {
+        return "noun\tthe person or thing chosen or selected\tpick, selection\t";
+    }
+    // noun 00161243
+    if sense == 2 {
+        return "noun\tthe act of choosing or selecting\tselection, option, pick\tyour choice of colors was unfortunate";
+    }
+    // noun 05790944
+    if sense == 3 {
+        return "noun\tone of a number of things from which only one can be chosen\toption, alternative\tmy only choice is to refuse";
+    }
+    // adj 02342899
+    if sense == 4 {
+        return "adjective\tof superior grade\tprime, prize, quality, select\tchoice wines";
+    }
+    ""
+}

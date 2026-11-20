@@ -1,0 +1,109 @@
+// hold — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hold(sense: i64) -> str {
+    if sense == 0 { return "26"; }
+    // verb 02681795
+    if sense == 1 {
+        return "verb\tkeep in a certain state, position, or activity; e.g., \"keep clean\"\tkeep, maintain\thold in place";
+    }
+    // verb 01216670
+    if sense == 2 {
+        return "verb\thave or hold in one's hands or grip\ttake hold\tHold this bowl for a moment, please";
+    }
+    // verb 01733477
+    if sense == 3 {
+        return "verb\torganize or be responsible for\tthrow, have, make, give\thold a reception";
+    }
+    // verb 02203362
+    if sense == 4 {
+        return "verb\thave or possess, either in a concrete or an abstract sense\thave, have got\tShe holds a Master's degree from Harvard";
+    }
+    // verb 00693780
+    if sense == 5 {
+        return "verb\tkeep in mind or convey as a conviction or view\tdeem, view as, take for\thold these truths to be self-evident";
+    }
+    // verb 01773130
+    if sense == 6 {
+        return "verb\tmaintain (a theory, thoughts, or feelings)\tharbor, harbour, entertain, nurse\t";
+    }
+    // verb 01301410
+    if sense == 7 {
+        return "verb\tto close within bounds, limit or hold back from movement\trestrain, confine\tThis holds the local until the express passengers change trains";
+    }
+    // verb 02283324
+    if sense == 8 {
+        return "verb\tsecure and keep for possible future use or application\tretain, keep back, hold back\t";
+    }
+    // verb 02302220
+    if sense == 9 {
+        return "verb\thave rightfully; of rights, titles, and offices\tbear\t";
+    }
+    // verb 01217043
+    if sense == 10 {
+        return "verb\tbe the physical support of; carry the weight of\tsupport, sustain, hold up\tThe beam holds up the roof";
+    }
+    // verb 02700867
+    if sense == 11 {
+        return "verb\tcontain or hold; have within\tbear, carry, contain\tThe canteen holds fresh water";
+    }
+    // noun 00812526
+    if sense == 12 {
+        return "noun\tthe act of grasping\tclasp, clench, clutch, clutches, grasp, grip\tshe kept a firm hold on the railing";
+    }
+    // verb 02732798
+    if sense == 13 {
+        return "verb\thave room for; hold without crowding\taccommodate, admit\tThe auditorium can't hold more than 500 people";
+    }
+    // verb 02683489
+    if sense == 14 {
+        return "verb\tremain in a certain state, position, or condition\t\t";
+    }
+    // verb 01601234
+    if sense == 15 {
+        return "verb\tsupport or hold in a certain manner\tcarry, bear\tShe holds her head high";
+    }
+    // noun 05806623
+    if sense == 16 {
+        return "noun\tunderstanding of the nature or meaning or quality or magnitude of something\tappreciation, grasp\t";
+    }
+    // noun 05197232
+    if sense == 17 {
+        return "noun\tpower by which something or someone is affected or dominated\t\the has a hold over them";
+    }
+    // verb 02648502
+    if sense == 18 {
+        return "verb\tbe valid, applicable, or true\tprevail, obtain\tThis theory still holds";
+    }
+    // verb 00683771
+    if sense == 19 {
+        return "verb\tassert or affirm\t\tRousseau's philosophy holds that people are inherently good";
+    }
+    // verb 02746275
+    if sense == 20 {
+        return "verb\thave as a major characteristic\t\tThe novel holds many surprises";
+    }
+    // verb 02701210
+    if sense == 21 {
+        return "verb\tbe capable of holding or containing\tcontain, take\tThe flask holds one gallon";
+    }
+    // verb 02498320
+    if sense == 22 {
+        return "verb\tarrange for and reserve (something for someone else) in advance\treserve, book\tplease hold a table at Maxim's";
+    }
+    // verb 01129876
+    if sense == 23 {
+        return "verb\tprotect against a challenge or attack\tdefend, guard\tHold that position behind the trees!";
+    }
+    // verb 00885217
+    if sense == 24 {
+        return "verb\tbind by an obligation; cause to be indebted\toblige, bind, obligate\tI'll hold you by your promise";
+    }
+    // verb 00736586
+    if sense == 25 {
+        return "verb\thold the attention of\t\tShe can hold an audience spellbound";
+    }
+    // verb 00607000
+    if sense == 26 {
+        return "verb\tremain committed to\t\tI hold to these ideas";
+    }
+    ""
+}

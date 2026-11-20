@@ -1,0 +1,17 @@
+// steel — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_steel(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14802450
+    if sense == 1 {
+        return "noun\tan alloy of iron with small amounts of carbon; widely used in construction; mechanical properties can be varied over a wide range\t\t";
+    }
+    // noun 04373894
+    if sense == 2 {
+        return "noun\ta cutting or thrusting weapon that has a long metal blade and a hilt with a hand guard\tsword, blade, brand\t";
+    }
+    // verb 01806271
+    if sense == 3 {
+        return "verb\tget ready for something difficult or unpleasant\tnerve\t";
+    }
+    ""
+}

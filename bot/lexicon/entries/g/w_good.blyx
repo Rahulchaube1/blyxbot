@@ -1,0 +1,81 @@
+// good — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_good(sense: i64) -> str {
+    if sense == 0 { return "19"; }
+    // adj 01123148
+    if sense == 1 {
+        return "adjective\thaving desirable or positive qualities especially those suitable for a thing specified\t\tgood news from the hospital";
+    }
+    // adj 00106020
+    if sense == 2 {
+        return "adjective\thaving the normally expected amount\tfull\tgives good measure";
+    }
+    // adj 01129977
+    if sense == 3 {
+        return "adjective\tmorally admirable\t\t";
+    }
+    // noun 05159725
+    if sense == 4 {
+        return "noun\tbenefit\t\tfor your own good";
+    }
+    // adj 01983162
+    if sense == 5 {
+        return "adjective\tdeserving of esteem and respect\testimable, honorable, respectable\truined the family's good name";
+    }
+    // noun 04849241
+    if sense == 6 {
+        return "noun\tmoral excellence or admirableness\tgoodness\tthere is much good to be found in people";
+    }
+    // adv 00011093
+    if sense == 7 {
+        return "adverb\t(often used as a combining form) in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')\twell\tthe baby can walk pretty good";
+    }
+    // noun 05142180
+    if sense == 8 {
+        return "noun\tthat which is pleasing or valuable or useful\tgoodness\tweigh the good against the bad";
+    }
+    // adj 00064787
+    if sense == 9 {
+        return "adjective\tpromoting or enhancing well-being\tbeneficial\tthe experience was good for her";
+    }
+    // adj 01586752
+    if sense == 10 {
+        return "adjective\tagreeable or pleasing\t\twe all had a good time";
+    }
+    // adv 00057388
+    if sense == 11 {
+        return "adverb\tcompletely and absolutely (`good' is sometimes used informally for `thoroughly')\tthoroughly, soundly\twe beat him good";
+    }
+    // adj 02036934
+    if sense == 12 {
+        return "adjective\tof moral excellence\tjust, upright\ta genuinely good person";
+    }
+    // adj 02226162
+    if sense == 13 {
+        return "adjective\thaving or showing knowledge and skill and aptitude\tadept, expert, practiced, proficient, skillful, skilful\ta good mechanic";
+    }
+    // adj 00523364
+    if sense == 14 {
+        return "adjective\tthorough\t\thad a good workout";
+    }
+    // adj 00452883
+    if sense == 15 {
+        return "adjective\twith or in a close or intimate relationship\tdear, near\ta good friend";
+    }
+    // adj 02273643
+    if sense == 16 {
+        return "adjective\tfinancially sound\tdependable, safe, secure\ta good investment";
+    }
+    // adj 01661289
+    if sense == 17 {
+        return "adjective\tmost suitable or right for a particular purpose\tright, ripe\ta good time to plant tomatoes";
+    }
+    // adj 01048762
+    if sense == 18 {
+        return "adjective\tresulting favorably\twell\tit's a good thing that I wasn't there";
+    }
+    // adj 00832784
+    if sense == 19 {
+        return "adjective\texerting force or influence\teffective, in effect, in force\ta warranty good for two years";
+    }
+    ""
+}

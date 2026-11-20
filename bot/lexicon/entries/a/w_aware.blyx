@@ -1,0 +1,9 @@
+// aware — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_aware(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 00190115
+    if sense == 1 {
+        return "adjective\t(sometimes followed by `of') having or showing knowledge or understanding or realization or perception\tcognizant, cognisant\twas aware of his opponent's hostility";
+    }
+    ""
+}

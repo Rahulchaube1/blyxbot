@@ -1,0 +1,45 @@
+// report — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_report(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 00965035
+    if sense == 1 {
+        return "verb\tto give an account or representation of in words\tdescribe, account\t";
+    }
+    // verb 00966809
+    if sense == 2 {
+        return "verb\tannounce as the result of an investigation or experience or finding\t\tDozens of incidents of wife beatings are reported daily in this city";
+    }
+    // noun 07218470
+    if sense == 3 {
+        return "noun\ta written document describing the findings of some individual or group\tstudy, written report\t";
+    }
+    // verb 00965687
+    if sense == 4 {
+        return "verb\tannounce one's presence\t\tI report to work every day at 9 o'clock";
+    }
+    // noun 07217924
+    if sense == 5 {
+        return "noun\tthe act of informing by verbal report\taccount\the heard reports that they were causing trouble";
+    }
+    // noun 06681551
+    if sense == 6 {
+        return "noun\ta short account of the news\tnews report, story, account, write up\tthe report of his speech";
+    }
+    // verb 00965390
+    if sense == 7 {
+        return "verb\tmake known to the authorities\t\tOne student reported the other to the principal";
+    }
+    // noun 07391516
+    if sense == 8 {
+        return "noun\ta sharp explosive sound (especially the sound of a gun firing)\t\tthey heard a violent report followed by silence";
+    }
+    // verb 00967098
+    if sense == 9 {
+        return "verb\tbe responsible for reporting the details of, as in journalism\tcover\tSnow reported on China in the 1950's";
+    }
+    // verb 00965542
+    if sense == 10 {
+        return "verb\tcomplain about; make a charge against\t\tI reported her to the supervisor";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// reveal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reveal(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02143283
+    if sense == 1 {
+        return "verb\tmake visible\tuncover, bring out, unveil\t";
+    }
+    // verb 00933821
+    if sense == 2 {
+        return "verb\tmake known to the public information that was previously known only to a few people or that was meant to be kept a secret\tunwrap, disclose, let on, bring out, discover, expose, divulge, break, give away, let out\tThe actress won't reveal how old she is";
+    }
+    ""
+}

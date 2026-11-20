@@ -1,0 +1,13 @@
+// binomial — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_binomial(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 03048558
+    if sense == 1 {
+        return "adjective\tof or relating to or consisting of two terms\t\tbinomial expression";
+    }
+    // noun 06036506
+    if sense == 2 {
+        return "noun\t(mathematics) a quantity expressed as a sum or difference of two terms; a polynomial with two terms\t\t";
+    }
+    ""
+}

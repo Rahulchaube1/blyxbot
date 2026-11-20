@@ -1,0 +1,17 @@
+// fourth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fourth(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02202443
+    if sense == 1 {
+        return "adjective\tcoming next after the third and just before the fifth in position or time or degree or magnitude\t4th, quaternary\t";
+    }
+    // adv 00344771
+    if sense == 2 {
+        return "adverb\tin the fourth place\tfourthly\t";
+    }
+    // noun 13847124
+    if sense == 3 {
+        return "noun\tfollowing the third position; number four in a countable series\t\t";
+    }
+    ""
+}

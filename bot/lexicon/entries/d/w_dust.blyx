@@ -1,0 +1,21 @@
+// dust — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dust(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 14839846
+    if sense == 1 {
+        return "noun\tfine powdery material such as dry earth or pollen that can be blown about in the air\t\tthe furniture was covered with dust";
+    }
+    // noun 14857897
+    if sense == 2 {
+        return "noun\tthe remains of something that has been destroyed or broken up\tdebris, junk, rubble, detritus\t";
+    }
+    // verb 01244351
+    if sense == 3 {
+        return "verb\tremove the dust from\t\tdust the cabinets";
+    }
+    // verb 01252216
+    if sense == 4 {
+        return "verb\trub the dust over a surface so as to blur the outlines of a shape\t\tThe artist dusted the charcoal drawing down to a faint image";
+    }
+    ""
+}

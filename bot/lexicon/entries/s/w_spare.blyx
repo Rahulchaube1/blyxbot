@@ -1,0 +1,25 @@
+// spare — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_spare(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02464583
+    if sense == 1 {
+        return "verb\trefrain from harming\tsave\t";
+    }
+    // verb 02564674
+    if sense == 2 {
+        return "verb\tsave or relieve from an experience or action\t\tI'll spare you from having to apologize formally";
+    }
+    // verb 02345647
+    if sense == 3 {
+        return "verb\tgive up what is not strictly needed\tgive up, part with, dispense with\the asked if they could spare one of their horses to speed his journey";
+    }
+    // adj 00991301
+    if sense == 4 {
+        return "adjective\tthin and fit\ttrim\tthe spare figure of a marathon runner";
+    }
+    // adj 01581305
+    if sense == 5 {
+        return "adjective\tmore than is needed, desired, or required\texcess, extra, redundant, supererogatory, superfluous, supernumerary, surplus\tsleeping in the spare room";
+    }
+    ""
+}

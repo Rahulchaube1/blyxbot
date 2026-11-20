@@ -1,0 +1,17 @@
+// activity — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_activity(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00407535
+    if sense == 1 {
+        return "noun\tany specific behavior\t\tthey avoided all recreational activity";
+    }
+    // noun 14006945
+    if sense == 2 {
+        return "noun\tthe state of being active\taction, activeness\this sphere of activity";
+    }
+    // noun 13440063
+    if sense == 3 {
+        return "noun\tan organic process that takes place in the body\tbodily process, body process, bodily function\trespiratory activity";
+    }
+    ""
+}

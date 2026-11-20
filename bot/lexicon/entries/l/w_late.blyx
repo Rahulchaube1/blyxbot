@@ -1,0 +1,37 @@
+// late — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_late(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 00816481
+    if sense == 1 {
+        return "adjective\tbeing or occurring at an advanced period of time or after a usual or expected time\t\tlate evening";
+    }
+    // adv 00100267
+    if sense == 2 {
+        return "adverb\tlater than usual or than expected\tbelatedly, tardily\tthe train arrived late";
+    }
+    // adj 01901186
+    if sense == 3 {
+        return "adjective\tafter the expected or usual time; delayed\tbelated, tardy\tI'm late for the plane";
+    }
+    // adj 01730444
+    if sense == 4 {
+        return "adjective\tof the immediate past or just previous to the present time\trecent\ta late development";
+    }
+    // adj 00097674
+    if sense == 5 {
+        return "adjective\thaving died recently\t\ther late husband";
+    }
+    // adv 00305821
+    if sense == 6 {
+        return "adverb\tto an advanced time\tdeep\ttalked late into the evening";
+    }
+    // adj 00820721
+    if sense == 7 {
+        return "adjective\tof a later stage in the development of a language or literature; used especially of dead languages\t\tLate Greek";
+    }
+    // adj 00819235
+    if sense == 8 {
+        return "adjective\tat or toward an end or late period or stage of development\tlater\tthe late phase of feudalism";
+    }
+    ""
+}

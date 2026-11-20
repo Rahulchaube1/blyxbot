@@ -1,0 +1,21 @@
+// induce — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_induce(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01644050
+    if sense == 1 {
+        return "verb\tcause to arise\tbring on\tinduce a crisis";
+    }
+    // verb 00770437
+    if sense == 2 {
+        return "verb\tcause to do; cause to act in a specified manner\tstimulate, cause, have, get, make\tThe ads induced me to buy a VCR";
+    }
+    // verb 01644522
+    if sense == 3 {
+        return "verb\tcause to occur rapidly\tstimulate, rush, hasten\t";
+    }
+    // verb 00636441
+    if sense == 4 {
+        return "verb\treason or establish by induction\t\t";
+    }
+    ""
+}

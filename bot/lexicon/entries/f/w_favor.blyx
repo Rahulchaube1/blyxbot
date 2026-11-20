@@ -1,0 +1,33 @@
+// favor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_favor(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02400037
+    if sense == 1 {
+        return "verb\tpromote over another\tprefer, favour\the favors his second daughter";
+    }
+    // noun 01226941
+    if sense == 2 {
+        return "noun\tan act of gracious kindness\tfavour\t";
+    }
+    // verb 00692143
+    if sense == 3 {
+        return "verb\tconsider as the favorite\tfavour\tThe local team was favored";
+    }
+    // noun 05156319
+    if sense == 4 {
+        return "noun\tan advantage to the benefit of someone or something\tfavour\tthe outcome was in his favor";
+    }
+    // noun 06200617
+    if sense == 5 {
+        return "noun\tan inclination to approve\tfavour\tthat style is in favor this season";
+    }
+    // verb 02464725
+    if sense == 6 {
+        return "verb\ttreat gently or carefully\tfavour\t";
+    }
+    // verb 02453692
+    if sense == 7 {
+        return "verb\tbestow a privilege upon\tprivilege, favour\t";
+    }
+    ""
+}

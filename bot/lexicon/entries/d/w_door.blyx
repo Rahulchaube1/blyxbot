@@ -1,0 +1,17 @@
+// door — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_door(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 03221720
+    if sense == 1 {
+        return "noun\ta swinging or sliding barrier that will close the entrance to a room or building or vehicle\t\the knocked on the door";
+    }
+    // noun 03224032
+    if sense == 2 {
+        return "noun\tthe entrance (the space in a wall) through which you enter or leave a room or building; the space that a door can close\tdoorway, room access, threshold\t";
+    }
+    // noun 05180881
+    if sense == 3 {
+        return "noun\tanything providing a means of access (or escape)\t\twe closed the door to Haitian immigrants";
+    }
+    ""
+}

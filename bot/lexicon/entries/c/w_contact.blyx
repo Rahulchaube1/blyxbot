@@ -1,0 +1,37 @@
+// contact — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_contact(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 00039297
+    if sense == 1 {
+        return "noun\tclose interaction\t\tthey kept in daily contact";
+    }
+    // verb 00743344
+    if sense == 2 {
+        return "verb\tbe in or establish communication with\treach, get through, get hold of\tHe never contacted his children after he emigrated to Australia";
+    }
+    // noun 00124880
+    if sense == 3 {
+        return "noun\tthe act of touching physically\tphysical contact\ther fingers came in contact with the light switch";
+    }
+    // noun 14419510
+    if sense == 4 {
+        return "noun\tthe state or condition of touching or of being in immediate proximity\t\tlitmus paper turns red on contact with an acid";
+    }
+    // noun 07339329
+    if sense == 5 {
+        return "noun\tthe physical coming together of two or more things\timpinging, striking\tcontact with the pier scraped paint from the hull";
+    }
+    // noun 09960117
+    if sense == 6 {
+        return "noun\ta person who is in a position to give you special assistance\tmiddleman\the used his business contacts to get an introduction to the governor";
+    }
+    // noun 06261260
+    if sense == 7 {
+        return "noun\ta channel for communication between groups\tliaison, link, inter-group communication\t";
+    }
+    // noun 03093792
+    if sense == 8 {
+        return "noun\t(electronics) a junction where things (as two electrical conductors) touch or are in physical contact\ttangency\tthey forget to solder the contacts";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// struggle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_struggle(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 00788973
+    if sense == 1 {
+        return "noun\tan energetic attempt to achieve something\tbattle\tgetting through the crowd was a real struggle";
+    }
+    // verb 02407338
+    if sense == 2 {
+        return "verb\tmake a strenuous or labored effort\tfight\tShe struggled for years to survive without welfare";
+    }
+    // noun 00958896
+    if sense == 3 {
+        return "noun\tan open clash between two opposing groups (or individuals)\tconflict, battle\t";
+    }
+    // verb 01505058
+    if sense == 4 {
+        return "verb\tto exert strenuous effort against opposition\t\the struggled to get free from the rope";
+    }
+    // verb 01921772
+    if sense == 5 {
+        return "verb\tclimb awkwardly, as if by scrambling\tclamber, scramble, shin, shinny, skin, sputter\t";
+    }
+    // verb 01090335
+    if sense == 6 {
+        return "verb\tbe engaged in a fight; carry on a fight\tcontend, fight\t";
+    }
+    // noun 00622068
+    if sense == 7 {
+        return "noun\tstrenuous effort\t\tthe struggle to get through the crowd exhausted her";
+    }
+    ""
+}

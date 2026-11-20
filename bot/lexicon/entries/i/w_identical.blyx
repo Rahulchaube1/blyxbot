@@ -1,0 +1,13 @@
+// identical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_identical(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02064127
+    if sense == 1 {
+        return "adjective\texactly alike; incapable of being perceived as different\tindistinguishable\trows of identical houses";
+    }
+    // adj 02068946
+    if sense == 2 {
+        return "adjective\tbeing the exact same one; not any other:\tselfsame, very\tthis is the identical room we stayed in before";
+    }
+    ""
+}

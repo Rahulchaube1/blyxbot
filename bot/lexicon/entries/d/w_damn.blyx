@@ -1,0 +1,25 @@
+// damn — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_damn(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 00670530
+    if sense == 1 {
+        return "adjective\tused as expletives\tgoddamn\toh, damn (or goddamn)!";
+    }
+    // verb 00865958
+    if sense == 2 {
+        return "verb\twish harm upon; invoke evil upon\tcurse, beshrew, bedamn, anathemize, anathemise, imprecate, maledict\t";
+    }
+    // adj 00669942
+    if sense == 3 {
+        return "adjective\texpletives used informally as intensifiers\tblasted, blame, blamed, blessed, damned, darned, deuced, goddam, goddamn, goddamned, infernal\tI'll be damned (or blessed or darned or goddamned) if I'll do any such thing";
+    }
+    // adv 00025144
+    if sense == 4 {
+        return "adverb\textremely\tbloody, all-fired\t";
+    }
+    // noun 05140793
+    if sense == 5 {
+        return "noun\tsomething of little value\tdarn, hoot, red cent, shit, shucks, tinker's damn, tinker's dam\this promise is not worth a damn";
+    }
+    ""
+}

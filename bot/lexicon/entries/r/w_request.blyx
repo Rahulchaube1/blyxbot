@@ -1,0 +1,21 @@
+// request — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_request(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00752764
+    if sense == 1 {
+        return "verb\texpress the need or desire for; ask for\tbespeak, call for, quest\tShe requested an extra bed in her room";
+    }
+    // noun 06513366
+    if sense == 2 {
+        return "noun\ta formal message requesting something that is submitted to an authority\tpetition, postulation\t";
+    }
+    // verb 00753428
+    if sense == 3 {
+        return "verb\task (a person) to do something\t\tI requested that she type the entire manuscript";
+    }
+    // noun 07185325
+    if sense == 4 {
+        return "noun\tthe verbal act of requesting\tasking\t";
+    }
+    ""
+}

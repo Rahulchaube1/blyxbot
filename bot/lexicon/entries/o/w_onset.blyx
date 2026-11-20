@@ -1,0 +1,9 @@
+// onset — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_onset(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 07325990
+    if sense == 1 {
+        return "noun\tthe beginning or early stages\toncoming\tthe onset of pneumonia";
+    }
+    ""
+}

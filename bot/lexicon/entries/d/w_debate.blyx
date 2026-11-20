@@ -1,0 +1,29 @@
+// debate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_debate(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 07140978
+    if sense == 1 {
+        return "noun\ta discussion in which reasons are advanced for and against some proposition or proposal\targument, argumentation\t";
+    }
+    // noun 07242104
+    if sense == 2 {
+        return "noun\tthe formal presentation of a stated proposition and the opposition to it (usually followed by a vote)\tdisputation, public debate\t";
+    }
+    // verb 00714884
+    if sense == 3 {
+        return "verb\targue with one another\t\tWe debated the question of abortion";
+    }
+    // verb 00813044
+    if sense == 4 {
+        return "verb\tthink about carefully; weigh\tconsider, moot, turn over, deliberate\t";
+    }
+    // verb 00812580
+    if sense == 5 {
+        return "verb\tdiscuss the pros and cons of an issue\tdeliberate\t";
+    }
+    // verb 00773432
+    if sense == 6 {
+        return "verb\thave an argument about something\targue, contend, fence\t";
+    }
+    ""
+}

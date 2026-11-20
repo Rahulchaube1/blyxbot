@@ -1,0 +1,13 @@
+// weapon — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_weapon(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 04565375
+    if sense == 1 {
+        return "noun\tany instrument or instrumentality used in fighting or hunting\tarm, weapon system\the was licensed to carry a weapon";
+    }
+    // noun 07246932
+    if sense == 2 {
+        return "noun\ta means of persuading or arguing\tartillery\the used all his conversational weapons";
+    }
+    ""
+}

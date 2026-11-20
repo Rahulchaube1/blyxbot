@@ -1,0 +1,13 @@
+// upper — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_upper(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02440617
+    if sense == 1 {
+        return "adjective\tthe topmost one of two\t\t";
+    }
+    // adj 01206318
+    if sense == 2 {
+        return "adjective\thigher in place or position\t\tthe upper bunk";
+    }
+    ""
+}

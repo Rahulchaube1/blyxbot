@@ -1,0 +1,25 @@
+// sun — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sun(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 09450163
+    if sense == 1 {
+        return "noun\tthe star that is the source of light and heat for the planets in the solar system\t\tthe sun contains 99.85% of the mass in the solar system";
+    }
+    // noun 11485367
+    if sense == 2 {
+        return "noun\tthe rays of the sun\tsunlight, sunshine\tthe shingles were weathered by the sun and wind";
+    }
+    // noun 10674896
+    if sense == 3 {
+        return "noun\ta person considered as a source of warmth or energy or glory etc\t\t";
+    }
+    // noun 09450454
+    if sense == 4 {
+        return "noun\tany star around which a planetary system revolves\t\t";
+    }
+    // verb 00104147
+    if sense == 5 {
+        return "verb\texpose one's body to the sun\tsunbathe\t";
+    }
+    ""
+}

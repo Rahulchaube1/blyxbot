@@ -1,0 +1,37 @@
+// rank — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rank(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 08431942
+    if sense == 1 {
+        return "noun\ta row or line of people (especially soldiers or police) standing abreast of one another\t\tthe entrance was guarded by ranks of policemen";
+    }
+    // noun 14429985
+    if sense == 2 {
+        return "noun\trelative status\t\this salary was determined by his rank and seniority";
+    }
+    // noun 08398179
+    if sense == 3 {
+        return "noun\tthe ordinary members of an organization (such as the enlisted soldiers of an army)\trank and file\tthe strike was supported by the union rank and file";
+    }
+    // noun 13947415
+    if sense == 4 {
+        return "noun\tposition in a social hierarchy\tsocial station, social status, social rank\t";
+    }
+    // verb 00660102
+    if sense == 5 {
+        return "verb\ttake or have a position relative to others\t\tThis painting ranks among the best in the Western World";
+    }
+    // noun 08400965
+    if sense == 6 {
+        return "noun\tthe body of members of an organization or group\tmembership\tthey found dissension in their own ranks";
+    }
+    // verb 00658052
+    if sense == 7 {
+        return "verb\tassign a rank or rating to\trate, range, order, grade, place\thow would you rank these students?";
+    }
+    // adj 01002256
+    if sense == 8 {
+        return "adjective\tvery fertile; producing profuse growth\t\trank earth";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// grab — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_grab(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01439190
+    if sense == 1 {
+        return "verb\ttake hold of so as to seize or restrain or stop the motion of\tcatch, take hold of\tGrab the elevator door!";
+    }
+    // verb 02304648
+    if sense == 2 {
+        return "verb\tget hold of or seize quickly and easily\tsnap up, snaffle\t";
+    }
+    // verb 02099239
+    if sense == 3 {
+        return "verb\tmake a grasping or snatching motion with the hand\t\tThe passenger grabbed for the oxygen mask";
+    }
+    ""
+}

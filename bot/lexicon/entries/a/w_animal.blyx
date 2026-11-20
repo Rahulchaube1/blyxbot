@@ -1,0 +1,13 @@
+// animal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_animal(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00015388
+    if sense == 1 {
+        return "noun\ta living organism characterized by voluntary movement\tanimate being, beast, brute, creature, fauna\t";
+    }
+    // adj 01778572
+    if sense == 2 {
+        return "adjective\tmarked by the appetites and passions of the body\tcarnal, fleshly, sensual\tanimal instincts";
+    }
+    ""
+}

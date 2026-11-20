@@ -1,0 +1,13 @@
+// farm — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_farm(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 03322099
+    if sense == 1 {
+        return "noun\tworkplace consisting of farm buildings and cultivated land as a unit\t\tit takes several people to work the farm";
+    }
+    // verb 02420232
+    if sense == 2 {
+        return "verb\tbe a farmer; work as a farmer\t\tMy son is farming in California";
+    }
+    ""
+}

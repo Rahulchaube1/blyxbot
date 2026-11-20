@@ -1,0 +1,17 @@
+// appreciate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_appreciate(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01805982
+    if sense == 1 {
+        return "verb\trecognize with gratitude; be grateful for\t\t";
+    }
+    // verb 00592341
+    if sense == 2 {
+        return "verb\tbe fully aware of; realize fully\ttake account\tDo you appreciate the full meaning of this letter?";
+    }
+    // verb 02256109
+    if sense == 3 {
+        return "verb\thold dear\tprize, value, treasure\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// history — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_history(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 15121406
+    if sense == 1 {
+        return "noun\tthe aggregate of past events\t\ta critical time in the school's history";
+    }
+    // noun 06514093
+    if sense == 2 {
+        return "noun\ta record or narrative description of past events\taccount, chronicle, story\ta history of France";
+    }
+    // noun 06155567
+    if sense == 3 {
+        return "noun\tthe discipline that records and interprets past events involving human beings\t\the teaches Medieval history";
+    }
+    // noun 15123996
+    if sense == 4 {
+        return "noun\tthe continuum of events occurring in succession leading from the past to the present and even into the future\t\tall of human history";
+    }
+    // noun 06156752
+    if sense == 5 {
+        return "noun\tall that is remembered of the past as preserved in writing; a body of knowledge\t\tthe dawn of recorded history";
+    }
+    ""
+}

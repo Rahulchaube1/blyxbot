@@ -1,0 +1,29 @@
+// sure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sure(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 00336831
+    if sense == 1 {
+        return "adjective\thaving or feeling no doubt or uncertainty; confident and assured\tcertain\twas sure (or certain) she had seen it";
+    }
+    // adj 00309740
+    if sense == 2 {
+        return "adjective\texercising or taking care great enough to bring assurance\tcertain\tbe sure to lock the doors";
+    }
+    // adv 00144722
+    if sense == 3 {
+        return "adverb\tdefinitely or positively (`sure' is sometimes used informally for `surely')\tsurely, certainly, for sure, for certain, sure enough, sure as shooting\tit's going to be a good day for sure";
+    }
+    // adj 00340239
+    if sense == 4 {
+        return "adjective\tcertain to occur; destined or inevitable\tcertain\tsudden but sure regret";
+    }
+    // adj 02094633
+    if sense == 5 {
+        return "adjective\tphysically secure or dependable\t\ta sure footing";
+    }
+    // adj 00724397
+    if sense == 6 {
+        return "adjective\treliable in operation or effect\tcertain\ta sure way to distinguish the two";
+    }
+    ""
+}

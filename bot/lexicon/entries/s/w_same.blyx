@@ -1,0 +1,21 @@
+// same — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_same(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02068476
+    if sense == 1 {
+        return "adjective\tsame in identity\t\tthe same man I saw yesterday";
+    }
+    // adj 02062670
+    if sense == 2 {
+        return "adjective\tclosely similar or comparable in kind or quality or quantity or degree\t\tcurtains the same color as the walls";
+    }
+    // adj 01411065
+    if sense == 3 {
+        return "adjective\tequal in amount or value\tlike\tthe same amount";
+    }
+    // adj 00355611
+    if sense == 4 {
+        return "adjective\tunchanged in character or nature\t\tthe village stayed the same";
+    }
+    ""
+}

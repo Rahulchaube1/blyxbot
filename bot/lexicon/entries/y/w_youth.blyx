@@ -1,0 +1,29 @@
+// youth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_youth(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 10804406
+    if sense == 1 {
+        return "noun\ta young person (especially a young man or boy)\tyoung person, younker, spring chicken\t";
+    }
+    // noun 07944050
+    if sense == 2 {
+        return "noun\tyoung people collectively\tyoung\tyouth everywhere rises in revolt";
+    }
+    // noun 15147713
+    if sense == 3 {
+        return "noun\tthe time of life between childhood and maturity\t\t";
+    }
+    // noun 14425853
+    if sense == 4 {
+        return "noun\tearly maturity; the state of being young or immature or inexperienced\t\t";
+    }
+    // noun 15266034
+    if sense == 5 {
+        return "noun\tan early period of development\tearly days\tduring the youth of the project";
+    }
+    // noun 04928585
+    if sense == 6 {
+        return "noun\tthe freshness and vitality characteristic of a young person\tyouthfulness, juvenility\t";
+    }
+    ""
+}

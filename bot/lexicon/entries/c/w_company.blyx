@@ -1,0 +1,29 @@
+// company — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_company(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 08058098
+    if sense == 1 {
+        return "noun\tan institution created to conduct business\t\the only invests in large well-established companies";
+    }
+    // noun 08214272
+    if sense == 2 {
+        return "noun\tsmall military unit; usually two or three platoons\t\t";
+    }
+    // noun 13929588
+    if sense == 3 {
+        return "noun\tthe state of being with someone\tcompanionship, fellowship, society\the missed their company";
+    }
+    // noun 08187033
+    if sense == 4 {
+        return "noun\torganization of performers and associated personnel (especially theatrical)\ttroupe\tthe traveling company all stayed at the same hotel";
+    }
+    // noun 09887850
+    if sense == 5 {
+        return "noun\ta social or business visitor\tcaller\tthe room was a mess because he hadn't expected company";
+    }
+    // noun 08184861
+    if sense == 6 {
+        return "noun\ta social gathering of guests or companions\t\tthe house was filled with company when I arrived";
+    }
+    ""
+}

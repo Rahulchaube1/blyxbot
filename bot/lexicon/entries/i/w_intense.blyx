@@ -1,0 +1,9 @@
+// intense — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_intense(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01509527
+    if sense == 1 {
+        return "adjective\tpossessing or displaying a distinctive feature to a heightened degree\t\tintense heat";
+    }
+    ""
+}

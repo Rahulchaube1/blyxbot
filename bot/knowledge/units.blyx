@@ -1,0 +1,76 @@
+// Linear factors use metres, kilograms, litres, and seconds as base units.
+// US customary volumes use the US liquid gallon. The imperial gallon has its own label.
+pub fn unit_name(raw: str) -> str {
+    if raw == "millimeter" || raw == "millimeters" || raw == "millimetre" || raw == "millimetres" || raw == "mm" { return "mm"; }
+    if raw == "centimeter" || raw == "centimeters" || raw == "centimetre" || raw == "centimetres" || raw == "cm" { return "cm"; }
+    if raw == "m" || raw == "meter" || raw == "meters" || raw == "metre" || raw == "metres" { return "m"; }
+    if raw == "kilometer" || raw == "kilometers" || raw == "kilometre" || raw == "kilometres" || raw == "km" { return "km"; }
+    if raw == "in" || raw == "inch" || raw == "inches" { return "in"; }
+    if raw == "feet" || raw == "foot" || raw == "ft" { return "ft"; }
+    if raw == "yard" || raw == "yards" || raw == "yd" { return "yd"; }
+    if raw == "mi" || raw == "mile" || raw == "miles" { return "mi"; }
+    if raw == "mg" || raw == "milligram" || raw == "milligrams" { return "mg"; }
+    if raw == "g" || raw == "gram" || raw == "gramme" || raw == "grammes" || raw == "grams" { return "g"; }
+    if raw == "kg" || raw == "kilo" || raw == "kilogram" || raw == "kilograms" || raw == "kilos" { return "kg"; }
+    if raw == "t" || raw == "tonne" || raw == "tonnes" { return "t"; }
+    if raw == "ounce" || raw == "ounces" || raw == "oz" { return "oz"; }
+    if raw == "lb" || raw == "lbs" || raw == "pound" || raw == "pounds" { return "lb"; }
+    if raw == "milliliter" || raw == "milliliters" || raw == "millilitre" || raw == "millilitres" || raw == "ml" { return "mL"; }
+    if raw == "l" || raw == "liter" || raw == "liters" || raw == "litre" || raw == "litres" { return "L"; }
+    if raw == "teaspoon" || raw == "teaspoons" || raw == "tsp" || raw == "us teaspoon" || raw == "us teaspoons" || raw == "us tsp" { return "US tsp"; }
+    if raw == "tablespoon" || raw == "tablespoons" || raw == "tbsp" || raw == "us tablespoon" || raw == "us tablespoons" || raw == "us tbsp" { return "US tbsp"; }
+    if raw == "fl oz" || raw == "fluid ounce" || raw == "fluid ounces" || raw == "us fl oz" || raw == "us fluid ounce" || raw == "us fluid ounces" { return "US fl oz"; }
+    if raw == "cup" || raw == "cups" || raw == "us cup" || raw == "us cups" { return "US cup"; }
+    if raw == "pint" || raw == "pints" || raw == "pt" || raw == "us pint" || raw == "us pints" || raw == "us pt" { return "US pt"; }
+    if raw == "qt" || raw == "quart" || raw == "quarts" || raw == "us qt" || raw == "us quart" || raw == "us quarts" { return "US qt"; }
+    if raw == "gal" || raw == "gallon" || raw == "gallons" || raw == "us gal" || raw == "us gallon" || raw == "us gallons" { return "US gal"; }
+    if raw == "imp gal" || raw == "imperial gallon" || raw == "imperial gallons" || raw == "uk gallon" || raw == "uk gallons" { return "imp gal"; }
+    if raw == "millisecond" || raw == "milliseconds" || raw == "ms" { return "ms"; }
+    if raw == "s" || raw == "sec" || raw == "second" || raw == "seconds" || raw == "secs" { return "s"; }
+    if raw == "min" || raw == "mins" || raw == "minute" || raw == "minutes" { return "min"; }
+    if raw == "h" || raw == "hour" || raw == "hours" || raw == "hr" || raw == "hrs" { return "h"; }
+    if raw == "d" || raw == "day" || raw == "days" { return "d"; }
+    if raw == "week" || raw == "weeks" || raw == "wk" { return "wk"; }
+    if raw == "c" || raw == "celsius" || raw == "centigrade" || raw == "°c" { return "°C"; }
+    if raw == "f" || raw == "fahrenheit" || raw == "°f" { return "°F"; }
+    if raw == "k" || raw == "kelvin" || raw == "kelvins" { return "K"; }
+    ""
+}
+
+// Each vector holds the dimension ID and linear factor. Temperature offsets are applied in the converter.
+pub fn unit_measure(label: str) -> vector {
+    if label == "mm" { return [1, 0.001]; }
+    if label == "cm" { return [1, 0.01]; }
+    if label == "m" { return [1, 1.0]; }
+    if label == "km" { return [1, 1000.0]; }
+    if label == "in" { return [1, 0.0254]; }
+    if label == "ft" { return [1, 0.3048]; }
+    if label == "yd" { return [1, 0.9144]; }
+    if label == "mi" { return [1, 1609.344]; }
+    if label == "mg" { return [2, 0.000001]; }
+    if label == "g" { return [2, 0.001]; }
+    if label == "kg" { return [2, 1.0]; }
+    if label == "t" { return [2, 1000.0]; }
+    if label == "oz" { return [2, 0.028349523125]; }
+    if label == "lb" { return [2, 0.45359237]; }
+    if label == "mL" { return [3, 0.001]; }
+    if label == "L" { return [3, 1.0]; }
+    if label == "US tsp" { return [3, 0.00492892159375]; }
+    if label == "US tbsp" { return [3, 0.01478676478125]; }
+    if label == "US fl oz" { return [3, 0.0295735295625]; }
+    if label == "US cup" { return [3, 0.2365882365]; }
+    if label == "US pt" { return [3, 0.473176473]; }
+    if label == "US qt" { return [3, 0.946352946]; }
+    if label == "US gal" { return [3, 3.785411784]; }
+    if label == "imp gal" { return [3, 4.54609]; }
+    if label == "ms" { return [4, 0.001]; }
+    if label == "s" { return [4, 1.0]; }
+    if label == "min" { return [4, 60.0]; }
+    if label == "h" { return [4, 3600.0]; }
+    if label == "d" { return [4, 86400.0]; }
+    if label == "wk" { return [4, 604800.0]; }
+    if label == "°C" { return [5, 1.0]; }
+    if label == "°F" { return [5, 1.0]; }
+    if label == "K" { return [5, 1.0]; }
+    [0, 0]
+}

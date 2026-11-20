@@ -1,0 +1,13 @@
+// observer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_observer(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09626589
+    if sense == 1 {
+        return "noun\ta person who becomes aware (of things or events) through the senses\tperceiver, percipient, beholder\t";
+    }
+    // noun 10369528
+    if sense == 2 {
+        return "noun\tan expert who observes and comments on something\tcommentator\t";
+    }
+    ""
+}

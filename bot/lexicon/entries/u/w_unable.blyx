@@ -1,0 +1,13 @@
+// unable — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_unable(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00002098
+    if sense == 1 {
+        return "adjective\t(usually followed by `to') not having the necessary means or skill or know-how\t\tunable to get to town without a car";
+    }
+    // adj 00307794
+    if sense == 2 {
+        return "adjective\t(usually followed by `to') lacking necessary physical or mental ability\t\tdyslexics are unable to learn to read adequately";
+    }
+    ""
+}

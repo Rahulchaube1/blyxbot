@@ -1,0 +1,25 @@
+// captain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_captain(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 09893191
+    if sense == 1 {
+        return "noun\tan officer holding a rank below a major but above a lieutenant\t\t";
+    }
+    // noun 09892831
+    if sense == 2 {
+        return "noun\tthe naval officer in command of a military ship\tskipper\t";
+    }
+    // noun 09893015
+    if sense == 3 {
+        return "noun\ta policeman in charge of a precinct\tpolice captain, police chief\t";
+    }
+    // noun 10298912
+    if sense == 4 {
+        return "noun\tan officer who is licensed to command a merchant ship\tmaster, sea captain, skipper\t";
+    }
+    // noun 09893344
+    if sense == 5 {
+        return "noun\tthe leader of a group of people\tchieftain\ta captain of industry";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// bill — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bill(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 06536853
+    if sense == 1 {
+        return "noun\ta statute in draft before it becomes law\tmeasure\tthey held a public hearing on the bill";
+    }
+    // noun 06516955
+    if sense == 2 {
+        return "noun\tan itemized statement of money owed for goods shipped or services rendered\taccount, invoice\the paid his bill and left";
+    }
+    // noun 13393762
+    if sense == 3 {
+        return "noun\ta piece of paper money (especially one issued by a central bank)\tnote, government note, bank bill, banker's bill, bank note, banknote, Federal Reserve note, greenback\t";
+    }
+    // verb 02320374
+    if sense == 4 {
+        return "verb\tdemand payment\tcharge\tWe were billed for 4 nights in the hotel, although we stayed only 3 nights";
+    }
+    // noun 00551407
+    if sense == 5 {
+        return "noun\tthe entertainment offered at a public presentation\t\t";
+    }
+    // verb 00977153
+    if sense == 6 {
+        return "verb\tadvertise especially by posters or placards\t\tHe was billed as the greatest tenor since Caruso";
+    }
+    ""
+}

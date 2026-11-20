@@ -1,0 +1,25 @@
+// simple — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_simple(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 02174896
+    if sense == 1 {
+        return "adjective\thaving few parts; not complex or complicated or involved\t\ta simple problem";
+    }
+    // adj 00750296
+    if sense == 2 {
+        return "adjective\teasy and not involved or complicated\telementary, uncomplicated, unproblematic\ta simple game";
+    }
+    // adj 01792573
+    if sense == 3 {
+        return "adjective\tapart from anything else; without additions or modifications\tbare, mere\tthe simple passage of time was enough";
+    }
+    // adj 02272047
+    if sense == 4 {
+        return "adjective\texhibiting childlike simplicity and credulity\tchildlike, wide-eyed, round-eyed, dewy-eyed\t";
+    }
+    // adj 01841390
+    if sense == 5 {
+        return "adjective\tlacking mental capacity and subtlety\tdim-witted, simple-minded\t";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// ball — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ball(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 02778669
+    if sense == 1 {
+        return "noun\tround object that is hit or thrown or kicked in games\t\tthe ball travelled 90 mph on his serve";
+    }
+    // noun 03802228
+    if sense == 2 {
+        return "noun\ta solid projectile that is shot by a musket\tmusket ball\tthey had to carry a ramrod as well as powder and ball";
+    }
+    // noun 13899404
+    if sense == 3 {
+        return "noun\tan object with a spherical shape\tglobe, orb\ta ball of fire";
+    }
+    // noun 08253268
+    if sense == 4 {
+        return "noun\tthe people assembled at a lavish formal dance\t\tthe ball was already emptying out before the fire alarm sounded";
+    }
+    // noun 05524615
+    if sense == 5 {
+        return "noun\tone of the two male reproductive glands that produce spermatozoa and secrete androgens\ttestis, testicle, orchis, ballock, bollock, nut, egg\tshe kicked him in the balls and got away";
+    }
+    // noun 02779435
+    if sense == 6 {
+        return "noun\ta spherical object used as a plaything\t\the played with his rubber ball in the bathtub";
+    }
+    // verb 01523270
+    if sense == 7 {
+        return "verb\tform into a ball by winding or rolling\t\tball wool";
+    }
+    ""
+}

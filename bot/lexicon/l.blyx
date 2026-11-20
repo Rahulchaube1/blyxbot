@@ -1,0 +1,185 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::l::w_l;
+use entries::l::w_label;
+use entries::l::w_labor;
+use entries::l::w_lack;
+use entries::l::w_lady;
+use entries::l::w_land;
+use entries::l::w_language;
+use entries::l::w_large;
+use entries::l::w_largely;
+use entries::l::w_larger;
+use entries::l::w_last;
+use entries::l::w_late;
+use entries::l::w_later;
+use entries::l::w_latter;
+use entries::l::w_laugh;
+use entries::l::w_launch;
+use entries::l::w_law;
+use entries::l::w_lay;
+use entries::l::w_lead;
+use entries::l::w_leader;
+use entries::l::w_leadership;
+use entries::l::w_leaf;
+use entries::l::w_lean;
+use entries::l::w_leap;
+use entries::l::w_learn;
+use entries::l::w_leave;
+use entries::l::w_left;
+use entries::l::w_leg;
+use entries::l::w_legal;
+use entries::l::w_length;
+use entries::l::w_less;
+use entries::l::w_let;
+use entries::l::w_letter;
+use entries::l::w_level;
+use entries::l::w_liberal;
+use entries::l::w_lick;
+use entries::l::w_lie;
+use entries::l::w_lie_in;
+use entries::l::w_lieutenant;
+use entries::l::w_life;
+use entries::l::w_lift;
+use entries::l::w_light;
+use entries::l::w_like;
+use entries::l::w_likely;
+use entries::l::w_limit;
+use entries::l::w_limited;
+use entries::l::w_line;
+use entries::l::w_link;
+use entries::l::w_lip;
+use entries::l::w_liquid;
+use entries::l::w_list;
+use entries::l::w_listen;
+use entries::l::w_literary;
+use entries::l::w_literature;
+use entries::l::w_little;
+use entries::l::w_live;
+use entries::l::w_load;
+use entries::l::w_loan;
+use entries::l::w_local;
+use entries::l::w_locate;
+use entries::l::w_located;
+use entries::l::w_location;
+use entries::l::w_lock;
+use entries::l::w_long;
+use entries::l::w_look;
+use entries::l::w_look_at;
+use entries::l::w_look_for;
+use entries::l::w_look_like;
+use entries::l::w_lose;
+use entries::l::w_loss;
+use entries::l::w_lot;
+use entries::l::w_loud;
+use entries::l::w_love;
+use entries::l::w_low;
+use entries::l::w_lower;
+use entries::l::w_lung;
+
+fn through_w_launch(term: str, sense: i64) -> str {
+    if term == "l" { return w_l(sense); }
+    if term == "label" { return w_label(sense); }
+    if term == "labor" { return w_labor(sense); }
+    if term == "lack" { return w_lack(sense); }
+    if term == "lady" { return w_lady(sense); }
+    if term == "land" { return w_land(sense); }
+    if term == "language" { return w_language(sense); }
+    if term == "large" { return w_large(sense); }
+    if term == "largely" { return w_largely(sense); }
+    if term == "larger" { return w_larger(sense); }
+    if term == "last" { return w_last(sense); }
+    if term == "late" { return w_late(sense); }
+    if term == "later" { return w_later(sense); }
+    if term == "latter" { return w_latter(sense); }
+    if term == "laugh" { return w_laugh(sense); }
+    if term == "launch" { return w_launch(sense); }
+    ""
+}
+
+fn through_w_let(term: str, sense: i64) -> str {
+    if term == "law" { return w_law(sense); }
+    if term == "lay" { return w_lay(sense); }
+    if term == "lead" { return w_lead(sense); }
+    if term == "leader" { return w_leader(sense); }
+    if term == "leadership" { return w_leadership(sense); }
+    if term == "leaf" { return w_leaf(sense); }
+    if term == "lean" { return w_lean(sense); }
+    if term == "leap" { return w_leap(sense); }
+    if term == "learn" { return w_learn(sense); }
+    if term == "leave" { return w_leave(sense); }
+    if term == "left" { return w_left(sense); }
+    if term == "leg" { return w_leg(sense); }
+    if term == "legal" { return w_legal(sense); }
+    if term == "length" { return w_length(sense); }
+    if term == "less" { return w_less(sense); }
+    if term == "let" { return w_let(sense); }
+    ""
+}
+
+fn through_w_link(term: str, sense: i64) -> str {
+    if term == "letter" { return w_letter(sense); }
+    if term == "level" { return w_level(sense); }
+    if term == "liberal" { return w_liberal(sense); }
+    if term == "lick" { return w_lick(sense); }
+    if term == "lie" { return w_lie(sense); }
+    if term == "lie in" { return w_lie_in(sense); }
+    if term == "lieutenant" { return w_lieutenant(sense); }
+    if term == "life" { return w_life(sense); }
+    if term == "lift" { return w_lift(sense); }
+    if term == "light" { return w_light(sense); }
+    if term == "like" { return w_like(sense); }
+    if term == "likely" { return w_likely(sense); }
+    if term == "limit" { return w_limit(sense); }
+    if term == "limited" { return w_limited(sense); }
+    if term == "line" { return w_line(sense); }
+    if term == "link" { return w_link(sense); }
+    ""
+}
+
+fn through_w_long(term: str, sense: i64) -> str {
+    if term == "lip" { return w_lip(sense); }
+    if term == "liquid" { return w_liquid(sense); }
+    if term == "list" { return w_list(sense); }
+    if term == "listen" { return w_listen(sense); }
+    if term == "literary" { return w_literary(sense); }
+    if term == "literature" { return w_literature(sense); }
+    if term == "little" { return w_little(sense); }
+    if term == "live" { return w_live(sense); }
+    if term == "load" { return w_load(sense); }
+    if term == "loan" { return w_loan(sense); }
+    if term == "local" { return w_local(sense); }
+    if term == "locate" { return w_locate(sense); }
+    if term == "located" { return w_located(sense); }
+    if term == "location" { return w_location(sense); }
+    if term == "lock" { return w_lock(sense); }
+    if term == "long" { return w_long(sense); }
+    ""
+}
+
+fn through_w_lung(term: str, sense: i64) -> str {
+    if term == "look" { return w_look(sense); }
+    if term == "look at" { return w_look_at(sense); }
+    if term == "look for" { return w_look_for(sense); }
+    if term == "look like" { return w_look_like(sense); }
+    if term == "lose" { return w_lose(sense); }
+    if term == "loss" { return w_loss(sense); }
+    if term == "lot" { return w_lot(sense); }
+    if term == "loud" { return w_loud(sense); }
+    if term == "love" { return w_love(sense); }
+    if term == "low" { return w_low(sense); }
+    if term == "lower" { return w_lower(sense); }
+    if term == "lung" { return w_lung(sense); }
+    ""
+}
+
+pub fn lookup_l(term: str, sense: i64) -> str {
+    if term <= "launch" { return through_w_launch(term, sense); }
+    if term <= "let" { return through_w_let(term, sense); }
+    if term <= "link" { return through_w_link(term, sense); }
+    if term <= "long" { return through_w_long(term, sense); }
+    through_w_lung(term, sense)
+}
+
+pub fn words_l() -> str {
+    "l|label|labor|lack|lady|land|language|large|largely|larger|last|late|later|latter|laugh|launch|law|lay|lead|leader|leadership|leaf|lean|leap|learn|leave|left|leg|legal|length|less|let|letter|level|liberal|lick|lie|lie in|lieutenant|life|lift|light|like|likely|limit|limited|line|link|lip|liquid|list|listen|literary|literature|little|live|load|loan|local|locate|located|location|lock|long|look|look at|look for|look like|lose|loss|lot|loud|love|low|lower|lung"
+}

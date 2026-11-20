@@ -1,0 +1,13 @@
+// moon — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_moon(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09358358
+    if sense == 1 {
+        return "noun\tthe natural satellite of the Earth\t\tthe average distance to the Moon is 384,400 kilometers";
+    }
+    // noun 09358550
+    if sense == 2 {
+        return "noun\tany object resembling a moon\t\the made a moon lamp that he used as a night light";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// component — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_component(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05868954
+    if sense == 1 {
+        return "noun\tan abstract part of something\tconstituent, element, factor, ingredient\tjealousy was a component of his character";
+    }
+    // noun 13809207
+    if sense == 2 {
+        return "noun\tsomething determined in relation to something that includes it\tpart, portion, component part, constituent\tthe smaller component is hard to reach";
+    }
+    // noun 03081021
+    if sense == 3 {
+        return "noun\tan artifact that is one of the individual parts of which a composite entity is made up; especially a part that can be separated from or attached to a system\tconstituent, element\tspare components for cars";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// suburban — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_suburban(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 02804590
+    if sense == 1 {
+        return "adjective\trelating to or characteristic of or situated in suburbs\t\tsuburban population";
+    }
+    ""
+}

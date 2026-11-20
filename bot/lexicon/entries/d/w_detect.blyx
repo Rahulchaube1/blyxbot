@@ -1,0 +1,9 @@
+// detect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_detect(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 02154508
+    if sense == 1 {
+        return "verb\tdiscover or determine the existence, presence, or fact of\tobserve, find, discover, notice\tShe detected high levels of lead in her drinking water";
+    }
+    ""
+}

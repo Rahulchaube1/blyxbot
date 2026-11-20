@@ -1,0 +1,21 @@
+// tool — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tool(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04451818
+    if sense == 1 {
+        return "noun\tan implement used in the practice of a vocation\t\t";
+    }
+    // noun 00173761
+    if sense == 2 {
+        return "noun\tthe means whereby some act is accomplished\tinstrument\tscience has given us new tools to fight disease";
+    }
+    // verb 02100341
+    if sense == 3 {
+        return "verb\tdrive\t\tThe convertible tooled down the street";
+    }
+    // verb 01956708
+    if sense == 4 {
+        return "verb\tride in a car with no particular goal and just for the pleasure of it\tjoyride, tool around\tWe tooled down the street";
+    }
+    ""
+}

@@ -1,0 +1,45 @@
+// fill — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fill(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 00452512
+    if sense == 1 {
+        return "verb\tmake full, also in a metaphorical sense\tfill up, make full\tfill a container";
+    }
+    // verb 00451838
+    if sense == 2 {
+        return "verb\tbecome full\tfill up\tThe pool slowly filled with water";
+    }
+    // verb 02649042
+    if sense == 3 {
+        return "verb\toccupy the whole of\toccupy\tThe liquid fills the container";
+    }
+    // verb 02394183
+    if sense == 4 {
+        return "verb\tassume, as of positions or roles\ttake, occupy\t";
+    }
+    // verb 01183573
+    if sense == 5 {
+        return "verb\tfill or meet a want or need\tmeet, satisfy, fulfill, fulfil\t";
+    }
+    // noun 13580723
+    if sense == 6 {
+        return "noun\ta quantity sufficient to satisfy\t\the ate his fill of potatoes";
+    }
+    // verb 02394081
+    if sense == 7 {
+        return "verb\tappoint someone to (a position or a job)\t\t";
+    }
+    // verb 01203893
+    if sense == 8 {
+        return "verb\teat until one is sated\tfill up\tHe filled up on turkey";
+    }
+    // verb 01193721
+    if sense == 9 {
+        return "verb\tfill to satisfaction\tsatiate, sate, replete\t";
+    }
+    // verb 00261533
+    if sense == 10 {
+        return "verb\tplug with a substance\t\tfill a cavity";
+    }
+    ""
+}

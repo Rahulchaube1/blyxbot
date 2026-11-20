@@ -1,0 +1,21 @@
+// possibility — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_possibility(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05951180
+    if sense == 1 {
+        return "noun\ta future prospect or potential\t\tthis room has great possibilities";
+    }
+    // noun 14481929
+    if sense == 2 {
+        return "noun\tcapability of existing or happening or being true\tpossibleness\tthere is a possibility that his sense of smell has been impaired";
+    }
+    // noun 05888929
+    if sense == 3 {
+        return "noun\ta tentative insight into the natural world; a concept that is not yet verified but that if true would explain certain facts or phenomena\thypothesis, theory\t";
+    }
+    // noun 05792010
+    if sense == 4 {
+        return "noun\ta possible alternative\tpossible action, opening\tbankruptcy is always a possibility";
+    }
+    ""
+}

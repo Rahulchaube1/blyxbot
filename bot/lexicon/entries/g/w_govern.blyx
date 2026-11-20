@@ -1,0 +1,17 @@
+// govern — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_govern(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02511551
+    if sense == 1 {
+        return "verb\tbring into conformity with rules or principles or usage; impose regulations\tregulate, regularize, regularise, order\t";
+    }
+    // verb 02442205
+    if sense == 2 {
+        return "verb\tdirect or strongly influence the behavior of\t\tHis belief in God governs his conduct";
+    }
+    // verb 02586619
+    if sense == 3 {
+        return "verb\texercise authority over; as of nations\trule\tWho is governing the country now?";
+    }
+    ""
+}

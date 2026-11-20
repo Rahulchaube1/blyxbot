@@ -1,0 +1,21 @@
+// insure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_insure(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00662589
+    if sense == 1 {
+        return "verb\tbe careful or certain to do something; make certain of something\tsee, check, see to it, ensure, control, ascertain, assure\t";
+    }
+    // verb 00890590
+    if sense == 2 {
+        return "verb\tmake certain of\tguarantee, ensure, assure, secure\t";
+    }
+    // verb 00891216
+    if sense == 3 {
+        return "verb\tprotect by insurance\tcover, underwrite\t";
+    }
+    // verb 02251065
+    if sense == 4 {
+        return "verb\ttake out insurance for\t\t";
+    }
+    ""
+}

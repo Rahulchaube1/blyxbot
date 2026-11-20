@@ -1,0 +1,9 @@
+// bastard — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bastard(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 09815188
+    if sense == 1 {
+        return "noun\tinsulting terms of address for people who are stupid or irritating or ridiculous\tasshole, cocksucker, dickhead, shit, mother fucker, motherfucker, prick, whoreson, son of a bitch, SOB\t";
+    }
+    ""
+}

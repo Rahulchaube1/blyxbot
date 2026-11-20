@@ -2,15 +2,15 @@
 
 [![Source language: Blyx](https://img.shields.io/badge/source_language-Blyx-32684d)](https://github.com/Rahulchaube1/blyxxxx)
 
-BlyxBot is a rule-based chatbot written in Blyx. You can talk to it in a terminal or a browser. Both entry points call the same conversation engine, which reads the question, picks a reply and carries your name and the current topic into the next turn.
+BlyxBot is a rule-based chatbot written in Blyx. It can look up English words, quiz you on their meanings, convert measurements and answer everyday questions. The terminal and browser use the same conversation engine. [Chat with BlyxBot on Hugging Face](https://huggingface.co/spaces/oncody/BlyxBot)
 
 ```text
-You       My name is Mira.
-BlyxBot   Nice to meet you, Mira. What can I help with?
-You       What's my name?
-BlyxBot   You're Mira.
-You       What is 17 times 24?
-BlyxBot   That's 408.
+You       Define bank
+BlyxBot   bank (noun, 1 of 6) — sloping land (especially the slope beside a body of water).
+You       Another meaning
+BlyxBot   bank (noun, 2 of 6) — a financial institution that accepts deposits and channels the money into lending activities.
+You       Convert 5 miles to km
+BlyxBot   5 mi ≈ 8.04672 km.
 ```
 
 ## Run the terminal chat
@@ -52,16 +52,23 @@ Open [the local chat](http://127.0.0.1:8080/cgi-bin/chat). Type a question and p
 | [blyxbot.blyx](blyxbot.blyx) and [web.blyx](web.blyx) | Terminal and browser entry points |
 | [bot/chat.blyx](bot/chat.blyx) and [bot/memory.blyx](bot/memory.blyx) | Reply selection, introductions, name recall and forgetting |
 | [bot/understanding/](bot/understanding) | Tokenization, word matching and number parsing |
-| [bot/knowledge/](bot/knowledge) | The capital table and Gregorian date calculations |
-| [bot/](bot) | Handlers for geography, arithmetic, dates, science, cooking, plants and follow-up questions |
+| [bot/lexicon/](bot/lexicon) | One compiled Blyx module per dictionary headword, with alphabetical indexes |
+| [bot/knowledge/](bot/knowledge) | Capitals, dates, irregular verbs, word-choice guides and unit definitions |
+| [bot/](bot) | Conversation handlers, dictionary lookups, word quizzes and conversions |
 | [test.blyx](test.blyx) and [tests/](tests) | The test runner and example conversations |
+| [tools/index_lexicon.blyx](tools/index_lexicon.blyx) | Builds the dictionary indexes from the entry filenames |
 
-Every application and test source file here uses the `.blyx` extension. GitHub's Linguist catalog does not currently include Blyx, so GitHub can leave the repository's Languages panel empty. [Linguist language catalog](https://github.com/github-linguist/linguist/blob/main/lib/linguist/languages.yml)
+The application, tests and indexing tool are written in Blyx. The 2,091 dictionary entry modules were generated from WordNet. GitHub Linguist also considers how a language is used across independent developers and repositories when reviewing it for the Languages panel. [Linguist criteria](https://github.com/github-linguist/linguist/blob/main/CONTRIBUTING.md#language-extension-and-filename-usage-requirements)
 
 ## What you can ask
 
 | Topic | Try it |
 | --- | --- |
+| Dictionary | “Define bank”, then “another meaning”, “give me an example” or “synonyms”. Select a meaning directly with “sense 2”. The offline dictionary covers 2,091 English words and phrases with 9,920 meanings. |
+| Word browsing | “Words starting with br” shows ten entries at a time. Say “more words” or “previous page” to browse. |
+| Vocabulary practice | “Word quiz” starts 24 rounds. Guess the word, ask for a hint, or say “reveal”, “next question” or “stop quiz”. |
+| Word choice and verb forms | “Synonyms for happy” or “conjugate write”. There are 30 word-choice guides and 77 irregular verbs. |
+| Measurements | “5 miles to km”, “how many inches are in a foot?” or “32 Fahrenheit to Celsius”. Convert among 33 units of length, mass, volume, time and temperature. |
 | Place capitals | “What is the capital of New Zealand?” The table covers all 274 place names and aliases in PyBot's original capitals table. |
 | Arithmetic | “What is 12 percent of 250?” Signed decimals, parentheses and operator precedence work too. |
 | Calendar | “When is Easter in 2026?” The bot also calculates leap years and month lengths. |
@@ -69,7 +76,9 @@ Every application and test source file here uses the `.blyx` extension. GitHub's
 | Follow-ups | Ask “How do I descale a kettle?” and then “How long does that take?” |
 | Name memory | Say “My name is Mira”, ask “What's my name?”, then say “Forget my name”. |
 
-BlyxBot ports these features from Hugging Face's PyBot. The larger Python project has 528 modules. Its general conversation engine and remaining specialist topics are outside this port's coverage. The adapted knowledge and rules are distributed under Apache 2.0. [Original PyBot revision](https://github.com/huggingface/pybot/tree/7d63c7fbebb44c7e466e5c8b5c1f341ab767929e) · [License](LICENSE)
+The capital table, everyday topics, word-choice guides, irregular verbs and selected conversation rules were adapted from Hugging Face's PyBot under Apache 2.0. This is a partial port of the original 528-module project. [Original PyBot revision](https://github.com/huggingface/pybot/tree/7d63c7fbebb44c7e466e5c8b5c1f341ab767929e) · [Code license](LICENSE)
+
+Definitions, sense-specific synonyms and usage examples come from Princeton WordNet 3.0, copyright 2006 by Princeton University. The dictionary runs from the compiled application and works offline. [Dictionary sources and selection](bot/lexicon/README.md) · [WordNet license](licenses/WordNet-3.0.txt)
 
 ## Run the tests
 
@@ -79,4 +88,4 @@ blyxc build test.blyx -o build/tests
 ./build/tests
 ```
 
-The suite checks exact replies, topic selection, every capital lookup, and multi-turn conversations. It exits with the first question and mismatched answer if a check fails.
+The suite checks every dictionary entry and meaning, the alphabetical indexes, vocabulary conversations, quizzes, conversions, every capital lookup and the original chat regressions.

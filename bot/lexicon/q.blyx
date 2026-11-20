@@ -1,0 +1,33 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::q::w_qualify;
+use entries::q::w_quality;
+use entries::q::w_quantity;
+use entries::q::w_queen;
+use entries::q::w_question;
+use entries::q::w_quick;
+use entries::q::w_quickly;
+use entries::q::w_quiet;
+use entries::q::w_quite;
+use entries::q::w_quote;
+
+fn through_w_quote(term: str, sense: i64) -> str {
+    if term == "qualify" { return w_qualify(sense); }
+    if term == "quality" { return w_quality(sense); }
+    if term == "quantity" { return w_quantity(sense); }
+    if term == "queen" { return w_queen(sense); }
+    if term == "question" { return w_question(sense); }
+    if term == "quick" { return w_quick(sense); }
+    if term == "quickly" { return w_quickly(sense); }
+    if term == "quiet" { return w_quiet(sense); }
+    if term == "quite" { return w_quite(sense); }
+    if term == "quote" { return w_quote(sense); }
+    ""
+}
+
+pub fn lookup_q(term: str, sense: i64) -> str {
+    through_w_quote(term, sense)
+}
+
+pub fn words_q() -> str {
+    "qualify|quality|quantity|queen|question|quick|quickly|quiet|quite|quote"
+}

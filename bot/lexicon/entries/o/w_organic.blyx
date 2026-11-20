@@ -1,0 +1,9 @@
+// organic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_organic(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01679055
+    if sense == 1 {
+        return "adjective\trelating or belonging to the class of chemical compounds having a carbon basis\t\thydrocarbons are organic compounds";
+    }
+    ""
+}

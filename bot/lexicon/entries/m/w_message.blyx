@@ -1,0 +1,13 @@
+// message — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_message(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 06253690
+    if sense == 1 {
+        return "noun\ta communication (usually brief) that is written or spoken or signaled\t\the sent a three-word message";
+    }
+    // noun 06598915
+    if sense == 2 {
+        return "noun\twhat a communication that is about something is about\tcontent, subject matter, substance\t";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// values — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_values(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 05954894
+    if sense == 1 {
+        return "noun\tbeliefs of a person or social group in which they have an emotional investment (either for or against something)\t\the has very conservatives values";
+    }
+    ""
+}

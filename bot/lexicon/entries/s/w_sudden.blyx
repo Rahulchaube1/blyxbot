@@ -1,0 +1,9 @@
+// sudden — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sudden(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01143279
+    if sense == 1 {
+        return "adjective\thappening without warning or in a short space of time\t\ta sudden storm";
+    }
+    ""
+}

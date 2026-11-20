@@ -1,0 +1,17 @@
+// sample — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sample(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05821775
+    if sense == 1 {
+        return "noun\ta small part of something intended as representative of the whole\t\t";
+    }
+    // noun 06026635
+    if sense == 2 {
+        return "noun\titems selected at random from a population and used to test hypotheses about the population\tsample distribution, sampling\t";
+    }
+    // verb 01195299
+    if sense == 3 {
+        return "verb\ttake a sample of\ttry, try out, taste\tSample the regional dishes";
+    }
+    ""
+}

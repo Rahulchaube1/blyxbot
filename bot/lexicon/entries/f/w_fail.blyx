@@ -1,0 +1,25 @@
+// fail — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fail(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02529284
+    if sense == 1 {
+        return "verb\tfail to do something; leave something undone\tneglect\tShe failed to notice that her child was no longer in his crib";
+    }
+    // verb 02528380
+    if sense == 2 {
+        return "verb\tbe unsuccessful\tgo wrong, miscarry\tWhere do today's public schools fail?";
+    }
+    // verb 01799235
+    if sense == 3 {
+        return "verb\tdisappoint, prove undependable to; abandon, forsake\tbetray\tHis sense of smell failed him this time";
+    }
+    // verb 00434374
+    if sense == 4 {
+        return "verb\tstop operating or functioning\tgo bad, give way, die, give out, conk out, go, break, break down\tThe engine failed on the way to town";
+    }
+    // verb 02599528
+    if sense == 5 {
+        return "verb\tbe unable\t\tI fail to understand your motives";
+    }
+    ""
+}

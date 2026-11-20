@@ -1,0 +1,53 @@
+// time — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_time(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // noun 07309599
+    if sense == 1 {
+        return "noun\tan instance or single occasion for some event\tclip\tthis time he succeeded";
+    }
+    // noun 15270431
+    if sense == 2 {
+        return "noun\ta period of time considered as a resource under your control and sufficient to accomplish something\t\ttake time to smell the roses";
+    }
+    // noun 15122231
+    if sense == 3 {
+        return "noun\tan indefinite period (usually marked by specific attributes or activities)\t\the waited a long time";
+    }
+    // noun 15245515
+    if sense == 4 {
+        return "noun\ta suitable moment\t\tit is time to go";
+    }
+    // noun 00028270
+    if sense == 5 {
+        return "noun\tthe continuum of experience in which events pass from the future through the present to the past\t\t";
+    }
+    // noun 07288215
+    if sense == 6 {
+        return "noun\ta person's experience on a particular occasion\t\the had a time holding back the tears";
+    }
+    // noun 15129927
+    if sense == 7 {
+        return "noun\ta reading of a point in time as given by a clock\tclock time\tdo you know what time it is?";
+    }
+    // noun 15135822
+    if sense == 8 {
+        return "noun\tthe fourth coordinate that is required (along with three spatial dimensions) to specify a physical event\tfourth dimension\t";
+    }
+    // verb 00490968
+    if sense == 9 {
+        return "verb\tmeasure the time or duration of an event or action or the person who performs an action in a certain period of time\tclock\t";
+    }
+    // verb 00678547
+    if sense == 10 {
+        return "verb\tassign a time for an activity or event\t\tThe candidate carefully timed his appearance at the disaster scene";
+    }
+    // noun 04991738
+    if sense == 11 {
+        return "noun\trhythm as given by division into parts of equal duration\tmeter, metre\t";
+    }
+    // verb 00702226
+    if sense == 12 {
+        return "verb\tset the speed, duration, or execution of\t\twe time the process to manufacture our cars very precisely";
+    }
+    ""
+}

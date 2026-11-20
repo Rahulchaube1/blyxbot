@@ -1,0 +1,25 @@
+// propose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_propose(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00875394
+    if sense == 1 {
+        return "verb\tmake a proposal, declare a plan for something\tsuggest, advise\tthe senator proposed to abolish the sales tax";
+    }
+    // verb 00706243
+    if sense == 2 {
+        return "verb\tpresent for consideration, examination, criticism, etc.\tproject\tHe proposed a new plan for dealing with terrorism";
+    }
+    // verb 00708980
+    if sense == 3 {
+        return "verb\tpropose or intend\taim, purpose, purport\t";
+    }
+    // verb 02401523
+    if sense == 4 {
+        return "verb\tput forward; nominate for appointment to an office or for an honor or position\tnominate\t";
+    }
+    // verb 00879764
+    if sense == 5 {
+        return "verb\task (someone) to marry you\tdeclare oneself, offer, pop the question\tshe proposed marriage to the man she had known for only two months";
+    }
+    ""
+}

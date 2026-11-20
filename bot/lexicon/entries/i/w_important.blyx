@@ -1,0 +1,21 @@
+// important — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_important(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01275562
+    if sense == 1 {
+        return "adjective\tof great significance or value\tof import\timportant people";
+    }
+    // adj 02161432
+    if sense == 2 {
+        return "adjective\timportant in effect or meaning\tsignificant\t";
+    }
+    // adj 00655779
+    if sense == 3 {
+        return "adjective\tof extreme importance; vital to the resolution of a crisis\tcrucial\t";
+    }
+    // adj 01830403
+    if sense == 4 {
+        return "adjective\thaving authority or ascendancy or influence\tauthoritative\tan important official";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// traditional — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_traditional(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00611047
+    if sense == 1 {
+        return "adjective\tconsisting of or derived from tradition\t\ttraditional history";
+    }
+    // adj 01690767
+    if sense == 2 {
+        return "adjective\tpertaining to time-honored orthodox doctrines\t\tthe simple security of traditional assumptions has vanished";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// significant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_significant(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02161432
+    if sense == 1 {
+        return "adjective\timportant in effect or meaning\timportant\ta significant change in tax laws";
+    }
+    // adj 00625055
+    if sense == 2 {
+        return "adjective\tfairly large\tsubstantial\t";
+    }
+    // adj 02165655
+    if sense == 3 {
+        return "adjective\ttoo closely correlated to be attributed to chance and therefore indicating a systematic relation\t\tthe interaction effect is significant at the .01 level";
+    }
+    // adj 01497387
+    if sense == 4 {
+        return "adjective\trich in significance or implication\tmeaning, pregnant\t";
+    }
+    ""
+}

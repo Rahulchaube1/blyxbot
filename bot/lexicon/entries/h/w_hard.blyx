@@ -1,0 +1,45 @@
+// hard — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hard(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // adj 00744916
+    if sense == 1 {
+        return "adjective\tnot easy; requiring great physical or mental effort to accomplish or comprehend or endure\tdifficult\twhy is it so hard for you to keep a secret?";
+    }
+    // adj 01155354
+    if sense == 2 {
+        return "adjective\tdispassionate\t\ttook a hard look";
+    }
+    // adj 01150915
+    if sense == 3 {
+        return "adjective\tresisting weight or pressure\t\t";
+    }
+    // adv 00091332
+    if sense == 4 {
+        return "adverb\twith effort or force or vigor\t\tthe team played hard";
+    }
+    // adj 02322512
+    if sense == 5 {
+        return "adjective\tvery strong or vigorous\tknockout, severe\ta hard left to the chin";
+    }
+    // adj 00836544
+    if sense == 6 {
+        return "adjective\tcharacterized by effort to the point of exhaustion; especially physical effort\tarduous, backbreaking, grueling, gruelling, heavy, laborious, operose, punishing, toilsome\thard labor";
+    }
+    // adv 00091964
+    if sense == 7 {
+        return "adverb\twith firmness\tfirmly\theld hard to the railing";
+    }
+    // adv 00092047
+    if sense == 8 {
+        return "adverb\tearnestly or intently\t\tthought hard about it";
+    }
+    // adv 00091778
+    if sense == 9 {
+        return "adverb\tcausing great damage or hardship\tseverely\tindustries hit hard by the depression";
+    }
+    // adv 00091678
+    if sense == 10 {
+        return "adverb\tslowly and with difficulty\t\tprejudices die hard";
+    }
+    ""
+}

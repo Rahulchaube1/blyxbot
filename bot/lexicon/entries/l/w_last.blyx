@@ -1,0 +1,61 @@
+// last — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_last(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // adj 01730329
+    if sense == 1 {
+        return "adjective\timmediately past\t\tlast Thursday";
+    }
+    // adj 01013279
+    if sense == 2 {
+        return "adjective\tcoming after all others in time or space or degree or being the only one remaining\t\tthe last time I saw Paris";
+    }
+    // adj 01010271
+    if sense == 3 {
+        return "adjective\toccurring at or forming an end or termination\tconcluding, final, terminal\tthe last days of the dinosaurs";
+    }
+    // verb 02704928
+    if sense == 4 {
+        return "verb\tpersist for a specified period of time\tendure\tThe bad weather lasted for three days";
+    }
+    // verb 02618149
+    if sense == 5 {
+        return "verb\tcontinue to live through hardship or adversity\tsurvive, live, live on, go, endure, hold up, hold out\thow long can a person last without food and water?";
+    }
+    // adv 00065748
+    if sense == 6 {
+        return "adverb\tmost_recently\t\tI saw him last in London";
+    }
+    // noun 15267536
+    if sense == 7 {
+        return "noun\tthe temporal end; the concluding time\tstopping point, finale, finis, finish, conclusion, close\t";
+    }
+    // adj 01412912
+    if sense == 8 {
+        return "adjective\tmost unlikely or unsuitable\t\tthe last person we would have suspected";
+    }
+    // adj 00004296
+    if sense == 9 {
+        return "adjective\toccurring at the time of death\t\this last words";
+    }
+    // noun 13850148
+    if sense == 10 {
+        return "noun\tthe last or lowest in an ordering or series\t\the was the last to leave";
+    }
+    // noun 01264667
+    if sense == 11 {
+        return "noun\ta person's dying act; the final thing a person can do\t\the breathed his last";
+    }
+    // adj 01579128
+    if sense == 12 {
+        return "adjective\tconclusive in a process or progression\tfinal, net\ta last resort";
+    }
+    // adj 01212095
+    if sense == 13 {
+        return "adjective\thighest in extent or degree\tutmost\tto the last measure of human endurance";
+    }
+    // adv 00065822
+    if sense == 14 {
+        return "adverb\tthe item at the end\tlastly, in conclusion, finally\tlast, I'll discuss family values";
+    }
+    ""
+}

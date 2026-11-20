@@ -1,0 +1,41 @@
+// bring — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bring(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 02077656
+    if sense == 1 {
+        return "verb\ttake something or somebody with oneself somewhere\tconvey, take\tBring me the box from the other room";
+    }
+    // verb 01438902
+    if sense == 2 {
+        return "verb\tcause to come into a particular state or condition\t\tbring water to the boiling point";
+    }
+    // verb 01629589
+    if sense == 3 {
+        return "verb\tcause to happen or to occur as a consequence\twork, play, wreak, make for\tbring comments";
+    }
+    // verb 01433294
+    if sense == 4 {
+        return "verb\tgo or come after and bring or take back\tget, convey, fetch\tCould you bring the wine?";
+    }
+    // verb 00135857
+    if sense == 5 {
+        return "verb\tbring into a different state\tland\t";
+    }
+    // verb 01434140
+    if sense == 6 {
+        return "verb\tbe accompanied by\t\tCan I bring my cousin to the dinner?";
+    }
+    // verb 01618547
+    if sense == 7 {
+        return "verb\tadvance or set forth in court\tinstitute\tbring charges";
+    }
+    // verb 02324478
+    if sense == 8 {
+        return "verb\tbestow a quality on\tlend, impart, bestow, contribute, add\tShe brings a special atmosphere to our meetings";
+    }
+    // verb 02247390
+    if sense == 9 {
+        return "verb\tbe sold for a certain price\tfetch, bring in\t";
+    }
+    ""
+}

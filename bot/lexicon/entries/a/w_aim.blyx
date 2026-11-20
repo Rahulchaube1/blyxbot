@@ -1,0 +1,45 @@
+// aim — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_aim(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 05982152
+    if sense == 1 {
+        return "noun\tan anticipated outcome that is intended or that guides your planned actions\tpurpose, intent, intention, design\tit was created with the conscious aim of answering immediate needs";
+    }
+    // verb 01151110
+    if sense == 2 {
+        return "verb\tpoint or cause to go (blows, weapons, or objects such as photographic equipment) towards\ttake, train, take aim, direct\tPlease don't aim at your little brother!";
+    }
+    // verb 00708980
+    if sense == 3 {
+        return "verb\tpropose or intend\tpurpose, purport, propose\tI aim to arrive at noon";
+    }
+    // verb 01026975
+    if sense == 4 {
+        return "verb\tmove into a desired direction of discourse\tdrive, get\t";
+    }
+    // noun 05981230
+    if sense == 5 {
+        return "noun\tthe goal intended to be attained (and which is believed to be attainable)\tobject, objective, target\t";
+    }
+    // noun 00815644
+    if sense == 6 {
+        return "noun\tthe action of directing something at an object\t\the took aim and fired";
+    }
+    // verb 00713015
+    if sense == 7 {
+        return "verb\tspecifically design a product, event, or activity for a certain public\tcalculate, direct\t";
+    }
+    // verb 01150559
+    if sense == 8 {
+        return "verb\tintend (something) to move towards a certain goal\ttarget, place, direct, point\tHe aimed his fists towards his opponent's face";
+    }
+    // verb 00955472
+    if sense == 9 {
+        return "verb\tdirect (a remark) toward an intended goal\t\tShe wanted to aim a pun";
+    }
+    // verb 00705517
+    if sense == 10 {
+        return "verb\thave an ambitious plan or a lofty goal\tdraw a bead on, aspire, shoot for\t";
+    }
+    ""
+}

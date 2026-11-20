@@ -1,0 +1,21 @@
+// fixed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fixed(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00740217
+    if sense == 1 {
+        return "adjective\t(of a number) having a fixed and unchanging value\t\t";
+    }
+    // adj 01564603
+    if sense == 2 {
+        return "adjective\tfixed and unmoving\tset, rigid\twith eyes set in a fixed glassy stare";
+    }
+    // adj 01059400
+    if sense == 3 {
+        return "adjective\tsecurely placed or fastened or set\t\ta fixed piece of wood";
+    }
+    // adj 00347707
+    if sense == 4 {
+        return "adjective\tincapable of being changed or moved or undone; e.g. \"frozen prices\"\tfrozen\tliving on fixed incomes";
+    }
+    ""
+}

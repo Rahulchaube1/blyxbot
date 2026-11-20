@@ -1,0 +1,21 @@
+// damage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_damage(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00258857
+    if sense == 1 {
+        return "verb\tinflict damage upon\t\tThe snow damaged the roof";
+    }
+    // noun 07420770
+    if sense == 2 {
+        return "noun\tthe occurrence of a change for the worse\tharm, impairment\t";
+    }
+    // noun 07339653
+    if sense == 3 {
+        return "noun\tloss of military equipment\tequipment casualty\t";
+    }
+    // noun 00403092
+    if sense == 4 {
+        return "noun\tthe act of damaging something or someone\tharm, hurt, scathe\t";
+    }
+    ""
+}

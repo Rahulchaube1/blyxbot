@@ -1,0 +1,29 @@
+// shine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shine(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02765924
+    if sense == 1 {
+        return "verb\tbe bright by reflecting or casting light\treflect\t";
+    }
+    // verb 02763740
+    if sense == 2 {
+        return "verb\temit light; be bright, as of the sun or a light\tbeam\t";
+    }
+    // verb 02162947
+    if sense == 3 {
+        return "verb\tbe shiny, as if wet\tglitter, glisten, glint, gleam\t";
+    }
+    // verb 02733334
+    if sense == 4 {
+        return "verb\tbe distinguished or eminent\t\tHis talent shines";
+    }
+    // verb 02655958
+    if sense == 5 {
+        return "verb\tbe clear and obvious\t\tA shining example";
+    }
+    // verb 02161530
+    if sense == 6 {
+        return "verb\thave a complexion with a strong bright color, such as red or pink\tglow, beam, radiate\t";
+    }
+    ""
+}

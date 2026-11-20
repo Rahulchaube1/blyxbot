@@ -1,0 +1,33 @@
+// challenge — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_challenge(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00869126
+    if sense == 1 {
+        return "verb\ttake exception to\tdispute, gainsay\tShe challenged his claims";
+    }
+    // verb 00868591
+    if sense == 2 {
+        return "verb\tissue a challenge to\t\tFischer challenged Spassky to a match";
+    }
+    // noun 13932948
+    if sense == 3 {
+        return "noun\ta demanding or stimulating situation\t\tthey reacted irrationally to the challenge of Russian power";
+    }
+    // noun 07231294
+    if sense == 4 {
+        return "noun\ta call to engage in a contest or fight\t\t";
+    }
+    // noun 07193405
+    if sense == 5 {
+        return "noun\tquestioning a statement and demanding an explanation\t\this challenge of the assumption that Japan is still our enemy";
+    }
+    // verb 00808343
+    if sense == 6 {
+        return "verb\task for identification\t\tThe illegal immigrant was challenged by the border guard";
+    }
+    // verb 00808162
+    if sense == 7 {
+        return "verb\traise a formal objection in a court of law\ttake exception\t";
+    }
+    ""
+}

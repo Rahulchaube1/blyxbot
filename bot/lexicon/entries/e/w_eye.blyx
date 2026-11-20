@@ -1,0 +1,21 @@
+// eye — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_eye(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05311054
+    if sense == 1 {
+        return "noun\tthe organ of sight\toculus, optic\t";
+    }
+    // verb 02167052
+    if sense == 2 {
+        return "verb\tlook at\teyeball\t";
+    }
+    // noun 05614476
+    if sense == 3 {
+        return "noun\tgood discernment (either visually or as if visually)\t\tshe has an eye for fresh talent";
+    }
+    // noun 05703307
+    if sense == 4 {
+        return "noun\tattention to what is seen\t\the tried to catch her eye";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// mention — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mention(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01024190
+    if sense == 1 {
+        return "verb\tmake reference to\tadvert, bring up, cite, name, refer\tHis name was mentioned in connection with the invention";
+    }
+    // verb 01020005
+    if sense == 2 {
+        return "verb\tmake mention of\tnote, observe, remark\t";
+    }
+    // noun 06766190
+    if sense == 3 {
+        return "noun\ta remark that calls attention to something or someone\treference\tshe made frequent mention of her promotion";
+    }
+    // verb 01023071
+    if sense == 4 {
+        return "verb\tcommend\tcite\t";
+    }
+    // noun 06763681
+    if sense == 5 {
+        return "noun\ta short note recognizing a source of information or of a quoted passage\tcitation, cite, acknowledgment, credit, reference, quotation\tthe article includes mention of similar clinical cases";
+    }
+    ""
+}

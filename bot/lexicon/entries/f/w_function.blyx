@@ -1,0 +1,29 @@
+// function — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_function(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 13783816
+    if sense == 1 {
+        return "noun\t(mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function)\tmathematical function, single-valued function, map, mapping\t";
+    }
+    // noun 05149325
+    if sense == 2 {
+        return "noun\twhat something is used for\tpurpose, role, use\tthe function of an auger is to bore holes";
+    }
+    // verb 01525666
+    if sense == 3 {
+        return "verb\tperform as expected when applied\twork, operate, go, run\t";
+    }
+    // noun 00720565
+    if sense == 4 {
+        return "noun\tthe actions and activities assigned to or required or expected of a person or group\toffice, part, role\tthe function of a teacher";
+    }
+    // verb 02670890
+    if sense == 5 {
+        return "verb\tserve a purpose, role, or function\tserve\tThe table functions as a desk";
+    }
+    // verb 01096497
+    if sense == 6 {
+        return "verb\tperform duties attached to a particular office or place or function\tofficiate\t";
+    }
+    ""
+}

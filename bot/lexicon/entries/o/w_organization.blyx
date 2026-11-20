@@ -1,0 +1,21 @@
+// organization — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_organization(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08008335
+    if sense == 1 {
+        return "noun\ta group of people who work together\torganisation\t";
+    }
+    // noun 05726596
+    if sense == 2 {
+        return "noun\tan organized structure for arranging or classifying\tarrangement, organisation, system\tthe facts were familiar but it was in the organization of them that he was original";
+    }
+    // noun 08164585
+    if sense == 3 {
+        return "noun\tthe persons (or committees or departments etc.) who make up a body for the purpose of administering something\tadministration, governance, governing body, establishment, brass, organisation\t";
+    }
+    // noun 01136519
+    if sense == 4 {
+        return "noun\tthe act of organizing a business or an activity related to a business\torganisation\the was brought in to supervise the organization of a new department";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// crowd — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_crowd(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 08182379
+    if sense == 1 {
+        return "noun\ta large number of things or people considered together\t\ta crowd of insects assembled around the flowers";
+    }
+    // verb 02028722
+    if sense == 2 {
+        return "verb\tcause to herd, drive, or crowd together\therd\t";
+    }
+    // verb 02649305
+    if sense == 3 {
+        return "verb\tfill or occupy to the point of overflowing\t\tThe students crowded the auditorium";
+    }
+    // verb 02027612
+    if sense == 4 {
+        return "verb\tto gather together in large numbers\tcrowd together\tmen in straw boaters and waxed mustaches crowded the verandah";
+    }
+    // noun 08273843
+    if sense == 5 {
+        return "noun\tan informal body of friends\tcrew, gang, bunch\the still hangs out with the same crowd";
+    }
+    // verb 02054864
+    if sense == 6 {
+        return "verb\tapproach a certain age or speed\tpush\t";
+    }
+    ""
+}

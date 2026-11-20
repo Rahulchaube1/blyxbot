@@ -1,0 +1,17 @@
+// possess — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_possess(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02632167
+    if sense == 1 {
+        return "verb\thave as an attribute, knowledge, or skill\t\the possesses great knowledge about the Middle East";
+    }
+    // verb 02204692
+    if sense == 2 {
+        return "verb\thave ownership or possession of\town, have\t";
+    }
+    // verb 02647311
+    if sense == 3 {
+        return "verb\tenter into and control, as of emotions or ideas\t\tWhat possessed you to buy this house?";
+    }
+    ""
+}

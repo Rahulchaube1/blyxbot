@@ -1,0 +1,25 @@
+// physical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_physical(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01778212
+    if sense == 1 {
+        return "adjective\tinvolving the body as distinguished from the mind or spirit\t\tphysical exercise";
+    }
+    // adj 02779774
+    if sense == 2 {
+        return "adjective\trelating to the sciences dealing with matter and energy; especially physics\t\tphysical sciences";
+    }
+    // adj 00627004
+    if sense == 3 {
+        return "adjective\thaving substance or material existence; perceptible to the senses\t\ta physical manifestation";
+    }
+    // adj 01574259
+    if sense == 4 {
+        return "adjective\taccording with material things or natural laws (other than those peculiar to living matter)\t\ta reflex response to physical stimuli";
+    }
+    // adj 00874092
+    if sense == 5 {
+        return "adjective\tcharacterized by energetic bodily activity\t\ta very physical dance performance";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// point out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_point_out(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01058574
+    if sense == 1 {
+        return "verb\tmake or write a comment on\tcomment, notice, remark\t";
+    }
+    // verb 00924612
+    if sense == 2 {
+        return "verb\tpoint out carefully and clearly\tsignalize, signalise, call attention\t";
+    }
+    // verb 01013230
+    if sense == 3 {
+        return "verb\tpresent and urge reasons in opposition\tremonstrate\t";
+    }
+    ""
+}

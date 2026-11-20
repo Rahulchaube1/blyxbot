@@ -1,0 +1,33 @@
+// business — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_business(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 08061042
+    if sense == 1 {
+        return "noun\ta commercial or industrial enterprise and the people who constitute it\tconcern, business concern, business organization, business organisation\the bought his brother's business";
+    }
+    // noun 01094725
+    if sense == 2 {
+        return "noun\tthe activity of providing goods and services involving financial and commercial and industrial aspects\tcommercial enterprise, business enterprise\tcomputers are now widely used in business";
+    }
+    // noun 00582388
+    if sense == 3 {
+        return "noun\tthe principal activity in your life that you do to earn money\toccupation, job, line of work, line\the's not in my line of business";
+    }
+    // noun 05833022
+    if sense == 4 {
+        return "noun\ta rightful concern or responsibility\t\tit's none of your business";
+    }
+    // noun 05983801
+    if sense == 5 {
+        return "noun\tan immediate objective\t\tgossip was the main business of the evening";
+    }
+    // noun 01096245
+    if sense == 6 {
+        return "noun\tthe volume of commercial activity\t\tbusiness is good today";
+    }
+    // noun 07966927
+    if sense == 7 {
+        return "noun\tbusiness concerns collectively\tbusiness sector\tGovernment and business could not agree";
+    }
+    ""
+}

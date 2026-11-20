@@ -1,0 +1,33 @@
+// respect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_respect(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 05820170
+    if sense == 1 {
+        return "noun\t(usually preceded by `in') a detail or point\tregard\tit differs in that respect";
+    }
+    // verb 00694068
+    if sense == 2 {
+        return "verb\tregard highly; think much of\testeem, value, prize, prise\tI respect his judgement";
+    }
+    // noun 14437552
+    if sense == 3 {
+        return "noun\tthe condition of being honored (esteemed or respected or well regarded)\testeem, regard\t";
+    }
+    // noun 06206800
+    if sense == 4 {
+        return "noun\tan attitude of admiration or esteem\testeem, regard\tshe lost all respect for him";
+    }
+    // verb 02457233
+    if sense == 5 {
+        return "verb\tshow respect towards\thonor, honour, abide by, observe\t";
+    }
+    // noun 01228877
+    if sense == 6 {
+        return "noun\ta courteous expression (by word or deed) of esteem or regard\tdeference\tbe sure to give my respects to the dean";
+    }
+    // noun 01132864
+    if sense == 7 {
+        return "noun\tbehavior intended to please your parents\tobedience\the went to law school out of respect for his father's wishes";
+    }
+    ""
+}

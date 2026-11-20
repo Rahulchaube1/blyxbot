@@ -1,0 +1,17 @@
+// variety — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_variety(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08398773
+    if sense == 1 {
+        return "noun\ta collection containing a variety of sorts of things\tassortment, mixture, mixed bag, miscellany, miscellanea, salmagundi, smorgasbord, potpourri, motley\the had a variety of disorders";
+    }
+    // noun 04751305
+    if sense == 2 {
+        return "noun\tnoticeable heterogeneity\tdiverseness, diversity, multifariousness\tthe range and variety of his work is amazing";
+    }
+    // noun 08101085
+    if sense == 3 {
+        return "noun\t(biology) a taxonomic category consisting of members of a species that differ from others of the same species in minor but heritable characteristics\t\tvarieties are frequently recognized in botany";
+    }
+    ""
+}

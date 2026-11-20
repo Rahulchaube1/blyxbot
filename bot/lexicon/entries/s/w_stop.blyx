@@ -1,0 +1,61 @@
+// stop — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stop(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 01860795
+    if sense == 1 {
+        return "verb\tcome to a halt, stop moving\thalt\tthe car stopped";
+    }
+    // verb 02680814
+    if sense == 2 {
+        return "verb\tput an end to a state or an activity\tdiscontinue, cease, give up, quit, lay off\t";
+    }
+    // verb 02559752
+    if sense == 3 {
+        return "verb\tstop from happening or developing\thalt, block, kibosh\t";
+    }
+    // verb 01862918
+    if sense == 4 {
+        return "verb\tinterrupt a trip\tstop over\twe stopped at Aunt Mary's house";
+    }
+    // verb 01859221
+    if sense == 5 {
+        return "verb\tcause to stop\t\tstop a car";
+    }
+    // verb 00362348
+    if sense == 6 {
+        return "verb\tprevent completion\tbreak, break off, discontinue\tstop the project";
+    }
+    // noun 07365849
+    if sense == 7 {
+        return "noun\tthe event of something ending\thalt\tit came to a stop at the bottom of the hill";
+    }
+    // noun 01076046
+    if sense == 8 {
+        return "noun\tthe act of stopping something\tstoppage\tthe third baseman made some remarkable stops";
+    }
+    // noun 01056411
+    if sense == 9 {
+        return "noun\ta brief stay in the course of a journey\tstopover, layover\t";
+    }
+    // verb 01131473
+    if sense == 10 {
+        return "verb\thold back, as of a danger or an enemy; check the expansion or influence of\tcheck, turn back, arrest, contain, hold back\t";
+    }
+    // verb 01440378
+    if sense == 11 {
+        return "verb\tseize on its way\tintercept\t";
+    }
+    // noun 14010927
+    if sense == 12 {
+        return "noun\tthe state of inactivity following an interruption\tarrest, check, halt, hitch, stay, stoppage\the spent the entire stop in his seat";
+    }
+    // noun 08656893
+    if sense == 13 {
+        return "noun\ta spot where something halts or pauses\t\this next stop is Atlanta";
+    }
+    // verb 02609764
+    if sense == 14 {
+        return "verb\thave an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical\tend, finish, terminate, cease\tYour rights stop where you infringe upon the rights of other";
+    }
+    ""
+}

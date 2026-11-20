@@ -1,0 +1,17 @@
+// weakness — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_weakness(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14462946
+    if sense == 1 {
+        return "noun\ta flaw or weak point\tfailing\t";
+    }
+    // noun 05204982
+    if sense == 2 {
+        return "noun\tpowerlessness revealed by an inability to act\thelplessness, impuissance\tin spite of their weakness the group remains active";
+    }
+    // noun 05040275
+    if sense == 3 {
+        return "noun\tthe property of lacking physical or mental strength; liability to failure under pressure or stress or strain\t\this weakness increased as he became older";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// english — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_english(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 03003344
+    if sense == 1 {
+        return "adjective\tof or relating to or characteristic of England or its culture or people\t\tEnglish history";
+    }
+    // noun 06947032
+    if sense == 2 {
+        return "noun\tan Indo-European language belonging to the West Germanic branch; the official language of Britain and the United States and most of the commonwealth countries\tEnglish language\t";
+    }
+    // noun 09732668
+    if sense == 3 {
+        return "noun\tthe people of England\tEnglish people\t";
+    }
+    // noun 06155432
+    if sense == 4 {
+        return "noun\tthe discipline that studies the English language and literature\t\t";
+    }
+    ""
+}

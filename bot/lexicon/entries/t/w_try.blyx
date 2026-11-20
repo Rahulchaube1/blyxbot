@@ -1,0 +1,25 @@
+// try — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_try(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02530167
+    if sense == 1 {
+        return "verb\tmake an effort or attempt\tseek, attempt, essay, assay\tHe tried to shake off his fears";
+    }
+    // verb 02531625
+    if sense == 2 {
+        return "verb\tput to the test, as for its quality, or give experimental use to\ttest, prove, try out, examine, essay\tThis approach has been tried with good results";
+    }
+    // noun 00786195
+    if sense == 3 {
+        return "noun\tearnest and conscientious activity intended to do or accomplish something\tattempt, effort, endeavor, endeavour\tshe gave it a good try";
+    }
+    // verb 02501278
+    if sense == 4 {
+        return "verb\tput on trial or hear a case and sit as the judge at the trial of\tjudge, adjudicate\tThe football star was tried for the murder of his wife";
+    }
+    // verb 01195299
+    if sense == 5 {
+        return "verb\ttake a sample of\tsample, try out, taste\tTry these new crackers";
+    }
+    ""
+}

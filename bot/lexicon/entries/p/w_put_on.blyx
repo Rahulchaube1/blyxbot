@@ -1,0 +1,25 @@
+// put on — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_put_on(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00050652
+    if sense == 1 {
+        return "verb\tput clothing on one's body\twear, get into, don, assume\tHe put on his best suit for the wedding";
+    }
+    // verb 00184511
+    if sense == 2 {
+        return "verb\tadd to something existing\t\tShe put on a sun room";
+    }
+    // verb 01665185
+    if sense == 3 {
+        return "verb\tput on the stove or ready for cooking\t\tput on the tea, please!";
+    }
+    // verb 01649809
+    if sense == 4 {
+        return "verb\tcarry out (performances)\tturn in\t";
+    }
+    // verb 00184786
+    if sense == 5 {
+        return "verb\tadd to the odometer\t\tHe put on 1,000 miles on this trip";
+    }
+    ""
+}

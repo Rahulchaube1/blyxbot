@@ -1,0 +1,37 @@
+// professional — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_professional(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 01868724
+    if sense == 1 {
+        return "adjective\tengaged in a profession or engaging in as a profession or means of livelihood\t\tthe professional man or woman possesses distinctive qualifications";
+    }
+    // adj 02839695
+    if sense == 2 {
+        return "adjective\tof or relating to or suitable as a profession\t\tprofessional organizations";
+    }
+    // adj 01870100
+    if sense == 3 {
+        return "adjective\tcharacteristic of or befitting a profession or one engaged in a profession\t\tprofessional conduct";
+    }
+    // adj 02839505
+    if sense == 4 {
+        return "adjective\tof or relating to a profession\t\twe need professional advice";
+    }
+    // noun 10480253
+    if sense == 5 {
+        return "noun\ta person engaged in one of the learned professions\tprofessional person\t";
+    }
+    // noun 10480583
+    if sense == 6 {
+        return "noun\tan athlete who plays for pay\tpro\t";
+    }
+    // noun 10298482
+    if sense == 7 {
+        return "noun\tan authority qualified to teach apprentices\tmaster\t";
+    }
+    // adj 02556402
+    if sense == 8 {
+        return "adjective\tengaged in by members of a profession\t\tprofessional occupations include medicine and the law and teaching";
+    }
+    ""
+}

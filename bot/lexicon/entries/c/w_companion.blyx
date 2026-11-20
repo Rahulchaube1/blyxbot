@@ -1,0 +1,13 @@
+// companion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_companion(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09945905
+    if sense == 1 {
+        return "noun\ta friend who is frequently in the company of another\tcomrade, fellow, familiar, associate\tdrinking companions";
+    }
+    // noun 09946278
+    if sense == 2 {
+        return "noun\ta traveler who accompanies you\tfellow traveler, fellow traveller\t";
+    }
+    ""
+}

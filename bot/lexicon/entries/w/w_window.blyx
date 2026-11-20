@@ -1,0 +1,21 @@
+// window — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_window(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04587648
+    if sense == 1 {
+        return "noun\ta framework of wood or metal that contains a glass windowpane and is built into a wall or roof to admit light or air\t\t";
+    }
+    // noun 04588365
+    if sense == 2 {
+        return "noun\ta transparent opening in a vehicle that allow vision out of the sides or back; usually is capable of being opened\t\t";
+    }
+    // noun 04588587
+    if sense == 3 {
+        return "noun\ta transparent panel (as of an envelope) inserted in an otherwise opaque material\t\t";
+    }
+    // noun 09480077
+    if sense == 4 {
+        return "noun\tan opening that resembles a window in appearance or function\t\the could see them through a window in the trees";
+    }
+    ""
+}

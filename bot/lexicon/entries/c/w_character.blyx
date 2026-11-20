@@ -1,0 +1,33 @@
+// character — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_character(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 09587565
+    if sense == 1 {
+        return "noun\tan imaginary person represented in a work of fiction (play or film or story)\tfictional character, fictitious character\tshe is the main character in the novel";
+    }
+    // noun 05849284
+    if sense == 2 {
+        return "noun\ta characteristic property that defines the apparent individual nature of something\tquality, lineament\tthe radical character of our demands";
+    }
+    // noun 04620216
+    if sense == 3 {
+        return "noun\tthe inherent complex of attributes that determines a persons moral and ethical actions and reactions\tfiber, fibre\teducation has for its object the formation of character";
+    }
+    // noun 05929008
+    if sense == 4 {
+        return "noun\tan actor's portrayal of someone in a play\trole, theatrical role, part, persona\t";
+    }
+    // noun 09909060
+    if sense == 5 {
+        return "noun\ta person of a specified kind (usually with many eccentricities)\teccentric, type, case\ta real character";
+    }
+    // noun 14438693
+    if sense == 6 {
+        return "noun\tgood repute\t\the is a man of character";
+    }
+    // noun 06694796
+    if sense == 7 {
+        return "noun\ta formal recommendation by a former employer to a potential future employer describing the person's qualifications and dependability\treference, character reference\trequests for character references are all too often answered evasively";
+    }
+    ""
+}

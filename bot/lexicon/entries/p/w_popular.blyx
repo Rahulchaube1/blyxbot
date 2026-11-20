@@ -1,0 +1,21 @@
+// popular — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_popular(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01815838
+    if sense == 1 {
+        return "adjective\tregarded with great favor, approval, or affection especially by the general public\t\ta popular tourist attraction";
+    }
+    // adj 00716370
+    if sense == 2 {
+        return "adjective\tcarried on by or for the people (or citizens) at large\t\tthe popular vote";
+    }
+    // adj 00486539
+    if sense == 3 {
+        return "adjective\trepresenting or appealing to or adapted for the benefit of the people at large\tdemocratic\ta democratic or popular movement";
+    }
+    // adj 00414518
+    if sense == 4 {
+        return "adjective\t(of music or art) new and of general appeal (especially among young people)\tpop\t";
+    }
+    ""
+}

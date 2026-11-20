@@ -1,0 +1,17 @@
+// member — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_member(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10307234
+    if sense == 1 {
+        return "noun\tone of the persons who compose a social group (especially individuals who have joined and participate in a group organization)\tfellow member\tonly members will be admitted";
+    }
+    // noun 13810615
+    if sense == 2 {
+        return "noun\tanything that belongs to a set or class\t\tsnakes are members of the class Reptilia";
+    }
+    // noun 05559908
+    if sense == 3 {
+        return "noun\tan external body part that projects from the body\textremity, appendage\t";
+    }
+    ""
+}

@@ -1,0 +1,61 @@
+// study — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_study(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // noun 00644503
+    if sense == 1 {
+        return "noun\ta detailed critical inspection\tsurvey\t";
+    }
+    // verb 00644583
+    if sense == 2 {
+        return "verb\tconsider in detail and subject to an analysis in order to discover essential features or meaning\tanalyze, analyse, examine, canvass, canvas\t";
+    }
+    // noun 05755883
+    if sense == 3 {
+        return "noun\tapplying the mind to learning and understanding a subject (especially by reading)\twork\tno schools offer graduate study in interior design";
+    }
+    // verb 00607405
+    if sense == 4 {
+        return "verb\tbe a student; follow a course of study; be enrolled at an institute of learning\t\t";
+    }
+    // verb 02166460
+    if sense == 5 {
+        return "verb\tgive careful consideration to\tconsider\t";
+    }
+    // verb 00599992
+    if sense == 6 {
+        return "verb\tbe a student of a certain subject\tlearn, read, take\t";
+    }
+    // noun 07218470
+    if sense == 7 {
+        return "noun\ta written document describing the findings of some individual or group\treport, written report\tthis accords with the recent study by Hill and Dale";
+    }
+    // noun 05705355
+    if sense == 8 {
+        return "noun\ta state of deep mental absorption\t\tshe is in a deep study";
+    }
+    // noun 04345028
+    if sense == 9 {
+        return "noun\ta room used for reading and writing and studying\t\the knocked lightly on the closed door of the study";
+    }
+    // verb 00607114
+    if sense == 10 {
+        return "verb\tlearn by reading books\thit the books\tHe is studying geology in his room";
+    }
+    // noun 05996646
+    if sense == 11 {
+        return "noun\ta branch of knowledge\tdiscipline, subject, subject area, subject field, field, field of study, bailiwick\tanthropology is the study of human beings";
+    }
+    // noun 04227144
+    if sense == 12 {
+        return "noun\tpreliminary drawing for later elaboration\tsketch\the made several studies before starting to paint";
+    }
+    // verb 00704388
+    if sense == 13 {
+        return "verb\tthink intently and at length, as for spiritual purposes\tmeditate, contemplate\tHe is meditating in his study";
+    }
+    // noun 05784242
+    if sense == 14 {
+        return "noun\tattentive consideration and meditation\tcogitation\t";
+    }
+    ""
+}

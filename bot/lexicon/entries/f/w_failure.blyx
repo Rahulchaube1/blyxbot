@@ -1,0 +1,25 @@
+// failure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_failure(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00066636
+    if sense == 1 {
+        return "noun\tan act that fails\t\this failure to pass the test";
+    }
+    // noun 07317764
+    if sense == 2 {
+        return "noun\tan event that does not accomplish its intended purpose\t\tthe surprise party was a complete failure";
+    }
+    // noun 14477877
+    if sense == 3 {
+        return "noun\tlack of success\t\the felt that his entire life had been a failure";
+    }
+    // noun 10273064
+    if sense == 4 {
+        return "noun\ta person with a record of failing; someone who loses consistently\tloser, nonstarter, unsuccessful person\t";
+    }
+    // noun 00066397
+    if sense == 5 {
+        return "noun\tan unexpected omission\t\the resented my failure to return his call";
+    }
+    ""
+}

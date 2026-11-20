@@ -1,0 +1,13 @@
+// warn — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_warn(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00870213
+    if sense == 1 {
+        return "verb\tnotify of danger, potential harm, or risk\t\tThe director warned him that he might be fired";
+    }
+    // verb 00870577
+    if sense == 2 {
+        return "verb\tadmonish or counsel in terms of someone's behavior\tdiscourage, admonish, monish\tI warned him not to go too far";
+    }
+    ""
+}

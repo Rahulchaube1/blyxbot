@@ -1,0 +1,17 @@
+// tend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tend(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02719399
+    if sense == 1 {
+        return "verb\thave a tendency or disposition to do or be something; be inclined\tbe given, lean, incline, run\tShe tends to be nervous before her lectures";
+    }
+    // verb 02549847
+    if sense == 2 {
+        return "verb\thave care of or look after\t\tShe tends to the children";
+    }
+    // verb 02439047
+    if sense == 3 {
+        return "verb\tmanage or run\t\ttend a store";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// newspaper — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_newspaper(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06267145
+    if sense == 1 {
+        return "noun\ta daily or weekly publication on folded sheets; contains news and articles and advertisements\tpaper\the read his newspaper at breakfast";
+    }
+    // noun 08062970
+    if sense == 2 {
+        return "noun\ta business firm that publishes newspapers\tpaper, newspaper publisher\tMurdoch owns many newspapers";
+    }
+    // noun 03822171
+    if sense == 3 {
+        return "noun\tthe physical object that is the product of a newspaper publisher\tpaper\twhen it began to rain he covered his head with a newspaper";
+    }
+    ""
+}

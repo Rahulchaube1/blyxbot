@@ -1,0 +1,17 @@
+// consequence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_consequence(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 11410625
+    if sense == 1 {
+        return "noun\ta phenomenon that follows and is caused by some previous phenomenon\teffect, outcome, result, event, issue, upshot\this decision had depressing consequences for business";
+    }
+    // noun 07294019
+    if sense == 2 {
+        return "noun\tthe outcome of an event especially as relative to an individual\taftermath\t";
+    }
+    // noun 05170574
+    if sense == 3 {
+        return "noun\thaving important effects or influence\timport, moment\tdecisions of great consequence are made by the president himself";
+    }
+    ""
+}

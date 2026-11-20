@@ -1,0 +1,13 @@
+// mere — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mere(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01099707
+    if sense == 1 {
+        return "adjective\tbeing nothing more than specified\t\ta mere child";
+    }
+    // adj 01792573
+    if sense == 2 {
+        return "adjective\tapart from anything else; without additions or modifications\tbare, simple\tshocked by the mere idea";
+    }
+    ""
+}

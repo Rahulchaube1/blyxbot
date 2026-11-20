@@ -1,0 +1,21 @@
+// cool — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cool(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02529945
+    if sense == 1 {
+        return "adjective\tneither warm nor very cold; giving relief from heat\t\ta cool autumn day";
+    }
+    // verb 00370412
+    if sense == 2 {
+        return "verb\tmake cool or cooler\tchill, cool down\t";
+    }
+    // adj 00530772
+    if sense == 3 {
+        return "adjective\tmarked by calm self-control (especially in trying circumstances); unemotional\tcoolheaded, nerveless\tplay it cool";
+    }
+    // verb 00369864
+    if sense == 4 {
+        return "verb\tloose heat\tchill, cool down\tThe air cooled considerably after the thunderstorm";
+    }
+    ""
+}

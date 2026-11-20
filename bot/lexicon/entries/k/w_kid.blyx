@@ -1,0 +1,17 @@
+// kid — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_kid(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 09917593
+    if sense == 1 {
+        return "noun\ta young person of either sex\tchild, youngster, minor, shaver, nipper, small fry, tiddler, tike, tyke, fry, nestling\tthey're just kids";
+    }
+    // verb 00851100
+    if sense == 2 {
+        return "verb\ttell false information to for fun\tpull the leg of\t";
+    }
+    // verb 00855295
+    if sense == 3 {
+        return "verb\tbe silly or tease one another\tchaff, jolly, josh, banter\tAfter we relaxed, we just kidded around";
+    }
+    ""
+}

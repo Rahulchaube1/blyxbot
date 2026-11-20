@@ -1,0 +1,17 @@
+// battle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_battle(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00953559
+    if sense == 1 {
+        return "noun\ta hostile meeting of opposing military forces in the course of a war\tconflict, fight, engagement\tGrant won a decisive victory in the battle of Chickamauga";
+    }
+    // noun 00788973
+    if sense == 2 {
+        return "noun\tan energetic attempt to achieve something\tstruggle\the fought a battle for recognition";
+    }
+    // verb 01092366
+    if sense == 3 {
+        return "verb\tbattle or contend against in or as if in a battle\tcombat\tthey battled over the budget";
+    }
+    ""
+}

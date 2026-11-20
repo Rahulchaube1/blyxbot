@@ -1,0 +1,65 @@
+// field — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_field(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // noun 08569998
+    if sense == 1 {
+        return "noun\ta piece of land cleared of trees and usually enclosed\t\the planted a field of wheat";
+    }
+    // noun 08506641
+    if sense == 2 {
+        return "noun\ta region where a battle is being (or has been) fought\tbattlefield, battleground, field of battle, field of honor\t";
+    }
+    // noun 08569777
+    if sense == 3 {
+        return "noun\tsomewhere (away from a studio or office or library or laboratory) where practical work is done or data is collected\t\tanthropologists do much of their work in the field";
+    }
+    // noun 05996646
+    if sense == 4 {
+        return "noun\ta branch of knowledge\tdiscipline, subject, subject area, subject field, field of study, study, bailiwick\t";
+    }
+    // noun 11456760
+    if sense == 5 {
+        return "noun\tthe space around a radiating body within which its electromagnetic oscillations can exert force on another similar body not in contact with it\tfield of force, force field\t";
+    }
+    // noun 01097119
+    if sense == 6 {
+        return "noun\ta particular kind of commercial enterprise\tfield of operation, line of business\tthey are outstanding in their field";
+    }
+    // noun 14514039
+    if sense == 7 {
+        return "noun\ta particular environment or walk of life\tsphere, domain, area, orbit, arena\t";
+    }
+    // noun 08570758
+    if sense == 8 {
+        return "noun\ta piece of land prepared for playing a game\tplaying field, athletic field, playing area\tthe home crowd cheered when Princeton took the field";
+    }
+    // noun 09393605
+    if sense == 9 {
+        return "noun\textensive tract of level open land\tplain, champaign\the longed for the fields of his youth";
+    }
+    // noun 08005260
+    if sense == 10 {
+        return "noun\t(mathematics) a set of elements such that addition and multiplication are commutative and associative and multiplication is distributive over addition and there are two elements 0 and 1\t\tthe set of all rational numbers is a field";
+    }
+    // noun 08551628
+    if sense == 11 {
+        return "noun\ta region in which active military operations are in progress\tfield of operations, theater, theater of operations, theatre, theatre of operations\tthe army was in the field awaiting action";
+    }
+    // noun 07999584
+    if sense == 12 {
+        return "noun\tall of the horses in a particular horse race\t\t";
+    }
+    // noun 07999471
+    if sense == 13 {
+        return "noun\tall the competitors in a particular contest or sporting event\t\t";
+    }
+    // verb 01082290
+    if sense == 14 {
+        return "verb\tcatch or pick up (balls) in baseball or cricket\t\t";
+    }
+    // verb 01081852
+    if sense == 15 {
+        return "verb\tplay as a fielder\t\t";
+    }
+    ""
+}

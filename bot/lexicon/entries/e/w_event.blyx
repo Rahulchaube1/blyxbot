@@ -1,0 +1,13 @@
+// event — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_event(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00029378
+    if sense == 1 {
+        return "noun\tsomething that happens at a given place and time\t\t";
+    }
+    // noun 13943400
+    if sense == 2 {
+        return "noun\ta special set of circumstances\tcase\tin that event, the first possibility is excluded";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// health — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_health(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 14447908
+    if sense == 1 {
+        return "noun\ta healthy state of wellbeing free from disease\twellness\tphysicians should be held responsible for the health of their patients";
+    }
+    ""
+}

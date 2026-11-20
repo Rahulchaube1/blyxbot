@@ -1,0 +1,13 @@
+// candidate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_candidate(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09889691
+    if sense == 1 {
+        return "noun\ta politician who is running for public office\tcampaigner, nominee\t";
+    }
+    // noun 09890749
+    if sense == 2 {
+        return "noun\tsomeone who is considered for something (for an office or prize or honor etc.)\tprospect\t";
+    }
+    ""
+}

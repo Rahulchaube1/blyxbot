@@ -1,0 +1,37 @@
+// hurt — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hurt(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02122164
+    if sense == 1 {
+        return "verb\tbe the source of pain\tache, smart\t";
+    }
+    // verb 00064643
+    if sense == 2 {
+        return "verb\tgive trouble or pain to\t\tThis exercise will hurt your back";
+    }
+    // noun 14285662
+    if sense == 3 {
+        return "noun\tany physical damage to the body caused by violence or accident or fracture etc.\tinjury, harm, trauma\t";
+    }
+    // verb 01792567
+    if sense == 4 {
+        return "verb\tcause emotional anguish or make miserable\tpain, anguish\t";
+    }
+    // verb 00260470
+    if sense == 5 {
+        return "verb\tcause damage or affect negatively\tinjure\tOur business was hurt by the new competition";
+    }
+    // verb 01793177
+    if sense == 6 {
+        return "verb\thurt the feelings of\twound, injure, bruise, offend, spite\tShe hurt me when she did not include me among her guests";
+    }
+    // adj 01318741
+    if sense == 7 {
+        return "adjective\tsuffering from physical injury especially that suffered in battle\twounded\tambulances...for the hurt men and women";
+    }
+    // noun 07496463
+    if sense == 8 {
+        return "noun\tpsychological suffering\tdistress, suffering\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// threaten — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_threaten(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02697120
+    if sense == 1 {
+        return "verb\tpose a threat to; present a danger to\tendanger, jeopardize, jeopardise, menace, imperil, peril\t";
+    }
+    // verb 00871405
+    if sense == 2 {
+        return "verb\tto utter intentions of injury or punishment against:\"He threatened me when I tried to call the police\"\t\t";
+    }
+    // verb 00871781
+    if sense == 3 {
+        return "verb\tto be a menacing indication of something:\"The clouds threaten rain\"\t\tDanger threatens";
+    }
+    ""
+}

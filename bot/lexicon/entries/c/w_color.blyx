@@ -1,0 +1,41 @@
+// color — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_color(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 04956594
+    if sense == 1 {
+        return "noun\ta visual attribute of things that results from the light they emit or transmit or reflect\tcolour, coloring, colouring\ta white color is made up of many different wavelengths of light";
+    }
+    // verb 00283911
+    if sense == 2 {
+        return "verb\tadd color to\tcolorize, colorise, colourise, colourize, colour, color in, colour in\tThe child colored the drawings";
+    }
+    // noun 05193338
+    if sense == 3 {
+        return "noun\tinterest and variety and intensity\tcolour, vividness\tthe Puritan Period was lacking in color";
+    }
+    // adj 00394135
+    if sense == 4 {
+        return "adjective\thaving or capable of producing colors\tcolour\tcolor film";
+    }
+    // noun 04988478
+    if sense == 5 {
+        return "noun\tthe timbre of a musical sound\tcolour, coloration, colouration\tthe recording fails to capture the true color of the original music";
+    }
+    // noun 07968354
+    if sense == 6 {
+        return "noun\ta race with skin pigmentation different from the white race (especially Blacks)\tcolour, people of color, people of colour\t";
+    }
+    // verb 00836926
+    if sense == 7 {
+        return "verb\taffect as in thought or feeling\ttinge, colour, distort\tMy personal feelings color my judgment in this case";
+    }
+    // noun 04677952
+    if sense == 8 {
+        return "noun\tan outward or token appearance or form that is deliberately misleading\tsemblance, gloss, colour\tthe situation soon took on a different color";
+    }
+    // verb 02537092
+    if sense == 9 {
+        return "verb\tmodify or bias\tcolour\tHis political ideas color his lectures";
+    }
+    ""
+}

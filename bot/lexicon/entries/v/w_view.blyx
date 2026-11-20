@@ -1,0 +1,49 @@
+// view — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_view(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // noun 06208751
+    if sense == 1 {
+        return "noun\ta way of regarding situations or topics etc.\tposition, perspective\tconsider what follows from the positivist view";
+    }
+    // verb 00690614
+    if sense == 2 {
+        return "verb\tdeem to be\tsee, consider, reckon, regard\tShe views this quite differently from me";
+    }
+    // noun 05933246
+    if sense == 3 {
+        return "noun\tthe visual percept of a region\taspect, prospect, scene, vista, panorama\tthe most desirable feature of the park are the beautiful views";
+    }
+    // verb 02130300
+    if sense == 4 {
+        return "verb\tlook at carefully; study mentally\tconsider, look at\tview a problem";
+    }
+    // noun 00881649
+    if sense == 5 {
+        return "noun\tthe act of looking or seeing or observing\tsurvey, sight\the tried to get a better view of it";
+    }
+    // noun 08560952
+    if sense == 6 {
+        return "noun\tthe range of the eye\teyeshot\tthey were soon out of view";
+    }
+    // noun 05945642
+    if sense == 7 {
+        return "noun\ta personal belief or judgment that is not founded on proof or certainty\topinion, sentiment, persuasion, thought\t";
+    }
+    // noun 06782019
+    if sense == 8 {
+        return "noun\ta message expressing a belief about something; the expression of a belief that is held with confidence but not substantiated by positive knowledge or proof\topinion\t";
+    }
+    // noun 05983463
+    if sense == 9 {
+        return "noun\tpurpose; the phrase `with a view to' means `with the intention of' or `for the purpose of'\t\the took the computer with a view to pawning it";
+    }
+    // noun 04144782
+    if sense == 10 {
+        return "noun\tgraphic art consisting of the graphic or photographic representation of a visual percept\tscene\tfigure 2 shows photographic and schematic views of the equipment";
+    }
+    // verb 02150948
+    if sense == 11 {
+        return "verb\tsee or watch\twatch, see, catch, take in\tview a show on television";
+    }
+    ""
+}

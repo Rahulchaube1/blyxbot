@@ -1,0 +1,21 @@
+// come to — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_come_to(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02108791
+    if sense == 1 {
+        return "verb\tcause to experience suddenly\thit, strike\t";
+    }
+    // verb 02676054
+    if sense == 2 {
+        return "verb\tbe relevant to\trefer, pertain, relate, concern, bear on, touch, touch on, have-to doe with\t";
+    }
+    // verb 02526811
+    if sense == 3 {
+        return "verb\tattain\tstrike\t";
+    }
+    // verb 00024047
+    if sense == 4 {
+        return "verb\treturn to consciousness\trevive, resuscitate\t";
+    }
+    ""
+}

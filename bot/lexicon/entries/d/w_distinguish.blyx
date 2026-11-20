@@ -1,0 +1,17 @@
+// distinguish — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_distinguish(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00650353
+    if sense == 1 {
+        return "verb\tmark as different\tseparate, differentiate, secern, secernate, severalize, severalise, tell, tell apart\tWe distinguish several kinds of maple";
+    }
+    // verb 02193194
+    if sense == 2 {
+        return "verb\tdetect with the senses\tspot, recognize, recognise, discern, pick out, make out, tell apart\t";
+    }
+    // verb 00651991
+    if sense == 3 {
+        return "verb\tbe a distinctive feature, attribute, or trait; sometimes in a very positive sense\tmark, differentiate\tHis modesty distinguishes him from his peers";
+    }
+    ""
+}

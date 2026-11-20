@@ -1,0 +1,17 @@
+// german — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_german(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02957469
+    if sense == 1 {
+        return "adjective\tof or pertaining to or characteristic of Germany or its people or language\t\tGerman philosophers";
+    }
+    // noun 09747722
+    if sense == 2 {
+        return "noun\ta person of German nationality\t\t";
+    }
+    // noun 06950528
+    if sense == 3 {
+        return "noun\tthe standard German language; developed historically from West Germanic\tHigh German, German language\t";
+    }
+    ""
+}

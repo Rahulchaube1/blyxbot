@@ -1,0 +1,17 @@
+// overall — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_overall(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01102451
+    if sense == 1 {
+        return "adjective\tinvolving only main features\t\tthe overall pattern of his life";
+    }
+    // adj 01582946
+    if sense == 2 {
+        return "adjective\tincluding everything\t\tthe overall cost";
+    }
+    // noun 03863108
+    if sense == 3 {
+        return "noun\t(usually plural) work clothing consisting of denim trousers (usually with a bib and shoulder straps)\t\t";
+    }
+    ""
+}

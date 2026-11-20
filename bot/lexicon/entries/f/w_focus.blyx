@@ -1,0 +1,33 @@
+// focus — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_focus(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 05704694
+    if sense == 1 {
+        return "noun\tthe concentration of attention or energy on something\tfocusing, focussing, focal point, direction, centering\tthe focus of activity shifted to molecular biology";
+    }
+    // verb 00722232
+    if sense == 2 {
+        return "verb\tdirect one's attention on something\tconcentrate, center, centre, pore, rivet\tPlease focus on your studies and not on your hobbies";
+    }
+    // verb 02161922
+    if sense == 3 {
+        return "verb\tcause to converge on or toward a central point\t\tFocus the light on this image";
+    }
+    // noun 04703235
+    if sense == 4 {
+        return "noun\tmaximum clarity or distinctness of an image rendered by an optical system\t\tin focus";
+    }
+    // noun 04821084
+    if sense == 5 {
+        return "noun\tmaximum clarity or distinctness of an idea\t\tthe controversy brought clearly into focus an important difference of opinion";
+    }
+    // noun 14182697
+    if sense == 6 {
+        return "noun\ta central point or locus of an infection in an organism\tfocal point, nidus\tthe focus of infection";
+    }
+    // verb 00731789
+    if sense == 7 {
+        return "verb\tbring into focus or alignment; to converge or cause to converge; of ideas or emotions\tconcenter, concentre, focalize, focalise\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// theory — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_theory(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05989479
+    if sense == 1 {
+        return "noun\ta well-substantiated explanation of some aspect of the natural world; an organized system of accepted knowledge that applies in a variety of circumstances to explain a specific set of phenomena\t\ttheories can incorporate facts and laws and tested hypotheses";
+    }
+    // noun 05888929
+    if sense == 2 {
+        return "noun\ta tentative insight into the natural world; a concept that is not yet verified but that if true would explain certain facts or phenomena\thypothesis, possibility\ta scientific hypothesis that survives experimental testing becomes a scientific theory";
+    }
+    // noun 05952979
+    if sense == 3 {
+        return "noun\ta belief that can guide behavior\t\tthe architect has a theory that more is less";
+    }
+    ""
+}

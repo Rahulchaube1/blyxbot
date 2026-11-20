@@ -1,0 +1,21 @@
+// near — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_near(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00444519
+    if sense == 1 {
+        return "adjective\tnot far distant in time or space or degree or circumstances\tclose, nigh\tnear neighbors";
+    }
+    // adv 00409709
+    if sense == 2 {
+        return "adverb\tnear in time or place or relationship\tnigh, close\tas the wedding day drew near";
+    }
+    // verb 02053941
+    if sense == 3 {
+        return "verb\tmove towards\tapproach, come on, go up, draw near, draw close, come near\tThey are drawing near";
+    }
+    // adv 00073033
+    if sense == 4 {
+        return "adverb\t(of actions or states) slightly short of or not quite accomplished; all but\tabout, almost, most, nearly, nigh, virtually, well-nigh\tI was near exhausted by the run";
+    }
+    ""
+}

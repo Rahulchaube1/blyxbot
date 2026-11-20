@@ -1,0 +1,17 @@
+// elaborate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_elaborate(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01795933
+    if sense == 1 {
+        return "adjective\tmarked by complexity and richness of detail\tluxuriant\tan elaborate lace pattern";
+    }
+    // verb 00955601
+    if sense == 2 {
+        return "verb\tadd details, as to an account or idea; clarify the meaning of and discourse in a learned way, usually in writing\tlucubrate, expatiate, exposit, enlarge, flesh out, expand, expound, dilate\tShe elaborated on the main ideas in her dissertation";
+    }
+    // adj 00310433
+    if sense == 3 {
+        return "adjective\tdeveloped or executed with care and in minute detail\tdetailed, elaborated\tthe elaborate register of the inhabitants prevented tax evasion";
+    }
+    ""
+}

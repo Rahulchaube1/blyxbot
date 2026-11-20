@@ -1,0 +1,29 @@
+// new — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_new(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 01640850
+    if sense == 1 {
+        return "adjective\tnot of long duration; having just (or relatively recently) come into being or been made or acquired or discovered\t\ta new law";
+    }
+    // adj 01687167
+    if sense == 2 {
+        return "adjective\toriginal and of a kind not seen before\tfresh, novel\t";
+    }
+    // adj 00937186
+    if sense == 3 {
+        return "adjective\tlacking training or experience\traw\tthe new men were eager to fight";
+    }
+    // adj 00128733
+    if sense == 4 {
+        return "adjective\thaving no previous example or precedent or parallel\tunexampled\t";
+    }
+    // adj 02070491
+    if sense == 5 {
+        return "adjective\tother than the former one(s); different\t\tthey now have a new leaders";
+    }
+    // adv 00112601
+    if sense == 6 {
+        return "adverb\tvery recently\tnewly, freshly, fresh\tgrass new washed by the rain";
+    }
+    ""
+}

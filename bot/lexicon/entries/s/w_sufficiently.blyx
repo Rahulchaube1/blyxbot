@@ -1,0 +1,9 @@
+// sufficiently — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sufficiently(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00145571
+    if sense == 1 {
+        return "adverb\tto a sufficient degree\t\tshe was sufficiently fluent in Mandarin";
+    }
+    ""
+}

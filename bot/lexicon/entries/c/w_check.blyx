@@ -1,0 +1,57 @@
+// check — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_check(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 00661824
+    if sense == 1 {
+        return "verb\texamine so as to determine accuracy, quality, or condition\tcheck up on, look into, check out, suss out, check over, go over, check into\tcheck the brakes";
+    }
+    // noun 13381734
+    if sense == 2 {
+        return "noun\ta written order directing a bank to pay money\tbank check, cheque\the paid all his bills by check";
+    }
+    // verb 02533282
+    if sense == 3 {
+        return "verb\tmake an examination or investigation\t\tcheck into the rumor";
+    }
+    // verb 00662589
+    if sense == 4 {
+        return "verb\tbe careful or certain to do something; make certain of something\tsee, insure, see to it, ensure, control, ascertain, assure\t";
+    }
+    // verb 02510337
+    if sense == 5 {
+        return "verb\tlessen the intensity of; temper; hold in restraint; hold or keep within limits\tcontrol, hold in, hold, contain, curb, moderate\t";
+    }
+    // noun 05738625
+    if sense == 6 {
+        return "noun\tan appraisal of the state of affairs\tassay\ta check on its dependability under stress";
+    }
+    // noun 06517942
+    if sense == 7 {
+        return "noun\tthe bill in a restaurant\tchit, tab\the asked the waiter for the check";
+    }
+    // noun 14010927
+    if sense == 8 {
+        return "noun\tthe state of inactivity following an interruption\tarrest, halt, hitch, stay, stop, stoppage\theld them in check";
+    }
+    // noun 05825245
+    if sense == 9 {
+        return "noun\tadditional proof that something that was believed (some fact or hypothesis or theory) is correct\tconfirmation, verification, substantiation\t";
+    }
+    // noun 00141806
+    if sense == 10 {
+        return "noun\tthe act of inspecting or verifying\tcheckout, check-out procedure\tthey made a check of their equipment";
+    }
+    // verb 01861403
+    if sense == 11 {
+        return "verb\tstop for a moment, as if out of uncertainty or caution\t\tShe checked for an instant and missed a step";
+    }
+    // verb 00662182
+    if sense == 12 {
+        return "verb\tput a check mark on or near or next to\tcheck off, mark, mark off, tick off, tick\tPlease check each name on the list";
+    }
+    // verb 00440286
+    if sense == 13 {
+        return "verb\tslow the growth or development of\tretard, delay\t";
+    }
+    ""
+}

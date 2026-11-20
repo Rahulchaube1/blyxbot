@@ -1,0 +1,25 @@
+// urge — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_urge(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00765649
+    if sense == 1 {
+        return "verb\tforce or impel in an indicated direction\turge on, press, exhort\tI urged him to finish his studies";
+    }
+    // verb 00875141
+    if sense == 2 {
+        return "verb\tpush for something\trecommend, advocate\t";
+    }
+    // noun 09180431
+    if sense == 3 {
+        return "noun\tan instinctive motive\timpulse\t";
+    }
+    // noun 07490451
+    if sense == 4 {
+        return "noun\ta strong restless desire\titch\twhy this urge to travel?";
+    }
+    // verb 00858781
+    if sense == 5 {
+        return "verb\tspur on or encourage especially by cheers and shouts\tcheer, root on, inspire, barrack, urge on, exhort, pep up\t";
+    }
+    ""
+}

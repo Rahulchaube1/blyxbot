@@ -1,0 +1,65 @@
+// keep — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_keep(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // verb 02681795
+    if sense == 1 {
+        return "verb\tkeep in a certain state, position, or activity; e.g., \"keep clean\"\tmaintain, hold\tThe students keep me on my toes";
+    }
+    // verb 02684924
+    if sense == 2 {
+        return "verb\tcontinue a certain state, condition, or activity\tcontinue, go on, proceed, go along\tKeep on working!";
+    }
+    // verb 02202384
+    if sense == 3 {
+        return "verb\tretain possession of\thold on\tCan I keep my old stuffed animals?";
+    }
+    // verb 02450505
+    if sense == 4 {
+        return "verb\tstop (someone or something) from doing something or being in a certain state\tprevent\tKeep the child from eating the marbles";
+    }
+    // verb 02578872
+    if sense == 5 {
+        return "verb\tconform one's action or practice to\tobserve\tkeep appointments";
+    }
+    // verb 00732552
+    if sense == 6 {
+        return "verb\tstick to correctly or closely\tobserve, maintain\tkeep count";
+    }
+    // verb 02202928
+    if sense == 7 {
+        return "verb\tlook after; be the keeper of; have charge of\t\tHe keeps the shop when I am gone";
+    }
+    // verb 01065877
+    if sense == 8 {
+        return "verb\tmaintain by writing regular records\tmaintain\tkeep a diary";
+    }
+    // verb 02651853
+    if sense == 9 {
+        return "verb\tsupply with room and board\t\tHe is keeping three women in the guest cottage";
+    }
+    // verb 02410175
+    if sense == 10 {
+        return "verb\tallow to remain in a place or position or maintain a property or feature\tretain, continue, keep on\tThe family's fortune waned and they could not keep their household staff";
+    }
+    // verb 01184625
+    if sense == 11 {
+        return "verb\tsupply with necessities and support\tsustain, maintain\tThere's little to earn and many to keep";
+    }
+    // verb 02734800
+    if sense == 12 {
+        return "verb\tfail to spoil or rot\tstay fresh\tThese potatoes keep for a long time";
+    }
+    // verb 02578510
+    if sense == 13 {
+        return "verb\tbehave as expected during of holidays or rites\tobserve, celebrate\tKeep the commandments";
+    }
+    // verb 02422663
+    if sense == 14 {
+        return "verb\tkeep under control; keep in check\trestrain, keep back, hold back\tKeep your temper";
+    }
+    // verb 02733122
+    if sense == 15 {
+        return "verb\tmaintain in safety from injury, harm, or danger\tpreserve\tMay God keep you";
+    }
+    ""
+}

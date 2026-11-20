@@ -1,0 +1,29 @@
+// rate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rate(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 15286249
+    if sense == 1 {
+        return "noun\ta magnitude or frequency relative to a time unit\t\tthey traveled at a rate of 55 miles per hour";
+    }
+    // noun 13325010
+    if sense == 2 {
+        return "noun\tamount of a charge or payment relative to some basis\tcharge per unit\ta 10-minute phone call at that rate would cost $5";
+    }
+    // verb 00658052
+    if sense == 3 {
+        return "verb\tassign a rank or rating to\trank, range, order, grade, place\tThe restaurant is rated highly in the food guide";
+    }
+    // verb 02646227
+    if sense == 4 {
+        return "verb\tbe worthy of or have a certain rating\t\tThis bond rates highly";
+    }
+    // noun 05058580
+    if sense == 5 {
+        return "noun\tthe relative speed of progress or change\tpace\the works at a great rate";
+    }
+    // verb 00660971
+    if sense == 6 {
+        return "verb\testimate the value of\tvalue\tHow would you rate his chances to become President?";
+    }
+    ""
+}

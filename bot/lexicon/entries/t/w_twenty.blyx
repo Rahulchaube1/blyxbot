@@ -1,0 +1,13 @@
+// twenty — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_twenty(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02188317
+    if sense == 1 {
+        return "adjective\tdenoting a quantity consisting of 20 items or units\t20, xx\t";
+    }
+    // noun 13748128
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of nineteen and one\t20, XX\t";
+    }
+    ""
+}

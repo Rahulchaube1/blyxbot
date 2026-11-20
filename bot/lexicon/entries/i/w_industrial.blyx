@@ -1,0 +1,17 @@
+// industrial — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_industrial(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02748635
+    if sense == 1 {
+        return "adjective\tof or relating to or resulting from industry\t\tindustrial output";
+    }
+    // adj 01301624
+    if sense == 2 {
+        return "adjective\thaving highly developed industries\t\tthe industrial revolution";
+    }
+    // adj 02556901
+    if sense == 3 {
+        return "adjective\temployed in industry\t\tthe industrial classes";
+    }
+    ""
+}

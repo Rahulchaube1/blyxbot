@@ -1,0 +1,37 @@
+// brush — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_brush(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 08437515
+    if sense == 1 {
+        return "noun\ta dense growth of bushes\tbrushwood, coppice, copse, thicket\t";
+    }
+    // verb 01243809
+    if sense == 2 {
+        return "verb\trub with a brush, or as if with a brush\t\tJohnson brushed the hairs from his jacket";
+    }
+    // verb 01240720
+    if sense == 3 {
+        return "verb\ttouch lightly and briefly\t\tHe brushed the wall lightly";
+    }
+    // noun 02908217
+    if sense == 4 {
+        return "noun\tan implement that has hairs or bristles firmly set into a handle\t\t";
+    }
+    // verb 01243982
+    if sense == 5 {
+        return "verb\tclean with a brush\t\tShe brushed the suit before hanging it back into the closet";
+    }
+    // verb 01870043
+    if sense == 6 {
+        return "verb\tsweep across or over\tsweep\tHer long skirt brushed the floor";
+    }
+    // noun 07413714
+    if sense == 7 {
+        return "noun\tmomentary contact\tlight touch\t";
+    }
+    // verb 00555780
+    if sense == 8 {
+        return "verb\tremove with or as if with a brush\t\tbrush away the crumbs";
+    }
+    ""
+}

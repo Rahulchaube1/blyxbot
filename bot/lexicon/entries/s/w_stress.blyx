@@ -1,0 +1,33 @@
+// stress — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stress(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 07085375
+    if sense == 1 {
+        return "noun\tthe relative prominence of a syllable or musical note (especially with regard to stress or pitch)\temphasis, accent\the put the stress on the wrong syllable";
+    }
+    // verb 01013367
+    if sense == 2 {
+        return "verb\tto stress, single out as important\temphasize, emphasise, punctuate, accent, accentuate\t";
+    }
+    // noun 14376188
+    if sense == 3 {
+        return "noun\t(psychology) a state of mental or emotional strain or suspense\ttension, tenseness\tstress is a vasoconstrictor";
+    }
+    // verb 00983333
+    if sense == 4 {
+        return "verb\tput stress on; utter with an accent\taccent, accentuate\t";
+    }
+    // noun 14435187
+    if sense == 5 {
+        return "noun\tspecial emphasis attached to something\tfocus\tthe stress was more on accuracy than on speed";
+    }
+    // noun 14410089
+    if sense == 6 {
+        return "noun\tdifficulty that causes worry or emotional tension\tstrain\tshe endured the stresses and strains of life";
+    }
+    // noun 11514805
+    if sense == 7 {
+        return "noun\t(physics) force that produces strain on a physical body\t\tthe intensity of stress is expressed in units of force divided by units of area";
+    }
+    ""
+}

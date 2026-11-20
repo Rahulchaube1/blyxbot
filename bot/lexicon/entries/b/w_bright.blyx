@@ -1,0 +1,33 @@
+// bright — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bright(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 00278551
+    if sense == 1 {
+        return "adjective\temitting or reflecting light readily or in large amounts\t\tthe sun was bright and hot";
+    }
+    // adj 00402855
+    if sense == 2 {
+        return "adjective\thaving striking color\tbrilliant, vivid\tbright dress";
+    }
+    // adj 01335458
+    if sense == 3 {
+        return "adjective\tcharacterized by quickness and ease in learning\tsmart\tsome children are brighter in one subject than another";
+    }
+    // adj 00271022
+    if sense == 4 {
+        return "adjective\thaving lots of light either natural or artificial\t\tthe room was bright and airy";
+    }
+    // adj 01812237
+    if sense == 5 {
+        return "adjective\tmade smooth and bright by or as if by rubbing; reflecting a sheen or glow\tburnished, lustrous, shining, shiny\tbright silver candlesticks";
+    }
+    // adj 01121238
+    if sense == 6 {
+        return "adjective\tsplendid\t\tthe bright stars of stage and screen";
+    }
+    // adv 00077168
+    if sense == 7 {
+        return "adverb\twith brightness\tbrilliantly, brightly\tthe windows glowed jewel bright";
+    }
+    ""
+}

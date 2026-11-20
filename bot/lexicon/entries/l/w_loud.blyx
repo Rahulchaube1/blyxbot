@@ -1,0 +1,17 @@
+// loud — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_loud(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01452593
+    if sense == 1 {
+        return "adjective\tcharacterized by or producing sound of great volume or intensity\t\ta group of loud children";
+    }
+    // adj 02393791
+    if sense == 2 {
+        return "adjective\ttastelessly showy\tbrassy, cheap, flash, flashy, garish, gaudy, gimcrack, meretricious, tacky, tatty, tawdry, trashy\tloud sport shirts";
+    }
+    // adv 00069901
+    if sense == 3 {
+        return "adverb\twith relatively high volume\tloudly, aloud\the spoke loud enough for those at the back of the room to hear him";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// answer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_answer(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00815686
+    if sense == 1 {
+        return "verb\treact verbally\treply, respond\tShe didn't want to answer";
+    }
+    // noun 06746005
+    if sense == 2 {
+        return "noun\ta statement (either spoken or written) that is made to reply to a question or request or criticism or accusation\treply, response\tI waited several days for his answer";
+    }
+    // noun 06743506
+    if sense == 3 {
+        return "noun\ta statement that solves a problem or explains how to solve the problem\tsolution, result, resolution, solvent\tthe answers were in the back of the book";
+    }
+    // noun 07200527
+    if sense == 4 {
+        return "noun\tthe speech act of replying to a question\t\t";
+    }
+    // verb 00719590
+    if sense == 5 {
+        return "verb\trespond to a signal\t\tanswer the door";
+    }
+    // verb 00636279
+    if sense == 6 {
+        return "verb\tgive the correct answer or solution to\t\tanswer a question";
+    }
+    // verb 00635523
+    if sense == 7 {
+        return "verb\tunderstand the meaning of\tresolve\tThe question concerning the meaning of life cannot be answered";
+    }
+    // verb 00815171
+    if sense == 8 {
+        return "verb\tgive a defence or refutation of (a charge) or in (an argument)\t\tThe defendant answered to all the charges of the prosecution";
+    }
+    ""
+}

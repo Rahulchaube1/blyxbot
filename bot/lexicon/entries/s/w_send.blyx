@@ -1,0 +1,37 @@
+// send — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_send(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01951480
+    if sense == 1 {
+        return "verb\tcause to go somewhere\tdirect\t";
+    }
+    // verb 01437254
+    if sense == 2 {
+        return "verb\tto cause or order to be taken, directed, or transmitted to another place\tsend out\t";
+    }
+    // verb 01031256
+    if sense == 3 {
+        return "verb\tcause to be directed or transmitted to another place\tmail, post\tsend me your latest results";
+    }
+    // verb 01950798
+    if sense == 4 {
+        return "verb\ttransport commercially\ttransport, ship\t";
+    }
+    // verb 01088923
+    if sense == 5 {
+        return "verb\tassign to a station\tstation, post, place\t";
+    }
+    // verb 01062555
+    if sense == 6 {
+        return "verb\ttransfer\tget off, send off\t";
+    }
+    // verb 02348568
+    if sense == 7 {
+        return "verb\tcause to be admitted; of persons to an institution\tcommit, institutionalize, institutionalise, charge\t";
+    }
+    // verb 00973056
+    if sense == 8 {
+        return "verb\tbroadcast over the airwaves, as in radio or television\tair, broadcast, beam, transmit\t";
+    }
+    ""
+}

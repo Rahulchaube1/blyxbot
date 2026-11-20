@@ -1,0 +1,17 @@
+// pretty — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pretty(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00035718
+    if sense == 1 {
+        return "adverb\tto a moderately sufficient extent or degree\treasonably, moderately, jolly, somewhat, fairly, middling, passably\tpretty big";
+    }
+    // adj 00220082
+    if sense == 2 {
+        return "adjective\tpleasing by delicacy or grace; not imposing\t\tpretty girl";
+    }
+    // adj 01128871
+    if sense == 3 {
+        return "adjective\t(used ironically) unexpectedly bad\t\ta pretty mess";
+    }
+    ""
+}

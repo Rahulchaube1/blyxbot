@@ -1,0 +1,25 @@
+// atmosphere — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_atmosphere(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 14524849
+    if sense == 1 {
+        return "noun\ta particular environment or surrounding influence\tambiance, ambience\tthere was an atmosphere of excitement";
+    }
+    // noun 13711060
+    if sense == 2 {
+        return "noun\ta unit of pressure: the pressure that will support a column of mercury 760 mm high at sea level and 0 degrees centigrade\tstandard atmosphere, atm, standard pressure\t";
+    }
+    // noun 08499057
+    if sense == 3 {
+        return "noun\tthe mass of air surrounding the Earth\tair\tthere was great heat as the comet entered the atmosphere";
+    }
+    // noun 14520278
+    if sense == 4 {
+        return "noun\tthe weather or climate at some place\tatmospheric state\tthe atmosphere was thick with fog";
+    }
+    // noun 09210604
+    if sense == 5 {
+        return "noun\tthe envelope of gases surrounding any celestial body\t\t";
+    }
+    ""
+}

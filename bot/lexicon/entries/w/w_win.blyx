@@ -1,0 +1,21 @@
+// win — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_win(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01100145
+    if sense == 1 {
+        return "verb\tbe the winner in a contest or competition; be victorious\t\tWin the game";
+    }
+    // verb 02288295
+    if sense == 2 {
+        return "verb\twin something through one's efforts\tacquire, gain\t";
+    }
+    // noun 07354731
+    if sense == 3 {
+        return "noun\ta victory (as in a race or other competition)\t\the was happy to get the win";
+    }
+    // verb 01111028
+    if sense == 4 {
+        return "verb\tobtain advantages, such as points, etc.\tgain, advance, pull ahead, make headway, get ahead, gain ground\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// commit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_commit(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02582615
+    if sense == 1 {
+        return "verb\tperform an act, usually with a negative connotation\tperpetrate, pull\t";
+    }
+    // verb 00887463
+    if sense == 2 {
+        return "verb\tgive entirely to a specific person, activity, or cause\tgive, dedicate, consecrate, devote\tShe committed herself to the work of God";
+    }
+    // verb 02348568
+    if sense == 3 {
+        return "verb\tcause to be admitted; of persons to an institution\tinstitutionalize, institutionalise, send, charge\tAfter the second episode, she had to be committed";
+    }
+    // verb 02349212
+    if sense == 4 {
+        return "verb\tconfer a trust upon\tentrust, intrust, trust, confide\tI commit my soul to God";
+    }
+    // verb 02271137
+    if sense == 5 {
+        return "verb\tmake an investment\tinvest, put, place\t";
+    }
+    ""
+}

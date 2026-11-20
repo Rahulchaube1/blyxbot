@@ -1,0 +1,29 @@
+// wide — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wide(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02560548
+    if sense == 1 {
+        return "adjective\thaving great (or a certain) extent from one side to the other\tbroad\twide roads";
+    }
+    // adj 00526062
+    if sense == 2 {
+        return "adjective\tbroad in scope or content\tacross-the-board, all-embracing, all-encompassing, all-inclusive, blanket, broad, encompassing, extensive, panoptic\tgranted him wide powers";
+    }
+    // adj 01654900
+    if sense == 3 {
+        return "adjective\t(used of eyes) fully open or extended\twide-eyed\tstared with wide eyes";
+    }
+    // adv 00495743
+    if sense == 4 {
+        return "adverb\twith or by a broad space\t\tstand with legs wide apart";
+    }
+    // adj 01384212
+    if sense == 5 {
+        return "adjective\tvery large in expanse or scope\tbroad, spacious\tthe wide plains";
+    }
+    // adv 00496010
+    if sense == 6 {
+        return "adverb\tto the fullest extent possible\t\topen your eyes wide";
+    }
+    ""
+}

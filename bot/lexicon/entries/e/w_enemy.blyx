@@ -1,0 +1,21 @@
+// enemy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_enemy(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08190482
+    if sense == 1 {
+        return "noun\tan opposing military force\t\tthe enemy attacked at dawn";
+    }
+    // noun 10055847
+    if sense == 2 {
+        return "noun\tan armed adversary (especially a member of an opposing military force)\tfoe, foeman, opposition\ta soldier must be prepared to kill his enemies";
+    }
+    // noun 07946851
+    if sense == 3 {
+        return "noun\tany hostile group of people\t\the viewed lawyers as the real enemy";
+    }
+    // noun 10098710
+    if sense == 4 {
+        return "noun\ta personal enemy\tfoe\t";
+    }
+    ""
+}

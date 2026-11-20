@@ -1,0 +1,17 @@
+// policy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_policy(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05901508
+    if sense == 1 {
+        return "noun\ta plan of action adopted by an individual or social group\t\tit was a policy of retribution";
+    }
+    // noun 06656408
+    if sense == 2 {
+        return "noun\ta line of argument rationalizing the course of action of a government\t\tthey debated the policy or impolicy of the proposed legislation";
+    }
+    // noun 06523641
+    if sense == 3 {
+        return "noun\twritten contract or certificate of insurance\tinsurance policy, insurance\tyou should have read the small print on your policy";
+    }
+    ""
+}

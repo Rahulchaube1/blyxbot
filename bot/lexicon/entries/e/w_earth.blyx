@@ -1,0 +1,21 @@
+// earth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_earth(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 09270894
+    if sense == 1 {
+        return "noun\tthe 3rd planet from the sun; the planet we live on\tworld, globe\tthe Earth moves around the sun";
+    }
+    // noun 14842992
+    if sense == 2 {
+        return "noun\tthe loose soft material that makes up a large part of the land surface\tground\tthey dug into the earth outside the church";
+    }
+    // noun 09334396
+    if sense == 3 {
+        return "noun\tthe solid part of the earth's surface\tland, dry land, ground, solid ground, terra firma\tthe earth shook for several minutes";
+    }
+    // noun 08562067
+    if sense == 4 {
+        return "noun\tthe abode of mortals (as contrasted with Heaven or Hell)\t\tit was hell on earth";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// display — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_display(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02140033
+    if sense == 1 {
+        return "verb\tto show, make visible or apparent\texpose, exhibit\tNational leaders will have to display the highest skills of statesmanship";
+    }
+    // noun 06879521
+    if sense == 2 {
+        return "noun\tsomething intended to communicate a particular impression\tshow\tmade a display of strength";
+    }
+    // noun 00521209
+    if sense == 3 {
+        return "noun\tsomething shown to the public\texhibit, showing\t";
+    }
+    // noun 03210940
+    if sense == 4 {
+        return "noun\ta visual representation of something\tpresentation\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// agreement — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_agreement(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06770275
+    if sense == 1 {
+        return "noun\tthe statement (oral or written) of an exchange of promises\tunderstanding\tthey had an agreement that they would not interfere in each other's business";
+    }
+    // noun 04713428
+    if sense == 2 {
+        return "noun\tcompatibility of observations\tcorrespondence\tthere was no agreement between theory and measurement";
+    }
+    // noun 13971065
+    if sense == 3 {
+        return "noun\tharmony of people's opinions or actions or characters\taccord\tthe two parties were in agreement";
+    }
+    // noun 05795044
+    if sense == 4 {
+        return "noun\tthe thing arranged or agreed to\tarrangement\t";
+    }
+    ""
+}

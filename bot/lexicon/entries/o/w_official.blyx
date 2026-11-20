@@ -1,0 +1,25 @@
+// official — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_official(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 10372373
+    if sense == 1 {
+        return "noun\ta worker who holds or is invested with an office\tfunctionary\t";
+    }
+    // adj 01632537
+    if sense == 2 {
+        return "adjective\thaving official authority or sanction\t\tofficial permission";
+    }
+    // noun 10372076
+    if sense == 3 {
+        return "noun\tsomeone who administers the rules of a game or sport\t\tthe golfer asked for an official who could give him a ruling";
+    }
+    // adj 02991463
+    if sense == 4 {
+        return "adjective\tof or relating to an office\t\tofficial privileges";
+    }
+    // adj 01634736
+    if sense == 5 {
+        return "adjective\tverified officially\t\tthe election returns are now official";
+    }
+    ""
+}

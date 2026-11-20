@@ -1,0 +1,17 @@
+// all — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_all(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02269286
+    if sense == 1 {
+        return "adjective\tquantifier; used with either mass or count nouns to indicate the whole number or amount of or every one of a class\t\twe sat up all night";
+    }
+    // adv 00008007
+    if sense == 2 {
+        return "adverb\tto a complete degree or to the full or entire extent (`whole' is often used informally for `wholly')\twholly, entirely, completely, totally, altogether, whole\tthe directions were all wrong";
+    }
+    // adj 00521584
+    if sense == 3 {
+        return "adjective\tcompletely given to or absorbed by\t\tbecame all attention";
+    }
+    ""
+}

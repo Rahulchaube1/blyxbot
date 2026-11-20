@@ -1,0 +1,25 @@
+// tip — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tip(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08663156
+    if sense == 1 {
+        return "noun\tthe extreme end of something; especially something pointed\t\t";
+    }
+    // verb 02039544
+    if sense == 2 {
+        return "verb\tcause to tilt\t\ttip the screen upward";
+    }
+    // noun 13298701
+    if sense == 3 {
+        return "noun\ta relatively small amount of money given for services rendered (as by a waiter)\tgratuity, pourboire, baksheesh, bakshish, bakshis, backsheesh\t";
+    }
+    // noun 06651577
+    if sense == 4 {
+        return "noun\tan indication of potential opportunity\tlead, steer, confidential information, wind, hint\the got a tip on the stock market";
+    }
+    // verb 00511178
+    if sense == 5 {
+        return "verb\tmark with a tip\t\ttip the arrow with the small stone";
+    }
+    ""
+}

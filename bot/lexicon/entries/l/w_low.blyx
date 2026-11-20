@@ -1,0 +1,33 @@
+// low — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_low(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01212469
+    if sense == 1 {
+        return "adjective\tless than normal in degree or intensity or amount\t\tlow prices";
+    }
+    // adj 01206474
+    if sense == 2 {
+        return "adjective\tliteral meanings; being at or having a relatively small elevation or upward extension\t\tlow ceilings";
+    }
+    // adj 01455888
+    if sense == 3 {
+        return "adjective\tvery low in volume\tlow-toned\ta low murmur";
+    }
+    // adj 01951008
+    if sense == 4 {
+        return "adjective\tunrefined in character\t\tlow comedy";
+    }
+    // adj 01215421
+    if sense == 5 {
+        return "adjective\tused of sounds and voices; low in pitch or frequency\tlow-pitched\t";
+    }
+    // adj 00904745
+    if sense == 6 {
+        return "adjective\tof the most contemptible kind\tabject, low-down, miserable, scummy, scurvy\ta low stunt to pull";
+    }
+    // adv 00393149
+    if sense == 7 {
+        return "adverb\tin a low position; near the ground\t\tthe branches hung low";
+    }
+    ""
+}

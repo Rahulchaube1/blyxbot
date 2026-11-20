@@ -1,0 +1,21 @@
+// production — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_production(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00912960
+    if sense == 1 {
+        return "noun\tthe act or process of producing something\t\tShakespeare's production of poetry was enormous";
+    }
+    // noun 07006951
+    if sense == 2 {
+        return "noun\ta presentation for the stage or screen or radio or television\t\thave you seen the new production of Hamlet?";
+    }
+    // noun 04007894
+    if sense == 3 {
+        return "noun\tan artifact that has been created by someone or some process\tproduct\tthey export most of their agricultural production";
+    }
+    // noun 00522736
+    if sense == 4 {
+        return "noun\t(law) the act of exhibiting in a court of law\t\tthe appellate court demanded the production of all documents";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// tomorrow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tomorrow(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 15155891
+    if sense == 1 {
+        return "noun\tthe day after today\t\twhat are our tasks for tomorrow?";
+    }
+    // noun 15263795
+    if sense == 2 {
+        return "noun\tthe near future\t\ttomorrow's world";
+    }
+    // adv 00479275
+    if sense == 3 {
+        return "adverb\tthe next day, the day after, following the present day\t\t";
+    }
+    ""
+}

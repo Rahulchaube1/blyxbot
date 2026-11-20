@@ -1,0 +1,29 @@
+// degree — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_degree(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05093890
+    if sense == 1 {
+        return "noun\ta position on a scale of intensity or amount or quality\tgrade, level\tit is all a matter of degree";
+    }
+    // noun 13939892
+    if sense == 2 {
+        return "noun\ta specific identifiable position in a continuum or series or especially in a process\tlevel, stage, point\ta remarkable degree of frankness";
+    }
+    // noun 06697331
+    if sense == 3 {
+        return "noun\tan award conferred by a college or university signifying that the recipient has satisfactorily completed a course of study\tacademic degree\the earned his degree at Princeton summa cum laude";
+    }
+    // noun 13611207
+    if sense == 4 {
+        return "noun\ta measure for arcs and angles\tarcdegree\tthere are 360 degrees in a circle";
+    }
+    // noun 05861317
+    if sense == 5 {
+        return "noun\tthe highest power of a term or variable\t\t";
+    }
+    // noun 13714184
+    if sense == 6 {
+        return "noun\ta unit of temperature on a specified scale\t\tthe game was played in spite of the 40-degree temperature";
+    }
+    ""
+}

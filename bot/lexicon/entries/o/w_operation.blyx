@@ -1,0 +1,33 @@
+// operation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_operation(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 14008806
+    if sense == 1 {
+        return "noun\tthe state of being in effect or being operative\t\tthat rule is no longer in operation";
+    }
+    // noun 01095966
+    if sense == 2 {
+        return "noun\ta business especially one run on a large scale\t\ta large-scale farming operation";
+    }
+    // noun 00409483
+    if sense == 3 {
+        return "noun\ta planned activity involving many people performing various actions\t\tthey organized a rescue operation";
+    }
+    // noun 13524925
+    if sense == 4 {
+        return "noun\t(computer science) data processing in which the result is completely specified by a rule (especially the processing that results from a single instruction)\t\tit can perform millions of operations per second";
+    }
+    // noun 00955060
+    if sense == 5 {
+        return "noun\tactivity by a military or naval force (as a maneuver or campaign)\tmilitary operation\tit was a joint operation of the navy and air force";
+    }
+    // noun 00671351
+    if sense == 6 {
+        return "noun\ta medical procedure involving an incision with instruments; performed to repair damage or arrest disease in a living body\tsurgery, surgical operation, surgical procedure, surgical process\tthey will schedule the operation as soon as an operating room is available";
+    }
+    // noun 00577068
+    if sense == 7 {
+        return "noun\ta process or series of acts especially of a practical or mechanical nature involved in a particular form of work\tprocedure\tthe operations in building a house";
+    }
+    ""
+}

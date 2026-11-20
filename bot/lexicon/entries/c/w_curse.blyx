@@ -1,0 +1,29 @@
+// curse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_curse(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00865387
+    if sense == 1 {
+        return "verb\tutter obscenities or profanities\tcuss, blaspheme, swear, imprecate\tThe drunken men were cursing loudly in the street";
+    }
+    // verb 00866314
+    if sense == 2 {
+        return "verb\theap obscenities upon\t\tThe taxi driver who felt he didn't get a high enough tip cursed the passenger";
+    }
+    // noun 07125096
+    if sense == 3 {
+        return "noun\tprofane or obscene expression usually of surprise or anger\tcurse word, expletive, oath, swearing, swearword, cuss\t";
+    }
+    // verb 00865958
+    if sense == 4 {
+        return "verb\twish harm upon; invoke evil upon\tbeshrew, damn, bedamn, anathemize, anathemise, imprecate, maledict\tThe bad witch cursed the child";
+    }
+    // noun 07233634
+    if sense == 5 {
+        return "noun\tan appeal to some supernatural power to inflict evil on someone or some group\texecration, condemnation\t";
+    }
+    // noun 07160424
+    if sense == 6 {
+        return "noun\tan evil spell\thex, jinx, whammy\ta witch put a curse on his whole family";
+    }
+    ""
+}

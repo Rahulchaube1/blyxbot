@@ -1,0 +1,37 @@
+// content — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_content(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 07955057
+    if sense == 1 {
+        return "noun\teverything that is included in a collection and that is held or included in something\t\the emptied the contents of his pockets";
+    }
+    // noun 06598915
+    if sense == 2 {
+        return "noun\twhat a communication that is about something is about\tmessage, subject matter, substance\t";
+    }
+    // noun 13816521
+    if sense == 3 {
+        return "noun\tthe proportion of a substance that is contained in a mixture or alloy etc.\t\t";
+    }
+    // verb 01194238
+    if sense == 4 {
+        return "verb\tsatisfy in a limited way\t\tHe contented himself with one glass of beer per day";
+    }
+    // noun 13779374
+    if sense == 5 {
+        return "noun\tthe amount that can be contained\tcapacity\t";
+    }
+    // noun 05809192
+    if sense == 6 {
+        return "noun\tthe sum or range of what has been perceived, discovered, or learned\tcognitive content, mental object\t";
+    }
+    // verb 01816844
+    if sense == 7 {
+        return "verb\tmake content\t\tI am contented";
+    }
+    // noun 14412882
+    if sense == 8 {
+        return "noun\tthe state of being contented with your situation in life\tcontentedness\tthey could read to their heart's content";
+    }
+    ""
+}

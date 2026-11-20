@@ -1,0 +1,17 @@
+// analysis — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_analysis(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00634276
+    if sense == 1 {
+        return "noun\tan investigation of the component parts of a whole and their relations in making up the whole\t\t";
+    }
+    // noun 05772667
+    if sense == 2 {
+        return "noun\tthe abstract separation of a whole into its constituent parts in order to study the parts and their relations\tanalytic thinking\t";
+    }
+    // noun 06376014
+    if sense == 3 {
+        return "noun\ta form of literary criticism in which the structure of a piece of writing is analyzed\t\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// industry — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_industry(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08065234
+    if sense == 1 {
+        return "noun\tthe people or companies engaged in a particular kind of commercial enterprise\t\teach industry has its own trade publications";
+    }
+    // noun 00923444
+    if sense == 2 {
+        return "noun\tthe organized action of making of goods and services for sale\tmanufacture\tAmerican industry is making increased use of computers to control production";
+    }
+    ""
+}

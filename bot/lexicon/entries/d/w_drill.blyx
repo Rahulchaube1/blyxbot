@@ -1,0 +1,17 @@
+// drill — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_drill(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01443021
+    if sense == 1 {
+        return "verb\tmake a hole, especially with a pointed power or hand tool\tbore\tdon't drill here, there's a gas pipe";
+    }
+    // verb 00603981
+    if sense == 2 {
+        return "verb\ttrain in the military, e.g., in the use of weapons\t\t";
+    }
+    // verb 00606093
+    if sense == 3 {
+        return "verb\tlearn by repetition\texercise, practice, practise\tWe drilled French verbs every day";
+    }
+    ""
+}

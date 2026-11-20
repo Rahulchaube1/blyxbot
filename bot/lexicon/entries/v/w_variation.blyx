@@ -1,0 +1,25 @@
+// variation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_variation(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 07337390
+    if sense == 1 {
+        return "noun\tan instance of change; the rate or magnitude of change\tfluctuation\t";
+    }
+    // noun 00194969
+    if sense == 2 {
+        return "noun\tan activity that varies from a norm or standard\tvariance\tany variation in his routine was immediately reported";
+    }
+    // noun 07030012
+    if sense == 3 {
+        return "noun\ta repetition of a musical theme in which it is modified or embellished\t\t";
+    }
+    // noun 05840650
+    if sense == 4 {
+        return "noun\tsomething a little different from others of the same type\tversion, variant, edition\tan emery wheel is the modern variation of a grindstone";
+    }
+    // noun 04521699
+    if sense == 5 {
+        return "noun\tan artifact that deviates from a norm or standard\t\the patented a variation on the sandal";
+    }
+    ""
+}

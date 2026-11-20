@@ -1,0 +1,21 @@
+// remember — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_remember(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00607780
+    if sense == 1 {
+        return "verb\trecall knowledge from memory; have a recollection\tretrieve, recall, call back, call up, recollect, think\tI can't remember saying any such thing";
+    }
+    // verb 00609683
+    if sense == 2 {
+        return "verb\tkeep in mind for attention or consideration\tthink of\tRemember the Alamo";
+    }
+    // verb 00611256
+    if sense == 3 {
+        return "verb\trecapture the past; indulge in memories\tthink back\the remembered how he used to pick flowers";
+    }
+    // verb 02356567
+    if sense == 4 {
+        return "verb\tshow appreciation to\t\tHe remembered her in his will";
+    }
+    ""
+}

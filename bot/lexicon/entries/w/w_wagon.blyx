@@ -1,0 +1,13 @@
+// wagon — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wagon(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 04543158
+    if sense == 1 {
+        return "noun\tany of various kinds of wheeled vehicles drawn by an animal or a tractor\twaggon\t";
+    }
+    // noun 03977966
+    if sense == 2 {
+        return "noun\tvan used by police to transport prisoners\tpolice van, police wagon, paddy wagon, patrol wagon, black Maria\t";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// register — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_register(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02471690
+    if sense == 1 {
+        return "verb\trecord in writing; enter into a book of names or events or transactions\t\t";
+    }
+    // verb 01001857
+    if sense == 2 {
+        return "verb\trecord in a public office or in a court of law\tfile\t";
+    }
+    // verb 02471087
+    if sense == 3 {
+        return "verb\tenroll to vote\t\tregister for an election";
+    }
+    // verb 02105810
+    if sense == 4 {
+        return "verb\tbe aware of\trecord\tDid you register any change when I pressed the button?";
+    }
+    // noun 06507041
+    if sense == 5 {
+        return "noun\tan official written record of names or events or transactions\tregistry\t";
+    }
+    // verb 00922867
+    if sense == 6 {
+        return "verb\tindicate a certain reading; of gauges and instruments\tread, show, record\t";
+    }
+    // noun 05126849
+    if sense == 7 {
+        return "noun\t(music) the timbre that is characteristic of a certain range and manner of production of the human voice or of different pipe organ stops or of different musical instruments\t\t";
+    }
+    // verb 02472033
+    if sense == 8 {
+        return "verb\thave one's name listed as a candidate for several parties\tcross-file\t";
+    }
+    ""
+}

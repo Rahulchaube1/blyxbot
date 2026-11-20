@@ -1,0 +1,61 @@
+// land — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_land(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // noun 13250048
+    if sense == 1 {
+        return "noun\tthe land on which real estate is located\t\the built the house on land leased from the city";
+    }
+    // noun 09335240
+    if sense == 2 {
+        return "noun\tmaterial in the top layer of the surface of the earth in which plants can grow (especially with reference to its quality or use)\tground, soil\tthe land had never been plowed";
+    }
+    // verb 01979901
+    if sense == 3 {
+        return "verb\treach or come to rest\tset down\tThe bird landed on the highest branch";
+    }
+    // noun 08556491
+    if sense == 4 {
+        return "noun\tterritory over which rule or control is exercised\tdomain, demesne\the made it the law of the land";
+    }
+    // noun 09334396
+    if sense == 5 {
+        return "noun\tthe solid part of the earth's surface\tdry land, earth, ground, solid ground, terra firma\tthe plane turned away from the sea and moved back over land";
+    }
+    // noun 08544813
+    if sense == 6 {
+        return "noun\tthe territory occupied by a nation\tcountry, state\the returned to the land of his birth";
+    }
+    // verb 01981036
+    if sense == 7 {
+        return "verb\tcause to come to the ground\tput down, bring down\tthe pilot managed to land the airplane safely";
+    }
+    // verb 00135857
+    if sense == 8 {
+        return "verb\tbring into a different state\tbring\tthis may land you in jail";
+    }
+    // noun 14514805
+    if sense == 9 {
+        return "noun\ta domain in which something is dominant\tkingdom, realm\ta land of make-believe";
+    }
+    // noun 13246662
+    if sense == 10 {
+        return "noun\textensive landed property (especially in the country) retained by the owner for his own use\testate, landed estate, acres, demesne\t";
+    }
+    // noun 08166552
+    if sense == 11 {
+        return "noun\tthe people who live in a nation or country\tnation, country\t";
+    }
+    // verb 02087156
+    if sense == 12 {
+        return "verb\tbring ashore\t\tThe drug smugglers landed the heroin on the beach of the island";
+    }
+    // noun 08168978
+    if sense == 13 {
+        return "noun\ta politically organized body of people under a single government\tstate, nation, country, commonwealth, res publica, body politic\tan industrialized land";
+    }
+    // verb 02358527
+    if sense == 14 {
+        return "verb\tdeliver (a blow)\t\tHe landed several blows on his opponent's head";
+    }
+    ""
+}

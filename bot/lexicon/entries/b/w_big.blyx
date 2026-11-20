@@ -1,0 +1,33 @@
+// big — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_big(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01382086
+    if sense == 1 {
+        return "adjective\tabove average in size or number or quantity or magnitude or extent\tlarge\tset out for the big city";
+    }
+    // adj 01276872
+    if sense == 2 {
+        return "adjective\tsignificant\t\tgraduation was a big day in his life";
+    }
+    // adj 01510444
+    if sense == 3 {
+        return "adjective\tvery intense\tbad\tin a big rage";
+    }
+    // adj 01453084
+    if sense == 4 {
+        return "adjective\tloud and firm\t\ta big voice";
+    }
+    // adj 00579622
+    if sense == 5 {
+        return "adjective\tconspicuous in position or importance\tlarge, prominent\ta big figure in the movement";
+    }
+    // adv 00226054
+    if sense == 6 {
+        return "adverb\textremely well\t\this performance went over big";
+    }
+    // adv 00225672
+    if sense == 7 {
+        return "adverb\tin a boastful manner\tboastfully, vauntingly, large\the talked big all evening";
+    }
+    ""
+}

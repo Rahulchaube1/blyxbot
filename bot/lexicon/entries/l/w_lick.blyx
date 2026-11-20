@@ -1,0 +1,17 @@
+// lick — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lick(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01412912
+    if sense == 1 {
+        return "verb\tbeat thoroughly and conclusively in a competition or fight\tcream, bat, clobber, drub, thrash\tWe licked the other team on Sunday!";
+    }
+    // verb 01432176
+    if sense == 2 {
+        return "verb\tpass the tongue over\tlap\tthe dog licked her hand";
+    }
+    // verb 00634906
+    if sense == 3 {
+        return "verb\tfind the solution to (a problem or question) or understand the meaning of\tsolve, work out, figure out, puzzle out, work\t";
+    }
+    ""
+}

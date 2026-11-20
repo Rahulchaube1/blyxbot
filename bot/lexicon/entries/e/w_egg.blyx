@@ -1,0 +1,13 @@
+// egg — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_egg(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 01460457
+    if sense == 1 {
+        return "noun\tanimal reproductive body consisting of an ovum or embryo together with nutritive and protective envelopes; especially the thin-shelled reproductive body laid by e.g. female birds\t\t";
+    }
+    // noun 07840804
+    if sense == 2 {
+        return "noun\toval reproductive body of a fowl (especially a hen) used as food\teggs\t";
+    }
+    ""
+}

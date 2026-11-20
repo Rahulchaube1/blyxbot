@@ -1,0 +1,69 @@
+// strike — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_strike(sense: i64) -> str {
+    if sense == 0 { return "16"; }
+    // verb 01410223
+    if sense == 1 {
+        return "verb\tdeliver a sharp blow, as with the hand, fist, or weapon\t\tthe opponent refused to strike";
+    }
+    // verb 01767949
+    if sense == 2 {
+        return "verb\thave an emotional or cognitive impact upon\taffect, impress, move\t";
+    }
+    // verb 01236164
+    if sense == 3 {
+        return "verb\thit against; come into sudden contact with\thit, impinge on, run into, collide with\t";
+    }
+    // noun 01243674
+    if sense == 4 {
+        return "noun\ta group's refusal to work in protest against low pay or bad work conditions\twork stoppage\tthe strike lasted more than a month before it was settled";
+    }
+    // verb 01123887
+    if sense == 5 {
+        return "verb\tmake a strategic, offensive, assault against an enemy, opponent, or a target\thit\tWe must strike the enemy's oil fields";
+    }
+    // verb 00923622
+    if sense == 6 {
+        return "verb\tindicate (a certain time) by striking\t\t";
+    }
+    // verb 01209135
+    if sense == 7 {
+        return "verb\taffect or afflict suddenly, usually adversely\thit\t";
+    }
+    // verb 02412647
+    if sense == 8 {
+        return "verb\tstop work in order to press demands\twalk out\tThe auto workers are striking for higher wages";
+    }
+    // noun 00977301
+    if sense == 9 {
+        return "noun\tan attack that is intended to seize or inflict damage on or destroy an objective\t\tthe strike was scheduled to begin at dawn";
+    }
+    // verb 02611976
+    if sense == 10 {
+        return "verb\ttouch or seem as if touching visually or audibly\tfall, shine\t";
+    }
+    // verb 02526811
+    if sense == 11 {
+        return "verb\tattain\tcome to\t";
+    }
+    // verb 01209426
+    if sense == 12 {
+        return "verb\tproduce by manipulating keys or strings of musical instruments, also metaphorically\thit\tThe pianist strikes a middle C";
+    }
+    // verb 00143540
+    if sense == 13 {
+        return "verb\tcause to form (an electric arc) between electrodes of an arc lamp\t\tstrike an arc";
+    }
+    // verb 02286687
+    if sense == 14 {
+        return "verb\tfind unexpectedly\tfall upon, come upon, light upon, chance upon, come across, chance on, happen upon, attain, discover\t";
+    }
+    // verb 01675073
+    if sense == 15 {
+        return "verb\tproduce by ignition or a blow\t\tstrike fire from the flintstone";
+    }
+    // verb 01549420
+    if sense == 16 {
+        return "verb\tremove by erasing or crossing out or as if by drawing a line\tscratch, expunge, excise\tPlease strike this remark from the record";
+    }
+    ""
+}

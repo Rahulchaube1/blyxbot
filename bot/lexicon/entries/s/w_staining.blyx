@@ -1,0 +1,13 @@
+// staining — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_staining(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00275572
+    if sense == 1 {
+        return "noun\t(histology) the use of a dye to color specimens for microscopic study\t\t";
+    }
+    // noun 00276813
+    if sense == 2 {
+        return "noun\tthe act of spotting or staining something\tspotting, maculation\t";
+    }
+    ""
+}

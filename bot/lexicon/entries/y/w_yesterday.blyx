@@ -1,0 +1,13 @@
+// yesterday — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_yesterday(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 15156187
+    if sense == 1 {
+        return "noun\tthe day immediately before today\t\tit was in yesterday's newspapers";
+    }
+    // adv 00507716
+    if sense == 2 {
+        return "adverb\ton the day preceding today\t\tyesterday the weather was beautiful";
+    }
+    ""
+}

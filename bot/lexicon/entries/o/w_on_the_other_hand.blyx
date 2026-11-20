@@ -1,0 +1,9 @@
+// on the other hand — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_on_the_other_hand(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00119578
+    if sense == 1 {
+        return "adverb\t(contrastive) from another point of view\tthen again, but then\ton the other hand, she is too ambitious for her own good";
+    }
+    ""
+}

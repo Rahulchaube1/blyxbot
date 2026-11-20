@@ -1,0 +1,29 @@
+// smooth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_smooth(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02236842
+    if sense == 1 {
+        return "adjective\thaving a surface free from roughness or bumps or ridges or irregularities\t\tsmooth skin";
+    }
+    // verb 01252971
+    if sense == 2 {
+        return "verb\tmake smooth or smoother, as if by rubbing\tsmoothen\tsmooth the surface of the wood";
+    }
+    // adj 00758800
+    if sense == 3 {
+        return "adjective\tsmoothly agreeable and courteous with a degree of sophistication\tpolitic, suave, bland\tthe manager pacified the customer with a smooth apology for the error";
+    }
+    // verb 01245637
+    if sense == 4 {
+        return "verb\tmake (a surface) shine\tpolish, smoothen, shine\t";
+    }
+    // adj 02244619
+    if sense == 5 {
+        return "adjective\tof the margin of a leaf shape; not broken up into teeth\t\t";
+    }
+    // adj 01139832
+    if sense == 6 {
+        return "adjective\tsmooth and unconstrained in movement\tfluent, fluid, liquid\ta long, smooth stride";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// murder — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_murder(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00220522
+    if sense == 1 {
+        return "noun\tunlawful premeditated killing of a human being by a human being\tslaying, execution\t";
+    }
+    // verb 02482425
+    if sense == 2 {
+        return "verb\tkill intentionally and with premeditation\tslay, hit, dispatch, bump off, off, polish off, remove\tThe mafia boss ordered his enemies murdered";
+    }
+    // verb 00548750
+    if sense == 3 {
+        return "verb\talter so as to make unrecognizable\tmangle, mutilate\tThe tourists murdered the French language";
+    }
+    ""
+}

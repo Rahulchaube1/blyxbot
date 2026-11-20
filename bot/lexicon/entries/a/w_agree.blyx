@@ -1,0 +1,21 @@
+// agree — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_agree(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00805376
+    if sense == 1 {
+        return "verb\tbe in accord; be in agreement\thold, concur, concord\tWe agreed on the terms of the settlement";
+    }
+    // verb 00764222
+    if sense == 2 {
+        return "verb\tconsent or assent to a condition, or agree to do something\t\tShe agreed to all my conditions";
+    }
+    // verb 02657219
+    if sense == 3 {
+        return "verb\tbe compatible, similar or consistent; coincide in their characteristics\tmatch, fit, correspond, check, jibe, gibe, tally\tThe two stories don't agree in many details";
+    }
+    // verb 02700104
+    if sense == 4 {
+        return "verb\tgo together\tharmonize, harmonise, consort, accord, concord, fit in\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// knock — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_knock(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01238640
+    if sense == 1 {
+        return "verb\tdeliver a sharp blow or push :\"He knocked the glass clear across the room\"\tstrike hard\t";
+    }
+    // verb 01414467
+    if sense == 2 {
+        return "verb\trap with the knuckles\t\tknock on the door";
+    }
+    // verb 01239619
+    if sense == 3 {
+        return "verb\tknock against with force or violence\tbump\t";
+    }
+    // noun 07386370
+    if sense == 4 {
+        return "noun\tthe sound of knocking (as on a door or in an engine or bearing)\tknocking\tthe knocking grew louder";
+    }
+    // noun 05734381
+    if sense == 5 {
+        return "noun\tnegative criticism\troast\t";
+    }
+    ""
+}

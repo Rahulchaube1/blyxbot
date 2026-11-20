@@ -1,0 +1,37 @@
+// straight — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_straight(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adv 00051848
+    if sense == 1 {
+        return "adverb\twithout deviation\tdirectly, direct\t";
+    }
+    // adj 00596511
+    if sense == 2 {
+        return "adjective\tsuccessive (without a break)\tconsecutive\tsick for five straight days";
+    }
+    // adv 00058128
+    if sense == 3 {
+        return "adverb\tin a forthright manner; candidly or frankly\tdirectly, flat\ttold me straight out";
+    }
+    // adj 02310895
+    if sense == 4 {
+        return "adjective\thaving no deviations\t\tstraight lines";
+    }
+    // adj 01030826
+    if sense == 5 {
+        return "adjective\t(of hair) having no waves or curls\t\ther naturally straight hair hung long and silky";
+    }
+    // adj 01237754
+    if sense == 6 {
+        return "adjective\terect in posture\tunbent, unbowed\tsit straight";
+    }
+    // adj 00022962
+    if sense == 7 {
+        return "adjective\tin keeping with the facts\t\tset the record straight";
+    }
+    // adv 00509432
+    if sense == 8 {
+        return "adverb\tin a straight line; in a direct course\t\tthe road runs straight";
+    }
+    ""
+}

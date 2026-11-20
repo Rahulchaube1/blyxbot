@@ -1,0 +1,17 @@
+// smoke — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_smoke(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 11508092
+    if sense == 1 {
+        return "noun\ta cloud of fine particles suspended in a gas\tfume\t";
+    }
+    // verb 01198101
+    if sense == 2 {
+        return "verb\tinhale and exhale smoke from cigarettes, cigars, pipes\t\tWe never smoked marijuana";
+    }
+    // noun 13556893
+    if sense == 3 {
+        return "noun\ta hot vapor containing fine particles of carbon being produced by combustion\tsmoking\tthe fire produced a tower of black smoke that could be seen for miles";
+    }
+    ""
+}

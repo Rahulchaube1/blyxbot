@@ -1,0 +1,13 @@
+// mile — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mile(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13651218
+    if sense == 1 {
+        return "noun\ta unit of length equal to 1,760 yards or 5,280 feet; exactly 1609.344 meters\tstatute mile, stat mi, land mile, international mile, mi\t";
+    }
+    // noun 13660337
+    if sense == 2 {
+        return "noun\ta unit of length used in navigation; exactly 1,852 meters; historically based on the distance spanned by one minute of arc in latitude\tnautical mile, mi, naut mi, knot, international nautical mile, air mile\t";
+    }
+    ""
+}

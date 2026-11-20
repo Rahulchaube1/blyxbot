@@ -1,0 +1,21 @@
+// tooth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tooth(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05282746
+    if sense == 1 {
+        return "noun\thard bonelike structures in the jaws of vertebrates; used for biting and chewing or for attack and defense\t\t";
+    }
+    // noun 04452848
+    if sense == 2 {
+        return "noun\tsomething resembling the tooth of an animal\t\t";
+    }
+    // noun 02155872
+    if sense == 3 {
+        return "noun\ttoothlike structure in invertebrates found in the mouth or alimentary canal or on a shell\t\t";
+    }
+    // noun 00179576
+    if sense == 4 {
+        return "noun\ta means of enforcement\t\t";
+    }
+    ""
+}

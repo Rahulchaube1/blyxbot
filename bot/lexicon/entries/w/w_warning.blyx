@@ -1,0 +1,13 @@
+// warning — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_warning(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07224151
+    if sense == 1 {
+        return "noun\ta message informing of danger\t\ta warning that still more bombs could explode";
+    }
+    // noun 06672297
+    if sense == 2 {
+        return "noun\tcautionary advice about something imminent (especially imminent danger or other unpleasantness)\tadmonition, monition, word of advice\tthe warning was to beware of surprises";
+    }
+    ""
+}

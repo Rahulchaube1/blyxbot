@@ -1,0 +1,37 @@
+// shock — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shock(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 07510625
+    if sense == 1 {
+        return "noun\tthe feeling of distress and disbelief that you have when something bad happens accidentally\tdaze, stupor\the was numb with shock";
+    }
+    // verb 01809064
+    if sense == 2 {
+        return "verb\tsurprise greatly; knock someone's socks off\tfloor, ball over, blow out of the water, take aback\t";
+    }
+    // verb 01810447
+    if sense == 3 {
+        return "verb\tstrike with disgust or revulsion\toffend, scandalize, scandalise, appal, appall, outrage\tThe scandalous behavior of this married woman shocked her friends";
+    }
+    // noun 01172252
+    if sense == 4 {
+        return "noun\tthe violent interaction of individuals or groups entering into combat\timpact\tthe armies met in the shock of battle";
+    }
+    // noun 00839292
+    if sense == 5 {
+        return "noun\ta reflex response to the passage of electric current through the body\telectric shock, electrical shock\tsubjects received a small electric shock when they made the wrong response";
+    }
+    // noun 14067076
+    if sense == 6 {
+        return "noun\t(pathology) bodily collapse or near collapse caused by inadequate oxygen delivery to the cells; characterized by reduced cardiac output and rapid heartbeat and circulatory insufficiency and pallor\t\tloss of blood is an important cause of shock";
+    }
+    // noun 07429276
+    if sense == 7 {
+        return "noun\tan instance of agitation of the earth's crust\tseismic disturbance\tthe first shock of the earthquake came shortly after noon while workers were at lunch";
+    }
+    // noun 07298982
+    if sense == 8 {
+        return "noun\tan unpleasant or disappointing surprise\tblow\tit came as a shock to learn that he was injured";
+    }
+    ""
+}

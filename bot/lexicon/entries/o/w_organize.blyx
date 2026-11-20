@@ -1,0 +1,29 @@
+// organize — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_organize(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02448185
+    if sense == 1 {
+        return "verb\tcreate (as an entity)\tform, organise\t";
+    }
+    // verb 02432530
+    if sense == 2 {
+        return "verb\tcause to be structured or ordered or operating according to some principle or idea\torganise\t";
+    }
+    // verb 00710005
+    if sense == 3 {
+        return "verb\tplan and direct (a complex undertaking)\tmastermind, engineer, direct, organise, orchestrate\t";
+    }
+    // verb 00404642
+    if sense == 4 {
+        return "verb\tbring order and organization to\torganise, coordinate\tCan you help me organize my files?";
+    }
+    // verb 01651444
+    if sense == 5 {
+        return "verb\tarrange by systematic planning and united effort\torganise, prepare, devise, get up, machinate\torganize a strike";
+    }
+    // verb 02434238
+    if sense == 6 {
+        return "verb\tform or join a union\tunionize, unionise, organise\t";
+    }
+    ""
+}

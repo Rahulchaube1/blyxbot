@@ -1,0 +1,25 @@
+// hole — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hole(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 09304465
+    if sense == 1 {
+        return "noun\tan opening into or through something\t\t";
+    }
+    // noun 03526198
+    if sense == 2 {
+        return "noun\tan opening deliberately made in or through something\t\t";
+    }
+    // noun 03526805
+    if sense == 3 {
+        return "noun\tone playing period (from tee to green) on a golf course\tgolf hole\the played 18 holes";
+    }
+    // noun 13911429
+    if sense == 4 {
+        return "noun\tan unoccupied space\t\t";
+    }
+    // noun 09304750
+    if sense == 5 {
+        return "noun\ta depression hollowed out of solid matter\thollow\t";
+    }
+    ""
+}

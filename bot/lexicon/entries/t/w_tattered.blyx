@@ -1,0 +1,9 @@
+// tattered — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tattered(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 02583619
+    if sense == 1 {
+        return "adjective\tworn to shreds; or wearing torn or ragged clothing\ttatterdemalion\ta man in a tattered shirt";
+    }
+    ""
+}

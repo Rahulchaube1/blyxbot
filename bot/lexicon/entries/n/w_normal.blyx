@@ -1,0 +1,13 @@
+// normal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_normal(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01593649
+    if sense == 1 {
+        return "adjective\tconforming with or constituting a norm or standard or level or type or social norm; not abnormal\t\tserve wine at normal room temperature";
+    }
+    // adj 01599445
+    if sense == 2 {
+        return "adjective\tin accordance with scientific laws\t\t";
+    }
+    ""
+}

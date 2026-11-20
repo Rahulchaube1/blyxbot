@@ -1,0 +1,9 @@
+// paris — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_paris(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 08932568
+    if sense == 1 {
+        return "noun\tthe capital and largest city of France; and international center of culture and commerce\tCity of Light, French capital, capital of France\t";
+    }
+    ""
+}

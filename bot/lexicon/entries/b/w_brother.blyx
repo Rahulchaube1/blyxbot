@@ -1,0 +1,13 @@
+// brother — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_brother(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09876454
+    if sense == 1 {
+        return "noun\ta male with the same parents as someone else\tblood brother\tmy brother still lives with our parents";
+    }
+    // noun 09876892
+    if sense == 2 {
+        return "noun\ta male person who is a fellow member (of a fraternity or religion or other group)\t\tnone of his brothers would betray him";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// major — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_major(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01472628
+    if sense == 1 {
+        return "adjective\tof greater importance or stature or rank\t\ta major artist";
+    }
+    // adj 01471538
+    if sense == 2 {
+        return "adjective\tgreater in scope or effect\t\ta major contribution";
+    }
+    // adj 01471002
+    if sense == 3 {
+        return "adjective\tgreater in number or size or amount\t\ta major portion (a majority) of the population";
+    }
+    // noun 10283170
+    if sense == 4 {
+        return "noun\ta commissioned military officer in the United States Army or Air Force or Marines; below lieutenant colonel and above captain\t\t";
+    }
+    // verb 00607609
+    if sense == 5 {
+        return "verb\thave as one's principal field of study\t\tShe is majoring in linguistics";
+    }
+    // adj 01472351
+    if sense == 6 {
+        return "adjective\tof the field of academic study in which one concentrates or specializes\t\this major field was mathematics";
+    }
+    // adj 01472098
+    if sense == 7 {
+        return "adjective\tof a scale or mode\t\tmajor scales";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// careful — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_careful(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00309021
+    if sense == 1 {
+        return "adjective\texercising caution or showing care or attention\t\tthey were careful when crossing the busy street";
+    }
+    // adj 01977488
+    if sense == 2 {
+        return "adjective\tcautiously attentive\theedful\tcareful of her feelings";
+    }
+    // adj 01271961
+    if sense == 3 {
+        return "adjective\tunhurried and with care and dignity\tdeliberate, measured\t";
+    }
+    ""
+}

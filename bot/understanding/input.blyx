@@ -187,3 +187,25 @@ pub fn number_at(tokens: arglist, pos: i64) -> f64 {
     }
     value
 }
+
+// Normalize a short request for the language and study handlers. Preserve word
+// boundaries so a lookup such as "at all" stays distinct from "at".
+pub fn query_text(tokens: arglist) -> str {
+    let mut start = 0;
+    let mut end = word_count(tokens);
+    if word(tokens, start) == "please" { start += 1; }
+    if end > start && word(tokens, end - 1) == "please" { end -= 1; }
+    let mut words = args_new();
+    if word(tokens, start) == "whats" {
+        words = pair("what", "is");
+        start += 1;
+    } else if word(tokens, start) == "what" && word(tokens, start + 1) == "'s" {
+        words = pair("what", "is");
+        start += 2;
+    }
+    while start < end {
+        words = args_push(words, word(tokens, start));
+        start += 1;
+    }
+    args_join(words, " ")
+}

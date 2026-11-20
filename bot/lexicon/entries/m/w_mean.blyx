@@ -1,0 +1,45 @@
+// mean — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mean(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 00955148
+    if sense == 1 {
+        return "verb\tmean or intend to express or convey\tintend\tYou never understand what I mean!";
+    }
+    // verb 02635189
+    if sense == 2 {
+        return "verb\thave as a logical consequence\tentail, imply\tThe water shortage means that we have to stop taking long showers";
+    }
+    // verb 00931852
+    if sense == 3 {
+        return "verb\tdenote or connote\tintend, signify, stand for\t`maison' means `house' in French";
+    }
+    // verb 00708538
+    if sense == 4 {
+        return "verb\thave in mind as a purpose\tintend, think\tI mean no harm";
+    }
+    // adj 01594146
+    if sense == 5 {
+        return "adjective\tapproximating the statistical norm or average or expected value\taverage\tthe mean annual rainfall";
+    }
+    // noun 06023969
+    if sense == 6 {
+        return "noun\tan average of n numbers computed by adding some function of the numbers and dividing by some function of n\tmean value\t";
+    }
+    // verb 02742482
+    if sense == 7 {
+        return "verb\thave a specified degree of importance\t\tMy ex-husband means nothing to me";
+    }
+    // verb 00730052
+    if sense == 8 {
+        return "verb\tintend to refer to\tthink of, have in mind\t";
+    }
+    // adj 01587787
+    if sense == 9 {
+        return "adjective\tcharacterized by malice\thateful\tin a mean mood";
+    }
+    // adj 01589650
+    if sense == 10 {
+        return "adjective\thaving or showing an ignoble lack of honor or morality\tbase, meanspirited\ttaking a mean advantage";
+    }
+    ""
+}

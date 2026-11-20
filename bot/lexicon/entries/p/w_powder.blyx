@@ -1,0 +1,17 @@
+// powder — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_powder(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14997012
+    if sense == 1 {
+        return "noun\ta solid substance in the form of tiny loose particles; a solid that has been pulverized\tpulverization, pulverisation\t";
+    }
+    // noun 15016314
+    if sense == 2 {
+        return "noun\ta mixture of potassium nitrate, charcoal, and sulfur in a 75:15:10 ratio which is used in gunnery, time fuses, and fireworks\tgunpowder\t";
+    }
+    // noun 03994008
+    if sense == 3 {
+        return "noun\tany of various cosmetic or medical preparations dispensed in the form of a pulverized powder\t\t";
+    }
+    ""
+}

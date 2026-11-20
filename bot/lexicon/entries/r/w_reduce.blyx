@@ -1,0 +1,49 @@
+// reduce — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reduce(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 00429060
+    if sense == 1 {
+        return "verb\tcut down on; make a reduction in\tcut down, cut back, trim, trim down, trim back, cut, bring down\treduce your daily fat intake";
+    }
+    // verb 00242396
+    if sense == 2 {
+        return "verb\tmake less complex\t\treduce a problem to a single question";
+    }
+    // verb 02399888
+    if sense == 3 {
+        return "verb\tbring to humbler or weaker state or condition\t\tHe reduced the population to slavery";
+    }
+    // verb 02258291
+    if sense == 4 {
+        return "verb\tsimplify the form of a mathematical equation of expression by substituting one term for another\t\t";
+    }
+    // verb 01800907
+    if sense == 5 {
+        return "verb\tlower in grade or rank or force somebody into an undignified situation\t\tShe reduced her niece to a servant";
+    }
+    // verb 00237704
+    if sense == 6 {
+        return "verb\tbe the essential element\tcome down, boil down\t";
+    }
+    // verb 00241038
+    if sense == 7 {
+        return "verb\treduce in size; reduce physically\tshrink\t";
+    }
+    // verb 02317836
+    if sense == 8 {
+        return "verb\tlessen and make more modest\t\treduce one's standard of living";
+    }
+    // verb 00240131
+    if sense == 9 {
+        return "verb\tmake smaller\tscale down\treduce an image";
+    }
+    // verb 00237877
+    if sense == 10 {
+        return "verb\tto remove oxygen from a compound, or cause to react with hydrogen or form a hydride, or to undergo an increase in the number of electrons\tdeoxidize, deoxidise\t";
+    }
+    // verb 00233203
+    if sense == 11 {
+        return "verb\tnarrow or limit\ttighten\treduce the influx of foreigners";
+    }
+    ""
+}

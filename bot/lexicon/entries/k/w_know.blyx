@@ -1,0 +1,33 @@
+// know — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_know(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00594621
+    if sense == 1 {
+        return "verb\tbe cognizant or aware of a fact or a specific piece of information; possess knowledge or information about\tcognize, cognise\tI know that the President lied to the people";
+    }
+    // verb 00595935
+    if sense == 2 {
+        return "verb\tknow how to do or perform something\t\tShe knows how to knit";
+    }
+    // verb 00595630
+    if sense == 3 {
+        return "verb\tbe aware of the truth of something; have a belief or faith in something; regard as true beyond any doubt\t\tI know that I left the key on the table";
+    }
+    // verb 00594337
+    if sense == 4 {
+        return "verb\tbe familiar or acquainted with a person or an object\t\tShe doesn't know this composer";
+    }
+    // verb 00596644
+    if sense == 5 {
+        return "verb\thave firsthand knowledge of states, situations, emotions, or sensations\texperience, live\tI know the feeling!";
+    }
+    // verb 00592883
+    if sense == 6 {
+        return "verb\taccept (someone) to be what is claimed or accept his power and authority\tacknowledge, recognize, recognise\t";
+    }
+    // verb 00596132
+    if sense == 7 {
+        return "verb\thave fixed in the mind\t\tI know Latin";
+    }
+    ""
+}

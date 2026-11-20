@@ -1,0 +1,21 @@
+// deny — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_deny(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00816556
+    if sense == 1 {
+        return "verb\tdeclare untrue; contradict\t\tHe denied the allegations";
+    }
+    // verb 00817003
+    if sense == 2 {
+        return "verb\trefuse to accept or believe\t\tHe denied his fatal illness";
+    }
+    // verb 02214190
+    if sense == 3 {
+        return "verb\trefuse to grant, as of a petition or request\t\tThe dean denied the students' request for more physics courses";
+    }
+    // verb 02212825
+    if sense == 4 {
+        return "verb\trefuse to let have\trefuse\tShe denies me every pleasure";
+    }
+    ""
+}

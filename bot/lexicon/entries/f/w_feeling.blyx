@@ -1,0 +1,25 @@
+// feeling — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_feeling(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00026192
+    if sense == 1 {
+        return "noun\tthe experiencing of affective and emotional states\t\tshe had a feeling of euphoria";
+    }
+    // noun 05916739
+    if sense == 2 {
+        return "noun\ta vague idea in which some confidence is placed\timpression, belief, notion, opinion\twhat are your feelings about the crisis?";
+    }
+    // noun 14526182
+    if sense == 3 {
+        return "noun\tthe general atmosphere of a place or situation and the effect that it has on people\tspirit, tone, feel, flavor, flavour, look, smell\t";
+    }
+    // noun 05721500
+    if sense == 4 {
+        return "noun\ta physical sensation that you experience\t\the had a queasy feeling";
+    }
+    // noun 05722427
+    if sense == 5 {
+        return "noun\tthe sensation produced by pressure receptors in the skin\ttouch, touch sensation, tactual sensation, tactile sensation\tthe surface had a greasy feeling";
+    }
+    ""
+}

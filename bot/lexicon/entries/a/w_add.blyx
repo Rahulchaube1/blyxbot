@@ -1,0 +1,25 @@
+// add — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_add(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00182406
+    if sense == 1 {
+        return "verb\tmake an addition (to); join or combine or unite with others; increase the quality, quantity, size or scope of\t\tWe added two students to that dorm room";
+    }
+    // verb 01027174
+    if sense == 2 {
+        return "verb\tstate or say further\tappend, supply\t";
+    }
+    // verb 02324478
+    if sense == 3 {
+        return "verb\tbestow a quality on\tlend, impart, bestow, contribute, bring\tThe music added a lot to the play";
+    }
+    // verb 00640828
+    if sense == 4 {
+        return "verb\tmake an addition by combining numbers\tadd together\tAdd 27 and 49, please!";
+    }
+    // verb 00949288
+    if sense == 5 {
+        return "verb\tdetermine the sum of\ttotal, tot, tot up, sum, sum up, summate, tote up, add together, tally, add up\tAdd all the people in this town to those of the neighboring town";
+    }
+    ""
+}

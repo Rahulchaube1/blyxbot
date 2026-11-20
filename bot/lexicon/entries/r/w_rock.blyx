@@ -1,0 +1,17 @@
+// rock — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rock(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 09416076
+    if sense == 1 {
+        return "noun\ta lump or mass of hard consolidated mineral matter\tstone\the threw a rock at me";
+    }
+    // noun 14696793
+    if sense == 2 {
+        return "noun\tmaterial consisting of the aggregate of minerals like those making up the Earth's crust\tstone\tthat mountain is solid rock";
+    }
+    // verb 01875295
+    if sense == 3 {
+        return "verb\tmove back and forth or sideways\tsway, shake\tthe ship was rocking";
+    }
+    ""
+}

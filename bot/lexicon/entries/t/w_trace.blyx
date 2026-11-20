@@ -1,0 +1,41 @@
+// trace — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_trace(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 00729109
+    if sense == 1 {
+        return "verb\tfollow, discover, or ascertain the course of development of something\tfollow\ttrace the student's progress";
+    }
+    // noun 13773361
+    if sense == 2 {
+        return "noun\ta just detectable amount\thint, suggestion\the speaks French with a trace of an accent";
+    }
+    // verb 01582645
+    if sense == 3 {
+        return "verb\tmake a mark or lines on a surface\tdraw, line, describe, delineate\ttrace the outline of a figure in the sand";
+    }
+    // noun 06646628
+    if sense == 4 {
+        return "noun\tan indication that something has been present\tvestige, tincture, shadow\tthere wasn't a trace of evidence for the claim";
+    }
+    // verb 02004352
+    if sense == 5 {
+        return "verb\tto go back over again\tretrace\ttrace your path";
+    }
+    // verb 02003601
+    if sense == 6 {
+        return "verb\tpursue or chase relentlessly\thound, hunt\tThe hunters traced the deer into the woods";
+    }
+    // noun 07164163
+    if sense == 7 {
+        return "noun\ta suggestion of some quality\ttouch, ghost\t";
+    }
+    // noun 04463273
+    if sense == 8 {
+        return "noun\ta drawing created by superimposing a semitransparent sheet of paper on the original image and copying on it the lines of the original image\ttracing\t";
+    }
+    // noun 04462407
+    if sense == 9 {
+        return "noun\teither of two lines that connect a horse's harness to a wagon or other vehicle or to a whiffletree\t\t";
+    }
+    ""
+}

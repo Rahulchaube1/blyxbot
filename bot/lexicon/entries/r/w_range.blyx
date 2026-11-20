@@ -1,0 +1,45 @@
+// range — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_range(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 05125377
+    if sense == 1 {
+        return "noun\tan area in which something acts or operates or has power or control: \"the range of a supersonic jet\"\tscope, reach, orbit, compass, ambit\ta piano has a greater range than the human voice";
+    }
+    // verb 02727039
+    if sense == 2 {
+        return "verb\tchange or be different within limits\trun\tEstimates for the losses in the earthquake range as high as $2 billion";
+    }
+    // noun 08628921
+    if sense == 3 {
+        return "noun\tthe limits within which something can be effective\treach\trange of motion";
+    }
+    // noun 08629199
+    if sense == 4 {
+        return "noun\ta large tract of grassy open land on which livestock can graze\t\tthey used to drive the cattle across the open range every spring";
+    }
+    // verb 01881180
+    if sense == 5 {
+        return "verb\tmove about aimlessly or without any destination, often in search of food or employment\troll, wander, swan, stray, tramp, roam, cast, ramble, rove, drift, vagabond\t";
+    }
+    // noun 09403734
+    if sense == 6 {
+        return "noun\ta series of hills or mountains\tmountain range, range of mountains, chain, mountain chain, chain of mountains\tthe valley was between two ranges of hills";
+    }
+    // noun 04053218
+    if sense == 7 {
+        return "noun\ta place for shooting (firing or driving) projectiles of various kinds\t\tthe army maintains a missile range in the desert";
+    }
+    // verb 02741149
+    if sense == 8 {
+        return "verb\thave a range; be capable of projecting over a certain distance, as of a gun\t\tThis gun ranges over two miles";
+    }
+    // verb 02690384
+    if sense == 9 {
+        return "verb\trange or extend over; occupy a certain area\tstraddle\t";
+    }
+    // verb 01474209
+    if sense == 10 {
+        return "verb\tlay out orderly or logically in a line or as if in a line\tarray, lay out, set out\t";
+    }
+    ""
+}

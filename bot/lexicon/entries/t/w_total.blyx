@@ -1,0 +1,29 @@
+// total — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_total(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 00515380
+    if sense == 1 {
+        return "adjective\tconstituting the full quantity or extent; complete\tentire, full\ta total failure";
+    }
+    // verb 02645007
+    if sense == 2 {
+        return "verb\tadd up in number or quantity\tnumber, add up, come, amount\t";
+    }
+    // noun 04353803
+    if sense == 3 {
+        return "noun\tthe whole amount\tsum, totality, aggregate\t";
+    }
+    // noun 05861067
+    if sense == 4 {
+        return "noun\ta quantity obtained by the addition of a group of numbers\tsum, amount\t";
+    }
+    // verb 00949288
+    if sense == 5 {
+        return "verb\tdetermine the sum of\ttot, tot up, sum, sum up, summate, tote up, add, add together, tally, add up\t";
+    }
+    // adj 00522885
+    if sense == 6 {
+        return "adjective\tcomplete in extent or degree and in every particular\tfull\ta total eclipse";
+    }
+    ""
+}

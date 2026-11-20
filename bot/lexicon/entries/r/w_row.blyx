@@ -1,0 +1,25 @@
+// row — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_row(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08431437
+    if sense == 1 {
+        return "noun\tan arrangement of objects or people side by side in a line\t\ta row of chairs";
+    }
+    // verb 01946996
+    if sense == 2 {
+        return "verb\tpropel with oars\t\trow the boat across the lake";
+    }
+    // noun 07184149
+    if sense == 3 {
+        return "noun\tan angry dispute\tquarrel, wrangle, words, run-in, dustup\t";
+    }
+    // noun 09417365
+    if sense == 4 {
+        return "noun\ta long continuous strip (usually running horizontally)\t\ta mackerel sky filled with rows of clouds";
+    }
+    // noun 03120029
+    if sense == 5 {
+        return "noun\t(construction) a layer of masonry\tcourse\t";
+    }
+    ""
+}

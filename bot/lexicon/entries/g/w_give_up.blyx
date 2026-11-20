@@ -1,0 +1,53 @@
+// give up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_give_up(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // verb 02303331
+    if sense == 1 {
+        return "verb\tlose (s.th.) or lose the right to (s.th.) by some error, offense, or crime\tforfeit, throw overboard, waive, forgo, forego\t";
+    }
+    // verb 02227741
+    if sense == 2 {
+        return "verb\tgive up with the intent of never claiming again\tabandon\t";
+    }
+    // verb 01083044
+    if sense == 3 {
+        return "verb\tgive up in the face of defeat of lacking hope; admit defeat\tdrop out, fall by the wayside, drop by the wayside, throw in, throw in the towel, quit, chuck up the sponge\t";
+    }
+    // verb 02680814
+    if sense == 4 {
+        return "verb\tput an end to a state or an activity\tdiscontinue, stop, cease, quit, lay off\t";
+    }
+    // verb 02345647
+    if sense == 5 {
+        return "verb\tgive up what is not strictly needed\tspare, part with, dispense with\t";
+    }
+    // verb 02316304
+    if sense == 6 {
+        return "verb\tpart with a possession or right\trelease, relinquish, resign, free\t";
+    }
+    // verb 02367032
+    if sense == 7 {
+        return "verb\tleave (a job, post, or position) voluntarily\tvacate, resign, renounce\t";
+    }
+    // verb 02235229
+    if sense == 8 {
+        return "verb\trelinquish possession or control over\tsurrender, cede, deliver\t";
+    }
+    // verb 01115585
+    if sense == 9 {
+        return "verb\tgive up or agree to forgo to the power or possession of another\tsurrender\t";
+    }
+    // verb 00613393
+    if sense == 10 {
+        return "verb\tstop maintaining or insisting on; of ideas or claims\tabandon\tBoth sides have to give up some claims in these negotiations";
+    }
+    // verb 02423650
+    if sense == 11 {
+        return "verb\tallow the other (baseball) team to score\tallow\tgive up a run";
+    }
+    // verb 01196524
+    if sense == 12 {
+        return "verb\tstop consuming\tkick\tgive up alcohol";
+    }
+    ""
+}

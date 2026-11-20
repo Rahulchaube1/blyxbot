@@ -1,0 +1,21 @@
+// associate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_associate(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00713167
+    if sense == 1 {
+        return "verb\tmake a logical or causal connection\ttie in, relate, link, colligate, link up, connect\t";
+    }
+    // noun 09816771
+    if sense == 2 {
+        return "noun\ta person who joins with others in some activity or endeavor\t\the had to consult his associate before continuing";
+    }
+    // verb 02589245
+    if sense == 3 {
+        return "verb\tkeep company with; hang out with\tconsort, affiliate, assort\tHe associates with strange people";
+    }
+    // verb 02470175
+    if sense == 4 {
+        return "verb\tbring or come into association or action\tconsociate\t";
+    }
+    ""
+}

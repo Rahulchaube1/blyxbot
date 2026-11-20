@@ -1,0 +1,81 @@
+// work — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_work(sense: i64) -> str {
+    if sense == 0 { return "19"; }
+    // noun 00575741
+    if sense == 1 {
+        return "noun\tactivity directed toward making or doing something\t\tshe checked several points needing further work";
+    }
+    // noun 04599396
+    if sense == 2 {
+        return "noun\ta product produced or accomplished through the effort or activity or agency of a person or thing\tpiece of work\tit is not regarded as one of his more memorable works";
+    }
+    // verb 02413480
+    if sense == 3 {
+        return "verb\texert oneself by doing mental or physical work for a purpose or out of necessity\t\tI will work hard to improve my grades";
+    }
+    // verb 02410855
+    if sense == 4 {
+        return "verb\tbe employed\tdo work\tIs your husband working again?";
+    }
+    // verb 02525447
+    if sense == 5 {
+        return "verb\thave an effect or outcome; often the one desired or expected\tact\tThe voting process doesn't work as well as people thought";
+    }
+    // noun 00584367
+    if sense == 6 {
+        return "noun\tthe occupation for which you are paid\temployment\ta lot of people are out of work";
+    }
+    // verb 01525666
+    if sense == 7 {
+        return "verb\tperform as expected when applied\tfunction, operate, go, run\tThis old radio doesn't work anymore";
+    }
+    // noun 05755883
+    if sense == 8 {
+        return "noun\tapplying the mind to learning and understanding a subject (especially by reading)\tstudy\tmastering a second language requires a lot of work";
+    }
+    // verb 01668603
+    if sense == 9 {
+        return "verb\tshape, form, or improve a material\twork on, process\twork stone into tools";
+    }
+    // verb 00100551
+    if sense == 10 {
+        return "verb\tgive a workout to\texercise, work out\tMy personal trainer works me hard";
+    }
+    // noun 11453420
+    if sense == 11 {
+        return "noun\t(physics) a manifestation of energy; the transfer of energy from one physical system to another expressed as the product of a force and the distance through which it moves a body in the direction of that force\t\twork equals force times distance";
+    }
+    // verb 02051031
+    if sense == 12 {
+        return "verb\tproceed along a path\tmake\twork one's way through the crowd";
+    }
+    // verb 02594979
+    if sense == 13 {
+        return "verb\toperate in a certain place, area, or specialty\t\tShe works the night clubs";
+    }
+    // noun 04602044
+    if sense == 14 {
+        return "noun\ta place where work is done\tworkplace\the arrived at work early today";
+    }
+    // verb 02373015
+    if sense == 15 {
+        return "verb\tproceed towards a goal or along a path or through an activity\t\twork your way through every problem or task";
+    }
+    // verb 01852468
+    if sense == 16 {
+        return "verb\tmove in an agitated manner\t\tHis fingers worked with tension";
+    }
+    // verb 01629589
+    if sense == 17 {
+        return "verb\tcause to happen or to occur as a consequence\tbring, play, wreak, make for\tI cannot work a miracle";
+    }
+    // verb 02407987
+    if sense == 18 {
+        return "verb\tcause to work\tput to work\the is working his servants hard";
+    }
+    // verb 01741446
+    if sense == 19 {
+        return "verb\tprepare for crops\tcultivate, crop\tWork the soil";
+    }
+    ""
+}

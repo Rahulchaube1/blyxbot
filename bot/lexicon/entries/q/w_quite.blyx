@@ -1,0 +1,17 @@
+// quite — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_quite(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00018781
+    if sense == 1 {
+        return "adverb\tto a degree (not used with a negative)\trather\tquite tasty";
+    }
+    // adv 00018577
+    if sense == 2 {
+        return "adverb\tto the greatest extent; completely\t\tyou're quite right";
+    }
+    // adv 00018918
+    if sense == 3 {
+        return "adverb\tof an unusually noticeable or exceptional or remarkable kind (not used with a negative)\tquite a, quite an\ther victory was quite something";
+    }
+    ""
+}

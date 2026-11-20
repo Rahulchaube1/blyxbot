@@ -1,0 +1,81 @@
+// lead — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lead(sense: i64) -> str {
+    if sense == 0 { return "19"; }
+    // verb 01999798
+    if sense == 1 {
+        return "verb\ttake somebody somewhere\ttake, direct, conduct, guide\tWe lead him to our chief";
+    }
+    // verb 02635659
+    if sense == 2 {
+        return "verb\thave as a result or residue\tleave, result\t";
+    }
+    // verb 02635956
+    if sense == 3 {
+        return "verb\ttend to or result in\t\tThis remark lead to further arguments among the guests";
+    }
+    // verb 01999423
+    if sense == 4 {
+        return "verb\ttravel in front of; go in advance of others\thead\t";
+    }
+    // verb 00771632
+    if sense == 5 {
+        return "verb\tcause to undertake a certain action\t\t";
+    }
+    // verb 02685951
+    if sense == 6 {
+        return "verb\tstretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point\trun, go, pass, extend\t";
+    }
+    // verb 02440244
+    if sense == 7 {
+        return "verb\tbe in charge of\thead\t";
+    }
+    // verb 02687385
+    if sense == 8 {
+        return "verb\tbe ahead of others; be the first\ttop\t";
+    }
+    // verb 02555908
+    if sense == 9 {
+        return "verb\tbe conducive to\tcontribute, conduce\tThe use of computers in the classroom lead to better writing";
+    }
+    // verb 01732921
+    if sense == 10 {
+        return "verb\tlead, as in the performance of a composition\tconduct, direct\t";
+    }
+    // noun 05157143
+    if sense == 11 {
+        return "noun\tan advantage held by a competitor in a race\t\the took the lead at the last turn";
+    }
+    // noun 14643467
+    if sense == 12 {
+        return "noun\ta soft heavy toxic malleable metallic element; bluish white when freshly cut but tarnishes readily to dull grey\tPb, atomic number 82\tthe children were playing with lead soldiers";
+    }
+    // verb 02686471
+    if sense == 13 {
+        return "verb\tlead, extend, or afford access\tgo\t";
+    }
+    // noun 05826914
+    if sense == 14 {
+        return "noun\tevidence pointing to a possible solution\ttrack, trail\tthe police are following a promising lead";
+    }
+    // noun 01256743
+    if sense == 15 {
+        return "noun\ta position of leadership (especially in the phrase `take the lead')\t\the takes the lead in any group";
+    }
+    // verb 01999218
+    if sense == 16 {
+        return "verb\tmove ahead (of others) in time or space\tprecede\t";
+    }
+    // noun 13893129
+    if sense == 17 {
+        return "noun\tthe angle between the direction a gun is aimed and the position of a moving target (correcting for the flight time of the missile)\t\t";
+    }
+    // noun 06270879
+    if sense == 18 {
+        return "noun\tthe introductory section of a story\tlead-in, lede\tit was an amusing lead-in to a very serious matter";
+    }
+    // verb 02686625
+    if sense == 19 {
+        return "verb\tcause something to pass or lead somewhere\trun\t";
+    }
+    ""
+}

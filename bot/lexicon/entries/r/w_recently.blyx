@@ -1,0 +1,9 @@
+// recently — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_recently(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00107416
+    if sense == 1 {
+        return "adverb\tin the recent past\tlate, lately, of late, latterly\the was in Paris recently";
+    }
+    ""
+}

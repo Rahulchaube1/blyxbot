@@ -1,0 +1,9 @@
+// eager — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_eager(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 00810916
+    if sense == 1 {
+        return "adjective\thaving or showing keen interest or intense desire or impatient expectancy\t\teager to learn";
+    }
+    ""
+}

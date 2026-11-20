@@ -1,0 +1,29 @@
+// wing — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wing(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 02151625
+    if sense == 1 {
+        return "noun\ta movable organ for flying (one of a pair)\t\t";
+    }
+    // noun 04592741
+    if sense == 2 {
+        return "noun\tone of the horizontal airfoils on either side of the fuselage of an airplane\t\t";
+    }
+    // noun 04592962
+    if sense == 3 {
+        return "noun\ta stage area out of sight of the audience\toffstage, backstage\t";
+    }
+    // verb 01940403
+    if sense == 4 {
+        return "verb\ttravel through the air; be airborne\tfly\t";
+    }
+    // noun 08219493
+    if sense == 5 {
+        return "noun\ta unit of military aircraft\t\t";
+    }
+    // noun 08482113
+    if sense == 6 {
+        return "noun\tthe side of military or naval formation\tflank\t";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// beam — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_beam(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 06792645
+    if sense == 1 {
+        return "noun\ta signal transmitted along a narrow path; guides airplane pilots in darkness or bad weather\tradio beam\t";
+    }
+    // noun 02815950
+    if sense == 2 {
+        return "noun\tlong thick piece of wood or metal or concrete, etc., used in construction\t\t";
+    }
+    // verb 00029214
+    if sense == 3 {
+        return "verb\tsmile radiantly; express joy through one's facial expression\t\t";
+    }
+    // noun 11428379
+    if sense == 4 {
+        return "noun\ta group of nearly parallel lines of electromagnetic radiation\tray, electron beam\t";
+    }
+    // noun 11428023
+    if sense == 5 {
+        return "noun\ta column of light (as from a beacon)\tbeam of light, light beam, ray, ray of light, shaft, shaft of light, irradiation\t";
+    }
+    // verb 02763740
+    if sense == 6 {
+        return "verb\temit light; be bright, as of the sun or a light\tshine\tThe fire beamed on their faces";
+    }
+    // verb 01067380
+    if sense == 7 {
+        return "verb\texpress with a beaming face or smile\t\the beamed his approval";
+    }
+    // verb 00973056
+    if sense == 8 {
+        return "verb\tbroadcast over the airwaves, as in radio or television\tair, send, broadcast, transmit\t";
+    }
+    ""
+}

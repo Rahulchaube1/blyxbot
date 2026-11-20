@@ -1,0 +1,29 @@
+// matter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_matter(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05671325
+    if sense == 1 {
+        return "noun\ta vaguely specified concern\taffair, thing\tseveral matters to attend to";
+    }
+    // noun 05814291
+    if sense == 2 {
+        return "noun\tsome situation or event that is thought about\ttopic, subject, issue\tit is a matter for the police";
+    }
+    // verb 02645839
+    if sense == 3 {
+        return "verb\thave weight; have import, carry weight\tcount, weigh\tIt does not matter much";
+    }
+    // noun 00020827
+    if sense == 4 {
+        return "noun\tthat which has mass and occupies space\t\tphysicists study both the nature of matter and the forces which govern it";
+    }
+    // noun 05688397
+    if sense == 5 {
+        return "noun\ta problem\t\tis anything the matter?";
+    }
+    // noun 05169242
+    if sense == 6 {
+        return "noun\t(used with negation) having consequence\t\tthey were friends and it was no matter who won the games";
+    }
+    ""
+}

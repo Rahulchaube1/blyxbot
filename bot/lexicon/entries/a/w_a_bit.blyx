@@ -1,0 +1,9 @@
+// a bit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_a_bit(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00033663
+    if sense == 1 {
+        return "adverb\tto a small degree; somewhat\ta little, a trifle\tit's a bit warm";
+    }
+    ""
+}

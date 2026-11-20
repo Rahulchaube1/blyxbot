@@ -1,0 +1,21 @@
+// worth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_worth(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02586206
+    if sense == 1 {
+        return "adjective\tworthy of being treated in a particular way\tdeserving\tan idea worth considering";
+    }
+    // adj 02502016
+    if sense == 2 {
+        return "adjective\thaving a specified value\t\tnot worth his salt";
+    }
+    // noun 13764342
+    if sense == 3 {
+        return "noun\tan indefinite quantity of something having a specified value\t\t10 dollars worth of gasoline";
+    }
+    // noun 05138208
+    if sense == 4 {
+        return "noun\tthe quality that renders something desirable or valuable or useful\t\t";
+    }
+    ""
+}

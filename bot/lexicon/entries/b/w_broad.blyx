@@ -1,0 +1,25 @@
+// broad — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_broad(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 02560548
+    if sense == 1 {
+        return "adjective\thaving great (or a certain) extent from one side to the other\twide\ta river two miles broad";
+    }
+    // adj 00526062
+    if sense == 2 {
+        return "adjective\tbroad in scope or content\tacross-the-board, all-embracing, all-encompassing, all-inclusive, blanket, encompassing, extensive, panoptic, wide\tan invention with broad applications";
+    }
+    // adj 01101891
+    if sense == 3 {
+        return "adjective\tnot detailed or specific\tunspecific\ta broad rule";
+    }
+    // adj 00428878
+    if sense == 4 {
+        return "adjective\tlacking subtlety; obvious\tunsubtle\tgave us a broad hint that it was time to leave";
+    }
+    // adj 01211531
+    if sense == 5 {
+        return "adjective\tbeing at a peak or culminating point\tfull\tbroad daylight";
+    }
+    ""
+}

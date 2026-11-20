@@ -1,0 +1,29 @@
+// convert — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_convert(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00381013
+    if sense == 1 {
+        return "verb\tchange from one system to another or to a new plan or policy\tchange over\tWe converted from 220 to 110 Volt";
+    }
+    // verb 00115157
+    if sense == 2 {
+        return "verb\tchange the nature, purpose, or function of something\t\tconvert lead into gold";
+    }
+    // noun 09962414
+    if sense == 3 {
+        return "noun\ta person who has been converted to another religious or political belief\t\t";
+    }
+    // verb 00384411
+    if sense == 4 {
+        return "verb\tchange religious beliefs, or adopt a religious belief\t\tShe converted to Buddhism";
+    }
+    // verb 00161225
+    if sense == 5 {
+        return "verb\texchange or replace with another, usually of the same kind or category\tchange, exchange, commute\tCould you convert my dollars into pounds?";
+    }
+    // verb 00385385
+    if sense == 6 {
+        return "verb\tcause to adopt a new or different faith\t\tThe missionaries converted the Indian population";
+    }
+    ""
+}

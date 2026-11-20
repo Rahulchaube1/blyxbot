@@ -1,0 +1,37 @@
+// double — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_double(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 00132756
+    if sense == 1 {
+        return "noun\ta base hit on which the batter stops safely at second base\ttwo-base hit, two-bagger, two-baser\the hit a double to deep centerfield";
+    }
+    // verb 00246217
+    if sense == 2 {
+        return "verb\tincrease twofold\tduplicate\tThe population doubled within 50 years";
+    }
+    // adj 02217799
+    if sense == 3 {
+        return "adjective\thaving more than one decidedly dissimilar aspects or qualities\tdual, twofold, two-fold, treble, threefold, three-fold\ta double (or dual) role for an actor";
+    }
+    // adj 02217452
+    if sense == 4 {
+        return "adjective\tconsisting of or involving two parts or components usually in pairs\tdual, duple\tan egg with a double yolk";
+    }
+    // adj 02217241
+    if sense == 5 {
+        return "adjective\ttwice as great or many\tdoubled, twofold, two-fold\tate a double portion";
+    }
+    // verb 01409523
+    if sense == 6 {
+        return "verb\thit a two-base hit\t\t";
+    }
+    // verb 02063309
+    if sense == 7 {
+        return "verb\tbend over or curl up, usually with laughter or pain\tdouble over, double up\tHe doubled and vomited violently";
+    }
+    // verb 01525505
+    if sense == 8 {
+        return "verb\tdo double duty; serve two purposes or have two functions\t\tShe doubles as his wife and secretary";
+    }
+    ""
+}

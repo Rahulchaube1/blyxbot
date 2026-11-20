@@ -1,0 +1,29 @@
+// brilliant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_brilliant(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02342608
+    if sense == 1 {
+        return "adjective\tof surpassing excellence\tsuperb\ta brilliant performance";
+    }
+    // adj 01335156
+    if sense == 2 {
+        return "adjective\thaving or marked by unusual and impressive intelligence\tbrainy, smart as a whip\ta brilliant mind";
+    }
+    // adj 01285376
+    if sense == 3 {
+        return "adjective\tcharacterized by grandeur\tglorious, magnificent, splendid\tthe brilliant court life at Versailles";
+    }
+    // adj 00402855
+    if sense == 4 {
+        return "adjective\thaving striking color\tbright, vivid\tbrilliant tapestries";
+    }
+    // adj 00281173
+    if sense == 5 {
+        return "adjective\tfull of light; shining intensely\t\ta brilliant star";
+    }
+    // adj 02009688
+    if sense == 6 {
+        return "adjective\tclear and sharp and ringing\tbright\tthe brilliant sound of the trumpets";
+    }
+    ""
+}

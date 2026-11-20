@@ -1,0 +1,9 @@
+// occasionally — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_occasionally(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00021212
+    if sense == 1 {
+        return "adverb\tnow and then or here and there\ton occasion, once in a while, now and then, now and again, at times, from time to time\the was arrogant and occasionally callous";
+    }
+    ""
+}

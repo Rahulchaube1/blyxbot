@@ -1,0 +1,9 @@
+// a little — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_a_little(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00033663
+    if sense == 1 {
+        return "adverb\tto a small degree; somewhat\ta bit, a trifle\tfelt a little better";
+    }
+    ""
+}

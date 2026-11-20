@@ -1,0 +1,57 @@
+// hit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hit(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 01405044
+    if sense == 1 {
+        return "verb\tcause to move by striking\t\thit a ball";
+    }
+    // verb 01236164
+    if sense == 2 {
+        return "verb\thit against; come into sudden contact with\tstrike, impinge on, run into, collide with\tThe car hit a tree";
+    }
+    // verb 01400044
+    if sense == 3 {
+        return "verb\tdeal a blow to, either with the hand or with an instrument\t\tHe hit her hard in the face";
+    }
+    // noun 00043902
+    if sense == 4 {
+        return "noun\t(baseball) a successful stroke in an athletic contest (especially in baseball)\t\the came all the way around on Williams' hit";
+    }
+    // verb 02020590
+    if sense == 5 {
+        return "verb\treach a destination, either real or abstract\treach, make, attain, arrive at, gain\tWe hit Detroit by noon";
+    }
+    // verb 01209135
+    if sense == 6 {
+        return "verb\taffect or afflict suddenly, usually adversely\tstrike\tWe were hit by really bad weather";
+    }
+    // verb 01137138
+    if sense == 7 {
+        return "verb\thit with a missile from a weapon\tshoot, pip\t";
+    }
+    // verb 02206462
+    if sense == 8 {
+        return "verb\tencounter by chance\tstumble\t";
+    }
+    // verb 01111816
+    if sense == 9 {
+        return "verb\tgain points in a game\tscore, tally, rack up\tHe hit a home run";
+    }
+    // noun 00125629
+    if sense == 10 {
+        return "noun\tthe act of contacting one thing with another\thitting, striking\trepeated hitting raised a large bruise";
+    }
+    // verb 02108791
+    if sense == 11 {
+        return "verb\tcause to experience suddenly\tstrike, come to\tAn interesting idea hit her";
+    }
+    // verb 01123887
+    if sense == 12 {
+        return "verb\tmake a strategic, offensive, assault against an enemy, opponent, or a target\tstrike\t";
+    }
+    // noun 00064504
+    if sense == 13 {
+        return "noun\ta conspicuous success\tsmash, smasher, strike, bang\tthat song was his first hit and marked the beginning of his career";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// limit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_limit(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05124057
+    if sense == 1 {
+        return "noun\tthe greatest possible degree of something\tbound, boundary\tto the limit of his ability";
+    }
+    // verb 00233335
+    if sense == 2 {
+        return "verb\tplace limits on (extent or access)\trestrict, restrain, trammel, bound, confine, throttle\tlimit the time you can spend with your friends";
+    }
+    // verb 00235368
+    if sense == 3 {
+        return "verb\trestrict or confine, \"I limit you to two visits to the pub a day\"\tcircumscribe, confine\t";
+    }
+    // noun 15268857
+    if sense == 4 {
+        return "noun\tfinal or latest limiting point\tterminus ad quem, terminal point\t";
+    }
+    // noun 08593130
+    if sense == 5 {
+        return "noun\tas far as something can go\t\t";
+    }
+    // noun 08592656
+    if sense == 6 {
+        return "noun\tthe boundary of a specific area\tdemarcation, demarcation line\t";
+    }
+    ""
+}

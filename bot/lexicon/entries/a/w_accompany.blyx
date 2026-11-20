@@ -1,0 +1,21 @@
+// accompany — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_accompany(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02716165
+    if sense == 1 {
+        return "verb\tbe present or associated with an event or entity\tattach to, come with, go with\theart attacks are accompanied by distruction of heart tissue";
+    }
+    // verb 02025550
+    if sense == 2 {
+        return "verb\tgo or travel along with\t\tThe nurse accompanied the old lady everywhere";
+    }
+    // verb 01728355
+    if sense == 3 {
+        return "verb\tperform an accompaniment to\tplay along, follow\t";
+    }
+    // verb 02716767
+    if sense == 4 {
+        return "verb\tbe a companion to somebody\tcompany, companion, keep company\t";
+    }
+    ""
+}

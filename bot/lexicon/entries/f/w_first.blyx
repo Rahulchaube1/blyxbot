@@ -1,0 +1,57 @@
+// first — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_first(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // adj 01010862
+    if sense == 1 {
+        return "adjective\tpreceding all others in time or space or degree\t\tthe first house on the right";
+    }
+    // adj 02202047
+    if sense == 2 {
+        return "adjective\tindicating the beginning unit in a series\t1st\t";
+    }
+    // adv 00102736
+    if sense == 3 {
+        return "adverb\tbefore anything else\tfirstly, foremost, first of all, first off\tfirst we must consider the garter snake";
+    }
+    // adv 00103554
+    if sense == 4 {
+        return "adverb\tthe initial time\tfor the first time\twhen Felix first saw a garter snake";
+    }
+    // noun 13846199
+    if sense == 5 {
+        return "noun\tthe first or highest in an ordering or series\tnumber one\tHe wanted to be the first";
+    }
+    // adv 00506928
+    if sense == 6 {
+        return "adverb\tbefore another in time, space, or importance\t\tI was here first";
+    }
+    // noun 13597444
+    if sense == 7 {
+        return "noun\tthe first element in a countable series\tnumber one, number 1\tthe first of the month";
+    }
+    // adj 01009343
+    if sense == 8 {
+        return "adjective\tserving to set in motion\tinaugural, initiative, initiatory, maiden\this first (or maiden) speech in Congress";
+    }
+    // adj 01009206
+    if sense == 9 {
+        return "adjective\tserving to begin\tbeginning\tthe first verse";
+    }
+    // adv 00254614
+    if sense == 10 {
+        return "adverb\tprominently forward\tforemost\t";
+    }
+    // adj 00228294
+    if sense == 11 {
+        return "adjective\tranking above all others\tforemost, world-class\twas first in her class";
+    }
+    // noun 15265518
+    if sense == 12 {
+        return "noun\tthe time at which something is supposed to begin\tbeginning, commencement, outset, get-go, start, kickoff, starting time, showtime, offset\t";
+    }
+    // noun 00723547
+    if sense == 13 {
+        return "noun\tthe fielding position of the player on a baseball team who is stationed at first of the bases in the infield (counting counterclockwise from home plate)\tfirst base\t";
+    }
+    ""
+}

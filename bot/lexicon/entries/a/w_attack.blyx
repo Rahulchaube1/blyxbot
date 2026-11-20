@@ -1,0 +1,49 @@
+// attack — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_attack(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 01119169
+    if sense == 1 {
+        return "verb\tlaunch an attack or assault on; begin hostilities or start warfare with\tassail\tHitler attacked Poland on September 1, 1939 and started World War II";
+    }
+    // noun 00972621
+    if sense == 2 {
+        return "noun\t(military) an offensive against an enemy (using weapons)\tonslaught, onset, onrush\tthe attack began at dawn";
+    }
+    // verb 00862683
+    if sense == 3 {
+        return "verb\tattack in speech or writing\tround, assail, lash out, snipe, assault\tThe editors of the left-leaning paper attacked the new House Speaker";
+    }
+    // verb 01118449
+    if sense == 4 {
+        return "verb\ttake the initiative and go on the offensive\taggress\tThe Serbs attacked the village at night";
+    }
+    // verb 01120069
+    if sense == 5 {
+        return "verb\tattack someone physically or emotionally\tassail, assault, set on\t";
+    }
+    // noun 00457723
+    if sense == 6 {
+        return "noun\tan offensive move in a sport or game\t\tthey won the game with a 10-hit attack in the 9th inning";
+    }
+    // noun 06711159
+    if sense == 7 {
+        return "noun\tintense adverse criticism\tfire, flak, flack, blast\tthe government has come under attack";
+    }
+    // noun 00941140
+    if sense == 8 {
+        return "noun\tideas or actions intended to deal with a problem or situation\tapproach, plan of attack\tan attack on inflation";
+    }
+    // noun 00773814
+    if sense == 9 {
+        return "noun\tthe act of attacking\tattempt\tattacks on women increased last year";
+    }
+    // noun 00236953
+    if sense == 10 {
+        return "noun\ta decisive manner of beginning a musical tone or phrase\ttone-beginning\t";
+    }
+    // verb 00347610
+    if sense == 11 {
+        return "verb\tset to work upon; turn one's energies vigorously to a task\t\tI attacked the problem as soon as I got out of bed";
+    }
+    ""
+}

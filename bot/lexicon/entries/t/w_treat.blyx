@@ -1,0 +1,25 @@
+// treat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_treat(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02514187
+    if sense == 1 {
+        return "verb\tinteract in a certain way\thandle, do by\tTreat him with caution, please";
+    }
+    // verb 00515154
+    if sense == 2 {
+        return "verb\tsubject to a process or treatment, with the aim of readying for some purpose, improving, or remedying a condition\tprocess\ttreat the water so it can be drunk";
+    }
+    // verb 00078760
+    if sense == 3 {
+        return "verb\tprovide treatment for\tcare for\tThe doctor treated my broken leg";
+    }
+    // verb 01033527
+    if sense == 4 {
+        return "verb\tact on verbally or in some form of artistic expression\tcover, handle, plow, deal, address\tThe new book treats the history of China";
+    }
+    // verb 02261642
+    if sense == 5 {
+        return "verb\tprovide with a gift or entertainment\t\tGrandmother always treated us to the circus";
+    }
+    ""
+}

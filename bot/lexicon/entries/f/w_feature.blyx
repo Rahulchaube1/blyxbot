@@ -1,0 +1,25 @@
+// feature — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_feature(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05849789
+    if sense == 1 {
+        return "noun\ta prominent attribute or aspect of something\tcharacteristic\tthe map showed roads and other features";
+    }
+    // noun 05601758
+    if sense == 2 {
+        return "noun\tthe characteristic parts of a person's face: eyes and nose and mouth and chin\tlineament\tan expression of pleasure crossed his features";
+    }
+    // verb 02630189
+    if sense == 3 {
+        return "verb\thave as a feature\thave\tThis restaurant features the most famous chefs in France";
+    }
+    // verb 02631659
+    if sense == 4 {
+        return "verb\twear or display in an ostentatious or proud manner\tsport, boast\t";
+    }
+    // noun 06615026
+    if sense == 5 {
+        return "noun\tthe principal (full-length) film in a program at a movie theater\tfeature film\tthe feature tonight is `Casablanca'";
+    }
+    ""
+}

@@ -1,0 +1,218 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::m::w_machine;
+use entries::m::w_mad;
+use entries::m::w_main;
+use entries::m::w_maintain;
+use entries::m::w_major;
+use entries::m::w_majority;
+use entries::m::w_make;
+use entries::m::w_make_up;
+use entries::m::w_man;
+use entries::m::w_manage;
+use entries::m::w_management;
+use entries::m::w_manager;
+use entries::m::w_manner;
+use entries::m::w_manufacturer;
+use entries::m::w_many;
+use entries::m::w_march;
+use entries::m::w_mark;
+use entries::m::w_market;
+use entries::m::w_marketing;
+use entries::m::w_marriage;
+use entries::m::w_marry;
+use entries::m::w_mass;
+use entries::m::w_master;
+use entries::m::w_match;
+use entries::m::w_material;
+use entries::m::w_matter;
+use entries::m::w_maturity;
+use entries::m::w_maximum;
+use entries::m::w_may;
+use entries::m::w_maybe;
+use entries::m::w_meal;
+use entries::m::w_mean;
+use entries::m::w_meaning;
+use entries::m::w_means;
+use entries::m::w_measure;
+use entries::m::w_medical;
+use entries::m::w_meet;
+use entries::m::w_meeting;
+use entries::m::w_member;
+use entries::m::w_memory;
+use entries::m::w_men;
+use entries::m::w_mention;
+use entries::m::w_mere;
+use entries::m::w_merely;
+use entries::m::w_message;
+use entries::m::w_metal;
+use entries::m::w_method;
+use entries::m::w_mexican;
+use entries::m::w_mg;
+use entries::m::w_middle;
+use entries::m::w_mile;
+use entries::m::w_military;
+use entries::m::w_milk;
+use entries::m::w_milligram;
+use entries::m::w_million;
+use entries::m::w_mind;
+use entries::m::w_mine;
+use entries::m::w_minimal;
+use entries::m::w_minimum;
+use entries::m::w_minute;
+use entries::m::w_miss;
+use entries::m::w_mission;
+use entries::m::w_mistake;
+use entries::m::w_model;
+use entries::m::w_modern;
+use entries::m::w_moment;
+use entries::m::w_monday;
+use entries::m::w_money;
+use entries::m::w_month;
+use entries::m::w_mood;
+use entries::m::w_moon;
+use entries::m::w_more;
+use entries::m::w_moreover;
+use entries::m::w_morning;
+use entries::m::w_most;
+use entries::m::w_mother;
+use entries::m::w_motion;
+use entries::m::w_mount;
+use entries::m::w_mouth;
+use entries::m::w_move;
+use entries::m::w_movement;
+use entries::m::w_movie;
+use entries::m::w_much;
+use entries::m::w_mud;
+use entries::m::w_multiply;
+use entries::m::w_murder;
+use entries::m::w_muscle;
+use entries::m::w_music;
+use entries::m::w_musical;
+use entries::m::w_mutter;
+
+fn through_w_march(term: str, sense: i64) -> str {
+    if term == "machine" { return w_machine(sense); }
+    if term == "mad" { return w_mad(sense); }
+    if term == "main" { return w_main(sense); }
+    if term == "maintain" { return w_maintain(sense); }
+    if term == "major" { return w_major(sense); }
+    if term == "majority" { return w_majority(sense); }
+    if term == "make" { return w_make(sense); }
+    if term == "make up" { return w_make_up(sense); }
+    if term == "man" { return w_man(sense); }
+    if term == "manage" { return w_manage(sense); }
+    if term == "management" { return w_management(sense); }
+    if term == "manager" { return w_manager(sense); }
+    if term == "manner" { return w_manner(sense); }
+    if term == "manufacturer" { return w_manufacturer(sense); }
+    if term == "many" { return w_many(sense); }
+    if term == "march" { return w_march(sense); }
+    ""
+}
+
+fn through_w_mean(term: str, sense: i64) -> str {
+    if term == "mark" { return w_mark(sense); }
+    if term == "market" { return w_market(sense); }
+    if term == "marketing" { return w_marketing(sense); }
+    if term == "marriage" { return w_marriage(sense); }
+    if term == "marry" { return w_marry(sense); }
+    if term == "mass" { return w_mass(sense); }
+    if term == "master" { return w_master(sense); }
+    if term == "match" { return w_match(sense); }
+    if term == "material" { return w_material(sense); }
+    if term == "matter" { return w_matter(sense); }
+    if term == "maturity" { return w_maturity(sense); }
+    if term == "maximum" { return w_maximum(sense); }
+    if term == "may" { return w_may(sense); }
+    if term == "maybe" { return w_maybe(sense); }
+    if term == "meal" { return w_meal(sense); }
+    if term == "mean" { return w_mean(sense); }
+    ""
+}
+
+fn through_w_mexican(term: str, sense: i64) -> str {
+    if term == "meaning" { return w_meaning(sense); }
+    if term == "means" { return w_means(sense); }
+    if term == "measure" { return w_measure(sense); }
+    if term == "medical" { return w_medical(sense); }
+    if term == "meet" { return w_meet(sense); }
+    if term == "meeting" { return w_meeting(sense); }
+    if term == "member" { return w_member(sense); }
+    if term == "memory" { return w_memory(sense); }
+    if term == "men" { return w_men(sense); }
+    if term == "mention" { return w_mention(sense); }
+    if term == "mere" { return w_mere(sense); }
+    if term == "merely" { return w_merely(sense); }
+    if term == "message" { return w_message(sense); }
+    if term == "metal" { return w_metal(sense); }
+    if term == "method" { return w_method(sense); }
+    if term == "mexican" { return w_mexican(sense); }
+    ""
+}
+
+fn through_w_model(term: str, sense: i64) -> str {
+    if term == "mg" { return w_mg(sense); }
+    if term == "middle" { return w_middle(sense); }
+    if term == "mile" { return w_mile(sense); }
+    if term == "military" { return w_military(sense); }
+    if term == "milk" { return w_milk(sense); }
+    if term == "milligram" { return w_milligram(sense); }
+    if term == "million" { return w_million(sense); }
+    if term == "mind" { return w_mind(sense); }
+    if term == "mine" { return w_mine(sense); }
+    if term == "minimal" { return w_minimal(sense); }
+    if term == "minimum" { return w_minimum(sense); }
+    if term == "minute" { return w_minute(sense); }
+    if term == "miss" { return w_miss(sense); }
+    if term == "mission" { return w_mission(sense); }
+    if term == "mistake" { return w_mistake(sense); }
+    if term == "model" { return w_model(sense); }
+    ""
+}
+
+fn through_w_move(term: str, sense: i64) -> str {
+    if term == "modern" { return w_modern(sense); }
+    if term == "moment" { return w_moment(sense); }
+    if term == "monday" { return w_monday(sense); }
+    if term == "money" { return w_money(sense); }
+    if term == "month" { return w_month(sense); }
+    if term == "mood" { return w_mood(sense); }
+    if term == "moon" { return w_moon(sense); }
+    if term == "more" { return w_more(sense); }
+    if term == "moreover" { return w_moreover(sense); }
+    if term == "morning" { return w_morning(sense); }
+    if term == "most" { return w_most(sense); }
+    if term == "mother" { return w_mother(sense); }
+    if term == "motion" { return w_motion(sense); }
+    if term == "mount" { return w_mount(sense); }
+    if term == "mouth" { return w_mouth(sense); }
+    if term == "move" { return w_move(sense); }
+    ""
+}
+
+fn through_w_mutter(term: str, sense: i64) -> str {
+    if term == "movement" { return w_movement(sense); }
+    if term == "movie" { return w_movie(sense); }
+    if term == "much" { return w_much(sense); }
+    if term == "mud" { return w_mud(sense); }
+    if term == "multiply" { return w_multiply(sense); }
+    if term == "murder" { return w_murder(sense); }
+    if term == "muscle" { return w_muscle(sense); }
+    if term == "music" { return w_music(sense); }
+    if term == "musical" { return w_musical(sense); }
+    if term == "mutter" { return w_mutter(sense); }
+    ""
+}
+
+pub fn lookup_m(term: str, sense: i64) -> str {
+    if term <= "march" { return through_w_march(term, sense); }
+    if term <= "mean" { return through_w_mean(term, sense); }
+    if term <= "mexican" { return through_w_mexican(term, sense); }
+    if term <= "model" { return through_w_model(term, sense); }
+    if term <= "move" { return through_w_move(term, sense); }
+    through_w_mutter(term, sense)
+}
+
+pub fn words_m() -> str {
+    "machine|mad|main|maintain|major|majority|make|make up|man|manage|management|manager|manner|manufacturer|many|march|mark|market|marketing|marriage|marry|mass|master|match|material|matter|maturity|maximum|may|maybe|meal|mean|meaning|means|measure|medical|meet|meeting|member|memory|men|mention|mere|merely|message|metal|method|mexican|mg|middle|mile|military|milk|milligram|million|mind|mine|minimal|minimum|minute|miss|mission|mistake|model|modern|moment|monday|money|month|mood|moon|more|moreover|morning|most|mother|motion|mount|mouth|move|movement|movie|much|mud|multiply|murder|muscle|music|musical|mutter"
+}

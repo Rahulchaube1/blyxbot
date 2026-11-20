@@ -1,0 +1,21 @@
+// agent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_agent(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 09190918
+    if sense == 1 {
+        return "noun\tan active and efficient cause; capable of producing a certain effect\t\ttheir research uncovered new disease agents";
+    }
+    // noun 09777353
+    if sense == 2 {
+        return "noun\ta representative who acts on behalf of other persons or organizations\t\t";
+    }
+    // noun 14778436
+    if sense == 3 {
+        return "noun\ta substance that exerts some force or effect\t\t";
+    }
+    // noun 09777012
+    if sense == 4 {
+        return "noun\ta businessman who buys or sells for another in exchange for a commission\tfactor, broker\t";
+    }
+    ""
+}

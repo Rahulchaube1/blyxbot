@@ -1,0 +1,17 @@
+// sleep — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sleep(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00014742
+    if sense == 1 {
+        return "verb\tbe asleep\tkip, slumber, log Z's, catch some Z's\t";
+    }
+    // noun 14024882
+    if sense == 2 {
+        return "noun\ta natural and periodic state of rest during which consciousness of the world is suspended\tslumber\the didn't get enough sleep last night";
+    }
+    // noun 14025993
+    if sense == 3 {
+        return "noun\ta torpid state resembling deep sleep\tsopor\t";
+    }
+    ""
+}

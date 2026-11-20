@@ -1,0 +1,17 @@
+// whole — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_whole(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00514884
+    if sense == 1 {
+        return "adjective\tincluding all components without exception; being one unit or constituting the full amount or extent or duration; complete\t\tgave his whole attention";
+    }
+    // noun 05869584
+    if sense == 2 {
+        return "noun\tall of something including all its component elements or parts\t\tEurope considered as a whole";
+    }
+    // adv 00008007
+    if sense == 3 {
+        return "adverb\tto a complete degree or to the full or entire extent (`whole' is often used informally for `wholly')\twholly, entirely, completely, totally, all, altogether\ta whole new idea";
+    }
+    ""
+}

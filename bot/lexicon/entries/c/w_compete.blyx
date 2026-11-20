@@ -1,0 +1,9 @@
+// compete — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_compete(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 01072262
+    if sense == 1 {
+        return "verb\tcompete for something; engage in a contest; measure oneself against others\tvie, contend\t";
+    }
+    ""
+}

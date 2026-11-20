@@ -1,0 +1,9 @@
+// known — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_known(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01375174
+    if sense == 1 {
+        return "adjective\tapprehended with certainty\t\ta known quantity";
+    }
+    ""
+}

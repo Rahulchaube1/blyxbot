@@ -1,0 +1,17 @@
+// become — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_become(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00149583
+    if sense == 1 {
+        return "verb\tenter or assume a certain state or condition\tgo, get\t";
+    }
+    // verb 02626604
+    if sense == 2 {
+        return "verb\tundergo a change or development\tturn\t";
+    }
+    // verb 02623529
+    if sense == 3 {
+        return "verb\tcome into existence\t\tWhat becomes has duration";
+    }
+    ""
+}

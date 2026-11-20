@@ -1,0 +1,25 @@
+// connection — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_connection(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13791389
+    if sense == 1 {
+        return "noun\ta relation between things or events (as in the case of one causing the other or sharing features with it)\tconnexion, connectedness\tthere was a connection between eating that pickle and having that nightmare";
+    }
+    // noun 14419164
+    if sense == 2 {
+        return "noun\tthe state of being connected\tlink, connectedness\tthe connection between church and state is inescapable";
+    }
+    // noun 03091374
+    if sense == 3 {
+        return "noun\tan instrumentality that connects\tconnexion, connector, connecter, connective\the soldered the connection";
+    }
+    // noun 09956147
+    if sense == 4 {
+        return "noun\t(usually plural) a person who is influential and to whom you are connected in some way (as by family or friendship)\t\the has powerful connections";
+    }
+    // noun 05763916
+    if sense == 5 {
+        return "noun\tthe process of bringing ideas or events together in memory or imagination\tassociation, connexion\t";
+    }
+    ""
+}

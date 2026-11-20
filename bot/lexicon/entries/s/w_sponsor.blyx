@@ -1,0 +1,17 @@
+// sponsor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sponsor(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02219940
+    if sense == 1 {
+        return "verb\tassume sponsorship of\tpatronize, patronise\t";
+    }
+    // verb 02220148
+    if sense == 2 {
+        return "verb\tassume responsibility for or leadership of\t\tThe senator announced that he would sponsor the health care plan";
+    }
+    // noun 10407954
+    if sense == 3 {
+        return "noun\tsomeone who supports or champions something\tpatron, supporter\t";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// body — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_body(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 05216365
+    if sense == 1 {
+        return "noun\tthe entire structure of an organism (an animal, plant, or human being)\torganic structure, physical structure\the felt as if his whole body were on fire";
+    }
+    // noun 07965085
+    if sense == 2 {
+        return "noun\ta group of persons associated by some common tie or occupation and regarded as an entity\t\tthe whole body filed out of the auditorium";
+    }
+    // noun 05217859
+    if sense == 3 {
+        return "noun\ta natural object consisting of a dead animal or person\tdead body\tthey found the body in the lake";
+    }
+    // noun 09224911
+    if sense == 4 {
+        return "noun\tan individual 3-dimensional object that has mass and that is distinguishable from other objects\t\theavenly body";
+    }
+    // noun 05549830
+    if sense == 5 {
+        return "noun\tthe body excluding the head and neck and limbs\ttorso, trunk\tthey moved their arms and legs and bodies";
+    }
+    // noun 08436288
+    if sense == 6 {
+        return "noun\ta collection of particulars considered as a system\t\ta body of law";
+    }
+    // noun 04934546
+    if sense == 7 {
+        return "noun\tthe property of holding together and retaining its shape\tconsistency, consistence, eubstance\twool has more body than rayon";
+    }
+    // noun 06394701
+    if sense == 8 {
+        return "noun\tthe central message of a communication\t\tthe body of the message was short";
+    }
+    ""
+}

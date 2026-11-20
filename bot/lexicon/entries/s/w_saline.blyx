@@ -1,0 +1,9 @@
+// saline — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_saline(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 14590293
+    if sense == 1 {
+        return "noun\tan isotonic solution of sodium chloride and distilled water\tsaline solution\t";
+    }
+    ""
+}

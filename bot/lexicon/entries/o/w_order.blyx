@@ -1,0 +1,65 @@
+// order — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_order(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // verb 00746718
+    if sense == 1 {
+        return "verb\tgive instructions to or direct somebody to do something with authority\ttell, enjoin, say\tShe ordered him to do the shopping";
+    }
+    // noun 07168623
+    if sense == 2 {
+        return "noun\t(often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed\t\tthe British ships dropped anchor and waited for orders from London";
+    }
+    // verb 00745499
+    if sense == 3 {
+        return "verb\tmake a request for something\t\tOrder me some flowers";
+    }
+    // noun 05091316
+    if sense == 4 {
+        return "noun\ta degree in a continuum of size or quantity\torder of magnitude\tit was on the order of a mile";
+    }
+    // noun 13968547
+    if sense == 5 {
+        return "noun\testablished customary state (especially of society)\t\torder ruled in the streets";
+    }
+    // noun 08456993
+    if sense == 6 {
+        return "noun\tlogical or comprehensible arrangement of separate elements\tordering, ordination\twe shall consider these questions in the inverse order of their presentation";
+    }
+    // verb 00747135
+    if sense == 7 {
+        return "verb\tissue commands or orders for\tprescribe, dictate\t";
+    }
+    // noun 14496710
+    if sense == 8 {
+        return "noun\ta condition of regular or proper arrangement\torderliness\the put his desk in order";
+    }
+    // verb 02511551
+    if sense == 9 {
+        return "verb\tbring into conformity with rules or principles or usage; impose regulations\tregulate, regularize, regularise, govern\t";
+    }
+    // noun 06539770
+    if sense == 10 {
+        return "noun\ta legally binding command or decision entered on the court record (as if issued by a court or judge)\tdecree, edict, fiat, rescript\ta friend in New Mexico said that the order caused no trouble out there";
+    }
+    // noun 06529219
+    if sense == 11 {
+        return "noun\ta commercial document used to request someone to supply something in return for payment and providing specifications and quantities\tpurchase order\tIBM received an order for a hundred computers";
+    }
+    // noun 08227214
+    if sense == 12 {
+        return "noun\ta formal association of people with similar interests\tclub, social club, society, guild, gild, lodge\tmen from the fraternal order will staff the soup kitchen today";
+    }
+    // noun 06652878
+    if sense == 13 {
+        return "noun\ta body of rules followed by an assembly\trules of order, parliamentary law, parliamentary procedure\t";
+    }
+    // verb 00277659
+    if sense == 14 {
+        return "verb\tbring order to or into\t\tOrder these files";
+    }
+    // verb 00276883
+    if sense == 15 {
+        return "verb\tplace in a certain order\t\torder the photos chronologically";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// evidence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_evidence(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05823932
+    if sense == 1 {
+        return "noun\tyour basis for belief or disbelief; knowledge on which to base belief\tgrounds\tthe evidence that smoking causes lung cancer is very compelling";
+    }
+    // noun 06643408
+    if sense == 2 {
+        return "noun\tan indication that makes something evident\t\this trembling was evidence of his fear";
+    }
+    // verb 00820976
+    if sense == 3 {
+        return "verb\tprovide evidence for; stand as proof of; show by one's behavior, attitude, or external attributes\tattest, certify, manifest, demonstrate\t";
+    }
+    // noun 06733939
+    if sense == 4 {
+        return "noun\t(law) all the means by which any alleged matter of fact whose truth is investigated at judicial trial is established or disproved\t\t";
+    }
+    // verb 01015244
+    if sense == 5 {
+        return "verb\tprovide evidence for\ttestify, bear witness, prove, show\t";
+    }
+    // verb 00954422
+    if sense == 6 {
+        return "verb\tgive evidence\ttell\t";
+    }
+    ""
+}

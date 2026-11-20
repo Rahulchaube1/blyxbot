@@ -1,0 +1,25 @@
+// bit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bit(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13761407
+    if sense == 1 {
+        return "noun\ta small piece or quantity of something\tspot\ta bit of paper";
+    }
+    // noun 09222051
+    if sense == 2 {
+        return "noun\ta small fragment of something broken off from the whole\tchip, flake, fleck, scrap\ta bit of rock caught him in the eye";
+    }
+    // noun 15246853
+    if sense == 3 {
+        return "noun\tan indefinitely short time\tmoment, mo, minute, second\tin just a bit";
+    }
+    // noun 07309457
+    if sense == 4 {
+        return "noun\tan instance of some kind\tpiece\the had a bit of good luck";
+    }
+    // noun 02844714
+    if sense == 5 {
+        return "noun\tpiece of metal held in horse's mouth by reins and used to control the horse while riding\t\tthe horse was not accustomed to a bit";
+    }
+    ""
+}

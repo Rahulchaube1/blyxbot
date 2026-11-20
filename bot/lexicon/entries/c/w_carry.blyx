@@ -1,0 +1,77 @@
+// carry — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_carry(sense: i64) -> str {
+    if sense == 0 { return "18"; }
+    // verb 01449974
+    if sense == 1 {
+        return "verb\tmove while supporting, either in a vehicle or in one's hands or on one's body\ttransport\tYou must carry your camping gear";
+    }
+    // verb 02717102
+    if sense == 2 {
+        return "verb\thave with oneself; have on one's person\tpack, take\tI always carry money";
+    }
+    // verb 02079933
+    if sense == 3 {
+        return "verb\ttransmit or serve as the medium for transmission\timpart, conduct, transmit, convey, channel\tSound carries well over water";
+    }
+    // verb 01061017
+    if sense == 4 {
+        return "verb\tserve as a means for expressing something\tconvey, express\tThe painting of Mary carries motherly love";
+    }
+    // verb 01218084
+    if sense == 5 {
+        return "verb\tbear or be able to bear the weight, pressure,or responsibility of\t\tHis efforts carried the entire project";
+    }
+    // verb 01601234
+    if sense == 6 {
+        return "verb\tsupport or hold in a certain manner\thold, bear\tHe carried himself upright";
+    }
+    // verb 02700867
+    if sense == 7 {
+        return "verb\tcontain or hold; have within\thold, bear, contain\tThe jar carries wine";
+    }
+    // verb 02561168
+    if sense == 8 {
+        return "verb\textend to a certain degree\t\tcarry too far";
+    }
+    // verb 00235110
+    if sense == 9 {
+        return "verb\tcontinue or extend\textend\tThe civil war carried into the neighboring province";
+    }
+    // verb 02636325
+    if sense == 10 {
+        return "verb\tbe necessarily associated with or result in or involve\t\tThis crime carries a penalty of five years in prison";
+    }
+    // verb 01101416
+    if sense == 11 {
+        return "verb\twin in an election\t\tThe senator carried his home state";
+    }
+    // verb 00738951
+    if sense == 12 {
+        return "verb\tinclude, as on a list\t\tHow many people are carried on the payroll?";
+    }
+    // noun 00318735
+    if sense == 13 {
+        return "noun\tthe act of carrying something\t\t";
+    }
+    // verb 02518161
+    if sense == 14 {
+        return "verb\tbehave in a certain manner\tbehave, acquit, bear, deport, conduct, comport\tShe carried herself well";
+    }
+    // verb 02285392
+    if sense == 15 {
+        return "verb\thave on hand\tstock, stockpile\tDo you carry kerosene heaters?";
+    }
+    // verb 01746359
+    if sense == 16 {
+        return "verb\tinclude as the content; broadcast or publicize\trun\tThis paper carries a restaurant review";
+    }
+    // verb 01408760
+    if sense == 17 {
+        return "verb\tpropel, \"Carry the ball\"\tdribble\t";
+    }
+    // verb 01061320
+    if sense == 18 {
+        return "verb\tpass on a communication\t\tThe news was carried to every village in the province";
+    }
+    ""
+}

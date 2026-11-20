@@ -1,0 +1,13 @@
+// university — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_university(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08286163
+    if sense == 1 {
+        return "noun\tthe body of faculty and students at a university\t\t";
+    }
+    // noun 04511002
+    if sense == 2 {
+        return "noun\testablishment where a seat of higher learning is housed, including administrative and living quarters as well as facilities for research and teaching\t\t";
+    }
+    ""
+}

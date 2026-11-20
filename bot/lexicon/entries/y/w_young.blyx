@@ -1,0 +1,17 @@
+// young — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_young(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01646941
+    if sense == 1 {
+        return "adjective\t(used of living things especially persons) in an early period of life or development or growth\timmature\tyoung people";
+    }
+    // noun 01321579
+    if sense == 2 {
+        return "noun\tany immature animal\toffspring\t";
+    }
+    // adj 00818008
+    if sense == 3 {
+        return "adjective\t(of crops) harvested at an early stage of development; before complete maturity\tnew\tyoung corn";
+    }
+    ""
+}

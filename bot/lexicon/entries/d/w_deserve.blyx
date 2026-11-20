@@ -1,0 +1,9 @@
+// deserve — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_deserve(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 02646378
+    if sense == 1 {
+        return "verb\tbe worthy or deserving\tmerit\tYou deserve a promotion after all the hard work you have done";
+    }
+    ""
+}

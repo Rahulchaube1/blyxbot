@@ -1,0 +1,37 @@
+// demand — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_demand(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00754942
+    if sense == 1 {
+        return "verb\trequest urgently and forcefully\t\tThe victim's family is demanding compensation";
+    }
+    // noun 07191279
+    if sense == 2 {
+        return "noun\tan urgent or peremptory request\t\this demands for attention were unceasing";
+    }
+    // verb 02627934
+    if sense == 3 {
+        return "verb\trequire as useful, just, or proper\tnecessitate, ask, postulate, need, require, take, involve, call for\tThis position demands a lot of personal sacrifice";
+    }
+    // noun 13461162
+    if sense == 4 {
+        return "noun\tthe ability and desire to purchase goods and services\t\tthe automobile reduced the demand for buggywhips";
+    }
+    // verb 01017826
+    if sense == 5 {
+        return "verb\tclaim as due or just\texact\tThe bank demanded payment of the loan";
+    }
+    // noun 05892651
+    if sense == 6 {
+        return "noun\trequired activity\trequirement\tthere were many demands on his time";
+    }
+    // noun 01061333
+    if sense == 7 {
+        return "noun\tthe act of demanding\t\tthe kidnapper's exorbitant demands for money";
+    }
+    // noun 14449126
+    if sense == 8 {
+        return "noun\ta condition requiring relief\tneed\tthere is a demand for jobs";
+    }
+    ""
+}

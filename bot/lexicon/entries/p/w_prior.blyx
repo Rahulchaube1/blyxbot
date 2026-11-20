@@ -1,0 +1,9 @@
+// prior — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_prior(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 00122128
+    if sense == 1 {
+        return "adjective\tearlier in time\tanterior\t";
+    }
+    ""
+}

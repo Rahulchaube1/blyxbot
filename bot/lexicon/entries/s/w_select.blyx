@@ -1,0 +1,13 @@
+// select — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_select(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00674607
+    if sense == 1 {
+        return "verb\tpick out, select, or choose from a number of alternatives\tchoose, take, pick out\tShe selected a pair of shoes from among the dozen the salesgirl had shown her";
+    }
+    // adj 02342899
+    if sense == 2 {
+        return "adjective\tof superior grade\tchoice, prime, prize, quality\tselect peaches";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// speak — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_speak(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00941990
+    if sense == 1 {
+        return "verb\texpress in speech\ttalk, utter, mouth, verbalize, verbalise\t";
+    }
+    // verb 00962447
+    if sense == 2 {
+        return "verb\texchange thoughts; talk with\ttalk\t";
+    }
+    // verb 00963570
+    if sense == 3 {
+        return "verb\tuse language\ttalk\tthe prisoner won't speak";
+    }
+    // verb 00989201
+    if sense == 4 {
+        return "verb\tgive a speech to\taddress\t";
+    }
+    // verb 02135607
+    if sense == 5 {
+        return "verb\tmake a characteristic or natural sound\t\t";
+    }
+    ""
+}

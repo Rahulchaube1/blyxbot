@@ -1,0 +1,37 @@
+// come up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_come_up(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01627779
+    if sense == 1 {
+        return "verb\tbring forth, usually something desirable\t\t";
+    }
+    // verb 00339738
+    if sense == 2 {
+        return "verb\tresult or issue\tarise\t";
+    }
+    // verb 01849221
+    if sense == 3 {
+        return "verb\tmove toward, travel toward something or somebody or approach something or somebody\tcome\t";
+    }
+    // verb 01990281
+    if sense == 4 {
+        return "verb\tcome to the surface\tsurface, rise up, rise\t";
+    }
+    // verb 02625786
+    if sense == 5 {
+        return "verb\toriginate or come into being\tarise, bob up\t";
+    }
+    // verb 01968569
+    if sense == 6 {
+        return "verb\tmove upward\trise, lift, arise, move up, go up, uprise\t";
+    }
+    // verb 02721840
+    if sense == 7 {
+        return "verb\tbe mentioned\t\t";
+    }
+    // verb 01526605
+    if sense == 8 {
+        return "verb\tstart running, functioning, or operating\tgo on, come on\t";
+    }
+    ""
+}

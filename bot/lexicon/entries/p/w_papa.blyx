@@ -1,0 +1,9 @@
+// papa — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_papa(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 09988063
+    if sense == 1 {
+        return "noun\tan informal term for a father; probably derived from baby talk\tdad, dada, daddy, pa, pappa, pop\t";
+    }
+    ""
+}

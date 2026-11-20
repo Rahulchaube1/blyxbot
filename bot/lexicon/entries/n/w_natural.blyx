@@ -1,0 +1,21 @@
+// natural — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_natural(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01569965
+    if sense == 1 {
+        return "adjective\tin accordance with nature; relating to or concerning nature\t\ta very natural development";
+    }
+    // adj 01570892
+    if sense == 2 {
+        return "adjective\texisting in or produced by nature; not artificial or imitation\t\ta natural pearl";
+    }
+    // adj 01574036
+    if sense == 3 {
+        return "adjective\texisting in or in conformity with nature or the observable world; neither supernatural nor magical\t\ta perfectly natural explanation";
+    }
+    // adj 01595050
+    if sense == 4 {
+        return "adjective\tfunctioning or occurring in a normal way; lacking abnormalities or deficiencies\t\tit's the natural thing to happen";
+    }
+    ""
+}

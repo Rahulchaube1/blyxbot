@@ -1,0 +1,9 @@
+// coffee — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_coffee(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 07929519
+    if sense == 1 {
+        return "noun\ta beverage consisting of an infusion of ground coffee beans\tjava\the ordered a cup of coffee";
+    }
+    ""
+}

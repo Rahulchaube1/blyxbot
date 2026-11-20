@@ -1,0 +1,29 @@
+// consider — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_consider(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00690614
+    if sense == 1 {
+        return "verb\tdeem to be\tsee, reckon, view, regard\tI consider her to be shallow";
+    }
+    // verb 02166460
+    if sense == 2 {
+        return "verb\tgive careful consideration to\tstudy\tconsider the possibility of moving";
+    }
+    // verb 00734054
+    if sense == 3 {
+        return "verb\ttake into consideration for exemplifying purposes\ttake, deal, look at\tConsider the following case";
+    }
+    // verb 00950431
+    if sense == 4 {
+        return "verb\tshow consideration for; take into account\tcount, weigh\tYou must consider her age";
+    }
+    // verb 00813044
+    if sense == 5 {
+        return "verb\tthink about carefully; weigh\tdebate, moot, turn over, deliberate\tThey considered the possibility of a strike";
+    }
+    // verb 00689344
+    if sense == 6 {
+        return "verb\tjudge or regard; look upon; judge\tthink, believe, conceive\t";
+    }
+    ""
+}

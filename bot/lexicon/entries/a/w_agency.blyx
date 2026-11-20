@@ -1,0 +1,17 @@
+// agency — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_agency(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08337324
+    if sense == 1 {
+        return "noun\tan administrative unit of government\tfederal agency, government agency, bureau, office, authority\tthe Central Intelligence Agency";
+    }
+    // noun 08057206
+    if sense == 2 {
+        return "noun\ta business that serves other businesses\t\t";
+    }
+    // noun 14007546
+    if sense == 3 {
+        return "noun\tthe state of being in action or exerting power\t\tthe agency of providence";
+    }
+    ""
+}

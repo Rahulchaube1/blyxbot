@@ -1,0 +1,13 @@
+// dangerous — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dangerous(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02058794
+    if sense == 1 {
+        return "adjective\tinvolving or causing danger or risk; liable to hurt or harm\tunsafe\ta dangerous criminal";
+    }
+    // adj 00651039
+    if sense == 2 {
+        return "adjective\tcausing fear or anxiety by threatening great harm\tgrave, grievous, serious, severe, life-threatening\ta dangerous operation";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// manner — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_manner(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04928903
+    if sense == 1 {
+        return "noun\thow something is done or how it happens\tmode, style, way, fashion\ther dignified manner";
+    }
+    // noun 04910135
+    if sense == 2 {
+        return "noun\ta way of acting or behaving\tpersonal manner\t";
+    }
+    // noun 05845562
+    if sense == 3 {
+        return "noun\ta kind\t\twhat manner of man are you?";
+    }
+    ""
+}

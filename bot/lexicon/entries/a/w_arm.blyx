@@ -1,0 +1,29 @@
+// arm — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_arm(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05563770
+    if sense == 1 {
+        return "noun\ta human limb; technically the part of the superior limb between the shoulder and the elbow but commonly used to refer to the whole superior limb\t\t";
+    }
+    // verb 01087197
+    if sense == 2 {
+        return "verb\tprepare oneself for a military confrontation\tbuild up, fortify, gird\t";
+    }
+    // noun 02737833
+    if sense == 3 {
+        return "noun\tany projection that is thought to resemble a human arm\tbranch, limb\tthe arm of the record player";
+    }
+    // noun 04565375
+    if sense == 4 {
+        return "noun\tany instrument or instrumentality used in fighting or hunting\tweapon, weapon system\t";
+    }
+    // noun 02737660
+    if sense == 5 {
+        return "noun\tthe part of an armchair or sofa that supports the elbow and forearm of a seated person\t\t";
+    }
+    // verb 02334867
+    if sense == 6 {
+        return "verb\tsupply with arms\t\tThe U.S. armed the freedom fighters in Afghanistan";
+    }
+    ""
+}

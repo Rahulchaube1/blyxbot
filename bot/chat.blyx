@@ -4,9 +4,13 @@ use understanding::text;
 use understanding::input;
 use calendar;
 use arithmetic;
+use conversions;
 use geography;
 use everyday;
 use memory;
+use vocabulary;
+use word_list;
+use word_quiz;
 
 fn response(tokens: arglist, name: str, previous_topic: str, introduced: bool, forgot: bool) -> arglist {
     if input_oversized(tokens) { return pair("chat", "Could you send that in two shorter messages? This one exceeds my per-turn input budget."); }
@@ -19,6 +23,13 @@ fn response(tokens: arglist, name: str, previous_topic: str, introduced: bool, f
     if has_pair(tokens, "your", "name") || has_pair(tokens, "who", "are") && has_word(tokens, "you") || has_word(tokens, "introduce") && has_word(tokens, "yourself") {
         return pair("chat", "I'm BlyxBot, a rule-based chatbot written in Blyx.");
     }
+    let query = query_text(tokens);
+    let listing = word_list_answer(query, previous_topic);
+    if args_len(listing) > 0 { return listing; }
+    let vocab = vocabulary_answer(query, previous_topic);
+    if args_len(vocab) > 0 { return vocab; }
+    let conversion = answer_conversion(tokens);
+    if args_len(conversion) > 0 { return conversion; }
     let cal = answer_calendar(tokens);
     if args_len(cal) > 0 { return cal; }
     let math = answer_math(tokens);
@@ -28,7 +39,7 @@ fn response(tokens: arglist, name: str, previous_topic: str, introduced: bool, f
     let everyday = everyday_answer(tokens, previous_topic);
     if args_len(everyday) > 0 { return everyday; }
     if has_pair(tokens, "you", "do") && has_word(tokens, "what") || word_count(tokens) == 1 && word(tokens, 0) == "help" {
-        return pair("chat", "I can remember your first name, look up national capitals, calculate numbers and dates, and answer everyday questions.");
+        return pair("chat", "I can remember your name, calculate numbers and dates, convert units, look up capitals, and answer everyday questions. Try “define bank”, “conjugate write”, or “word quiz”.");
     }
     if has_word(tokens, "hello") || has_word(tokens, "hi") || has_word(tokens, "hey") {
         if name != "" { return pair("chat", text_concat("Hi, ", text_concat(name, "! What can I help with?"))); }
@@ -36,7 +47,11 @@ fn response(tokens: arglist, name: str, previous_topic: str, introduced: bool, f
     }
     if has_word(tokens, "thanks") || has_pair(tokens, "thank", "you") { return pair("chat", "You're welcome."); }
     if has_word(tokens, "goodbye") || has_word(tokens, "bye") { return pair("chat", "Goodbye!"); }
-    pair("fallback", "I don't know that one yet. You can ask me about everyday science, cooking, capitals, dates, or arithmetic.")
+    let definition = dictionary_fallback(query);
+    if args_len(definition) > 0 { return definition; }
+    let quiz = quiz_answer(query, previous_topic);
+    if args_len(quiz) > 0 { return quiz; }
+    pair("fallback", "I don't know that one yet. Try an everyday question, a calculation, or a word lookup such as “define bank”.")
 }
 
 // State is a value owned by this conversation. A turn returns [name, topic, reply].

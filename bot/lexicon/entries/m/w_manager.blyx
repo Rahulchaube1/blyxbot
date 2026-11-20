@@ -1,0 +1,13 @@
+// manager — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_manager(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 10014939
+    if sense == 1 {
+        return "noun\tsomeone who controls resources and expenditures\tdirector, managing director\t";
+    }
+    // noun 09931640
+    if sense == 2 {
+        return "noun\t(sports) someone in charge of training an athlete or a team\tcoach, handler\t";
+    }
+    ""
+}

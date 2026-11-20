@@ -1,0 +1,17 @@
+// satisfy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_satisfy(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02671880
+    if sense == 1 {
+        return "verb\tmeet the requirements or expectations of\tfulfill, fulfil, live up to\t";
+    }
+    // verb 01816431
+    if sense == 2 {
+        return "verb\tmake happy or satisfied\tgratify\t";
+    }
+    // verb 01183573
+    if sense == 3 {
+        return "verb\tfill or meet a want or need\tmeet, fill, fulfill, fulfil\t";
+    }
+    ""
+}

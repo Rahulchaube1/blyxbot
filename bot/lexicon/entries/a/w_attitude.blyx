@@ -1,0 +1,17 @@
+// attitude — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_attitude(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06193203
+    if sense == 1 {
+        return "noun\ta complex mental state involving beliefs and feelings and values and dispositions to act in certain ways\tmental attitude\the had the attitude that work was fun";
+    }
+    // noun 05079866
+    if sense == 2 {
+        return "noun\tthe arrangement of the body and its limbs\tposition, posture\the assumed an attitude of surrender";
+    }
+    // noun 00755863
+    if sense == 3 {
+        return "noun\ta theatrical pose created for effect\t\tthe actor struck just the right attitude";
+    }
+    ""
+}

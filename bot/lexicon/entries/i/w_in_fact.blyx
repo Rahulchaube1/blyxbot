@@ -1,0 +1,9 @@
+// in fact — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_in_fact(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00148869
+    if sense == 1 {
+        return "adverb\tin reality or actuality\tin point of fact, as a matter of fact\tin fact, it was a wonder anyone survived";
+    }
+    ""
+}

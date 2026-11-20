@@ -1,0 +1,29 @@
+// speech — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_speech(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 07238694
+    if sense == 1 {
+        return "noun\tthe act of delivering a formal spoken communication to an audience\taddress\t";
+    }
+    // noun 07109196
+    if sense == 2 {
+        return "noun\t(language) communication by word of mouth\tspeech communication, spoken communication, spoken language, language, voice communication, oral communication\this speech was garbled";
+    }
+    // noun 07130050
+    if sense == 3 {
+        return "noun\tsomething spoken\t\the could hear them uttering merry speeches";
+    }
+    // noun 07110457
+    if sense == 4 {
+        return "noun\tthe exchange of spoken words\t\tthey were perfectly comfortable together without speech";
+    }
+    // noun 07071483
+    if sense == 5 {
+        return "noun\tyour characteristic style or manner of expressing yourself orally\tmanner of speaking, delivery\ther speech was barren of southernisms";
+    }
+    // noun 06713930
+    if sense == 6 {
+        return "noun\ta lengthy rebuke\tlecture, talking to\t";
+    }
+    ""
+}

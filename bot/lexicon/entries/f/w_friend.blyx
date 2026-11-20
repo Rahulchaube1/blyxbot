@@ -1,0 +1,17 @@
+// friend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_friend(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10112591
+    if sense == 1 {
+        return "noun\ta person you know well and regard with affection and trust\t\the was my best friend at the university";
+    }
+    // noun 09785042
+    if sense == 2 {
+        return "noun\tan associate who provides cooperation or assistance\tally\t";
+    }
+    // noun 09763784
+    if sense == 3 {
+        return "noun\ta person with whom you are acquainted\tacquaintance\twe are friends of the family";
+    }
+    ""
+}

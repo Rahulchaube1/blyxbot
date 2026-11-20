@@ -1,0 +1,21 @@
+// mistake — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mistake(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00070965
+    if sense == 1 {
+        return "noun\ta wrong action attributable to bad judgment or ignorance or inattention\terror, fault\the made a bad mistake";
+    }
+    // verb 00618267
+    if sense == 2 {
+        return "verb\tidentify incorrectly\tmisidentify\tDon't mistake her for her twin sister";
+    }
+    // noun 05895723
+    if sense == 3 {
+        return "noun\tan understanding of something that is not correct\tmisunderstanding, misapprehension\the wasn't going to admit his mistake";
+    }
+    // noun 06769392
+    if sense == 4 {
+        return "noun\tpart of a statement that is not correct\terror\t";
+    }
+    ""
+}

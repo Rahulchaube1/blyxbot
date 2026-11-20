@@ -1,0 +1,25 @@
+// second — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_second(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 02202146
+    if sense == 1 {
+        return "adjective\tcoming next after the first in position in space or time or degree or magnitude\t2nd, 2d\t";
+    }
+    // noun 15235126
+    if sense == 2 {
+        return "noun\t1/60 of a minute; the basic unit of time adopted under the Systeme International d'Unites\tsec, s\t";
+    }
+    // adv 00102881
+    if sense == 3 {
+        return "adverb\tin the second place\tsecondly\tsecond, we must consider the economy";
+    }
+    // noun 15246853
+    if sense == 4 {
+        return "noun\tan indefinitely short time\tmoment, mo, minute, bit\t";
+    }
+    // noun 00723783
+    if sense == 5 {
+        return "noun\tthe fielding position of the player on a baseball team who is stationed near the second of the bases in the infield\tsecond base\t";
+    }
+    ""
+}

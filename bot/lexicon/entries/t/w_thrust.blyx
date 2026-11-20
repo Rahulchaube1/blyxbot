@@ -1,0 +1,37 @@
+// thrust — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_thrust(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01899262
+    if sense == 1 {
+        return "verb\tpush forcefully\t\tHe thrust his chin forward";
+    }
+    // verb 02094569
+    if sense == 2 {
+        return "verb\tpress or force\tstuff, shove, squeeze\tShe thrust the letter into his hand";
+    }
+    // verb 02062212
+    if sense == 3 {
+        return "verb\tmake a thrusting forward movement\tlunge, hurl, hurtle\t";
+    }
+    // verb 00747418
+    if sense == 4 {
+        return "verb\timpose urgently, importunately, or inexorably\tforce\t";
+    }
+    // noun 11498203
+    if sense == 5 {
+        return "noun\tthe force used in pushing\tpush\tthe thrust of the jet engines";
+    }
+    // noun 01173965
+    if sense == 6 {
+        return "noun\ta strong blow with a knife or other sharp pointed instrument\tstab, knife thrust\t";
+    }
+    // noun 00103834
+    if sense == 7 {
+        return "noun\tthe act of applying force to propel something\tdrive, driving force\t";
+    }
+    // verb 01441510
+    if sense == 8 {
+        return "verb\tpenetrate or cut through with a sharp instrument\tpierce\t";
+    }
+    ""
+}

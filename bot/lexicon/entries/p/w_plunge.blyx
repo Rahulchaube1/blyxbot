@@ -1,0 +1,29 @@
+// plunge — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_plunge(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01577635
+    if sense == 1 {
+        return "verb\tthrust or throw into\timmerse\t";
+    }
+    // verb 01967373
+    if sense == 2 {
+        return "verb\tdrop steeply\tdive, plunk\tthe stock market plunged";
+    }
+    // verb 01834053
+    if sense == 3 {
+        return "verb\tdash violently or with great speed or impetuosity\t\tShe plunged at it eagerly";
+    }
+    // verb 00347918
+    if sense == 4 {
+        return "verb\tbegin with vigor\tlaunch\tShe plunged into a dangerous adventure";
+    }
+    // noun 00442847
+    if sense == 5 {
+        return "noun\ta brief swim in water\tdip\t";
+    }
+    // verb 00601378
+    if sense == 6 {
+        return "verb\tcause to be immersed\timmerse\tThe professor plunged his students into the study of the Italian text";
+    }
+    ""
+}

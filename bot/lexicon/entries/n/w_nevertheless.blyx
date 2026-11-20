@@ -1,0 +1,9 @@
+// nevertheless — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_nevertheless(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00027384
+    if sense == 1 {
+        return "adverb\tdespite anything to the contrary (usually following a concession)\thowever, withal, still, yet, all the same, even so, nonetheless, notwithstanding\twhile we disliked each other, nevertheless we agreed";
+    }
+    ""
+}

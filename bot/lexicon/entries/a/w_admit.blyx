@@ -1,0 +1,21 @@
+// admit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_admit(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00817311
+    if sense == 1 {
+        return "verb\tdeclare to be true or admit the existence or reality or truth of\tacknowledge\tHe admitted his errors";
+    }
+    // verb 02502536
+    if sense == 2 {
+        return "verb\tallow to enter; grant entry to\tallow in, let in, intromit\tWe cannot admit non-members into our club building";
+    }
+    // verb 02449847
+    if sense == 3 {
+        return "verb\tallow participation in or the right to be part of; permit to exercise the rights, functions, and responsibilities of\tlet in, include\tadmit someone to the profession";
+    }
+    // verb 02236624
+    if sense == 4 {
+        return "verb\tadmit into a group or community\taccept, take, take on\tWe'll have to vote on whether or not to admit a new member";
+    }
+    ""
+}

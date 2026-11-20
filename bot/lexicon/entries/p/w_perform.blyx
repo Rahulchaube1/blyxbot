@@ -1,0 +1,21 @@
+// perform — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_perform(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01712704
+    if sense == 1 {
+        return "verb\tcarry out or perform an action\texecute, do\t";
+    }
+    // verb 02374764
+    if sense == 2 {
+        return "verb\tperform a function\t\tWho will perform the wedding?";
+    }
+    // verb 01714208
+    if sense == 3 {
+        return "verb\tgive a performance (of something)\t\tHorowitz is performing at Carnegie Hall tonight";
+    }
+    // verb 02561995
+    if sense == 4 {
+        return "verb\tget (something) done\tdo\t";
+    }
+    ""
+}

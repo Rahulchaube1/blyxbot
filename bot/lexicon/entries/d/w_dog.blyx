@@ -1,0 +1,13 @@
+// dog — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dog(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 02084071
+    if sense == 1 {
+        return "noun\ta member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds\tdomestic dog, Canis familiaris\tthe dog barked all night";
+    }
+    // verb 02001858
+    if sense == 2 {
+        return "verb\tgo after with the intent to catch\tchase, chase after, trail, tail, tag, give chase, go after, track\tthe dog chased the rabbit";
+    }
+    ""
+}

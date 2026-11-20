@@ -1,0 +1,17 @@
+// sit down — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sit_down(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01984902
+    if sense == 1 {
+        return "verb\ttake a seat\tsit\t";
+    }
+    // verb 01543998
+    if sense == 2 {
+        return "verb\tshow to a seat; assign a seat for\tseat, sit\t";
+    }
+    // verb 01543123
+    if sense == 3 {
+        return "verb\tbe seated\tsit\t";
+    }
+    ""
+}

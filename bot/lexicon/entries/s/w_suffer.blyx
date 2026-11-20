@@ -1,0 +1,37 @@
+// suffer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_suffer(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02109190
+    if sense == 1 {
+        return "verb\tundergo or be subjected to\tendure\tHe suffered the penalty";
+    }
+    // verb 00065639
+    if sense == 2 {
+        return "verb\tundergo (as of injuries and illnesses)\tsustain, have, get\tShe suffered a fracture in the accident";
+    }
+    // verb 01794668
+    if sense == 3 {
+        return "verb\texperience (emotional) pain\t\tEvery time her husband gets drunk, she suffers";
+    }
+    // verb 00668099
+    if sense == 4 {
+        return "verb\tput up with something or somebody unpleasant\tdigest, endure, stick out, stomach, bear, stand, tolerate, support, brook, abide, put up\t";
+    }
+    // verb 00204750
+    if sense == 5 {
+        return "verb\tget worse\t\tHis grades suffered";
+    }
+    // verb 00065070
+    if sense == 6 {
+        return "verb\tfeel pain or be in pain\thurt\t";
+    }
+    // verb 02121511
+    if sense == 7 {
+        return "verb\tfeel physical pain\thurt, ache\t";
+    }
+    // verb 00078401
+    if sense == 8 {
+        return "verb\tfeel unwell or uncomfortable\t\tShe is suffering from the hot weather";
+    }
+    ""
+}

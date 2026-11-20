@@ -1,0 +1,25 @@
+// declare — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_declare(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01010118
+    if sense == 1 {
+        return "verb\tstate emphatically and authoritatively\t\tHe declared that he needed more money to carry out the task he was charged with";
+    }
+    // verb 00965871
+    if sense == 2 {
+        return "verb\tannounce publicly or officially\tannounce\tThe President declared war";
+    }
+    // verb 00820801
+    if sense == 3 {
+        return "verb\tstate firmly\t\tHe declared that he was innocent";
+    }
+    // verb 00822367
+    if sense == 4 {
+        return "verb\tdeclare to be\tadjudge, hold\tShe was declared incompetent";
+    }
+    // verb 02444555
+    if sense == 5 {
+        return "verb\tauthorize payments of\t\tdeclare dividends";
+    }
+    ""
+}

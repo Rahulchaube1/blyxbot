@@ -1,0 +1,17 @@
+// northern — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_northern(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01605753
+    if sense == 1 {
+        return "adjective\tin or characteristic of a region of the United States north of (approximately) the Mason-Dixon line\t\tNorthern liberals";
+    }
+    // adj 01601297
+    if sense == 2 {
+        return "adjective\tsituated in or oriented toward the north\tnortherly\tthe northern suburbs";
+    }
+    // adj 01601069
+    if sense == 3 {
+        return "adjective\tcoming from the north; used especially of wind\tnortherly\ta northern snowstorm";
+    }
+    ""
+}

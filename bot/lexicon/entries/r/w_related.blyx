@@ -1,0 +1,13 @@
+// related — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_related(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01972820
+    if sense == 1 {
+        return "adjective\tbeing connected either logically or causally or by shared characteristics\trelated to\tpainting and the related arts";
+    }
+    // adj 01971237
+    if sense == 2 {
+        return "adjective\tconnected by kinship, common origin, or marriage\t\t";
+    }
+    ""
+}

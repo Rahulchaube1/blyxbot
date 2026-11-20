@@ -1,0 +1,25 @@
+// construction — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_construction(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00911048
+    if sense == 1 {
+        return "noun\tthe act of constructing something\tbuilding\tduring the construction we had to take a detour";
+    }
+    // noun 06313651
+    if sense == 2 {
+        return "noun\ta group of words that form a constituent of a sentence and are considered as a single unit\tgrammatical construction, expression\tI concluded from his awkward constructions that he was a foreigner";
+    }
+    // noun 05771836
+    if sense == 3 {
+        return "noun\tthe creation of a construct; the process of combining ideas into a congruous object of thought\tmental synthesis\t";
+    }
+    // noun 04341686
+    if sense == 4 {
+        return "noun\ta thing constructed; a complex entity constructed of many parts\tstructure\tshe wore her hair in an amazing construction of whirls and ribbons";
+    }
+    // noun 00873381
+    if sense == 5 {
+        return "noun\tdrawing a figure satisfying certain conditions as part of solving a problem or proving a theorem\t\tthe assignment was to make a construction that could be used in proving the Pythagorean theorem";
+    }
+    ""
+}

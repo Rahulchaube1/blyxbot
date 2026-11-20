@@ -1,0 +1,17 @@
+// consult — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_consult(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00877559
+    if sense == 1 {
+        return "verb\tget or ask advice from\tconfer with\tConsult your local broker";
+    }
+    // verb 00877083
+    if sense == 2 {
+        return "verb\tseek information from\trefer, look up\tYou should consult the dictionary";
+    }
+    // verb 00876665
+    if sense == 3 {
+        return "verb\thave a conference in order to talk something over\tconfer, confabulate, confab\t";
+    }
+    ""
+}

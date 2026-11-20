@@ -1,0 +1,33 @@
+// flood — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_flood(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01524523
+    if sense == 1 {
+        return "verb\tfill quickly beyond capacity; as with a liquid\tdeluge, inundate, swamp\tThe images flooded his mind";
+    }
+    // noun 11454591
+    if sense == 2 {
+        return "noun\tthe rising of a body of water and its overflowing onto normally dry land\tinundation, deluge, alluvion\t";
+    }
+    // verb 00217152
+    if sense == 3 {
+        return "verb\tcover with liquid, usually water\t\tThe swollen river flooded the village";
+    }
+    // noun 13775706
+    if sense == 4 {
+        return "noun\tan overwhelming number or amount\tinundation, deluge, torrent\ta flood of requests";
+    }
+    // noun 03365374
+    if sense == 5 {
+        return "noun\tlight that is a source of artificial illumination having a broad beam; used in photography\tfloodlight, flood lamp, photoflood\t";
+    }
+    // noun 00329819
+    if sense == 6 {
+        return "noun\ta large flow\toverflow, outpouring\t";
+    }
+    // noun 01257542
+    if sense == 7 {
+        return "noun\tthe act of flooding; filling to overflowing\tflowage\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// sale — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sale(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 01114824
+    if sense == 1 {
+        return "noun\ta particular instance of selling\t\the has just made his first sale";
+    }
+    // noun 01117541
+    if sense == 2 {
+        return "noun\tthe general activity of selling\t\tthey tried to boost sales";
+    }
+    // noun 01117723
+    if sense == 3 {
+        return "noun\tan occasion (usually brief) for buying at specially reduced prices\tcut-rate sale, sales event\tthey held a sale to reduce their inventory";
+    }
+    ""
+}

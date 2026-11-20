@@ -1,0 +1,9 @@
+// meal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_meal(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 07573696
+    if sense == 1 {
+        return "noun\tthe food served and eaten at one time\trepast\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// wet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wet(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02547317
+    if sense == 1 {
+        return "adjective\tcovered or soaked with a liquid such as water\t\ta wet bathing suit";
+    }
+    // verb 00214951
+    if sense == 2 {
+        return "verb\tcause to become wet\t\tWet your face";
+    }
+    // noun 14535431
+    if sense == 3 {
+        return "noun\twetness caused by water\tmoisture\tdrops of wet gleamed on the window";
+    }
+    ""
+}

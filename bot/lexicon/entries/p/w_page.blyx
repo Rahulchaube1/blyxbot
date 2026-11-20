@@ -1,0 +1,13 @@
+// page — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_page(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 06256697
+    if sense == 1 {
+        return "noun\tone side of one leaf (of a book or magazine or newspaper or letter etc.) or the written or pictorial matter it contains\t\t";
+    }
+    // verb 00754560
+    if sense == 2 {
+        return "verb\tcontact, as with a pager or by calling somebody's name over a P.A. system\t\t";
+    }
+    ""
+}

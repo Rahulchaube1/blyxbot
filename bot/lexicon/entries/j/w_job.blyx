@@ -1,0 +1,33 @@
+// job — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_job(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 00582388
+    if sense == 1 {
+        return "noun\tthe principal activity in your life that you do to earn money\toccupation, business, line of work, line\t";
+    }
+    // noun 00719705
+    if sense == 2 {
+        return "noun\ta specific piece of work required to be done as a duty or for a specific fee\ttask, chore\testimates of the city's loss on that job ranged as high as a million dollars";
+    }
+    // noun 03599628
+    if sense == 3 {
+        return "noun\ta workplace; as in the expression \"on the job\"\t\t";
+    }
+    // noun 03599761
+    if sense == 4 {
+        return "noun\tan object worked on; a result produced by working\t\the held the job in his left hand and worked on it with his right";
+    }
+    // noun 00584769
+    if sense == 5 {
+        return "noun\tthe responsibility to do something\t\tit is their job to print the truth";
+    }
+    // noun 00576877
+    if sense == 6 {
+        return "noun\tthe performance of a piece of work\t\tshe did an outstanding job as Ophelia";
+    }
+    // noun 00576717
+    if sense == 7 {
+        return "noun\ta damaging piece of work\t\tdry rot did the job of destroying the barn";
+    }
+    ""
+}

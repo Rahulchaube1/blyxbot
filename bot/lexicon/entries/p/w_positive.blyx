@@ -1,0 +1,29 @@
+// positive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_positive(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 01817500
+    if sense == 1 {
+        return "adjective\tcharacterized by or displaying affirmation or acceptance or certainty etc.\t\ta positive attitude";
+    }
+    // adj 00337172
+    if sense == 2 {
+        return "adjective\tpersuaded of; very sure\tconvinced, confident\tI am positive he is lying";
+    }
+    // adj 00065064
+    if sense == 3 {
+        return "adjective\tinvolving advantage or good\tplus\ta plus (or positive) factor";
+    }
+    // adj 01820481
+    if sense == 4 {
+        return "adjective\tindicating existence or presence of a suspected condition or pathogen\tconfirming\ta positive pregnancy test";
+    }
+    // adj 01043505
+    if sense == 5 {
+        return "adjective\tformally laid down or imposed\tprescribed\tpositive laws";
+    }
+    // adj 00721838
+    if sense == 6 {
+        return "adjective\timpossible to deny or disprove\tincontrovertible, irrefutable\tproof positive";
+    }
+    ""
+}

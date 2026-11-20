@@ -1,0 +1,49 @@
+// outside — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_outside(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // adv 00110659
+    if sense == 1 {
+        return "adverb\toutside a building\toutdoors, out of doors, alfresco\tin summer we play outside";
+    }
+    // noun 08613593
+    if sense == 2 {
+        return "noun\tthe region that is outside of something\texterior\t";
+    }
+    // adv 00110919
+    if sense == 3 {
+        return "adverb\ton the outside\t\toutside, the box is black";
+    }
+    // adj 01692969
+    if sense == 4 {
+        return "adjective\trelating to or being on or near the outer side or limit\t\tan outside margin";
+    }
+    // adj 01350225
+    if sense == 5 {
+        return "adjective\tcoming from the outside\texternal, extraneous\tdisdaining outside pressure groups";
+    }
+    // adj 00948514
+    if sense == 6 {
+        return "adjective\toriginating or belonging beyond some bounds:\"the outside world\"\t\toutside interests";
+    }
+    // adj 01692222
+    if sense == 7 {
+        return "adjective\tlocated, suited for, or taking place in the open air\toutdoor, out-of-door\t";
+    }
+    // adj 01347749
+    if sense == 8 {
+        return "adjective\tfunctioning outside the boundaries or precincts of an organized unit\t\t";
+    }
+    // adj 00952761
+    if sense == 9 {
+        return "adjective\tleading to or from the outside\t\tan outside door";
+    }
+    // adj 01037885
+    if sense == 10 {
+        return "adjective\tfrom or between other countries\texternal, international\tdeveloping nations need outside help";
+    }
+    // noun 08613472
+    if sense == 11 {
+        return "noun\tthe outer side or surface of something\texterior\t";
+    }
+    ""
+}

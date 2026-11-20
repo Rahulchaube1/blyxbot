@@ -1,0 +1,33 @@
+// dead — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dead(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 00095280
+    if sense == 1 {
+        return "adjective\tno longer having or seeming to have or expecting to have life\t\tthe nerve is dead";
+    }
+    // noun 07945657
+    if sense == 2 {
+        return "noun\tpeople who are no longer living\t\tthey buried the dead";
+    }
+    // adj 00099874
+    if sense == 3 {
+        return "adjective\tnot showing characteristics of life especially the capacity to sustain life; no longer exerting force or having energy or heat\t\tMars is a dead planet";
+    }
+    // adj 02432154
+    if sense == 4 {
+        return "adjective\tvery tired\tall in, beat, bushed\tI'm dead after that long trip";
+    }
+    // noun 15123362
+    if sense == 5 {
+        return "noun\ta time when coldness (or some other quality associated with death) is intense\t\tthe dead of winter";
+    }
+    // adj 01838151
+    if sense == 6 {
+        return "adjective\tunerringly accurate\t\ta dead shot";
+    }
+    // adj 00041202
+    if sense == 7 {
+        return "adjective\tphysically inactive\t\tCrater Lake is in the crater of a dead volcano of the Cascade Range";
+    }
+    ""
+}

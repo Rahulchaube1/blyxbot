@@ -1,0 +1,25 @@
+// superior — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_superior(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 02341266
+    if sense == 1 {
+        return "adjective\tof high or superior quality or performance\t\tsuperior wisdom derived from experience";
+    }
+    // adj 02338615
+    if sense == 2 {
+        return "adjective\tof or characteristic of high rank or importance\t\ta superior ruler";
+    }
+    // noun 10676018
+    if sense == 3 {
+        return "noun\tone of greater rank or station or quality\thigher-up, superordinate\t";
+    }
+    // noun 10675876
+    if sense == 4 {
+        return "noun\tthe head of a religious community\t\t";
+    }
+    // adj 00792769
+    if sense == 5 {
+        return "adjective\t(sometimes followed by `to') not subject to or influenced by\t\tovercome by a superior opponent";
+    }
+    ""
+}

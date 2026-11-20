@@ -1,0 +1,17 @@
+// bring in — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bring_in(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02078591
+    if sense == 1 {
+        return "verb\tbring in a new person or object into a familiar environment\tintroduce\t";
+    }
+    // verb 02289295
+    if sense == 2 {
+        return "verb\tearn on some commercial or business transaction; earn as salary or wages\tgain, take in, clear, make, earn, realize, realise, pull in\t";
+    }
+    // verb 02247390
+    if sense == 3 {
+        return "verb\tbe sold for a certain price\tfetch, bring\t";
+    }
+    ""
+}

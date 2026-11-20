@@ -1,0 +1,33 @@
+// recognize — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_recognize(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00592883
+    if sense == 1 {
+        return "verb\taccept (someone) to be what is claimed or accept his power and authority\tacknowledge, recognise, know\tWe do not recognize your gods";
+    }
+    // verb 00728617
+    if sense == 2 {
+        return "verb\tbe fully aware or cognizant of\trecognise, realize, realise, agnize, agnise\t";
+    }
+    // verb 02193194
+    if sense == 3 {
+        return "verb\tdetect with the senses\tspot, recognise, distinguish, discern, pick out, make out, tell apart\t";
+    }
+    // verb 00610374
+    if sense == 4 {
+        return "verb\tperceive to be the same\trecognise\t";
+    }
+    // verb 02475535
+    if sense == 5 {
+        return "verb\tgrant credentials to\taccredit, recognise\tThe Regents officially recognized the new educational institution";
+    }
+    // verb 00897241
+    if sense == 6 {
+        return "verb\texpress greetings upon meeting someone\tgreet, recognise\t";
+    }
+    // verb 00892467
+    if sense == 7 {
+        return "verb\texpress obligation, thanks, or gratitude for\tacknowledge, recognise\t";
+    }
+    ""
+}

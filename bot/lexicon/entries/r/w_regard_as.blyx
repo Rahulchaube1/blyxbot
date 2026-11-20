@@ -1,0 +1,9 @@
+// regard as — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_regard_as(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00689950
+    if sense == 1 {
+        return "verb\tlook on as or consider\tthink of, repute, look upon, look on, esteem, take to be\t";
+    }
+    ""
+}

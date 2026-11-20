@@ -1,0 +1,25 @@
+// floor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_floor(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 03365592
+    if sense == 1 {
+        return "noun\tthe inside lower horizontal surface (as of a room, hallway, tent, or other structure)\tflooring\tthey needed rugs to cover the bare floors";
+    }
+    // noun 03365991
+    if sense == 2 {
+        return "noun\ta structure consisting of a room or set of rooms at a single position along a vertical scale\tlevel, storey, story\t";
+    }
+    // noun 06658118
+    if sense == 3 {
+        return "noun\ta lower limit\tbase\tthe government established a wage floor";
+    }
+    // noun 09282208
+    if sense == 4 {
+        return "noun\tthe ground on which people and animals move about\t\tthe fire spared the forest floor";
+    }
+    // noun 09282084
+    if sense == 5 {
+        return "noun\tthe bottom surface of any lake or other body of water\t\t";
+    }
+    ""
+}

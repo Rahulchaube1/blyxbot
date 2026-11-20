@@ -1,0 +1,25 @@
+// lean — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lean(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02038357
+    if sense == 1 {
+        return "verb\tto incline or bend from a vertical position\ttilt, tip, slant, angle\tShe leaned over the banister";
+    }
+    // verb 01606574
+    if sense == 2 {
+        return "verb\tcause to lean or incline\t\tHe leaned his rifle against the wall";
+    }
+    // adj 00988232
+    if sense == 3 {
+        return "adjective\tlacking excess flesh\tthin\tYon Cassius has a lean and hungry look";
+    }
+    // verb 02719399
+    if sense == 4 {
+        return "verb\thave a tendency or disposition to do or be something; be inclined\ttend, be given, incline, run\t";
+    }
+    // verb 00688261
+    if sense == 5 {
+        return "verb\trely on for support\t\tWe can lean on this man";
+    }
+    ""
+}

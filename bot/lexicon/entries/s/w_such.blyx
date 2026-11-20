@@ -1,0 +1,13 @@
+// such — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_such(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00147386
+    if sense == 1 {
+        return "adverb\tto so extreme a degree\t\the is such a baby";
+    }
+    // adj 01554230
+    if sense == 2 {
+        return "adjective\tof so extreme a degree or extent\t\tsuch weeping";
+    }
+    ""
+}

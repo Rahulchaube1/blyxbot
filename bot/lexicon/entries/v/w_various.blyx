@@ -1,0 +1,21 @@
+// various — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_various(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02065665
+    if sense == 1 {
+        return "adjective\tof many different kinds purposefully arranged but lacking any uniformity\tassorted\this disguises are many and various";
+    }
+    // adj 00494409
+    if sense == 2 {
+        return "adjective\tconsidered individually\trespective, several\tthe various reports all agreed";
+    }
+    // adj 02067491
+    if sense == 3 {
+        return "adjective\tdistinctly dissimilar or unlike\tdiverse\tanimals as various as the jaguar and the cavy and the sloth";
+    }
+    // adj 02507772
+    if sense == 4 {
+        return "adjective\thaving great diversity or variety\tversatile\this various achievements are impressive";
+    }
+    ""
+}

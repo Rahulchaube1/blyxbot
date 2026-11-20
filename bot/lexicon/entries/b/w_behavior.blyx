@@ -1,0 +1,17 @@
+// behavior — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_behavior(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 01220984
+    if sense == 1 {
+        return "noun\tmanner of acting or controlling yourself\tbehaviour, conduct, doings\t";
+    }
+    // noun 14008342
+    if sense == 2 {
+        return "noun\tthe action or reaction of something (as a machine or substance) under specified circumstances\tbehaviour\tthe behavior of small particles can be studied in experiments";
+    }
+    // noun 04897762
+    if sense == 3 {
+        return "noun\t(behavioral attributes) the way a person behaves toward other people\tdemeanor, demeanour, behaviour, conduct, deportment\t";
+    }
+    ""
+}

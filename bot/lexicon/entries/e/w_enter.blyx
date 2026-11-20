@@ -1,0 +1,29 @@
+// enter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_enter(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02016523
+    if sense == 1 {
+        return "verb\tto come or go into\tcome in, get into, get in, go into, go in, move into\tthe boat entered an area of shallow marshes";
+    }
+    // verb 01082606
+    if sense == 2 {
+        return "verb\tbecome a participant; be involved in\tparticipate\tenter a race";
+    }
+    // verb 02471327
+    if sense == 3 {
+        return "verb\tregister formally as a participant or member\tenroll, inscribe, enrol, recruit\t";
+    }
+    // verb 02722207
+    if sense == 4 {
+        return "verb\tbe or play a part of or in\tfigure\t";
+    }
+    // verb 01000214
+    if sense == 5 {
+        return "verb\tmake a record of; set down in permanent form\trecord, put down\t";
+    }
+    // verb 01720660
+    if sense == 6 {
+        return "verb\tcome on stage\t\t";
+    }
+    ""
+}

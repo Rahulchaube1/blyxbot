@@ -1,0 +1,29 @@
+// heat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_heat(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 11466043
+    if sense == 1 {
+        return "noun\ta form of energy that is transferred by a difference in temperature\theat energy\t";
+    }
+    // verb 00371264
+    if sense == 2 {
+        return "verb\tmake hot or hotter\theat up\tthe sun heats the oceans";
+    }
+    // noun 05016171
+    if sense == 3 {
+        return "noun\tthe presence of heat\thotness, high temperature\t";
+    }
+    // noun 05725527
+    if sense == 4 {
+        return "noun\tthe sensation caused by heat energy\twarmth\t";
+    }
+    // noun 04628192
+    if sense == 5 {
+        return "noun\tthe trait of being intensely emotional\twarmth, passion\t";
+    }
+    // noun 14038264
+    if sense == 6 {
+        return "noun\tapplies to nonhuman mammals: a state or period of heightened sexual arousal and activity\testrus, oestrus, rut\t";
+    }
+    ""
+}

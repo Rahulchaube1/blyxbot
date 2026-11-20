@@ -1,0 +1,9 @@
+// oxygen — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_oxygen(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 14648100
+    if sense == 1 {
+        return "noun\ta nonmetallic bivalent element that is normally a colorless odorless tasteless nonflammable diatomic gas; constitutes 21 percent of the atmosphere by volume; the most abundant element in the earth's crust\tO, atomic number 8\t";
+    }
+    ""
+}

@@ -1,0 +1,53 @@
+// round — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_round(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // adj 02040652
+    if sense == 1 {
+        return "adjective\thaving a circular shape\tcircular\t";
+    }
+    // noun 04113641
+    if sense == 2 {
+        return "noun\ta charge of ammunition for a single shot\tunit of ammunition, one shot\t";
+    }
+    // verb 01858910
+    if sense == 3 {
+        return "verb\twind around; move along a circular course\t\tround the bend";
+    }
+    // adv 00071456
+    if sense == 4 {
+        return "adverb\tfrom beginning to end; throughout\taround\tIt rains all year round on Skye";
+    }
+    // noun 15287830
+    if sense == 5 {
+        return "noun\tan interval during which a recurring sequence of events occurs\tcycle, rhythm\t";
+    }
+    // noun 08507381
+    if sense == 6 {
+        return "noun\ta regular route for a sentry or policeman\tbeat\t";
+    }
+    // noun 01055688
+    if sense == 7 {
+        return "noun\t(often plural) a series of professional calls (usually in a set order)\t\tthe doctor goes on his rounds first thing every morning";
+    }
+    // noun 00466377
+    if sense == 8 {
+        return "noun\tthe activity of playing 18 holes of golf\tround of golf\ta round of golf takes about 4 hours";
+    }
+    // noun 00415098
+    if sense == 9 {
+        return "noun\tthe usual activities in your day\tdaily round\tthe doctor made his rounds";
+    }
+    // verb 00145147
+    if sense == 10 {
+        return "verb\tmake round\tround out, round off\tround the edges";
+    }
+    // adj 01457486
+    if sense == 11 {
+        return "adjective\t(of sounds) full and rich\torotund, rotund, pear-shaped\t";
+    }
+    // adj 00916524
+    if sense == 12 {
+        return "adjective\t(mathematics) expressed to the nearest integer, ten, hundred, or thousand\t\tin round numbers";
+    }
+    ""
+}

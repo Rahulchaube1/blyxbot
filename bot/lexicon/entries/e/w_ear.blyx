@@ -1,0 +1,21 @@
+// ear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ear(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05320899
+    if sense == 1 {
+        return "noun\tthe sense organ for hearing and equilibrium\t\t";
+    }
+    // noun 05657999
+    if sense == 2 {
+        return "noun\tgood hearing\t\the had a keen ear";
+    }
+    // noun 05323889
+    if sense == 3 {
+        return "noun\tthe externally visible cartilaginous structure of the external ear\tauricle, pinna\t";
+    }
+    // noun 05703205
+    if sense == 4 {
+        return "noun\tattention to what is said\t\the tried to get her ear";
+    }
+    ""
+}

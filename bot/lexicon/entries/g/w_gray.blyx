@@ -1,0 +1,33 @@
+// gray — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gray(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 00389310
+    if sense == 1 {
+        return "adjective\tof an achromatic color of any lightness intermediate between the extremes of white and black\tgrey, greyish, grayish\tgray flannel suit";
+    }
+    // noun 04961691
+    if sense == 2 {
+        return "noun\ta neutral achromatic color midway between white and black\tgrayness, grey, greyness\t";
+    }
+    // adj 01645678
+    if sense == 3 {
+        return "adjective\tshowing characteristics of age, especially having grey or white hair\tgrey, grey-haired, gray-haired, grey-headed, gray-headed, grizzly, hoar, hoary, white-haired\t";
+    }
+    // noun 03456186
+    if sense == 4 {
+        return "noun\tclothing that is a grey color\tgrey\t";
+    }
+    // adj 01607120
+    if sense == 5 {
+        return "adjective\tused to signify the Confederate forces in the American Civil War (who wore grey uniforms)\tgrey\t";
+    }
+    // noun 08481009
+    if sense == 6 {
+        return "noun\tany organization or party whose uniforms or badges are grey\tgrey\t";
+    }
+    // noun 02381364
+    if sense == 7 {
+        return "noun\thorse of a light gray or whitish color\tgrey\t";
+    }
+    ""
+}

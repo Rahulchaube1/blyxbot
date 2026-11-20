@@ -1,0 +1,9 @@
+// soldier — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_soldier(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 10622053
+    if sense == 1 {
+        return "noun\tan enlisted man or woman who serves in an army\t\tthe soldiers stood at attention";
+    }
+    ""
+}

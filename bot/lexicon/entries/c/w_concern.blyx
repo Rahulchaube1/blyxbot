@@ -1,0 +1,33 @@
+// concern — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_concern(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02676054
+    if sense == 1 {
+        return "verb\tbe relevant to\trefer, pertain, relate, come to, bear on, touch, touch on, have-to doe with\t";
+    }
+    // verb 02678438
+    if sense == 2 {
+        return "verb\tbe on the mind of\tinterest, occupy, worry\t";
+    }
+    // noun 05670710
+    if sense == 3 {
+        return "noun\tsomething that interests you because it is important or affects you\t\tthe safety of the ship is the captain's concern";
+    }
+    // noun 07524529
+    if sense == 4 {
+        return "noun\tan anxious feeling\tcare, fear\t";
+    }
+    // noun 07504841
+    if sense == 5 {
+        return "noun\ta feeling of sympathy for someone or something\t\tShe felt strong concern for those less fortunate";
+    }
+    // noun 05832264
+    if sense == 6 {
+        return "noun\tsomething or someone that causes anxiety; a source of unhappiness\tworry, headache, vexation\tNew York traffic is a constant concern";
+    }
+    // noun 08061042
+    if sense == 7 {
+        return "noun\ta commercial or industrial enterprise and the people who constitute it\tbusiness, business concern, business organization, business organisation\ta racially integrated business concern";
+    }
+    ""
+}

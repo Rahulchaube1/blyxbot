@@ -1,0 +1,25 @@
+// think of — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_think_of(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00609683
+    if sense == 1 {
+        return "verb\tkeep in mind for attention or consideration\tremember\tThink of the starving children in India!";
+    }
+    // verb 00711715
+    if sense == 2 {
+        return "verb\ttake into consideration, have in view\tentertain, toy with, flirt with, think about\t";
+    }
+    // verb 00689950
+    if sense == 3 {
+        return "verb\tlook on as or consider\trepute, regard as, look upon, look on, esteem, take to be\t";
+    }
+    // verb 00730052
+    if sense == 4 {
+        return "verb\tintend to refer to\thave in mind, mean\t";
+    }
+    // verb 01634142
+    if sense == 5 {
+        return "verb\tdevise or invent\tthink up, dream up, hatch, concoct\t";
+    }
+    ""
+}

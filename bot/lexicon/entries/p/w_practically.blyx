@@ -1,0 +1,9 @@
+// practically — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_practically(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00053744
+    if sense == 1 {
+        return "adverb\talmost; nearly\t\tpractically the first thing I saw when I got off the train";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// tremendous — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tremendous(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01385255
+    if sense == 1 {
+        return "adjective\textraordinarily large in size or extent or amount or power or degree\tenormous\ttremendous sweeping plains";
+    }
+    // adj 01676517
+    if sense == 2 {
+        return "adjective\textraordinarily good or great ; used especially as intensifiers\tfantastic, grand, howling, marvelous, marvellous, rattling, terrific, wonderful, wondrous\ta tremendous achievement";
+    }
+    ""
+}

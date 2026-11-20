@@ -1,0 +1,41 @@
+// apply — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_apply(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 01158872
+    if sense == 1 {
+        return "verb\tput into service; make work or employ for a particular purpose or for its inherent or natural purpose\tuse, utilize, utilise, employ\tApply a magnetic field here";
+    }
+    // verb 02676789
+    if sense == 2 {
+        return "verb\tbe pertinent or relevant or applicable\thold, go for\tThe same laws apply to you!";
+    }
+    // verb 00765396
+    if sense == 3 {
+        return "verb\task (for something)\t\tHe applied for a leave of absence";
+    }
+    // verb 01363648
+    if sense == 4 {
+        return "verb\tapply to a surface\tput on\tShe applied paint to the back of the house";
+    }
+    // verb 02707429
+    if sense == 5 {
+        return "verb\tbe applicable to; as to an analysis\tlend oneself\t";
+    }
+    // verb 02309165
+    if sense == 6 {
+        return "verb\tgive or convey physically\tgive\t";
+    }
+    // verb 02561332
+    if sense == 7 {
+        return "verb\tavail oneself to\tpractice, use\tapply a principle";
+    }
+    // verb 02560164
+    if sense == 8 {
+        return "verb\tensure observance of laws and rules\tenforce, implement\tApply the rules to everyone";
+    }
+    // verb 01026558
+    if sense == 9 {
+        return "verb\trefer (a word or name) to a person or thing\t\tHe applied this racial slur to me!";
+    }
+    ""
+}

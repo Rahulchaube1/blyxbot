@@ -1,0 +1,13 @@
+// participate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_participate(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02450256
+    if sense == 1 {
+        return "verb\tshare in something\ttake part\t";
+    }
+    // verb 01082606
+    if sense == 2 {
+        return "verb\tbecome a participant; be involved in\tenter\t";
+    }
+    ""
+}

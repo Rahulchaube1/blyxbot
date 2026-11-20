@@ -1,0 +1,57 @@
+// down — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_down(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // adv 00095320
+    if sense == 1 {
+        return "adverb\tspatially or metaphorically from a higher to a lower level or position\tdownwards, downward, downwardly\tdon't fall down";
+    }
+    // adv 00095612
+    if sense == 2 {
+        return "adverb\taway from a more central or a more northerly place\t\twas sent down to work at the regional office";
+    }
+    // adj 02491961
+    if sense == 3 {
+        return "adjective\tbeing or moving lower in position or less in some value\t\tlay face down";
+    }
+    // verb 01202374
+    if sense == 4 {
+        return "verb\tdrink down entirely\ttoss off, pop, bolt down, belt down, pour down, drink down, kill\tHe downed three martinis before dinner";
+    }
+    // adj 02486248
+    if sense == 5 {
+        return "adjective\textending or moving from a higher to a lower place\tdownward\tthe down staircase";
+    }
+    // adv 00095841
+    if sense == 6 {
+        return "adverb\tpaid in cash at time of purchase\t\tput ten dollars down on the necklace";
+    }
+    // noun 01896561
+    if sense == 7 {
+        return "noun\tsoft fine feathers\tdown feather\t";
+    }
+    // noun 00458286
+    if sense == 8 {
+        return "noun\t(American football) a complete play to advance the football\t\tyou have four downs to gain ten yards";
+    }
+    // verb 01197014
+    if sense == 9 {
+        return "verb\teat immoderately\tdevour, consume, go through\tSome people can down a pound of meat in the course of one meal";
+    }
+    // verb 01103336
+    if sense == 10 {
+        return "verb\tbring down or defeat (an opponent)\t\t";
+    }
+    // adj 02487414
+    if sense == 11 {
+        return "adjective\tbecoming progressively lower\t\tthe down trend in the real estate market";
+    }
+    // adj 02061678
+    if sense == 12 {
+        return "adjective\tbeing put out by a strikeout\t\ttwo down in the bottom of the ninth";
+    }
+    // adj 01750617
+    if sense == 13 {
+        return "adjective\tunderstood perfectly\tdown pat, mastered\thad his algebra problems down";
+    }
+    ""
+}

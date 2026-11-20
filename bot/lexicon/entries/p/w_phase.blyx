@@ -1,0 +1,17 @@
+// phase — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_phase(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 15290337
+    if sense == 1 {
+        return "noun\tany distinct time period in a sequence of events\tstage\t";
+    }
+    // noun 14480065
+    if sense == 2 {
+        return "noun\t(physical chemistry) a distinct state of matter in a system; matter that is identical in chemical composition and physical state and separated from other material by the phase boundary\tform\tthe reaction occurs in the liquid phase of the system";
+    }
+    // noun 15290132
+    if sense == 3 {
+        return "noun\ta particular point in the time of a cycle; measured from some arbitrary zero and expressed as an angle\tphase angle\t";
+    }
+    ""
+}

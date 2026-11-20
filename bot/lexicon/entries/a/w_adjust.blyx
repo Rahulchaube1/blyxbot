@@ -1,0 +1,21 @@
+// adjust — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_adjust(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00296178
+    if sense == 1 {
+        return "verb\talter or regulate so as to achieve accuracy or conform to a standard\tset, correct\tAdjust the clock, please";
+    }
+    // verb 00464321
+    if sense == 2 {
+        return "verb\tplace in a line or arrange so as to be parallel or straight\talign, aline, line up\t";
+    }
+    // verb 00150287
+    if sense == 3 {
+        return "verb\tadapt or conform oneself to new or different conditions\tconform, adapt\tWe must adjust to the bad economic situation";
+    }
+    // verb 00298067
+    if sense == 4 {
+        return "verb\tmake correspondent or conformable\t\tAdjust your eyes to the darkness";
+    }
+    ""
+}

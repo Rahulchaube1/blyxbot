@@ -1,0 +1,13 @@
+// category — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_category(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07997703
+    if sense == 1 {
+        return "noun\ta collection of things sharing a common attribute\tclass, family\t";
+    }
+    // noun 05838765
+    if sense == 2 {
+        return "noun\ta general concept that marks divisions or coordinations in a conceptual scheme\t\t";
+    }
+    ""
+}

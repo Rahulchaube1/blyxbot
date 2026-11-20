@@ -1,0 +1,25 @@
+// suggest — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_suggest(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00875394
+    if sense == 1 {
+        return "verb\tmake a proposal, declare a plan for something\tpropose, advise\t";
+    }
+    // verb 00927430
+    if sense == 2 {
+        return "verb\tdrop a hint; intimate by a hint\thint\t";
+    }
+    // verb 00930806
+    if sense == 3 {
+        return "verb\timply as a possibility\tintimate\tThe evidence suggests a need for more clarification";
+    }
+    // verb 00928232
+    if sense == 4 {
+        return "verb\tsuggest the necessity of an intervention; in medicine\tindicate\t";
+    }
+    // verb 00930368
+    if sense == 5 {
+        return "verb\tcall to mind\tevoke, paint a picture\t";
+    }
+    ""
+}

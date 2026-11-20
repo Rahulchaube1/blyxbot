@@ -1,0 +1,13 @@
+// install — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_install(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01569566
+    if sense == 1 {
+        return "verb\tset up for use\tinstal, put in, set up\tinstall the washer and dryer";
+    }
+    // verb 02384041
+    if sense == 2 {
+        return "verb\tput into an office or a position\tinstal\tthe new president was installed immediately after the election";
+    }
+    ""
+}

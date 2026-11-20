@@ -1,0 +1,9 @@
+// district — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_district(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 08552138
+    if sense == 1 {
+        return "noun\ta region marked off for administrative or other purposes\tterritory, territorial dominion, dominion\t";
+    }
+    ""
+}

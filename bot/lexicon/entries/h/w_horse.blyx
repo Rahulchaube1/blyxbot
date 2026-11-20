@@ -1,0 +1,13 @@
+// horse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_horse(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 02374451
+    if sense == 1 {
+        return "noun\tsolid-hoofed herbivorous quadruped domesticated since prehistoric times\tEquus caballus\t";
+    }
+    // noun 03538037
+    if sense == 2 {
+        return "noun\ta padded gymnastic apparatus on legs\tgymnastic horse\t";
+    }
+    ""
+}

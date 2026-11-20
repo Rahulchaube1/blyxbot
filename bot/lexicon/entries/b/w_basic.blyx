@@ -1,0 +1,13 @@
+// basic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_basic(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01855764
+    if sense == 1 {
+        return "adjective\tpertaining to or constituting a base or basis\t\ta basic fact";
+    }
+    // adj 02295298
+    if sense == 2 {
+        return "adjective\treduced to the simplest and most significant form possible without loss of generality\tcanonic, canonical\ta basic story line";
+    }
+    ""
+}

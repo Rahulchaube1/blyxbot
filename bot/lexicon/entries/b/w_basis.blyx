@@ -1,0 +1,13 @@
+// basis — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_basis(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13790912
+    if sense == 1 {
+        return "noun\ta relation that provides the foundation for something\tfooting, ground\the worked on an interim basis";
+    }
+    // noun 05793554
+    if sense == 2 {
+        return "noun\tthe fundamental assumptions from which something is begun or developed or calculated or explained\tbase, foundation, fundament, groundwork, cornerstone\tthe whole argument rested on a basis of conjecture";
+    }
+    ""
+}

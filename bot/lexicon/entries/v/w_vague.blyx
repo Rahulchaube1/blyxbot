@@ -1,0 +1,17 @@
+// vague — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_vague(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00431004
+    if sense == 1 {
+        return "adjective\tnot clearly understood or expressed\tobscure\ttheir descriptions of human behavior become vague, dull, and unclear";
+    }
+    // adj 00697389
+    if sense == 2 {
+        return "adjective\tnot precisely limited, determined, or distinguished\tundefined\tvague feelings of sadness";
+    }
+    // adj 00782216
+    if sense == 3 {
+        return "adjective\tlacking clarity or distinctness\tdim, faint, shadowy, wispy\tsaw a vague outline of a building through the fog";
+    }
+    ""
+}

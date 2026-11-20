@@ -1,0 +1,25 @@
+// gold — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gold(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13371760
+    if sense == 1 {
+        return "noun\tcoins made of gold\t\t";
+    }
+    // noun 04966240
+    if sense == 2 {
+        return "noun\ta deep yellow color\tamber\the admired the gold of her hair";
+    }
+    // noun 14638799
+    if sense == 3 {
+        return "noun\ta soft yellow malleable ductile (trivalent and univalent) metallic element; occurs mainly as nuggets in rocks and alluvial deposits; does not react with most chemicals but is attacked by chlorine and aqua regia\tAu, atomic number 79\t";
+    }
+    // adj 01528730
+    if sense == 4 {
+        return "adjective\tmade from or covered with gold\tgolden, gilded\tgold coins";
+    }
+    // adj 00369941
+    if sense == 5 {
+        return "adjective\thaving the deep slightly brownish color of gold\taureate, gilded, gilt, golden\ta gold carpet";
+    }
+    ""
+}

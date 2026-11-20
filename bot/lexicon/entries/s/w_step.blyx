@@ -1,0 +1,33 @@
+// step — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_step(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 00174412
+    if sense == 1 {
+        return "noun\tany maneuver made as part of progress toward a goal\tmeasure\tthe police took steps to reduce crime";
+    }
+    // verb 01928838
+    if sense == 2 {
+        return "verb\tshift or move by taking a step\t\tstep back";
+    }
+    // noun 13757249
+    if sense == 3 {
+        return "noun\tthe distance covered by a step\tfootstep, pace, stride\the stepped off ten paces from the old tree and began to dig";
+    }
+    // noun 00285557
+    if sense == 4 {
+        return "noun\tthe act of changing location by raising the foot and setting it down\t\the walked with unsteady steps";
+    }
+    // verb 02091410
+    if sense == 5 {
+        return "verb\tput down or press the foot, place the foot\ttread\tstep on the brake";
+    }
+    // noun 04314914
+    if sense == 6 {
+        return "noun\tsupport consisting of a place to rest the foot while ascending or descending a stairway\tstair\the paused on the bottom step";
+    }
+    // noun 14429608
+    if sense == 7 {
+        return "noun\trelative position in a graded series\tgradation\talways a step behind";
+    }
+    ""
+}

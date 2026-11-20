@@ -1,0 +1,13 @@
+// too — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_too(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00047392
+    if sense == 1 {
+        return "adverb\tto a degree exceeding normal or proper limits\texcessively, overly, to a fault\ttoo big";
+    }
+    // adv 00047534
+    if sense == 2 {
+        return "adverb\tin addition\tbesides, also, likewise, as well\the has a Mercedes, too";
+    }
+    ""
+}

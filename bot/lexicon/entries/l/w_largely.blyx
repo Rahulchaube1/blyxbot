@@ -1,0 +1,9 @@
+// largely — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_largely(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00006105
+    if sense == 1 {
+        return "adverb\tin large part; mainly or chiefly\tmostly, for the most part\tThese accounts are largely inactive";
+    }
+    ""
+}

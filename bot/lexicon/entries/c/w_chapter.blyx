@@ -1,0 +1,17 @@
+// chapter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_chapter(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06396142
+    if sense == 1 {
+        return "noun\ta subdivision of a written work; usually numbered and titled\t\the read a chapter every night before falling asleep";
+    }
+    // noun 15252907
+    if sense == 2 {
+        return "noun\tany distinct period in history or in a person's life\t\tthe industrial revolution opened a new chapter in British history";
+    }
+    // noun 08228665
+    if sense == 3 {
+        return "noun\ta local branch of some fraternity or association\t\the joined the Atlanta chapter";
+    }
+    ""
+}

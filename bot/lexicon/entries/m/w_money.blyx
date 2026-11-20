@@ -1,0 +1,13 @@
+// money — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_money(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13384557
+    if sense == 1 {
+        return "noun\tthe most common medium of exchange; functions as legal tender\t\twe tried to collect the money he owed us";
+    }
+    // noun 13250542
+    if sense == 2 {
+        return "noun\twealth reckoned in terms of money\t\tall his money is in real estate";
+    }
+    ""
+}

@@ -1,0 +1,41 @@
+// cross — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cross(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 01912159
+    if sense == 1 {
+        return "verb\ttravel across or pass over\ttraverse, track, cover, pass over, get over, get across, cut through, cut across\t";
+    }
+    // verb 02023396
+    if sense == 2 {
+        return "verb\tmeet at a point\tintersect\t";
+    }
+    // adj 01445917
+    if sense == 3 {
+        return "adjective\textending or lying across; in a crosswise direction; at right angles to the long axis\ttransverse, transversal, thwartwise\tcross members should be all steel";
+    }
+    // noun 03135532
+    if sense == 4 {
+        return "noun\ta wooden structure consisting of an upright post with a transverse piece\t\t";
+    }
+    // noun 04681387
+    if sense == 5 {
+        return "noun\ta marking that consists of lines that cross each other\tcrisscross, mark\t";
+    }
+    // noun 03135152
+    if sense == 6 {
+        return "noun\ta representation of the structure on which Jesus was crucified; used as an emblem of Christianity or in heraldry\t\t";
+    }
+    // verb 02558172
+    if sense == 7 {
+        return "verb\thinder or prevent (the efforts, plans, or desires) of\tthwart, queer, spoil, scotch, foil, frustrate, baffle, bilk\t";
+    }
+    // verb 01914657
+    if sense == 8 {
+        return "verb\tfold so as to resemble a cross\t\tshe crossed her legs";
+    }
+    // adj 01136248
+    if sense == 9 {
+        return "adjective\tannoyed and irritable\tcrabbed, crabby, fussy, grouchy, grumpy, bad-tempered, ill-tempered\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// shoulder — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shoulder(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05548840
+    if sense == 1 {
+        return "noun\tthe part of the body between the neck and the upper arm\t\t";
+    }
+    // verb 01239359
+    if sense == 2 {
+        return "verb\tlift onto one's shoulders\t\t";
+    }
+    // verb 01238907
+    if sense == 3 {
+        return "verb\tpush with the shoulders\t\tHe shouldered his way into the crowd";
+    }
+    ""
+}

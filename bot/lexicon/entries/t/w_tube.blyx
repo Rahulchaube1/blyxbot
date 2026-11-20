@@ -1,0 +1,17 @@
+// tube — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tube(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04493505
+    if sense == 1 {
+        return "noun\tconduit consisting of a long hollow object (usually cylindrical) used to hold and conduct objects or liquids or gases\ttubing\t";
+    }
+    // noun 04494204
+    if sense == 2 {
+        return "noun\telectronic device consisting of a system of electrodes arranged in an evacuated glass or metal envelope\tvacuum tube, thermionic vacuum tube, thermionic tube, electron tube, thermionic valve\t";
+    }
+    // noun 13901321
+    if sense == 3 {
+        return "noun\ta hollow cylindrical shape\tpipe\t";
+    }
+    ""
+}

@@ -1,0 +1,288 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::d::w_daily;
+use entries::d::w_damage;
+use entries::d::w_damn;
+use entries::d::w_dance;
+use entries::d::w_danger;
+use entries::d::w_dangerous;
+use entries::d::w_dare;
+use entries::d::w_dark;
+use entries::d::w_darkness;
+use entries::d::w_data;
+use entries::d::w_date;
+use entries::d::w_daughter;
+use entries::d::w_day;
+use entries::d::w_dead;
+use entries::d::w_deal;
+use entries::d::w_death;
+use entries::d::w_debate;
+use entries::d::w_decade;
+use entries::d::w_decide;
+use entries::d::w_decision;
+use entries::d::w_declare;
+use entries::d::w_decline;
+use entries::d::w_decrease;
+use entries::d::w_deep;
+use entries::d::w_defeat;
+use entries::d::w_defend;
+use entries::d::w_defense;
+use entries::d::w_define;
+use entries::d::w_definition;
+use entries::d::w_degree;
+use entries::d::w_delay;
+use entries::d::w_deliver;
+use entries::d::w_demand;
+use entries::d::w_democratic;
+use entries::d::w_demonstrate;
+use entries::d::w_deny;
+use entries::d::w_depart;
+use entries::d::w_department;
+use entries::d::w_depend_on;
+use entries::d::w_depth;
+use entries::d::w_derive;
+use entries::d::w_describe;
+use entries::d::w_description;
+use entries::d::w_deserve;
+use entries::d::w_design;
+use entries::d::w_desire;
+use entries::d::w_desk;
+use entries::d::w_despair;
+use entries::d::w_destroy;
+use entries::d::w_detail;
+use entries::d::w_detailed;
+use entries::d::w_detect;
+use entries::d::w_detective;
+use entries::d::w_detergent;
+use entries::d::w_determine;
+use entries::d::w_develop;
+use entries::d::w_development;
+use entries::d::w_device;
+use entries::d::w_devil;
+use entries::d::w_devote;
+use entries::d::w_diameter;
+use entries::d::w_dictionary;
+use entries::d::w_die;
+use entries::d::w_differ;
+use entries::d::w_difference;
+use entries::d::w_different;
+use entries::d::w_difficult;
+use entries::d::w_difficulty;
+use entries::d::w_dinner;
+use entries::d::w_direct;
+use entries::d::w_direction;
+use entries::d::w_directly;
+use entries::d::w_director;
+use entries::d::w_dirt;
+use entries::d::w_disappear;
+use entries::d::w_discharge;
+use entries::d::w_disclose;
+use entries::d::w_discover;
+use entries::d::w_discovery;
+use entries::d::w_discuss;
+use entries::d::w_discussion;
+use entries::d::w_disease;
+use entries::d::w_display;
+use entries::d::w_distance;
+use entries::d::w_distant;
+use entries::d::w_distinct;
+use entries::d::w_distinction;
+use entries::d::w_distinguish;
+use entries::d::w_distribute;
+use entries::d::w_distribution;
+use entries::d::w_district;
+use entries::d::w_divide;
+use entries::d::w_division;
+use entries::d::w_do;
+use entries::d::w_doctor;
+use entries::d::w_doctrine;
+use entries::d::w_dog;
+use entries::d::w_dollar;
+use entries::d::w_domestic;
+use entries::d::w_dominant;
+use entries::d::w_dominate;
+use entries::d::w_door;
+use entries::d::w_double;
+use entries::d::w_doubt;
+use entries::d::w_down;
+use entries::d::w_downtown;
+use entries::d::w_drag;
+use entries::d::w_drama;
+use entries::d::w_draw;
+use entries::d::w_dream;
+use entries::d::w_dress;
+use entries::d::w_drill;
+use entries::d::w_drink;
+use entries::d::w_drive;
+use entries::d::w_drop;
+use entries::d::w_drug;
+use entries::d::w_dry;
+use entries::d::w_dull;
+use entries::d::w_dust;
+use entries::d::w_duty;
+
+fn through_w_death(term: str, sense: i64) -> str {
+    if term == "daily" { return w_daily(sense); }
+    if term == "damage" { return w_damage(sense); }
+    if term == "damn" { return w_damn(sense); }
+    if term == "dance" { return w_dance(sense); }
+    if term == "danger" { return w_danger(sense); }
+    if term == "dangerous" { return w_dangerous(sense); }
+    if term == "dare" { return w_dare(sense); }
+    if term == "dark" { return w_dark(sense); }
+    if term == "darkness" { return w_darkness(sense); }
+    if term == "data" { return w_data(sense); }
+    if term == "date" { return w_date(sense); }
+    if term == "daughter" { return w_daughter(sense); }
+    if term == "day" { return w_day(sense); }
+    if term == "dead" { return w_dead(sense); }
+    if term == "deal" { return w_deal(sense); }
+    if term == "death" { return w_death(sense); }
+    ""
+}
+
+fn through_w_deliver(term: str, sense: i64) -> str {
+    if term == "debate" { return w_debate(sense); }
+    if term == "decade" { return w_decade(sense); }
+    if term == "decide" { return w_decide(sense); }
+    if term == "decision" { return w_decision(sense); }
+    if term == "declare" { return w_declare(sense); }
+    if term == "decline" { return w_decline(sense); }
+    if term == "decrease" { return w_decrease(sense); }
+    if term == "deep" { return w_deep(sense); }
+    if term == "defeat" { return w_defeat(sense); }
+    if term == "defend" { return w_defend(sense); }
+    if term == "defense" { return w_defense(sense); }
+    if term == "define" { return w_define(sense); }
+    if term == "definition" { return w_definition(sense); }
+    if term == "degree" { return w_degree(sense); }
+    if term == "delay" { return w_delay(sense); }
+    if term == "deliver" { return w_deliver(sense); }
+    ""
+}
+
+fn through_w_despair(term: str, sense: i64) -> str {
+    if term == "demand" { return w_demand(sense); }
+    if term == "democratic" { return w_democratic(sense); }
+    if term == "demonstrate" { return w_demonstrate(sense); }
+    if term == "deny" { return w_deny(sense); }
+    if term == "depart" { return w_depart(sense); }
+    if term == "department" { return w_department(sense); }
+    if term == "depend on" { return w_depend_on(sense); }
+    if term == "depth" { return w_depth(sense); }
+    if term == "derive" { return w_derive(sense); }
+    if term == "describe" { return w_describe(sense); }
+    if term == "description" { return w_description(sense); }
+    if term == "deserve" { return w_deserve(sense); }
+    if term == "design" { return w_design(sense); }
+    if term == "desire" { return w_desire(sense); }
+    if term == "desk" { return w_desk(sense); }
+    if term == "despair" { return w_despair(sense); }
+    ""
+}
+
+fn through_w_differ(term: str, sense: i64) -> str {
+    if term == "destroy" { return w_destroy(sense); }
+    if term == "detail" { return w_detail(sense); }
+    if term == "detailed" { return w_detailed(sense); }
+    if term == "detect" { return w_detect(sense); }
+    if term == "detective" { return w_detective(sense); }
+    if term == "detergent" { return w_detergent(sense); }
+    if term == "determine" { return w_determine(sense); }
+    if term == "develop" { return w_develop(sense); }
+    if term == "development" { return w_development(sense); }
+    if term == "device" { return w_device(sense); }
+    if term == "devil" { return w_devil(sense); }
+    if term == "devote" { return w_devote(sense); }
+    if term == "diameter" { return w_diameter(sense); }
+    if term == "dictionary" { return w_dictionary(sense); }
+    if term == "die" { return w_die(sense); }
+    if term == "differ" { return w_differ(sense); }
+    ""
+}
+
+fn through_w_discuss(term: str, sense: i64) -> str {
+    if term == "difference" { return w_difference(sense); }
+    if term == "different" { return w_different(sense); }
+    if term == "difficult" { return w_difficult(sense); }
+    if term == "difficulty" { return w_difficulty(sense); }
+    if term == "dinner" { return w_dinner(sense); }
+    if term == "direct" { return w_direct(sense); }
+    if term == "direction" { return w_direction(sense); }
+    if term == "directly" { return w_directly(sense); }
+    if term == "director" { return w_director(sense); }
+    if term == "dirt" { return w_dirt(sense); }
+    if term == "disappear" { return w_disappear(sense); }
+    if term == "discharge" { return w_discharge(sense); }
+    if term == "disclose" { return w_disclose(sense); }
+    if term == "discover" { return w_discover(sense); }
+    if term == "discovery" { return w_discovery(sense); }
+    if term == "discuss" { return w_discuss(sense); }
+    ""
+}
+
+fn through_w_doctrine(term: str, sense: i64) -> str {
+    if term == "discussion" { return w_discussion(sense); }
+    if term == "disease" { return w_disease(sense); }
+    if term == "display" { return w_display(sense); }
+    if term == "distance" { return w_distance(sense); }
+    if term == "distant" { return w_distant(sense); }
+    if term == "distinct" { return w_distinct(sense); }
+    if term == "distinction" { return w_distinction(sense); }
+    if term == "distinguish" { return w_distinguish(sense); }
+    if term == "distribute" { return w_distribute(sense); }
+    if term == "distribution" { return w_distribution(sense); }
+    if term == "district" { return w_district(sense); }
+    if term == "divide" { return w_divide(sense); }
+    if term == "division" { return w_division(sense); }
+    if term == "do" { return w_do(sense); }
+    if term == "doctor" { return w_doctor(sense); }
+    if term == "doctrine" { return w_doctrine(sense); }
+    ""
+}
+
+fn through_w_drill(term: str, sense: i64) -> str {
+    if term == "dog" { return w_dog(sense); }
+    if term == "dollar" { return w_dollar(sense); }
+    if term == "domestic" { return w_domestic(sense); }
+    if term == "dominant" { return w_dominant(sense); }
+    if term == "dominate" { return w_dominate(sense); }
+    if term == "door" { return w_door(sense); }
+    if term == "double" { return w_double(sense); }
+    if term == "doubt" { return w_doubt(sense); }
+    if term == "down" { return w_down(sense); }
+    if term == "downtown" { return w_downtown(sense); }
+    if term == "drag" { return w_drag(sense); }
+    if term == "drama" { return w_drama(sense); }
+    if term == "draw" { return w_draw(sense); }
+    if term == "dream" { return w_dream(sense); }
+    if term == "dress" { return w_dress(sense); }
+    if term == "drill" { return w_drill(sense); }
+    ""
+}
+
+fn through_w_duty(term: str, sense: i64) -> str {
+    if term == "drink" { return w_drink(sense); }
+    if term == "drive" { return w_drive(sense); }
+    if term == "drop" { return w_drop(sense); }
+    if term == "drug" { return w_drug(sense); }
+    if term == "dry" { return w_dry(sense); }
+    if term == "dull" { return w_dull(sense); }
+    if term == "dust" { return w_dust(sense); }
+    if term == "duty" { return w_duty(sense); }
+    ""
+}
+
+pub fn lookup_d(term: str, sense: i64) -> str {
+    if term <= "death" { return through_w_death(term, sense); }
+    if term <= "deliver" { return through_w_deliver(term, sense); }
+    if term <= "despair" { return through_w_despair(term, sense); }
+    if term <= "differ" { return through_w_differ(term, sense); }
+    if term <= "discuss" { return through_w_discuss(term, sense); }
+    if term <= "doctrine" { return through_w_doctrine(term, sense); }
+    if term <= "drill" { return through_w_drill(term, sense); }
+    through_w_duty(term, sense)
+}
+
+pub fn words_d() -> str {
+    "daily|damage|damn|dance|danger|dangerous|dare|dark|darkness|data|date|daughter|day|dead|deal|death|debate|decade|decide|decision|declare|decline|decrease|deep|defeat|defend|defense|define|definition|degree|delay|deliver|demand|democratic|demonstrate|deny|depart|department|depend on|depth|derive|describe|description|deserve|design|desire|desk|despair|destroy|detail|detailed|detect|detective|detergent|determine|develop|development|device|devil|devote|diameter|dictionary|die|differ|difference|different|difficult|difficulty|dinner|direct|direction|directly|director|dirt|disappear|discharge|disclose|discover|discovery|discuss|discussion|disease|display|distance|distant|distinct|distinction|distinguish|distribute|distribution|district|divide|division|do|doctor|doctrine|dog|dollar|domestic|dominant|dominate|door|double|doubt|down|downtown|drag|drama|draw|dream|dress|drill|drink|drive|drop|drug|dry|dull|dust|duty"
+}

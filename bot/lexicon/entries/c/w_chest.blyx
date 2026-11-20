@@ -1,0 +1,13 @@
+// chest — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_chest(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05552607
+    if sense == 1 {
+        return "noun\tthe part of the human torso between the neck and the diaphragm or the corresponding part in other vertebrates\tthorax, pectus\t";
+    }
+    // noun 03014705
+    if sense == 2 {
+        return "noun\tbox with a lid; used for storage; usually large and sturdy\t\t";
+    }
+    ""
+}

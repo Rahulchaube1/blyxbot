@@ -1,0 +1,17 @@
+// stumble — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stumble(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01901133
+    if sense == 1 {
+        return "verb\twalk unsteadily\tfalter, bumble\tThe drunk man stumbled about";
+    }
+    // verb 01900408
+    if sense == 2 {
+        return "verb\tmiss a step and fall or nearly fall\ttrip\tShe stumbled over the tree root";
+    }
+    // verb 02206462
+    if sense == 3 {
+        return "verb\tencounter by chance\thit\tI stumbled across a long-lost cousin last night in a restaurant";
+    }
+    ""
+}

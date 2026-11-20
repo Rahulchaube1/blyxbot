@@ -1,0 +1,17 @@
+// pass through — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pass_through(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01915365
+    if sense == 1 {
+        return "verb\tmake a passage or journey from one place to another\ttransit, move through, pass across, pass over\tSome travelers pass through the desert";
+    }
+    // verb 02053190
+    if sense == 2 {
+        return "verb\tcause to move through\t\t";
+    }
+    // verb 01913363
+    if sense == 3 {
+        return "verb\tpass through an enemy line; in a military conflict\tinfiltrate\t";
+    }
+    ""
+}

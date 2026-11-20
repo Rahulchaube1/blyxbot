@@ -1,0 +1,21 @@
+// garden — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_garden(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 03417345
+    if sense == 1 {
+        return "noun\ta plot of ground where plants are cultivated\t\t";
+    }
+    // noun 08439808
+    if sense == 2 {
+        return "noun\tthe flowers or vegetables or fruits or herbs that are cultivated in a garden\t\t";
+    }
+    // noun 03417749
+    if sense == 3 {
+        return "noun\ta yard or lawn adjoining a house\t\t";
+    }
+    // verb 01740969
+    if sense == 4 {
+        return "verb\twork in the garden\t\tMy hobby is gardening";
+    }
+    ""
+}

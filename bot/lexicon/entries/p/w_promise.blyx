@@ -1,0 +1,29 @@
+// promise — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_promise(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00884011
+    if sense == 1 {
+        return "verb\tmake a promise or commitment\tassure\t";
+    }
+    // verb 00884317
+    if sense == 2 {
+        return "verb\tpromise to undertake or give\t\tI promise you my best effort";
+    }
+    // noun 07226545
+    if sense == 3 {
+        return "noun\ta verbal commitment by one person to another agreeing to do (or not to do) something in the future\t\t";
+    }
+    // noun 05950733
+    if sense == 4 {
+        return "noun\tgrounds for feeling hopeful about the future\thope\tthere is little or no promise that he will recover";
+    }
+    // verb 00917772
+    if sense == 5 {
+        return "verb\tmake a prediction about; tell in advance\tpredict, foretell, prognosticate, call, forebode, anticipate\t";
+    }
+    // verb 02740552
+    if sense == 6 {
+        return "verb\tgive grounds for expectations\t\tThe new results were promising";
+    }
+    ""
+}

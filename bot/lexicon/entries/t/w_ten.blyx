@@ -1,0 +1,13 @@
+// ten — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ten(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02187296
+    if sense == 1 {
+        return "adjective\tbeing one more than nine\t10, x\t";
+    }
+    // noun 13746512
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of nine and one; the base of the decimal system\t10, X, tenner, decade\t";
+    }
+    ""
+}

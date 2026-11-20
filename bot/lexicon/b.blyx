@@ -1,0 +1,222 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::b::w_back;
+use entries::b::w_background;
+use entries::b::w_bad;
+use entries::b::w_balance;
+use entries::b::w_ball;
+use entries::b::w_band;
+use entries::b::w_bank;
+use entries::b::w_bar;
+use entries::b::w_barn;
+use entries::b::w_base;
+use entries::b::w_baseball;
+use entries::b::w_basic;
+use entries::b::w_basis;
+use entries::b::w_bastard;
+use entries::b::w_battery;
+use entries::b::w_battle;
+use entries::b::w_be;
+use entries::b::w_be_born;
+use entries::b::w_be_due;
+use entries::b::w_beam;
+use entries::b::w_bear;
+use entries::b::w_beat;
+use entries::b::w_beautiful;
+use entries::b::w_become;
+use entries::b::w_bed;
+use entries::b::w_bedroom;
+use entries::b::w_bee;
+use entries::b::w_before;
+use entries::b::w_begin;
+use entries::b::w_beginning;
+use entries::b::w_behave;
+use entries::b::w_behavior;
+use entries::b::w_belief;
+use entries::b::w_believe;
+use entries::b::w_believe_in;
+use entries::b::w_belong_to;
+use entries::b::w_below;
+use entries::b::w_bend;
+use entries::b::w_benefit;
+use entries::b::w_best;
+use entries::b::w_bet;
+use entries::b::w_better;
+use entries::b::w_big;
+use entries::b::w_bill;
+use entries::b::w_bind;
+use entries::b::w_binomial;
+use entries::b::w_bird;
+use entries::b::w_bit;
+use entries::b::w_bitter;
+use entries::b::w_black;
+use entries::b::w_blame;
+use entries::b::w_blanket;
+use entries::b::w_blind;
+use entries::b::w_block;
+use entries::b::w_blood;
+use entries::b::w_blow;
+use entries::b::w_blue;
+use entries::b::w_board;
+use entries::b::w_body;
+use entries::b::w_bond;
+use entries::b::w_book;
+use entries::b::w_borrow;
+use entries::b::w_bother;
+use entries::b::w_bottle;
+use entries::b::w_bounce;
+use entries::b::w_bound;
+use entries::b::w_bow;
+use entries::b::w_box;
+use entries::b::w_boy;
+use entries::b::w_brain;
+use entries::b::w_branch;
+use entries::b::w_break;
+use entries::b::w_breath;
+use entries::b::w_breathe;
+use entries::b::w_brief;
+use entries::b::w_bright;
+use entries::b::w_brilliant;
+use entries::b::w_bring;
+use entries::b::w_bring_in;
+use entries::b::w_broad;
+use entries::b::w_bronchial_artery;
+use entries::b::w_brother;
+use entries::b::w_brown;
+use entries::b::w_brush;
+use entries::b::w_build;
+use entries::b::w_building;
+use entries::b::w_bullet;
+use entries::b::w_burn;
+use entries::b::w_burst;
+use entries::b::w_business;
+use entries::b::w_busy;
+use entries::b::w_buy;
+
+fn through_w_battle(term: str, sense: i64) -> str {
+    if term == "back" { return w_back(sense); }
+    if term == "background" { return w_background(sense); }
+    if term == "bad" { return w_bad(sense); }
+    if term == "balance" { return w_balance(sense); }
+    if term == "ball" { return w_ball(sense); }
+    if term == "band" { return w_band(sense); }
+    if term == "bank" { return w_bank(sense); }
+    if term == "bar" { return w_bar(sense); }
+    if term == "barn" { return w_barn(sense); }
+    if term == "base" { return w_base(sense); }
+    if term == "baseball" { return w_baseball(sense); }
+    if term == "basic" { return w_basic(sense); }
+    if term == "basis" { return w_basis(sense); }
+    if term == "bastard" { return w_bastard(sense); }
+    if term == "battery" { return w_battery(sense); }
+    if term == "battle" { return w_battle(sense); }
+    ""
+}
+
+fn through_w_behavior(term: str, sense: i64) -> str {
+    if term == "be" { return w_be(sense); }
+    if term == "be born" { return w_be_born(sense); }
+    if term == "be due" { return w_be_due(sense); }
+    if term == "beam" { return w_beam(sense); }
+    if term == "bear" { return w_bear(sense); }
+    if term == "beat" { return w_beat(sense); }
+    if term == "beautiful" { return w_beautiful(sense); }
+    if term == "become" { return w_become(sense); }
+    if term == "bed" { return w_bed(sense); }
+    if term == "bedroom" { return w_bedroom(sense); }
+    if term == "bee" { return w_bee(sense); }
+    if term == "before" { return w_before(sense); }
+    if term == "begin" { return w_begin(sense); }
+    if term == "beginning" { return w_beginning(sense); }
+    if term == "behave" { return w_behave(sense); }
+    if term == "behavior" { return w_behavior(sense); }
+    ""
+}
+
+fn through_w_bit(term: str, sense: i64) -> str {
+    if term == "belief" { return w_belief(sense); }
+    if term == "believe" { return w_believe(sense); }
+    if term == "believe in" { return w_believe_in(sense); }
+    if term == "belong to" { return w_belong_to(sense); }
+    if term == "below" { return w_below(sense); }
+    if term == "bend" { return w_bend(sense); }
+    if term == "benefit" { return w_benefit(sense); }
+    if term == "best" { return w_best(sense); }
+    if term == "bet" { return w_bet(sense); }
+    if term == "better" { return w_better(sense); }
+    if term == "big" { return w_big(sense); }
+    if term == "bill" { return w_bill(sense); }
+    if term == "bind" { return w_bind(sense); }
+    if term == "binomial" { return w_binomial(sense); }
+    if term == "bird" { return w_bird(sense); }
+    if term == "bit" { return w_bit(sense); }
+    ""
+}
+
+fn through_w_bottle(term: str, sense: i64) -> str {
+    if term == "bitter" { return w_bitter(sense); }
+    if term == "black" { return w_black(sense); }
+    if term == "blame" { return w_blame(sense); }
+    if term == "blanket" { return w_blanket(sense); }
+    if term == "blind" { return w_blind(sense); }
+    if term == "block" { return w_block(sense); }
+    if term == "blood" { return w_blood(sense); }
+    if term == "blow" { return w_blow(sense); }
+    if term == "blue" { return w_blue(sense); }
+    if term == "board" { return w_board(sense); }
+    if term == "body" { return w_body(sense); }
+    if term == "bond" { return w_bond(sense); }
+    if term == "book" { return w_book(sense); }
+    if term == "borrow" { return w_borrow(sense); }
+    if term == "bother" { return w_bother(sense); }
+    if term == "bottle" { return w_bottle(sense); }
+    ""
+}
+
+fn through_w_broad(term: str, sense: i64) -> str {
+    if term == "bounce" { return w_bounce(sense); }
+    if term == "bound" { return w_bound(sense); }
+    if term == "bow" { return w_bow(sense); }
+    if term == "box" { return w_box(sense); }
+    if term == "boy" { return w_boy(sense); }
+    if term == "brain" { return w_brain(sense); }
+    if term == "branch" { return w_branch(sense); }
+    if term == "break" { return w_break(sense); }
+    if term == "breath" { return w_breath(sense); }
+    if term == "breathe" { return w_breathe(sense); }
+    if term == "brief" { return w_brief(sense); }
+    if term == "bright" { return w_bright(sense); }
+    if term == "brilliant" { return w_brilliant(sense); }
+    if term == "bring" { return w_bring(sense); }
+    if term == "bring in" { return w_bring_in(sense); }
+    if term == "broad" { return w_broad(sense); }
+    ""
+}
+
+fn through_w_buy(term: str, sense: i64) -> str {
+    if term == "bronchial artery" { return w_bronchial_artery(sense); }
+    if term == "brother" { return w_brother(sense); }
+    if term == "brown" { return w_brown(sense); }
+    if term == "brush" { return w_brush(sense); }
+    if term == "build" { return w_build(sense); }
+    if term == "building" { return w_building(sense); }
+    if term == "bullet" { return w_bullet(sense); }
+    if term == "burn" { return w_burn(sense); }
+    if term == "burst" { return w_burst(sense); }
+    if term == "business" { return w_business(sense); }
+    if term == "busy" { return w_busy(sense); }
+    if term == "buy" { return w_buy(sense); }
+    ""
+}
+
+pub fn lookup_b(term: str, sense: i64) -> str {
+    if term <= "battle" { return through_w_battle(term, sense); }
+    if term <= "behavior" { return through_w_behavior(term, sense); }
+    if term <= "bit" { return through_w_bit(term, sense); }
+    if term <= "bottle" { return through_w_bottle(term, sense); }
+    if term <= "broad" { return through_w_broad(term, sense); }
+    through_w_buy(term, sense)
+}
+
+pub fn words_b() -> str {
+    "back|background|bad|balance|ball|band|bank|bar|barn|base|baseball|basic|basis|bastard|battery|battle|be|be born|be due|beam|bear|beat|beautiful|become|bed|bedroom|bee|before|begin|beginning|behave|behavior|belief|believe|believe in|belong to|below|bend|benefit|best|bet|better|big|bill|bind|binomial|bird|bit|bitter|black|blame|blanket|blind|block|blood|blow|blue|board|body|bond|book|borrow|bother|bottle|bounce|bound|bow|box|boy|brain|branch|break|breath|breathe|brief|bright|brilliant|bring|bring in|broad|bronchial artery|brother|brown|brush|build|building|bullet|burn|burst|business|busy|buy"
+}

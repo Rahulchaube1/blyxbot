@@ -1,0 +1,25 @@
+// thick — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_thick(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 02410393
+    if sense == 1 {
+        return "adjective\tnot thin; of a specific thickness or of relatively great extent from one surface to the opposite usually in the smallest of the three solid dimensions\t\tan inch thick";
+    }
+    // adj 00539009
+    if sense == 2 {
+        return "adjective\thaving component parts closely crowded together\t\tthick crowds";
+    }
+    // adj 02415390
+    if sense == 3 {
+        return "adjective\trelatively dense in consistency\t\tthick cream";
+    }
+    // adj 01337314
+    if sense == 4 {
+        return "adjective\tspoken as if with a thick tongue\tslurred\tthe thick speech of a drunkard";
+    }
+    // noun 08588699
+    if sense == 5 {
+        return "noun\tthe location of something surrounded by other things\tmidst\t";
+    }
+    ""
+}

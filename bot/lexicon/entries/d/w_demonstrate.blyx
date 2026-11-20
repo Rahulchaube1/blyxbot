@@ -1,0 +1,21 @@
+// demonstrate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_demonstrate(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02148788
+    if sense == 1 {
+        return "verb\tgive an exhibition of to an interested audience\tshow, demo, exhibit, present\t";
+    }
+    // verb 00664788
+    if sense == 2 {
+        return "verb\testablish the validity of something, as by an example, explanation or experiment\tprove, establish, show, shew\tThe experiment demonstrated the instability of the compound";
+    }
+    // verb 00820976
+    if sense == 3 {
+        return "verb\tprovide evidence for; stand as proof of; show by one's behavior, attitude, or external attributes\tattest, certify, manifest, evidence\tThis decision demonstrates his sense of fairness";
+    }
+    // verb 02521816
+    if sense == 4 {
+        return "verb\tmarch in protest; take part in a demonstration\tmarch\tThousands demonstrated against globalization during the meeting of the most powerful economic nations in Seattle";
+    }
+    ""
+}

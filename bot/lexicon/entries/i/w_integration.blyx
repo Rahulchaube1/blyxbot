@@ -1,0 +1,17 @@
+// integration — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_integration(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 01202415
+    if sense == 1 {
+        return "noun\tthe action of incorporating a racial or religious group into a community\tintegrating, desegregation\t";
+    }
+    // noun 01237415
+    if sense == 2 {
+        return "noun\tthe act of combining into an integral whole\tconsolidation\t";
+    }
+    // noun 00871418
+    if sense == 3 {
+        return "noun\tan operation used in the calculus whereby the integral of a function is determined\t\t";
+    }
+    ""
+}

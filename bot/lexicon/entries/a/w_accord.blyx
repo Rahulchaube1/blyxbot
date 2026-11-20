@@ -1,0 +1,13 @@
+// accord — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_accord(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02700104
+    if sense == 1 {
+        return "verb\tgo together\tharmonize, harmonise, consort, concord, fit in, agree\t";
+    }
+    // verb 02255268
+    if sense == 2 {
+        return "verb\tallow to have\tallot, grant\t";
+    }
+    ""
+}

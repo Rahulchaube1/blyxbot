@@ -1,0 +1,17 @@
+// chemical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_chemical(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02692624
+    if sense == 1 {
+        return "adjective\trelating to or used in chemistry\tchemic\tchemical engineer";
+    }
+    // noun 14806838
+    if sense == 2 {
+        return "noun\tmaterial produced by or used in a reaction involving changes in atoms or molecules\tchemical substance\t";
+    }
+    // adj 02692966
+    if sense == 3 {
+        return "adjective\tof or made from or using substances produced by or used in reactions involving atomic or molecular changes\t\tchemical fertilizer";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// stream — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stream(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 09448361
+    if sense == 1 {
+        return "noun\ta natural body of running water flowing on or under the earth\twatercourse\t";
+    }
+    // noun 08461595
+    if sense == 2 {
+        return "noun\tdominant course (suggestive of running water) of successive events or ideas\tflow, current\ttwo streams of development run through American history";
+    }
+    // verb 02070679
+    if sense == 3 {
+        return "verb\tto extend, wave or float outward, as if in the wind\t\ttheir manes streamed like stiff black pennants in the wind";
+    }
+    // noun 00329227
+    if sense == 4 {
+        return "noun\tthe act of flowing or streaming; continuous progression\tflow\t";
+    }
+    // verb 00069012
+    if sense == 5 {
+        return "verb\texude profusely\t\tShe was streaming with sweat";
+    }
+    // noun 14005892
+    if sense == 6 {
+        return "noun\tsomething that resembles a flowing stream in moving continuously\tflow\ta stream of people emptied from the terminal";
+    }
+    // noun 07406765
+    if sense == 7 {
+        return "noun\ta steady flow of a fluid (usually from natural causes)\tcurrent\the felt a stream of air";
+    }
+    // verb 02028366
+    if sense == 8 {
+        return "verb\tmove in large numbers\tpour, swarm, teem, pullulate\t";
+    }
+    ""
+}

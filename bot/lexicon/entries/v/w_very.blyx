@@ -1,0 +1,21 @@
+// very — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_very(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00031899
+    if sense == 1 {
+        return "adverb\tused as intensifiers; `real' is sometimes used informally for `really'; `rattling' is informal\treally, real, rattling\tshe was very gifted";
+    }
+    // adj 01839317
+    if sense == 2 {
+        return "adjective\tprecisely as stated\t\tthe very center of town";
+    }
+    // adj 02068946
+    if sense == 3 {
+        return "adjective\tbeing the exact same one; not any other:\tidentical, selfsame\ton this very spot";
+    }
+    // adv 00510749
+    if sense == 4 {
+        return "adverb\tprecisely so\t\ton the very next page";
+    }
+    ""
+}

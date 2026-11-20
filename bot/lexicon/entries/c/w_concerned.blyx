@@ -1,0 +1,13 @@
+// concerned — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_concerned(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00543603
+    if sense == 1 {
+        return "adjective\tfeeling or showing worry or solicitude\t\tconcerned parents of youthful offenders";
+    }
+    // adj 01515692
+    if sense == 2 {
+        return "adjective\tinvolved in or affected by or having a claim to or share in\tinterested\ta memorandum to those concerned";
+    }
+    ""
+}

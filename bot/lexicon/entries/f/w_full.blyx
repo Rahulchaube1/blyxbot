@@ -1,0 +1,33 @@
+// full — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_full(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01083157
+    if sense == 1 {
+        return "adjective\tcontaining as much or as many as is possible or normal\t\ta full glass";
+    }
+    // adj 00515380
+    if sense == 2 {
+        return "adjective\tconstituting the full quantity or extent; complete\tentire, total\tgave full attention";
+    }
+    // adj 00522885
+    if sense == 3 {
+        return "adjective\tcomplete in extent or degree and in every particular\ttotal\ta full game";
+    }
+    // adv 00010466
+    if sense == 4 {
+        return "adverb\tto the greatest degree or extent; completely or entirely; (`full' in this sense is used as a combining form)\tfully, to the full\tknew full well";
+    }
+    // adj 02300501
+    if sense == 5 {
+        return "adjective\tfilled to satisfaction with food or drink\treplete\ta full stomach";
+    }
+    // adj 01456710
+    if sense == 6 {
+        return "adjective\t(of sound) having marked deepness and body\t\tfull tones";
+    }
+    // adj 00106020
+    if sense == 7 {
+        return "adjective\thaving the normally expected amount\tgood\tgives full measure";
+    }
+    ""
+}

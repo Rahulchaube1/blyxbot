@@ -1,0 +1,13 @@
+// goal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_goal(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05980875
+    if sense == 1 {
+        return "noun\tthe state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it\tend\t";
+    }
+    // noun 08567877
+    if sense == 2 {
+        return "noun\tthe place designated as the end (as of a race or journey)\tfinish, destination\t";
+    }
+    ""
+}

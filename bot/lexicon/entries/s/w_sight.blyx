@@ -1,0 +1,37 @@
+// sight — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sight(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 05933054
+    if sense == 1 {
+        return "noun\tan instance of visual perception\t\tthe sight of his wife brought him back to reality";
+    }
+    // noun 06888944
+    if sense == 2 {
+        return "noun\tanything that is seen\t\the was a familiar sight on the television";
+    }
+    // noun 05654362
+    if sense == 3 {
+        return "noun\tthe ability to see; the visual faculty\tvision, visual sense, visual modality\t";
+    }
+    // verb 02163746
+    if sense == 4 {
+        return "verb\tcatch sight of; to perceive with the eyes\tspy\the caught sight of the king's men coming over the ridge";
+    }
+    // noun 06210964
+    if sense == 5 {
+        return "noun\ta range of mental vision\t\tin his sight she could do no wrong";
+    }
+    // noun 05623818
+    if sense == 6 {
+        return "noun\tthe range of vision\tken\tout of sight of land";
+    }
+    // noun 00881649
+    if sense == 7 {
+        return "noun\tthe act of looking or seeing or observing\tview, survey\t";
+    }
+    // noun 13774404
+    if sense == 8 {
+        return "noun\t(often followed by `of') a large number or amount or extent\tbatch, deal, flock, good deal, great deal, hatful, heap, lot, mass, mess, mickle, mint, mountain, muckle, passel, peck, pile, plenty, pot, quite a little, raft, slew, spate, stack, tidy sum, wad\t";
+    }
+    ""
+}

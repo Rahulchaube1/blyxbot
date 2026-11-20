@@ -1,0 +1,21 @@
+// impress — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_impress(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01767949
+    if sense == 1 {
+        return "verb\thave an emotional or cognitive impact upon\taffect, move, strike\tThis child impressed me as unusually mature";
+    }
+    // verb 01769902
+    if sense == 2 {
+        return "verb\timpress positively\t\tThe young chess player impressed her audience";
+    }
+    // verb 00728393
+    if sense == 3 {
+        return "verb\tproduce or try to produce a vivid impression of\tingrain, instill\t";
+    }
+    // verb 01531742
+    if sense == 4 {
+        return "verb\tmark or stamp with or as if with pressure\timprint\tTo make a batik, you impress a design with wax";
+    }
+    ""
+}

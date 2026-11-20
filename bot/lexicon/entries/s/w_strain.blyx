@@ -1,0 +1,49 @@
+// strain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_strain(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 01146051
+    if sense == 1 {
+        return "verb\tto exert much effort or energy\tstrive, reach\tstraining our ears to hear";
+    }
+    // noun 11515325
+    if sense == 2 {
+        return "noun\t(physics) deformation of a physical body under the action of applied forces\t\t";
+    }
+    // noun 14410089
+    if sense == 3 {
+        return "noun\tdifficulty that causes worry or emotional tension\tstress\tshe endured the stresses and strains of life";
+    }
+    // noun 07028373
+    if sense == 4 {
+        return "noun\ta succession of notes forming a distinctive sequence\ttune, melody, air, melodic line, line, melodic phrase\t";
+    }
+    // verb 01798452
+    if sense == 5 {
+        return "verb\ttest the limits of\ttry, stress\t";
+    }
+    // verb 01165579
+    if sense == 6 {
+        return "verb\tuse to the utmost; exert vigorously or to full capacity\textend\tDon't strain your mind too much";
+    }
+    // noun 14375890
+    if sense == 7 {
+        return "noun\t(psychology) nervousness resulting from mental stress\tmental strain, nervous strain\this responsibilities were a constant strain";
+    }
+    // noun 08101410
+    if sense == 8 {
+        return "noun\ta special variety of domesticated animals within a species\tbreed, stock\the created a new strain of sheep";
+    }
+    // noun 08111157
+    if sense == 9 {
+        return "noun\t(biology) a group of organisms within a species that differ in trivial ways from similar groups\tform, variant, var.\ta new strain of microorganisms";
+    }
+    // verb 01460029
+    if sense == 10 {
+        return "verb\tseparate by passing through a sieve or other straining device to separate out coarser elements\tsift, sieve\t";
+    }
+    // verb 00025203
+    if sense == 11 {
+        return "verb\tcause to be tense and uneasy or nervous or anxious\ttense, tense up\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// locate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_locate(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02286204
+    if sense == 1 {
+        return "verb\tdiscover the location of; determine the place of; find by searching or examining\tturn up\tCan you locate your cousins in the Midwest?";
+    }
+    // verb 02694933
+    if sense == 2 {
+        return "verb\tdetermine or indicate the place, site, or limits of, as if by an instrument or by a survey\tsituate\tOur sense of sight enables us to locate objects in space";
+    }
+    // verb 02333689
+    if sense == 3 {
+        return "verb\tassign a location to\tplace, site\tThe company located some of their agents in Los Angeles";
+    }
+    // verb 00413876
+    if sense == 4 {
+        return "verb\ttake up residence and become established\tsettle\t";
+    }
+    ""
+}

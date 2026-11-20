@@ -1,0 +1,17 @@
+// assemble — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_assemble(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01656788
+    if sense == 1 {
+        return "verb\tcreate by putting components or members together\tpiece, put together, set up, tack, tack together\t";
+    }
+    // verb 02428924
+    if sense == 2 {
+        return "verb\tcollect in one place\tmeet, gather, forgather, foregather\tWe assembled in the church basement";
+    }
+    // verb 02598143
+    if sense == 3 {
+        return "verb\tget people together\tgather, get together\tassemble your colleagues";
+    }
+    ""
+}

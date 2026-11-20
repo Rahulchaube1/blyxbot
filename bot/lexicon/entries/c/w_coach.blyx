@@ -1,0 +1,17 @@
+// coach — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_coach(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 09931640
+    if sense == 1 {
+        return "noun\t(sports) someone in charge of training an athlete or a team\tmanager, handler\t";
+    }
+    // verb 00833702
+    if sense == 2 {
+        return "verb\tteach and supervise (someone); act as a trainer or coach (to), as in sports\ttrain\tShe is coaching the crew";
+    }
+    // verb 01931262
+    if sense == 3 {
+        return "verb\tdrive a coach\t\t";
+    }
+    ""
+}

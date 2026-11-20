@@ -1,0 +1,17 @@
+// application — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_application(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00949134
+    if sense == 1 {
+        return "noun\tthe act of bringing something to bear; using it for a particular purpose\tpractical application\the advocated the application of statistics to the problem";
+    }
+    // noun 06512580
+    if sense == 2 {
+        return "noun\ta verbal or written request for assistance or employment or admission to a school\t\tDecember 31 is the deadline for applications";
+    }
+    // noun 00712225
+    if sense == 3 {
+        return "noun\tthe work of applying something\tcoating, covering\tthe doctor prescribed a topical application of iodine";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// equal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_equal(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00889831
+    if sense == 1 {
+        return "adjective\thaving the same quantity, value, or measure as another\t\ton equal terms";
+    }
+    // verb 02664769
+    if sense == 2 {
+        return "verb\tbe identical or equivalent to\tbe\tOne dollar equals 1,000 rubles these days!";
+    }
+    // noun 09626238
+    if sense == 3 {
+        return "noun\ta person who is of equal standing with another in a group\tpeer, match, compeer\t";
+    }
+    // verb 02672187
+    if sense == 4 {
+        return "verb\tbe equal to in quality or ability\ttouch, rival, match\t";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// detail — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_detail(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05817845
+    if sense == 1 {
+        return "noun\tan isolated fact that is considered separately from the whole\titem, point\tseveral of the details are similar";
+    }
+    // noun 13809920
+    if sense == 2 {
+        return "noun\ta small part that can be considered separately from the whole\tparticular, item\tit was perfect in all details";
+    }
+    // noun 07137807
+    if sense == 3 {
+        return "noun\textended treatment of particulars\t\tthe essay contained too much detail";
+    }
+    // noun 08243081
+    if sense == 4 {
+        return "noun\ta crew of workers selected for a particular task\t\ta detail was sent to remove the fallen trees";
+    }
+    // verb 00956250
+    if sense == 5 {
+        return "verb\tprovide details for\t\t";
+    }
+    // verb 00678105
+    if sense == 6 {
+        return "verb\tassign to a specific task\t\tThe ambulances were detailed to the fire station";
+    }
+    ""
+}

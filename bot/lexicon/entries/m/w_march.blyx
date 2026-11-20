@@ -1,0 +1,41 @@
+// march — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_march(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 01996735
+    if sense == 1 {
+        return "verb\tmarch in a procession\tprocess\t";
+    }
+    // noun 15210870
+    if sense == 2 {
+        return "noun\tthe month following February and preceding April\tMar\t";
+    }
+    // noun 00290579
+    if sense == 3 {
+        return "noun\tthe act of marching; walking with regular steps (especially in a procession of some kind)\tmarching\tit was a long march";
+    }
+    // verb 02084380
+    if sense == 4 {
+        return "verb\tforce to march\t\tThe Japanese marched their prisoners through Manchuria";
+    }
+    // verb 01919391
+    if sense == 5 {
+        return "verb\twalk fast, with regular or measured steps; walk with a stride\t\tHe marched into the classroom and announced the exam";
+    }
+    // noun 00282840
+    if sense == 6 {
+        return "noun\ta steady advance\t\tthe march of science";
+    }
+    // noun 08428019
+    if sense == 7 {
+        return "noun\ta procession of people walking together\t\tthe march went up Fifth Avenue";
+    }
+    // verb 02521816
+    if sense == 8 {
+        return "verb\tmarch in protest; take part in a demonstration\tdemonstrate\t";
+    }
+    // verb 01924712
+    if sense == 9 {
+        return "verb\twalk ostentatiously\tparade, exhibit\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// iron — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_iron(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 14642417
+    if sense == 1 {
+        return "noun\ta heavy ductile magnetic metallic element; is silver-white in pure form but readily rusts; used in construction and tools and armament; plays a role in the transport of oxygen by the blood\tFe, atomic number 26\t";
+    }
+    // noun 03585073
+    if sense == 2 {
+        return "noun\ta golf club that has a relatively narrow metal head\t\t";
+    }
+    // verb 01390833
+    if sense == 3 {
+        return "verb\tpress and smooth with a heated iron\tiron out, press\tshe stood there ironing";
+    }
+    // adj 02038891
+    if sense == 4 {
+        return "adjective\textremely robust\tcast-iron\tan iron constitution";
+    }
+    ""
+}

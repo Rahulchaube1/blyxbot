@@ -1,0 +1,25 @@
+// chain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_chain(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08376250
+    if sense == 1 {
+        return "noun\ta series of things depending on each other as if linked together\tconcatenation\tthe chain of command";
+    }
+    // noun 09240621
+    if sense == 2 {
+        return "noun\t(chemistry) a series of linked atoms (generally in an organic molecule)\tchemical chain\t";
+    }
+    // noun 02999410
+    if sense == 3 {
+        return "noun\ta series of (usually metal) rings or links fitted into one another to make a flexible ligament\t\t";
+    }
+    // noun 08057816
+    if sense == 4 {
+        return "noun\t(business) a number of similar establishments (stores or restaurants or banks or hotels or theaters) under one ownership\t\t";
+    }
+    // noun 02999936
+    if sense == 5 {
+        return "noun\tanything that acts as a restraint\t\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// period — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_period(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 15113229
+    if sense == 1 {
+        return "noun\tan amount of time\ttime period, period of time\ta time period of 30 years";
+    }
+    // noun 15289779
+    if sense == 2 {
+        return "noun\tthe interval taken to complete one cycle of a regularly repeating phenomenon\t\t";
+    }
+    ""
+}

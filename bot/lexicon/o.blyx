@@ -1,0 +1,134 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::o::w_object;
+use entries::o::w_objective;
+use entries::o::w_observation;
+use entries::o::w_observe;
+use entries::o::w_observer;
+use entries::o::w_obtain;
+use entries::o::w_obvious;
+use entries::o::w_obviously;
+use entries::o::w_occasion;
+use entries::o::w_occasional;
+use entries::o::w_occasionally;
+use entries::o::w_occupy;
+use entries::o::w_occur;
+use entries::o::w_occurrence;
+use entries::o::w_of_course;
+use entries::o::w_off;
+use entries::o::w_offer;
+use entries::o::w_office;
+use entries::o::w_officer;
+use entries::o::w_official;
+use entries::o::w_often;
+use entries::o::w_old;
+use entries::o::w_old_man;
+use entries::o::w_on;
+use entries::o::w_on_the_other_hand;
+use entries::o::w_once;
+use entries::o::w_one;
+use entries::o::w_only;
+use entries::o::w_onset;
+use entries::o::w_open;
+use entries::o::w_operate;
+use entries::o::w_operation;
+use entries::o::w_operator;
+use entries::o::w_opinion;
+use entries::o::w_opportunity;
+use entries::o::w_oppose;
+use entries::o::w_opposite;
+use entries::o::w_order;
+use entries::o::w_ordinary;
+use entries::o::w_organic;
+use entries::o::w_organization;
+use entries::o::w_organize;
+use entries::o::w_original;
+use entries::o::w_other;
+use entries::o::w_otherwise;
+use entries::o::w_outside;
+use entries::o::w_over;
+use entries::o::w_overall;
+use entries::o::w_overcome;
+use entries::o::w_own;
+use entries::o::w_owner;
+use entries::o::w_oxidation;
+use entries::o::w_oxygen;
+
+fn through_w_off(term: str, sense: i64) -> str {
+    if term == "object" { return w_object(sense); }
+    if term == "objective" { return w_objective(sense); }
+    if term == "observation" { return w_observation(sense); }
+    if term == "observe" { return w_observe(sense); }
+    if term == "observer" { return w_observer(sense); }
+    if term == "obtain" { return w_obtain(sense); }
+    if term == "obvious" { return w_obvious(sense); }
+    if term == "obviously" { return w_obviously(sense); }
+    if term == "occasion" { return w_occasion(sense); }
+    if term == "occasional" { return w_occasional(sense); }
+    if term == "occasionally" { return w_occasionally(sense); }
+    if term == "occupy" { return w_occupy(sense); }
+    if term == "occur" { return w_occur(sense); }
+    if term == "occurrence" { return w_occurrence(sense); }
+    if term == "of course" { return w_of_course(sense); }
+    if term == "off" { return w_off(sense); }
+    ""
+}
+
+fn through_w_operation(term: str, sense: i64) -> str {
+    if term == "offer" { return w_offer(sense); }
+    if term == "office" { return w_office(sense); }
+    if term == "officer" { return w_officer(sense); }
+    if term == "official" { return w_official(sense); }
+    if term == "often" { return w_often(sense); }
+    if term == "old" { return w_old(sense); }
+    if term == "old man" { return w_old_man(sense); }
+    if term == "on" { return w_on(sense); }
+    if term == "on the other hand" { return w_on_the_other_hand(sense); }
+    if term == "once" { return w_once(sense); }
+    if term == "one" { return w_one(sense); }
+    if term == "only" { return w_only(sense); }
+    if term == "onset" { return w_onset(sense); }
+    if term == "open" { return w_open(sense); }
+    if term == "operate" { return w_operate(sense); }
+    if term == "operation" { return w_operation(sense); }
+    ""
+}
+
+fn through_w_overall(term: str, sense: i64) -> str {
+    if term == "operator" { return w_operator(sense); }
+    if term == "opinion" { return w_opinion(sense); }
+    if term == "opportunity" { return w_opportunity(sense); }
+    if term == "oppose" { return w_oppose(sense); }
+    if term == "opposite" { return w_opposite(sense); }
+    if term == "order" { return w_order(sense); }
+    if term == "ordinary" { return w_ordinary(sense); }
+    if term == "organic" { return w_organic(sense); }
+    if term == "organization" { return w_organization(sense); }
+    if term == "organize" { return w_organize(sense); }
+    if term == "original" { return w_original(sense); }
+    if term == "other" { return w_other(sense); }
+    if term == "otherwise" { return w_otherwise(sense); }
+    if term == "outside" { return w_outside(sense); }
+    if term == "over" { return w_over(sense); }
+    if term == "overall" { return w_overall(sense); }
+    ""
+}
+
+fn through_w_oxygen(term: str, sense: i64) -> str {
+    if term == "overcome" { return w_overcome(sense); }
+    if term == "own" { return w_own(sense); }
+    if term == "owner" { return w_owner(sense); }
+    if term == "oxidation" { return w_oxidation(sense); }
+    if term == "oxygen" { return w_oxygen(sense); }
+    ""
+}
+
+pub fn lookup_o(term: str, sense: i64) -> str {
+    if term <= "off" { return through_w_off(term, sense); }
+    if term <= "operation" { return through_w_operation(term, sense); }
+    if term <= "overall" { return through_w_overall(term, sense); }
+    through_w_oxygen(term, sense)
+}
+
+pub fn words_o() -> str {
+    "object|objective|observation|observe|observer|obtain|obvious|obviously|occasion|occasional|occasionally|occupy|occur|occurrence|of course|off|offer|office|officer|official|often|old|old man|on|on the other hand|once|one|only|onset|open|operate|operation|operator|opinion|opportunity|oppose|opposite|order|ordinary|organic|organization|organize|original|other|otherwise|outside|over|overall|overcome|own|owner|oxidation|oxygen"
+}

@@ -1,0 +1,37 @@
+// wish — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wish(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01824339
+    if sense == 1 {
+        return "verb\thope for; have a wish\t\tI wish I could go home now";
+    }
+    // verb 01824736
+    if sense == 2 {
+        return "verb\tprefer or wish to do something\tcare, like\t";
+    }
+    // verb 00903212
+    if sense == 3 {
+        return "verb\tmake or express a wish\t\tI wish that Christmas were over";
+    }
+    // noun 07486229
+    if sense == 4 {
+        return "noun\ta specific feeling of desire\twishing, want\the got his wish";
+    }
+    // verb 01824532
+    if sense == 5 {
+        return "verb\tfeel or express a desire or hope concerning the future or fortune of\twish well\t";
+    }
+    // noun 07185870
+    if sense == 6 {
+        return "noun\tan expression of some desire or inclination\tindirect request\tI could tell that it was his wish that the guests leave";
+    }
+    // verb 00903098
+    if sense == 7 {
+        return "verb\torder politely; express a wish for\t\t";
+    }
+    // verb 00902932
+    if sense == 8 {
+        return "verb\tinvoke upon\tbid\twish you a nice evening";
+    }
+    ""
+}

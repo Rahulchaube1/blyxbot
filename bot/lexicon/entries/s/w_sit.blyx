@@ -1,0 +1,29 @@
+// sit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sit(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01543123
+    if sense == 1 {
+        return "verb\tbe seated\tsit down\t";
+    }
+    // verb 02692882
+    if sense == 2 {
+        return "verb\tbe around, often idly or without specific purpose\tsit around\t";
+    }
+    // verb 01984902
+    if sense == 3 {
+        return "verb\ttake a seat\tsit down\t";
+    }
+    // verb 02024874
+    if sense == 4 {
+        return "verb\tbe in session\t\tWhen does the court of law sit?";
+    }
+    // verb 02142775
+    if sense == 5 {
+        return "verb\tassume a posture as for artistic purposes\tmodel, pose, posture\t";
+    }
+    // verb 01957529
+    if sense == 6 {
+        return "verb\tsit and travel on the back of animal, usually while controlling its motions\tride\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// easily — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_easily(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00147876
+    if sense == 1 {
+        return "adverb\twith ease (`easy' is sometimes used informally for `easily')\teasy\tshe was easily excited";
+    }
+    // adv 00054435
+    if sense == 2 {
+        return "adverb\twithout question\t\teasily the best book she's written";
+    }
+    ""
+}

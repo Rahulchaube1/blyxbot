@@ -1,0 +1,29 @@
+// court — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_court(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 08329453
+    if sense == 1 {
+        return "noun\tan assembly (including one or more judges) to conduct judicial business\ttribunal, judicature\t";
+    }
+    // noun 03120778
+    if sense == 2 {
+        return "noun\ta room in which a lawcourt sits\tcourtroom\t";
+    }
+    // verb 02534492
+    if sense == 3 {
+        return "verb\tmake amorous advances towards\twoo, romance, solicit\tJohn is courting Mary";
+    }
+    // noun 08051946
+    if sense == 4 {
+        return "noun\tthe sovereign and his advisers who are the governing power of a state\troyal court\t";
+    }
+    // noun 03120491
+    if sense == 5 {
+        return "noun\ta specially marked horizontal area within which a game is played\t\tplayers had to reserve a court in advance";
+    }
+    // verb 02534936
+    if sense == 6 {
+        return "verb\tseek someone's favor\twoo\t";
+    }
+    ""
+}

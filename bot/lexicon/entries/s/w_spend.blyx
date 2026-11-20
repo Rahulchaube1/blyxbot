@@ -1,0 +1,17 @@
+// spend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_spend(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02708420
+    if sense == 1 {
+        return "verb\tpass time in a specific way\tpass\thow are you spending your summer vacation?";
+    }
+    // verb 02267060
+    if sense == 2 {
+        return "verb\tpay out\texpend, drop\tspend money";
+    }
+    // verb 02267529
+    if sense == 3 {
+        return "verb\tspend completely\t\tI spend my pocket money in two days";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// resume — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_resume(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00350104
+    if sense == 1 {
+        return "verb\ttake up or begin anew\trestart, re-start\tWe resumed the negotiations";
+    }
+    // verb 00350283
+    if sense == 2 {
+        return "verb\treturn to a previous location or condition\ttake up\tThe painting resumed its old condition when we restored it";
+    }
+    // noun 06469694
+    if sense == 3 {
+        return "noun\tshort descriptive summary (of events)\tsketch, survey\t";
+    }
+    // verb 02381951
+    if sense == 4 {
+        return "verb\tassume anew\t\tresume a title";
+    }
+    ""
+}

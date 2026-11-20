@@ -1,0 +1,17 @@
+// adequate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_adequate(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00051045
+    if sense == 1 {
+        return "adjective\thaving the requisite qualities or resources to meet a task\tequal\tshe had adequate training";
+    }
+    // adj 02336109
+    if sense == 2 {
+        return "adjective\tsufficient for the purpose\tdecent, enough\tan adequate income";
+    }
+    // adj 02080937
+    if sense == 3 {
+        return "adjective\tabout average; acceptable\tpassable, fair to middling, tolerable\tmore than adequate as a secretary";
+    }
+    ""
+}

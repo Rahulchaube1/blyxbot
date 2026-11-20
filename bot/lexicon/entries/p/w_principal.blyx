@@ -1,0 +1,21 @@
+// principal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_principal(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01277426
+    if sense == 1 {
+        return "adjective\tmost important element\tchief, main, primary, master\tthe principal rivers of America";
+    }
+    // noun 13400662
+    if sense == 2 {
+        return "noun\tthe original amount of a debt on which interest is calculated\t\t";
+    }
+    // noun 10474645
+    if sense == 3 {
+        return "noun\tthe educator who has executive authority for a school\tschool principal, head teacher, head\tshe sent unruly pupils to see the principal";
+    }
+    // noun 10648696
+    if sense == 4 {
+        return "noun\tan actor who plays a principal role\tstar, lead\t";
+    }
+    ""
+}

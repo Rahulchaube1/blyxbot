@@ -1,0 +1,21 @@
+// avoid — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_avoid(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00811375
+    if sense == 1 {
+        return "verb\tstay clear from; keep away from; keep out of the way of someone or something\t\tHer former friends now avoid her";
+    }
+    // verb 02453321
+    if sense == 2 {
+        return "verb\tprevent the occurrence of; prevent from happening\tdebar, forefend, forfend, obviate, deflect, avert, head off, stave off, fend off, ward off\tLet's avoid a confrontation";
+    }
+    // verb 02463510
+    if sense == 3 {
+        return "verb\trefrain from doing something\t\tHe should avoid publishing his wife's memories";
+    }
+    // verb 01189823
+    if sense == 4 {
+        return "verb\trefrain from certain foods or beverages\tkeep off\tDuring Ramadan, Muslims avoid tobacco during the day";
+    }
+    ""
+}

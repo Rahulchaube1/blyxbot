@@ -1,0 +1,17 @@
+// threat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_threat(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14543231
+    if sense == 1 {
+        return "noun\tsomething that is a source of danger\tmenace\tearthquakes are a constant threat in Japan";
+    }
+    // noun 07226015
+    if sense == 2 {
+        return "noun\ta warning that something unpleasant is imminent\t\tthey were under threat of arrest";
+    }
+    // noun 06733476
+    if sense == 3 {
+        return "noun\tdeclaration of an intention or a determination to inflict harm on another\t\this threat to kill me was quite explicit";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// porch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_porch(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 03984381
+    if sense == 1 {
+        return "noun\ta structure attached to the exterior of a building often forming a covered entrance\t\t";
+    }
+    ""
+}

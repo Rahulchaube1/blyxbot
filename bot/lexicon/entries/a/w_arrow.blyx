@@ -1,0 +1,13 @@
+// arrow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_arrow(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 06818121
+    if sense == 1 {
+        return "noun\ta mark to indicate a direction or relation\tpointer\t";
+    }
+    // noun 02742753
+    if sense == 2 {
+        return "noun\ta projectile with a straight thin shaft and an arrowhead on one end and stabilizing vanes on the other; intended to be shot from a bow\t\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// leg — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_leg(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05560787
+    if sense == 1 {
+        return "noun\ta human limb; commonly used to refer to a whole limb but technically only the part of the limb between the knee and ankle\t\t";
+    }
+    // noun 05561507
+    if sense == 2 {
+        return "noun\ta structure in animals that is similar to a human leg and used for locomotion\t\t";
+    }
+    // noun 03654826
+    if sense == 3 {
+        return "noun\tone of the supports for a piece of furniture\t\t";
+    }
+    // noun 13913849
+    if sense == 4 {
+        return "noun\ta part of a forked or branching shape\tbranch, ramification\t";
+    }
+    ""
+}

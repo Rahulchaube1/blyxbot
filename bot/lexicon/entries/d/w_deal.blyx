@@ -1,0 +1,53 @@
+// deal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_deal(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // verb 01033527
+    if sense == 1 {
+        return "verb\tact on verbally or in some form of artistic expression\tcover, treat, handle, plow, address\tThis book deals with incest";
+    }
+    // verb 00734054
+    if sense == 2 {
+        return "verb\ttake into consideration for exemplifying purposes\tconsider, take, look at\t";
+    }
+    // verb 02370987
+    if sense == 3 {
+        return "verb\ttake action with respect to (someone or something)\t\tHow are we going to deal with this problem?";
+    }
+    // verb 02587532
+    if sense == 4 {
+        return "verb\tcome to terms with\tcope, get by, make out, make do, contend, grapple, manage\t";
+    }
+    // noun 01110274
+    if sense == 5 {
+        return "noun\ta particular instance of buying or selling\ttrade, business deal\tit was a package deal";
+    }
+    // verb 02294436
+    if sense == 6 {
+        return "verb\tadminister or bestow, as in small portions\tdistribute, administer, mete out, parcel out, lot, dispense, shell out, deal out, dish out, allot, dole out\tdeal a blow to someone";
+    }
+    // verb 02244956
+    if sense == 7 {
+        return "verb\tdo business; offer for sale as for one's livelihood\tsell, trade\tShe deals in gold";
+    }
+    // verb 02436349
+    if sense == 8 {
+        return "verb\tbe in charge of, act on, or dispose of\tmanage, care, handle\tI can deal with this crew of workers";
+    }
+    // verb 02377764
+    if sense == 9 {
+        return "verb\tbehave in a certain way towards others\t\tHe deals fairly with his employees";
+    }
+    // noun 06771159
+    if sense == 10 {
+        return "noun\tan agreement between parties (usually arrived at after discussion) fixing obligations of each\tbargain\the rose to prominence through a series of shady deals";
+    }
+    // verb 02246456
+    if sense == 11 {
+        return "verb\tdistribute cards to the players in a game\t\tWho's dealing?";
+    }
+    // noun 13774404
+    if sense == 12 {
+        return "noun\t(often followed by `of') a large number or amount or extent\tbatch, flock, good deal, great deal, hatful, heap, lot, mass, mess, mickle, mint, mountain, muckle, passel, peck, pile, plenty, pot, quite a little, raft, sight, slew, spate, stack, tidy sum, wad\ta deal of trouble";
+    }
+    ""
+}

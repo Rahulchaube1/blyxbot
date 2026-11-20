@@ -1,0 +1,17 @@
+// shelter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shelter(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04191595
+    if sense == 1 {
+        return "noun\ta structure that provides privacy and protection from danger\t\t";
+    }
+    // noun 04191943
+    if sense == 2 {
+        return "noun\tprotective covering that provides protection from the weather\t\t";
+    }
+    // verb 02656390
+    if sense == 3 {
+        return "verb\tprovide shelter for\t\tAfter the earthquake, the government could not provide shelter for the thousands of homeless people";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// twelve — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_twelve(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02187465
+    if sense == 1 {
+        return "adjective\tdenoting a quantity consisting of 12 items or units\t12, xii, dozen\t";
+    }
+    // noun 13746785
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of eleven and one\t12, XII, dozen\t";
+    }
+    ""
+}

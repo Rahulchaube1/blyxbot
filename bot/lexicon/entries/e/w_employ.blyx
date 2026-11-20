@@ -1,0 +1,17 @@
+// employ — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_employ(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01158872
+    if sense == 1 {
+        return "verb\tput into service; make work or employ for a particular purpose or for its inherent or natural purpose\tuse, utilize, utilise, apply\t";
+    }
+    // verb 02409412
+    if sense == 2 {
+        return "verb\tengage or hire for work\thire, engage\tHow many people has she employed?";
+    }
+    // noun 13968092
+    if sense == 3 {
+        return "noun\tthe state of being employed or having a job\temployment\the was in the employ of the city";
+    }
+    ""
+}

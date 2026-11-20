@@ -1,0 +1,45 @@
+// trouble — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_trouble(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 05687338
+    if sense == 1 {
+        return "noun\ta source of difficulty\tproblem\tone trouble after another delayed the job";
+    }
+    // noun 07372565
+    if sense == 2 {
+        return "noun\tan angry disturbance\tfuss, bother, hassle\tthey had labor trouble";
+    }
+    // noun 07289014
+    if sense == 3 {
+        return "noun\tan event causing distress or pain\t\twhat is the trouble?";
+    }
+    // noun 00623862
+    if sense == 4 {
+        return "noun\tan effort that is inconvenient\tdifficulty\tI went to a lot of trouble";
+    }
+    // verb 01770501
+    if sense == 5 {
+        return "verb\tmove deeply\tdisturb, upset\tA troubling thought";
+    }
+    // verb 02507736
+    if sense == 6 {
+        return "verb\tto cause inconvenience or discomfort to\tput out, inconvenience, disoblige, discommode, incommode, bother\tSorry to trouble you, but...";
+    }
+    // verb 01764171
+    if sense == 7 {
+        return "verb\tdisturb in mind or make uneasy or cause to be worried or alarmed\tperturb, unhinge, disquiet, cark, distract, disorder\t";
+    }
+    // noun 07524242
+    if sense == 8 {
+        return "noun\ta strong feeling of anxiety\tworry\the wanted to die and end his troubles";
+    }
+    // verb 02507464
+    if sense == 9 {
+        return "verb\ttake the trouble to do something; concern oneself\ttrouble oneself, bother, inconvenience oneself\tHe did not trouble to call his mother on her birthday";
+    }
+    // verb 00070816
+    if sense == 10 {
+        return "verb\tcause bodily suffering to and make sick or indisposed\tail, pain\t";
+    }
+    ""
+}

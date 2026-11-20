@@ -1,0 +1,33 @@
+// far — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_far(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adv 00101323
+    if sense == 1 {
+        return "adverb\tto a considerable degree; very much\t\ta far far better thing that I do";
+    }
+    // adv 00101051
+    if sense == 2 {
+        return "adverb\tat or to or from a great distance in space\t\the traveled far";
+    }
+    // adv 00101490
+    if sense == 3 {
+        return "adverb\tat or to a certain point or degree\t\tI can only go so far before I have to give up";
+    }
+    // adj 00442361
+    if sense == 4 {
+        return "adjective\tlocated at a great distance in time or space or degree\t\twe come from a far country";
+    }
+    // adj 01434717
+    if sense == 5 {
+        return "adjective\tbeing of a considerable distance or length\t\ta far trek";
+    }
+    // adv 00101201
+    if sense == 6 {
+        return "adverb\tremote in time\t\tif we could see far into the future";
+    }
+    // adj 02032386
+    if sense == 7 {
+        return "adjective\tbeing the animal or vehicle on the right or being on the right side of an animal or vehicle\t\tthe horse on the right is the far horse";
+    }
+    ""
+}

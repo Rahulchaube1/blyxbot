@@ -1,0 +1,17 @@
+// greek — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_greek(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 03016202
+    if sense == 1 {
+        return "adjective\tof or relating to or characteristic of Greece or the Greeks or the Greek language\tGrecian, Hellenic\tGreek mythology";
+    }
+    // noun 06976392
+    if sense == 2 {
+        return "noun\tthe Hellenic branch of the Indo-European family of languages\tHellenic, Hellenic language\t";
+    }
+    // noun 09710164
+    if sense == 3 {
+        return "noun\ta native or inhabitant of Greece\tHellene\t";
+    }
+    ""
+}

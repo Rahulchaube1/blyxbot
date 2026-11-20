@@ -1,0 +1,33 @@
+// common — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_common(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 00492677
+    if sense == 1 {
+        return "adjective\tbelonging to or participated in by a community as a whole; public\t\tfor the common good";
+    }
+    // adj 00485711
+    if sense == 2 {
+        return "adjective\thaving no special distinction or quality; widely known or commonly encountered; average or ordinary or usual\t\tthe common man";
+    }
+    // adj 02152473
+    if sense == 3 {
+        return "adjective\tcommon to or shared by two or more parties\tmutual\ta common friend";
+    }
+    // adj 00970610
+    if sense == 4 {
+        return "adjective\tcommonly encountered\tusual\ta common (or familiar) complaint";
+    }
+    // adj 01046226
+    if sense == 5 {
+        return "adjective\tbeing or characteristic of or appropriate to everyday language\tvernacular, vulgar\tcommon parlance";
+    }
+    // noun 08615374
+    if sense == 6 {
+        return "noun\ta piece of open land for recreational use in an urban area\tpark, commons, green\t";
+    }
+    // adj 01593079
+    if sense == 7 {
+        return "adjective\tof or associated with the great masses of people\tplebeian, vulgar, unwashed\tthe common people in those days suffered greatly";
+    }
+    ""
+}

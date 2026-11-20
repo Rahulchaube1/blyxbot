@@ -1,0 +1,21 @@
+// minute — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_minute(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 15234764
+    if sense == 1 {
+        return "noun\ta unit of time equal to 60 seconds or 1/60th of an hour\tmin\the ran a 4 minute mile";
+    }
+    // noun 15246853
+    if sense == 2 {
+        return "noun\tan indefinitely short time\tmoment, mo, second, bit\tit only takes a minute";
+    }
+    // adj 01393483
+    if sense == 3 {
+        return "adjective\tinfinitely or immeasurably small\tinfinitesimal\ttwo minute whiplike threads of protoplasm";
+    }
+    // noun 15244650
+    if sense == 4 {
+        return "noun\ta particular point in time\tmoment, second, instant\t";
+    }
+    ""
+}

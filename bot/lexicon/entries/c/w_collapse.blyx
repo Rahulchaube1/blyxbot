@@ -1,0 +1,25 @@
+// collapse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_collapse(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01989053
+    if sense == 1 {
+        return "verb\tbreak down, literally or metaphorically\tfall in, cave in, give, give way, break, founder\tThe wall collapsed";
+    }
+    // verb 00030647
+    if sense == 2 {
+        return "verb\tcollapse due to fatigue, an illness, or a sudden attack\tbreak down\t";
+    }
+    // noun 14066203
+    if sense == 3 {
+        return "noun\tan abrupt failure of function or complete physical exhaustion\tprostration\t";
+    }
+    // noun 07361128
+    if sense == 4 {
+        return "noun\ta natural event caused by something suddenly falling down or caving in\t\tthe roof is in danger of collapse";
+    }
+    // noun 00327510
+    if sense == 5 {
+        return "noun\tthe act of throwing yourself down\tflop\t";
+    }
+    ""
+}

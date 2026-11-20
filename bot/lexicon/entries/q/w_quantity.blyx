@@ -1,0 +1,13 @@
+// quantity — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_quantity(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00033615
+    if sense == 1 {
+        return "noun\thow much there is or how many there are of something that you can quantify\tmeasure, amount\t";
+    }
+    // noun 05108740
+    if sense == 2 {
+        return "noun\tan adequate or large amount\t\the had a quantity of ammunition";
+    }
+    ""
+}

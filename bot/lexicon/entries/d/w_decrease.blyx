@@ -1,0 +1,17 @@
+// decrease — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_decrease(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00151689
+    if sense == 1 {
+        return "verb\tdecrease in size, extent, or range\tdiminish, lessen, fall\tThe amount of homework decreased towards the end of the semester";
+    }
+    // noun 07355887
+    if sense == 2 {
+        return "noun\ta change downward\tlessening, drop-off\tthere was a decrease in his temperature as the fever subsided";
+    }
+    // verb 00441445
+    if sense == 3 {
+        return "verb\tmake smaller\tlessen, minify\tHe decreased his staff";
+    }
+    ""
+}

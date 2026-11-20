@@ -1,0 +1,21 @@
+// statement — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_statement(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06722453
+    if sense == 1 {
+        return "noun\ta message that is stated or declared; a communication (oral or written) setting forth particulars or facts etc\t\taccording to his statement he was in London on that day";
+    }
+    // noun 06648724
+    if sense == 2 {
+        return "noun\ta fact or assertion offered as evidence that something is true\targument\t";
+    }
+    // noun 07029819
+    if sense == 3 {
+        return "noun\t(music) the presentation of a musical theme\t\tthe initial statement of the sonata";
+    }
+    // noun 06723452
+    if sense == 4 {
+        return "noun\ta nonverbal message\t\ta Cadillac makes a statement about who you are";
+    }
+    ""
+}

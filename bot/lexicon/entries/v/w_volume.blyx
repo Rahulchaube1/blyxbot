@@ -1,0 +1,29 @@
+// volume — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_volume(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 13779032
+    if sense == 1 {
+        return "noun\tthe amount of 3-dimensional space occupied by an object\t\tthe gas expanded to twice its original volume";
+    }
+    // noun 05099389
+    if sense == 2 {
+        return "noun\tthe property of something that is great in magnitude\tbulk, mass\tthe volume of exports";
+    }
+    // noun 02870092
+    if sense == 3 {
+        return "noun\tphysical objects consisting of a number of pages bound together\tbook\t";
+    }
+    // noun 06413666
+    if sense == 4 {
+        return "noun\ta publication that is one of a set of several similar publications\t\tthe third volume was missing";
+    }
+    // noun 13779244
+    if sense == 5 {
+        return "noun\ta relative amount\t\tmix one volume of the solution with ten volumes of water";
+    }
+    // noun 04990220
+    if sense == 6 {
+        return "noun\tthe magnitude of sound (usually in a specified direction)\tloudness, intensity\tthe kids played their music at full volume";
+    }
+    ""
+}

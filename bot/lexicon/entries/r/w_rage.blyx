@@ -1,0 +1,29 @@
+// rage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rage(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 07516997
+    if sense == 1 {
+        return "noun\ta feeling of intense anger\tfury, madness\this face turned red with rage";
+    }
+    // noun 14036735
+    if sense == 2 {
+        return "noun\ta state of extreme anger\t\tshe fell into a rage and refused to answer";
+    }
+    // verb 02723016
+    if sense == 3 {
+        return "verb\tbehave violently, as if in state of a great anger\tramp, storm\t";
+    }
+    // verb 02722902
+    if sense == 4 {
+        return "verb\tbe violent; as of fires and storms\t\t";
+    }
+    // noun 14039179
+    if sense == 5 {
+        return "noun\tsomething that is desired intensely\tpassion\this rage for fame destroyed him";
+    }
+    // verb 01796033
+    if sense == 6 {
+        return "verb\tfeel intense anger\t\tRage against the dying of the light!";
+    }
+    ""
+}

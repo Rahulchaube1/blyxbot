@@ -1,0 +1,41 @@
+// dark — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dark(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // adj 00273082
+    if sense == 1 {
+        return "adjective\tdevoid of or deficient in light or brightness; shadowed or black\t\tsitting in a dark corner";
+    }
+    // adj 00409440
+    if sense == 2 {
+        return "adjective\t(used of color) having a dark hue\t\tdark green";
+    }
+    // adj 00245200
+    if sense == 3 {
+        return "adjective\tbrunet (used of hair or skin or eyes)\t\tdark eyes";
+    }
+    // noun 13983515
+    if sense == 4 {
+        return "noun\tabsence of light or illumination\tdarkness\t";
+    }
+    // noun 14563564
+    if sense == 5 {
+        return "noun\tabsence of moral or spiritual values\tiniquity, wickedness, darkness\t";
+    }
+    // adj 01131935
+    if sense == 6 {
+        return "adjective\tstemming from evil characteristics or forces; wicked or dishonorable\tblack, sinister\tDarth Vader of the dark side";
+    }
+    // noun 08646306
+    if sense == 7 {
+        return "noun\tan unilluminated area\tdarkness, shadow\t";
+    }
+    // noun 15167027
+    if sense == 8 {
+        return "noun\tthe time after sunset and before sunrise while it is dark outside\tnight, nighttime\t";
+    }
+    // noun 05988498
+    if sense == 9 {
+        return "noun\tan unenlightened state\tdarkness\the was in the dark concerning their intentions";
+    }
+    ""
+}

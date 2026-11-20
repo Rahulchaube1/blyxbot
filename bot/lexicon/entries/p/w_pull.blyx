@@ -1,0 +1,53 @@
+// pull — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pull(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // verb 01448100
+    if sense == 1 {
+        return "verb\tcause to move by pulling\tdraw, force\tpull a sled";
+    }
+    // verb 01505254
+    if sense == 2 {
+        return "verb\tdirect toward itself or oneself by means of some psychological power or physical attributes\tattract, pull in, draw, draw in\tThe ad pulled in many potential customers";
+    }
+    // verb 02057499
+    if sense == 3 {
+        return "verb\tmove into a certain direction\t\tthe car pulls to the right";
+    }
+    // noun 00114431
+    if sense == 4 {
+        return "noun\tthe act of pulling; applying force to move something toward or with you\tpulling\tthe pull up the hill had him breathing harder";
+    }
+    // verb 01609287
+    if sense == 5 {
+        return "verb\tapply force so as to cause motion towards the source of the motion\t\tPull the rope";
+    }
+    // noun 11498040
+    if sense == 6 {
+        return "noun\tthe force used in pulling\t\tthe pull of the moon";
+    }
+    // verb 02582615
+    if sense == 7 {
+        return "verb\tperform an act, usually with a negative connotation\tperpetrate, commit\tpull a bank robbery";
+    }
+    // verb 01995211
+    if sense == 8 {
+        return "verb\tbring, take, or pull out of a container or from under a cover\tdraw, pull out, get out, take out\tpull out a gun";
+    }
+    // noun 05157274
+    if sense == 9 {
+        return "noun\tspecial advantage or influence\tclout\tthe chairman's nephew has a lot of pull";
+    }
+    // noun 04019696
+    if sense == 10 {
+        return "noun\ta device used for pulling something\t\the grabbed the pull and opened the drawer";
+    }
+    // verb 02057337
+    if sense == 11 {
+        return "verb\tsteer into a certain direction\t\tpull one's horse to a stand";
+    }
+    // verb 00071803
+    if sense == 12 {
+        return "verb\tstrain abnormally\toverstretch\tI pulled a muscle in my leg when I jumped up";
+    }
+    ""
+}

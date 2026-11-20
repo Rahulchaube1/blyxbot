@@ -1,0 +1,21 @@
+// human — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_human(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02743261
+    if sense == 1 {
+        return "adjective\tcharacteristic of humanity\t\thuman nature";
+    }
+    // adj 02743391
+    if sense == 2 {
+        return "adjective\trelating to a person\t\tthe experiment was conducted on 6 monkeys and 2 human subjects";
+    }
+    // adj 01258617
+    if sense == 3 {
+        return "adjective\thaving human form or attributes as opposed to those of animals or divine beings\t\thuman beings";
+    }
+    // noun 02472293
+    if sense == 4 {
+        return "noun\tany living or extinct member of the family Hominidae characterized by superior intelligence, articulate speech, and erect carriage\thomo, man, human being\t";
+    }
+    ""
+}

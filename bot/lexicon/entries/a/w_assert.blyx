@@ -1,0 +1,21 @@
+// assert — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_assert(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01016778
+    if sense == 1 {
+        return "verb\tstate categorically\tasseverate, maintain\t";
+    }
+    // verb 01011031
+    if sense == 2 {
+        return "verb\tto declare or affirm solemnly and formally as true\taffirm, verify, avow, aver, swan, swear\t";
+    }
+    // verb 02373785
+    if sense == 3 {
+        return "verb\tinsist on having one's opinions and rights recognized\tput forward\tWomen should assert themselves more!";
+    }
+    // verb 00717045
+    if sense == 4 {
+        return "verb\tassert to be true\tinsist\tThe letter asserts a free society";
+    }
+    ""
+}

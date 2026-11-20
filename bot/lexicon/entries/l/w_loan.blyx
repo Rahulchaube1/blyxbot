@@ -1,0 +1,13 @@
+// loan — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_loan(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13398953
+    if sense == 1 {
+        return "noun\tthe temporary provision of money (usually at interest)\t\t";
+    }
+    // verb 02324182
+    if sense == 2 {
+        return "verb\tgive temporarily; let have for a limited time\tlend\tloan me some money";
+    }
+    ""
+}

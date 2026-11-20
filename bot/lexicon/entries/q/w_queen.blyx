@@ -1,0 +1,17 @@
+// queen — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_queen(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 02313008
+    if sense == 1 {
+        return "noun\tthe only fertile female in a colony of social insects such as bees and ants and termites; its function is to lay eggs\t\t";
+    }
+    // noun 10499355
+    if sense == 2 {
+        return "noun\ta female sovereign ruler\tqueen regnant, female monarch\t";
+    }
+    // noun 10499857
+    if sense == 3 {
+        return "noun\tthe wife or widow of a king\t\t";
+    }
+    ""
+}

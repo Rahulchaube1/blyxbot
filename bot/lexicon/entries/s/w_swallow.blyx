@@ -1,0 +1,25 @@
+// swallow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_swallow(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01201856
+    if sense == 1 {
+        return "verb\tpass through the esophagus as part of eating or drinking\tget down\tSwallow the raw fish--it won't kill you!";
+    }
+    // verb 01083769
+    if sense == 2 {
+        return "verb\tengulf and destroy\t\tThe Nazis swallowed the Baltic countries";
+    }
+    // noun 07579276
+    if sense == 3 {
+        return "noun\ta small amount of liquid food\tsup\t";
+    }
+    // verb 01582409
+    if sense == 4 {
+        return "verb\tenclose or envelop completely, as if by swallowing\timmerse, swallow up, bury, eat up\tThe huge waves swallowed the small boat and it sank shortly thereafter";
+    }
+    // noun 00839778
+    if sense == 5 {
+        return "noun\tthe act of swallowing\tdrink, deglutition\tone swallow of the liquid was enough";
+    }
+    ""
+}

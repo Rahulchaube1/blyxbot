@@ -1,0 +1,45 @@
+// bar — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bar(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 02796995
+    if sense == 1 {
+        return "noun\ta room or establishment where alcoholic drinks are served over a counter\tbarroom, saloon, ginmill, taproom\the drowned his sorrows in whiskey at the bar";
+    }
+    // verb 00796588
+    if sense == 2 {
+        return "verb\tprevent from entering; keep out\tdebar, exclude\tHe was barred from membership in the club";
+    }
+    // verb 01478002
+    if sense == 3 {
+        return "verb\trender unsuitable for passage\tbarricade, block, blockade, stop, block off, block up\t";
+    }
+    // noun 02789487
+    if sense == 4 {
+        return "noun\ta counter where you can obtain food or drink\t\the bought a hot dog and a coke at the bar";
+    }
+    // noun 02788689
+    if sense == 5 {
+        return "noun\ta rigid piece of metal or wood; usually used as a fastening or obstruction or weapon\t\tthere were bars in the windows to prevent escape";
+    }
+    // noun 06864725
+    if sense == 6 {
+        return "noun\tmusical notation for a repeating pattern of musical beats\tmeasure\tthe orchestra omitted the last twelve bars of the song";
+    }
+    // noun 02789271
+    if sense == 7 {
+        return "noun\tan obstruction (usually metal) placed at the top of a goal\t\tit was an excellent kick but the ball hit the bar";
+    }
+    // noun 01077350
+    if sense == 8 {
+        return "noun\tthe act of preventing\tprevention\tthere was no bar against leaving";
+    }
+    // verb 02503803
+    if sense == 9 {
+        return "verb\texpel, as if by official decree\tbanish, relegate\t";
+    }
+    // verb 01342910
+    if sense == 10 {
+        return "verb\tsecure with, or as if with, bars\t\tHe barred the door";
+    }
+    ""
+}

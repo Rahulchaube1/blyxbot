@@ -1,0 +1,119 @@
+use std::cli;
+use std::text;
+use understanding::input;
+use understanding::text;
+use knowledge::units;
+
+fn unit_at(tokens: arglist, start: i64, end: i64) -> str {
+    if end <= start || end - start > 4 { return ""; }
+    let mut i = start;
+    if word(tokens, i) == "degrees" || word(tokens, i) == "degree" { i += 1; }
+    let mut parts = args_new();
+    while i < end { parts = args_push(parts, word(tokens, i)); i += 1; }
+    unit_name(args_join(parts, " "))
+}
+
+fn quantity_text(value: f64) -> str {
+    let mut magnitude = value;
+    if magnitude < 0.0 { magnitude = 0.0 - magnitude; }
+    let mut exponent = 0;
+    if magnitude > 0.0 && magnitude < 0.000001 {
+        while magnitude < 1.0 { magnitude *= 10.0; exponent -= 1; }
+    }
+    let mut whole = whole_integer(magnitude);
+    let mut fraction = whole_integer((magnitude - as_float(whole)) * 1000000000.0 + 0.5);
+    if fraction >= 1000000000 { whole += 1; fraction = 0; }
+    if exponent < 0 && whole == 10 { whole = 1; exponent += 1; }
+    let mut text = integer_text(whole);
+    if fraction > 0 {
+        text = text_concat(text, ".");
+        let mut place = 100000000;
+        while fraction > 0 && place > 0 {
+            text = text_concat(text, digit(fraction / place));
+            fraction = fraction % place;
+            place = place / 10;
+        }
+    }
+    if exponent < 0 { text = text_concat(text, text_concat("e", integer_text(exponent))); }
+    if value < 0.0 { text = text_concat("-", text); }
+    text
+}
+
+fn with_unit(value: f64, unit: str) -> str {
+    let mut label = unit;
+    if unit == "US cup" && value != 1.0 && value != -1.0 { label = "US cups"; }
+    text_concat(quantity_text(value), text_concat(" ", label))
+}
+
+fn convert_value(value: f64, source: str, target: str) -> arglist {
+    let from = unit_measure(source);
+    let to = unit_measure(target);
+    if at(from, 0) != at(to, 0) {
+        return pair("units", "Those units measure different quantities. Choose two units of length, mass, volume, time, or temperature.");
+    }
+    let mut result = value;
+    if at(from, 0) == 5.0 {
+        let mut celsius = value;
+        if source == "°F" { celsius = (value - 32.0) * 5.0 / 9.0; }
+        if source == "K" { celsius = value - 273.15; }
+        if celsius < -273.1500000001 { return pair("units", "That temperature is below absolute zero."); }
+        if source != target {
+            result = celsius;
+            if target == "°F" { result = celsius * 9.0 / 5.0 + 32.0; }
+            if target == "K" { result = celsius + 273.15; }
+        }
+    } else if source != target { result = value * at(from, 1) / at(to, 1); }
+    if result != result || result > 9007199254740991.0 || result < -9007199254740991.0 {
+        return pair("units", "That conversion exceeds my number range.");
+    }
+    let answer = text_concat(with_unit(value, source), text_concat(" ≈ ", with_unit(result, target)));
+    pair("units", text_concat(answer, "."))
+}
+
+fn from_quantity(tokens: arglist, start: i64, end: i64, target: str) -> arglist {
+    if target == "" || end <= start + 1 { return args_new(); }
+    let mut i = start;
+    let mut sign = 1.0;
+    if word(tokens, i) == "-" || word(tokens, i) == "−" || word(tokens, i) == "negative" { sign = -1.0; i += 1; }
+    else if word(tokens, i) == "+" { i += 1; }
+    let mut value = 1.0;
+    if is_number(tokens, i) { value = number_at(tokens, i); }
+    else if word(tokens, i) != "one" && word(tokens, i) != "a" && word(tokens, i) != "an" { return args_new(); }
+    let source = unit_at(tokens, i + 1, end);
+    if source == "" { return args_new(); }
+    convert_value(value * sign, source, target)
+}
+
+pub fn answer_conversion(tokens: arglist) -> arglist {
+    let mut start = 0;
+    let mut end = word_count(tokens);
+    if word(tokens, start) == "please" { start += 1; }
+    if word(tokens, end - 1) == "please" { end -= 1; }
+    if end - start < 4 || end - start > 16 { return args_new(); }
+    if word(tokens, start) == "how" && word(tokens, start + 1) == "many" {
+        let mut at_word = start + 3;
+        while at_word < end {
+            if word(tokens, at_word) == "in" {
+                let mut stop = at_word;
+                if word(tokens, stop - 1) == "are" || word(tokens, stop - 1) == "is" { stop -= 1; }
+                let target = unit_at(tokens, start + 2, stop);
+                let result = from_quantity(tokens, at_word + 1, end, target);
+                if args_len(result) > 0 { return result; }
+            }
+            at_word += 1;
+        }
+        return args_new();
+    }
+    if word(tokens, start) == "convert" || word(tokens, start) == "whats" { start += 1; }
+    else if word(tokens, start) == "what" && (word(tokens, start + 1) == "is" || word(tokens, start + 1) == "'s") { start += 2; }
+    let mut i = start + 2;
+    while i < end - 1 {
+        let sep = word(tokens, i);
+        if sep == "to" || sep == "into" || sep == "in" || sep == "=" {
+            let result = from_quantity(tokens, start, i, unit_at(tokens, i + 1, end));
+            if args_len(result) > 0 { return result; }
+        }
+        i += 1;
+    }
+    args_new()
+}

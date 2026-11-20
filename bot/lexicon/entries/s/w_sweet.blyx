@@ -1,0 +1,37 @@
+// sweet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sweet(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 02368336
+    if sense == 1 {
+        return "adjective\thaving or denoting the characteristic taste of sugar\t\t";
+    }
+    // adj 01459949
+    if sense == 2 {
+        return "adjective\thaving a sweet nature befitting an angel or cherub\tangelic, angelical, cherubic, seraphic\ta sweet disposition";
+    }
+    // adj 01501821
+    if sense == 3 {
+        return "adjective\tpleasing to the ear\tdulcet, honeyed, mellifluous, mellisonant\t";
+    }
+    // adj 01808671
+    if sense == 4 {
+        return "adjective\tpleasing to the senses\t\tthe sweet song of the lark";
+    }
+    // adj 01808413
+    if sense == 5 {
+        return "adjective\tpleasing to the mind or feeling\tgratifying\tsweet revenge";
+    }
+    // adj 01052611
+    if sense == 6 {
+        return "adjective\thaving a natural fragrance\todoriferous, odorous, perfumed, scented, sweet-scented, sweet-smelling\t";
+    }
+    // adj 02367604
+    if sense == 7 {
+        return "adjective\t(used of wines) having a high residual sugar content\t\tsweet dessert wines";
+    }
+    // adv 00472323
+    if sense == 8 {
+        return "adverb\tin an affectionate or loving manner (`sweet' is sometimes a poetic or informal variant of `sweetly')\tsweetly\thow sweet the moonlight sleeps upon this bank";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// pressure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pressure(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 11495041
+    if sense == 1 {
+        return "noun\tthe force applied to a unit area of surface; measured in pascals (SI unit) or in dynes (cgs unit)\tpressure level, force per unit area\tthe compressed gas exerts an increased pressure";
+    }
+    // noun 05195362
+    if sense == 2 {
+        return "noun\ta force that compels\t\tthe public brought pressure to bear on the government";
+    }
+    // noun 00113113
+    if sense == 3 {
+        return "noun\tthe act of pressing; the exertion of pressure\tpress, pressing\the used pressure to stop the bleeding";
+    }
+    // noun 14451349
+    if sense == 4 {
+        return "noun\tthe state of demanding notice or attention\timperativeness, insistence, insistency, press\t";
+    }
+    // noun 05724475
+    if sense == 5 {
+        return "noun\tthe somatic sensation that results from applying force to an area of skin\tpressure sensation\tthe sensitivity of his skin to pressure and temperature was normal";
+    }
+    // verb 02504562
+    if sense == 6 {
+        return "verb\tto cause to do through pressure or necessity, by physical, moral or intellectual means :\"She forced him to take a job in the city\"\tcoerce, hale, squeeze, force\t";
+    }
+    ""
+}

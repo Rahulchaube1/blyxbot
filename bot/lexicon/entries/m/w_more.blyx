@@ -1,0 +1,21 @@
+// more — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_more(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00099341
+    if sense == 1 {
+        return "adverb\tused to form the comparative of some adjectives and adverbs\tto a greater extent\tmore interesting";
+    }
+    // adj 01555133
+    if sense == 2 {
+        return "adjective\t(comparative of `much' used with mass nouns) a quantifier meaning greater in size or amount or extent or degree\tmore than\tmore land";
+    }
+    // adj 01556355
+    if sense == 3 {
+        return "adjective\t(comparative of `many' used with count nouns) quantifier meaning greater in number\t\ta hall with more seats";
+    }
+    // adv 00099712
+    if sense == 4 {
+        return "adverb\tcomparative of much; to a greater degree or extent\t\the works more now";
+    }
+    ""
+}

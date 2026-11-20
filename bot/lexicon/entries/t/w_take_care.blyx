@@ -1,0 +1,17 @@
+// take care — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_take_care(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02591597
+    if sense == 1 {
+        return "verb\tbe careful, prudent, or watchful\t\tTake care when you cross the street!";
+    }
+    // verb 02437707
+    if sense == 2 {
+        return "verb\tbe in charge of or deal with\tmind\t";
+    }
+    // verb 02549581
+    if sense == 3 {
+        return "verb\ttake charge of or deal with\tattend, look, see\t";
+    }
+    ""
+}

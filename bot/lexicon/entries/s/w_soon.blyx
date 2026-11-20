@@ -1,0 +1,9 @@
+// soon — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_soon(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00033922
+    if sense == 1 {
+        return "adverb\tin the near future\tshortly, presently, before long\tthe doctor will soon be here";
+    }
+    ""
+}

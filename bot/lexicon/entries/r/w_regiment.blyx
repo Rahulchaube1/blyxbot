@@ -1,0 +1,13 @@
+// regiment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_regiment(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08213817
+    if sense == 1 {
+        return "noun\tarmy unit smaller than a division\t\t";
+    }
+    // verb 02442372
+    if sense == 2 {
+        return "verb\tsubject to rigid discipline, order, and systematization\t\tregiment one's children";
+    }
+    ""
+}

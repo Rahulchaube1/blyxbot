@@ -1,0 +1,37 @@
+// front — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_front(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 08573472
+    if sense == 1 {
+        return "noun\tthe side that is forward or prominent\tfront end, forepart\t";
+    }
+    // adj 00198147
+    if sense == 2 {
+        return "adjective\trelating to or located in the front\t\tthe front lines";
+    }
+    // noun 08573674
+    if sense == 3 {
+        return "noun\tthe line along which opposing armies face each other\tbattlefront, front line\t";
+    }
+    // noun 05940302
+    if sense == 4 {
+        return "noun\tthe outward appearance of a person\t\the put up a bold front";
+    }
+    // noun 03398467
+    if sense == 5 {
+        return "noun\tthe side that is seen or that goes first\t\t";
+    }
+    // verb 02693319
+    if sense == 6 {
+        return "verb\tbe oriented in a certain direction, often with respect to another reference point; be opposite to\tlook, face\t";
+    }
+    // verb 01079172
+    if sense == 7 {
+        return "verb\tconfront bodily\tbreast\t";
+    }
+    // noun 10113583
+    if sense == 8 {
+        return "noun\ta person used as a cover for some questionable activity\tfront man, figurehead, nominal head, straw man, strawman\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// relation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_relation(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00031921
+    if sense == 1 {
+        return "noun\tan abstraction belonging to or characteristic of two entities or parts together\t\t";
+    }
+    // noun 00845523
+    if sense == 2 {
+        return "noun\tthe act of sexual procreation between a man and a woman; the man's penis is inserted into the woman's vagina and excited until orgasm and ejaculation occur\tsexual intercourse, intercourse, sex act, copulation, coitus, coition, sexual congress, congress, sexual relation, carnal knowledge\t";
+    }
+    ""
+}

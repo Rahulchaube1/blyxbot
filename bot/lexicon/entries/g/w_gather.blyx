@@ -1,0 +1,25 @@
+// gather — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gather(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01380638
+    if sense == 1 {
+        return "verb\tassemble or get together\tgarner, collect, pull together\tgather some stones";
+    }
+    // verb 02428924
+    if sense == 2 {
+        return "verb\tcollect in one place\tmeet, assemble, forgather, foregather\tLet's gather in the dining room";
+    }
+    // verb 00158804
+    if sense == 3 {
+        return "verb\tcollect or gather\taccumulate, cumulate, conglomerate, pile up, amass\t";
+    }
+    // verb 00945125
+    if sense == 4 {
+        return "verb\tconclude from evidence\t\tI gather you have not done your homework";
+    }
+    // verb 01330822
+    if sense == 5 {
+        return "verb\tdraw together into folds or puckers\tpucker, tuck\t";
+    }
+    ""
+}

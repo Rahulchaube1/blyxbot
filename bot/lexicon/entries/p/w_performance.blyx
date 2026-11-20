@@ -1,0 +1,21 @@
+// performance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_performance(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06891493
+    if sense == 1 {
+        return "noun\ta dramatic or musical entertainment\tpublic presentation\tthey listened to ten different performances";
+    }
+    // noun 00550771
+    if sense == 2 {
+        return "noun\tthe act of presenting a play or a piece of music or other entertainment\t\twe congratulated him on his performance at the rehearsal";
+    }
+    // noun 00097504
+    if sense == 3 {
+        return "noun\tthe act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it\texecution, carrying out, carrying into action\tthey criticised his performance as mayor";
+    }
+    // noun 00047106
+    if sense == 4 {
+        return "noun\tany recognized accomplishment\t\tthey admired his performance under stress";
+    }
+    ""
+}

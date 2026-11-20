@@ -1,0 +1,13 @@
+// mood — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mood(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07551052
+    if sense == 1 {
+        return "noun\ta characteristic (habitual or relatively temporary) state of feeling\ttemper, humor, humour\t";
+    }
+    // noun 14524661
+    if sense == 2 {
+        return "noun\tthe prevailing psychological state\tclimate\tthe national mood had changed radically since the last election";
+    }
+    ""
+}

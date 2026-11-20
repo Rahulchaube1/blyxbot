@@ -1,0 +1,21 @@
+// art — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_art(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 02743547
+    if sense == 1 {
+        return "noun\tthe products of human creativity; works of art collectively\tfine art\tan art exhibition";
+    }
+    // noun 00933420
+    if sense == 2 {
+        return "noun\tthe creation of beautiful or significant things\tartistic creation, artistic production\tart does not need to be innovative to be good";
+    }
+    // noun 05638987
+    if sense == 3 {
+        return "noun\ta superior skill that you can learn by study and practice and observation\tartistry, prowess\tthe art of conversation";
+    }
+    // noun 06998748
+    if sense == 4 {
+        return "noun\tphotographs or other visual representations in a printed publication\tartwork, graphics, nontextual matter\t";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// resolution — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_resolution(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 06511874
+    if sense == 1 {
+        return "noun\ta formal expression by a meeting; agreed to by a vote\tdeclaration, resolve\t";
+    }
+    // noun 11505769
+    if sense == 2 {
+        return "noun\tthe ability of a microscope or telescope to measure the angular separation of images that are close together\tresolving power\t";
+    }
+    // noun 04861486
+    if sense == 3 {
+        return "noun\tthe trait of being resolute\tresoluteness, firmness, firmness of purpose, resolve\tit was his unshakeable resolution to finish the work";
+    }
+    // noun 00153809
+    if sense == 4 {
+        return "noun\tfinding a solution to a problem\tsolving\t";
+    }
+    // noun 05789089
+    if sense == 5 {
+        return "noun\tsomething settled or resolved; the outcome of decision making\tsettlement, closure\tthey never did achieve a final resolution of their differences";
+    }
+    // noun 05782884
+    if sense == 6 {
+        return "noun\tanalysis into clear-cut components\tresolving\t";
+    }
+    ""
+}

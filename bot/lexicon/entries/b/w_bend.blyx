@@ -1,0 +1,37 @@
+// bend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bend(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02035919
+    if sense == 1 {
+        return "verb\tform a curve\tflex\tThe stick does not bend";
+    }
+    // verb 02033137
+    if sense == 2 {
+        return "verb\tchange direction\t\tThe road bends";
+    }
+    // verb 01280014
+    if sense == 3 {
+        return "verb\tcause (a plastic object) to assume a crooked or angular form\tflex, deform, twist, turn\tbend the rod";
+    }
+    // verb 02062632
+    if sense == 4 {
+        return "verb\tbend one's back forward from the waist on down\tcrouch, stoop, bow\t";
+    }
+    // noun 13869327
+    if sense == 5 {
+        return "noun\ta circular segment of a curve\tcrook, twist, turn\ta bend in the road";
+    }
+    // noun 07310991
+    if sense == 6 {
+        return "noun\tmovement that causes the formation of a curve\tbending\t";
+    }
+    // noun 02829696
+    if sense == 7 {
+        return "noun\tcurved segment (of a road or river or railroad track etc.)\tcurve\t";
+    }
+    // verb 02034300
+    if sense == 8 {
+        return "verb\tturn from a straight course, fixed direction, or line of interest\tdeflect, turn away\t";
+    }
+    ""
+}

@@ -1,0 +1,41 @@
+// swell — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_swell(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 00555084
+    if sense == 1 {
+        return "verb\tincrease in size, magnitude, number, or intensity\t\tThe music swelled to a crescendo";
+    }
+    // verb 02596908
+    if sense == 2 {
+        return "verb\tbecome filled with pride, arrogance, or anger\tpuff up\tThe mother was swelling with importance when she spoke of her son";
+    }
+    // verb 00256507
+    if sense == 3 {
+        return "verb\texpand abnormally\tswell up, intumesce, tumefy, tumesce\tThe bellies of the starving children are swelling";
+    }
+    // noun 07348258
+    if sense == 4 {
+        return "noun\tthe undulating movement of the surface of the open sea\tcrestless wave\t";
+    }
+    // noun 09452760
+    if sense == 5 {
+        return "noun\ta rounded elevation (especially one on an ocean floor)\t\t";
+    }
+    // noun 04990692
+    if sense == 6 {
+        return "noun\ta crescendo followed by a decrescendo\t\t";
+    }
+    // verb 02626405
+    if sense == 7 {
+        return "verb\tcome up (as of feelings and thoughts, or other ephemeral things)\twell up\tSmoke swelled from it";
+    }
+    // verb 01991204
+    if sense == 8 {
+        return "verb\tcome up, as of a liquid\twell\t";
+    }
+    // adj 01123879
+    if sense == 9 {
+        return "adjective\tvery good\tbang-up, bully, corking, cracking, dandy, great, groovy, keen, neat, nifty, not bad, peachy, slap-up, smashing\t";
+    }
+    ""
+}

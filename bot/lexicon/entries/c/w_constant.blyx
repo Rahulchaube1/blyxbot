@@ -1,0 +1,17 @@
+// constant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_constant(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02506029
+    if sense == 1 {
+        return "adjective\tunvarying in nature\tchangeless, invariant, unvarying\tmaintained a constant temperature";
+    }
+    // noun 05858936
+    if sense == 2 {
+        return "noun\ta quantity that does not vary\tconstant quantity, invariable\t";
+    }
+    // adj 00583239
+    if sense == 3 {
+        return "adjective\tsteadfast in purpose or devotion or affection\t\ta man constant in adherence to his ideals";
+    }
+    ""
+}

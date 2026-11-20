@@ -1,0 +1,25 @@
+// hall — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hall(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 03479952
+    if sense == 1 {
+        return "noun\tan interior passage or corridor onto which rooms open\thallway\tthe elevators were at the end of the hall";
+    }
+    // noun 02715513
+    if sense == 2 {
+        return "noun\ta large entrance or reception room or area\tanteroom, antechamber, entrance hall, foyer, lobby, vestibule\t";
+    }
+    // noun 03478907
+    if sense == 3 {
+        return "noun\ta large room for gatherings or entertainment\t\tlecture hall";
+    }
+    // noun 03224893
+    if sense == 4 {
+        return "noun\ta college or university building containing living quarters for students\tdormitory, dorm, residence hall, student residence\t";
+    }
+    // noun 03718581
+    if sense == 5 {
+        return "noun\tthe large room of a manor or castle\tmanor hall\t";
+    }
+    ""
+}

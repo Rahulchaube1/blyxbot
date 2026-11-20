@@ -1,0 +1,17 @@
+// christian — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_christian(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02952275
+    if sense == 1 {
+        return "adjective\trelating to or characteristic of Christianity\t\tChristian rites";
+    }
+    // noun 09678009
+    if sense == 2 {
+        return "noun\ta religious person who believes Jesus is the Christ and who is a member of a Christian denomination\t\t";
+    }
+    // adj 00411009
+    if sense == 3 {
+        return "adjective\tfollowing the teachings or manifesting the qualities or spirit of Jesus Christ\t\t";
+    }
+    ""
+}

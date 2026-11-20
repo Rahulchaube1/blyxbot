@@ -1,0 +1,17 @@
+// lieutenant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lieutenant(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10259348
+    if sense == 1 {
+        return "noun\ta commissioned military officer\t\t";
+    }
+    // noun 10259225
+    if sense == 2 {
+        return "noun\tan officer in a police force\tpolice lieutenant\t";
+    }
+    // noun 10005280
+    if sense == 3 {
+        return "noun\tan assistant with power to act when his superior is absent\tdeputy\t";
+    }
+    ""
+}

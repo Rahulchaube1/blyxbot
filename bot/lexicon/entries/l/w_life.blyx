@@ -1,0 +1,57 @@
+// life — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_life(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // noun 13963192
+    if sense == 1 {
+        return "noun\ta characteristic state or mode of living\t\tsocial life";
+    }
+    // noun 05810561
+    if sense == 2 {
+        return "noun\tthe experience of being alive; the course of human events and activities\tliving\the could no longer cope with the complexities of life";
+    }
+    // noun 13961399
+    if sense == 3 {
+        return "noun\tthe course of existence of an individual; the actions and events that occur in living\t\the hoped for a new life in Australia";
+    }
+    // noun 13961642
+    if sense == 4 {
+        return "noun\tthe condition of living or the state of being alive\tanimation, living, aliveness\twhile there's life there's hope";
+    }
+    // noun 15140405
+    if sense == 5 {
+        return "noun\tthe period during which something is functional (as between birth and death)\tlifetime, life-time, lifespan\tthe battery had a short life";
+    }
+    // noun 15140744
+    if sense == 6 {
+        return "noun\tthe period between birth and the present time\t\tI have known him all his life";
+    }
+    // noun 15140892
+    if sense == 7 {
+        return "noun\tthe period from the present until death\t\the appointed himself emperor for life";
+    }
+    // noun 10260706
+    if sense == 8 {
+        return "noun\ta living person\t\this heroism saved a life";
+    }
+    // noun 04632157
+    if sense == 9 {
+        return "noun\tanimation and energy in action or expression\tliveliness, spirit, sprightliness\tit was a heavy play and the actors tried in vain to give life to it";
+    }
+    // noun 00006269
+    if sense == 10 {
+        return "noun\tliving things collectively\t\tthe oceans are teeming with life";
+    }
+    // noun 11473291
+    if sense == 11 {
+        return "noun\tthe organic phenomenon that distinguishes living organisms from nonliving ones\t\tthere is no life on the moon";
+    }
+    // noun 06515827
+    if sense == 12 {
+        return "noun\tan account of the series of events making up a person's life\tbiography, life story, life history\t";
+    }
+    // noun 09178727
+    if sense == 13 {
+        return "noun\ta motive for living\t\tpottery was his life";
+    }
+    ""
+}

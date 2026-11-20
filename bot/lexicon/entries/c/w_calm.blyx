@@ -1,0 +1,21 @@
+// calm — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_calm(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00529657
+    if sense == 1 {
+        return "adjective\tnot agitated; without losing self-possession\tunagitated, serene, tranquil\tspoke in a calm voice";
+    }
+    // verb 01764800
+    if sense == 2 {
+        return "verb\tmake calm or still\tcalm down, quiet, tranquilize, tranquillize, tranquillise, quieten, lull, still\t";
+    }
+    // noun 04903813
+    if sense == 3 {
+        return "noun\tsteadiness of mind under stress\tcomposure, calmness, equanimity\t";
+    }
+    // verb 00416571
+    if sense == 4 {
+        return "verb\tmake steady\tsteady, becalm\t";
+    }
+    ""
+}

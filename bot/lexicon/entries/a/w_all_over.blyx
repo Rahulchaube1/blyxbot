@@ -1,0 +1,17 @@
+// all over — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_all_over(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00198039
+    if sense == 1 {
+        return "adverb\tover the entire area\tover\tthe wallpaper was covered all over with flowers";
+    }
+    // adv 00025728
+    if sense == 2 {
+        return "adverb\tto or in any or all places\teverywhere, everyplace\tlooked all over for a suitable gift";
+    }
+    // adj 01003277
+    if sense == 3 {
+        return "adjective\thaving come or been brought to a conclusion\tcomplete, concluded, ended, over, terminated\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// object — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_object(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00002684
+    if sense == 1 {
+        return "noun\ta tangible and visible entity; an entity that can cast a shadow\tphysical object\tit was full of rackets, balls and other objects";
+    }
+    // verb 00807461
+    if sense == 2 {
+        return "verb\texpress or raise an objection or protest or criticism or express dissent\t\tShe never objected to the amount of work her boss charged her with";
+    }
+    // noun 05981230
+    if sense == 3 {
+        return "noun\tthe goal intended to be attained (and which is believed to be attainable)\taim, objective, target\tthe sole object of her trip was to see her children";
+    }
+    // noun 06310237
+    if sense == 4 {
+        return "noun\t(grammar) a constituent that is acted upon\t\tthe object of the verb";
+    }
+    // noun 05810948
+    if sense == 5 {
+        return "noun\tthe focus of cognitions or feelings\t\tobjects of thought";
+    }
+    ""
+}

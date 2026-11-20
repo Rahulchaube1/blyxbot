@@ -1,0 +1,17 @@
+// enough — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_enough(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00145713
+    if sense == 1 {
+        return "adverb\tas much as necessary\tplenty\tHave I eaten enough?";
+    }
+    // adj 02336109
+    if sense == 2 {
+        return "adjective\tsufficient for the purpose\tadequate, decent\tenough food";
+    }
+    // noun 13580415
+    if sense == 3 {
+        return "noun\tan adequate quantity; a quantity that is large enough to achieve a purpose\tsufficiency\tenough is as good as a feast";
+    }
+    ""
+}

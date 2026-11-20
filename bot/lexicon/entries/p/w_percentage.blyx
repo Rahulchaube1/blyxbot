@@ -1,0 +1,13 @@
+// percentage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_percentage(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13817526
+    if sense == 1 {
+        return "noun\ta proportion in relation to a whole (which is usually the amount per hundred)\tpercent, per centum, pct\t";
+    }
+    // noun 13285176
+    if sense == 2 {
+        return "noun\tassets belonging to or due to or contributed by an individual person or group\tshare, portion, part\t";
+    }
+    ""
+}

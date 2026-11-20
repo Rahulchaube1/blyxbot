@@ -1,0 +1,13 @@
+// instance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_instance(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07308889
+    if sense == 1 {
+        return "noun\tan occurrence of something\tcase, example\tanother instance occurred yesterday";
+    }
+    // noun 05820620
+    if sense == 2 {
+        return "noun\tan item of information that is typical of a class or group\texample, illustration, representative\t";
+    }
+    ""
+}

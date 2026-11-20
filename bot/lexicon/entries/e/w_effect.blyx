@@ -1,0 +1,33 @@
+// effect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_effect(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 11410625
+    if sense == 1 {
+        return "noun\ta phenomenon that follows and is caused by some previous phenomenon\tconsequence, outcome, result, event, issue, upshot\tthe magnetic effect was greater when the rod was lengthwise";
+    }
+    // verb 01642924
+    if sense == 2 {
+        return "verb\tproduce\teffectuate, set up\t";
+    }
+    // noun 04675314
+    if sense == 3 {
+        return "noun\tan outward appearance\timpression\tshe retained that bold effect in her reproductions of the original painting";
+    }
+    // noun 05917477
+    if sense == 4 {
+        return "noun\tan impression (especially one that is artificial or contrived)\t\the just did it for effect";
+    }
+    // verb 02560767
+    if sense == 5 {
+        return "verb\tact so as to bring into existence\t\teffect a change";
+    }
+    // noun 06604066
+    if sense == 6 {
+        return "noun\tthe central meaning or theme of a speech or literary work\tessence, burden, core, gist\t";
+    }
+    // noun 04809642
+    if sense == 7 {
+        return "noun\t(of a law) having legal validity\tforce\tthe law is still in effect";
+    }
+    ""
+}

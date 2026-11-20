@@ -1,0 +1,25 @@
+// refuse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_refuse(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00797430
+    if sense == 1 {
+        return "verb\tshow unwillingness towards\tdecline\t";
+    }
+    // verb 02237338
+    if sense == 2 {
+        return "verb\trefuse to accept\treject, pass up, turn down, decline\tHe refused my offer of hospitality";
+    }
+    // verb 02707800
+    if sense == 3 {
+        return "verb\telude, especially in a baffling way\tdefy, resist\t";
+    }
+    // verb 02212825
+    if sense == 4 {
+        return "verb\trefuse to let have\tdeny\t";
+    }
+    // noun 14857151
+    if sense == 5 {
+        return "noun\tfood that is discarded (as from a kitchen)\tgarbage, food waste, scraps\t";
+    }
+    ""
+}

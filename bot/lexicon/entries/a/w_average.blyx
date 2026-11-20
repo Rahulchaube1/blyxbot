@@ -1,0 +1,37 @@
+// average — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_average(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 01594146
+    if sense == 1 {
+        return "adjective\tapproximating the statistical norm or average or expected value\tmean\tthe average income in New England is below that of the nation";
+    }
+    // verb 02645389
+    if sense == 2 {
+        return "verb\tamount to or come to an average, without loss or gain\taverage out\tThe number of hours I work per work averages out to 40";
+    }
+    // noun 06021761
+    if sense == 3 {
+        return "noun\ta statistic describing the location of a distribution\tnorm\t";
+    }
+    // adj 00486290
+    if sense == 4 {
+        return "adjective\tlacking special distinction, rank, or status; commonly encountered\tordinary\taverage people";
+    }
+    // adj 01673061
+    if sense == 5 {
+        return "adjective\tlacking exceptional quality or ability\tfair, mediocre, middling\ta novel of average merit";
+    }
+    // verb 02527294
+    if sense == 6 {
+        return "verb\tachieve or reach on average\t\tHe averaged a C";
+    }
+    // adj 01531957
+    if sense == 7 {
+        return "adjective\taround the middle of a scale of evaluation\tintermediate, medium\tan orange of average size";
+    }
+    // verb 00639998
+    if sense == 8 {
+        return "verb\tcompute the average of\taverage out\t";
+    }
+    ""
+}

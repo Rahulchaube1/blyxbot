@@ -1,0 +1,17 @@
+// later — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_later(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00061203
+    if sense == 1 {
+        return "adverb\thappening at a time subsequent to a reference time\tsubsequently, afterwards, afterward, after, later on\the's going to the store but he'll be back here later";
+    }
+    // adv 00155488
+    if sense == 2 {
+        return "adverb\tat some eventual time in the future\tby and by\tI'll see you later";
+    }
+    // adj 00123485
+    if sense == 3 {
+        return "adjective\tcoming at a subsequent time or stage\tulterior, posterior\t";
+    }
+    ""
+}

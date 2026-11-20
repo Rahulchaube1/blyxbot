@@ -1,0 +1,17 @@
+// war — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_war(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00973077
+    if sense == 1 {
+        return "noun\tthe waging of armed conflict against an enemy\twarfare\tthousands of people were killed in the war";
+    }
+    // noun 13981403
+    if sense == 2 {
+        return "noun\ta legal state created by a declaration of war and ended by official declaration during which the international rules of war apply\tstate of war\twar was declared in November but actual fighting did not begin until the following spring";
+    }
+    // noun 01236296
+    if sense == 3 {
+        return "noun\tan active struggle between competing entities\twarfare\ta price war";
+    }
+    ""
+}

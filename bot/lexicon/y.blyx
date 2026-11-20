@@ -1,0 +1,33 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::y::w_yard;
+use entries::y::w_year;
+use entries::y::w_years;
+use entries::y::w_yell;
+use entries::y::w_yellow;
+use entries::y::w_yesterday;
+use entries::y::w_yet;
+use entries::y::w_yield;
+use entries::y::w_young;
+use entries::y::w_youth;
+
+fn through_w_youth(term: str, sense: i64) -> str {
+    if term == "yard" { return w_yard(sense); }
+    if term == "year" { return w_year(sense); }
+    if term == "years" { return w_years(sense); }
+    if term == "yell" { return w_yell(sense); }
+    if term == "yellow" { return w_yellow(sense); }
+    if term == "yesterday" { return w_yesterday(sense); }
+    if term == "yet" { return w_yet(sense); }
+    if term == "yield" { return w_yield(sense); }
+    if term == "young" { return w_young(sense); }
+    if term == "youth" { return w_youth(sense); }
+    ""
+}
+
+pub fn lookup_y(term: str, sense: i64) -> str {
+    through_w_youth(term, sense)
+}
+
+pub fn words_y() -> str {
+    "yard|year|years|yell|yellow|yesterday|yet|yield|young|youth"
+}

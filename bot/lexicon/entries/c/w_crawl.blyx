@@ -1,0 +1,17 @@
+// crawl — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_crawl(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01885845
+    if sense == 1 {
+        return "verb\tmove slowly; in the case of people or animals with the body near the ground\tcreep\tThe crocodile was crawling along the riverbed";
+    }
+    // noun 00330035
+    if sense == 2 {
+        return "noun\ta very slow movement\t\tthe traffic advanced at a crawl";
+    }
+    // verb 02730682
+    if sense == 3 {
+        return "verb\tfeel as if crawling with insects\t\tMy skin crawled--I was terrified";
+    }
+    ""
+}

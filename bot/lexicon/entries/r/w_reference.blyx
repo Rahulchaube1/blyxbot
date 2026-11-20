@@ -1,0 +1,33 @@
+// reference — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reference(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 06766190
+    if sense == 1 {
+        return "noun\ta remark that calls attention to something or someone\tmention\tthe speaker made several references to his wife";
+    }
+    // noun 06763681
+    if sense == 2 {
+        return "noun\ta short note recognizing a source of information or of a quoted passage\tcitation, cite, acknowledgment, credit, mention, quotation\t";
+    }
+    // noun 07258332
+    if sense == 3 {
+        return "noun\tan indicator that orients you generally\treference point, point of reference\tit is used as a reference for comparing the heating and the electrical energy involved";
+    }
+    // noun 06417598
+    if sense == 4 {
+        return "noun\ta book to which you can refer for authoritative facts\treference book, reference work, book of facts\the contributed articles to the basic reference work on that topic";
+    }
+    // noun 06694796
+    if sense == 5 {
+        return "noun\ta formal recommendation by a former employer to a potential future employer describing the person's qualifications and dependability\tcharacter, character reference\trequests for character references are all too often answered evasively";
+    }
+    // noun 05922949
+    if sense == 6 {
+        return "noun\tthe most direct or specific meaning of a word or expression; the class of objects that an expression refers to\tdenotation, extension\t";
+    }
+    // noun 01264050
+    if sense == 7 {
+        return "noun\tthe act of referring or consulting\tconsultation\treference to an encyclopedia produced the answer";
+    }
+    ""
+}

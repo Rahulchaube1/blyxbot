@@ -1,0 +1,13 @@
+// reasonable — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reasonable(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01943406
+    if sense == 1 {
+        return "adjective\tshowing reason or sound judgment\tsensible\t";
+    }
+    // adj 01532261
+    if sense == 2 {
+        return "adjective\tnot excessive or extreme\tfair, fairish\treasonable prices";
+    }
+    ""
+}

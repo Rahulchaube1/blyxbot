@@ -1,0 +1,25 @@
+// writing — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_writing(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00929718
+    if sense == 1 {
+        return "noun\tthe act of creating written works\tauthorship, composition, penning\twriting was a form of therapy for him";
+    }
+    // noun 06362953
+    if sense == 2 {
+        return "noun\tthe work of a writer; anything expressed in letters of the alphabet (especially when considered from the point of view of style and effect)\twritten material, piece of writing\tthe writing in her novels is excellent";
+    }
+    // noun 06363778
+    if sense == 3 {
+        return "noun\t(usually plural) the collected work of an author\t\tthe idea occurs with increasing frequency in Hemingway's writings";
+    }
+    // noun 06359877
+    if sense == 4 {
+        return "noun\tletters or symbols that are written or imprinted on a surface to represent the sounds or words of a language\t\the turned the paper over so the writing wouldn't show";
+    }
+    // noun 00614224
+    if sense == 5 {
+        return "noun\tthe activity of putting something in written form\tcommittal to writing\tshe did the thinking while he did the writing";
+    }
+    ""
+}

@@ -1,0 +1,65 @@
+// part — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_part(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // noun 13809207
+    if sense == 1 {
+        return "noun\tsomething determined in relation to something that includes it\tportion, component part, component, constituent\the wanted to feel a part of something bigger than himself";
+    }
+    // noun 03892891
+    if sense == 2 {
+        return "noun\tsomething less than the whole of a human artifact\tportion\tthe rear part of the house";
+    }
+    // noun 09385911
+    if sense == 3 {
+        return "noun\ta portion of a natural object\tpiece\tthey analyzed the river into three parts";
+    }
+    // noun 05671974
+    if sense == 4 {
+        return "noun\tthat which concerns a person with regard to a particular role or situation\t\tit requires vigilance on our part";
+    }
+    // noun 08630039
+    if sense == 5 {
+        return "noun\tthe extended spatial location of something\tregion\treligions in all parts of the world";
+    }
+    // noun 00720565
+    if sense == 6 {
+        return "noun\tthe actions and activities assigned to or required or expected of a person or group\tfunction, office, role\tthe government must do its part";
+    }
+    // adv 00007703
+    if sense == 7 {
+        return "adverb\tin part; in some degree; not wholly\tpartially, partly\t";
+    }
+    // noun 05929008
+    if sense == 8 {
+        return "noun\tan actor's portrayal of someone in a play\tcharacter, role, theatrical role, persona\tshe played the part of Desdemona";
+    }
+    // noun 13285176
+    if sense == 9 {
+        return "noun\tassets belonging to or due to or contributed by an individual person or group\tshare, portion, percentage\t";
+    }
+    // noun 05867413
+    if sense == 10 {
+        return "noun\tone of the portions into which something is regarded as divided and which together constitute a whole\tsection, division\tthe written part of the exam";
+    }
+    // verb 02030158
+    if sense == 11 {
+        return "verb\tgo one's own way; move apart\tseparate, split\t";
+    }
+    // noun 05256358
+    if sense == 12 {
+        return "noun\ta line of scalp that can be seen when sections of hair are combed in opposite directions\tparting\this part was right in the middle";
+    }
+    // noun 07030718
+    if sense == 13 {
+        return "noun\tthe melody carried by a particular voice or instrument in polyphonic music\tvoice\the tried to sing the tenor part";
+    }
+    // noun 00787465
+    if sense == 14 {
+        return "noun\tthe part played by a person in bringing about a result\tcontribution, share\t";
+    }
+    // verb 02431320
+    if sense == 15 {
+        return "verb\tdiscontinue an association or relation; go different ways\tseparate, split up, split, break, break up\t";
+    }
+    ""
+}

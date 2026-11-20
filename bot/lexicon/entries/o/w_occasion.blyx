@@ -1,0 +1,21 @@
+// occasion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_occasion(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 07416714
+    if sense == 1 {
+        return "noun\tan event that occurs at a critical time\tjuncture\tit was needed only on special occasions";
+    }
+    // noun 07447261
+    if sense == 2 {
+        return "noun\ta vaguely specified social event\taffair, social occasion, function, social function\tan occasion arranged to honor the president";
+    }
+    // noun 09179264
+    if sense == 3 {
+        return "noun\treason\t\tthere was no occasion for complaint";
+    }
+    // verb 01646528
+    if sense == 4 {
+        return "verb\tgive occasion to\t\t";
+    }
+    ""
+}

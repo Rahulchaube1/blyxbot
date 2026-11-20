@@ -1,0 +1,13 @@
+// enforce — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_enforce(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02560164
+    if sense == 1 {
+        return "verb\tensure observance of laws and rules\timplement, apply\t";
+    }
+    // verb 02560424
+    if sense == 2 {
+        return "verb\tcompel to behave in a certain way\timpose\t";
+    }
+    ""
+}

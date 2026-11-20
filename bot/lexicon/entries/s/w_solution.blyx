@@ -1,0 +1,21 @@
+// solution — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_solution(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 14589223
+    if sense == 1 {
+        return "noun\ta homogeneous mixture of two or more substances; frequently (but not necessarily) a liquid solution\t\the used a solution of peroxide and water";
+    }
+    // noun 06743506
+    if sense == 2 {
+        return "noun\ta statement that solves a problem or explains how to solve the problem\tanswer, result, resolution, solvent\tthey were trying to find a peaceful solution";
+    }
+    // noun 05661668
+    if sense == 3 {
+        return "noun\ta method for solving a problem\t\tthe easy solution is to look it up in the handbook";
+    }
+    // noun 08005954
+    if sense == 4 {
+        return "noun\tthe set of values that give a true statement when substituted into an equation\troot\t";
+    }
+    ""
+}

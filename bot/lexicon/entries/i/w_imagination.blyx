@@ -1,0 +1,17 @@
+// imagination — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_imagination(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05625465
+    if sense == 1 {
+        return "noun\tthe formation of a mental image of something that is not perceived as real and is not present to the senses\timaginativeness, vision\tpopular imagination created a world of demons";
+    }
+    // noun 05767733
+    if sense == 2 {
+        return "noun\tthe ability to form mental images of things or events\timaging, imagery, mental imagery\the could still hear her in his imagination";
+    }
+    // noun 05633860
+    if sense == 3 {
+        return "noun\tthe ability to deal resourcefully with unusual problems\tresource, resourcefulness\t";
+    }
+    ""
+}

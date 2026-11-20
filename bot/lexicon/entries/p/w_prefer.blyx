@@ -1,0 +1,17 @@
+// prefer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_prefer(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01826498
+    if sense == 1 {
+        return "verb\tlike better; value more highly\t\tSome people prefer camping to staying in hotels";
+    }
+    // verb 00679389
+    if sense == 2 {
+        return "verb\tselect as an alternative over another\tchoose, opt\t";
+    }
+    // verb 02400037
+    if sense == 3 {
+        return "verb\tpromote over another\tfavor, favour\t";
+    }
+    ""
+}

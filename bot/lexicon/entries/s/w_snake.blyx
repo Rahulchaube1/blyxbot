@@ -1,0 +1,13 @@
+// snake — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_snake(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 01726692
+    if sense == 1 {
+        return "noun\tlimbless scaly elongate reptile; some are venomous\tserpent, ophidian\t";
+    }
+    // verb 01888165
+    if sense == 2 {
+        return "verb\tmove smoothly and sinuously, like a snake\t\t";
+    }
+    ""
+}

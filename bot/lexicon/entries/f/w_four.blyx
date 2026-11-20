@@ -1,0 +1,13 @@
+// four — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_four(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02186665
+    if sense == 1 {
+        return "adjective\tbeing one more than three\t4, iv\t";
+    }
+    // noun 13744304
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of three and one\t4, IV, tetrad, quatern, quaternion, quaternary, quaternity, quartet, quadruplet, foursome, Little Joe\t";
+    }
+    ""
+}

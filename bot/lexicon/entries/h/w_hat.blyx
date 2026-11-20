@@ -1,0 +1,13 @@
+// hat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hat(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 03497657
+    if sense == 1 {
+        return "noun\theaddress that protects the head from bad weather; has shaped crown and usually a brim\tchapeau, lid\t";
+    }
+    // verb 00047172
+    if sense == 2 {
+        return "verb\tput on or wear a hat\t\tHe was unsuitably hatted";
+    }
+    ""
+}

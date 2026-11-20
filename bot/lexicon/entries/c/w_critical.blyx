@@ -1,0 +1,29 @@
+// critical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_critical(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 00647542
+    if sense == 1 {
+        return "adjective\tmarked by a tendency to find and call attention to errors and flaws\t\ta critical attitude";
+    }
+    // adj 00651935
+    if sense == 2 {
+        return "adjective\tat or of a point at which a property or phenomenon suffers an abrupt change especially having enough mass to sustain a chain reaction\t\ta critical temperature of water is 100 degrees C--its boiling point at standard atmospheric pressure";
+    }
+    // adj 00649586
+    if sense == 3 {
+        return "adjective\tcharacterized by careful evaluation and judgment\t\ta critical reading";
+    }
+    // adj 00903894
+    if sense == 4 {
+        return "adjective\turgently needed; absolutely necessary\tvital\ta critical element of the plan";
+    }
+    // adj 00656132
+    if sense == 5 {
+        return "adjective\tforming or having the nature of a turning point or crisis\tdecisive\ta critical point in the campaign";
+    }
+    // adj 00650577
+    if sense == 6 {
+        return "adjective\tbeing in or verging on a state of crisis or emergency\t\ta critical shortage of food";
+    }
+    ""
+}

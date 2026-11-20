@@ -1,0 +1,13 @@
+// pretend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pretend(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00838043
+    if sense == 1 {
+        return "verb\tmake believe with the intent to deceive\tfeign, sham, affect, dissemble\t";
+    }
+    // verb 01721556
+    if sense == 2 {
+        return "verb\tbehave unnaturally or affectedly\tdissemble, act\t";
+    }
+    ""
+}

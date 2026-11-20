@@ -1,0 +1,17 @@
+// nice — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_nice(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01586342
+    if sense == 1 {
+        return "adjective\tpleasant or pleasing or agreeable in nature or appearance\t\twhat a nice fellow you are and we all thought you so nasty";
+    }
+    // adj 01993408
+    if sense == 2 {
+        return "adjective\tsocially or conventionally correct; refined or virtuous\tdecent\ta nice girl";
+    }
+    // adj 01838916
+    if sense == 3 {
+        return "adjective\tdone with delicacy and skill\tskillful\ta nice bit of craft";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// resemble — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_resemble(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 02665282
+    if sense == 1 {
+        return "verb\tappear like; be similar or bear a likeness to\t\tShe resembles her mother very much";
+    }
+    ""
+}

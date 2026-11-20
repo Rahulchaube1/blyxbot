@@ -1,0 +1,21 @@
+// faith — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_faith(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05946687
+    if sense == 1 {
+        return "noun\ta strong belief in a supernatural power or powers that control human destiny\treligion, religious belief\the lost his faith but not his morality";
+    }
+    // noun 05943066
+    if sense == 2 {
+        return "noun\tcomplete confidence in a person or plan etc\ttrust\the cherished the faith of a good woman";
+    }
+    // noun 08081668
+    if sense == 3 {
+        return "noun\tan institution to express belief in a divine power\treligion, organized religion\ta member of his own faith contradicted him";
+    }
+    // noun 01207187
+    if sense == 4 {
+        return "noun\tloyalty or allegiance to a cause or a person\t\tkeep the faith";
+    }
+    ""
+}

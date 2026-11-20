@@ -1,0 +1,13 @@
+// team — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_team(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08208560
+    if sense == 1 {
+        return "noun\ta cooperative unit (especially in sports)\tsquad\t";
+    }
+    // noun 07985384
+    if sense == 2 {
+        return "noun\ttwo or more draft animals that work together to pull something\t\t";
+    }
+    ""
+}

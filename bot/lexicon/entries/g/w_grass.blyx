@@ -1,0 +1,13 @@
+// grass — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_grass(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 12102133
+    if sense == 1 {
+        return "noun\tnarrow-leaved green herbage: grown as lawns; used as pasture for grazing animals; cut and dried as hay\t\t";
+    }
+    // verb 01137055
+    if sense == 2 {
+        return "verb\tshoot down, of birds\t\t";
+    }
+    ""
+}

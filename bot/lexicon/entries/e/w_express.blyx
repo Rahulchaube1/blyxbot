@@ -1,0 +1,29 @@
+// express — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_express(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00943837
+    if sense == 1 {
+        return "verb\tgive expression to\tshow, evince\t";
+    }
+    // verb 00940384
+    if sense == 2 {
+        return "verb\tarticulate; either verbally or with a cry, shout, or noise\tverbalize, verbalise, utter, give tongue to\tShe expressed her anger";
+    }
+    // verb 01061017
+    if sense == 3 {
+        return "verb\tserve as a means for expressing something\tcarry, convey\t";
+    }
+    // verb 01061481
+    if sense == 4 {
+        return "verb\tindicate through a symbol, formula, etc.\tstate\tCan you express this distance in kilometers?";
+    }
+    // adj 00941148
+    if sense == 5 {
+        return "adjective\tnot tacit or implied\t\ther express wish";
+    }
+    // adv 00334790
+    if sense == 6 {
+        return "adverb\tby express\t\tplease send the letter express";
+    }
+    ""
+}

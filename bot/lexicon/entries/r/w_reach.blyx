@@ -1,0 +1,53 @@
+// reach — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reach(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // verb 02020590
+    if sense == 1 {
+        return "verb\treach a destination, either real or abstract\tmake, attain, hit, arrive at, gain\tThe water reached the doorstep";
+    }
+    // verb 02006834
+    if sense == 2 {
+        return "verb\treach a point in time, or a certain state or level\thit, attain\tThis car can reach a speed of 140 miles per hour";
+    }
+    // verb 01440139
+    if sense == 3 {
+        return "verb\tmove forward or upward in order to touch; also in a metaphorical sense\treach out\tGovernment reaches out to the people";
+    }
+    // verb 00743344
+    if sense == 4 {
+        return "verb\tbe in or establish communication with\tget through, get hold of, contact\tOur advertisements reach millions";
+    }
+    // verb 02526085
+    if sense == 5 {
+        return "verb\tto gain with effort\tachieve, accomplish, attain\t";
+    }
+    // verb 02685665
+    if sense == 6 {
+        return "verb\tto extend as far as\textend to, touch\tThe sunlight reached the wall";
+    }
+    // verb 02022162
+    if sense == 7 {
+        return "verb\treach a goal, e.g., \"make the first team\"\tmake, get to, progress to\t";
+    }
+    // noun 08628921
+    if sense == 8 {
+        return "noun\tthe limits within which something can be effective\trange\the was beyond the reach of their fire";
+    }
+    // noun 05125377
+    if sense == 9 {
+        return "noun\tan area in which something acts or operates or has power or control: \"the range of a supersonic jet\"\tscope, range, orbit, compass, ambit\toutside the reach of the law";
+    }
+    // noun 00341243
+    if sense == 10 {
+        return "noun\tthe act of physically reaching or thrusting out\treaching, stretch\t";
+    }
+    // noun 05623628
+    if sense == 11 {
+        return "noun\tthe limit of capability\tcompass, range, grasp\t";
+    }
+    // verb 02230772
+    if sense == 12 {
+        return "verb\tplace into the hands or custody of\tpass, hand, pass on, turn over, give\t";
+    }
+    ""
+}

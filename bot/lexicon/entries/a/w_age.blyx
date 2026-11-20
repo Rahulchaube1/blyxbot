@@ -1,0 +1,25 @@
+// age — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_age(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 04924103
+    if sense == 1 {
+        return "noun\thow long something has existed\t\tit was replaced because of its age";
+    }
+    // noun 15254028
+    if sense == 2 {
+        return "noun\tan era of history having some distinctive feature\thistoric period\twe live in a litigious age";
+    }
+    // noun 15145171
+    if sense == 3 {
+        return "noun\ta time of life (usually defined in years) at which some particular qualification or power arises\teld\tshe was now of school age";
+    }
+    // verb 00248512
+    if sense == 4 {
+        return "verb\tbegin to seem older; get older\t\tThe death of his wife caused him to age fast";
+    }
+    // verb 00248026
+    if sense == 5 {
+        return "verb\tgrow old or older\tsenesce, get on, mature, maturate\tShe aged gracefully";
+    }
+    ""
+}

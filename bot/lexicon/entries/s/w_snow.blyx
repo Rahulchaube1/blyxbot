@@ -1,0 +1,17 @@
+// snow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_snow(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 11508382
+    if sense == 1 {
+        return "noun\tprecipitation falling from clouds in the form of ice crystals\tsnowfall\t";
+    }
+    // noun 15043763
+    if sense == 2 {
+        return "noun\ta layer of snowflakes (white crystals of frozen water) covering the ground\t\t";
+    }
+    // verb 02758977
+    if sense == 3 {
+        return "verb\tfall as snow\t\tIt was snowing all night";
+    }
+    ""
+}

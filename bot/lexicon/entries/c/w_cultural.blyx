@@ -1,0 +1,17 @@
+// cultural — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cultural(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02898922
+    if sense == 1 {
+        return "adjective\tof or relating to the arts and manners that a group favors\t\tcultural events";
+    }
+    // adj 02248693
+    if sense == 2 {
+        return "adjective\tdenoting or deriving from or distinctive of the ways of living built up by a group of people\tethnic, ethnical\tinfluenced by ethnic and cultural ties";
+    }
+    // adj 02872501
+    if sense == 3 {
+        return "adjective\tof or relating to the shared knowledge and values of a society\t\tcultural roots";
+    }
+    ""
+}

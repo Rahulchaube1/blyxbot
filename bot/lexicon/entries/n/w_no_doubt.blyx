@@ -1,0 +1,9 @@
+// no doubt — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_no_doubt(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00150134
+    if sense == 1 {
+        return "adverb\tadmittedly\tto be sure, without doubt\t";
+    }
+    ""
+}

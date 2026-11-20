@@ -1,0 +1,17 @@
+// communication — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_communication(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06252138
+    if sense == 1 {
+        return "noun\tthe activity of communicating; the activity of conveying information\tcommunicating\tthey could not act without official communication from Moscow";
+    }
+    // noun 00033020
+    if sense == 2 {
+        return "noun\tsomething that is communicated by or to or between people or groups\t\t";
+    }
+    // noun 13792842
+    if sense == 3 {
+        return "noun\ta connection allowing access between persons or places\t\thow many lines of communication can there be among four people?";
+    }
+    ""
+}

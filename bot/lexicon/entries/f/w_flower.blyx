@@ -1,0 +1,17 @@
+// flower — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_flower(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 11669921
+    if sense == 1 {
+        return "noun\ta plant cultivated for its blooms or blossoms\t\t";
+    }
+    // noun 11669335
+    if sense == 2 {
+        return "noun\treproductive organ of angiosperm plants especially one having showy or colorful parts\tbloom, blossom\t";
+    }
+    // verb 00294245
+    if sense == 3 {
+        return "verb\tproduce or yield flowers\tbloom, blossom\t";
+    }
+    ""
+}

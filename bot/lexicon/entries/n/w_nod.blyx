@@ -1,0 +1,25 @@
+// nod — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_nod(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00898434
+    if sense == 1 {
+        return "verb\texpress or signify by nodding\t\tHe nodded his approval";
+    }
+    // verb 00898210
+    if sense == 2 {
+        return "verb\tlower and raise the head, as to indicate assent or agreement or confirmation\t\tThe teacher nodded when the student gave the right answer";
+    }
+    // noun 07274316
+    if sense == 3 {
+        return "noun\ta sign of assent or salutation or command\t\t";
+    }
+    // noun 00336430
+    if sense == 4 {
+        return "noun\tthe act of nodding the head\t\t";
+    }
+    // verb 00016702
+    if sense == 5 {
+        return "verb\tlet the head fall forward through drowsiness\t\tThe old man was nodding in his chair";
+    }
+    ""
+}

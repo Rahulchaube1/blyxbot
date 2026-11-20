@@ -1,0 +1,17 @@
+// fellow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fellow(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 09908025
+    if sense == 1 {
+        return "noun\ta boy or man\tchap, feller, fella, lad, gent, blighter, cuss, bloke\tthere's a fellow at the door";
+    }
+    // noun 09945905
+    if sense == 2 {
+        return "noun\ta friend who is frequently in the company of another\tcompanion, comrade, familiar, associate\t";
+    }
+    // noun 09935990
+    if sense == 3 {
+        return "noun\ta person who is member of one's class or profession\tcolleague, confrere\the sent e-mail to his fellow hackers";
+    }
+    ""
+}

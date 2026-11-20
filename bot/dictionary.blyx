@@ -1,0 +1,104 @@
+use std::cli;
+use std::text;
+use lexicon::catalog;
+use knowledge::english;
+use understanding::text;
+
+// Parse the small positive sense and quiz numbers accepted in conversation state.
+pub fn small_number(value: str) -> i64 {
+    let mut rest = value;
+    let mut number = 0;
+    let mut digits = 0;
+    while rest != "" {
+        let d = digit_head(rest);
+        if d < 0 || digits == 3 { return 0; }
+        number = number * 10 + d;
+        rest = text_after(rest, digit(d));
+        digits += 1;
+    }
+    number
+}
+
+pub fn sense_count(term: str) -> i64 { small_number(dictionary_lookup(term, 0)) }
+
+pub fn dictionary_sense(term: str, number: i64) -> arglist {
+    let row = dictionary_lookup(term, number);
+    if row == "" || number < 1 { return args_new(); }
+    split_text(row, "\t")
+}
+
+fn topic_for(term: str, number: i64) -> str {
+    args_join(args_push(pair("vocab", term), integer_text(number)), "|")
+}
+
+pub fn sentence(value: str) -> str {
+    if text_ends(value, ".") || text_ends(value, "!") || text_ends(value, "?") { return value; }
+    text_concat(value, ".")
+}
+
+fn entry_heading(term: str, pos: str, number: i64, total: i64) -> str {
+    let count = text_concat(integer_text(number), text_concat(" of ", integer_text(total)));
+    text_concat(term, text_concat(" (", text_concat(pos, text_concat(", ", text_concat(count, ")")))))
+}
+
+fn all_parts(term: str, total: i64) -> str {
+    let mut parts = args_new();
+    let mut i = 1;
+    while i <= total {
+        let pos = item(dictionary_sense(term, i), 0);
+        let mut j = 0;
+        while j < args_len(parts) && args_at(parts, j) != pos { j += 1; }
+        if j == args_len(parts) { parts = args_push(parts, pos); }
+        i += 1;
+    }
+    args_join(parts, ", ")
+}
+
+// With a direct example or synonym request, select a sense that supplies the
+// requested material. A follow-up always refers to the meaning already shown.
+pub fn dictionary_answer(term: str, mode: str, number: i64, direct: bool) -> arglist {
+    let total = sense_count(term);
+    if mode == "synonyms" && direct {
+        let guide = word_choice(term);
+        if guide != "" {
+            if total == 0 { return pair("word-choice", guide); }
+            return pair(topic_for(term, 1), guide);
+        }
+    }
+    if total == 0 {
+        let missing = text_concat("My offline dictionary has no entry for “", text_concat(term, "”."));
+        return pair("dictionary", missing);
+    }
+    if number < 1 || number > total {
+        if total == 1 { return pair(topic_for(term, 1), text_concat(term, " has one listed meaning. Ask for sense 1.")); }
+        let options = text_concat(" has ", text_concat(integer_text(total), " numbered meanings. Ask for a sense in that range."));
+        return pair(topic_for(term, 1), text_concat(term, options));
+    }
+    let mut selected = number;
+    let mut row = dictionary_sense(term, number);
+    let mut field = 0;
+    if mode == "synonyms" { field = 2; }
+    if mode == "example" { field = 3; }
+    if direct && field > 0 {
+        let mut i = number;
+        while item(row, field) == "" && i < total {
+            i += 1;
+            let candidate = dictionary_sense(term, i);
+            if item(candidate, field) != "" { selected = i; row = candidate; }
+        }
+    }
+    let topic = topic_for(term, selected);
+    let heading = entry_heading(term, item(row, 0), selected, total);
+    let gloss = sentence(item(row, 1));
+    let mut answer = text_concat(heading, text_concat(" — ", gloss));
+    if mode == "parts" {
+        answer = text_concat("Parts of speech for ", text_concat(term, text_concat(" — ", sentence(all_parts(term, total)))));
+    } else if mode == "synonyms" {
+        if item(row, 2) == "" { answer = text_concat(answer, " This entry lists no synonyms for that sense."); }
+        else { answer = text_concat(answer, text_concat(" Synonyms include ", sentence(item(row, 2)))); }
+    } else if mode == "example" {
+        if item(row, 3) == "" { answer = text_concat(answer, " This entry has no usage example for that sense."); }
+        else { answer = text_concat(answer, text_concat(" For example, “", text_concat(item(row, 3), "”"))); }
+    }
+    pair(topic, answer)
+}

@@ -1,0 +1,41 @@
+// around — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_around(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // adv 00071165
+    if sense == 1 {
+        return "adverb\tin the area or vicinity\tabout\thanging around";
+    }
+    // adv 00071601
+    if sense == 2 {
+        return "adverb\tby a circular or circuitous route\t\tHe came all the way around the base";
+    }
+    // adv 00072329
+    if sense == 3 {
+        return "adverb\tused of movement to or among many different places or in no particular direction\tabout\tnews gets around (or about)";
+    }
+    // adv 00071741
+    if sense == 4 {
+        return "adverb\tin a circle or circular motion\t\tThe wheels are spinning around";
+    }
+    // adv 00007015
+    if sense == 5 {
+        return "adverb\t(of quantities) imprecise but fairly close to correct\tapproximately, about, close to, just about, some, roughly, more or less, or so\tweighs around a hundred pounds";
+    }
+    // adv 00072201
+    if sense == 6 {
+        return "adverb\tin or to a reversed position or direction\tabout\tsuddenly she turned around";
+    }
+    // adv 00072043
+    if sense == 7 {
+        return "adverb\tto a particular destination either specified or understood\t\tshe came around to see me";
+    }
+    // adv 00071840
+    if sense == 8 {
+        return "adverb\tall around or on all sides\tabout\tdirty clothes lying around (or about)";
+    }
+    // adv 00071050
+    if sense == 9 {
+        return "adverb\tin circumference\t\tthe trunk is ten feet around";
+    }
+    ""
+}

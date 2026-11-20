@@ -1,0 +1,41 @@
+// notice — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_notice(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 02154508
+    if sense == 1 {
+        return "verb\tdiscover or determine the existence, presence, or fact of\tdetect, observe, find, discover\t";
+    }
+    // verb 02118476
+    if sense == 2 {
+        return "verb\tnotice or perceive\tmark, note\t";
+    }
+    // noun 06747670
+    if sense == 3 {
+        return "noun\tan announcement containing information about an event\t\tyou didn't give me enough notice";
+    }
+    // noun 05703429
+    if sense == 4 {
+        return "noun\tthe act of noticing or paying attention\tobservation, observance\the escaped the notice of the police";
+    }
+    // noun 07185668
+    if sense == 5 {
+        return "noun\ta request for payment\tnotification\t";
+    }
+    // noun 07212612
+    if sense == 6 {
+        return "noun\tadvance notification (usually written) of the intention to withdraw from an arrangement of contract\t\twe received a notice to vacate the premises";
+    }
+    // noun 06793426
+    if sense == 7 {
+        return "noun\ta sign posted in a public place as an advertisement\tposter, posting, placard, bill, card\t";
+    }
+    // noun 05703803
+    if sense == 8 {
+        return "noun\tpolite or favorable attention\t\this hard work soon attracted the teacher's notice";
+    }
+    // verb 01058574
+    if sense == 9 {
+        return "verb\tmake or write a comment on\tcomment, remark, point out\t";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// evening — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_evening(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 15166462
+    if sense == 1 {
+        return "noun\tthe latter part of the day (the period of decreasing daylight from late afternoon until nightfall)\teve, even, eventide\the enjoyed the evening light across the lake";
+    }
+    ""
+}

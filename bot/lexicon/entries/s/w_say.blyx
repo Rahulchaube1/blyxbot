@@ -1,0 +1,37 @@
+// say — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_say(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01009240
+    if sense == 1 {
+        return "verb\texpress in words\tstate, tell\t";
+    }
+    // verb 01016002
+    if sense == 2 {
+        return "verb\treport or maintain\tallege, aver\tThe registrar says that I owe the school money";
+    }
+    // verb 00917300
+    if sense == 3 {
+        return "verb\texpress a supposition\tsuppose\tLet us say that he did not tell the truth";
+    }
+    // verb 02730813
+    if sense == 4 {
+        return "verb\thave or contain a certain wording or form\tread\tWhat does the law say?";
+    }
+    // verb 00746718
+    if sense == 5 {
+        return "verb\tgive instructions to or direct somebody to do something with authority\torder, tell, enjoin\t";
+    }
+    // verb 00978549
+    if sense == 6 {
+        return "verb\tspeak, pronounce, or utter in a certain way\tpronounce, articulate, enounce, sound out, enunciate\tI cannot say `zip wire'";
+    }
+    // verb 00928959
+    if sense == 7 {
+        return "verb\tcommunicate or express nonverbally\t\tWhat does this painting say?";
+    }
+    // verb 00979870
+    if sense == 8 {
+        return "verb\tutter aloud\t\t";
+    }
+    ""
+}

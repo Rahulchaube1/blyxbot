@@ -1,0 +1,21 @@
+// trial — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_trial(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00791078
+    if sense == 1 {
+        return "noun\tthe act of testing something\ttest, run\tin the experimental trials the amount of carbon was measured separately";
+    }
+    // noun 05799212
+    if sense == 2 {
+        return "noun\ttrying something to find out about it\ttrial run, test, tryout\ta sample for ten days free trial";
+    }
+    // noun 00794367
+    if sense == 3 {
+        return "noun\tthe act of undergoing testing\ttest\tcandidates must compete in a trial of skill";
+    }
+    // noun 01195867
+    if sense == 4 {
+        return "noun\t(law) the determination of a person's innocence or guilt by due process of law\t\the had a fair trial and the jury found him guilty";
+    }
+    ""
+}

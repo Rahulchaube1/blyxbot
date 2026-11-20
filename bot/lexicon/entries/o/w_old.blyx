@@ -1,0 +1,21 @@
+// old — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_old(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01643620
+    if sense == 1 {
+        return "adjective\t(used especially of persons) having lived for a relatively long time or attained a specific age\t\this mother is very old";
+    }
+    // adj 01638438
+    if sense == 2 {
+        return "adjective\tof long duration; not new\t\told tradition";
+    }
+    // adj 00966357
+    if sense == 3 {
+        return "adjective\t(used for emphasis) very familiar\t\tgood old boy";
+    }
+    // adj 00936297
+    if sense == 4 {
+        return "adjective\tskilled through long experience\tolder\tan old offender";
+    }
+    ""
+}

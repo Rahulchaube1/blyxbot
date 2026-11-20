@@ -1,0 +1,17 @@
+// obtain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_obtain(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02238085
+    if sense == 1 {
+        return "verb\tcome into possession of\t\tHow did you obtain the visa?";
+    }
+    // verb 00522751
+    if sense == 2 {
+        return "verb\treceive a specified treatment (abstract)\treceive, get, find, incur\t";
+    }
+    // verb 02648502
+    if sense == 3 {
+        return "verb\tbe valid, applicable, or true\tprevail, hold\t";
+    }
+    ""
+}

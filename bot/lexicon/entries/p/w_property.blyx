@@ -1,0 +1,17 @@
+// property — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_property(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13244109
+    if sense == 1 {
+        return "noun\tsomething owned; any tangible or intangible possession that is owned by someone\tbelongings, holding\tthat hat is my property";
+    }
+    // noun 04916342
+    if sense == 2 {
+        return "noun\ta basic or essential attribute shared by all members of a class\t\ta study of the physical properties of atomic particles";
+    }
+    // noun 08513718
+    if sense == 3 {
+        return "noun\tany area set aside for a particular purpose\tplace\tthe president was concerned about the property across from the White House";
+    }
+    ""
+}

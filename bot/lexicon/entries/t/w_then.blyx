@@ -1,0 +1,25 @@
+// then — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_then(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adv 00117620
+    if sense == 1 {
+        return "adverb\tsubsequently or soon afterward (often used as sentence connectors)\tso, and so, and then\tthen he left";
+    }
+    // adv 00118032
+    if sense == 2 {
+        return "adverb\tin that case or as a consequence\t\tif he didn't take it, then who did?";
+    }
+    // adv 00117903
+    if sense == 3 {
+        return "adverb\tat that time\t\tI was young then";
+    }
+    // noun 15296354
+    if sense == 4 {
+        return "noun\tthat time; that moment\t\twe will arrive before then";
+    }
+    // adj 01731108
+    if sense == 5 {
+        return "adjective\tat a specific prior time\t\tthe then president";
+    }
+    ""
+}

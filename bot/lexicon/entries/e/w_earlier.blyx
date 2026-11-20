@@ -1,0 +1,17 @@
+// earlier — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_earlier(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00060939
+    if sense == 1 {
+        return "adverb\tearlier in time; previously\tbefore\the called me the day before but your call had come even earlier";
+    }
+    // adv 00259096
+    if sense == 2 {
+        return "adverb\tcomparatives of `soon' or `early'\tsooner\tcame earlier than I expected";
+    }
+    // adv 00167286
+    if sense == 3 {
+        return "adverb\tbefore now\tin the first place, in the beginning, to begin with, originally\t";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// sister — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sister(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 10602985
+    if sense == 1 {
+        return "noun\ta female person who has the same parents as another person\tsis\tmy sister married a musician";
+    }
+    ""
+}

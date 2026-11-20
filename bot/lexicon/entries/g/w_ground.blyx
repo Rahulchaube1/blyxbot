@@ -1,0 +1,45 @@
+// ground — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ground(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 09334396
+    if sense == 1 {
+        return "noun\tthe solid part of the earth's surface\tland, dry land, earth, solid ground, terra firma\the dropped the logs on the ground";
+    }
+    // noun 09178999
+    if sense == 2 {
+        return "noun\ta rational motive for a belief or action\treason\tthe grounds for their declaration";
+    }
+    // noun 14842992
+    if sense == 3 {
+        return "noun\tthe loose soft material that makes up a large part of the land surface\tearth\t";
+    }
+    // verb 01304944
+    if sense == 4 {
+        return "verb\tfix firmly and stably\tanchor\t";
+    }
+    // noun 13790912
+    if sense == 5 {
+        return "noun\ta relation that provides the foundation for something\tfooting, basis\t";
+    }
+    // noun 08580134
+    if sense == 6 {
+        return "noun\ta position to be won or defended in battle (or as if in battle)\t\tthey gained ground step by step";
+    }
+    // noun 05933834
+    if sense == 7 {
+        return "noun\tthe part of a scene (or picture) that lies behind objects in the foreground\tbackground\t";
+    }
+    // verb 01502762
+    if sense == 8 {
+        return "verb\tconfine or restrict to the ground\t\tAfter the accident, they grounded the plane and the pilot";
+    }
+    // verb 01502654
+    if sense == 9 {
+        return "verb\tplace or put on the ground\t\t";
+    }
+    // verb 00830648
+    if sense == 10 {
+        return "verb\tinstruct someone in the fundamentals of a subject\t\t";
+    }
+    ""
+}

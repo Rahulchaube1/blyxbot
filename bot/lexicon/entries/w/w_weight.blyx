@@ -1,0 +1,33 @@
+// weight — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_weight(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 05026843
+    if sense == 1 {
+        return "noun\tthe vertical force exerted by a mass as a result of gravity\t\t";
+    }
+    // noun 04571292
+    if sense == 2 {
+        return "noun\tsports equipment used in calisthenic exercises and weightlifting; it is not attached to anything and is raised and lowered by use of the hands and arms\tfree weight, exercising weight\t";
+    }
+    // noun 05172322
+    if sense == 3 {
+        return "noun\tthe relative importance granted to something\tweightiness\this opinion carries great weight";
+    }
+    // noun 04571088
+    if sense == 4 {
+        return "noun\tan artifact that is heavy\t\t";
+    }
+    // noun 07538812
+    if sense == 5 {
+        return "noun\tan oppressive feeling of heavy force\t\tbowed down by the weight of responsibility";
+    }
+    // verb 01487311
+    if sense == 6 {
+        return "verb\tweight down with a load\tburden, burthen, weight down\t";
+    }
+    // verb 00680485
+    if sense == 7 {
+        return "verb\tpresent with a bias\tslant, angle\t";
+    }
+    ""
+}

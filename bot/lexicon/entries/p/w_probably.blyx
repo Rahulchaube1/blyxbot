@@ -1,0 +1,9 @@
+// probably — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_probably(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00138611
+    if sense == 1 {
+        return "adverb\twith considerable certainty; without much doubt\tlikely, in all likelihood, in all probability, belike\tHe is probably out of the country";
+    }
+    ""
+}

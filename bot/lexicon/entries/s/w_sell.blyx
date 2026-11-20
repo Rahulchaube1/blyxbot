@@ -1,0 +1,25 @@
+// sell — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sell(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02242464
+    if sense == 1 {
+        return "verb\texchange or deliver for money or its equivalent\t\tShe sells her body to survive and support her drug habit";
+    }
+    // verb 02727883
+    if sense == 2 {
+        return "verb\tbe sold at a certain price or in a certain way\t\tThese books sell like hot cakes";
+    }
+    // verb 00767635
+    if sense == 3 {
+        return "verb\tpersuade somebody to accept something\t\tThe French try to sell us their image as great lovers";
+    }
+    // verb 02244956
+    if sense == 4 {
+        return "verb\tdo business; offer for sale as for one's livelihood\tdeal, trade\tThe brothers sell shoes";
+    }
+    // verb 02235666
+    if sense == 5 {
+        return "verb\tgive up for a price or reward\t\t";
+    }
+    ""
+}

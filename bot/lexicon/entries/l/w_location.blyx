@@ -1,0 +1,17 @@
+// location — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_location(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00027167
+    if sense == 1 {
+        return "noun\ta point or extent in space\t\t";
+    }
+    // noun 01051331
+    if sense == 2 {
+        return "noun\tthe act of putting something in a certain place\tplacement, locating, position, positioning, emplacement\t";
+    }
+    // noun 00155487
+    if sense == 3 {
+        return "noun\ta determination of the place where something is\tlocalization, localisation, locating, fix\t";
+    }
+    ""
+}

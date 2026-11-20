@@ -1,0 +1,29 @@
+// paper — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_paper(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 14974264
+    if sense == 1 {
+        return "noun\ta material made of cellulose pulp derived mainly from wood or rags or certain grasses\t\t";
+    }
+    // noun 06409752
+    if sense == 2 {
+        return "noun\tan essay (especially one written as an assignment)\tcomposition, report, theme\t";
+    }
+    // noun 06267145
+    if sense == 3 {
+        return "noun\ta daily or weekly publication on folded sheets; contains news and articles and advertisements\tnewspaper\t";
+    }
+    // noun 06255613
+    if sense == 4 {
+        return "noun\ta medium for written communication\t\tthe notion of an office running without paper is absurd";
+    }
+    // noun 06269956
+    if sense == 5 {
+        return "noun\ta scholarly article describing the results of observations or stating hypotheses\t\the has written many scientific papers";
+    }
+    // noun 08062970
+    if sense == 6 {
+        return "noun\ta business firm that publishes newspapers\tnewspaper, newspaper publisher\t";
+    }
+    ""
+}

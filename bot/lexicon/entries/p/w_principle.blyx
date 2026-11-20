@@ -1,0 +1,29 @@
+// principle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_principle(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05913538
+    if sense == 1 {
+        return "noun\ta basic generalization that is accepted as true and that can be used as a basis for reasoning or conduct\trule\ttheir principles of composition characterized all their works";
+    }
+    // noun 05955323
+    if sense == 2 {
+        return "noun\ta rule or standard especially of good behavior\t\ta man of principle";
+    }
+    // noun 05872477
+    if sense == 3 {
+        return "noun\ta basic truth or law or assumption\t\tthe principles of democracy";
+    }
+    // noun 05874232
+    if sense == 4 {
+        return "noun\ta rule or law concerning a natural phenomenon or the function of a complex system\trule\tthe principle of the conservation of mass";
+    }
+    // noun 06655388
+    if sense == 5 {
+        return "noun\trule of personal conduct\tprecept\t";
+    }
+    // noun 05793210
+    if sense == 6 {
+        return "noun\t(law) an explanation of the fundamental reasons (especially an explanation of the working of some device in terms of laws of nature)\trationale\tthe principles of internal-combustion engines";
+    }
+    ""
+}

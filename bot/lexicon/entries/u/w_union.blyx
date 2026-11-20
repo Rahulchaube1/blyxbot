@@ -1,0 +1,21 @@
+// union — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_union(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08233056
+    if sense == 1 {
+        return "noun\tan organization of employees formed to bargain with the employer\tlabor union, trade union, trades union, brotherhood\tyou have to join the union in order to get a job";
+    }
+    // adj 01606214
+    if sense == 2 {
+        return "adjective\tbeing of or having to do with the northern United States and those loyal to the Union during the American Civil War\tFederal\tUnion soldiers";
+    }
+    // noun 09052314
+    if sense == 3 {
+        return "noun\tthe United States (especially the northern states during the American Civil War)\tNorth\the has visited every state in the Union";
+    }
+    // noun 00847340
+    if sense == 4 {
+        return "noun\tthe act of pairing a male and female for reproductive purposes\tcoupling, mating, pairing, conjugation, sexual union\t";
+    }
+    ""
+}

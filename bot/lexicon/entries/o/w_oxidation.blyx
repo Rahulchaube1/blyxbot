@@ -1,0 +1,9 @@
+// oxidation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_oxidation(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 13530408
+    if sense == 1 {
+        return "noun\tthe process of oxidizing; the addition of oxygen to a compound with a loss of electrons; always occurs accompanied by reduction\toxidization, oxidisation\t";
+    }
+    ""
+}

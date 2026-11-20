@@ -1,0 +1,9 @@
+// essentially — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_essentially(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00003483
+    if sense == 1 {
+        return "adverb\tin essence; at bottom or by one's (or its) very nature\tbasically, fundamentally\tthe argument was essentially a technical one";
+    }
+    ""
+}

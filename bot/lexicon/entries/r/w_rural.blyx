@@ -1,0 +1,13 @@
+// rural — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rural(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02050452
+    if sense == 1 {
+        return "adjective\tliving in or characteristic of farming or country life\t\trural people";
+    }
+    // adj 02790726
+    if sense == 2 {
+        return "adjective\tof or relating to the countryside as opposed to the city\t\trural electrification";
+    }
+    ""
+}

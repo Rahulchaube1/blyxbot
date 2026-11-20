@@ -1,0 +1,25 @@
+// club — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_club(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08079613
+    if sense == 1 {
+        return "noun\ta team of professional baseball players who play and travel together\tbaseball club, ball club, nine\teach club played six home games with teams in its own division";
+    }
+    // noun 08227214
+    if sense == 2 {
+        return "noun\ta formal association of people with similar interests\tsocial club, society, guild, gild, lodge, order\the joined a golf club";
+    }
+    // noun 03053474
+    if sense == 3 {
+        return "noun\tstout stick that is larger at one end\t\the carried a club in self defense";
+    }
+    // noun 03054311
+    if sense == 4 {
+        return "noun\ta building that is occupied by a social club\tclubhouse\t";
+    }
+    // noun 03446070
+    if sense == 5 {
+        return "noun\tgolf equipment used by a golfer to hit a golf ball\tgolf club, golf-club\t";
+    }
+    ""
+}

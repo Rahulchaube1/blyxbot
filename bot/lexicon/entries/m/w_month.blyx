@@ -1,0 +1,13 @@
+// month — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_month(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 15209413
+    if sense == 1 {
+        return "noun\tone of the twelve divisions of the calendar year\tcalendar month\the paid the bill last month";
+    }
+    // noun 15206296
+    if sense == 2 {
+        return "noun\ta time unit of approximately 30 days\t\the was given a month to pay the bill";
+    }
+    ""
+}

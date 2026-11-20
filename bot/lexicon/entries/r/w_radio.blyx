@@ -1,0 +1,25 @@
+// radio — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_radio(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 06277135
+    if sense == 1 {
+        return "noun\tmedium for communication\tradiocommunication, wireless\t";
+    }
+    // noun 04043733
+    if sense == 2 {
+        return "noun\tan electronic receiver that detects and demodulates and amplifies transmitted signals\tradio receiver, receiving set, radio set, tuner, wireless\t";
+    }
+    // noun 04041544
+    if sense == 3 {
+        return "noun\ta communication system based on broadcasting electromagnetic waves\twireless\t";
+    }
+    // verb 01007495
+    if sense == 4 {
+        return "verb\ttransmit messages via radio waves\t\the radioed for help";
+    }
+    // adj 02953847
+    if sense == 5 {
+        return "adjective\tindicating radiation or radioactivity\t\t";
+    }
+    ""
+}

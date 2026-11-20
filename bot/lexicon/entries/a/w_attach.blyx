@@ -1,0 +1,17 @@
+// attach — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_attach(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01296462
+    if sense == 1 {
+        return "verb\tcause to be attached\t\t";
+    }
+    // verb 01290255
+    if sense == 2 {
+        return "verb\tbe attached; be in contact with\t\t";
+    }
+    // verb 01290422
+    if sense == 3 {
+        return "verb\tbecome attached\t\tThe spider's thread attached to the window sill";
+    }
+    ""
+}

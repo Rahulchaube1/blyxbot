@@ -1,0 +1,49 @@
+// be — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_be(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 02604760
+    if sense == 1 {
+        return "verb\thave the quality of being; (copula, used with an adjective or a predicate noun)\t\t";
+    }
+    // verb 02616386
+    if sense == 2 {
+        return "verb\tbe identical to; be someone or something\t\t";
+    }
+    // verb 02655135
+    if sense == 3 {
+        return "verb\toccupy a certain position or area; be somewhere\t\t";
+    }
+    // verb 02603699
+    if sense == 4 {
+        return "verb\thave an existence, be extant\texist\t";
+    }
+    // verb 02749904
+    if sense == 5 {
+        return "verb\thappen, occur, take place\t\t";
+    }
+    // verb 02664769
+    if sense == 6 {
+        return "verb\tbe identical or equivalent to\tequal\t";
+    }
+    // verb 02620587
+    if sense == 7 {
+        return "verb\tform or compose\tconstitute, represent, make up, comprise\t";
+    }
+    // verb 02445925
+    if sense == 8 {
+        return "verb\twork in a specific place, with a specific subject, or in a specific function\tfollow\t";
+    }
+    // verb 02697725
+    if sense == 9 {
+        return "verb\trepresent, as of a character on stage\tembody, personify\t";
+    }
+    // verb 02268246
+    if sense == 10 {
+        return "verb\tspend or use time\t\tI may be an hour";
+    }
+    // verb 02614181
+    if sense == 11 {
+        return "verb\thave life, be alive\tlive\t";
+    }
+    ""
+}

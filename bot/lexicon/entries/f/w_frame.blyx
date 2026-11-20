@@ -1,0 +1,41 @@
+// frame — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_frame(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 03391301
+    if sense == 1 {
+        return "noun\tthe framework for a pair of eyeglasses\t\t";
+    }
+    // noun 03391464
+    if sense == 2 {
+        return "noun\ta single one of a series of still transparent pictures forming a cinema, television or video film\t\t";
+    }
+    // verb 01586850
+    if sense == 3 {
+        return "verb\tenclose in or as if in a frame\tframe in, border\tframe a picture";
+    }
+    // noun 05217168
+    if sense == 4 {
+        return "noun\talternative names for the body of a human being\thuman body, physical body, material body, soma, build, figure, physique, anatomy, shape, bod, chassis, form, flesh\t";
+    }
+    // verb 02711835
+    if sense == 5 {
+        return "verb\tenclose in a frame, as of a picture\t\t";
+    }
+    // noun 15255804
+    if sense == 6 {
+        return "noun\t(baseball) one of nine divisions of play during which each team has a turn at bat\tinning\t";
+    }
+    // verb 02578008
+    if sense == 7 {
+        return "verb\ttake or catch as if in a snare or trap\tensnare, entrap, set up\tThe innocent man was framed by the police";
+    }
+    // verb 00981276
+    if sense == 8 {
+        return "verb\tformulate in a particular style or language\tredact, cast, put, couch\t";
+    }
+    // verb 00706804
+    if sense == 9 {
+        return "verb\tmake up plans or basic details for\tcompose, draw up\tframe a policy";
+    }
+    ""
+}

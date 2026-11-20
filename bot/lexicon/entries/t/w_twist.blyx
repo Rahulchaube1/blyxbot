@@ -1,0 +1,41 @@
+// twist — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_twist(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 01868370
+    if sense == 1 {
+        return "verb\tto move in a twisting or contorted motion, (especially when struggling)\twrithe, wrestle, wriggle, worm, squirm\t";
+    }
+    // verb 01280014
+    if sense == 2 {
+        return "verb\tcause (a plastic object) to assume a crooked or angular form\tflex, bend, deform, turn\ttwist the dough into a braid";
+    }
+    // noun 07423365
+    if sense == 3 {
+        return "noun\tan unforeseen development\tturn, turn of events\t";
+    }
+    // noun 07173959
+    if sense == 4 {
+        return "noun\tan interpretation of a text or action\tconstruction\t";
+    }
+    // noun 00171249
+    if sense == 5 {
+        return "noun\tany clever maneuver\tdevice, gimmick\t";
+    }
+    // verb 01222645
+    if sense == 6 {
+        return "verb\tturn in the opposite direction\t\ttwist one's head";
+    }
+    // noun 00343249
+    if sense == 7 {
+        return "noun\tthe act of rotating rapidly\tspin, twirl, twisting, whirl\tit broke off after much twisting";
+    }
+    // verb 01223182
+    if sense == 8 {
+        return "verb\tform into a spiral shape\ttwine, distort\tThe cord is all twisted";
+    }
+    // verb 00143914
+    if sense == 9 {
+        return "verb\tform into twists\t\tTwist the strips of dough";
+    }
+    ""
+}

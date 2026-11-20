@@ -1,0 +1,33 @@
+// column — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_column(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 08429052
+    if sense == 1 {
+        return "noun\ta line of units following one after another\t\t";
+    }
+    // noun 03074574
+    if sense == 2 {
+        return "noun\ta vertical glass tube used in column chromatography; a mixture is poured in the top and washed through a stationary substance where components of the mixture are adsorbed selectively to form colored bands\tchromatography column\t";
+    }
+    // noun 08433575
+    if sense == 3 {
+        return "noun\ta vertical array of numbers or other information\t\the added a column of numbers";
+    }
+    // noun 13900422
+    if sense == 4 {
+        return "noun\tanything that approximates the shape of a column or tower\ttower, pillar\tthe test tube held a column of white powder";
+    }
+    // noun 06268567
+    if sense == 5 {
+        return "noun\tan article giving opinions or perspectives\teditorial, newspaper column\t";
+    }
+    // noun 03074380
+    if sense == 6 {
+        return "noun\ta vertical cylindrical structure standing alone and not supporting anything (such as a monument)\tpillar\t";
+    }
+    // noun 03073977
+    if sense == 7 {
+        return "noun\t(architecture) a tall vertical cylindrical structure standing upright and used to support a structure\tpillar\t";
+    }
+    ""
+}

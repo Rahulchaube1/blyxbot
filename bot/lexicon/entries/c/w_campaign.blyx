@@ -1,0 +1,25 @@
+// campaign — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_campaign(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 07472929
+    if sense == 1 {
+        return "noun\ta race between candidates for elective office\tpolitical campaign, run\tI managed his campaign for governor";
+    }
+    // verb 01094086
+    if sense == 2 {
+        return "verb\trun, stand, or compete for an office or a position\trun\t";
+    }
+    // noun 00798245
+    if sense == 3 {
+        return "noun\ta series of actions advancing a principle or tending toward a particular end\tcause, crusade, drive, movement, effort\the supported populist campaigns";
+    }
+    // noun 00968155
+    if sense == 4 {
+        return "noun\tseveral related operations aimed at achieving a particular goal (usually within geographical and temporal constraints)\tmilitary campaign\t";
+    }
+    // verb 02589576
+    if sense == 5 {
+        return "verb\texert oneself continuously, vigorously, or obtrusively to gain an end or engage in a crusade for a certain cause or person; be an advocate for\tcrusade, fight, press, push, agitate\t";
+    }
+    ""
+}

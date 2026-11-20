@@ -1,0 +1,149 @@
+// run — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_run(sense: i64) -> str {
+    if sense == 0 { return "36"; }
+    // verb 01926311
+    if sense == 1 {
+        return "verb\tmove fast by using one's feet, with one foot off the ground at any given time\t\tDon't run--you'll be out of breath";
+    }
+    // verb 02075049
+    if sense == 2 {
+        return "verb\tflee; take to one's heels; cut and run\tscat, scarper, turn tail, lam, run away, hightail it, bunk, head for the hills, take to the woods, escape, fly the coop, break away\tIf you see this man, run!";
+    }
+    // verb 02685951
+    if sense == 3 {
+        return "verb\tstretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point\tgo, pass, lead, extend\tService runs all the way to Cranbury";
+    }
+    // verb 02443849
+    if sense == 4 {
+        return "verb\tdirect or control; projects, businesses, etc.\toperate\tShe is running a relief operation in the Sudan";
+    }
+    // noun 00189565
+    if sense == 5 {
+        return "noun\ta score in baseball made by a runner touching all four bases safely\ttally\tthe Yankees scored 3 runs in the bottom of the 9th";
+    }
+    // verb 02721284
+    if sense == 6 {
+        return "verb\thave a particular form\tgo\tthe story or argument runs as follows";
+    }
+    // verb 02066939
+    if sense == 7 {
+        return "verb\tmove along, of liquids\tflow, feed, course\t";
+    }
+    // verb 01525666
+    if sense == 8 {
+        return "verb\tperform as expected when applied\tfunction, work, operate, go\tDoes this old car still run well?";
+    }
+    // verb 02727039
+    if sense == 9 {
+        return "verb\tchange or be different within limits\trange\tInterest rates run from 5 to 10 percent";
+    }
+    // verb 01094086
+    if sense == 10 {
+        return "verb\trun, stand, or compete for an office or a position\tcampaign\tWho's running for treasurer this year?";
+    }
+    // noun 00791078
+    if sense == 11 {
+        return "noun\tthe act of testing something\ttest, trial\t";
+    }
+    // verb 01717169
+    if sense == 12 {
+        return "verb\tcause to emit recorded audio or video\tplay\t";
+    }
+    // verb 02099829
+    if sense == 13 {
+        return "verb\tmove about freely and without restraint, or act as if running around in an uncontrolled way\t\twho are these people running around in the building?";
+    }
+    // verb 02719399
+    if sense == 14 {
+        return "verb\thave a tendency or disposition to do or be something; be inclined\ttend, be given, lean, incline\tThese dresses run small";
+    }
+    // verb 01526290
+    if sense == 15 {
+        return "verb\tbe operating, running or functioning\t\tThe car is still running--turn it off!";
+    }
+    // verb 00549063
+    if sense == 16 {
+        return "verb\tchange from one state to another\t\trun amok";
+    }
+    // verb 00517529
+    if sense == 17 {
+        return "verb\tcause to perform\t\trun a subject";
+    }
+    // noun 07460104
+    if sense == 18 {
+        return "noun\ta race run on foot\tfootrace, foot race\tshe broke the record for the half-mile run";
+    }
+    // verb 02720904
+    if sense == 19 {
+        return "verb\tbe affected by; be subjected to\t\trun a temperature";
+    }
+    // verb 02647497
+    if sense == 20 {
+        return "verb\tcontinue to exist\tprevail, persist, die hard, endure\t";
+    }
+    // verb 02612234
+    if sense == 21 {
+        return "verb\toccur persistently\t\tMusical talent runs in the family";
+    }
+    // verb 02563327
+    if sense == 22 {
+        return "verb\tcarry out a process or program, as on a computer or a machine\texecute\tRun the dishwasher";
+    }
+    // verb 01746359
+    if sense == 23 {
+        return "verb\tinclude as the content; broadcast or publicize\tcarry\t";
+    }
+    // verb 01641545
+    if sense == 24 {
+        return "verb\tcarry out\t\trun an errand";
+    }
+    // verb 01212230
+    if sense == 25 {
+        return "verb\tpass over, across, or through\tguide, draw, pass\t";
+    }
+    // noun 08460585
+    if sense == 26 {
+        return "noun\tan unbroken series of events\tstreak\tNicklaus had a run of birdies";
+    }
+    // noun 00558883
+    if sense == 27 {
+        return "noun\t(American football) a play in which a player attempts to carry the ball through or past the opposing team\trunning, running play, running game\tthe defensive line braced to stop the run";
+    }
+    // noun 00308871
+    if sense == 28 {
+        return "noun\ta regular trip\t\tthe ship made its run in record time";
+    }
+    // noun 00293916
+    if sense == 29 {
+        return "noun\tthe act of running; traveling on foot at a fast pace\trunning\the broke into a run";
+    }
+    // verb 02686625
+    if sense == 30 {
+        return "verb\tcause something to pass or lead somewhere\tlead\tRun the wire behind the cabinet";
+    }
+    // verb 02525312
+    if sense == 31 {
+        return "verb\tmake without a miss\t\t";
+    }
+    // verb 02242256
+    if sense == 32 {
+        return "verb\tdeal in illegally, such as arms or liquor\tblack market\t";
+    }
+    // verb 02092309
+    if sense == 33 {
+        return "verb\tcause an animal to move fast\t\trun the dogs";
+    }
+    // verb 02060792
+    if sense == 34 {
+        return "verb\tbe diffused\tbleed\tThese dyes and colors are guaranteed not to run";
+    }
+    // verb 01927903
+    if sense == 35 {
+        return "verb\tsail before the wind\t\t";
+    }
+    // verb 01914947
+    if sense == 36 {
+        return "verb\tcover by running; run a certain distance\t\t";
+    }
+    ""
+}

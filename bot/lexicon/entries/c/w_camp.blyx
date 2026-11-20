@@ -1,0 +1,33 @@
+// camp — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_camp(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 02944826
+    if sense == 1 {
+        return "noun\ttemporary living quarters specially built by the army for soldiers\tencampment, cantonment, bivouac\twherever he went in the camp the men were grumbling";
+    }
+    // noun 08478018
+    if sense == 2 {
+        return "noun\ta group of people living together in a camp\t\tthe whole camp laughed at his mistake";
+    }
+    // verb 02653996
+    if sense == 3 {
+        return "verb\tlive in or as if in a tent\tencamp, camp out, bivouac, tent\tCan we go camping again this summer?";
+    }
+    // noun 02945161
+    if sense == 4 {
+        return "noun\ttemporary lodgings in the country for travelers or vacationers\t\tlevel ground is best for parking and camp areas";
+    }
+    // noun 08240633
+    if sense == 5 {
+        return "noun\tan exclusive circle of people with a common purpose\tclique, coterie, ingroup, inner circle, pack\t";
+    }
+    // noun 02945379
+    if sense == 6 {
+        return "noun\ta penal institution (often for forced labor)\t\tChina has many camps for political prisoners";
+    }
+    // noun 05649960
+    if sense == 7 {
+        return "noun\tsomething that is considered amusing not because of its originality but because of its unoriginality\t\tthe living room was pure camp";
+    }
+    ""
+}

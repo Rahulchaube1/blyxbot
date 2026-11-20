@@ -1,0 +1,13 @@
+// tale — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tale(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07221094
+    if sense == 1 {
+        return "noun\ta message that tells the particulars of an act or occurrence or course of events; presented in writing or drama or cinema or as a radio or television program\tnarrative, narration, story\t";
+    }
+    // noun 06757057
+    if sense == 2 {
+        return "noun\ta trivial lie\tfib, story, tarradiddle, taradiddle\t";
+    }
+    ""
+}

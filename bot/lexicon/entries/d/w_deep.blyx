@@ -1,0 +1,41 @@
+// deep — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_deep(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // adj 00692762
+    if sense == 1 {
+        return "adjective\trelatively deep or strong; affecting one deeply\t\ta deep breath";
+    }
+    // adj 01873163
+    if sense == 2 {
+        return "adjective\tmarked by depth of thinking\t\tdeep thoughts";
+    }
+    // adj 00690058
+    if sense == 3 {
+        return "adjective\thaving great spatial extension or penetration downward or inward from an outer surface or backward or laterally or outward from a center; sometimes used in combination\t\ta deep well";
+    }
+    // adj 00445937
+    if sense == 4 {
+        return "adjective\tvery distant in time or space\t\tdeep in the past";
+    }
+    // adj 01511292
+    if sense == 5 {
+        return "adjective\textreme\t\tin deep trouble";
+    }
+    // adj 01215935
+    if sense == 6 {
+        return "adjective\thaving or denoting a low vocal or instrumental range\tbass\ta deep voice";
+    }
+    // adj 00403385
+    if sense == 7 {
+        return "adjective\tstrong; intense\trich\tdeep purple";
+    }
+    // adv 00305570
+    if sense == 8 {
+        return "adverb\tto a great depth;far down\tdeeply\tdug deep";
+    }
+    // adj 02410983
+    if sense == 9 {
+        return "adjective\trelatively thick from top to bottom\t\tdeep carpets";
+    }
+    ""
+}

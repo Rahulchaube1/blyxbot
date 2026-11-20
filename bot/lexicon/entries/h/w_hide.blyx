@@ -1,0 +1,21 @@
+// hide — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hide(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02144835
+    if sense == 1 {
+        return "verb\tprevent from being seen or discovered\tconceal\tMuslim women hide their faces";
+    }
+    // verb 02145814
+    if sense == 2 {
+        return "verb\tbe or go into hiding; keep out of sight, as for protection and safety\thide out\tProbably his horse would be close to where he was hiding";
+    }
+    // noun 14759275
+    if sense == 3 {
+        return "noun\tthe dressed skin of an animal (especially a large animal)\tfell\t";
+    }
+    // noun 01895735
+    if sense == 4 {
+        return "noun\tbody covering of a living animal\tpelt, skin\t";
+    }
+    ""
+}

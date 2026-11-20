@@ -1,0 +1,37 @@
+// passage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_passage(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 00201058
+    if sense == 1 {
+        return "noun\tthe act of passing from one state or place to the next\ttransition\t";
+    }
+    // noun 06400271
+    if sense == 2 {
+        return "noun\ta section of text; particularly a section of medium length\t\t";
+    }
+    // noun 03895293
+    if sense == 3 {
+        return "noun\ta way through or along which someone or something may pass\t\t";
+    }
+    // noun 01126856
+    if sense == 4 {
+        return "noun\tthe passing of a law by a legislative body\tenactment\t";
+    }
+    // noun 00309115
+    if sense == 5 {
+        return "noun\ta journey usually by ship\ttransit\tthe outward passage took 10 days";
+    }
+    // noun 07044917
+    if sense == 6 {
+        return "noun\ta short section of a musical composition\tmusical passage\t";
+    }
+    // noun 05248181
+    if sense == 7 {
+        return "noun\ta path or channel or duct through or along which something may pass\tpassageway\tthe nasal passages";
+    }
+    // noun 00865600
+    if sense == 8 {
+        return "noun\ta bodily reaction of changing from one place or stage to another\tpassing\tthe passage of air from the lungs";
+    }
+    ""
+}

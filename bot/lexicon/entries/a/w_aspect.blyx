@@ -1,0 +1,17 @@
+// aspect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_aspect(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05850624
+    if sense == 1 {
+        return "noun\ta distinct feature or element in a problem\tfacet\t";
+    }
+    // noun 04733118
+    if sense == 2 {
+        return "noun\ta characteristic to be considered\t\t";
+    }
+    // noun 05933246
+    if sense == 3 {
+        return "noun\tthe visual percept of a region\tview, prospect, scene, vista, panorama\t";
+    }
+    ""
+}

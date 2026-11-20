@@ -1,0 +1,25 @@
+// jerk — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_jerk(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01592072
+    if sense == 1 {
+        return "verb\tpull, or move with a sudden movement\tyank\tHe turned the handle and jerked the door open";
+    }
+    // verb 01891817
+    if sense == 2 {
+        return "verb\tmove with abrupt, seemingly uncontrolled motions\ttwitch\t";
+    }
+    // noun 10221040
+    if sense == 3 {
+        return "noun\ta dull stupid fatuous person\tdork\t";
+    }
+    // verb 00009631
+    if sense == 4 {
+        return "verb\tmake an uncontrolled, short, jerky motion\ttwitch\t";
+    }
+    // noun 00335988
+    if sense == 5 {
+        return "noun\tan abrupt spasmodic movement\tjerking, jolt, saccade\t";
+    }
+    ""
+}

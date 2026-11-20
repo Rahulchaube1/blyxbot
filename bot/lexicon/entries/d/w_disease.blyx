@@ -1,0 +1,9 @@
+// disease — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_disease(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 14070360
+    if sense == 1 {
+        return "noun\tan impairment of health or a condition of abnormal functioning\t\t";
+    }
+    ""
+}

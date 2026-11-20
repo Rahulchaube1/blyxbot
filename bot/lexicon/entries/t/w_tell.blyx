@@ -1,0 +1,37 @@
+// tell — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tell(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01009240
+    if sense == 1 {
+        return "verb\texpress in words\tstate, say\ttell me what is bothering you";
+    }
+    // verb 00952524
+    if sense == 2 {
+        return "verb\tlet something be known\t\tTell them that you will be late";
+    }
+    // verb 00953216
+    if sense == 3 {
+        return "verb\tnarrate or give a detailed account of\tnarrate, recount, recite\tTell what happened";
+    }
+    // verb 00746718
+    if sense == 4 {
+        return "verb\tgive instructions to or direct somebody to do something with authority\torder, enjoin, say\t";
+    }
+    // verb 00720961
+    if sense == 5 {
+        return "verb\tdiscern or comprehend\t\tHe could tell that she was unhappy";
+    }
+    // verb 01019643
+    if sense == 6 {
+        return "verb\tinform positively and with certainty and confidence\tassure\tI tell you that man is a crook!";
+    }
+    // verb 00954422
+    if sense == 7 {
+        return "verb\tgive evidence\tevidence\the was telling on all his former colleague";
+    }
+    // verb 00650353
+    if sense == 8 {
+        return "verb\tmark as different\tdistinguish, separate, differentiate, secern, secernate, severalize, severalise, tell apart\t";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// school — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_school(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 08276720
+    if sense == 1 {
+        return "noun\tan educational institution\t\tthe school was founded in 1900";
+    }
+    // noun 04146050
+    if sense == 2 {
+        return "noun\ta building where young people receive education\tschoolhouse\tthe school was built in 1932";
+    }
+    // noun 05757536
+    if sense == 3 {
+        return "noun\tthe process of being formally educated at a school\tschooling\twhat will you do when you finish school?";
+    }
+    // noun 08275185
+    if sense == 4 {
+        return "noun\ta body of creative artists or writers or thinkers linked by a similar style or by similar teachers\t\tthe Venetian school of painting";
+    }
+    // verb 02387910
+    if sense == 5 {
+        return "verb\teducate in or as if in a school\t\tThe children are schooled at great cost to their parents in private institutions";
+    }
+    // noun 15203229
+    if sense == 6 {
+        return "noun\tthe period of instruction in a school; the time period when school is in session\tschooltime, school day\tstay after school";
+    }
+    ""
+}

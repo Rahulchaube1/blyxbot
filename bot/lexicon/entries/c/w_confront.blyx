@@ -1,0 +1,21 @@
+// confront — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_confront(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01078783
+    if sense == 1 {
+        return "verb\toppose, as in hostility or a competition\tface\tYou must confront your opponent";
+    }
+    // verb 00812298
+    if sense == 2 {
+        return "verb\tdeal with (something unpleasant) head on\tface up, face\tYou must confront your problems";
+    }
+    // verb 01066433
+    if sense == 3 {
+        return "verb\tpresent somebody with something, usually to accuse or criticize\tface, present\tWe confronted him with the evidence";
+    }
+    // verb 02742638
+    if sense == 4 {
+        return "verb\tbe face to face with\t\tThe child screamed when he confronted the man in the Halloween costume";
+    }
+    ""
+}

@@ -1,0 +1,45 @@
+// measure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_measure(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 00647094
+    if sense == 1 {
+        return "verb\tdetermine the measurements of something or somebody, take measurements of\tmensurate, measure out\tMeasure the length of the wall";
+    }
+    // verb 00489837
+    if sense == 2 {
+        return "verb\texpress as a number or measure or quantity\tquantify\t";
+    }
+    // verb 02704349
+    if sense == 3 {
+        return "verb\thave certain dimensions\t\tThis table surfaces measures 20inches by 36 inches";
+    }
+    // verb 00681429
+    if sense == 4 {
+        return "verb\tevaluate or estimate the nature, quality, ability, extent, or significance of\tevaluate, valuate, assess, appraise, value\t";
+    }
+    // noun 00174412
+    if sense == 5 {
+        return "noun\tany maneuver made as part of progress toward a goal\tstep\tthe situation called for strong measures";
+    }
+    // noun 00033615
+    if sense == 6 {
+        return "noun\thow much there is or how many there are of something that you can quantify\tquantity, amount\t";
+    }
+    // noun 06536853
+    if sense == 7 {
+        return "noun\ta statute in draft before it becomes law\tbill\t";
+    }
+    // noun 00996969
+    if sense == 8 {
+        return "noun\tthe act or process of assigning numbers to phenomena according to a rule\tmeasurement, measuring, mensuration\t";
+    }
+    // noun 07260623
+    if sense == 9 {
+        return "noun\ta basis for comparison; a reference point against which other things can be evaluated\tstandard, criterion, touchstone\tthey set the measure for all subsequent work";
+    }
+    // noun 07094093
+    if sense == 10 {
+        return "noun\t(prosody) the accent in a metrical foot of verse\tmeter, metre, beat, cadence\t";
+    }
+    ""
+}

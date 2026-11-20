@@ -1,0 +1,41 @@
+// address — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_address(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 06356515
+    if sense == 1 {
+        return "noun\t(computer science) the code that identifies where a piece of information is stored\tcomputer address, reference\t";
+    }
+    // verb 00897564
+    if sense == 2 {
+        return "verb\tspeak to\tturn to\tHe addressed the crowd outside the window";
+    }
+    // noun 08491027
+    if sense == 3 {
+        return "noun\tthe place where a person or organization can be found or communicated with\t\t";
+    }
+    // verb 00989201
+    if sense == 4 {
+        return "verb\tgive a speech to\tspeak\tThe chairman addressed the board of trustees";
+    }
+    // verb 00990812
+    if sense == 5 {
+        return "verb\tput an address on (an envelope)\tdirect\t";
+    }
+    // noun 07238694
+    if sense == 6 {
+        return "noun\tthe act of delivering a formal spoken communication to an audience\tspeech\the listened to an address on minor Roman poets";
+    }
+    // verb 01150981
+    if sense == 7 {
+        return "verb\tdirect a question at someone\t\t";
+    }
+    // noun 07067591
+    if sense == 8 {
+        return "noun\tthe manner of speaking to another individual\t\the failed in his manner of address to the captain";
+    }
+    // verb 01160899
+    if sense == 9 {
+        return "verb\taddress or apply oneself to something, direct one's efforts towards something, such as a question\t\t";
+    }
+    ""
+}

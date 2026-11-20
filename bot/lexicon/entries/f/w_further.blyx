@@ -1,0 +1,29 @@
+// further — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_further(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00029985
+    if sense == 1 {
+        return "adverb\tto or at a greater extent or degree or a more advanced stage (`further' is used more often than `farther' in this abstract sense)\tfarther\tfurther complicated by uncertainty about the future";
+    }
+    // adv 00030443
+    if sense == 2 {
+        return "adverb\tin addition or furthermore\t\tif we further suppose";
+    }
+    // verb 02554422
+    if sense == 3 {
+        return "verb\tpromote the growth of\tfoster\t";
+    }
+    // verb 02554922
+    if sense == 4 {
+        return "verb\tcontribute to the progress or growth of\tpromote, advance, boost, encourage\t";
+    }
+    // adj 00443988
+    if sense == 5 {
+        return "adjective\tmore distant in especially degree\tfarther\tnothing could be further from the truth";
+    }
+    // adv 00029639
+    if sense == 6 {
+        return "adverb\tto or at a greater distance in time or space (`farther' is used more frequently than `further' in this physical sense)\tfarther\twent only three miles further";
+    }
+    ""
+}

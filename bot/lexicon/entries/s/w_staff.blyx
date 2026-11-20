@@ -1,0 +1,21 @@
+// staff — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_staff(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08439955
+    if sense == 1 {
+        return "noun\tpersonnel who assist their superior in carrying out an assigned task\t\tthe hospital has an excellent nursing staff";
+    }
+    // verb 01088749
+    if sense == 2 {
+        return "verb\tprovide with staff\t\tThis position is not always staffed";
+    }
+    // noun 04296261
+    if sense == 3 {
+        return "noun\ta strong rod or stick with a specialized utilitarian purpose\t\the walked with the help of a wooden staff";
+    }
+    // noun 08287586
+    if sense == 4 {
+        return "noun\tthe body of teachers and administrators at a school\tfaculty\tthe dean addressed the letter to the entire staff of the university";
+    }
+    ""
+}

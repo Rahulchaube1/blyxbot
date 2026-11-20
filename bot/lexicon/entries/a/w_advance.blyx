@@ -1,0 +1,53 @@
+// advance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_advance(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // noun 07445265
+    if sense == 1 {
+        return "noun\ta movement forward\tprogress, progression\t";
+    }
+    // verb 01992503
+    if sense == 2 {
+        return "verb\tmove forward, also in the metaphorical sense\tprogress, pass on, move on, march on, go on\t";
+    }
+    // noun 07357388
+    if sense == 3 {
+        return "noun\ta change for the better; progress in development\timprovement, betterment\t";
+    }
+    // verb 00875806
+    if sense == 4 {
+        return "verb\tbring forward for consideration or acceptance\tthrow out\tadvance an argument";
+    }
+    // verb 00497061
+    if sense == 5 {
+        return "verb\tincrease or raise\tboost, supercharge\t";
+    }
+    // verb 02554922
+    if sense == 6 {
+        return "verb\tcontribute to the progress or growth of\tpromote, boost, further, encourage\t";
+    }
+    // verb 01993926
+    if sense == 7 {
+        return "verb\tcause to move forward\tbring forward\t";
+    }
+    // verb 01111028
+    if sense == 8 {
+        return "verb\tobtain advantages, such as points, etc.\tgain, win, pull ahead, make headway, get ahead, gain ground\t";
+    }
+    // verb 00248659
+    if sense == 9 {
+        return "verb\tdevelop in a positive way\tprogress, come on, come along, get on, get along, shape up\t";
+    }
+    // noun 07164349
+    if sense == 10 {
+        return "noun\ta tentative suggestion designed to elicit the reactions of others\toverture, approach, feeler\tshe rejected his advances";
+    }
+    // noun 00282050
+    if sense == 11 {
+        return "noun\tthe act of moving forward (as toward a goal)\tprogress, progression, procession, advancement, forward motion, onward motion\t";
+    }
+    // verb 00558371
+    if sense == 12 {
+        return "verb\tdevelop further\t\tWe are advancing technology every day";
+    }
+    ""
+}

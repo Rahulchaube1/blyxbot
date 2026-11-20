@@ -1,0 +1,33 @@
+// bad — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bad(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01125429
+    if sense == 1 {
+        return "adjective\thaving undesirable or negative qualities\t\ta bad report card";
+    }
+    // adj 01510444
+    if sense == 2 {
+        return "adjective\tvery intense\tbig\ta bad headache";
+    }
+    // adj 00478311
+    if sense == 3 {
+        return "adjective\tfeeling physical discomfort or pain (`tough' is occasionally used colloquially for `bad')\ttough\tmy throat feels bad";
+    }
+    // noun 05144079
+    if sense == 4 {
+        return "noun\tthat which is below standard or expectations as of ethics or decency\tbadness\ttake the bad with the good";
+    }
+    // adj 01069283
+    if sense == 5 {
+        return "adjective\t(of foodstuffs) not in an edible or usable condition\tspoiled, spoilt\tbad meat";
+    }
+    // adv 00016458
+    if sense == 6 {
+        return "adverb\twith great intensity (`bad' is a nonstandard variant for `badly')\tbadly\tit hurts bad";
+    }
+    // adv 00016240
+    if sense == 7 {
+        return "adverb\tvery much; strongly\tbadly\the wants a bicycle so bad he can taste it";
+    }
+    ""
+}

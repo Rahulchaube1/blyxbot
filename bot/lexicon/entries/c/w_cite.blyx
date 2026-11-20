@@ -1,0 +1,21 @@
+// cite — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cite(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01024190
+    if sense == 1 {
+        return "verb\tmake reference to\tmention, advert, bring up, name, refer\t";
+    }
+    // verb 01023071
+    if sense == 2 {
+        return "verb\tcommend\tmention\the was cited for his outstanding achievements";
+    }
+    // verb 01705257
+    if sense == 3 {
+        return "verb\trefer to\treference\t";
+    }
+    // verb 01023259
+    if sense == 4 {
+        return "verb\trepeat a passage from\tquote\t";
+    }
+    ""
+}

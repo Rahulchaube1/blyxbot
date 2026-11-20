@@ -1,0 +1,61 @@
+// fire — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fire(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // noun 07302836
+    if sense == 1 {
+        return "noun\tthe event of something burning (often destructive)\t\tthey lost everything in the fire";
+    }
+    // verb 01135783
+    if sense == 2 {
+        return "verb\tstart firing a weapon\topen fire\t";
+    }
+    // noun 00986938
+    if sense == 3 {
+        return "noun\tthe act of firing weapons or artillery at an enemy\tfiring\thold your fire until you can see the whites of their eyes";
+    }
+    // verb 01133825
+    if sense == 4 {
+        return "verb\tcause to go off\tdischarge\tfire a gun";
+    }
+    // verb 00320536
+    if sense == 5 {
+        return "verb\tbake in a kiln so as to harden\t\tfire pottery";
+    }
+    // noun 13480848
+    if sense == 6 {
+        return "noun\tthe process of combustion of inflammable materials producing heat and light and (often) smoke\tflame, flaming\tfire was one of our ancestors' first discoveries";
+    }
+    // verb 02402825
+    if sense == 7 {
+        return "verb\tterminate the employment of; discharge from an office or position\tdisplace, give notice, can, dismiss, give the axe, send away, sack, force out, give the sack, terminate\tThe boss fired his secretary today";
+    }
+    // verb 01134238
+    if sense == 8 {
+        return "verb\tgo off or discharge\tdischarge, go off\tThe gun fired";
+    }
+    // noun 03343560
+    if sense == 9 {
+        return "noun\ta fireplace in which a relatively small fire is burning\t\tthey sat by the fire and talked";
+    }
+    // noun 14842847
+    if sense == 10 {
+        return "noun\tonce thought to be one of four elements composing the universe (Empedocles)\t\t";
+    }
+    // noun 07481375
+    if sense == 11 {
+        return "noun\tfeelings of great warmth and intensity\tardor, ardour, fervor, fervour, fervency, fervidness\t";
+    }
+    // verb 02002410
+    if sense == 12 {
+        return "verb\tdrive out or away by or as if by fire\t\tThe soldiers were fired";
+    }
+    // verb 01759326
+    if sense == 13 {
+        return "verb\tcall forth (emotions, feelings, and responses)\tarouse, elicit, enkindle, kindle, evoke, raise, provoke\t";
+    }
+    // verb 00378664
+    if sense == 14 {
+        return "verb\tdestroy by fire\tburn, burn down\t";
+    }
+    ""
+}

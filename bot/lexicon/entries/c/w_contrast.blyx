@@ -1,0 +1,29 @@
+// contrast — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_contrast(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 13855627
+    if sense == 1 {
+        return "noun\tthe opposition or dissimilarity of things that are compared\tdirect contrast\tin contrast to";
+    }
+    // noun 00651813
+    if sense == 2 {
+        return "noun\tthe act of distinguishing by comparing differences\t\t";
+    }
+    // verb 00661213
+    if sense == 3 {
+        return "verb\tput in opposition to show or emphasize differences\t\tThe middle school teacher contrasted her best student's work with that of her weakest student";
+    }
+    // noun 05748786
+    if sense == 4 {
+        return "noun\ta conceptual separation or distinction\tline, dividing line, demarcation\t";
+    }
+    // verb 02666882
+    if sense == 5 {
+        return "verb\tto show differences when compared; be different\tcounterpoint\tthe students contrast considerably in their artistic abilities";
+    }
+    // noun 05711084
+    if sense == 6 {
+        return "noun\tthe perceptual effect of the juxtaposition of very different colors\t\t";
+    }
+    ""
+}

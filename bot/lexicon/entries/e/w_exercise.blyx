@@ -1,0 +1,37 @@
+// exercise — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_exercise(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 00624738
+    if sense == 1 {
+        return "noun\tthe activity of exerting your muscles in various ways to keep fit\texercising, physical exercise, physical exertion, workout\tthe doctor recommended regular exercise";
+    }
+    // verb 01166093
+    if sense == 2 {
+        return "verb\tput to use\texert\t";
+    }
+    // verb 02568672
+    if sense == 3 {
+        return "verb\tcarry out or practice; as of jobs and professions\tpractice, practise, do\t";
+    }
+    // noun 00947128
+    if sense == 4 {
+        return "noun\tthe act of using\tuse, usage, utilization, utilisation, employment\t";
+    }
+    // verb 00100551
+    if sense == 5 {
+        return "verb\tgive a workout to\twork, work out\tSome parents exercise their infants";
+    }
+    // verb 00099721
+    if sense == 6 {
+        return "verb\tdo physical exercise\twork out\t";
+    }
+    // noun 00894552
+    if sense == 7 {
+        return "noun\tsystematic training by multiple repetitions\tpractice, drill, practice session, recitation\t";
+    }
+    // noun 00729919
+    if sense == 8 {
+        return "noun\ta task performed or problem solved in order to develop skill or understanding\texample\t";
+    }
+    ""
+}

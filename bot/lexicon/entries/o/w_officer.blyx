@@ -1,0 +1,25 @@
+// officer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_officer(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 10317007
+    if sense == 1 {
+        return "noun\tany person in the armed services who holds a position of authority or command\tmilitary officer\tan officer is responsible for the lives of his men";
+    }
+    // noun 10371450
+    if sense == 2 {
+        return "noun\tsomeone who is appointed or elected to an office and who holds a position of trust\tofficeholder\the is an officer of the court";
+    }
+    // noun 10448983
+    if sense == 3 {
+        return "noun\ta member of a police force\tpoliceman, police officer\tit was an accident, officer";
+    }
+    // noun 10371741
+    if sense == 4 {
+        return "noun\ta person authorized to serve in a position of authority on a vessel\tship's officer\the is the officer in charge of the ship's engines";
+    }
+    // verb 00752335
+    if sense == 5 {
+        return "verb\tdirect or command as an officer\t\t";
+    }
+    ""
+}

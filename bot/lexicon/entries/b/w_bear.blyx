@@ -1,0 +1,45 @@
+// bear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bear(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02630871
+    if sense == 1 {
+        return "verb\thave\t\tbear a resemblance";
+    }
+    // verb 00056930
+    if sense == 2 {
+        return "verb\tcause to be born\tgive birth, deliver, birth, have\t";
+    }
+    // verb 00668099
+    if sense == 3 {
+        return "verb\tput up with something or somebody unpleasant\tdigest, endure, stick out, stomach, stand, tolerate, support, brook, abide, suffer, put up\tI cannot bear his constant criticism";
+    }
+    // verb 01432601
+    if sense == 4 {
+        return "verb\tmove while holding up or supporting\t\tBear gifts";
+    }
+    // verb 01652139
+    if sense == 5 {
+        return "verb\tbring forth, \"The apple tree bore delicious apples this year\"\tturn out\t";
+    }
+    // verb 02301825
+    if sense == 6 {
+        return "verb\ttake on as one's own the expenses or debts of another person\ttake over, accept, assume\tShe agreed to bear the responsibility";
+    }
+    // verb 02700867
+    if sense == 7 {
+        return "verb\tcontain or hold; have within\thold, carry, contain\t";
+    }
+    // verb 02291708
+    if sense == 8 {
+        return "verb\tbring in\tyield, pay\tinterest-bearing accounts";
+    }
+    // noun 02131653
+    if sense == 9 {
+        return "noun\tmassive plantigrade carnivorous or omnivorous mammals with long shaggy coats and strong claws\t\t";
+    }
+    // verb 00047745
+    if sense == 10 {
+        return "verb\thave on one's person\twear\tbear a scar";
+    }
+    ""
+}

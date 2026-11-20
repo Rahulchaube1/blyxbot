@@ -1,0 +1,33 @@
+// stuff — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stuff(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 14580897
+    if sense == 1 {
+        return "noun\tthe tangible substance that goes into the makeup of a physical object\tmaterial\twheat is the stuff they use to make bread";
+    }
+    // noun 04345288
+    if sense == 2 {
+        return "noun\tmiscellaneous unspecified objects\t\tthe trunk was full of stuff";
+    }
+    // verb 01524871
+    if sense == 3 {
+        return "verb\tcram into a cavity\t\tThe child stuffed candy into his pockets";
+    }
+    // verb 02094569
+    if sense == 4 {
+        return "verb\tpress or force\tthrust, shove, squeeze\tStuff money into an envelope";
+    }
+    // noun 13251154
+    if sense == 5 {
+        return "noun\tinformal terms for personal possessions\tclobber\t";
+    }
+    // noun 06609909
+    if sense == 6 {
+        return "noun\tsenseless talk\tstuff and nonsense, hooey, poppycock\tdon't give me that stuff";
+    }
+    // noun 05210534
+    if sense == 7 {
+        return "noun\tunspecified qualities required to do or be something\t\tthe stuff of heros";
+    }
+    ""
+}

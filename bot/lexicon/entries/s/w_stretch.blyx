@@ -1,0 +1,57 @@
+// stretch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stretch(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 02607830
+    if sense == 1 {
+        return "verb\toccupy a large, elongated area\tstretch along\tThe park stretched beneath the train line";
+    }
+    // verb 00027268
+    if sense == 2 {
+        return "verb\textend one's limbs or muscles, or the entire body\textend\tStretch your legs!";
+    }
+    // verb 02054989
+    if sense == 3 {
+        return "verb\textend or stretch out to a greater or the full length\tunfold, stretch out, extend\tstretch out that piece of cloth";
+    }
+    // verb 00240810
+    if sense == 4 {
+        return "verb\tbecome longer by being stretched and pulled\t\tThe fabric stretches";
+    }
+    // noun 09448945
+    if sense == 5 {
+        return "noun\ta large and unbroken expanse or distance\t\ta stretch of highway";
+    }
+    // noun 00341243
+    if sense == 6 {
+        return "noun\tthe act of physically reaching or thrusting out\treach, reaching\t";
+    }
+    // verb 00318816
+    if sense == 7 {
+        return "verb\tmake long or longer by pulling and stretching\telongate\tstretch the fabric";
+    }
+    // noun 04336645
+    if sense == 8 {
+        return "noun\ta straightaway section of a racetrack\t\t";
+    }
+    // noun 00628692
+    if sense == 9 {
+        return "noun\texercise designed to extend the limbs and muscles to their full extent\tstretching\t";
+    }
+    // noun 00371059
+    if sense == 10 {
+        return "noun\textension to or beyond the ordinary limit\t\trunning at full stretch";
+    }
+    // verb 01985271
+    if sense == 11 {
+        return "verb\tlie down comfortably\tstretch out\tTo enjoy the picnic, we stretched out on the grass";
+    }
+    // verb 01449591
+    if sense == 12 {
+        return "verb\tpull in opposite directions\t\tDuring the Inquisition, the torturers would stretch their victims on a rack";
+    }
+    // verb 00541746
+    if sense == 13 {
+        return "verb\textend the scope or meaning of; often unduly\t\tStretch the limits";
+    }
+    ""
+}

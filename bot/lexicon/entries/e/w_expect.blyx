@@ -1,0 +1,17 @@
+// expect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_expect(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00719734
+    if sense == 1 {
+        return "verb\tregard something as probable or likely\tanticipate\tThe meteorologists are expecting rain for tomorrow";
+    }
+    // verb 00755745
+    if sense == 2 {
+        return "verb\tconsider obligatory; request and expect\task, require\tI expect my students to arrive in time for their lessons";
+    }
+    // verb 00720063
+    if sense == 3 {
+        return "verb\tlook forward to the probable occurrence of\tlook, await, wait\tWe were expecting a visit from our relatives";
+    }
+    ""
+}

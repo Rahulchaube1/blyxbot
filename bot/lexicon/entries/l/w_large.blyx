@@ -1,0 +1,13 @@
+// large — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_large(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01382086
+    if sense == 1 {
+        return "adjective\tabove average in size or number or quantity or magnitude or extent\tbig\ta large city";
+    }
+    // adj 02163307
+    if sense == 2 {
+        return "adjective\tfairly large or important in effect; influential\t\tplayed a large role in the negotiations";
+    }
+    ""
+}

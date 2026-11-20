@@ -1,0 +1,49 @@
+// side — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_side(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // noun 08649345
+    if sense == 1 {
+        return "noun\ta place within a region identified relative to a center or reference location\t\tthey always sat on the right side of the church";
+    }
+    // noun 08408709
+    if sense == 2 {
+        return "noun\tone of two or more contesting groups\t\tthe Confederate side was prepared to attack";
+    }
+    // noun 05551318
+    if sense == 3 {
+        return "noun\teither the left or right half of a body\t\the had a pain in his side";
+    }
+    // noun 08510666
+    if sense == 4 {
+        return "noun\ta surface forming part of the outside of an object\tface\the examined all sides of the crystal";
+    }
+    // noun 04213626
+    if sense == 5 {
+        return "noun\tan extended outer surface of an object\t\the turned the box over to examine the bottom side";
+    }
+    // adj 02441215
+    if sense == 6 {
+        return "adjective\tlocated on a side\t\tside fences";
+    }
+    // noun 05852553
+    if sense == 7 {
+        return "noun\tan aspect of something (as contrasted with some other implied aspect)\t\the was on the heavy side";
+    }
+    // noun 08649167
+    if sense == 8 {
+        return "noun\ta line segment forming part of the perimeter of a plane figure\t\tthe hypotenuse of a right triangle is always the longest side";
+    }
+    // noun 08102282
+    if sense == 9 {
+        return "noun\ta family line of descent\t\the gets his brains from his father's side";
+    }
+    // noun 07655626
+    if sense == 10 {
+        return "noun\ta lengthwise dressed half of an animal's carcass used for food\tside of meat\t";
+    }
+    // noun 06783265
+    if sense == 11 {
+        return "noun\tan opinion that is held in opposition to another in an argument or dispute\tposition\tthere are two sides to every question";
+    }
+    ""
+}

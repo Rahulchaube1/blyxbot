@@ -1,0 +1,21 @@
+// military — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_military(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02764251
+    if sense == 1 {
+        return "adjective\tof or relating to the study of the principles of warfare\t\tmilitary law";
+    }
+    // adj 01518386
+    if sense == 2 {
+        return "adjective\tcharacteristic of or associated with soldiers or the military\t\tmilitary uniforms";
+    }
+    // adj 01517081
+    if sense == 3 {
+        return "adjective\tassociated with or performed by members of the armed services as contrasted with civilians\t\tmilitary police";
+    }
+    // noun 08199025
+    if sense == 4 {
+        return "noun\tthe military forces of a nation\tarmed forces, armed services, military machine, war machine\ttheir military is the largest in the region";
+    }
+    ""
+}

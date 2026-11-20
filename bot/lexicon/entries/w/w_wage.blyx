@@ -1,0 +1,13 @@
+// wage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wage(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13279262
+    if sense == 1 {
+        return "noun\tsomething that remunerates\tpay, earnings, remuneration, salary\twages were paid by check";
+    }
+    // verb 02376089
+    if sense == 2 {
+        return "verb\tcarry on (wars, battles, or campaigns)\tengage\tNapoleon and Hitler waged war against all of Europe";
+    }
+    ""
+}

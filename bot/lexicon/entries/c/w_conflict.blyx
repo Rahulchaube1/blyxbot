@@ -1,0 +1,33 @@
+// conflict — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_conflict(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 00958896
+    if sense == 1 {
+        return "noun\tan open clash between two opposing groups (or individuals)\tstruggle, battle\tthe harder the conflict the more glorious the triumph";
+    }
+    // noun 07483439
+    if sense == 2 {
+        return "noun\topposition between two simultaneous but incompatible feelings\t\the was immobilized by conflict and indecision";
+    }
+    // noun 00953559
+    if sense == 3 {
+        return "noun\ta hostile meeting of opposing military forces in the course of a war\tbattle, fight, engagement\t";
+    }
+    // noun 13980845
+    if sense == 4 {
+        return "noun\ta state of opposition between persons or ideas or interests\t\this conflict of interest made him ineligible for the post";
+    }
+    // noun 04714679
+    if sense == 5 {
+        return "noun\tan incompatibility of dates or events\t\the noticed a conflict in the dates of the two meetings";
+    }
+    // verb 02667228
+    if sense == 6 {
+        return "verb\tbe in conflict\t\tThe two proposals conflict!";
+    }
+    // verb 02567147
+    if sense == 7 {
+        return "verb\tgo against, as of rules and laws\trun afoul, infringe, contravene\tThis behavior conflicts with our rules";
+    }
+    ""
+}

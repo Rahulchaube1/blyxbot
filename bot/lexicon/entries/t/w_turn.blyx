@@ -1,0 +1,93 @@
+// turn — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_turn(sense: i64) -> str {
+    if sense == 0 { return "22"; }
+    // verb 01907258
+    if sense == 1 {
+        return "verb\tchange orientation or direction, also in the abstract sense\t\tTurn towards me";
+    }
+    // verb 00146138
+    if sense == 2 {
+        return "verb\tundergo a transformation or a change of position or action\tchange state\tWe turned from Socialism to Capitalism";
+    }
+    // verb 02626604
+    if sense == 3 {
+        return "verb\tundergo a change or development\tbecome\tThe water turned into ice";
+    }
+    // verb 02089984
+    if sense == 4 {
+        return "verb\tcause to move around or rotate\t\tturn a key";
+    }
+    // noun 13869327
+    if sense == 5 {
+        return "noun\ta circular segment of a curve\tbend, crook, twist\t";
+    }
+    // verb 00138508
+    if sense == 6 {
+        return "verb\tchange to the contrary\tchange by reversal, reverse\tthe tides turned against him";
+    }
+    // noun 00350030
+    if sense == 7 {
+        return "noun\tthe act of changing or reversing the direction of the course\tturning\the took a turn to the right";
+    }
+    // verb 01909812
+    if sense == 8 {
+        return "verb\tpass to the other side of\tmove around\tturn the corner";
+    }
+    // verb 00125841
+    if sense == 9 {
+        return "verb\tpass into a condition gradually, take on a specific property or attribute; become\tgrow\tThe weather turned nasty";
+    }
+    // noun 00457382
+    if sense == 10 {
+        return "noun\t(game) the activity of doing something in an agreed succession\tplay\tit is my turn";
+    }
+    // noun 07423365
+    if sense == 11 {
+        return "noun\tan unforeseen development\tturn of events, twist\tevents suddenly took an awkward turn";
+    }
+    // verb 01436518
+    if sense == 12 {
+        return "verb\tlet (something) fall or spill from a container\trelease\tturn the flour onto a plate";
+    }
+    // noun 07351612
+    if sense == 13 {
+        return "noun\ta movement in a new direction\tturning\tthe turning of the wind";
+    }
+    // noun 00346532
+    if sense == 14 {
+        return "noun\tthe act of turning away or in the opposite direction\t\the made an abrupt turn away from her";
+    }
+    // noun 00345454
+    if sense == 15 {
+        return "noun\tturning or twisting around (in place)\ttwist\t";
+    }
+    // verb 02096167
+    if sense == 16 {
+        return "verb\tmove around an axis or a center\t\tThe wheels are turning";
+    }
+    // verb 02089420
+    if sense == 17 {
+        return "verb\tcause to move around a center so as to show another side of\tturn over\tturn a page of a book";
+    }
+    // verb 01952208
+    if sense == 18 {
+        return "verb\tto send or let go\t\tThey turned away the crowd at the gate of the governor's mansion";
+    }
+    // verb 01741864
+    if sense == 19 {
+        return "verb\tto break and turn over earth especially with a plow\tplow, plough\tturn the earth in the Spring";
+    }
+    // verb 01584450
+    if sense == 20 {
+        return "verb\tshape by rotating on a lathe or cutting device or a wheel\t\tturn the legs of the table";
+    }
+    // verb 00282523
+    if sense == 21 {
+        return "verb\tchange color\t\tIn Vermont, the leaves turn early";
+    }
+    // verb 00091124
+    if sense == 22 {
+        return "verb\ttwist suddenly so as to sprain\ttwist, sprain, wrench, wrick, rick\tI turned my ankle and couldn't walk for several days";
+    }
+    ""
+}

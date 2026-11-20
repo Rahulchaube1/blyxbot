@@ -1,0 +1,33 @@
+// dream — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dream(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 05768553
+    if sense == 1 {
+        return "noun\ta series of mental images and emotions occurring during sleep\tdreaming\tI had a dream about you last night";
+    }
+    // verb 01637633
+    if sense == 2 {
+        return "verb\thave a daydream; indulge in a fantasy\tdaydream, woolgather, stargaze\t";
+    }
+    // verb 02118242
+    if sense == 3 {
+        return "verb\texperience while sleeping\t\tShe claims to never dream";
+    }
+    // noun 05768806
+    if sense == 4 {
+        return "noun\timaginative thoughts indulged in while awake\tdreaming\the lives in a dream that has nothing to do with reality";
+    }
+    // noun 07484547
+    if sense == 5 {
+        return "noun\ta cherished desire\tambition, aspiration\t";
+    }
+    // noun 05632732
+    if sense == 6 {
+        return "noun\ta fantastic but vain hope (from fantasies induced by the opium pipe)\tpipe dream\tI have this pipe dream about being emperor of the universe";
+    }
+    // noun 05700925
+    if sense == 7 {
+        return "noun\ta state of mind characterized by abstraction and release from reality\t\the went about his work as if in a dream";
+    }
+    ""
+}

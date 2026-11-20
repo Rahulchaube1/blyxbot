@@ -1,0 +1,21 @@
+// southern — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_southern(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01606648
+    if sense == 1 {
+        return "adjective\tin or characteristic of a region of the United States south of (approximately) the Mason-Dixon line\t\tsouthern hospitality";
+    }
+    // adj 01603179
+    if sense == 2 {
+        return "adjective\tsituated in or oriented toward the south\tsoutherly\ta southern exposure";
+    }
+    // adj 01605081
+    if sense == 3 {
+        return "adjective\tsituated in or coming from regions of the south\t\tthe southern hemisphere";
+    }
+    // adj 01602966
+    if sense == 4 {
+        return "adjective\tfrom the south; used especially of wind\tsoutherly\tsouthern breezes";
+    }
+    ""
+}

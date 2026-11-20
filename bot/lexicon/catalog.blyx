@@ -1,0 +1,82 @@
+use std::text;
+use a;
+use b;
+use c;
+use d;
+use e;
+use f;
+use g;
+use h;
+use i;
+use j;
+use k;
+use l;
+use m;
+use n;
+use o;
+use p;
+use q;
+use r;
+use s;
+use t;
+use u;
+use v;
+use w;
+use y;
+
+// Sense zero returns the count. Missing terms and senses return an empty string.
+pub fn dictionary_lookup(term: str, sense: i64) -> str {
+    if text_starts(term, "a") { return lookup_a(term, sense); }
+    if text_starts(term, "b") { return lookup_b(term, sense); }
+    if text_starts(term, "c") { return lookup_c(term, sense); }
+    if text_starts(term, "d") { return lookup_d(term, sense); }
+    if text_starts(term, "e") { return lookup_e(term, sense); }
+    if text_starts(term, "f") { return lookup_f(term, sense); }
+    if text_starts(term, "g") { return lookup_g(term, sense); }
+    if text_starts(term, "h") { return lookup_h(term, sense); }
+    if text_starts(term, "i") { return lookup_i(term, sense); }
+    if text_starts(term, "j") { return lookup_j(term, sense); }
+    if text_starts(term, "k") { return lookup_k(term, sense); }
+    if text_starts(term, "l") { return lookup_l(term, sense); }
+    if text_starts(term, "m") { return lookup_m(term, sense); }
+    if text_starts(term, "n") { return lookup_n(term, sense); }
+    if text_starts(term, "o") { return lookup_o(term, sense); }
+    if text_starts(term, "p") { return lookup_p(term, sense); }
+    if text_starts(term, "q") { return lookup_q(term, sense); }
+    if text_starts(term, "r") { return lookup_r(term, sense); }
+    if text_starts(term, "s") { return lookup_s(term, sense); }
+    if text_starts(term, "t") { return lookup_t(term, sense); }
+    if text_starts(term, "u") { return lookup_u(term, sense); }
+    if text_starts(term, "v") { return lookup_v(term, sense); }
+    if text_starts(term, "w") { return lookup_w(term, sense); }
+    if text_starts(term, "y") { return lookup_y(term, sense); }
+    ""
+}
+
+pub fn headwords_for(prefix: str) -> str {
+    if text_starts(prefix, "a") { return words_a(); }
+    if text_starts(prefix, "b") { return words_b(); }
+    if text_starts(prefix, "c") { return words_c(); }
+    if text_starts(prefix, "d") { return words_d(); }
+    if text_starts(prefix, "e") { return words_e(); }
+    if text_starts(prefix, "f") { return words_f(); }
+    if text_starts(prefix, "g") { return words_g(); }
+    if text_starts(prefix, "h") { return words_h(); }
+    if text_starts(prefix, "i") { return words_i(); }
+    if text_starts(prefix, "j") { return words_j(); }
+    if text_starts(prefix, "k") { return words_k(); }
+    if text_starts(prefix, "l") { return words_l(); }
+    if text_starts(prefix, "m") { return words_m(); }
+    if text_starts(prefix, "n") { return words_n(); }
+    if text_starts(prefix, "o") { return words_o(); }
+    if text_starts(prefix, "p") { return words_p(); }
+    if text_starts(prefix, "q") { return words_q(); }
+    if text_starts(prefix, "r") { return words_r(); }
+    if text_starts(prefix, "s") { return words_s(); }
+    if text_starts(prefix, "t") { return words_t(); }
+    if text_starts(prefix, "u") { return words_u(); }
+    if text_starts(prefix, "v") { return words_v(); }
+    if text_starts(prefix, "w") { return words_w(); }
+    if text_starts(prefix, "y") { return words_y(); }
+    ""
+}

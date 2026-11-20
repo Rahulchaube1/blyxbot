@@ -1,0 +1,25 @@
+// fear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fear(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 07519253
+    if sense == 1 {
+        return "noun\tan emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)\tfearfulness, fright\t";
+    }
+    // verb 01780729
+    if sense == 2 {
+        return "verb\tbe afraid or feel anxious or apprehensive about a possible or probable situation or event\t\tI fear she might get aggressive";
+    }
+    // verb 01780202
+    if sense == 3 {
+        return "verb\tbe afraid or scared of; be frightened of\tdread\tI fear the winters in Moscow";
+    }
+    // noun 07524529
+    if sense == 4 {
+        return "noun\tan anxious feeling\tconcern, care\tthey hushed it up out of fear of public reaction";
+    }
+    // verb 01780568
+    if sense == 5 {
+        return "verb\tbe sorry; used to introduce an unpleasant statement\t\tI fear I won't make it to your wedding party";
+    }
+    ""
+}

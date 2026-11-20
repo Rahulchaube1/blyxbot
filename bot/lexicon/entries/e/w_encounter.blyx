@@ -1,0 +1,37 @@
+// encounter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_encounter(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02023107
+    if sense == 1 {
+        return "verb\tcome together\tmeet, run into, run across, come across, see\t";
+    }
+    // verb 02248465
+    if sense == 2 {
+        return "verb\tcome upon, as if by accident; meet with\tfind, happen, chance, bump\t";
+    }
+    // noun 00959376
+    if sense == 3 {
+        return "noun\ta minor short-term fight\tbrush, clash, skirmish\t";
+    }
+    // noun 07414922
+    if sense == 4 {
+        return "noun\ta casual or unexpected convergence\tmeeting\tthere was a brief encounter in the hallway";
+    }
+    // verb 02730326
+    if sense == 5 {
+        return "verb\tbe beset by\trun into\t";
+    }
+    // noun 00147187
+    if sense == 6 {
+        return "noun\ta casual meeting with a person or thing\tcoming upon\t";
+    }
+    // verb 02739480
+    if sense == 7 {
+        return "verb\texperience as a reaction\tmeet, receive\t";
+    }
+    // verb 01079480
+    if sense == 8 {
+        return "verb\tcontend against an opponent in a sport, game, or battle\tmeet, play, take on\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// remind — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_remind(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00610538
+    if sense == 1 {
+        return "verb\tput in the mind of someone\t\tRemind me to call Mother";
+    }
+    // verb 00877848
+    if sense == 2 {
+        return "verb\tassist (somebody acting or reciting) by suggesting the next words of something forgotten or imperfectly learned\tprompt, cue\t";
+    }
+    ""
+}

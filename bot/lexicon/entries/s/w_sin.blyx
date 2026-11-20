@@ -1,0 +1,17 @@
+// sin — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sin(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04827957
+    if sense == 1 {
+        return "noun\testrangement from god\tsinfulness, wickedness\t";
+    }
+    // noun 00757080
+    if sense == 2 {
+        return "noun\tan act that is regarded by theologians as a transgression of God's will\tsinning\t";
+    }
+    // verb 02565687
+    if sense == 3 {
+        return "verb\tcommit a sin; violate a law of God or a moral law\ttransgress, trespass\t";
+    }
+    ""
+}

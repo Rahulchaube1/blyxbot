@@ -1,0 +1,73 @@
+// form — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_form(sense: i64) -> str {
+    if sense == 0 { return "17"; }
+    // noun 06290637
+    if sense == 1 {
+        return "noun\tthe phonological or orthographic sound or appearance of a word that can be used to describe or identify something\tword form, signifier, descriptor\tthe inflected forms of a word can be represented by a stem and a list of inflections to be attached";
+    }
+    // noun 05839024
+    if sense == 2 {
+        return "noun\ta category of things distinguished by some common characteristic or quality\tkind, sort, variety\tsculpture is a form of art";
+    }
+    // noun 05930736
+    if sense == 3 {
+        return "noun\ta perceptual structure\tshape, pattern\tthe composition presents problems for students of musical form";
+    }
+    // verb 02448185
+    if sense == 4 {
+        return "verb\tcreate (as an entity)\torganize, organise\tsocial groups form everywhere";
+    }
+    // verb 02621395
+    if sense == 5 {
+        return "verb\tto compose or represent:\"This wall forms the background of the stage setting\"\tconstitute, make\t";
+    }
+    // noun 05064037
+    if sense == 6 {
+        return "noun\tany spatial attributes (especially as defined by outline)\tshape, configuration, contour, conformation\t";
+    }
+    // noun 05217168
+    if sense == 7 {
+        return "noun\talternative names for the body of a human being\thuman body, physical body, material body, soma, build, figure, physique, anatomy, shape, bod, chassis, frame, flesh\t";
+    }
+    // verb 02623906
+    if sense == 8 {
+        return "verb\tdevelop into a distinctive entity\ttake form, take shape, spring\t";
+    }
+    // verb 00142191
+    if sense == 9 {
+        return "verb\tgive shape or form to\tshape\tform the young child's character";
+    }
+    // verb 01659248
+    if sense == 10 {
+        return "verb\tmake something, usually for a specific function\tshape, work, mold, mould, forge\tForm cylinders from the dough";
+    }
+    // noun 00027807
+    if sense == 11 {
+        return "noun\tthe spatial arrangement of something as distinct from its substance\tshape\t";
+    }
+    // noun 04677514
+    if sense == 12 {
+        return "noun\tthe visual appearance of something or someone\tshape, cast\t";
+    }
+    // verb 02430922
+    if sense == 13 {
+        return "verb\testablish or impress firmly in the mind\timprint\t";
+    }
+    // noun 06473563
+    if sense == 14 {
+        return "noun\ta printed document with spaces in which to write\t\the filled out his tax form";
+    }
+    // noun 08111157
+    if sense == 15 {
+        return "noun\t(biology) a group of organisms within a species that differ in trivial ways from similar groups\tvariant, strain, var.\t";
+    }
+    // noun 07092356
+    if sense == 16 {
+        return "noun\tan arrangement of the elements in a composition or discourse\t\tthe essay was in the form of a dialogue";
+    }
+    // noun 04930478
+    if sense == 17 {
+        return "noun\ta particular mode in which something is manifested\t\this resentment took the form of extreme hostility";
+    }
+    ""
+}

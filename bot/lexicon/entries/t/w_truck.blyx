@@ -1,0 +1,13 @@
+// truck — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_truck(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 04490091
+    if sense == 1 {
+        return "noun\tan automotive vehicle suitable for hauling\tmotortruck\t";
+    }
+    // verb 01954341
+    if sense == 2 {
+        return "verb\tconvey (goods etc.) by truck\t\ttruck fresh vegetables across the mountains";
+    }
+    ""
+}

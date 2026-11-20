@@ -1,0 +1,45 @@
+// dull — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dull(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // adj 00806512
+    if sense == 1 {
+        return "adjective\tlacking in liveliness or animation\t\the was so dull at parties";
+    }
+    // adj 00283703
+    if sense == 2 {
+        return "adjective\temitting or reflecting very little light\t\ta dull glow";
+    }
+    // adj 01454985
+    if sense == 3 {
+        return "adjective\tbeing or made softer or less loud or clear\tmuffled, muted, softened\tthe dull boom of distant breaking waves";
+    }
+    // adj 01345307
+    if sense == 4 {
+        return "adjective\tso lacking in interest as to cause mental weariness\tboring, deadening, ho-hum, irksome, slow, tedious, tiresome, wearisome\ta dull play";
+    }
+    // adj 00393992
+    if sense == 5 {
+        return "adjective\t(of color) very low in saturation; highly diluted\t\tdull greens and blues";
+    }
+    // verb 01246321
+    if sense == 6 {
+        return "verb\tmake dull in appearance\t\tAge had dulled the surface";
+    }
+    // verb 00391971
+    if sense == 7 {
+        return "verb\tbecome dull or lusterless in appearance; lose shine or brightness\t\tthe varnished table top dulled with time";
+    }
+    // adj 00803971
+    if sense == 8 {
+        return "adjective\tnot keenly felt\t\ta dull throbbing";
+    }
+    // adj 00440579
+    if sense == 9 {
+        return "adjective\tslow to learn or understand; lacking intellectual acuity\tdense, dim, dumb, obtuse, slow\talthough dull at classical learning, at mathematics he was uncommonly quick";
+    }
+    // adj 00036998
+    if sense == 10 {
+        return "adjective\t(of business) not active or brisk\tslow, sluggish\tbusiness is dull (or slow)";
+    }
+    ""
+}

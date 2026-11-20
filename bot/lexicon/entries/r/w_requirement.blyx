@@ -1,0 +1,17 @@
+// requirement — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_requirement(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05892651
+    if sense == 1 {
+        return "noun\trequired activity\tdemand\tthe requirements of his work affected his health";
+    }
+    // noun 09367203
+    if sense == 2 {
+        return "noun\tanything indispensable\tnecessity, essential, requisite, necessary\tallow farmers to buy their requirements under favorable conditions";
+    }
+    // noun 05892427
+    if sense == 3 {
+        return "noun\tsomething that is required in advance\tprerequisite\t";
+    }
+    ""
+}

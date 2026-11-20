@@ -1,0 +1,13 @@
+// international — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_international(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01568375
+    if sense == 1 {
+        return "adjective\tconcerning or belonging to all or at least two or more nations\t\tinternational affairs";
+    }
+    // adj 01037885
+    if sense == 2 {
+        return "adjective\tfrom or between other countries\texternal, outside\tinternational trade";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// dry — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dry(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02551380
+    if sense == 1 {
+        return "adjective\tfree from liquid or moisture; lacking natural or normal moisture or depleted of water; or no longer wet\t\tdry land";
+    }
+    // verb 00218475
+    if sense == 2 {
+        return "verb\tremove the moisture from and make dry\tdry out\tdry clothes";
+    }
+    // verb 00219403
+    if sense == 3 {
+        return "verb\tbecome dry or drier\tdry out\tThe laundry dries in the sun";
+    }
+    // adj 01266092
+    if sense == 4 {
+        return "adjective\thumorously sarcastic or mocking\tironic, ironical, wry\tdry humor";
+    }
+    ""
+}

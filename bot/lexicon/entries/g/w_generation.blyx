@@ -1,0 +1,17 @@
+// generation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_generation(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08369406
+    if sense == 1 {
+        return "noun\tall the people living at the same time or of approximately the same age\tcoevals, contemporaries\t";
+    }
+    // noun 08368907
+    if sense == 2 {
+        return "noun\tgroup of genetically related organisms constituting a single step in the line of descent\t\t";
+    }
+    // noun 15249636
+    if sense == 3 {
+        return "noun\tthe normal time between successive generations\t\tthey had to wait a generation for that prejudice to fade";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// tongue — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tongue(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05301072
+    if sense == 1 {
+        return "noun\ta mobile mass of muscular tissue covered with mucous membrane and located in the oral cavity\tlingua, glossa, clapper\t";
+    }
+    // noun 06904171
+    if sense == 2 {
+        return "noun\ta human written or spoken language used by a community; opposed to e.g. a computer language\tnatural language\t";
+    }
+    // noun 13918387
+    if sense == 3 {
+        return "noun\tany long thin projection that is transient\tknife\ttongues of flame licked at the walls";
+    }
+    // noun 07082198
+    if sense == 4 {
+        return "noun\ta manner of speaking\t\the spoke with a thick tongue";
+    }
+    ""
+}

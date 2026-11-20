@@ -1,0 +1,9 @@
+// beautiful — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_beautiful(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 00217728
+    if sense == 1 {
+        return "adjective\tdelighting the senses or exciting intellectual or emotional admiration\t\ta beautiful child";
+    }
+    ""
+}

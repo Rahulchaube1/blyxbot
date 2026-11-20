@@ -1,0 +1,9 @@
+// facility — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_facility(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 03315023
+    if sense == 1 {
+        return "noun\ta building or place that provides a particular service or is used for a particular industry\tinstallation\tthe assembly plant is an enormous facility";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// actual — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_actual(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00043765
+    if sense == 1 {
+        return "adjective\tpresently existing in fact and not merely potential or possible\texistent\tthe predicted temperature and the actual temperature were markedly different";
+    }
+    // adj 01933520
+    if sense == 2 {
+        return "adjective\ttaking place in reality; not pretended or imitated\t\twe saw the actual wedding on television";
+    }
+    // adj 02460964
+    if sense == 3 {
+        return "adjective\tbeing or reflecting the essential or genuine character of something\tgenuine, literal, real\ther actual motive";
+    }
+    // adj 01933731
+    if sense == 4 {
+        return "adjective\texisting in act or fact\tfactual\trocks and trees...the actual world";
+    }
+    ""
+}

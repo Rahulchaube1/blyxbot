@@ -1,0 +1,17 @@
+// advise — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_advise(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00872886
+    if sense == 1 {
+        return "verb\tgive advice to\trede, counsel\t";
+    }
+    // verb 00873682
+    if sense == 2 {
+        return "verb\tinform (somebody) of something\tnotify, give notice, send word, apprise, apprize\tI advised him that the rent was due";
+    }
+    // verb 00875394
+    if sense == 3 {
+        return "verb\tmake a proposal, declare a plan for something\tpropose, suggest\t";
+    }
+    ""
+}

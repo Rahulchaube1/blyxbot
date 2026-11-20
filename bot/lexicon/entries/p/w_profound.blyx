@@ -1,0 +1,13 @@
+// profound — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_profound(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01872745
+    if sense == 1 {
+        return "adjective\tshowing intellectual penetration or emotional depth\t\tthe differences are profound";
+    }
+    // adj 01512645
+    if sense == 2 {
+        return "adjective\tof the greatest intensity; complete\t\ta profound silence";
+    }
+    ""
+}

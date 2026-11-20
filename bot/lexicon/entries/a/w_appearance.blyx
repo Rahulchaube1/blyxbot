@@ -1,0 +1,25 @@
+// appearance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_appearance(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 04673965
+    if sense == 1 {
+        return "noun\toutward or visible aspect of a person or thing\tvisual aspect\t";
+    }
+    // noun 07321772
+    if sense == 2 {
+        return "noun\tthe event of coming into sight\t\t";
+    }
+    // noun 01233627
+    if sense == 3 {
+        return "noun\tformal attendance (in court or at a hearing) of a party in an action\tappearing, coming into court\t";
+    }
+    // noun 05939432
+    if sense == 4 {
+        return "noun\ta mental representation\t\tI tried to describe his appearance to the police";
+    }
+    // noun 00050195
+    if sense == 5 {
+        return "noun\tthe act of appearing in public view\t\tthe rookie made a brief appearance in the first period";
+    }
+    ""
+}

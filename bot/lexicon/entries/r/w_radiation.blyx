@@ -1,0 +1,13 @@
+// radiation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_radiation(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 11499284
+    if sense == 1 {
+        return "noun\tenergy that is radiated or transmitted in the form of rays or waves or particles\t\t";
+    }
+    // noun 01252918
+    if sense == 2 {
+        return "noun\tthe act of spreading outward from a central source\t\t";
+    }
+    ""
+}

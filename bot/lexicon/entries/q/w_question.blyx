@@ -1,0 +1,41 @@
+// question — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_question(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 07193596
+    if sense == 1 {
+        return "noun\tan instance of questioning\tinquiry, enquiry, query, interrogation\tthere was a question about my training";
+    }
+    // noun 06783768
+    if sense == 2 {
+        return "noun\tthe subject matter at issue\thead\tthe question of disease merits serious discussion";
+    }
+    // verb 00867409
+    if sense == 3 {
+        return "verb\tchallenge the accuracy, probity, or propriety of\toppugn, call into question\tWe must question your judgment in this matter";
+    }
+    // verb 00788184
+    if sense == 4 {
+        return "verb\tpose a series of questions to\tinterrogate\tThe suspect was questioned by the police";
+    }
+    // noun 07196682
+    if sense == 5 {
+        return "noun\ta sentence of inquiry that asks for a reply\tinterrogation, interrogative, interrogative sentence\the asked a direct question";
+    }
+    // noun 04757522
+    if sense == 6 {
+        return "noun\tuncertainty about the truth or factuality or existence of something\tdoubt, dubiousness, doubtfulness\tthere is no question about the validity of the enterprise";
+    }
+    // verb 00785008
+    if sense == 7 {
+        return "verb\tpose a question\tquery\t";
+    }
+    // verb 00808855
+    if sense == 8 {
+        return "verb\tconduct an interview in television, newspaper, and radio reporting\tinterview\t";
+    }
+    // verb 00925110
+    if sense == 9 {
+        return "verb\tplace in doubt or express doubtful speculation\twonder\t";
+    }
+    ""
+}

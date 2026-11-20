@@ -1,0 +1,17 @@
+// circumstance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_circumstance(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13942875
+    if sense == 1 {
+        return "noun\ta condition that accompanies or influences some event or activity\t\t";
+    }
+    // noun 14512817
+    if sense == 2 {
+        return "noun\tthe set of facts or circumstances that surround a situation or event\tcontext, setting\t";
+    }
+    // noun 05822746
+    if sense == 3 {
+        return "noun\tinformation that should be kept in mind when making a decision\tcondition, consideration\t";
+    }
+    ""
+}

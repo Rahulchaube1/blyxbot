@@ -1,0 +1,53 @@
+// name — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_name(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // noun 06333653
+    if sense == 1 {
+        return "noun\ta language unit by which a person or thing is known\t\this name really is George Washington";
+    }
+    // verb 01028748
+    if sense == 2 {
+        return "verb\tassign a specified (usually proper) proper name to\tcall\tThey named their son David";
+    }
+    // noun 14438788
+    if sense == 3 {
+        return "noun\ta person's reputation\t\the wanted to protect his good name";
+    }
+    // verb 01026095
+    if sense == 4 {
+        return "verb\tgive the name or identifying characteristics of; refer to by name or some other identifying characteristic property\tidentify\tMany senators were named in connection with the scandal";
+    }
+    // verb 02396716
+    if sense == 5 {
+        return "verb\tcharge with a function; charge to be\tnominate, make\tShe was named Head of the Committee";
+    }
+    // verb 02396205
+    if sense == 6 {
+        return "verb\tcreate and charge with a task or function\tappoint, nominate, constitute\t";
+    }
+    // verb 00947439
+    if sense == 7 {
+        return "verb\tmention and identify by name\t\tname your accomplices!";
+    }
+    // noun 07972279
+    if sense == 8 {
+        return "noun\tfamily based on male descent\tgens\the had no sons and there was no one to carry on his name";
+    }
+    // verb 01024190
+    if sense == 9 {
+        return "verb\tmake reference to\tmention, advert, bring up, cite, refer\tHis name was mentioned in connection with the invention";
+    }
+    // noun 10344443
+    if sense == 10 {
+        return "noun\ta well-known or notable person\tfigure, public figure\tthey studied all the great names in the history of France";
+    }
+    // noun 01139636
+    if sense == 11 {
+        return "noun\tby the sanction or authority of\t\thalt in the name of the law";
+    }
+    // verb 00652346
+    if sense == 12 {
+        return "verb\tidentify as in botany or biology, for example\tidentify, discover, key, key out, distinguish, describe\t";
+    }
+    ""
+}

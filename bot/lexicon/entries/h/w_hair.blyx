@@ -1,0 +1,9 @@
+// hair — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hair(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 05254795
+    if sense == 1 {
+        return "noun\ta covering for the body (or parts of it) consisting of a dense growth of threadlike structures (as on the human head); helps to prevent heat loss\t\the combed his hair";
+    }
+    ""
+}

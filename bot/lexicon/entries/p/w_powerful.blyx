@@ -1,0 +1,21 @@
+// powerful — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_powerful(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01825671
+    if sense == 1 {
+        return "adjective\thaving great power or force or potency or effect\t\tthe most powerful government in western Europe";
+    }
+    // adj 02323072
+    if sense == 2 {
+        return "adjective\tstrong enough to knock down or overwhelm\tknock-down\t";
+    }
+    // adj 01830599
+    if sense == 3 {
+        return "adjective\thaving great influence\tpotent\t";
+    }
+    // adj 02321809
+    if sense == 4 {
+        return "adjective\t(of a person) possessing physical strength and weight; rugged and powerful\tbrawny, hefty, muscular, sinewy\tpowerful arms";
+    }
+    ""
+}

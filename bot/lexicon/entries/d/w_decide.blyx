@@ -1,0 +1,17 @@
+// decide — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_decide(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00697589
+    if sense == 1 {
+        return "verb\treach, make, or come to a decision about something\tmake up one's mind, determine\tWe finally decided after lengthy deliberations";
+    }
+    // verb 00698855
+    if sense == 2 {
+        return "verb\tbring to an end; settle conclusively\tsettle, resolve, adjudicate\tThe case was decided";
+    }
+    // verb 00699485
+    if sense == 3 {
+        return "verb\tcause to decide\t\tThis new development finally decided me!";
+    }
+    ""
+}

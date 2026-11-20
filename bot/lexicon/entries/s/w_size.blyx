@@ -1,0 +1,17 @@
+// size — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_size(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05098942
+    if sense == 1 {
+        return "noun\tthe physical magnitude of something (how big it is)\t\ta wolf is about the size of a large dog";
+    }
+    // noun 05095691
+    if sense == 2 {
+        return "noun\tthe property resulting from being one of a series of graduated measurements (as of clothing)\t\the wears a size 13 shoe";
+    }
+    // adj 02224362
+    if sense == 3 {
+        return "adjective\t(used in combination) sized\t\tthe economy-size package";
+    }
+    ""
+}

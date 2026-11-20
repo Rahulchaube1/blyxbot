@@ -1,0 +1,17 @@
+// reaction — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reaction(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13447361
+    if sense == 1 {
+        return "noun\t(chemistry) a process in which one or more substances are changed into others\tchemical reaction\tthere was a chemical reaction of the lime with the ground water";
+    }
+    // noun 05917328
+    if sense == 2 {
+        return "noun\tan idea evoked by some experience\t\this reaction to the news was to start planning what to do";
+    }
+    // noun 00859001
+    if sense == 3 {
+        return "noun\ta bodily process occurring due to the effect of some antecedent stimulus or agent\tresponse\ta bad reaction to the medicine";
+    }
+    ""
+}

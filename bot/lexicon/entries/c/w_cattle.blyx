@@ -1,0 +1,9 @@
+// cattle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cattle(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 02402425
+    if sense == 1 {
+        return "noun\tdomesticated bovine animals as a group regardless of sex or age\tcows, kine, oxen, Bos taurus\tso many head of cattle";
+    }
+    ""
+}

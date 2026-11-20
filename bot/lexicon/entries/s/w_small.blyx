@@ -1,0 +1,37 @@
+// small — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_small(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 01391351
+    if sense == 1 {
+        return "adjective\tlimited or below average in number or quantity or magnitude or extent\tlittle\ta small car";
+    }
+    // adj 01415219
+    if sense == 2 {
+        return "adjective\tlimited in size or scope\tminor, modest, small-scale, pocket-size, pocket-sized\ta small business";
+    }
+    // adj 01649031
+    if sense == 3 {
+        return "adjective\t(of children and animals) young, immature\tlittle\tsmall children";
+    }
+    // adj 01554940
+    if sense == 4 {
+        return "adjective\tslight or limited; especially in degree or intensity or scope\t\ta series of death struggles with small time in between";
+    }
+    // noun 05559023
+    if sense == 5 {
+        return "noun\tthe slender part of the back\t\t";
+    }
+    // adj 02340458
+    if sense == 6 {
+        return "adjective\tlow or inferior in station or quality\thumble, low, lowly, modest\tsmall beginnings";
+    }
+    // adj 01467534
+    if sense == 7 {
+        return "adjective\tlowercase\tlittle, minuscule\tsmall a";
+    }
+    // adj 01455732
+    if sense == 8 {
+        return "adjective\t(of a voice) faint\tlittle\ta still small voice";
+    }
+    ""
+}

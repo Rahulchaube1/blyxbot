@@ -1,0 +1,49 @@
+// yield — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_yield(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 02339171
+    if sense == 1 {
+        return "verb\tbe the cause or source of\tgive, afford\t";
+    }
+    // verb 00435103
+    if sense == 2 {
+        return "verb\tend resistance, as under pressure or force\tgive way\tThe door yielded to repeated blows with a battering ram";
+    }
+    // noun 00914632
+    if sense == 3 {
+        return "noun\tproduction of a certain amount\toutput\t";
+    }
+    // verb 01629000
+    if sense == 4 {
+        return "verb\tgive or supply\trender, return, give, generate\tThis year's crop yielded 1,000 bushels of corn";
+    }
+    // verb 02316649
+    if sense == 5 {
+        return "verb\tgive over; surrender or relinquish to the physical control of another\tconcede, cede, grant\t";
+    }
+    // verb 02703289
+    if sense == 6 {
+        return "verb\tgive in, as to influence or pressure\trelent, soften\t";
+    }
+    // noun 13260190
+    if sense == 7 {
+        return "noun\tthe income or profit arising from such transactions as the sale of land or other property\treturn, issue, take, takings, proceeds, payoff\t";
+    }
+    // noun 04612722
+    if sense == 8 {
+        return "noun\tan amount of a product\tfruit\t";
+    }
+    // verb 01848465
+    if sense == 9 {
+        return "verb\tmove in order to make room for someone for something\tmove over, give way, give, ease up\t";
+    }
+    // verb 01629403
+    if sense == 10 {
+        return "verb\tcause to happen or be responsible for\tgive\t";
+    }
+    // verb 00806049
+    if sense == 11 {
+        return "verb\tbe willing to concede\tconcede, grant\t";
+    }
+    ""
+}

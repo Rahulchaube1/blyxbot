@@ -1,0 +1,21 @@
+// soul — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_soul(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 10627082
+    if sense == 1 {
+        return "noun\tthe immaterial part of a person; the actuating cause of an individual life\tpsyche\t";
+    }
+    // noun 00007846
+    if sense == 2 {
+        return "noun\ta human being\tperson, individual, someone, somebody, mortal\t";
+    }
+    // noun 07480790
+    if sense == 3 {
+        return "noun\tdeep feeling or emotion\tsoulfulness\t";
+    }
+    // noun 00933154
+    if sense == 4 {
+        return "noun\tthe human embodiment of something\t\tthe soul of honor";
+    }
+    ""
+}

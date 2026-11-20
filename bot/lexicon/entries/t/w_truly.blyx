@@ -1,0 +1,13 @@
+// truly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_truly(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00037226
+    if sense == 1 {
+        return "adverb\tin accordance with truth or fact or reality\tgenuinely, really\tshe was now truly American";
+    }
+    // adv 00223000
+    if sense == 2 {
+        return "adverb\tby right\trightfully\t";
+    }
+    ""
+}

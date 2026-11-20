@@ -1,0 +1,33 @@
+// decline — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_decline(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00203866
+    if sense == 1 {
+        return "verb\tgrow worse\tworsen\t";
+    }
+    // noun 13457378
+    if sense == 2 {
+        return "noun\tchange toward something smaller or lower\tdiminution\t";
+    }
+    // verb 02237338
+    if sense == 3 {
+        return "verb\trefuse to accept\trefuse, reject, pass up, turn down\t";
+    }
+    // verb 00797430
+    if sense == 4 {
+        return "verb\tshow unwillingness towards\trefuse\the declined to join the group on a hike";
+    }
+    // noun 14422488
+    if sense == 5 {
+        return "noun\ta condition inferior to an earlier condition; a gradual falling off from a better state\tdeclination\t";
+    }
+    // verb 00431826
+    if sense == 6 {
+        return "verb\tgrow smaller\tgo down, wane\t";
+    }
+    // noun 13456567
+    if sense == 7 {
+        return "noun\ta gradual decrease; as of stored charge or current\tdecay\t";
+    }
+    ""
+}

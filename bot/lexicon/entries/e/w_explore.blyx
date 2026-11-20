@@ -1,0 +1,17 @@
+// explore — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_explore(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00648224
+    if sense == 1 {
+        return "verb\tinquire into\tresearch, search\tScientists are exploring the nature of consciousness";
+    }
+    // verb 00649481
+    if sense == 2 {
+        return "verb\ttravel to or penetrate into\t\texplore unknown territory in biology";
+    }
+    // verb 00646271
+    if sense == 3 {
+        return "verb\texamine minutely\t\t";
+    }
+    ""
+}

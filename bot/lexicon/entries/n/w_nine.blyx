@@ -1,0 +1,13 @@
+// nine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_nine(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02187161
+    if sense == 1 {
+        return "adjective\tdenoting a quantity consisting of one more than eight and one less than ten\t9, ix\t";
+    }
+    // noun 13745270
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of eight and one\t9, IX, niner, Nina from Carolina, ennead\t";
+    }
+    ""
+}

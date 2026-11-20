@@ -1,0 +1,21 @@
+// drama — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_drama(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 07007945
+    if sense == 1 {
+        return "noun\ta dramatic work intended for performance by actors on a stage\tplay, dramatic play\t";
+    }
+    // noun 07290278
+    if sense == 2 {
+        return "noun\tan episode that is turbulent or highly emotional\tdramatic event\t";
+    }
+    // noun 06376154
+    if sense == 3 {
+        return "noun\tthe literary genre of works intended for the theater\t\t";
+    }
+    // noun 04626705
+    if sense == 4 {
+        return "noun\tthe quality of being arresting or highly emotional\t\t";
+    }
+    ""
+}

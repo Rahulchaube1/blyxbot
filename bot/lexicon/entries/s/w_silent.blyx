@@ -1,0 +1,13 @@
+// silent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_silent(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01919428
+    if sense == 1 {
+        return "adjective\tmarked by absence of sound\tsoundless, still\ta silent house";
+    }
+    // adj 00501820
+    if sense == 2 {
+        return "adjective\tfailing to speak or communicate etc when expected to\tmum\tthe witness remained silent";
+    }
+    ""
+}

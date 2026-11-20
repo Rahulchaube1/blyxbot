@@ -1,0 +1,37 @@
+// combine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_combine(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02631163
+    if sense == 1 {
+        return "verb\thave or possess in combination\tunite\t";
+    }
+    // verb 00193486
+    if sense == 2 {
+        return "verb\tput or add together\tcompound\tcombine resources";
+    }
+    // verb 01461328
+    if sense == 3 {
+        return "verb\tcombine so as to form a whole; mix\tcompound\t";
+    }
+    // verb 02309008
+    if sense == 4 {
+        return "verb\tadd together from different sources\t\tcombine resources";
+    }
+    // verb 02377938
+    if sense == 5 {
+        return "verb\tjoin for a common purpose or in a common action\t\tThese forces combined with others";
+    }
+    // noun 03075634
+    if sense == 6 {
+        return "noun\tharvester that heads and threshes and cleans grain while moving across the field\t\t";
+    }
+    // verb 01385170
+    if sense == 7 {
+        return "verb\tgather in a mass, sum, or whole\taggregate\t";
+    }
+    // verb 00394813
+    if sense == 8 {
+        return "verb\tmix together different elements\tblend, flux, mix, conflate, commingle, immix, fuse, coalesce, meld, merge\t";
+    }
+    ""
+}

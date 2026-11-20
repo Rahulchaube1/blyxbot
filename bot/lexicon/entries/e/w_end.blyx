@@ -1,0 +1,61 @@
+// end — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_end(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 02609764
+    if sense == 1 {
+        return "verb\thave an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical\tstop, finish, terminate, cease\tMy property ends by the bushes";
+    }
+    // noun 08566028
+    if sense == 2 {
+        return "noun\teither extremity of something that has length\tterminal\tthe end of the pier";
+    }
+    // noun 15266911
+    if sense == 3 {
+        return "noun\tthe point in time at which something ends\tending\tthe end of the year";
+    }
+    // verb 00352826
+    if sense == 4 {
+        return "verb\tbring to an end or halt\tterminate\tShe ended their friendship when she found out that he had once been convicted of a crime";
+    }
+    // noun 07291794
+    if sense == 5 {
+        return "noun\tthe concluding parts of an event or occurrence\tlast, final stage\tthe end was exciting";
+    }
+    // noun 05980875
+    if sense == 6 {
+        return "noun\tthe state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it\tgoal\tthe ends justify the means";
+    }
+    // noun 05868477
+    if sense == 7 {
+        return "noun\ta final part or section\t\twe have given it at the end of the section since it involves the calculus";
+    }
+    // verb 02735418
+    if sense == 8 {
+        return "verb\tbe the end of; be the last or concluding part of\tterminate\tThis sad scene ended the movie";
+    }
+    // noun 14562960
+    if sense == 9 {
+        return "noun\ta final state\tdestruction, death\the came to a bad end";
+    }
+    // noun 08566707
+    if sense == 10 {
+        return "noun\tthe surface at either extremity of a three-dimensional object\t\tone end of the box was marked `This side up'";
+    }
+    // noun 10056398
+    if sense == 11 {
+        return "noun\t(football) the person who plays at one end of the line of scrimmage\t\tthe end managed to hold onto the pass";
+    }
+    // noun 08565894
+    if sense == 12 {
+        return "noun\ta boundary marking the extremities of something\t\tthe end of town";
+    }
+    // noun 08566884
+    if sense == 13 {
+        return "noun\tone of two places from which people are communicating to each other\t\tthe phone rang at the other end";
+    }
+    // noun 00787727
+    if sense == 14 {
+        return "noun\tthe part you are expected to play\t\the held up his end";
+    }
+    ""
+}

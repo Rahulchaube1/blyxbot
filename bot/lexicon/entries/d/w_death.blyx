@@ -1,0 +1,33 @@
+// death — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_death(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 07355491
+    if sense == 1 {
+        return "noun\tthe event of dying or departure from life\tdecease, expiry\ther death came as a terrible shock";
+    }
+    // noun 11444117
+    if sense == 2 {
+        return "noun\tthe permanent end of all life functions in an organism or part of an organism\t\tthe animal died a painful death";
+    }
+    // noun 13962498
+    if sense == 3 {
+        return "noun\tthe absence of life or state of being dead\t\the seemed more content in death than he had ever been in life";
+    }
+    // noun 15143477
+    if sense == 4 {
+        return "noun\tthe time when something ends\tdying, demise\tit was the death of all his plans";
+    }
+    // noun 15143276
+    if sense == 5 {
+        return "noun\tthe time at which life ends; continuing until dead\tlast\tshe stayed until his death";
+    }
+    // noun 09488259
+    if sense == 6 {
+        return "noun\tthe personification of death\t\tDeath walked the streets of the plague-bound city";
+    }
+    // noun 14562960
+    if sense == 7 {
+        return "noun\ta final state\tend, destruction\t";
+    }
+    ""
+}

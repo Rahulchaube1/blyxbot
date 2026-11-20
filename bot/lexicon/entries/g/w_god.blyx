@@ -1,0 +1,13 @@
+// god — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_god(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09536058
+    if sense == 1 {
+        return "noun\tthe supernatural being conceived as the perfect and omnipotent and omniscient originator and ruler of the universe; the object of worship in monotheistic religions\tSupreme Being\t";
+    }
+    // noun 09505418
+    if sense == 2 {
+        return "noun\tany supernatural being worshipped as controlling some part of the world or some aspect of life or who is the personification of a force\tdeity, divinity, immortal\t";
+    }
+    ""
+}

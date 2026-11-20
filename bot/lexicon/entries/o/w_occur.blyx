@@ -1,0 +1,13 @@
+// occur — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_occur(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00339934
+    if sense == 1 {
+        return "verb\tcome to pass\thappen, hap, go on, pass off, pass, fall out, come about, take place\tNothing occurred that seemed important";
+    }
+    // verb 00723349
+    if sense == 2 {
+        return "verb\tcome to one's mind; suggest itself\tcome\tIt occurred to me that we should hire another secretary";
+    }
+    ""
+}

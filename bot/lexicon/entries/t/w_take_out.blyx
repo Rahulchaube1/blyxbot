@@ -1,0 +1,29 @@
+// take out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_take_out(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02404904
+    if sense == 1 {
+        return "verb\tcause to leave\tmove out, remove\t";
+    }
+    // verb 01485513
+    if sense == 2 {
+        return "verb\tremove from its packing\tunpack\t";
+    }
+    // verb 00179311
+    if sense == 3 {
+        return "verb\ttake out or remove\ttake away\ttake out the chicken after adding the vegetables";
+    }
+    // verb 02239261
+    if sense == 4 {
+        return "verb\tobtain by legal or official process\t\ttake out a license";
+    }
+    // verb 02486693
+    if sense == 5 {
+        return "verb\tmake a date\task out, invite out\t";
+    }
+    // verb 01352390
+    if sense == 6 {
+        return "verb\tremove something from a container or an enclosed space\t\t";
+    }
+    ""
+}

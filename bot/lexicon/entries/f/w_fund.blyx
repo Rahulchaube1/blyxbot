@@ -1,0 +1,13 @@
+// fund — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fund(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13358549
+    if sense == 1 {
+        return "noun\ta reserve of money set aside for some purpose\tmonetary fund\t";
+    }
+    // noun 13367070
+    if sense == 2 {
+        return "noun\ta supply of something available for future use\tstore, stock\t";
+    }
+    ""
+}

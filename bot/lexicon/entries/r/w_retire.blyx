@@ -1,0 +1,33 @@
+// retire — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_retire(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02379753
+    if sense == 1 {
+        return "verb\tgo into retirement; stop performing one's work or withdraw from one's position\t\tHe retired at age 68";
+    }
+    // verb 02380009
+    if sense == 2 {
+        return "verb\twithdraw from active participation\twithdraw\tHe retired from chess";
+    }
+    // verb 01994442
+    if sense == 3 {
+        return "verb\tpull back or move away or backward\twithdraw, retreat, pull away, draw back, recede, pull back, move back\t";
+    }
+    // verb 02480448
+    if sense == 4 {
+        return "verb\twithdraw from circulation or from the market, as of bills, shares, and bonds\t\t";
+    }
+    // verb 02428487
+    if sense == 5 {
+        return "verb\tbreak from a meeting or gathering\tadjourn, withdraw\tThe men retired to the library";
+    }
+    // verb 02380251
+    if sense == 6 {
+        return "verb\tmake (someone) retire\t\tThe director was retired after the scandal";
+    }
+    // verb 02225342
+    if sense == 7 {
+        return "verb\tdispose of (something no longer useful or needed)\t\tShe finally retired that old coat";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// west — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_west(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08682575
+    if sense == 1 {
+        return "noun\tthe countries of (originally) Europe and (now including) North America and South America\tOccident\t";
+    }
+    // noun 13834399
+    if sense == 2 {
+        return "noun\tthe cardinal compass point that is a 270 degrees\tdue west, westward, W\t";
+    }
+    // adj 00824321
+    if sense == 3 {
+        return "adjective\tsituated in or facing or moving toward the west\t\t";
+    }
+    // noun 08682819
+    if sense == 4 {
+        return "noun\tthe region of the United States lying to the west of the Mississippi River\twestern United States\t";
+    }
+    // adv 00323908
+    if sense == 5 {
+        return "adverb\tto, toward, or in the west\t\twe moved west to Arizona";
+    }
+    ""
+}

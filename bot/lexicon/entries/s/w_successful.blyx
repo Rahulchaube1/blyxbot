@@ -1,0 +1,9 @@
+// successful — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_successful(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 02331262
+    if sense == 1 {
+        return "adjective\thaving succeeded or being marked by a favorable outcome\t\ta successful architect";
+    }
+    ""
+}

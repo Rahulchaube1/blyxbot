@@ -1,0 +1,21 @@
+// group — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_group(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00031264
+    if sense == 1 {
+        return "noun\tany number of entities (members) considered as a unit\tgrouping\t";
+    }
+    // verb 00656576
+    if sense == 2 {
+        return "verb\tarrange into a group or groups\t\tCan you group these shapes together?";
+    }
+    // noun 14621446
+    if sense == 3 {
+        return "noun\t(chemistry) two or more atoms bound together as a single unit and forming part of a molecule\tradical, chemical group\t";
+    }
+    // verb 01089878
+    if sense == 4 {
+        return "verb\tform a group or group together\taggroup\t";
+    }
+    ""
+}

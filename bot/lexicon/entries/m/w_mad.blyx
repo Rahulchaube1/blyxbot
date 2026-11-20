@@ -1,0 +1,17 @@
+// mad — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mad(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00115193
+    if sense == 1 {
+        return "adjective\troused to anger\thuffy, sore\tshe gets mad when you wake her up so early";
+    }
+    // adj 02075321
+    if sense == 2 {
+        return "adjective\taffected with madness or insanity\tbrainsick, crazy, demented, disturbed, sick, unbalanced, unhinged\ta man who had gone mad";
+    }
+    // adj 02390724
+    if sense == 3 {
+        return "adjective\tmarked by uncontrolled excitement or emotion\tdelirious, excited, frantic, unrestrained\ta mad whirl of pleasure";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// three — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_three(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02186580
+    if sense == 1 {
+        return "adjective\tbeing one more than two\t3, iii\t";
+    }
+    // noun 13744044
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of one and one and one\t3, III, trio, threesome, tierce, leash, troika, triad, trine, trinity, ternary, ternion, triplet, tercet, terzetto, trey, deuce-ace\t";
+    }
+    ""
+}

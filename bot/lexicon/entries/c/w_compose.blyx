@@ -1,0 +1,25 @@
+// compose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_compose(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02621244
+    if sense == 1 {
+        return "verb\tform the substance of\t\tGreed and ambition composed his personality";
+    }
+    // verb 01705494
+    if sense == 2 {
+        return "verb\twrite music\twrite\tBeethoven composed nine symphonies";
+    }
+    // verb 01698271
+    if sense == 3 {
+        return "verb\tproduce a literary work\twrite, pen, indite\tShe composed a poem";
+    }
+    // verb 01626138
+    if sense == 4 {
+        return "verb\tput together out of existing material\tcompile\t";
+    }
+    // verb 01765178
+    if sense == 5 {
+        return "verb\tcalm (someone, especially oneself); make quiet\t\tShe had to compose herself before she could reply to this terrible insult";
+    }
+    ""
+}

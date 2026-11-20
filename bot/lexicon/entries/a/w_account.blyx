@@ -1,0 +1,29 @@
+// account — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_account(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 06514093
+    if sense == 1 {
+        return "noun\ta record or narrative description of past events\thistory, chronicle, story\the gave an inaccurate account of the plot to kill the president";
+    }
+    // noun 06681551
+    if sense == 2 {
+        return "noun\ta short account of the news\treport, news report, story, write up\tthe account of his speech that was given on the evening news made the governor furious";
+    }
+    // noun 13929037
+    if sense == 3 {
+        return "noun\ta formal contractual relationship established to provide for regular banking or brokerage or business services\tbusiness relationship\the asked to see the executive who handled his account";
+    }
+    // noun 06738281
+    if sense == 4 {
+        return "noun\ta statement that makes something comprehensible by describing the relevant structure or operation or circumstances etc.\texplanation\tI expected a brief account";
+    }
+    // noun 09179382
+    if sense == 5 {
+        return "noun\tgrounds\tscore\tdon't do it on my account";
+    }
+    // noun 05169037
+    if sense == 6 {
+        return "noun\timportance or value\t\ta person of considerable account";
+    }
+    ""
+}

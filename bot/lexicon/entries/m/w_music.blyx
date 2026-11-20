@@ -1,0 +1,17 @@
+// music — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_music(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 07020895
+    if sense == 1 {
+        return "noun\tan artistic form of auditory communication incorporating instrumental or vocal tones in a structured and continuous manner\t\t";
+    }
+    // noun 05718556
+    if sense == 2 {
+        return "noun\tany agreeable (pleasing and harmonious) sounds\teuphony\the fell asleep to the music of the wind chimes";
+    }
+    // noun 00543233
+    if sense == 3 {
+        return "noun\tmusical activity (singing or whistling etc.)\t\this music was his central interest";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// individual — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_individual(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 00007846
+    if sense == 1 {
+        return "noun\ta human being\tperson, someone, somebody, mortal, soul\t";
+    }
+    // adj 00493460
+    if sense == 2 {
+        return "adjective\tbeing or characteristic of a single thing or person\tsingle\tindividual drops of rain";
+    }
+    // noun 10203839
+    if sense == 3 {
+        return "noun\ta single organism\t\t";
+    }
+    // adj 00729246
+    if sense == 4 {
+        return "adjective\tseparate and distinct from others of the same kind\tcase-by-case, item-by-item\tmark the individual pages";
+    }
+    // adj 02153174
+    if sense == 5 {
+        return "adjective\tcharacteristic of or meant for a single person or thing\tsingle\tan individual serving";
+    }
+    // adj 01768086
+    if sense == 6 {
+        return "adjective\tconcerning one person exclusively\tprivate\twe all have individual cars";
+    }
+    ""
+}

@@ -1,0 +1,53 @@
+// lift — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lift(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // verb 01974062
+    if sense == 1 {
+        return "verb\traise from a lower to a higher position\traise, elevate, get up, bring up\tLift a load";
+    }
+    // verb 01579153
+    if sense == 2 {
+        return "verb\ttake hold of something and move it to a different location\t\tlift the box onto the table";
+    }
+    // verb 01973759
+    if sense == 3 {
+        return "verb\tmove upwards\traise\tlift one's eyes";
+    }
+    // verb 01968569
+    if sense == 4 {
+        return "verb\tmove upward\trise, arise, move up, go up, come up, uprise\tThe fog lifted";
+    }
+    // verb 00986074
+    if sense == 5 {
+        return "verb\tmake audible\t\tHe lifted a war whoop";
+    }
+    // verb 00799798
+    if sense == 6 {
+        return "verb\tcancel officially\trevoke, annul, countermand, reverse, repeal, overturn, rescind, vacate\tlift an embargo";
+    }
+    // noun 01209487
+    if sense == 7 {
+        return "noun\tthe act of giving temporary assistance\t\t";
+    }
+    // verb 02276866
+    if sense == 8 {
+        return "verb\tmake off with belongings of others\tpilfer, cabbage, purloin, pinch, abstract, snarf, swipe, hook, sneak, filch, nobble\t";
+    }
+    // verb 01455184
+    if sense == 9 {
+        return "verb\traise or haul up with or as if with mechanical help\thoist, wind\t";
+    }
+    // verb 00549982
+    if sense == 10 {
+        return "verb\tinvigorate or heighten\traise\tlift my spirits";
+    }
+    // verb 00544549
+    if sense == 11 {
+        return "verb\traise in rank or condition\traise, elevate\tThe new law lifted many people from poverty";
+    }
+    // verb 00178652
+    if sense == 12 {
+        return "verb\ttake off or away by decreasing\t\tlift the pressure";
+    }
+    ""
+}

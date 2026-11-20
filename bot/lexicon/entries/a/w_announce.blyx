@@ -1,0 +1,21 @@
+// announce — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_announce(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00974367
+    if sense == 1 {
+        return "verb\tmake known; make an announcement\tdenote\t";
+    }
+    // verb 00965871
+    if sense == 2 {
+        return "verb\tannounce publicly or officially\tdeclare\t";
+    }
+    // verb 00975427
+    if sense == 3 {
+        return "verb\tgive the names of\t\tHe announced the winners of the spelling bee";
+    }
+    // verb 00974173
+    if sense == 4 {
+        return "verb\tforeshadow or presage\tannunciate, harbinger, foretell, herald\t";
+    }
+    ""
+}

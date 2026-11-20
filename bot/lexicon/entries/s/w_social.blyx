@@ -1,0 +1,25 @@
+// social — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_social(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 02798370
+    if sense == 1 {
+        return "adjective\trelating to human society and its members\tsocietal\tsocial institutions";
+    }
+    // adj 02248349
+    if sense == 2 {
+        return "adjective\tliving together or enjoying life in communities or organized groups\t\ta human being is a social animal";
+    }
+    // adj 02798597
+    if sense == 3 {
+        return "adjective\trelating to or belonging to or characteristic of high society\t\tmade fun of her being so social and high-toned";
+    }
+    // adj 02258360
+    if sense == 4 {
+        return "adjective\tcomposed of sociable people or formed for the purpose of sociability\t\ta purely social club";
+    }
+    // noun 08256369
+    if sense == 5 {
+        return "noun\ta party of people assembled to promote sociability and communal activity\tsociable, mixer\t";
+    }
+    ""
+}

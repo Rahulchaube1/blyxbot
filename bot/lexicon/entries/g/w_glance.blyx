@@ -1,0 +1,17 @@
+// glance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_glance(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02165304
+    if sense == 1 {
+        return "verb\tthrow a glance at; take a brief look at\tpeek, glint\tShe only glanced at the paper";
+    }
+    // noun 00877625
+    if sense == 2 {
+        return "noun\ta quick look\tglimpse, coup d'oeil\t";
+    }
+    // verb 01893000
+    if sense == 3 {
+        return "verb\thit at an angle\t\t";
+    }
+    ""
+}

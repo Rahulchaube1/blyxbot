@@ -1,0 +1,25 @@
+// structure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_structure(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 04341686
+    if sense == 1 {
+        return "noun\ta thing constructed; a complex entity constructed of many parts\tconstruction\tthe structure consisted of a series of arches";
+    }
+    // noun 04931965
+    if sense == 2 {
+        return "noun\tthe manner of construction of something and the arrangement of its parts\t\tartists must study the structure of the human body";
+    }
+    // noun 05726345
+    if sense == 3 {
+        return "noun\tthe complex composition of knowledge as elements and their combinations\t\this lectures have no structure";
+    }
+    // noun 05225602
+    if sense == 4 {
+        return "noun\ta particular complex anatomical part of a living thing\tanatomical structure, complex body part, bodily structure, body structure\the has good bone structure";
+    }
+    // verb 00404222
+    if sense == 5 {
+        return "verb\tgive a structure to\t\tI need to structure my days";
+    }
+    ""
+}

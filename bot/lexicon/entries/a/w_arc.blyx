@@ -1,0 +1,13 @@
+// arc — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_arc(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 11511523
+    if sense == 1 {
+        return "noun\telectrical conduction through a gas in an applied electric field\tdischarge, spark, electric arc, electric discharge\t";
+    }
+    // noun 13874384
+    if sense == 2 {
+        return "noun\ta continuous portion of a circle\t\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// distant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_distant(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00445548
+    if sense == 1 {
+        return "adjective\tseparated in space or coming from or going to a distance\t\tdistant villages";
+    }
+    // adj 00450606
+    if sense == 2 {
+        return "adjective\tfar apart in relevance or relationship or kinship\tremote\ta distant cousin";
+    }
+    ""
+}

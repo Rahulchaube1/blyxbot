@@ -1,0 +1,13 @@
+// efficiency — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_efficiency(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13820993
+    if sense == 1 {
+        return "noun\tthe ratio of the output to the input of any system\t\t";
+    }
+    // noun 05644527
+    if sense == 2 {
+        return "noun\tskillfulness in avoiding wasted time and effort\t\tshe did the work with great efficiency";
+    }
+    ""
+}

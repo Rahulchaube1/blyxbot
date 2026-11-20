@@ -1,0 +1,89 @@
+// draw — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_draw(sense: i64) -> str {
+    if sense == 0 { return "21"; }
+    // verb 01448100
+    if sense == 1 {
+        return "verb\tcause to move by pulling\tpull, force\tdraw a wagon";
+    }
+    // verb 02293148
+    if sense == 2 {
+        return "verb\tget or derive\treap\t";
+    }
+    // verb 01582645
+    if sense == 3 {
+        return "verb\tmake a mark or lines on a surface\ttrace, line, describe, delineate\tdraw a line";
+    }
+    // verb 00730758
+    if sense == 4 {
+        return "verb\tmake, formulate, or derive in the mind\tmake\tI draw a line here";
+    }
+    // verb 01995211
+    if sense == 5 {
+        return "verb\tbring, take, or pull out of a container or from under a cover\tpull, pull out, get out, take out\tdraw a weapon";
+    }
+    // verb 01690294
+    if sense == 6 {
+        return "verb\trepresent by making a drawing of, as with a pencil, chalk, etc. on a surface\t\tDraw me a horse";
+    }
+    // verb 01854132
+    if sense == 7 {
+        return "verb\ttake liquid out of a container or well\ttake out\t";
+    }
+    // verb 00987071
+    if sense == 8 {
+        return "verb\tgive a description of\tdescribe, depict\t";
+    }
+    // verb 00675901
+    if sense == 9 {
+        return "verb\tselect or take in from a given group or region\t\t";
+    }
+    // noun 09269882
+    if sense == 10 {
+        return "noun\ta gully that is shallower than a ravine\t\t";
+    }
+    // verb 01760300
+    if sense == 11 {
+        return "verb\telicit responses, such as objections, criticism, applause, etc.\t\t";
+    }
+    // verb 01199009
+    if sense == 12 {
+        return "verb\tsuck in or take (air)\tpuff, drag\tdraw a deep breath";
+    }
+    // verb 02088107
+    if sense == 13 {
+        return "verb\tmove or go steadily or gradually\t\t";
+    }
+    // verb 02311387
+    if sense == 14 {
+        return "verb\tremove (a commodity) from (a supply source)\twithdraw, take out, draw off\t";
+    }
+    // verb 01078050
+    if sense == 15 {
+        return "verb\tchoose at random\tcast\tdraw a card";
+    }
+    // verb 01643297
+    if sense == 16 {
+        return "verb\tearn or achieve a base by being walked by the pitcher\tget\t";
+    }
+    // verb 00556593
+    if sense == 17 {
+        return "verb\tbring or lead someone to a certain action or condition\t\t";
+    }
+    // verb 02097800
+    if sense == 18 {
+        return "verb\tcause to flow\t\t";
+    }
+    // verb 01690816
+    if sense == 19 {
+        return "verb\twrite a legal document or paper\t\t";
+    }
+    // verb 01643464
+    if sense == 20 {
+        return "verb\tengage in drawing\t\tHe spent the day drawing in the garden";
+    }
+    // verb 01243148
+    if sense == 21 {
+        return "verb\tmove or pull so as to cover or uncover something\t\tdraw the shades";
+    }
+    ""
+}

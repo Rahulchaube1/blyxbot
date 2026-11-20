@@ -1,0 +1,25 @@
+// effective — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_effective(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 00834198
+    if sense == 1 {
+        return "adjective\tproducing or capable of producing an intended result or having a striking effect\teffectual, efficacious\tan air-cooled motor was more effective than a witch's broomstick for rapid long-distance transportation";
+    }
+    // adj 00510644
+    if sense == 2 {
+        return "adjective\table to accomplish a purpose; functioning effectively\tefficient\tpeople who will do nothing unless they get something out of it for themselves are often highly effective persons...";
+    }
+    // adj 00839225
+    if sense == 3 {
+        return "adjective\tworks well as a means or remedy\t\tan effective reprimand";
+    }
+    // adj 00832784
+    if sense == 4 {
+        return "adjective\texerting force or influence\tgood, in effect, in force\tthe law is effective immediately";
+    }
+    // adj 00044132
+    if sense == 5 {
+        return "adjective\texisting in fact; not theoretical; real\t\ta decline in the effective demand";
+    }
+    ""
+}

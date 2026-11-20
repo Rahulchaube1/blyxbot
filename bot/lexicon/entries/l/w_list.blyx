@@ -1,0 +1,21 @@
+// list — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_list(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06481320
+    if sense == 1 {
+        return "noun\ta database containing an ordered array of items (names or topics)\tlisting\t";
+    }
+    // verb 00945853
+    if sense == 2 {
+        return "verb\tgive or make a list of; name individually; give the names of\tname\tList the states west of the Mississippi";
+    }
+    // verb 02472223
+    if sense == 3 {
+        return "verb\tinclude in a list\t\tAm I listed in your register?";
+    }
+    // noun 05068080
+    if sense == 4 {
+        return "noun\tthe property possessed by a line or surface that departs from the vertical\ttilt, inclination, lean, leaning\tthe ship developed a list to starboard";
+    }
+    ""
+}

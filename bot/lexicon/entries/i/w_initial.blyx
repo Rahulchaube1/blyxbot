@@ -1,0 +1,13 @@
+// initial — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_initial(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01011973
+    if sense == 1 {
+        return "adjective\toccurring at the beginning\t\ttook the initial step toward reconciliation";
+    }
+    // noun 06830997
+    if sense == 2 {
+        return "noun\tthe first letter of a word (especially a person's name)\t\the refused to put the initials FRS after his name";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// moreover — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_moreover(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00029367
+    if sense == 1 {
+        return "adverb\tin addition\tfurthermore, what is more\tthe cellar was dark; moreover, mice nested there";
+    }
+    ""
+}

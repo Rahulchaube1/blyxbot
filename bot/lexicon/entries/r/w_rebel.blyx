@@ -1,0 +1,25 @@
+// rebel — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rebel(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 10628368
+    if sense == 1 {
+        return "noun\t`Johnny' was applied as a nickname for Confederate soldiers by the Federal soldiers in the American Civil War; `greyback' derived from their grey Confederate uniforms\tReb, Johnny Reb, Johnny, greyback\t";
+    }
+    // verb 02583139
+    if sense == 2 {
+        return "verb\ttake part in a rebellion; renounce a former allegiance\tarise, rise, rise up\t";
+    }
+    // noun 10210137
+    if sense == 3 {
+        return "noun\ta person who takes part in an armed rebellion against the constituted authority (especially in the hope of improving conditions)\tinsurgent, insurrectionist, freedom fighter\t";
+    }
+    // verb 02583379
+    if sense == 4 {
+        return "verb\tbreak with established customs\trenegade\t";
+    }
+    // noun 10303654
+    if sense == 5 {
+        return "noun\tsomeone who exhibits great independence in thought and action\tmaverick\t";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// europe — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_europe(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 09275473
+    if sense == 1 {
+        return "noun\tthe 2nd smallest continent (actually a vast peninsula of Eurasia); the British use `Europe' to refer to all of the continent except the British Isles\t\t";
+    }
+    ""
+}

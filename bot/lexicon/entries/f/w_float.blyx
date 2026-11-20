@@ -1,0 +1,17 @@
+// float — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_float(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01902783
+    if sense == 1 {
+        return "verb\tbe in motion due to some air or water current\tdrift, be adrift, blow\t";
+    }
+    // verb 01904293
+    if sense == 2 {
+        return "verb\tbe afloat either on or below a liquid surface and not sink to the bottom\tswim\t";
+    }
+    // verb 01874568
+    if sense == 3 {
+        return "verb\tset afloat\t\tHe floated the logs down the river";
+    }
+    ""
+}

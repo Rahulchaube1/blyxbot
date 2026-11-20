@@ -1,0 +1,25 @@
+// busy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_busy(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 00292937
+    if sense == 1 {
+        return "adjective\tactively or fully engaged or occupied\t\tbusy with her work";
+    }
+    // verb 02415831
+    if sense == 2 {
+        return "verb\tkeep busy with\toccupy\tShe busies herself with her butterfly collection";
+    }
+    // adj 01795203
+    if sense == 3 {
+        return "adjective\tovercrowded or cluttered with detail\tfussy\ta busy painting";
+    }
+    // adj 01352561
+    if sense == 4 {
+        return "adjective\tintrusive in a meddling or offensive manner\tinterfering, meddlesome, meddling, officious, busybodied\tbusy about other people's business";
+    }
+    // adj 00035978
+    if sense == 5 {
+        return "adjective\tcrowded with or characterized by much activity\t\ta very busy week";
+    }
+    ""
+}

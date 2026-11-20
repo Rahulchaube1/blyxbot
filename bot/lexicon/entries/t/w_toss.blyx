@@ -1,0 +1,37 @@
+// toss — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_toss(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01512625
+    if sense == 1 {
+        return "verb\tthrow or toss with a light motion\tflip, sky, pitch\ttoss me newspaper";
+    }
+    // verb 01893079
+    if sense == 2 {
+        return "verb\tlightly throw to see which side comes up\tflip\t";
+    }
+    // verb 01514525
+    if sense == 3 {
+        return "verb\tthrow carelessly\tchuck\t";
+    }
+    // verb 01890792
+    if sense == 4 {
+        return "verb\tmove or stir about violently\tconvulse, thresh, thresh about, thrash, thrash about, slash, jactitate\t";
+    }
+    // noun 01246086
+    if sense == 5 {
+        return "noun\tthe act of flipping a coin\tflip\t";
+    }
+    // noun 00105820
+    if sense == 6 {
+        return "noun\t(sports) the act of throwing the ball to another member of your team\tpass, flip\t";
+    }
+    // verb 02222318
+    if sense == 7 {
+        return "verb\tthrow or cast away\tdiscard, fling, toss out, toss away, chuck out, cast aside, dispose, throw out, cast out, throw away, cast away, put away\t";
+    }
+    // verb 01418536
+    if sense == 8 {
+        return "verb\tagitate\t\ttoss the salad";
+    }
+    ""
+}

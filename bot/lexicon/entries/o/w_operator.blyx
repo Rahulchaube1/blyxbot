@@ -1,0 +1,21 @@
+// operator — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_operator(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 13786413
+    if sense == 1 {
+        return "noun\t(mathematics) a symbol or function representing a mathematical operation\t\t";
+    }
+    // noun 10378412
+    if sense == 2 {
+        return "noun\tan agent that operates some apparatus or machine\tmanipulator\tthe operator of the switchboard";
+    }
+    // noun 10378780
+    if sense == 3 {
+        return "noun\tsomeone who owns or operates a business\t\twho is the operator of this franchise?";
+    }
+    // noun 10194566
+    if sense == 4 {
+        return "noun\ta shrewd or unscrupulous person who knows how to circumvent difficulties\thustler, wheeler dealer\t";
+    }
+    ""
+}

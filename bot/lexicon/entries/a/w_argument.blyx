@@ -1,0 +1,21 @@
+// argument — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_argument(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06648724
+    if sense == 1 {
+        return "noun\ta fact or assertion offered as evidence that something is true\tstatement\tit was a strong argument that his hypothesis was true";
+    }
+    // noun 07183151
+    if sense == 2 {
+        return "noun\ta contentious speech act; a dispute where there is strong disagreement\tcontroversy, contention, contestation, disputation, disceptation, tilt, arguing\tthey were involved in a violent argument";
+    }
+    // noun 07140978
+    if sense == 3 {
+        return "noun\ta discussion in which reasons are advanced for and against some proposition or proposal\targumentation, debate\tthe argument over foreign aid goes on and on";
+    }
+    // noun 06467680
+    if sense == 4 {
+        return "noun\ta summary of the subject or plot of a literary work or play or movie\tliterary argument\tthe editor added the argument to the poem";
+    }
+    ""
+}

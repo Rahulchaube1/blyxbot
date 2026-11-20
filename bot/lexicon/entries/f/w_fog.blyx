@@ -1,0 +1,17 @@
+// fog — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fog(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 11458314
+    if sense == 1 {
+        return "noun\tdroplets of water vapor suspended in the air near the ground\t\t";
+    }
+    // noun 14521648
+    if sense == 2 {
+        return "noun\tan atmosphere in which visibility is reduced because of a cloud of some substance\tfogginess, murk, murkiness\t";
+    }
+    // noun 05684561
+    if sense == 3 {
+        return "noun\tconfusion characterized by lack of clarity\tdaze, haze\t";
+    }
+    ""
+}

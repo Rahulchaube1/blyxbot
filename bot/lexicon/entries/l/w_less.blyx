@@ -1,0 +1,17 @@
+// less — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_less(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00099527
+    if sense == 1 {
+        return "adverb\tused to form the comparative of some adjectives and adverbs\tto a lesser extent\tless interesting";
+    }
+    // adj 01555416
+    if sense == 2 {
+        return "adjective\t(comparative of `little' usually used with mass nouns) a quantifier meaning not as great in amount or degree\t\tof less importance";
+    }
+    // adv 00099868
+    if sense == 3 {
+        return "adverb\tcomparative of little\t\tshe walks less than she should";
+    }
+    ""
+}

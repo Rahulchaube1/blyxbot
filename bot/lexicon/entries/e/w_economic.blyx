@@ -1,0 +1,17 @@
+// economic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_economic(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02716739
+    if sense == 1 {
+        return "adjective\tof or relating to an economy, the system of production and management of material wealth\teconomical\teconomic growth";
+    }
+    // adj 02716605
+    if sense == 2 {
+        return "adjective\tof or relating to the science of economics\t\teconomic theory";
+    }
+    // adj 00840212
+    if sense == 3 {
+        return "adjective\tusing the minimum of time or resources necessary for effectiveness\teconomical\tan economic use of home heating oil";
+    }
+    ""
+}

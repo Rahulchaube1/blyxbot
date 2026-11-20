@@ -1,0 +1,21 @@
+// over — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_over(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00226550
+    if sense == 1 {
+        return "adverb\tat or to a point across intervening space etc.\t\tcome over and see us some time";
+    }
+    // adj 01003277
+    if sense == 2 {
+        return "adjective\thaving come or been brought to a conclusion\tcomplete, concluded, ended, all over, terminated\tthe affair is over, ended, finished";
+    }
+    // adv 00226677
+    if sense == 3 {
+        return "adverb\tthroughout an area\t\the is known the world over";
+    }
+    // adv 00226458
+    if sense == 4 {
+        return "adverb\tthroughout a period of time\to'er\tstay over the weekend";
+    }
+    ""
+}

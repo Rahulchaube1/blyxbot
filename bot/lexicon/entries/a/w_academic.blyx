@@ -1,0 +1,21 @@
+// academic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_academic(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02599939
+    if sense == 1 {
+        return "adjective\tassociated with academia or an academy\t\tthe academic curriculum";
+    }
+    // adj 00862718
+    if sense == 2 {
+        return "adjective\thypothetical or theoretical and not expected to produce an immediate or practical result\t\tan academic discussion";
+    }
+    // noun 09759069
+    if sense == 3 {
+        return "noun\tan educator who works at a college or university\tacademician, faculty member\t";
+    }
+    // adj 02083908
+    if sense == 4 {
+        return "adjective\tmarked by a narrow focus on or display of learning especially its trivial aspects\tdonnish, pedantic\t";
+    }
+    ""
+}

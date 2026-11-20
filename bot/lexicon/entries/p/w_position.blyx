@@ -1,0 +1,61 @@
+// position — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_position(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // noun 08621598
+    if sense == 1 {
+        return "noun\tthe particular portion of space occupied by something\tplace\t";
+    }
+    // noun 08622586
+    if sense == 2 {
+        return "noun\ta point occupied by troops for tactical reasons\tmilitary position\t";
+    }
+    // noun 06208751
+    if sense == 3 {
+        return "noun\ta way of regarding situations or topics etc.\tview, perspective\t";
+    }
+    // noun 05079866
+    if sense == 4 {
+        return "noun\tthe arrangement of the body and its limbs\tposture, attitude\t";
+    }
+    // noun 13945919
+    if sense == 5 {
+        return "noun\tthe relative position or standing of things or especially persons in a society\tstatus\tatheists do not enjoy a favorable position in American life";
+    }
+    // noun 00586262
+    if sense == 6 {
+        return "noun\ta job in an organization\tpost, berth, office, spot, billet, place, situation\t";
+    }
+    // noun 05074774
+    if sense == 7 {
+        return "noun\tthe spatial property of a place where or way in which something is situated\tspatial relation\tthe position of the hands on the clock";
+    }
+    // noun 08622201
+    if sense == 8 {
+        return "noun\tthe appropriate or customary location\t\tthe cars were in position";
+    }
+    // noun 00722479
+    if sense == 9 {
+        return "noun\t(in team sports) the role assigned to an individual player\t\twhat position does he play?";
+    }
+    // noun 01051331
+    if sense == 10 {
+        return "noun\tthe act of putting something in a certain place\tplacement, location, locating, positioning, emplacement\t";
+    }
+    // verb 01987160
+    if sense == 11 {
+        return "verb\tcause to be in an appropriate place, state, or relation\t\t";
+    }
+    // noun 13925752
+    if sense == 12 {
+        return "noun\ta condition or position in which you find yourself\tsituation\tthe unpleasant situation (or position) of having to choose between two evils";
+    }
+    // noun 06196284
+    if sense == 13 {
+        return "noun\ta rationalized mental attitude\tstance, posture\t";
+    }
+    // verb 01494310
+    if sense == 14 {
+        return "verb\tput into a certain place or abstract location\tput, set, place, pose, lay\t";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// approach — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_approach(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02053941
+    if sense == 1 {
+        return "verb\tmove towards\tnear, come on, go up, draw near, draw close, come near\tWe were approaching our destination";
+    }
+    // noun 00941140
+    if sense == 2 {
+        return "noun\tideas or actions intended to deal with a problem or situation\tattack, plan of attack\this approach to every problem is to draw up a list of pros and cons";
+    }
+    // noun 00280853
+    if sense == 3 {
+        return "noun\tthe act of drawing spatially closer to something\tapproaching, coming\tthe hunter's approach scattered the geese";
+    }
+    // verb 02703952
+    if sense == 4 {
+        return "verb\tcome near or verge on, resemble, come nearer in quality, or character\tborder on\tHis playing approaches that of Horowitz";
+    }
+    // verb 02439281
+    if sense == 5 {
+        return "verb\tbegin to deal with\tset about, go about\tapproach a task";
+    }
+    // verb 01849746
+    if sense == 6 {
+        return "verb\tcome near in time\tcome near\tWinter is approaching";
+    }
+    // verb 00990392
+    if sense == 7 {
+        return "verb\tmake advances to someone, usually with a proposal or suggestion\t\tI was approached by the President to serve as his adviser in foreign matters";
+    }
+    // noun 02671062
+    if sense == 8 {
+        return "noun\ta way of entering or leaving\taccess\t";
+    }
+    ""
+}

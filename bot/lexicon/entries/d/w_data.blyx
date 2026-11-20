@@ -1,0 +1,9 @@
+// data — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_data(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 08462320
+    if sense == 1 {
+        return "noun\ta collection of facts from which conclusions may be drawn\tinformation\tstatistical data";
+    }
+    ""
+}

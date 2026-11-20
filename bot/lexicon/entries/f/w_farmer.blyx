@@ -1,0 +1,9 @@
+// farmer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_farmer(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 10078806
+    if sense == 1 {
+        return "noun\ta person who operates a farm\thusbandman, granger, sodbuster\t";
+    }
+    ""
+}

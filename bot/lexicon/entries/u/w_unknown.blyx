@@ -1,0 +1,25 @@
+// unknown — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_unknown(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01376894
+    if sense == 1 {
+        return "adjective\tnot known\t\tan unknown amount";
+    }
+    // noun 08632096
+    if sense == 2 {
+        return "noun\tan unknown and unexplored region\tunknown region, terra incognita\tthey came like angels out the unknown";
+    }
+    // adj 00120784
+    if sense == 3 {
+        return "adjective\tbeing or having an unknown or unnamed source\tnameless, unidentified, unnamed\ta poem by an unknown author";
+    }
+    // adj 02370625
+    if sense == 4 {
+        return "adjective\tnot known to exist\t\tthings obscurely felt surged up from unknown depths";
+    }
+    // adj 01122595
+    if sense == 5 {
+        return "adjective\tnot famous or acclaimed\tobscure, unsung\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// lack — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lack(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 14449405
+    if sense == 1 {
+        return "noun\tthe state of needing something that is absent or unavailable\tdeficiency, want\tthere is a serious lack of insight into the problem";
+    }
+    // verb 02632353
+    if sense == 2 {
+        return "verb\tbe without\tmiss\tThis soup lacks salt";
+    }
+    ""
+}

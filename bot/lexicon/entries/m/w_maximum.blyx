@@ -1,0 +1,17 @@
+// maximum — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_maximum(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01495725
+    if sense == 1 {
+        return "adjective\tthe greatest or most complete or best possible\tmaximal\tmaximum pressure";
+    }
+    // noun 13776137
+    if sense == 2 {
+        return "noun\tthe largest possible quantity\tupper limit\t";
+    }
+    // noun 05124928
+    if sense == 3 {
+        return "noun\tthe greatest possible degree\tutmost, uttermost, level best\t";
+    }
+    ""
+}

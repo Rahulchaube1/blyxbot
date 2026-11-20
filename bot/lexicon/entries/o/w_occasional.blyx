@@ -1,0 +1,13 @@
+// occasional — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_occasional(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01067415
+    if sense == 1 {
+        return "adjective\toccurring from time to time\t\ttook an occasional glass of wine";
+    }
+    // adj 01842468
+    if sense == 2 {
+        return "adjective\toccurring or appearing at usually irregular intervals\tepisodic\toccasional headaches";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// live — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_live(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02649830
+    if sense == 1 {
+        return "verb\tinhabit or live in; be an inhabitant of\tpopulate, dwell, inhabit\tPeople lived in Africa millions of years ago";
+    }
+    // verb 02614387
+    if sense == 2 {
+        return "verb\tlead a certain kind of life; live in a certain style\t\twe had to live frugally after the war";
+    }
+    // verb 02618149
+    if sense == 3 {
+        return "verb\tcontinue to live through hardship or adversity\tsurvive, last, live on, go, endure, hold up, hold out\tThe race car driver lived through several very serious accidents";
+    }
+    // verb 02616713
+    if sense == 4 {
+        return "verb\tsupport oneself\texist, survive, subsist\tCan you live on $2000 a month in New York City?";
+    }
+    // verb 02614181
+    if sense == 5 {
+        return "verb\thave life, be alive\tbe\tMy grandfather lived until the end of war";
+    }
+    // adj 01422556
+    if sense == 6 {
+        return "adjective\tactually being performed at the time of hearing or viewing\tunrecorded\ta live television program";
+    }
+    // verb 00596644
+    if sense == 7 {
+        return "verb\thave firsthand knowledge of states, situations, emotions, or sensations\tknow, experience\tI have lived a kind of hell when I was a drug addict";
+    }
+    ""
+}

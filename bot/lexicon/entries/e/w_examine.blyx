@@ -1,0 +1,25 @@
+// examine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_examine(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00644583
+    if sense == 1 {
+        return "verb\tconsider in detail and subject to an analysis in order to discover essential features or meaning\tanalyze, analyse, study, canvass, canvas\t";
+    }
+    // verb 02131279
+    if sense == 2 {
+        return "verb\tobserve, check out, and look over carefully or inspect\tsee\tThe customs agent examined the baggage";
+    }
+    // verb 00788564
+    if sense == 3 {
+        return "verb\tquestion or examine thoroughly and closely\tprobe\t";
+    }
+    // verb 00786816
+    if sense == 4 {
+        return "verb\tquestion closely\t\t";
+    }
+    // verb 02531625
+    if sense == 5 {
+        return "verb\tput to the test, as for its quality, or give experimental use to\ttest, prove, try, try out, essay\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// assumption — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_assumption(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06753800
+    if sense == 1 {
+        return "noun\ta statement that is assumed to be true and from which a conclusion can be drawn\tpremise, premiss\ton the assumption that he has been injured we can infer that he will not to play";
+    }
+    // noun 05892096
+    if sense == 2 {
+        return "noun\ta hypothesis that is taken for granted\tsupposition, supposal\tany society is built upon certain assumptions";
+    }
+    // noun 00082870
+    if sense == 3 {
+        return "noun\tthe act of taking possession of or power over something\tlaying claim\this assumption of office coincided with the trouble in Cuba";
+    }
+    ""
+}

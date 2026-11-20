@@ -1,0 +1,29 @@
+// authority — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_authority(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05196582
+    if sense == 1 {
+        return "noun\tthe power or right to give orders or make decisions\tauthorization, authorisation, potency, dominance, say-so\the has the authority to issue warrants";
+    }
+    // noun 09824609
+    if sense == 2 {
+        return "noun\t(usually plural) persons who exercise (administrative) control over others\t\tthe authorities have issued a curfew";
+    }
+    // noun 09824361
+    if sense == 3 {
+        return "noun\tan expert whose views are taken as definitive\t\the is an authority on corporate law";
+    }
+    // noun 05697363
+    if sense == 4 {
+        return "noun\tfreedom from doubt; belief in yourself and your abilities\tassurance, self-assurance, confidence, self-confidence, sureness\tshe spoke with authority";
+    }
+    // noun 08337324
+    if sense == 5 {
+        return "noun\tan administrative unit of government\tagency, federal agency, government agency, bureau, office\tTennessee Valley Authority";
+    }
+    // noun 05176607
+    if sense == 6 {
+        return "noun\tofficial permission or approval\tauthorization, authorisation, sanction\tauthority for the program was renewed several times";
+    }
+    ""
+}

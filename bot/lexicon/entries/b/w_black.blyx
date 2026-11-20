@@ -1,0 +1,41 @@
+// black — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_black(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // adj 00392812
+    if sense == 1 {
+        return "adjective\tbeing of the achromatic color of maximum darkness; having little or no hue owing to absorption of almost all incident light\t\tblack leather jackets";
+    }
+    // noun 04960277
+    if sense == 2 {
+        return "noun\tthe quality or state of the achromatic color of least lightness (bearing the least resemblance to white)\tblackness, inkiness\t";
+    }
+    // adj 00241952
+    if sense == 3 {
+        return "adjective\tof or belonging to a racial group having dark skin especially of sub-Saharan African origin\t\ta great people--a black people--...injected new meaning and dignity into the veins of civilization";
+    }
+    // adj 00114797
+    if sense == 4 {
+        return "adjective\tmarked by anger or resentment or hostility\t\tblack looks";
+    }
+    // adj 01229561
+    if sense == 5 {
+        return "adjective\toffering little or no hope\tbleak, dim\tthe future looked black";
+    }
+    // adj 01131935
+    if sense == 6 {
+        return "adjective\tstemming from evil characteristics or forces; wicked or dishonorable\tdark, sinister\tblack deeds";
+    }
+    // adj 01050088
+    if sense == 7 {
+        return "adjective\t(of events) having extremely unfortunate or dire consequences; bringing ruin\tcalamitous, disastrous, fatal, fateful\tthe stock market crashed on Black Friday";
+    }
+    // adj 00396296
+    if sense == 8 {
+        return "adjective\t(of the face) made black especially as with suffused blood\tblackened\ta face black with fury";
+    }
+    // adj 00274068
+    if sense == 9 {
+        return "adjective\textremely dark\tpitch-black, pitch-dark\ta black moonless night";
+    }
+    ""
+}

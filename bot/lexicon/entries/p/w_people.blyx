@@ -1,0 +1,25 @@
+// people — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_people(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 07942152
+    if sense == 1 {
+        return "noun\t(plural) any group of human beings (men or women or children) collectively\t\told people";
+    }
+    // noun 08160276
+    if sense == 2 {
+        return "noun\tthe body of citizens of a state or country\tcitizenry\tthe Spanish people";
+    }
+    // noun 07971141
+    if sense == 3 {
+        return "noun\tmembers of a family line\t\this people have been farmers for generations";
+    }
+    // noun 08180190
+    if sense == 4 {
+        return "noun\tthe common people generally\tmultitude, masses, mass, hoi polloi, the great unwashed\tpower to the people";
+    }
+    // verb 00451461
+    if sense == 5 {
+        return "verb\tfill with people\t\tStalin wanted to people the empty steppes";
+    }
+    ""
+}

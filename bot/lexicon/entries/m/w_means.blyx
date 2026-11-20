@@ -1,0 +1,13 @@
+// means — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_means(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00172710
+    if sense == 1 {
+        return "noun\thow a result is obtained or an end is achieved\tagency, way\ta means of control";
+    }
+    // noun 03733547
+    if sense == 2 {
+        return "noun\tan instrumentality for accomplishing some end\t\t";
+    }
+    ""
+}

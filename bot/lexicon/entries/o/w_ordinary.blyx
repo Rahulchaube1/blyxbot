@@ -1,0 +1,21 @@
+// ordinary — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ordinary(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01672607
+    if sense == 1 {
+        return "adjective\tnot exceptional in any way especially in quality or ability or size or degree\t\tordinary everyday objects";
+    }
+    // adj 00486290
+    if sense == 2 {
+        return "adjective\tlacking special distinction, rank, or status; commonly encountered\taverage\tthe ordinary (or common) man in the street";
+    }
+    // noun 10382380
+    if sense == 3 {
+        return "noun\ta judge of a probate court\t\t";
+    }
+    // noun 13942743
+    if sense == 4 {
+        return "noun\tthe expected or commonplace condition or situation\t\tnot out of the ordinary";
+    }
+    ""
+}

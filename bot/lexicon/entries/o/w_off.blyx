@@ -1,0 +1,25 @@
+// off — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_off(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adv 00232936
+    if sense == 1 {
+        return "adverb\tfrom a particular thing or place or position (`forth' is obsolete)\taway, forth\twent off to school";
+    }
+    // adv 00235254
+    if sense == 2 {
+        return "adverb\tat a distance in space or time\taway\tthe boat was 5 miles off (or away)";
+    }
+    // adv 00193194
+    if sense == 3 {
+        return "adverb\tno longer on or in contact or attached\t\tclean off the dirt";
+    }
+    // adj 01651469
+    if sense == 4 {
+        return "adjective\tnot in operation or operational\t\tthe oven is off";
+    }
+    // adj 02082924
+    if sense == 5 {
+        return "adjective\tbelow a satisfactory level\t\tan off year for tennis";
+    }
+    ""
+}

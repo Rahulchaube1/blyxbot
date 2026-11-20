@@ -1,0 +1,37 @@
+// grant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_grant(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02255462
+    if sense == 1 {
+        return "verb\tlet have\tallow\tgrant permission";
+    }
+    // verb 02262278
+    if sense == 2 {
+        return "verb\tgive as judged due or on the basis of merit\taward\tFunds are granted to qualified researchers";
+    }
+    // noun 13266892
+    if sense == 3 {
+        return "noun\tany monetary aid\t\t";
+    }
+    // noun 00087423
+    if sense == 4 {
+        return "noun\tthe act of providing a subsidy\tsubsidization, subsidisation\t";
+    }
+    // verb 00806049
+    if sense == 5 {
+        return "verb\tbe willing to concede\tconcede, yield\tI grant you this much";
+    }
+    // noun 13254237
+    if sense == 6 {
+        return "noun\t(law) a transfer of property by deed of conveyance\tassignment\t";
+    }
+    // verb 02255268
+    if sense == 7 {
+        return "verb\tallow to have\taccord, allot\tgrant a privilege";
+    }
+    // verb 02317094
+    if sense == 8 {
+        return "verb\tbestow, especially officially\tgive\tgrant a degree";
+    }
+    ""
+}

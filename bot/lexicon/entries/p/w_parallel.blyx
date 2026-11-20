@@ -1,0 +1,25 @@
+// parallel — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_parallel(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01718158
+    if sense == 1 {
+        return "adjective\tbeing everywhere equidistant and not intersecting\t\tparallel lines never converge";
+    }
+    // noun 04746430
+    if sense == 2 {
+        return "noun\tsomething having the property of being analogous to something else\tanalogue, analog\t";
+    }
+    // verb 02659222
+    if sense == 3 {
+        return "verb\tbe parallel to\t\tTheir roles are paralleled by ours";
+    }
+    // noun 08595720
+    if sense == 4 {
+        return "noun\tan imaginary line around the Earth parallel to the equator\tlatitude, line of latitude, parallel of latitude\t";
+    }
+    // verb 00525281
+    if sense == 5 {
+        return "verb\tmake or place parallel to something\tcollimate\tThey paralleled the ditch to the highway";
+    }
+    ""
+}

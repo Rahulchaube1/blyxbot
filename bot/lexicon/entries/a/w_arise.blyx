@@ -1,0 +1,25 @@
+// arise — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_arise(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02624263
+    if sense == 1 {
+        return "verb\tcome into existence; take on form or shape\toriginate, rise, develop, uprise, spring up, grow\t";
+    }
+    // verb 02625786
+    if sense == 2 {
+        return "verb\toriginate or come into being\tcome up, bob up\t";
+    }
+    // verb 01983264
+    if sense == 3 {
+        return "verb\trise to one's feet\trise, uprise, get up, stand up\t";
+    }
+    // verb 00339738
+    if sense == 4 {
+        return "verb\tresult or issue\tcome up\t";
+    }
+    // verb 01968569
+    if sense == 5 {
+        return "verb\tmove upward\trise, lift, move up, go up, come up, uprise\t";
+    }
+    ""
+}

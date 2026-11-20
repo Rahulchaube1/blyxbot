@@ -1,0 +1,25 @@
+// most — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_most(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adv 00111609
+    if sense == 1 {
+        return "adverb\tused to form the superlative\tto the highest degree\tthe king cobra is the most dangerous snake";
+    }
+    // adj 01557120
+    if sense == 2 {
+        return "adjective\t(superlative of `many' used with count nouns and often preceded by `the') quantifier meaning the greatest in number\t\twho has the most apples?";
+    }
+    // adv 00112009
+    if sense == 3 {
+        return "adverb\tvery\t\ta most welcome relief";
+    }
+    // adj 01555732
+    if sense == 4 {
+        return "adjective\tthe superlative of `much' that can be used with mass nouns and is usually preceded by `the'; a quantifier meaning the greatest in amount or extent or degree\t\tmade the most money he could";
+    }
+    // adv 00073033
+    if sense == 5 {
+        return "adverb\t(of actions or states) slightly short of or not quite accomplished; all but\tabout, almost, nearly, near, nigh, virtually, well-nigh\tmost everyone agrees";
+    }
+    ""
+}

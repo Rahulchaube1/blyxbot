@@ -1,0 +1,13 @@
+// strengthen — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_strengthen(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00220869
+    if sense == 1 {
+        return "verb\tmake strong or stronger\tbeef up, fortify\tThis exercise will strengthen your upper body";
+    }
+    // verb 00220461
+    if sense == 2 {
+        return "verb\tgain strength\t\tHis body strengthened";
+    }
+    ""
+}

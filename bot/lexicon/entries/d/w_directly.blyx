@@ -1,0 +1,21 @@
+// directly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_directly(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00051848
+    if sense == 1 {
+        return "adverb\twithout deviation\tstraight, direct\tthe path leads directly to the lake";
+    }
+    // adv 00504281
+    if sense == 2 {
+        return "adverb\twithout anyone or anything intervening\t\tthese two factors are directly related";
+    }
+    // adv 00048739
+    if sense == 3 {
+        return "adverb\twithout delay or hesitation; with no time intervening\timmediately, instantly, straightaway, straight off, now, right away, at once, forthwith, like a shot\t";
+    }
+    // adv 00058128
+    if sense == 4 {
+        return "adverb\tin a forthright manner; candidly or frankly\tflat, straight\the didn't answer directly";
+    }
+    ""
+}

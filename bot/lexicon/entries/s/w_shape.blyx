@@ -1,0 +1,41 @@
+// shape — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shape(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 05064037
+    if sense == 1 {
+        return "noun\tany spatial attributes (especially as defined by outline)\tform, configuration, contour, conformation\the could barely make out their shapes";
+    }
+    // verb 00701040
+    if sense == 2 {
+        return "verb\tshape or influence; give direction to\tdetermine, mold, influence, regulate\t";
+    }
+    // noun 00027807
+    if sense == 3 {
+        return "noun\tthe spatial arrangement of something as distinct from its substance\tform\tgeometry is the mathematical science of shape";
+    }
+    // verb 01659248
+    if sense == 4 {
+        return "verb\tmake something, usually for a specific function\tform, work, mold, mould, forge\tshape a figure";
+    }
+    // noun 05217168
+    if sense == 5 {
+        return "noun\talternative names for the body of a human being\thuman body, physical body, material body, soma, build, figure, physique, anatomy, bod, chassis, frame, form, flesh\t";
+    }
+    // verb 00142191
+    if sense == 6 {
+        return "verb\tgive shape or form to\tform\tshape the dough";
+    }
+    // noun 05941210
+    if sense == 7 {
+        return "noun\ta concrete representation of an otherwise nebulous concept\tembodiment\t";
+    }
+    // noun 04677514
+    if sense == 8 {
+        return "noun\tthe visual appearance of something or someone\tform, cast\t";
+    }
+    // noun 14546227
+    if sense == 9 {
+        return "noun\tthe state of (good) health (especially in the phrases `in condition' or `in shape' or `out of condition' or `out of shape')\tcondition\t";
+    }
+    ""
+}

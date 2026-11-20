@@ -1,0 +1,41 @@
+// take up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_take_up(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 00348422
+    if sense == 1 {
+        return "verb\tpursue or resume\t\ttake up a matter for consideration";
+    }
+    // verb 00602112
+    if sense == 2 {
+        return "verb\tadopt\tlatch on, fasten on, hook on, seize on\ttake up new ideas";
+    }
+    // verb 02591171
+    if sense == 3 {
+        return "verb\tturn one's interest to\t\t";
+    }
+    // verb 02649493
+    if sense == 4 {
+        return "verb\ttake up time or space\t\ttake up the slack";
+    }
+    // verb 02379528
+    if sense == 5 {
+        return "verb\tbegin work or acting in a certain capacity, office or job\tstart\tTake up a position";
+    }
+    // verb 02346724
+    if sense == 6 {
+        return "verb\ttake up and practice as one's own\tadopt, borrow, take over\t";
+    }
+    // verb 01982395
+    if sense == 7 {
+        return "verb\toccupy or take on\tassume, take, strike\t";
+    }
+    // verb 01540449
+    if sense == 8 {
+        return "verb\ttake up a liquid or a gas either by adsorption or by absorption\tsorb\t";
+    }
+    // verb 01312371
+    if sense == 9 {
+        return "verb\ttake out or up with or as if with a scoop\tscoop, scoop out, lift out, scoop up\t";
+    }
+    ""
+}

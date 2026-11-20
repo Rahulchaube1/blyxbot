@@ -1,0 +1,21 @@
+// serious — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_serious(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02118379
+    if sense == 1 {
+        return "adjective\tconcerned with work or important matters rather than play or trivialities\t\ta serious student of history";
+    }
+    // adj 01279611
+    if sense == 2 {
+        return "adjective\tof great consequence\t\tmarriage is a serious matter";
+    }
+    // adj 00651039
+    if sense == 3 {
+        return "adjective\tcausing fear or anxiety by threatening great harm\tdangerous, grave, grievous, severe, life-threatening\ta serious wound";
+    }
+    // adj 01333477
+    if sense == 4 {
+        return "adjective\tappealing to the mind\tgood\ta serious book";
+    }
+    ""
+}

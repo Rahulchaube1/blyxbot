@@ -1,0 +1,69 @@
+// call — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_call(sense: i64) -> str {
+    if sense == 0 { return "16"; }
+    // verb 01028748
+    if sense == 1 {
+        return "verb\tassign a specified (usually proper) proper name to\tname\t";
+    }
+    // verb 00971015
+    if sense == 2 {
+        return "verb\tascribe a quality to or give a name of a common noun that reflects a quality\t\tHe called me a bastard";
+    }
+    // verb 00789448
+    if sense == 3 {
+        return "verb\tget or try to get into communication (with someone) by telephone\ttelephone, call up, phone, ring\tI tried to call you all night";
+    }
+    // verb 00913065
+    if sense == 4 {
+        return "verb\tutter a sudden loud cry\tshout, shout out, cry, yell, scream, holler, hollo, squall\t";
+    }
+    // verb 00792471
+    if sense == 5 {
+        return "verb\torder, request, or command to come\tsend for\tShe was called into the director's office";
+    }
+    // noun 06272803
+    if sense == 6 {
+        return "noun\ta telephone connection\tphone call, telephone call\tshe reported several anonymous calls";
+    }
+    // verb 02487573
+    if sense == 7 {
+        return "verb\tpay a brief visit\tvisit, call in\tThe mayor likes to call on some of the prominent citizens";
+    }
+    // verb 02429810
+    if sense == 8 {
+        return "verb\tcall a meeting; invite or command to meet\t\tThe Wannsee Conference was called to discuss the `Final Solution'";
+    }
+    // noun 06198505
+    if sense == 9 {
+        return "noun\ta special disposition (as if from a divine source) to pursue a particular course\t\the was disappointed that he had not heard the Call";
+    }
+    // noun 07120524
+    if sense == 10 {
+        return "noun\ta loud utterance; often in protest or opposition\tcry, outcry, yell, shout, vociferation\t";
+    }
+    // noun 07192129
+    if sense == 11 {
+        return "noun\ta demand especially in the phrase \"the call of duty\"\tclaim\t";
+    }
+    // noun 06796642
+    if sense == 12 {
+        return "noun\tthe characteristic sound produced by a bird\tbirdcall, birdsong, song\t";
+    }
+    // noun 01055954
+    if sense == 13 {
+        return "noun\ta brief social visit\t\tsenior professors' wives no longer make afternoon calls on newcomers";
+    }
+    // verb 01067995
+    if sense == 14 {
+        return "verb\tread aloud to check for omissions or absentees\t\tCall roll";
+    }
+    // verb 01062739
+    if sense == 15 {
+        return "verb\tsend a message or attempt to reach someone by radio, phone, etc.; make a signal to in order to transmit a message\t\tHawaii is calling!";
+    }
+    // verb 00975036
+    if sense == 16 {
+        return "verb\tutter a characteristic note or cry\t\tbluejays called to one another";
+    }
+    ""
+}

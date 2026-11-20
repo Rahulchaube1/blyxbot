@@ -1,0 +1,25 @@
+// representative — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_representative(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 10522035
+    if sense == 1 {
+        return "noun\ta person who represents others\t\t";
+    }
+    // noun 10638385
+    if sense == 2 {
+        return "noun\tan advocate who represents someone else's policy or purpose\tspokesperson, interpreter, voice\t";
+    }
+    // noun 09955781
+    if sense == 3 {
+        return "noun\ta member of the United States House of Representatives\tcongressman, congresswoman\t";
+    }
+    // adj 02469407
+    if sense == 4 {
+        return "adjective\tserving to represent or typify\t\trepresentative moviegoers";
+    }
+    // adj 01981699
+    if sense == 5 {
+        return "adjective\tstanding for something else\t\tthe bald eagle is representative of the United States";
+    }
+    ""
+}

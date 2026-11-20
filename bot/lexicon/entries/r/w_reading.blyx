@@ -1,0 +1,25 @@
+// reading — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reading(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05808794
+    if sense == 1 {
+        return "noun\tthe cognitive process of understanding a written linguistic message\t\this main reading was detective stories";
+    }
+    // noun 07173766
+    if sense == 2 {
+        return "noun\ta particular interpretation or performance\t\ton that reading it was an insult";
+    }
+    // noun 05816790
+    if sense == 3 {
+        return "noun\ta datum about some physical state that is presented to a user by a meter or similar instrument\tmeter reading, indication\the could not believe the meter reading";
+    }
+    // noun 06598030
+    if sense == 4 {
+        return "noun\twritten material intended to be read\treading material\tthe teacher assigned new readings";
+    }
+    // noun 05928513
+    if sense == 5 {
+        return "noun\ta mental representation of the meaning or significance of something\tinterpretation, version\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// alternative — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_alternative(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05790944
+    if sense == 1 {
+        return "noun\tone of a number of things from which only one can be chosen\toption, choice\tthere no other alternative";
+    }
+    // adj 01853934
+    if sense == 2 {
+        return "adjective\tserving or used in place of another\talternate, substitute\tan alternative plan";
+    }
+    // adj 00564667
+    if sense == 3 {
+        return "adjective\tnecessitating a choice between mutually exclusive possibilities\t\talternative possibilities were neutrality or war";
+    }
+    ""
+}

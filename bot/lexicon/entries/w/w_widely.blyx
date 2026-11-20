@@ -1,0 +1,17 @@
+// widely — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_widely(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00495663
+    if sense == 1 {
+        return "adverb\tto a great degree\t\ther work is widely known";
+    }
+    // adv 00495524
+    if sense == 2 {
+        return "adverb\tto or over a great extent or range; far\twide\the traveled widely";
+    }
+    // adv 00506342
+    if sense == 3 {
+        return "adverb\tso as to leave much space or distance between\t\twidely separated";
+    }
+    ""
+}

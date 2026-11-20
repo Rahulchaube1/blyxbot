@@ -1,0 +1,13 @@
+// allotment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_allotment(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13289467
+    if sense == 1 {
+        return "noun\ta share set aside for a specific purpose\tallocation\t";
+    }
+    // noun 01083645
+    if sense == 2 {
+        return "noun\tthe act of distributing by allotting or apportioning; distribution according to a plan\tapportionment, apportioning, allocation, parceling, parcelling, assignation\t";
+    }
+    ""
+}

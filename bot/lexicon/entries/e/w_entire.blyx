@@ -1,0 +1,17 @@
+// entire — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_entire(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00515380
+    if sense == 1 {
+        return "adjective\tconstituting the full quantity or extent; complete\tfull, total\tan entire town devastated by an earthquake";
+    }
+    // adj 00515870
+    if sense == 2 {
+        return "adjective\tconstituting the undiminished entirety; lacking nothing essential especially not damaged\tintegral, intact\twas able to keep the collection entire during his lifetime";
+    }
+    // adj 02244890
+    if sense == 3 {
+        return "adjective\t(of leaves or petals) having a smooth edge; not broken up into teeth or lobes\t\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// immediate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_immediate(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01731882
+    if sense == 1 {
+        return "adjective\tof the present time and place\t\tthe immediate revisions";
+    }
+    // adj 00449079
+    if sense == 2 {
+        return "adjective\tvery close or connected in space or time\tcontiguous\timmediate contact";
+    }
+    // adj 00770316
+    if sense == 3 {
+        return "adjective\thaving no intervening medium\t\tan immediate influence";
+    }
+    // adj 01579853
+    if sense == 4 {
+        return "adjective\timmediately before or after as in a chain of cause and effect\t\tthe immediate result";
+    }
+    ""
+}

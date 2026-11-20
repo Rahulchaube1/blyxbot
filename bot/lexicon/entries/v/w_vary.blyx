@@ -1,0 +1,21 @@
+// vary — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_vary(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00123170
+    if sense == 1 {
+        return "verb\tbecome different in some particular way, without permanently losing one's or its former characteristics or essence\tchange, alter\tThe supermarket's selection of vegetables varies according to the season";
+    }
+    // verb 02661252
+    if sense == 2 {
+        return "verb\tbe at variance with; be out of line with\tdeviate, diverge, depart\t";
+    }
+    // verb 02662297
+    if sense == 3 {
+        return "verb\tbe subject to change in accordance with a variable\t\tPrices vary";
+    }
+    // verb 00436879
+    if sense == 4 {
+        return "verb\tmake something more diverse and varied\tvariegate, motley\tVary the menu";
+    }
+    ""
+}

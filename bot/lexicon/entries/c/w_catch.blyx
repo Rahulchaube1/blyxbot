@@ -1,0 +1,85 @@
+// catch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_catch(sense: i64) -> str {
+    if sense == 0 { return "20"; }
+    // verb 00725748
+    if sense == 1 {
+        return "verb\tdiscover or come upon accidentally, suddenly, or unexpectedly; catch somebody doing something or in a certain state\t\t";
+    }
+    // verb 02117955
+    if sense == 2 {
+        return "verb\tperceive with the senses quickly, suddenly, or momentarily\tpick up\tears open to catch every sound";
+    }
+    // verb 01401115
+    if sense == 3 {
+        return "verb\treach with a blow or hit in a particular spot\tget\t";
+    }
+    // verb 01439190
+    if sense == 4 {
+        return "verb\ttake hold of so as to seize or restrain or stop the motion of\tgrab, take hold of\tCatch the ball!";
+    }
+    // verb 01215421
+    if sense == 5 {
+        return "verb\tsucceed in catching or seizing, especially after a chase\tget, capture\tDid you catch the thief?";
+    }
+    // verb 01327816
+    if sense == 6 {
+        return "verb\tto hook or entangle\thitch\t";
+    }
+    // verb 01505958
+    if sense == 7 {
+        return "verb\tattract and fix\tarrest, get\tCatch the attention of the waiter";
+    }
+    // verb 01480149
+    if sense == 8 {
+        return "verb\tcapture as if by hunting, snaring, or trapping\tcapture\t";
+    }
+    // verb 02018372
+    if sense == 9 {
+        return "verb\treach in time\t\tI have to catch a train at 7 o'clock";
+    }
+    // verb 02248299
+    if sense == 10 {
+        return "verb\tget or regain something necessary, usually quickly or briefly\t\tCatch some sleep";
+    }
+    // verb 01155090
+    if sense == 11 {
+        return "verb\tcatch up with and possibly overtake\tovertake, catch up with\t";
+    }
+    // verb 00543016
+    if sense == 12 {
+        return "verb\tbe struck or affected by\t\tcatch fire";
+    }
+    // noun 05164673
+    if sense == 13 {
+        return "noun\ta drawback or difficulty that is not readily evident\tgimmick\tit sounds good but what's the catch?";
+    }
+    // verb 02510905
+    if sense == 14 {
+        return "verb\tcheck oneself during an action\t\tShe managed to catch herself before telling her boss what was on her mind";
+    }
+    // verb 02189168
+    if sense == 15 {
+        return "verb\thear, usually without the knowledge of the speakers\ttake in, overhear\t";
+    }
+    // verb 02150948
+    if sense == 16 {
+        return "verb\tsee or watch\twatch, view, see, take in\tCatch a show on Broadway";
+    }
+    // verb 01328012
+    if sense == 17 {
+        return "verb\tcause to become accidentally or suddenly caught, ensnared, or entangled\t\t";
+    }
+    // verb 00599835
+    if sense == 18 {
+        return "verb\tdetect a blunder or misstep\ttrip up\t";
+    }
+    // verb 00589904
+    if sense == 19 {
+        return "verb\tgrasp with the mind or develop an understanding of\tget\tdid you catch that allusion?";
+    }
+    // verb 00087988
+    if sense == 20 {
+        return "verb\tcontract\t\tdid you catch a cold?";
+    }
+    ""
+}

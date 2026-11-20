@@ -1,0 +1,21 @@
+// fool — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fool(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 10100761
+    if sense == 1 {
+        return "noun\ta person who lacks good judgment\tsap, saphead, muggins, tomfool\t";
+    }
+    // noun 09921409
+    if sense == 2 {
+        return "noun\ta person who is gullible and easy to take advantage of\tchump, gull, mark, patsy, fall guy, sucker, soft touch, mug\t";
+    }
+    // verb 02576349
+    if sense == 3 {
+        return "verb\tmake a fool or dupe of\tgull, befool\t";
+    }
+    // noun 10221312
+    if sense == 4 {
+        return "noun\ta professional clown employed to entertain a king or nobleman in the Middle Ages\tjester, motley fool\t";
+    }
+    ""
+}

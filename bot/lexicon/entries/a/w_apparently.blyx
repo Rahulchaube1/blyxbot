@@ -1,0 +1,9 @@
+// apparently — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_apparently(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00039941
+    if sense == 1 {
+        return "adverb\tfrom appearances alone\tseemingly, ostensibly, on the face of it\tirrigation often produces bumper crops from apparently desert land";
+    }
+    ""
+}

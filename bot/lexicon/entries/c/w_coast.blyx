@@ -1,0 +1,13 @@
+// coast — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_coast(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09428293
+    if sense == 1 {
+        return "noun\tthe shore of a sea or ocean\tseashore, seacoast, sea-coast\t";
+    }
+    // verb 01886728
+    if sense == 2 {
+        return "verb\tmove effortlessly; by force of gravity\t\t";
+    }
+    ""
+}

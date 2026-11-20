@@ -1,0 +1,17 @@
+// path — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_path(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00415676
+    if sense == 1 {
+        return "noun\ta course of conduct\tway, way of life\tthe path of virtue";
+    }
+    // noun 03899328
+    if sense == 2 {
+        return "noun\ta way especially designed for a particular use\t\t";
+    }
+    // noun 08616311
+    if sense == 3 {
+        return "noun\tan established line of travel or access\troute, itinerary\t";
+    }
+    ""
+}

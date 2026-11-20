@@ -1,0 +1,17 @@
+// particle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_particle(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14585519
+    if sense == 1 {
+        return "noun\t(nontechnical usage) a tiny piece of anything\tatom, molecule, corpuscle, mote, speck\t";
+    }
+    // noun 09386422
+    if sense == 2 {
+        return "noun\ta body having finite mass and internal structure but negligible dimensions\tsubatomic particle\t";
+    }
+    // noun 06326406
+    if sense == 3 {
+        return "noun\ta function word that can be used in English to form phrasal verbs\t\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// information — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_information(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06634376
+    if sense == 1 {
+        return "noun\ta message received and understood\tinfo\t";
+    }
+    // noun 05816287
+    if sense == 2 {
+        return "noun\tknowledge acquired through study or experience or instruction\t\t";
+    }
+    // noun 07237561
+    if sense == 3 {
+        return "noun\tformal accusation of a crime\t\t";
+    }
+    ""
+}

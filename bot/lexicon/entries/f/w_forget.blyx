@@ -1,0 +1,17 @@
+// forget — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_forget(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00610167
+    if sense == 1 {
+        return "verb\tdismiss from the mind; stop remembering\tbury\t";
+    }
+    // verb 00609100
+    if sense == 2 {
+        return "verb\tbe unable to remember\tblock, blank out, draw a blank\t";
+    }
+    // verb 00614829
+    if sense == 3 {
+        return "verb\tforget to do something\t\tDon't forget to call the chairman of the board to the meeting!";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// woman — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_woman(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 10787470
+    if sense == 1 {
+        return "noun\tan adult female person (as opposed to a man)\tadult female\tthe woman kept house while the man hunted";
+    }
+    // noun 10788852
+    if sense == 2 {
+        return "noun\ta female person who plays a significant role (wife or mistress or girlfriend) in the life of a particular man\t\the was faithful to his woman";
+    }
+    ""
+}

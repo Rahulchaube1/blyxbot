@@ -1,0 +1,13 @@
+// wounded — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wounded(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01318741
+    if sense == 1 {
+        return "adjective\tsuffering from physical injury especially that suffered in battle\thurt\tnursing his wounded arm";
+    }
+    // noun 07950786
+    if sense == 2 {
+        return "noun\tpeople who are wounded\tmaimed\tthey had to leave the wounded where they fell";
+    }
+    ""
+}

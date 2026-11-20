@@ -1,0 +1,13 @@
+// willing — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_willing(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02564986
+    if sense == 1 {
+        return "adjective\tdisposed or inclined toward\t\ta willing participant";
+    }
+    // noun 00163047
+    if sense == 2 {
+        return "noun\tthe act of making a choice\tvolition\t";
+    }
+    ""
+}

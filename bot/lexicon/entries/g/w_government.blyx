@@ -1,0 +1,17 @@
+// government — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_government(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08050678
+    if sense == 1 {
+        return "noun\tthe organization that is the governing authority of a political unit\tauthorities, regime\tthe government reduced taxes";
+    }
+    // noun 01124794
+    if sense == 2 {
+        return "noun\tthe act of governing; exercising authority\tgoverning, governance, government activity, administration\the had considerable experience of government";
+    }
+    // noun 05663671
+    if sense == 3 {
+        return "noun\t(government) the system or form by which a community or other political unit is governed\t\ttyrannical government";
+    }
+    ""
+}

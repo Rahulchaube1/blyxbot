@@ -1,0 +1,29 @@
+// identify — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_identify(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00618878
+    if sense == 1 {
+        return "verb\trecognize as being; establish the identity of someone or something\tplace\tShe identified the man on the 'wanted' poster";
+    }
+    // verb 01026095
+    if sense == 2 {
+        return "verb\tgive the name or identifying characteristics of; refer to by name or some other identifying characteristic property\tname\tThe almanac identifies the auspicious months";
+    }
+    // verb 00691944
+    if sense == 3 {
+        return "verb\tconsider (oneself) as similar to somebody else\t\tHe identified with the refugees";
+    }
+    // verb 00714531
+    if sense == 4 {
+        return "verb\tconceive of as united or associated\t\tSex activity is closely identified with the hypothalamus";
+    }
+    // verb 00652346
+    if sense == 5 {
+        return "verb\tidentify as in botany or biology, for example\tdiscover, key, key out, distinguish, describe, name\t";
+    }
+    // verb 00618451
+    if sense == 6 {
+        return "verb\tconsider to be equal or the same\t\tHe identified his brother as one of the fugitives";
+    }
+    ""
+}

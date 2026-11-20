@@ -1,0 +1,33 @@
+// direction — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_direction(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 08679972
+    if sense == 1 {
+        return "noun\ta line leading to a place or point\tway\the looked the other direction";
+    }
+    // noun 13827426
+    if sense == 2 {
+        return "noun\tthe spatial relation between something and the course along which it points or moves\t\the checked the direction and velocity of the wind";
+    }
+    // noun 06197215
+    if sense == 3 {
+        return "noun\ta general course along which something has a tendency to develop\t\tI couldn't follow the direction of his thoughts";
+    }
+    // noun 06650701
+    if sense == 4 {
+        return "noun\tsomething that provides direction or advice as to a decision or course of action\tguidance, counsel, counseling, counselling\t";
+    }
+    // noun 01133281
+    if sense == 5 {
+        return "noun\tthe act of managing something\tmanagement\tis the direction of the economy a function of government?";
+    }
+    // noun 06786629
+    if sense == 6 {
+        return "noun\ta message describing how something is to be done\tinstruction\the gave directions faster than she could follow them";
+    }
+    // noun 00815320
+    if sense == 7 {
+        return "noun\tthe act of setting and holding a course\tsteering, guidance\ta new council was installed under the direction of the king";
+    }
+    ""
+}

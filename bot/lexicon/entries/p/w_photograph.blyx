@@ -1,0 +1,17 @@
+// photograph — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_photograph(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 03925226
+    if sense == 1 {
+        return "noun\ta representation of a person or scene in the form of a print or transparent slide; recorded by a camera on light-sensitive material\tphoto, exposure, picture, pic\t";
+    }
+    // verb 01003249
+    if sense == 2 {
+        return "verb\trecord on photographic film\tsnap, shoot\tI photographed the scene of the accident";
+    }
+    // verb 02734653
+    if sense == 3 {
+        return "verb\tundergo being photographed in a certain way\t\tChildren photograph well";
+    }
+    ""
+}

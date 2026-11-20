@@ -1,0 +1,17 @@
+// precisely — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_precisely(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00158309
+    if sense == 1 {
+        return "adverb\tindicating exactness or preciseness\texactly, just\the was doing precisely (or exactly) what she had told him to do";
+    }
+    // adv 00368287
+    if sense == 2 {
+        return "adverb\tin a precise manner\tincisively, exactly\tshe always expressed herself precisely";
+    }
+    // adv 00368663
+    if sense == 3 {
+        return "adverb\tjust as it should be\texactly, on the nose, on the dot, on the button\t`Precisely, my lord,' he said";
+    }
+    ""
+}

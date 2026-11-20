@@ -1,0 +1,25 @@
+// unit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_unit(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13583724
+    if sense == 1 {
+        return "noun\tany division of quantity accepted as a standard of measurement or exchange\tunit of measurement\tthe dollar is the United States unit of currency";
+    }
+    // noun 13810323
+    if sense == 2 {
+        return "noun\tan individual or group or structure or other entity regarded as a structural or functional constituent of a whole\t\tthe reduced the number of units and installations";
+    }
+    // noun 08189659
+    if sense == 3 {
+        return "noun\tan organization regarded as part of a larger social group\tsocial unit\tthe coach said the offensive unit did a good job";
+    }
+    // noun 05869857
+    if sense == 4 {
+        return "noun\ta single undivided whole\t\tan idea is not a unit that can be moved from one brain to another";
+    }
+    // noun 09465459
+    if sense == 5 {
+        return "noun\ta single undivided natural thing occurring in the composition of something else\tbuilding block\tunits of nucleic acids";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// unity — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_unity(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14460565
+    if sense == 1 {
+        return "noun\tan undivided or unbroken completeness or totality with nothing wanting\tintegrity, wholeness\the took measures to insure the territorial unity of Croatia";
+    }
+    // noun 13742573
+    if sense == 2 {
+        return "noun\tthe smallest whole number or a numeral representing this number\tone, 1, I, ace, single\t";
+    }
+    // noun 04743370
+    if sense == 3 {
+        return "noun\tthe quality of being united into one\toneness\t";
+    }
+    ""
+}

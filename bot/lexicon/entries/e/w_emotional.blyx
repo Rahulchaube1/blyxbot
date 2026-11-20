@@ -1,0 +1,17 @@
+// emotional — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_emotional(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01927279
+    if sense == 1 {
+        return "adjective\tdetermined or actuated by emotion rather than reason\t\tit was an emotional judgment";
+    }
+    // adj 00853776
+    if sense == 2 {
+        return "adjective\tof more than usual emotion\t\this behavior was highly emotional";
+    }
+    // adj 02983577
+    if sense == 3 {
+        return "adjective\tof or pertaining to emotion\t\temotional health";
+    }
+    ""
+}

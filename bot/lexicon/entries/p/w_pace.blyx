@@ -1,0 +1,33 @@
+// pace — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pace(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 15280497
+    if sense == 1 {
+        return "noun\tthe rate of moving (especially walking or running)\tgait\t";
+    }
+    // verb 01929254
+    if sense == 2 {
+        return "verb\twalk with slow or fast paces\t\tHe paced up and down the hall";
+    }
+    // noun 13757249
+    if sense == 3 {
+        return "noun\tthe distance covered by a step\tfootstep, step, stride\the stepped off ten paces from the old tree and began to dig";
+    }
+    // verb 02091165
+    if sense == 4 {
+        return "verb\tgo at a pace\t\tThe horse paced";
+    }
+    // noun 05058580
+    if sense == 5 {
+        return "noun\tthe relative speed of progress or change\trate\the lived at a fast pace";
+    }
+    // verb 00490722
+    if sense == 6 {
+        return "verb\tmeasure (distances) by pacing\tstep\t";
+    }
+    // noun 00285889
+    if sense == 7 {
+        return "noun\ta step in walking or running\tstride, tread\t";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// pattern — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pattern(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 05930736
+    if sense == 1 {
+        return "noun\ta perceptual structure\tform, shape\ta visual pattern must include not only objects but the spaces between them";
+    }
+    // noun 00410247
+    if sense == 2 {
+        return "noun\ta customary way of operation or behavior\tpractice\tthey changed their dietary pattern";
+    }
+    // noun 03178782
+    if sense == 3 {
+        return "noun\ta decorative or artistic work\tdesign, figure\t";
+    }
+    // noun 05667613
+    if sense == 4 {
+        return "noun\tsomething regarded as a normative example\tconvention, normal, rule, formula\t";
+    }
+    // verb 01743784
+    if sense == 5 {
+        return "verb\tplan or create according to a model or models\tmodel\t";
+    }
+    // noun 05938795
+    if sense == 6 {
+        return "noun\ta model considered worthy of imitation\t\tthe American constitution has provided a pattern for many republics";
+    }
+    // noun 05902327
+    if sense == 7 {
+        return "noun\tsomething intended as a guide for making something else\tblueprint, design\ta pattern for a skirt";
+    }
+    ""
+}

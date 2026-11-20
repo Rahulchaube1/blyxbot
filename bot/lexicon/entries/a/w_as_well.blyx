@@ -1,0 +1,9 @@
+// as well — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_as_well(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00047534
+    if sense == 1 {
+        return "adverb\tin addition\tbesides, too, also, likewise\t";
+    }
+    ""
+}

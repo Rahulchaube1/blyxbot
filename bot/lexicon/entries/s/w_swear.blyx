@@ -1,0 +1,21 @@
+// swear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_swear(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00865387
+    if sense == 1 {
+        return "verb\tutter obscenities or profanities\tcurse, cuss, blaspheme, imprecate\t";
+    }
+    // verb 01011031
+    if sense == 2 {
+        return "verb\tto declare or affirm solemnly and formally as true\taffirm, verify, assert, avow, aver, swan\tBefore God I swear I am innocent";
+    }
+    // verb 00889947
+    if sense == 3 {
+        return "verb\tpromise solemnly; take an oath\t\t";
+    }
+    // verb 01013040
+    if sense == 4 {
+        return "verb\tmake a deposition; declare under oath\tdepose, depone\t";
+    }
+    ""
+}

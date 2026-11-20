@@ -1,0 +1,25 @@
+// welcome — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_welcome(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02237206
+    if sense == 1 {
+        return "verb\taccept gladly\t\tI welcome your proposals";
+    }
+    // verb 00900583
+    if sense == 2 {
+        return "verb\tbid welcome to; greet upon arrival\treceive\t";
+    }
+    // adj 02539968
+    if sense == 3 {
+        return "adjective\tgiving pleasure or satisfaction or received with pleasure or freely granted\t\ta welcome relief";
+    }
+    // verb 01470098
+    if sense == 4 {
+        return "verb\treceive someone, as into one's house\t\t";
+    }
+    // noun 14413265
+    if sense == 5 {
+        return "noun\tthe state of being welcome\t\tdon't outstay your welcome";
+    }
+    ""
+}

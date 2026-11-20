@@ -1,0 +1,13 @@
+// metal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_metal(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 14625458
+    if sense == 1 {
+        return "noun\tany of several chemical elements that are usually shiny solids that conduct heat or electricity and can be formed into sheets etc.\tmetallic element\t";
+    }
+    // adj 01527420
+    if sense == 2 {
+        return "adjective\tcontaining or made of or resembling or characteristic of a metal\tmetallic\t";
+    }
+    ""
+}

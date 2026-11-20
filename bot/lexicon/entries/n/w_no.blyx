@@ -1,0 +1,21 @@
+// no — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_no(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02268485
+    if sense == 1 {
+        return "adjective\tquantifier; used with either mass nouns or plural count nouns for indicating a complete or almost complete lack or zero quantity of\t\twe have no bananas";
+    }
+    // adv 00050681
+    if sense == 2 {
+        return "adverb\treferring to the degree to which a certain quality is present\tno more\the was no heavier than a child";
+    }
+    // noun 07205104
+    if sense == 3 {
+        return "noun\ta negative\t\this no was loud and clear";
+    }
+    // adv 00024587
+    if sense == 4 {
+        return "adverb\tnot in any degree or manner; not at all\t\the is no better today";
+    }
+    ""
+}

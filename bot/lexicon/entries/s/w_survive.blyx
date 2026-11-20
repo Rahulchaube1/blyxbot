@@ -1,0 +1,17 @@
+// survive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_survive(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02618149
+    if sense == 1 {
+        return "verb\tcontinue to live through hardship or adversity\tlast, live, live on, go, endure, hold up, hold out\tThese superstitions survive in the backwaters of America";
+    }
+    // verb 02619924
+    if sense == 2 {
+        return "verb\tcontinue in existence after (an adversity, etc.)\tpull through, pull round, come through, make it\tHe survived the cancer against all odds";
+    }
+    // verb 02616713
+    if sense == 3 {
+        return "verb\tsupport oneself\texist, live, subsist\t";
+    }
+    ""
+}

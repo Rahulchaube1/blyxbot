@@ -1,0 +1,17 @@
+// substitute — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_substitute(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02257767
+    if sense == 1 {
+        return "verb\tput in the place of another; switch seemingly equivalent items\treplace, interchange, exchange\tsubstitute regular milk with fat-free milk";
+    }
+    // noun 05696425
+    if sense == 2 {
+        return "noun\ta person or thing that takes or can take the place of another\treplacement\t";
+    }
+    // verb 02258617
+    if sense == 3 {
+        return "verb\tbe a substitute\tsub, stand in, fill in\tThe young teacher had to substitute for the sick colleague";
+    }
+    ""
+}

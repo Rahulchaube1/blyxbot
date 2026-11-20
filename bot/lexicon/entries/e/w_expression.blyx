@@ -1,0 +1,29 @@
+// expression — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_expression(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 04679738
+    if sense == 1 {
+        return "noun\tthe feelings expressed on a person's face\tlook, aspect, facial expression, face\ta sad expression";
+    }
+    // noun 06880249
+    if sense == 2 {
+        return "noun\texpression without words\tmanifestation, reflection, reflexion\ttears are an expression of grief";
+    }
+    // noun 07139873
+    if sense == 3 {
+        return "noun\tthe communication (in speech or writing) of your beliefs or opinions\tverbal expression, verbalism\texpressions of good will";
+    }
+    // noun 07151380
+    if sense == 4 {
+        return "noun\ta word or phrase that particular people use in particular situations\tsaying, locution\tpardon the expression";
+    }
+    // noun 07069948
+    if sense == 5 {
+        return "noun\tthe style of expressing yourself\tformulation\this manner of expression showed how much he cared";
+    }
+    // noun 06731802
+    if sense == 6 {
+        return "noun\ta group of symbols that make a mathematical statement\tformula\t";
+    }
+    ""
+}

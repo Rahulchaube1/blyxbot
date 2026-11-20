@@ -1,0 +1,93 @@
+// right — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_right(sense: i64) -> str {
+    if sense == 0 { return "22"; }
+    // noun 05174653
+    if sense == 1 {
+        return "noun\tan abstract idea of that which is due to a person or governmental body by law or tradition or nature\t\tthey are endowed by their Creator with certain unalienable Rights";
+    }
+    // noun 08625073
+    if sense == 2 {
+        return "noun\tlocation near or direction toward the right side; i.e. the side to the south when a person or object faces east\t\the stood on the right";
+    }
+    // adj 02031986
+    if sense == 3 {
+        return "adjective\tbeing or located on or directed toward the side of the body to the east when facing north\t\tmy right hand";
+    }
+    // adj 00631391
+    if sense == 4 {
+        return "adjective\tfree from error; especially conforming to fact or truth\tcorrect\tthe right answer";
+    }
+    // adv 00205052
+    if sense == 5 {
+        return "adverb\tprecisely, exactly\t\tstand right here!";
+    }
+    // adj 01879261
+    if sense == 6 {
+        return "adjective\tsocially right or correct\tcorrect\tit isn't right to leave the party without saying goodbye";
+    }
+    // adv 00105162
+    if sense == 7 {
+        return "adverb\timmediately\t\tshe called right after dinner";
+    }
+    // adv 00058033
+    if sense == 8 {
+        return "adverb\texactly\tflop\t";
+    }
+    // adj 02034828
+    if sense == 9 {
+        return "adjective\tin conformance with justice or law or morality\t\tdo the right thing and confess";
+    }
+    // noun 04091839
+    if sense == 10 {
+        return "noun\tthe piece of ground in the outfield on the catcher's right\tright field, rightfield\t";
+    }
+    // noun 08416652
+    if sense == 11 {
+        return "noun\tthose who support political or social or economic conservatism; those who believe that things are better left unchanged\tright wing\t";
+    }
+    // adv 00387828
+    if sense == 12 {
+        return "adverb\ttoward or on the right; also used figuratively\t\the looked right and left";
+    }
+    // adv 00196203
+    if sense == 13 {
+        return "adverb\tin the right manner\tproperly, decently, decent, in good order, the right way\t";
+    }
+    // adv 00150351
+    if sense == 14 {
+        return "adverb\tan interjection expressing agreement\tright on\t";
+    }
+    // noun 05565337
+    if sense == 15 {
+        return "noun\tthe hand that is on the right side of the body\tright hand\the writes with his right hand but pitches with his left";
+    }
+    // noun 00351000
+    if sense == 16 {
+        return "noun\ta turn toward the side of the body that is on the south when the person is facing east\t\ttake a right at the corner";
+    }
+    // adj 00633410
+    if sense == 17 {
+        return "adjective\tcorrect in opinion or judgment\tcorrect\ttime proved him right";
+    }
+    // adv 00205125
+    if sense == 18 {
+        return "adverb\tcompletely\t\tshe felt right at home";
+    }
+    // adv 00032299
+    if sense == 19 {
+        return "adverb\t(Southern regional intensive) very; to a great degree\tmighty, mightily, powerful\tthey have a right nice place";
+    }
+    // noun 04850341
+    if sense == 20 {
+        return "noun\tanything in accord with principles of justice\trightfulness\the feels he is in the right";
+    }
+    // adj 00135455
+    if sense == 21 {
+        return "adjective\tappropriate for a condition or purpose or occasion or a person's character, needs\tproper\tthe right man for the job";
+    }
+    // adv 00205226
+    if sense == 22 {
+        return "adverb\tin accordance with moral or social standards\tjustly\tthat serves him right";
+    }
+    ""
+}

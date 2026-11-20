@@ -1,0 +1,21 @@
+// energy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_energy(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 11452218
+    if sense == 1 {
+        return "noun\t(physics) a thermodynamic quantity equivalent to the capacity of a physical system to do work; the units of energy are joules or ergs\tfree energy\tenergy can take a wide variety of forms";
+    }
+    // noun 05035961
+    if sense == 2 {
+        return "noun\tforceful exertion\tvigor, vigour, zip\the plays tennis with great energy";
+    }
+    // noun 04836683
+    if sense == 3 {
+        return "noun\tenterprising or ambitious drive\tpush, get-up-and-go\tEuropeans often laugh at American energy";
+    }
+    // noun 04633197
+    if sense == 4 {
+        return "noun\tan imaginative lively style (especially style of writing)\tmuscularity, vigor, vigour, vim\this writing conveys great energy";
+    }
+    ""
+}

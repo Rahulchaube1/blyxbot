@@ -1,0 +1,13 @@
+// baseball — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_baseball(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00471613
+    if sense == 1 {
+        return "noun\ta ball game played with a bat and ball between two teams of nine players; teams take turns at bat trying to score runs\tbaseball game\the played baseball in high school";
+    }
+    // noun 02799071
+    if sense == 2 {
+        return "noun\ta ball used in playing baseball\t\t";
+    }
+    ""
+}

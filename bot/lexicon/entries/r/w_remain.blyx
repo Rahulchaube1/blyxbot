@@ -1,0 +1,21 @@
+// remain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_remain(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00117985
+    if sense == 1 {
+        return "verb\tstay the same; remain in a certain state\tstay, rest\tThe dress remained wet after repeated attempts to dry it";
+    }
+    // verb 02727462
+    if sense == 2 {
+        return "verb\tcontinue in a place, position, or situation\tstay, stay on, continue\tdespite student protests, he remained Dean for another year";
+    }
+    // verb 02637592
+    if sense == 3 {
+        return "verb\tbe left; of persons, questions, problems, results, evidence, etc.\t\tThere remains the question of who pulled the trigger";
+    }
+    // verb 02731024
+    if sense == 4 {
+        return "verb\tstay behind\tpersist, stay\tThe hostility remained long after they made up";
+    }
+    ""
+}

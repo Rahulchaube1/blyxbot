@@ -1,0 +1,13 @@
+// hill — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hill(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09303008
+    if sense == 1 {
+        return "noun\ta local and well-defined elevation of the land\t\tthey loved to roam the hills of West Virginia";
+    }
+    // noun 03792048
+    if sense == 2 {
+        return "noun\tstructure consisting of an artificial heap or bank usually of earth or stones\tmound\t";
+    }
+    ""
+}

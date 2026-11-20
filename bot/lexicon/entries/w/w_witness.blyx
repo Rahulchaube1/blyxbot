@@ -1,0 +1,29 @@
+// witness — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_witness(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02128286
+    if sense == 1 {
+        return "verb\tbe a witness to\t\tShe witnessed the accident and had to testify in court";
+    }
+    // noun 10786033
+    if sense == 2 {
+        return "noun\tsomeone who sees an event and reports what happened\twitnesser, informant\t";
+    }
+    // verb 02128873
+    if sense == 3 {
+        return "verb\tperceive or be contemporaneous with\tfind, see\t";
+    }
+    // noun 10633450
+    if sense == 4 {
+        return "noun\ta close observer; someone who looks at something (such as an exhibition of some kind)\tspectator, viewer, watcher, looker\t";
+    }
+    // noun 06734702
+    if sense == 5 {
+        return "noun\ttestimony by word or deed to your religious faith\t\t";
+    }
+    // noun 10786270
+    if sense == 6 {
+        return "noun\t(law) a person who attests to the genuineness of a document or signature by adding their own signature\tattestant, attestor, attestator\t";
+    }
+    ""
+}

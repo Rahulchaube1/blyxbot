@@ -1,0 +1,21 @@
+// difficulty — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_difficulty(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00623862
+    if sense == 1 {
+        return "noun\tan effort that is inconvenient\ttrouble\thad difficulty walking";
+    }
+    // noun 05686955
+    if sense == 2 {
+        return "noun\ta factor causing trouble in achieving a positive result or tending to produce a negative result\t\tserious difficulties were encountered in obtaining a pure reagent";
+    }
+    // noun 14408086
+    if sense == 3 {
+        return "noun\ta condition or state of affairs almost beyond one's ability to deal with and requiring great effort to bear or overcome\t\tgrappling with financial difficulties";
+    }
+    // noun 04709253
+    if sense == 4 {
+        return "noun\tthe quality of being difficult\tdifficultness\tthey agreed about the difficulty of the climb";
+    }
+    ""
+}

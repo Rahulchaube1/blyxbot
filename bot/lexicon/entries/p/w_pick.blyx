@@ -1,0 +1,33 @@
+// pick — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pick(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00676450
+    if sense == 1 {
+        return "verb\tselect carefully from a group\t\tShe finally picked her successor";
+    }
+    // verb 01382083
+    if sense == 2 {
+        return "verb\tlook for and gather\tpluck, cull\tpick mushrooms";
+    }
+    // verb 00842772
+    if sense == 3 {
+        return "verb\tharass with constant criticism\tblame, find fault\tDon't always pick on your little brother";
+    }
+    // noun 05790242
+    if sense == 4 {
+        return "noun\tthe person or thing chosen or selected\tchoice, selection\the was my pick for mayor";
+    }
+    // verb 01647131
+    if sense == 5 {
+        return "verb\tprovoke\t\tpick a fight or a quarrel";
+    }
+    // verb 00178102
+    if sense == 6 {
+        return "verb\tremove in small bits\t\tpick meat from a bone";
+    }
+    // verb 00177714
+    if sense == 7 {
+        return "verb\tremove unwanted substances from, such as feathers or pits\tclean\t";
+    }
+    ""
+}

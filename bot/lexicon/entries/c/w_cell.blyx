@@ -1,0 +1,17 @@
+// cell — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cell(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 02991711
+    if sense == 1 {
+        return "noun\tany small compartment\t\tthe cells of a honeycomb";
+    }
+    // noun 00006484
+    if sense == 2 {
+        return "noun\t(biology) the basic structural and functional unit of all organisms; they may exist as independent units of life (as in monads) or may form colonies or tissues as in higher plants and animals\t\t";
+    }
+    // noun 02991048
+    if sense == 3 {
+        return "noun\ta device that delivers an electric current as the result of a chemical reaction\telectric cell\t";
+    }
+    ""
+}

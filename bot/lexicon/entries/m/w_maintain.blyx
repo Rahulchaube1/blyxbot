@@ -1,0 +1,25 @@
+// maintain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_maintain(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02681795
+    if sense == 1 {
+        return "verb\tkeep in a certain state, position, or activity; e.g., \"keep clean\"\tkeep, hold\t";
+    }
+    // verb 02280132
+    if sense == 2 {
+        return "verb\tkeep in safety and protect from harm, decay, loss, or destruction\tconserve, preserve, keep up\t";
+    }
+    // verb 01184625
+    if sense == 3 {
+        return "verb\tsupply with necessities and support\tsustain, keep\t";
+    }
+    // verb 01016778
+    if sense == 4 {
+        return "verb\tstate categorically\tassert, asseverate\t";
+    }
+    // verb 02204564
+    if sense == 5 {
+        return "verb\thave and exercise\twield, exert\t";
+    }
+    ""
+}

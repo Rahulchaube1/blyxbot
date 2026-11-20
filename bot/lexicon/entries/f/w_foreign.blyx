@@ -1,0 +1,21 @@
+// foreign — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_foreign(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01037540
+    if sense == 1 {
+        return "adjective\tof concern to or concerning the affairs of other nations (other than your own)\t\tforeign trade";
+    }
+    // adj 01034457
+    if sense == 2 {
+        return "adjective\trelating to or originating in or characteristic of another place or part of the world\tstrange\tforeign nations";
+    }
+    // adj 01349927
+    if sense == 3 {
+        return "adjective\tnot contained in or deriving from the essential nature of something\talien\tthe mysticism so foreign to the French mind and temper";
+    }
+    // adj 02117464
+    if sense == 4 {
+        return "adjective\tnot belonging to that in which it is contained; introduced from an outside source\textraneous\tforeign particles in milk";
+    }
+    ""
+}

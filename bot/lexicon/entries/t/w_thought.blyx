@@ -1,0 +1,17 @@
+// thought — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_thought(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05833840
+    if sense == 1 {
+        return "noun\tthe content of cognition; the main thing you are thinking about\tidea\tthe thought never entered my mind";
+    }
+    // noun 05770926
+    if sense == 2 {
+        return "noun\tthe process of using your mind to consider something carefully\tthinking, thought process, cerebration, intellection, mentation\tshe paused for thought";
+    }
+    // noun 05954481
+    if sense == 3 {
+        return "noun\tthe organized beliefs of a period or group or individual\t\t19th century thought";
+    }
+    ""
+}

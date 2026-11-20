@@ -1,0 +1,45 @@
+// transfer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_transfer(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 00315986
+    if sense == 1 {
+        return "noun\tthe act of moving something from one location to another\ttransportation, transport, transferral, conveyance\t";
+    }
+    // verb 02393086
+    if sense == 2 {
+        return "verb\ttransfer somebody to a different position or location of work\treassign\t";
+    }
+    // verb 02232190
+    if sense == 3 {
+        return "verb\tmove from one place to another\t\ttransfer the data";
+    }
+    // verb 01855155
+    if sense == 4 {
+        return "verb\tlift and reset in another soil or situation\ttransplant\t";
+    }
+    // verb 02012344
+    if sense == 5 {
+        return "verb\tmove around\tshift\ttransfer the packet from his trouser pockets to a pocket in his jacket";
+    }
+    // noun 10724372
+    if sense == 6 {
+        return "noun\tsomeone who transfers or is transferred from one position to another\ttransferee\tthe best student was a transfer from LSU";
+    }
+    // noun 00201671
+    if sense == 7 {
+        return "noun\tthe act of transfering something from one form to another\ttransference\tthe transfer of the music from record to tape suppressed much of the background noise";
+    }
+    // verb 02220461
+    if sense == 8 {
+        return "verb\tcause to change ownership\t\tI transferred my stock holdings to my children";
+    }
+    // verb 02088241
+    if sense == 9 {
+        return "verb\tchange from one vehicle or transportation line to another\tchange\t";
+    }
+    // verb 01435380
+    if sense == 10 {
+        return "verb\tsend from one person or place to another\ttransmit, transport, channel, channelize, channelise\t";
+    }
+    ""
+}

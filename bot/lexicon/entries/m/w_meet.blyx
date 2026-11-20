@@ -1,0 +1,61 @@
+// meet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_meet(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 02023107
+    if sense == 1 {
+        return "verb\tcome together\trun into, encounter, run across, come across, see\tI'll probably see you at the meeting";
+    }
+    // verb 02486932
+    if sense == 2 {
+        return "verb\tget together socially or for a specific purpose\tget together\t";
+    }
+    // verb 02710402
+    if sense == 3 {
+        return "verb\tbe adjacent or come together\tconverge\t";
+    }
+    // verb 01183573
+    if sense == 4 {
+        return "verb\tfill or meet a want or need\tsatisfy, fill, fulfill, fulfil\t";
+    }
+    // verb 02667900
+    if sense == 5 {
+        return "verb\tsatisfy a condition or restriction\tfit, conform to\tDoes this paper meet the requirements for the degree?";
+    }
+    // verb 02594674
+    if sense == 6 {
+        return "verb\tsatisfy or fulfill\tmatch, cope with\tmeet a need";
+    }
+    // verb 02428924
+    if sense == 7 {
+        return "verb\tcollect in one place\tgather, assemble, forgather, foregather\t";
+    }
+    // verb 02596113
+    if sense == 8 {
+        return "verb\tget to know; get acquainted with\t\t";
+    }
+    // verb 02022804
+    if sense == 9 {
+        return "verb\tmeet by design; be present at the arrival of\t\tCan you meet me at the train station?";
+    }
+    // verb 01079480
+    if sense == 10 {
+        return "verb\tcontend against an opponent in a sport, game, or battle\tencounter, play, take on\t";
+    }
+    // verb 02739480
+    if sense == 11 {
+        return "verb\texperience as a reaction\tencounter, receive\t";
+    }
+    // noun 07467846
+    if sense == 12 {
+        return "noun\ta meeting at which a number of athletic contests are held\tsports meeting\t";
+    }
+    // verb 02110082
+    if sense == 13 {
+        return "verb\tundergo or suffer\tsuffer\tmeet a violent death";
+    }
+    // verb 01205696
+    if sense == 14 {
+        return "verb\tbe in direct physical contact with; make contact\ttouch, adjoin, contact\t";
+    }
+    ""
+}

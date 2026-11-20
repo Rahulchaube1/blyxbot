@@ -1,0 +1,25 @@
+// image — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_image(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05928118
+    if sense == 1 {
+        return "noun\tan iconic mental representation\tmental image\ther imagination forced images upon her too awful to contemplate";
+    }
+    // noun 04677716
+    if sense == 2 {
+        return "noun\t(Jungian psychology) a personal facade that one presents to the world\tpersona\ta public image is as fragile as Humpty Dumpty";
+    }
+    // noun 03931044
+    if sense == 3 {
+        return "noun\ta visual representation (of an object or scene or person or abstraction) produced on a surface\tpicture, icon, ikon\ta movie is a series of images projected so rapidly that the eye integrates them";
+    }
+    // noun 05937524
+    if sense == 4 {
+        return "noun\ta standard or typical example\tprototype, paradigm, epitome\the provided America with an image of the good father";
+    }
+    // noun 07105475
+    if sense == 5 {
+        return "noun\tlanguage used in a figurative or nonliteral sense\ttrope, figure of speech, figure\t";
+    }
+    ""
+}

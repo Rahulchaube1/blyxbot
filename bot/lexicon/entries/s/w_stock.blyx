@@ -1,0 +1,45 @@
+// stock — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stock(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 13333833
+    if sense == 1 {
+        return "noun\tthe capital raised by a corporation through the issue of shares entitling holders to an ownership interest (equity)\t\the owns a controlling share of the company's stock";
+    }
+    // noun 04321534
+    if sense == 2 {
+        return "noun\tthe merchandise that a shop has on hand\tinventory\t";
+    }
+    // noun 04322026
+    if sense == 3 {
+        return "noun\tthe handle of a handgun or the butt end of a rifle or shotgun or part of the support of a machine gun or artillery gun\tgunstock\tthe rifle had been fitted with a special stock";
+    }
+    // verb 02285392
+    if sense == 4 {
+        return "verb\thave on hand\tcarry, stockpile\t";
+    }
+    // noun 13417071
+    if sense == 5 {
+        return "noun\ta certificate documenting the shareholder's ownership in the corporation\tstock certificate\tthe value of his stocks doubled during the past year";
+    }
+    // noun 13367070
+    if sense == 6 {
+        return "noun\ta supply of something available for future use\tstore, fund\t";
+    }
+    // noun 08101937
+    if sense == 7 {
+        return "noun\tthe descendants of one individual\tlineage, line, line of descent, descent, bloodline, blood line, blood, pedigree, ancestry, origin, parentage, stemma\t";
+    }
+    // noun 08101410
+    if sense == 8 {
+        return "noun\ta special variety of domesticated animals within a species\tbreed, strain\t";
+    }
+    // noun 07585208
+    if sense == 9 {
+        return "noun\tliquid in which meat and vegetables are simmered; used as a basis for e.g. soups or sauces\tbroth\tshe made gravy with a base of beef stock";
+    }
+    // adj 01688757
+    if sense == 10 {
+        return "adjective\trepeated too often; overfamiliar through overuse\tbanal, commonplace, hackneyed, old-hat, shopworn, threadbare, timeworn, tired, trite, well-worn\ta stock answer";
+    }
+    ""
+}

@@ -1,0 +1,185 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::i::w_ice;
+use entries::i::w_idea;
+use entries::i::w_identical;
+use entries::i::w_identify;
+use entries::i::w_identity;
+use entries::i::w_ignore;
+use entries::i::w_illusion;
+use entries::i::w_illustrate;
+use entries::i::w_image;
+use entries::i::w_imagination;
+use entries::i::w_imagine;
+use entries::i::w_imitation;
+use entries::i::w_immediate;
+use entries::i::w_immediately;
+use entries::i::w_imply;
+use entries::i::w_importance;
+use entries::i::w_important;
+use entries::i::w_impose;
+use entries::i::w_impossible;
+use entries::i::w_impress;
+use entries::i::w_impression;
+use entries::i::w_improve;
+use entries::i::w_in;
+use entries::i::w_in_fact;
+use entries::i::w_in_front;
+use entries::i::w_in_general;
+use entries::i::w_inch;
+use entries::i::w_incident;
+use entries::i::w_include;
+use entries::i::w_income;
+use entries::i::w_increase;
+use entries::i::w_increased;
+use entries::i::w_indeed;
+use entries::i::w_independence;
+use entries::i::w_independent;
+use entries::i::w_indicate;
+use entries::i::w_individual;
+use entries::i::w_induce;
+use entries::i::w_industrial;
+use entries::i::w_industry;
+use entries::i::w_influence;
+use entries::i::w_inform;
+use entries::i::w_information;
+use entries::i::w_initial;
+use entries::i::w_injury;
+use entries::i::w_inner;
+use entries::i::w_inside;
+use entries::i::w_insist;
+use entries::i::w_inspire;
+use entries::i::w_install;
+use entries::i::w_instance;
+use entries::i::w_instant;
+use entries::i::w_instead;
+use entries::i::w_institution;
+use entries::i::w_instrument;
+use entries::i::w_insure;
+use entries::i::w_integration;
+use entries::i::w_intend;
+use entries::i::w_intense;
+use entries::i::w_intensity;
+use entries::i::w_interest;
+use entries::i::w_interested;
+use entries::i::w_interesting;
+use entries::i::w_international;
+use entries::i::w_interpret;
+use entries::i::w_interrupt;
+use entries::i::w_interview;
+use entries::i::w_introduce;
+use entries::i::w_investigate;
+use entries::i::w_investigation;
+use entries::i::w_invite;
+use entries::i::w_involve;
+use entries::i::w_involved;
+use entries::i::w_iron;
+use entries::i::w_issue;
+use entries::i::w_item;
+
+fn through_w_importance(term: str, sense: i64) -> str {
+    if term == "ice" { return w_ice(sense); }
+    if term == "idea" { return w_idea(sense); }
+    if term == "identical" { return w_identical(sense); }
+    if term == "identify" { return w_identify(sense); }
+    if term == "identity" { return w_identity(sense); }
+    if term == "ignore" { return w_ignore(sense); }
+    if term == "illusion" { return w_illusion(sense); }
+    if term == "illustrate" { return w_illustrate(sense); }
+    if term == "image" { return w_image(sense); }
+    if term == "imagination" { return w_imagination(sense); }
+    if term == "imagine" { return w_imagine(sense); }
+    if term == "imitation" { return w_imitation(sense); }
+    if term == "immediate" { return w_immediate(sense); }
+    if term == "immediately" { return w_immediately(sense); }
+    if term == "imply" { return w_imply(sense); }
+    if term == "importance" { return w_importance(sense); }
+    ""
+}
+
+fn through_w_increased(term: str, sense: i64) -> str {
+    if term == "important" { return w_important(sense); }
+    if term == "impose" { return w_impose(sense); }
+    if term == "impossible" { return w_impossible(sense); }
+    if term == "impress" { return w_impress(sense); }
+    if term == "impression" { return w_impression(sense); }
+    if term == "improve" { return w_improve(sense); }
+    if term == "in" { return w_in(sense); }
+    if term == "in fact" { return w_in_fact(sense); }
+    if term == "in front" { return w_in_front(sense); }
+    if term == "in general" { return w_in_general(sense); }
+    if term == "inch" { return w_inch(sense); }
+    if term == "incident" { return w_incident(sense); }
+    if term == "include" { return w_include(sense); }
+    if term == "income" { return w_income(sense); }
+    if term == "increase" { return w_increase(sense); }
+    if term == "increased" { return w_increased(sense); }
+    ""
+}
+
+fn through_w_insist(term: str, sense: i64) -> str {
+    if term == "indeed" { return w_indeed(sense); }
+    if term == "independence" { return w_independence(sense); }
+    if term == "independent" { return w_independent(sense); }
+    if term == "indicate" { return w_indicate(sense); }
+    if term == "individual" { return w_individual(sense); }
+    if term == "induce" { return w_induce(sense); }
+    if term == "industrial" { return w_industrial(sense); }
+    if term == "industry" { return w_industry(sense); }
+    if term == "influence" { return w_influence(sense); }
+    if term == "inform" { return w_inform(sense); }
+    if term == "information" { return w_information(sense); }
+    if term == "initial" { return w_initial(sense); }
+    if term == "injury" { return w_injury(sense); }
+    if term == "inner" { return w_inner(sense); }
+    if term == "inside" { return w_inside(sense); }
+    if term == "insist" { return w_insist(sense); }
+    ""
+}
+
+fn through_w_international(term: str, sense: i64) -> str {
+    if term == "inspire" { return w_inspire(sense); }
+    if term == "install" { return w_install(sense); }
+    if term == "instance" { return w_instance(sense); }
+    if term == "instant" { return w_instant(sense); }
+    if term == "instead" { return w_instead(sense); }
+    if term == "institution" { return w_institution(sense); }
+    if term == "instrument" { return w_instrument(sense); }
+    if term == "insure" { return w_insure(sense); }
+    if term == "integration" { return w_integration(sense); }
+    if term == "intend" { return w_intend(sense); }
+    if term == "intense" { return w_intense(sense); }
+    if term == "intensity" { return w_intensity(sense); }
+    if term == "interest" { return w_interest(sense); }
+    if term == "interested" { return w_interested(sense); }
+    if term == "interesting" { return w_interesting(sense); }
+    if term == "international" { return w_international(sense); }
+    ""
+}
+
+fn through_w_item(term: str, sense: i64) -> str {
+    if term == "interpret" { return w_interpret(sense); }
+    if term == "interrupt" { return w_interrupt(sense); }
+    if term == "interview" { return w_interview(sense); }
+    if term == "introduce" { return w_introduce(sense); }
+    if term == "investigate" { return w_investigate(sense); }
+    if term == "investigation" { return w_investigation(sense); }
+    if term == "invite" { return w_invite(sense); }
+    if term == "involve" { return w_involve(sense); }
+    if term == "involved" { return w_involved(sense); }
+    if term == "iron" { return w_iron(sense); }
+    if term == "issue" { return w_issue(sense); }
+    if term == "item" { return w_item(sense); }
+    ""
+}
+
+pub fn lookup_i(term: str, sense: i64) -> str {
+    if term <= "importance" { return through_w_importance(term, sense); }
+    if term <= "increased" { return through_w_increased(term, sense); }
+    if term <= "insist" { return through_w_insist(term, sense); }
+    if term <= "international" { return through_w_international(term, sense); }
+    through_w_item(term, sense)
+}
+
+pub fn words_i() -> str {
+    "ice|idea|identical|identify|identity|ignore|illusion|illustrate|image|imagination|imagine|imitation|immediate|immediately|imply|importance|important|impose|impossible|impress|impression|improve|in|in fact|in front|in general|inch|incident|include|income|increase|increased|indeed|independence|independent|indicate|individual|induce|industrial|industry|influence|inform|information|initial|injury|inner|inside|insist|inspire|install|instance|instant|instead|institution|instrument|insure|integration|intend|intense|intensity|interest|interested|interesting|international|interpret|interrupt|interview|introduce|investigate|investigation|invite|involve|involved|iron|issue|item"
+}

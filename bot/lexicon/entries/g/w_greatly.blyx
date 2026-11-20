@@ -1,0 +1,9 @@
+// greatly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_greatly(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00056539
+    if sense == 1 {
+        return "adverb\tto an extraordinary extent or degree\t\the improved greatly";
+    }
+    ""
+}

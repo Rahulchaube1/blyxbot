@@ -1,0 +1,13 @@
+// investigation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_investigation(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05800611
+    if sense == 1 {
+        return "noun\tan inquiry into unfamiliar or questionable activities\tprobe\t";
+    }
+    // noun 00633864
+    if sense == 2 {
+        return "noun\tthe work of inquiring into something thoroughly and systematically\tinvestigating\t";
+    }
+    ""
+}

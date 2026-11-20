@@ -1,0 +1,29 @@
+// hurry — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hurry(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02055649
+    if sense == 1 {
+        return "verb\tmove very fast\ttravel rapidly, speed, zip\t";
+    }
+    // verb 00459498
+    if sense == 2 {
+        return "verb\tact or move at high speed\trush, hasten, look sharp, festinate\thurry--it's late!";
+    }
+    // noun 14451189
+    if sense == 3 {
+        return "noun\ta condition of urgency making it necessary to hurry\thaste\tin a hurry to lock the door";
+    }
+    // noun 05060189
+    if sense == 4 {
+        return "noun\toverly eager speed (and possible carelessness)\thaste, hastiness, hurriedness, precipitation\t";
+    }
+    // noun 00555648
+    if sense == 5 {
+        return "noun\tthe act of moving hurriedly and in a careless manner\thaste, rush, rushing\t";
+    }
+    // verb 00459296
+    if sense == 6 {
+        return "verb\turge to an unnatural speed\trush\t";
+    }
+    ""
+}

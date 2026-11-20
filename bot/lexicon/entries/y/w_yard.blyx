@@ -1,0 +1,17 @@
+// yard — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_yard(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13650447
+    if sense == 1 {
+        return "noun\ta unit of length equal to 3 feet; defined as 91.44 centimeters; originally taken to be the average length of a stride\tpace\t";
+    }
+    // noun 04610879
+    if sense == 2 {
+        return "noun\tthe enclosed land around a house or other building\tgrounds, curtilage\tit was a small house with almost no yard";
+    }
+    // noun 08684294
+    if sense == 3 {
+        return "noun\ta tract of land enclosed for particular activities (sometimes paved and usually associated with buildings)\t\tthey opened a repair yard on the edge of town";
+    }
+    ""
+}

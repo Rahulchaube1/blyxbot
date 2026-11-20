@@ -1,0 +1,25 @@
+// presence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_presence(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13957601
+    if sense == 1 {
+        return "noun\tthe state of being present; current existence\t\the tested for the presence of radon";
+    }
+    // noun 08642632
+    if sense == 2 {
+        return "noun\tthe immediate proximity of someone or something\tfront\tshe blushed in his presence";
+    }
+    // noun 09547528
+    if sense == 3 {
+        return "noun\tan invisible spiritual being felt to be nearby\t\t";
+    }
+    // noun 05917174
+    if sense == 4 {
+        return "noun\tthe impression that something is present\t\the felt the presence of an evil force";
+    }
+    // noun 04910377
+    if sense == 5 {
+        return "noun\tdignified manner or conduct\tbearing, comportment, mien\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// doubt — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_doubt(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05698247
+    if sense == 1 {
+        return "noun\tthe state of being unsure of something\tuncertainty, incertitude, dubiety, doubtfulness, dubiousness\t";
+    }
+    // verb 00687295
+    if sense == 2 {
+        return "verb\tconsider unlikely or have doubts about\t\tI doubt that she will accept his proposal of marriage";
+    }
+    // noun 04757522
+    if sense == 3 {
+        return "noun\tuncertainty about the truth or factuality or existence of something\tdubiousness, doubtfulness, question\t";
+    }
+    // verb 00687523
+    if sense == 4 {
+        return "verb\tlack confidence in or have doubts about\t\tI doubt these reports";
+    }
+    ""
+}

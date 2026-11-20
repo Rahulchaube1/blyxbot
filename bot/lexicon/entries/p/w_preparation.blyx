@@ -1,0 +1,17 @@
+// preparation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_preparation(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 01143040
+    if sense == 1 {
+        return "noun\tthe activity of putting or setting in order in advance of some act or purpose\treadying\tpreparations for the ceremony had begun";
+    }
+    // noun 14873641
+    if sense == 2 {
+        return "noun\ta substance prepared according to a formula\tformulation\tthe physician prescribed a commercial preparation of the medicine";
+    }
+    // noun 05794694
+    if sense == 3 {
+        return "noun\tthe cognitive process of thinking about what you will do in the event of something happening\tplanning, provision\t";
+    }
+    ""
+}

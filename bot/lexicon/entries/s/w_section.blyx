@@ -1,0 +1,29 @@
+// section — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_section(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 06392001
+    if sense == 1 {
+        return "noun\ta self-contained part of a larger composition (written or musical)\tsubdivision\the always turns first to the business section";
+    }
+    // noun 09428741
+    if sense == 2 {
+        return "noun\ta very thin slice (of tissue or mineral or other substance) for examination under a microscope\t\tsections from the left ventricle showed diseased tissue";
+    }
+    // noun 08648322
+    if sense == 3 {
+        return "noun\ta distinct region or subdivision of a territorial or political area or community or group of people\t\tno section of the nation is more ardent than the South";
+    }
+    // noun 04164989
+    if sense == 4 {
+        return "noun\tone of several parts or pieces that fit with others to constitute a whole object\tsegment\ta section of a fishing rod";
+    }
+    // noun 08214832
+    if sense == 5 {
+        return "noun\ta small team of policemen working as part of a police platoon\t\t";
+    }
+    // noun 05867413
+    if sense == 6 {
+        return "noun\tone of the portions into which something is regarded as divided and which together constitute a whole\tpart, division\tthe finance section of the company";
+    }
+    ""
+}

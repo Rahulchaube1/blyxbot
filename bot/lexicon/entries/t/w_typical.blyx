@@ -1,0 +1,13 @@
+// typical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_typical(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02468635
+    if sense == 1 {
+        return "adjective\texhibiting the qualities or characteristics that identify a group or kind or category\t\ta typical American girl";
+    }
+    // adj 00357556
+    if sense == 2 {
+        return "adjective\tof a feature that helps to distinguish a person or thing\tdistinctive\tthat is typical of you!";
+    }
+    ""
+}

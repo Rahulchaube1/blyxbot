@@ -1,0 +1,29 @@
+// area — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_area(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 08497294
+    if sense == 1 {
+        return "noun\ta particular geographical region of indefinite boundary (usually serving some special purpose or distinguished by its people or culture or geography)\tcountry\tit was a mountainous area";
+    }
+    // noun 05815517
+    if sense == 2 {
+        return "noun\ta subject of study\t\tit was his area of specialization";
+    }
+    // noun 05221895
+    if sense == 3 {
+        return "noun\ta part of an animal that has a special function or is supplied by a given artery or nerve\tregion\t";
+    }
+    // noun 14514039
+    if sense == 4 {
+        return "noun\ta particular environment or walk of life\tsphere, domain, orbit, field, arena\tit was a closed area of employment";
+    }
+    // noun 02735688
+    if sense == 5 {
+        return "noun\ta part of a structure having some specific characteristic or function\t\tthe spacious cooking area provided plenty of room for servants";
+    }
+    // noun 05128519
+    if sense == 6 {
+        return "noun\tthe extent of a 2-dimensional surface enclosed within a boundary\texpanse, surface area\tthe area of a rectangle";
+    }
+    ""
+}

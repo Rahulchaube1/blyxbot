@@ -1,0 +1,21 @@
+// item — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_item(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06482401
+    if sense == 1 {
+        return "noun\ta distinct part that can be specified separately in a group of things that could be enumerated on a list\tpoint\the noticed an item in the New York Times";
+    }
+    // noun 13809920
+    if sense == 2 {
+        return "noun\ta small part that can be considered separately from the whole\tdetail, particular\t";
+    }
+    // noun 03588414
+    if sense == 3 {
+        return "noun\ta whole individual unit; especially when included in a list or collection\t\tthey reduced the price on many items";
+    }
+    // noun 05817845
+    if sense == 4 {
+        return "noun\tan isolated fact that is considered separately from the whole\tdetail, point\t";
+    }
+    ""
+}

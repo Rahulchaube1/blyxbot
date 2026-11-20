@@ -1,0 +1,17 @@
+// device — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_device(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 03183080
+    if sense == 1 {
+        return "noun\tan instrumentality invented for a particular purpose\t\tthe device is small enough to wear on your wrist";
+    }
+    // noun 07068844
+    if sense == 2 {
+        return "noun\tsomething in an artistic work designed to achieve a particular effect\t\t";
+    }
+    // noun 00171249
+    if sense == 3 {
+        return "noun\tany clever maneuver\tgimmick, twist\the would stoop to any device to win a point";
+    }
+    ""
+}

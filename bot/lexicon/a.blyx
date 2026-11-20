@@ -1,0 +1,378 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::a::w_a_bit;
+use entries::a::w_a_couple_of;
+use entries::a::w_a_few;
+use entries::a::w_a_little;
+use entries::a::w_abandon;
+use entries::a::w_ability;
+use entries::a::w_able;
+use entries::a::w_about;
+use entries::a::w_above;
+use entries::a::w_absence;
+use entries::a::w_absorb;
+use entries::a::w_academic;
+use entries::a::w_accept;
+use entries::a::w_accompany;
+use entries::a::w_accomplish;
+use entries::a::w_accord;
+use entries::a::w_account;
+use entries::a::w_account_for;
+use entries::a::w_accuse;
+use entries::a::w_achieve;
+use entries::a::w_achievement;
+use entries::a::w_acquire;
+use entries::a::w_act;
+use entries::a::w_act_as;
+use entries::a::w_action;
+use entries::a::w_active;
+use entries::a::w_activity;
+use entries::a::w_actual;
+use entries::a::w_actually;
+use entries::a::w_add;
+use entries::a::w_address;
+use entries::a::w_adequate;
+use entries::a::w_adjust;
+use entries::a::w_admire;
+use entries::a::w_admit;
+use entries::a::w_adopt;
+use entries::a::w_advance;
+use entries::a::w_advantage;
+use entries::a::w_advise;
+use entries::a::w_affair;
+use entries::a::w_affect;
+use entries::a::w_afford;
+use entries::a::w_afraid;
+use entries::a::w_after_all;
+use entries::a::w_afternoon;
+use entries::a::w_again;
+use entries::a::w_age;
+use entries::a::w_agency;
+use entries::a::w_agent;
+use entries::a::w_ago;
+use entries::a::w_agree;
+use entries::a::w_agreement;
+use entries::a::w_ahead;
+use entries::a::w_aid;
+use entries::a::w_aim;
+use entries::a::w_air;
+use entries::a::w_all;
+use entries::a::w_all_over;
+use entries::a::w_all_right;
+use entries::a::w_allotment;
+use entries::a::w_allow;
+use entries::a::w_almost;
+use entries::a::w_alone;
+use entries::a::w_along;
+use entries::a::w_already;
+use entries::a::w_also;
+use entries::a::w_alter;
+use entries::a::w_alternative;
+use entries::a::w_always;
+use entries::a::w_america;
+use entries::a::w_american;
+use entries::a::w_amount;
+use entries::a::w_analysis;
+use entries::a::w_analyze;
+use entries::a::w_and_then;
+use entries::a::w_anger;
+use entries::a::w_animal;
+use entries::a::w_announce;
+use entries::a::w_anode;
+use entries::a::w_another;
+use entries::a::w_answer;
+use entries::a::w_anti_hyphen_semitism;
+use entries::a::w_anticipate;
+use entries::a::w_anxiety;
+use entries::a::w_any;
+use entries::a::w_apart;
+use entries::a::w_apartment;
+use entries::a::w_apparatus;
+use entries::a::w_apparent;
+use entries::a::w_apparently;
+use entries::a::w_appeal;
+use entries::a::w_appear;
+use entries::a::w_appearance;
+use entries::a::w_application;
+use entries::a::w_apply;
+use entries::a::w_appoint;
+use entries::a::w_appreciate;
+use entries::a::w_approach;
+use entries::a::w_appropriate;
+use entries::a::w_approve;
+use entries::a::w_approximately;
+use entries::a::w_april;
+use entries::a::w_arc;
+use entries::a::w_area;
+use entries::a::w_argue;
+use entries::a::w_argument;
+use entries::a::w_arise;
+use entries::a::w_arm;
+use entries::a::w_army;
+use entries::a::w_around;
+use entries::a::w_arouse;
+use entries::a::w_arrange;
+use entries::a::w_arrangement;
+use entries::a::w_arrest;
+use entries::a::w_arrive;
+use entries::a::w_arrive_at;
+use entries::a::w_arrow;
+use entries::a::w_art;
+use entries::a::w_article;
+use entries::a::w_artist;
+use entries::a::w_artistic;
+use entries::a::w_as;
+use entries::a::w_as_well;
+use entries::a::w_ask;
+use entries::a::w_aspect;
+use entries::a::w_assemble;
+use entries::a::w_assert;
+use entries::a::w_assign;
+use entries::a::w_assist;
+use entries::a::w_assistance;
+use entries::a::w_associate;
+use entries::a::w_association;
+use entries::a::w_assume;
+use entries::a::w_assumption;
+use entries::a::w_assure;
+use entries::a::w_at_all;
+use entries::a::w_at_last;
+use entries::a::w_at_least;
+use entries::a::w_at_once;
+use entries::a::w_at_the_same_time;
+use entries::a::w_atmosphere;
+use entries::a::w_attach;
+use entries::a::w_attack;
+use entries::a::w_attain;
+use entries::a::w_attempt;
+use entries::a::w_attend;
+use entries::a::w_attention;
+use entries::a::w_attitude;
+use entries::a::w_attract;
+use entries::a::w_audience;
+use entries::a::w_author;
+use entries::a::w_authority;
+use entries::a::w_authorize;
+use entries::a::w_available;
+use entries::a::w_average;
+use entries::a::w_avoid;
+use entries::a::w_await;
+use entries::a::w_award;
+use entries::a::w_aware;
+use entries::a::w_away;
+
+fn through_w_accord(term: str, sense: i64) -> str {
+    if term == "a bit" { return w_a_bit(sense); }
+    if term == "a couple of" { return w_a_couple_of(sense); }
+    if term == "a few" { return w_a_few(sense); }
+    if term == "a little" { return w_a_little(sense); }
+    if term == "abandon" { return w_abandon(sense); }
+    if term == "ability" { return w_ability(sense); }
+    if term == "able" { return w_able(sense); }
+    if term == "about" { return w_about(sense); }
+    if term == "above" { return w_above(sense); }
+    if term == "absence" { return w_absence(sense); }
+    if term == "absorb" { return w_absorb(sense); }
+    if term == "academic" { return w_academic(sense); }
+    if term == "accept" { return w_accept(sense); }
+    if term == "accompany" { return w_accompany(sense); }
+    if term == "accomplish" { return w_accomplish(sense); }
+    if term == "accord" { return w_accord(sense); }
+    ""
+}
+
+fn through_w_adequate(term: str, sense: i64) -> str {
+    if term == "account" { return w_account(sense); }
+    if term == "account for" { return w_account_for(sense); }
+    if term == "accuse" { return w_accuse(sense); }
+    if term == "achieve" { return w_achieve(sense); }
+    if term == "achievement" { return w_achievement(sense); }
+    if term == "acquire" { return w_acquire(sense); }
+    if term == "act" { return w_act(sense); }
+    if term == "act as" { return w_act_as(sense); }
+    if term == "action" { return w_action(sense); }
+    if term == "active" { return w_active(sense); }
+    if term == "activity" { return w_activity(sense); }
+    if term == "actual" { return w_actual(sense); }
+    if term == "actually" { return w_actually(sense); }
+    if term == "add" { return w_add(sense); }
+    if term == "address" { return w_address(sense); }
+    if term == "adequate" { return w_adequate(sense); }
+    ""
+}
+
+fn through_w_agency(term: str, sense: i64) -> str {
+    if term == "adjust" { return w_adjust(sense); }
+    if term == "admire" { return w_admire(sense); }
+    if term == "admit" { return w_admit(sense); }
+    if term == "adopt" { return w_adopt(sense); }
+    if term == "advance" { return w_advance(sense); }
+    if term == "advantage" { return w_advantage(sense); }
+    if term == "advise" { return w_advise(sense); }
+    if term == "affair" { return w_affair(sense); }
+    if term == "affect" { return w_affect(sense); }
+    if term == "afford" { return w_afford(sense); }
+    if term == "afraid" { return w_afraid(sense); }
+    if term == "after all" { return w_after_all(sense); }
+    if term == "afternoon" { return w_afternoon(sense); }
+    if term == "again" { return w_again(sense); }
+    if term == "age" { return w_age(sense); }
+    if term == "agency" { return w_agency(sense); }
+    ""
+}
+
+fn through_w_along(term: str, sense: i64) -> str {
+    if term == "agent" { return w_agent(sense); }
+    if term == "ago" { return w_ago(sense); }
+    if term == "agree" { return w_agree(sense); }
+    if term == "agreement" { return w_agreement(sense); }
+    if term == "ahead" { return w_ahead(sense); }
+    if term == "aid" { return w_aid(sense); }
+    if term == "aim" { return w_aim(sense); }
+    if term == "air" { return w_air(sense); }
+    if term == "all" { return w_all(sense); }
+    if term == "all over" { return w_all_over(sense); }
+    if term == "all right" { return w_all_right(sense); }
+    if term == "allotment" { return w_allotment(sense); }
+    if term == "allow" { return w_allow(sense); }
+    if term == "almost" { return w_almost(sense); }
+    if term == "alone" { return w_alone(sense); }
+    if term == "along" { return w_along(sense); }
+    ""
+}
+
+fn through_w_another(term: str, sense: i64) -> str {
+    if term == "already" { return w_already(sense); }
+    if term == "also" { return w_also(sense); }
+    if term == "alter" { return w_alter(sense); }
+    if term == "alternative" { return w_alternative(sense); }
+    if term == "always" { return w_always(sense); }
+    if term == "america" { return w_america(sense); }
+    if term == "american" { return w_american(sense); }
+    if term == "amount" { return w_amount(sense); }
+    if term == "analysis" { return w_analysis(sense); }
+    if term == "analyze" { return w_analyze(sense); }
+    if term == "and then" { return w_and_then(sense); }
+    if term == "anger" { return w_anger(sense); }
+    if term == "animal" { return w_animal(sense); }
+    if term == "announce" { return w_announce(sense); }
+    if term == "anode" { return w_anode(sense); }
+    if term == "another" { return w_another(sense); }
+    ""
+}
+
+fn through_w_appoint(term: str, sense: i64) -> str {
+    if term == "answer" { return w_answer(sense); }
+    if term == "anti-semitism" { return w_anti_hyphen_semitism(sense); }
+    if term == "anticipate" { return w_anticipate(sense); }
+    if term == "anxiety" { return w_anxiety(sense); }
+    if term == "any" { return w_any(sense); }
+    if term == "apart" { return w_apart(sense); }
+    if term == "apartment" { return w_apartment(sense); }
+    if term == "apparatus" { return w_apparatus(sense); }
+    if term == "apparent" { return w_apparent(sense); }
+    if term == "apparently" { return w_apparently(sense); }
+    if term == "appeal" { return w_appeal(sense); }
+    if term == "appear" { return w_appear(sense); }
+    if term == "appearance" { return w_appearance(sense); }
+    if term == "application" { return w_application(sense); }
+    if term == "apply" { return w_apply(sense); }
+    if term == "appoint" { return w_appoint(sense); }
+    ""
+}
+
+fn through_w_arrange(term: str, sense: i64) -> str {
+    if term == "appreciate" { return w_appreciate(sense); }
+    if term == "approach" { return w_approach(sense); }
+    if term == "appropriate" { return w_appropriate(sense); }
+    if term == "approve" { return w_approve(sense); }
+    if term == "approximately" { return w_approximately(sense); }
+    if term == "april" { return w_april(sense); }
+    if term == "arc" { return w_arc(sense); }
+    if term == "area" { return w_area(sense); }
+    if term == "argue" { return w_argue(sense); }
+    if term == "argument" { return w_argument(sense); }
+    if term == "arise" { return w_arise(sense); }
+    if term == "arm" { return w_arm(sense); }
+    if term == "army" { return w_army(sense); }
+    if term == "around" { return w_around(sense); }
+    if term == "arouse" { return w_arouse(sense); }
+    if term == "arrange" { return w_arrange(sense); }
+    ""
+}
+
+fn through_w_assign(term: str, sense: i64) -> str {
+    if term == "arrangement" { return w_arrangement(sense); }
+    if term == "arrest" { return w_arrest(sense); }
+    if term == "arrive" { return w_arrive(sense); }
+    if term == "arrive at" { return w_arrive_at(sense); }
+    if term == "arrow" { return w_arrow(sense); }
+    if term == "art" { return w_art(sense); }
+    if term == "article" { return w_article(sense); }
+    if term == "artist" { return w_artist(sense); }
+    if term == "artistic" { return w_artistic(sense); }
+    if term == "as" { return w_as(sense); }
+    if term == "as well" { return w_as_well(sense); }
+    if term == "ask" { return w_ask(sense); }
+    if term == "aspect" { return w_aspect(sense); }
+    if term == "assemble" { return w_assemble(sense); }
+    if term == "assert" { return w_assert(sense); }
+    if term == "assign" { return w_assign(sense); }
+    ""
+}
+
+fn through_w_attain(term: str, sense: i64) -> str {
+    if term == "assist" { return w_assist(sense); }
+    if term == "assistance" { return w_assistance(sense); }
+    if term == "associate" { return w_associate(sense); }
+    if term == "association" { return w_association(sense); }
+    if term == "assume" { return w_assume(sense); }
+    if term == "assumption" { return w_assumption(sense); }
+    if term == "assure" { return w_assure(sense); }
+    if term == "at all" { return w_at_all(sense); }
+    if term == "at last" { return w_at_last(sense); }
+    if term == "at least" { return w_at_least(sense); }
+    if term == "at once" { return w_at_once(sense); }
+    if term == "at the same time" { return w_at_the_same_time(sense); }
+    if term == "atmosphere" { return w_atmosphere(sense); }
+    if term == "attach" { return w_attach(sense); }
+    if term == "attack" { return w_attack(sense); }
+    if term == "attain" { return w_attain(sense); }
+    ""
+}
+
+fn through_w_away(term: str, sense: i64) -> str {
+    if term == "attempt" { return w_attempt(sense); }
+    if term == "attend" { return w_attend(sense); }
+    if term == "attention" { return w_attention(sense); }
+    if term == "attitude" { return w_attitude(sense); }
+    if term == "attract" { return w_attract(sense); }
+    if term == "audience" { return w_audience(sense); }
+    if term == "author" { return w_author(sense); }
+    if term == "authority" { return w_authority(sense); }
+    if term == "authorize" { return w_authorize(sense); }
+    if term == "available" { return w_available(sense); }
+    if term == "average" { return w_average(sense); }
+    if term == "avoid" { return w_avoid(sense); }
+    if term == "await" { return w_await(sense); }
+    if term == "award" { return w_award(sense); }
+    if term == "aware" { return w_aware(sense); }
+    if term == "away" { return w_away(sense); }
+    ""
+}
+
+pub fn lookup_a(term: str, sense: i64) -> str {
+    if term <= "accord" { return through_w_accord(term, sense); }
+    if term <= "adequate" { return through_w_adequate(term, sense); }
+    if term <= "agency" { return through_w_agency(term, sense); }
+    if term <= "along" { return through_w_along(term, sense); }
+    if term <= "another" { return through_w_another(term, sense); }
+    if term <= "appoint" { return through_w_appoint(term, sense); }
+    if term <= "arrange" { return through_w_arrange(term, sense); }
+    if term <= "assign" { return through_w_assign(term, sense); }
+    if term <= "attain" { return through_w_attain(term, sense); }
+    through_w_away(term, sense)
+}
+
+pub fn words_a() -> str {
+    "a bit|a couple of|a few|a little|abandon|ability|able|about|above|absence|absorb|academic|accept|accompany|accomplish|accord|account|account for|accuse|achieve|achievement|acquire|act|act as|action|active|activity|actual|actually|add|address|adequate|adjust|admire|admit|adopt|advance|advantage|advise|affair|affect|afford|afraid|after all|afternoon|again|age|agency|agent|ago|agree|agreement|ahead|aid|aim|air|all|all over|all right|allotment|allow|almost|alone|along|already|also|alter|alternative|always|america|american|amount|analysis|analyze|and then|anger|animal|announce|anode|another|answer|anti-semitism|anticipate|anxiety|any|apart|apartment|apparatus|apparent|apparently|appeal|appear|appearance|application|apply|appoint|appreciate|approach|appropriate|approve|approximately|april|arc|area|argue|argument|arise|arm|army|around|arouse|arrange|arrangement|arrest|arrive|arrive at|arrow|art|article|artist|artistic|as|as well|ask|aspect|assemble|assert|assign|assist|assistance|associate|association|assume|assumption|assure|at all|at last|at least|at once|at the same time|atmosphere|attach|attack|attain|attempt|attend|attention|attitude|attract|audience|author|authority|authorize|available|average|avoid|await|award|aware|away"
+}

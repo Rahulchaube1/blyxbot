@@ -1,0 +1,17 @@
+// instant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_instant(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 15247110
+    if sense == 1 {
+        return "noun\ta very short time (as the time it takes the eye to blink or the heart to beat)\tblink of an eye, flash, heartbeat, jiffy, split second, trice, twinkling, wink, New York minute\t";
+    }
+    // noun 15244650
+    if sense == 2 {
+        return "noun\ta particular point in time\tmoment, minute, second\t";
+    }
+    // adj 00979031
+    if sense == 3 {
+        return "adjective\toccurring with no delay\tinstantaneous\tinstant gratification";
+    }
+    ""
+}

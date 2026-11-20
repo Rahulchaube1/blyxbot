@@ -1,0 +1,29 @@
+// forward — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_forward(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00074641
+    if sense == 1 {
+        return "adverb\tat or to or toward the front\tforwards, frontward, frontwards, forrad, forrard\the faced forward";
+    }
+    // adj 00203237
+    if sense == 2 {
+        return "adjective\tat or near or directed toward the front\t\tthe forward section of the aircraft";
+    }
+    // adv 00103859
+    if sense == 3 {
+        return "adverb\tforward in time or order or degree\tforth, onward\t";
+    }
+    // verb 01955508
+    if sense == 4 {
+        return "verb\tsend or ship onward from an intermediate post or station in transit\tsend on\tforward my mail";
+    }
+    // adv 00075442
+    if sense == 5 {
+        return "adverb\ttoward the future; forward in time\tahead\tI look forward to seeing you";
+    }
+    // adv 00067265
+    if sense == 6 {
+        return "adverb\tin a forward direction\tahead, onward, onwards, forwards, forrader\tthey went slowly forward in the mud";
+    }
+    ""
+}

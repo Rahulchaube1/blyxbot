@@ -1,0 +1,21 @@
+// room — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_room(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04105893
+    if sense == 1 {
+        return "noun\tan area within a building enclosed by walls and floor and ceiling\t\tthe rooms were very small but they had a nice view";
+    }
+    // noun 13777764
+    if sense == 2 {
+        return "noun\tspace for movement\tway, elbow room\troom to pass";
+    }
+    // noun 14485436
+    if sense == 3 {
+        return "noun\topportunity for\t\troom for improvement";
+    }
+    // verb 02656763
+    if sense == 4 {
+        return "verb\tlive and take one's meals at or in\tboard\tshe rooms in an old boarding house";
+    }
+    ""
+}

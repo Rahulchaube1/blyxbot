@@ -1,0 +1,25 @@
+// honor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_honor(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02546075
+    if sense == 1 {
+        return "verb\tbestow honor or rewards upon\thonour, reward\tToday we honor our soldiers";
+    }
+    // noun 06696483
+    if sense == 2 {
+        return "noun\ta tangible symbol signifying approval or distinction\taward, accolade, honour, laurels\t";
+    }
+    // noun 14436875
+    if sense == 3 {
+        return "noun\tthe state of being honored\thonour, laurels\t";
+    }
+    // noun 04869106
+    if sense == 4 {
+        return "noun\tthe quality of being honorable and having a good name\thonour\ta man of honor";
+    }
+    // verb 02457233
+    if sense == 5 {
+        return "verb\tshow respect towards\trespect, honour, abide by, observe\thonor your parents!";
+    }
+    ""
+}

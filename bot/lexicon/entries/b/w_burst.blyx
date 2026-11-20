@@ -1,0 +1,41 @@
+// burst — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_burst(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 00309310
+    if sense == 1 {
+        return "verb\tcome open suddenly and violently, as if from internal pressure\tsplit, break open\tThe bubble burst";
+    }
+    // verb 01785395
+    if sense == 2 {
+        return "verb\tforce out or release suddenly and often violently something pent up\tbreak, erupt\t";
+    }
+    // verb 00306017
+    if sense == 3 {
+        return "verb\tburst outward, usually with noise\texplode\t";
+    }
+    // noun 00377364
+    if sense == 4 {
+        return "noun\tthe act of exploding or bursting\texplosion\tthe burst of an atom bomb creates enormous radiation aloft";
+    }
+    // verb 01964634
+    if sense == 5 {
+        return "verb\tmove suddenly, energetically, or violently\t\tHe burst out of the house into the cool night";
+    }
+    // noun 00988320
+    if sense == 6 {
+        return "noun\trapid simultaneous discharge of firearms\tfusillade, salvo, volley\t";
+    }
+    // verb 02715595
+    if sense == 7 {
+        return "verb\tbe in a state of movement or action\tabound, bristle\t";
+    }
+    // verb 00424224
+    if sense == 8 {
+        return "verb\temerge suddenly\t\tThe sun burst into view";
+    }
+    // noun 00555325
+    if sense == 9 {
+        return "noun\ta sudden flurry of activity (often for no obvious reason)\tfit\ta burst of applause";
+    }
+    ""
+}

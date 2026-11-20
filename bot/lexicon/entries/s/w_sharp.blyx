@@ -1,0 +1,45 @@
+// sharp — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sharp(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // adj 00780352
+    if sense == 1 {
+        return "adjective\t(of something seen or heard) clearly defined\tcrisp\ta sharp photographic image";
+    }
+    // adj 01810189
+    if sense == 2 {
+        return "adjective\tending in a sharp point\tacuate, acute, needlelike\t";
+    }
+    // adj 01744515
+    if sense == 3 {
+        return "adjective\thaving or demonstrating ability to recognize or draw fine distinctions\tacute, discriminating, incisive, keen, knifelike, penetrating, penetrative, piercing\tas sharp and incisive as the stroke of a fang";
+    }
+    // adj 00438909
+    if sense == 4 {
+        return "adjective\tmarked by practical hardheaded intelligence\tastute, shrewd\t";
+    }
+    // adj 01804728
+    if sense == 5 {
+        return "adjective\tharsh\tsharp-worded, tart\tsharp criticism";
+    }
+    // adj 01214430
+    if sense == 6 {
+        return "adjective\thaving or emitting a high-pitched and sharp tone or tones\tshrill\t";
+    }
+    // adj 01145151
+    if sense == 7 {
+        return "adjective\textremely steep\tabrupt, precipitous\ta sharp drop";
+    }
+    // adj 00803038
+    if sense == 8 {
+        return "adjective\tkeenly and painfully felt; as if caused by a sharp edge or point\t\ta sharp pain";
+    }
+    // adj 00800826
+    if sense == 9 {
+        return "adjective\thaving or made by a thin edge or sharp point; suitable for cutting or piercing\t\ta sharp knife";
+    }
+    // adv 00503102
+    if sense == 10 {
+        return "adverb\tchanging suddenly in direction and degree\tsharply, acutely\tturn sharp left here";
+    }
+    ""
+}

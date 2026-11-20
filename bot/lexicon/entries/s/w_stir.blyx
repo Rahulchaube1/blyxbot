@@ -1,0 +1,29 @@
+// stir — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stir(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01894320
+    if sense == 1 {
+        return "verb\tmove an implement through\t\tstir the soup";
+    }
+    // verb 01893988
+    if sense == 2 {
+        return "verb\tmove very slightly\tshift, budge, agitate\t";
+    }
+    // verb 02116118
+    if sense == 3 {
+        return "verb\tstir feelings in\tstimulate, excite\tstir emotions";
+    }
+    // verb 01761706
+    if sense == 4 {
+        return "verb\tstir the feelings, emotions, or peace of\tstimulate, shake, shake up, excite\t";
+    }
+    // verb 01770802
+    if sense == 5 {
+        return "verb\taffect emotionally\ttouch\tA stirring movie";
+    }
+    // verb 01629958
+    if sense == 6 {
+        return "verb\tsummon into action or bring into existence, often as if by magic\traise, conjure, conjure up, invoke, evoke, call down, arouse, bring up, put forward, call forth\t";
+    }
+    ""
+}

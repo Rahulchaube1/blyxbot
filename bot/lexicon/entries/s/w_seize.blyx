@@ -1,0 +1,21 @@
+// seize — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_seize(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01212572
+    if sense == 1 {
+        return "verb\ttake hold of; grab\tprehend, clutch\tThe sales clerk quickly seized the money on the counter";
+    }
+    // verb 01213614
+    if sense == 2 {
+        return "verb\ttake or capture by force\t\tThe terrorists seized the politicians";
+    }
+    // verb 02272549
+    if sense == 3 {
+        return "verb\ttake possession of by force, as after an invasion\tappropriate, capture, conquer\tthe invaders seized the land and property of the inhabitants";
+    }
+    // verb 02273293
+    if sense == 4 {
+        return "verb\ttake temporary possession of as a security, by legal authority\timpound, attach, sequester, confiscate\tThe FBI seized the drugs";
+    }
+    ""
+}

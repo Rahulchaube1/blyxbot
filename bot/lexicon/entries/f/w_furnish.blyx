@@ -1,0 +1,13 @@
+// furnish — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_furnish(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02327200
+    if sense == 1 {
+        return "verb\tgive something useful or necessary to\tsupply, provide, render\t";
+    }
+    // verb 02336483
+    if sense == 2 {
+        return "verb\tprovide or equip with furniture\t\tWe furnished the house in the Biedermeyer style";
+    }
+    ""
+}

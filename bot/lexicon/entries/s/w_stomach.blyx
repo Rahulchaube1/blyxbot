@@ -1,0 +1,13 @@
+// stomach — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stomach(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05395690
+    if sense == 1 {
+        return "noun\tan enlarged and muscular saclike organ of the alimentary canal; the principal organ of digestion\ttummy, tum, breadbasket\t";
+    }
+    // noun 05556943
+    if sense == 2 {
+        return "noun\tthe region of the body of a vertebrate between the thorax and the pelvis\tabdomen, venter, belly\t";
+    }
+    ""
+}

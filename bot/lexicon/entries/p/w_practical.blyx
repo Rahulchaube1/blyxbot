@@ -1,0 +1,13 @@
+// practical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_practical(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01834304
+    if sense == 1 {
+        return "adjective\tconcerned with actual use or practice\t\the is a very practical person";
+    }
+    // adj 01940651
+    if sense == 2 {
+        return "adjective\tguided by practical experience and observation rather than theory\thardheaded, hard-nosed, pragmatic\tcompletely practical in his approach to business";
+    }
+    ""
+}

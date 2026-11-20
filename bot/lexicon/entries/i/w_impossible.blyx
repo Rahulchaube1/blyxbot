@@ -1,0 +1,17 @@
+// impossible — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_impossible(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01823092
+    if sense == 1 {
+        return "adjective\tnot capable of occurring or being accomplished or dealt with\t\tan impossible dream";
+    }
+    // adj 02418692
+    if sense == 2 {
+        return "adjective\ttotally unlikely\tinconceivable, out of the question, unimaginable\t";
+    }
+    // noun 05792446
+    if sense == 3 {
+        return "noun\tsomething that cannot be done\t\this assignment verged on the impossible";
+    }
+    ""
+}

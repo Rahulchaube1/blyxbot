@@ -1,0 +1,25 @@
+// heavily — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_heavily(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adv 00176383
+    if sense == 1 {
+        return "adverb\tto a considerable degree\tto a great extent\the relied heavily on others' data";
+    }
+    // adv 00507477
+    if sense == 2 {
+        return "adverb\tin a heavy-footed manner\t\the walked heavily up the three flights to his room";
+    }
+    // adv 00508657
+    if sense == 3 {
+        return "adverb\twith great force\t\tshe hit her arm heavily against the wall";
+    }
+    // adv 00502575
+    if sense == 4 {
+        return "adverb\tin a manner designed for heavy duty\t\ta heavily constructed car";
+    }
+    // adv 00355615
+    if sense == 5 {
+        return "adverb\tslowly as if burdened by much weight\theavy\t";
+    }
+    ""
+}

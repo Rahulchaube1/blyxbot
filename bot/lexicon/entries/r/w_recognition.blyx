@@ -1,0 +1,21 @@
+// recognition — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_recognition(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 14411981
+    if sense == 1 {
+        return "noun\tthe state or quality of being recognized or acknowledged\tacknowledgment, acknowledgement\tthe partners were delighted with the recognition of their work";
+    }
+    // noun 05762998
+    if sense == 2 {
+        return "noun\tthe process of recognizing something or someone by remembering\tidentification\ta politician whose recall of names was as remarkable as his recognition of faces";
+    }
+    // noun 06688274
+    if sense == 3 {
+        return "noun\tapproval\tcredit\tgive her recognition for trying";
+    }
+    // noun 05807540
+    if sense == 4 {
+        return "noun\tcoming to understand something clearly and distinctly\trealization, realisation\ta sudden recognition of the problem he faced";
+    }
+    ""
+}

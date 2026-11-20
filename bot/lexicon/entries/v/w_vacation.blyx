@@ -1,0 +1,13 @@
+// vacation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_vacation(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 15137890
+    if sense == 1 {
+        return "noun\tleisure time away from work devoted to rest or pleasure\tholiday\twe get two weeks of vacation every summer";
+    }
+    // verb 02708707
+    if sense == 2 {
+        return "verb\tspend or take a vacation\tholiday\t";
+    }
+    ""
+}

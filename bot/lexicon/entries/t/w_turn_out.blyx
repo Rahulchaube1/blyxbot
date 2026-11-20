@@ -1,0 +1,33 @@
+// turn out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_turn_out(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02633881
+    if sense == 1 {
+        return "verb\tbe shown or be found to be\tprove, turn up\t";
+    }
+    // verb 02634133
+    if sense == 2 {
+        return "verb\tprove to be in the result or end\t\t";
+    }
+    // verb 01623792
+    if sense == 3 {
+        return "verb\tproduce quickly or regularly, usually with machinery\t\t";
+    }
+    // verb 02610845
+    if sense == 4 {
+        return "verb\tresult or end\tcome out\tHow will the game turn out?";
+    }
+    // verb 00425522
+    if sense == 5 {
+        return "verb\tcome, usually in answer to an invitation or summons\t\t";
+    }
+    // verb 01652139
+    if sense == 6 {
+        return "verb\tbring forth, \"The apple tree bore delicious apples this year\"\tbear\t";
+    }
+    // verb 01468576
+    if sense == 7 {
+        return "verb\tput out or expel from a place\teject, chuck out, exclude, turf out, boot out\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// distinct — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_distinct(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02067063
+    if sense == 1 {
+        return "adjective\t(often followed by `from') not alike; different in nature or quality\tdistinguishable\tplants of several distinct types";
+    }
+    // adj 00779374
+    if sense == 2 {
+        return "adjective\teasy to perceive; especially clearly outlined\t\ta distinct flavor";
+    }
+    // adj 02110778
+    if sense == 3 {
+        return "adjective\tconstituting a separate entity or part\tdiscrete\ton two distinct occasions";
+    }
+    ""
+}

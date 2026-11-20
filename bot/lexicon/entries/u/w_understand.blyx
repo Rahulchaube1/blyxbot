@@ -1,0 +1,25 @@
+// understand — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_understand(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00588888
+    if sense == 1 {
+        return "verb\tknow and comprehend the nature or meaning of\t\tShe did not understand her husband";
+    }
+    // verb 00591115
+    if sense == 2 {
+        return "verb\tperceive (an idea or situation) mentally\trealize, realise, see\tI don't understand the idea";
+    }
+    // verb 00593852
+    if sense == 3 {
+        return "verb\tmake sense of a language\tread, interpret, translate\tShe understands French";
+    }
+    // verb 00593522
+    if sense == 4 {
+        return "verb\tbelieve to be the case\tinfer\tI understand you have no previous experience?";
+    }
+    // verb 00594058
+    if sense == 5 {
+        return "verb\tbe understanding of\tsympathize, sympathise, empathize, empathise\tYou don't need to explain--I understand!";
+    }
+    ""
+}

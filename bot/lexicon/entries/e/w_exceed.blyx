@@ -1,0 +1,17 @@
+// exceed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_exceed(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02669477
+    if sense == 1 {
+        return "verb\tbe greater in scope or size than some standard\ttranscend, surpass\tTheir loyalty exceeds their national bonds";
+    }
+    // verb 02669081
+    if sense == 2 {
+        return "verb\tbe superior or better than some standard\ttranscend, overstep, pass, go past, top\tShe exceeded our expectations";
+    }
+    // verb 01105639
+    if sense == 3 {
+        return "verb\tbe or do something to a greater degree\tsurpass, outstrip, outmatch, outgo, outdo, surmount, outperform\tThis exceeds all my expectations";
+    }
+    ""
+}

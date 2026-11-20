@@ -1,0 +1,21 @@
+// moment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_moment(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 15244650
+    if sense == 1 {
+        return "noun\ta particular point in time\tminute, second, instant\tthe moment he arrived the party began";
+    }
+    // noun 15246853
+    if sense == 2 {
+        return "noun\tan indefinitely short time\tmo, minute, second, bit\twait just a moment";
+    }
+    // noun 15120050
+    if sense == 3 {
+        return "noun\tat this time\there and now, present moment\tshe is studying at the moment";
+    }
+    // noun 05170574
+    if sense == 4 {
+        return "noun\thaving important effects or influence\tconsequence, import\tvirtue is of more moment than security";
+    }
+    ""
+}

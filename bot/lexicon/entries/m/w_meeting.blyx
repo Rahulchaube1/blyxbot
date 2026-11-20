@@ -1,0 +1,25 @@
+// meeting — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_meeting(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08307589
+    if sense == 1 {
+        return "noun\ta formally arranged gathering\tgroup meeting\tnext year the meeting will be in Chicago";
+    }
+    // noun 08310389
+    if sense == 2 {
+        return "noun\ta small informal social gathering\tget together\tthere was an informal meeting in my living room";
+    }
+    // noun 07414922
+    if sense == 3 {
+        return "noun\ta casual or unexpected convergence\tencounter\the still remembers their meeting in Paris";
+    }
+    // noun 01230965
+    if sense == 4 {
+        return "noun\tthe social act of assembling for some common purpose\tcoming together\this meeting with the salesmen was the high point of his day";
+    }
+    // noun 00146856
+    if sense == 5 {
+        return "noun\tthe act of joining together as one\tmerging, coming together\tthere was no meeting of minds";
+    }
+    ""
+}

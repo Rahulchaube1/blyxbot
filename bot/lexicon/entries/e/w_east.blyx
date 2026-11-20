@@ -1,0 +1,25 @@
+// east — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_east(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 00823350
+    if sense == 1 {
+        return "adjective\tsituated in or facing or moving toward the east\t\t";
+    }
+    // noun 13832355
+    if sense == 2 {
+        return "noun\tthe cardinal compass point that is at 90 degrees\tdue east, eastward, E\t";
+    }
+    // noun 08562620
+    if sense == 3 {
+        return "noun\tthe countries of Asia\tOrient\t";
+    }
+    // noun 08563180
+    if sense == 4 {
+        return "noun\tthe region of the United States lying to the north of the Ohio River and to the east of the Mississippi River\teastern United States\t";
+    }
+    // adv 00323786
+    if sense == 5 {
+        return "adverb\tto, toward, or in the east\t\twe travelled east for several miles";
+    }
+    ""
+}

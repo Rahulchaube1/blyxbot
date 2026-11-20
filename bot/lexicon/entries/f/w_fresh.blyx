@@ -1,0 +1,29 @@
+// fresh — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fresh(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 01067694
+    if sense == 1 {
+        return "adjective\trecently made, produced, or harvested\t\tfresh bread";
+    }
+    // adj 01641648
+    if sense == 2 {
+        return "adjective\t(of a cycle) beginning or occurring again\t\ta fresh start";
+    }
+    // adj 01357027
+    if sense == 3 {
+        return "adjective\timparting vitality and energy\tbracing, brisk, refreshing, refreshful, tonic\t";
+    }
+    // adj 01687167
+    if sense == 4 {
+        return "adjective\toriginal and of a kind not seen before\tnew, novel\t";
+    }
+    // adj 01071198
+    if sense == 5 {
+        return "adjective\tnot canned or otherwise preserved\t\tfresh vegetables";
+    }
+    // adv 00112601
+    if sense == 6 {
+        return "adverb\tvery recently\tnewly, freshly, new\twe are fresh out of tomatoes";
+    }
+    ""
+}

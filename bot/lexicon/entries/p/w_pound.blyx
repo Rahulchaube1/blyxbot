@@ -1,0 +1,29 @@
+// pound — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pound(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 13720096
+    if sense == 1 {
+        return "noun\t16 ounces avoirdupois\tlb\the got a hernia when he tried to lift 100 pounds";
+    }
+    // verb 01414626
+    if sense == 2 {
+        return "verb\thit hard with the hand, fist, or some heavy instrument\tthump, poke\tthe salesman pounded the door knocker";
+    }
+    // verb 01575146
+    if sense == 3 {
+        return "verb\tstrike or drive against with a heavy impact\tram, ram down\tpound on the door";
+    }
+    // noun 13686660
+    if sense == 4 {
+        return "noun\tthe basic unit of money in Great Britain and Northern Ireland; equal to 100 pence\tBritish pound, British pound sterling, pound sterling, quid\t";
+    }
+    // verb 01925548
+    if sense == 5 {
+        return "verb\tmove heavily or clumsily\tlumber\t";
+    }
+    // verb 01880113
+    if sense == 6 {
+        return "verb\tmove rhythmically\tbeat, thump\t";
+    }
+    ""
+}

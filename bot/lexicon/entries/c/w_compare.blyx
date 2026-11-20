@@ -1,0 +1,17 @@
+// compare — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_compare(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00652900
+    if sense == 1 {
+        return "verb\texamine and note the similarities or differences of\t\tJohn compared his haircut to his friend's";
+    }
+    // verb 02729632
+    if sense == 2 {
+        return "verb\tbe comparable\t\tThis car does not compare with our line of Mercedes";
+    }
+    // verb 00653620
+    if sense == 3 {
+        return "verb\tconsider or describe as similar, equal, or analogous\tliken, equate\tWe can compare the Han dynasty to the Romans";
+    }
+    ""
+}

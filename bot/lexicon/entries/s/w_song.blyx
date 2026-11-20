@@ -1,0 +1,21 @@
+// song — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_song(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 07048000
+    if sense == 1 {
+        return "noun\ta short musical composition with words\tvocal\ta successful musical must have at least three good songs";
+    }
+    // noun 07394588
+    if sense == 2 {
+        return "noun\ta distinctive or characteristic sound\t\tthe song of bullets was in the air";
+    }
+    // noun 00546389
+    if sense == 3 {
+        return "noun\tthe act of singing\tstrain\twith a shout and a song they marched up to the gates";
+    }
+    // noun 06796642
+    if sense == 4 {
+        return "noun\tthe characteristic sound produced by a bird\tbirdcall, call, birdsong\ta bird will not learn its song unless it hears it at an early age";
+    }
+    ""
+}

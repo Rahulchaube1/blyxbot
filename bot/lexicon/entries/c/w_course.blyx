@@ -1,0 +1,29 @@
+// course — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_course(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 00884466
+    if sense == 1 {
+        return "noun\teducation imparted in a series of lessons or meetings\tcourse of study, course of instruction, class\the took a course in basket weaving";
+    }
+    // noun 08377085
+    if sense == 2 {
+        return "noun\ta connected series of events or actions or developments\tline\tthe government took a firm course";
+    }
+    // noun 08681222
+    if sense == 3 {
+        return "noun\tgeneral line of orientation\ttrend\tthe river takes a southern course";
+    }
+    // noun 00038262
+    if sense == 4 {
+        return "noun\ta mode of action\tcourse of action\tif you persist in that course you will surely fail";
+    }
+    // noun 09387222
+    if sense == 5 {
+        return "noun\ta line or route along which something travels or moves\tpath, track\tthe course of the river";
+    }
+    // adv 00038625
+    if sense == 6 {
+        return "adverb\tas might be expected\tnaturally, of course\t";
+    }
+    ""
+}

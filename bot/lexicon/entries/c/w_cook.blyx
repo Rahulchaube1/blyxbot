@@ -1,0 +1,21 @@
+// cook — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cook(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01665638
+    if sense == 1 {
+        return "verb\tprepare a hot meal\t\tMy husband doesn't cook";
+    }
+    // verb 01664172
+    if sense == 2 {
+        return "verb\tprepare for eating by applying heat\tfix, ready, make, prepare\tCook me dinner, please";
+    }
+    // noun 09963320
+    if sense == 3 {
+        return "noun\tsomeone who cooks food\t\t";
+    }
+    // verb 00322847
+    if sense == 4 {
+        return "verb\ttransform and make suitable for consumption by heating\t\tThese potatoes have to cook for 20 minutes";
+    }
+    ""
+}

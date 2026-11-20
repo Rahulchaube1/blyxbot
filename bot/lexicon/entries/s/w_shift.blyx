@@ -1,0 +1,53 @@
+// shift — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shift(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // verb 00380159
+    if sense == 1 {
+        return "verb\tmake a shift in or exchange of\tswitch, change over\t";
+    }
+    // verb 01883344
+    if sense == 2 {
+        return "verb\tchange place or direction\tdislodge, reposition\tShift one's position";
+    }
+    // noun 07444668
+    if sense == 3 {
+        return "noun\tan event in which something is displaced without rotation\tdisplacement\t";
+    }
+    // noun 07359599
+    if sense == 4 {
+        return "noun\ta qualitative change\ttransformation, transmutation\t";
+    }
+    // verb 02012344
+    if sense == 5 {
+        return "verb\tmove around\ttransfer\t";
+    }
+    // noun 15291801
+    if sense == 6 {
+        return "noun\tthe time period during which you are at work\twork shift, duty period\t";
+    }
+    // noun 00196084
+    if sense == 7 {
+        return "noun\tthe act of changing one thing or position for another\tswitch, switching\t";
+    }
+    // noun 00331655
+    if sense == 8 {
+        return "noun\tthe act of moving from one place to another\tshifting\this constant shifting disrupted the class";
+    }
+    // verb 01893988
+    if sense == 9 {
+        return "verb\tmove very slightly\tstir, budge, agitate\tHe shifted in his seat";
+    }
+    // verb 00555447
+    if sense == 10 {
+        return "verb\tmove from one setting or context to another\t\tshift the emphasis";
+    }
+    // verb 00555654
+    if sense == 11 {
+        return "verb\tchange in quality\t\tHis tone shifted";
+    }
+    // verb 00548913
+    if sense == 12 {
+        return "verb\tmove and exchange for another\t\tshift the date for our class reunion";
+    }
+    ""
+}

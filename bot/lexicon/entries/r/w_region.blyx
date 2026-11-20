@@ -1,0 +1,17 @@
+// region — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_region(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08630039
+    if sense == 1 {
+        return "noun\tthe extended spatial location of something\tpart\tthe farming regions of France";
+    }
+    // noun 05221895
+    if sense == 2 {
+        return "noun\ta part of an animal that has a special function or is supplied by a given artery or nerve\tarea\tin the abdominal region";
+    }
+    // noun 08630985
+    if sense == 3 {
+        return "noun\ta large indefinite location on the surface of the Earth\t\tpenguins inhabit the polar regions";
+    }
+    ""
+}

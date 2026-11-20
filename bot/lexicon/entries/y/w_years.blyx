@@ -1,0 +1,13 @@
+// years — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_years(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 15153787
+    if sense == 1 {
+        return "noun\ta late time of life\told age, age, eld, geezerhood\the's showing his years";
+    }
+    // noun 15242955
+    if sense == 2 {
+        return "noun\ta prolonged period of time\tlong time, age\tI haven't been there for years and years";
+    }
+    ""
+}

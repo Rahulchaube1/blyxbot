@@ -1,0 +1,33 @@
+// absorb — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_absorb(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01539633
+    if sense == 1 {
+        return "verb\tbecome imbued\t\tThe liquids, light, and gases absorb";
+    }
+    // verb 00602255
+    if sense == 2 {
+        return "verb\ttake up mentally\tassimilate, ingest, take in\the absorbed the knowledge or beliefs of his tribe";
+    }
+    // verb 02216560
+    if sense == 3 {
+        return "verb\ttake up, as of debts or payments\ttake over\tabsorb the costs for something";
+    }
+    // verb 01539063
+    if sense == 4 {
+        return "verb\ttake in, also metaphorically\tsuck, imbibe, soak up, sop up, suck up, draw, take in, take up\tThe sponge absorbs water well";
+    }
+    // verb 00395698
+    if sense == 5 {
+        return "verb\tcause to become one with\t\tThe sales tax is absorbed into the state income tax";
+    }
+    // verb 02765464
+    if sense == 6 {
+        return "verb\tsuck or take up or in\ttake in\tA black star absorbs all matter";
+    }
+    // verb 00601043
+    if sense == 7 {
+        return "verb\tdevote (oneself) fully to\tsteep, immerse, engulf, plunge, engross, soak up\t";
+    }
+    ""
+}

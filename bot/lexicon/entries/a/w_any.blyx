@@ -1,0 +1,13 @@
+// any — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_any(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02267686
+    if sense == 1 {
+        return "adjective\tone or some or every or all without specification\twhatever, whatsoever\tgive me any peaches you don't want";
+    }
+    // adv 00024509
+    if sense == 2 {
+        return "adverb\tto any degree or extent\t\tit isn't any better";
+    }
+    ""
+}

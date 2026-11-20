@@ -1,0 +1,21 @@
+// confirm — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_confirm(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00665886
+    if sense == 1 {
+        return "verb\testablish or strengthen as with new evidence or facts\tcorroborate, sustain, substantiate, support, affirm\this story confirmed my doubts";
+    }
+    // verb 01012073
+    if sense == 2 {
+        return "verb\tstrengthen or make more firm\treassert\tThe witnesses confirmed the victim's account";
+    }
+    // verb 00221840
+    if sense == 3 {
+        return "verb\tmake more firm\t\tConfirm thy soul in self-control!";
+    }
+    // verb 02476518
+    if sense == 4 {
+        return "verb\tsupport a person for a position\t\tThe Senate confirmed the President's candidate for Secretary of Defense";
+    }
+    ""
+}

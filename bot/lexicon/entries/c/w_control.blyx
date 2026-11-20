@@ -1,0 +1,57 @@
+// control — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_control(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 02441022
+    if sense == 1 {
+        return "verb\texercise authoritative control or power over\tcommand\tcontrol the budget";
+    }
+    // verb 02510337
+    if sense == 2 {
+        return "verb\tlessen the intensity of; temper; hold in restraint; hold or keep within limits\thold in, hold, contain, check, curb, moderate\tcontrol your anger";
+    }
+    // noun 05196375
+    if sense == 3 {
+        return "noun\tpower to direct or determine\t\tunder control";
+    }
+    // noun 13827205
+    if sense == 4 {
+        return "noun\ta relation of constraint of one entity (thing or person or group) by another\t\tmeasures for the control of disease";
+    }
+    // noun 00830448
+    if sense == 5 {
+        return "noun\t(physiology) regulation or maintenance of a function or action or reflex etc\t\tthe timing and control of his movements were unimpaired";
+    }
+    // verb 01224744
+    if sense == 6 {
+        return "verb\thandle and cause to function\toperate\tcontrol the lever";
+    }
+    // noun 05798569
+    if sense == 7 {
+        return "noun\ta standard against which other conditions can be compared in a scientific experiment\tcontrol condition\tthe control condition was inappropriate for the conclusions he wished to draw";
+    }
+    // noun 00803617
+    if sense == 8 {
+        return "noun\tthe activity of managing or exerting control over something\t\tthe control of the mob by the police was admirable";
+    }
+    // noun 14441825
+    if sense == 9 {
+        return "noun\tthe state that exists when one person or group has power over another\tdominance, ascendance, ascendence, ascendancy, ascendency\t";
+    }
+    // noun 04882968
+    if sense == 10 {
+        return "noun\tdiscipline in personal and social activities\trestraint\tshe never lost control of herself";
+    }
+    // noun 05641959
+    if sense == 11 {
+        return "noun\tgreat skillfulness and knowledge of some subject or activity\tcommand, mastery\t";
+    }
+    // noun 03096960
+    if sense == 12 {
+        return "noun\ta mechanism that controls the operation of a machine\tcontroller\tI turned the controls over to her";
+    }
+    // verb 01803936
+    if sense == 13 {
+        return "verb\tcontrol (others or oneself) or influence skillfully, usually to one's advantage\tmanipulate, keep in line\tShe is a very controlling mother and doesn't let her children grow up";
+    }
+    ""
+}

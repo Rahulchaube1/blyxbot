@@ -1,0 +1,17 @@
+// purpose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_purpose(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05982152
+    if sense == 1 {
+        return "noun\tan anticipated outcome that is intended or that guides your planned actions\tintent, intention, aim, design\t";
+    }
+    // noun 05149325
+    if sense == 2 {
+        return "noun\twhat something is used for\tfunction, role, use\t";
+    }
+    // noun 04864200
+    if sense == 3 {
+        return "noun\tthe quality of being determined to do or achieve something; firmness of purpose\tdetermination\the is a man of purpose";
+    }
+    ""
+}

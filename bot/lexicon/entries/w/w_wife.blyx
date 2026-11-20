@@ -1,0 +1,9 @@
+// wife — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wife(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 10780632
+    if sense == 1 {
+        return "noun\ta married woman; a man's partner in marriage\tmarried woman\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// supplement — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_supplement(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02342132
+    if sense == 1 {
+        return "verb\tadd as a supplement to what seems insufficient\t\tsupplement your diet";
+    }
+    // noun 06399631
+    if sense == 2 {
+        return "noun\ttextual matter that is added onto a publication; usually at the end\taddendum, postscript\t";
+    }
+    // noun 05110772
+    if sense == 3 {
+        return "noun\ta quantity added (e.g. to make up for a deficiency)\tsupplementation\t";
+    }
+    // noun 02671421
+    if sense == 4 {
+        return "noun\ta supplementary component that improves capability\taccessory, appurtenance, add-on\t";
+    }
+    ""
+}

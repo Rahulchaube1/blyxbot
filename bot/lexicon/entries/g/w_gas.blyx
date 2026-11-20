@@ -1,0 +1,29 @@
+// gas — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gas(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 14481080
+    if sense == 1 {
+        return "noun\tthe state of matter distinguished from the solid and liquid states by: relatively low density and viscosity; relatively great expansion and contraction with changes in pressure and temperature; the ability to diffuse readily; and the spontaneous tendency to become distributed uniformly throughout any container\tgaseous state\t";
+    }
+    // noun 14877585
+    if sense == 2 {
+        return "noun\ta fluid in the gaseous state having neither independent shape nor volume and being able to expand indefinitely\t\t";
+    }
+    // noun 14686913
+    if sense == 3 {
+        return "noun\ta volatile flammable mixture of hydrocarbons (hexane and heptane and octane etc.) derived from petroleum; used mainly as a fuel in internal-combustion engines\tgasoline, gasolene, petrol\t";
+    }
+    // noun 14035695
+    if sense == 4 {
+        return "noun\ta state of excessive gas in the alimentary canal\tflatulence, flatulency\t";
+    }
+    // noun 02670683
+    if sense == 5 {
+        return "noun\ta pedal that controls the throttle valve\taccelerator, accelerator pedal, gas pedal, throttle, gun\the stepped on the gas";
+    }
+    // verb 01125373
+    if sense == 6 {
+        return "verb\tattack with gas; subject to gas fumes\t\tThe despot gassed the rebellious tribes";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// regard — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_regard(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00690614
+    if sense == 1 {
+        return "verb\tdeem to be\tsee, consider, reckon, view\t";
+    }
+    // verb 02133185
+    if sense == 2 {
+        return "verb\tlook at attentively\tconsider\t";
+    }
+    // verb 02677097
+    if sense == 3 {
+        return "verb\tconnect closely and often incriminatingly\tinvolve, affect\t";
+    }
+    // noun 05820170
+    if sense == 4 {
+        return "noun\t(usually preceded by `in') a detail or point\trespect\t";
+    }
+    // noun 05702726
+    if sense == 5 {
+        return "noun\tpaying particular notice (as to children or helpless people)\tattentiveness, heed, paying attention\t";
+    }
+    // noun 06630627
+    if sense == 6 {
+        return "noun\t(usually plural) a polite expression of desire for someone's welfare\twish, compliments\tgive him my kind regards";
+    }
+    // noun 00878648
+    if sense == 7 {
+        return "noun\ta long fixed look\tgaze\t";
+    }
+    ""
+}

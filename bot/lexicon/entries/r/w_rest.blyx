@@ -1,0 +1,69 @@
+// rest — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rest(sense: i64) -> str {
+    if sense == 0 { return "16"; }
+    // noun 13810818
+    if sense == 1 {
+        return "noun\tsomething left after other parts have been taken away\tremainder, balance, residual, residue, residuum\the threw away the rest";
+    }
+    // verb 01545883
+    if sense == 2 {
+        return "verb\tnot move; be in a resting position\t\t";
+    }
+    // verb 00779360
+    if sense == 3 {
+        return "verb\ttake a short break from one's activities in order to relax\tbreathe, catch one's breath, take a breather\t";
+    }
+    // noun 01064148
+    if sense == 4 {
+        return "noun\tfreedom from activity (work or strain or responsibility)\tease, repose, relaxation\t";
+    }
+    // verb 00779601
+    if sense == 5 {
+        return "verb\tgive a rest to\t\tHe rested his bad leg";
+    }
+    // verb 02731390
+    if sense == 6 {
+        return "verb\thave a place in relation to something else\tlie\tThe responsibility rests with the Allies";
+    }
+    // verb 00014405
+    if sense == 7 {
+        return "verb\tbe at rest\t\t";
+    }
+    // noun 15274074
+    if sense == 8 {
+        return "noun\ta pause for relaxation\trespite, relief, rest period\tpeople actually accomplish more when they take time for short rests";
+    }
+    // verb 00117985
+    if sense == 9 {
+        return "verb\tstay the same; remain in a certain state\tstay, remain\trest assured";
+    }
+    // noun 14012501
+    if sense == 10 {
+        return "noun\ta state of inaction\t\ta body will continue in a state of rest until acted upon";
+    }
+    // noun 13962765
+    if sense == 11 {
+        return "noun\teuphemisms for death (based on an analogy between lying in a bed and in a tomb)\teternal rest, sleep, eternal sleep, quietus\tshe was laid to rest beside her husband";
+    }
+    // noun 04081044
+    if sense == 12 {
+        return "noun\ta support on which things can be put\t\tthe gun was steadied on a special rest";
+    }
+    // verb 02664664
+    if sense == 13 {
+        return "verb\tbe inherent or innate in\treside, repose\t";
+    }
+    // verb 01610101
+    if sense == 14 {
+        return "verb\tput something in a resting position, as for support or steadying\t\tRest your head on my shoulder";
+    }
+    // verb 01543731
+    if sense == 15 {
+        return "verb\tsit, as on a branch\tperch, roost\t";
+    }
+    // verb 01502946
+    if sense == 16 {
+        return "verb\trest on or as if on a pillow\tpillow\t";
+    }
+    ""
+}

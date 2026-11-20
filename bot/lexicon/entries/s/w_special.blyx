@@ -1,0 +1,33 @@
+// special — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_special(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01104026
+    if sense == 1 {
+        return "adjective\tunique or specific to a person or thing or category\tparticular, peculiar\tthe special features of a computer";
+    }
+    // adj 01678729
+    if sense == 2 {
+        return "adjective\tfor a special service or occasion\t\ta special correspondent";
+    }
+    // adj 00488187
+    if sense == 3 {
+        return "adjective\tsurpassing what is common or usual or expected\tespecial, exceptional, particular\ta special occasion";
+    }
+    // adj 02278011
+    if sense == 4 {
+        return "adjective\tadapted to or reserved for a particular purpose\t\ta special kind of paint";
+    }
+    // adj 01103844
+    if sense == 5 {
+        return "adjective\thaving a specific function or scope\tlimited\ta special (or specific) role in the mission";
+    }
+    // adj 01853228
+    if sense == 6 {
+        return "adjective\tfirst and most important\tparticular\this special interest is music";
+    }
+    // noun 07166851
+    if sense == 7 {
+        return "noun\ta special offering (usually temporary and at a reduced price) that is featured in advertising\t\tthey are having a special on pork chops";
+    }
+    ""
+}

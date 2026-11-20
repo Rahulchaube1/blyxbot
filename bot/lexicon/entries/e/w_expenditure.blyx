@@ -1,0 +1,13 @@
+// expenditure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_expenditure(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13275288
+    if sense == 1 {
+        return "noun\tmoney paid out; an amount spent\toutgo, spending, outlay\t";
+    }
+    // noun 01122601
+    if sense == 2 {
+        return "noun\tthe act of spending money for goods or services\texpending\t";
+    }
+    ""
+}

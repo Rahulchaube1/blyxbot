@@ -1,0 +1,13 @@
+// kind — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_kind(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05839024
+    if sense == 1 {
+        return "noun\ta category of things distinguished by some common characteristic or quality\tsort, form, variety\twhat kinds of desserts are there?";
+    }
+    // adj 01372049
+    if sense == 2 {
+        return "adjective\thaving or showing a tender and considerate and helpful nature; used especially of persons and their behavior\t\tkind to sick patients";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// only — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_only(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00004722
+    if sense == 1 {
+        return "adverb\tand nothing more\tmerely, simply, just, but\the was only a child";
+    }
+    // adv 00008600
+    if sense == 2 {
+        return "adverb\twithout any others being included or involved\tentirely, exclusively, solely, alone\ta privilege granted only to him";
+    }
+    // adv 00010759
+    if sense == 3 {
+        return "adverb\twith nevertheless the final result\t\tHe arrived only to find his wife dead";
+    }
+    // adv 00010914
+    if sense == 4 {
+        return "adverb\tin the final outcome\t\tThese news will only make you more upset";
+    }
+    // adv 00028319
+    if sense == 5 {
+        return "adverb\texcept that\t\tIt was the same story; only this time she came out better";
+    }
+    // adv 00505114
+    if sense == 6 {
+        return "adverb\tnever except when\tonly if, only when\tcall me only if your cold gets worse";
+    }
+    ""
+}

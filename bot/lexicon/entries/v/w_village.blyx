@@ -1,0 +1,17 @@
+// village — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_village(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08226699
+    if sense == 1 {
+        return "noun\ta community of people smaller than a town\tsmall town, settlement\t";
+    }
+    // noun 08672738
+    if sense == 2 {
+        return "noun\ta settlement smaller than a town\thamlet\t";
+    }
+    // noun 09122968
+    if sense == 3 {
+        return "noun\ta mainly residential district of Manhattan; `the Village' became a home for many writers and artists in the 20th century\tGreenwich Village\t";
+    }
+    ""
+}

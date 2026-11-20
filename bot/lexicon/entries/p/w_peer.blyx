@@ -1,0 +1,13 @@
+// peer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_peer(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02168965
+    if sense == 1 {
+        return "verb\tlook searchingly\t\tWe peered into the back of the shop to see whether a salesman was around";
+    }
+    // noun 09626238
+    if sense == 2 {
+        return "noun\ta person who is of equal standing with another in a group\tequal, match, compeer\t";
+    }
+    ""
+}

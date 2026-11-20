@@ -1,0 +1,25 @@
+// proceed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_proceed(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00781000
+    if sense == 1 {
+        return "verb\tcontinue talking\tcontinue, go on, carry on\t";
+    }
+    // verb 01995549
+    if sense == 2 {
+        return "verb\tmove ahead; travel onward in time or space\tgo forward, continue\tWe proceeded towards Washington";
+    }
+    // verb 02372605
+    if sense == 3 {
+        return "verb\tfollow a procedure or take a course\tgo, move\t";
+    }
+    // verb 00341560
+    if sense == 4 {
+        return "verb\tfollow a certain course\tgo\t";
+    }
+    // verb 02684924
+    if sense == 5 {
+        return "verb\tcontinue a certain state, condition, or activity\tcontinue, go on, go along, keep\t";
+    }
+    ""
+}

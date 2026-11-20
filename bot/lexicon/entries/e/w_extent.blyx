@@ -1,0 +1,13 @@
+// extent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_extent(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13941125
+    if sense == 1 {
+        return "noun\tthe point or degree to which something extends\t\tthe extent of the damage";
+    }
+    // noun 05123416
+    if sense == 2 {
+        return "noun\tthe distance or area or volume over which something extends\t\tthe vast extent of the desert";
+    }
+    ""
+}

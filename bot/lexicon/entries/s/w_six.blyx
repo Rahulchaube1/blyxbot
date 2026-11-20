@@ -1,0 +1,13 @@
+// six — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_six(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02186833
+    if sense == 1 {
+        return "adjective\tdenoting a quantity consisting of six items or units\t6, vi, half dozen, half-dozen\t";
+    }
+    // noun 13744722
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of five and one\t6, VI, sixer, sise, Captain Hicks, half a dozen, sextet, sestet, sextuplet, hexad\t";
+    }
+    ""
+}

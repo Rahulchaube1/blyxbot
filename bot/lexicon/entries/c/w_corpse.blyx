@@ -1,0 +1,9 @@
+// corpse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_corpse(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 05218119
+    if sense == 1 {
+        return "noun\tthe dead body of a human being\tcadaver, stiff, clay, remains\tthe end of the police search was the discovery of a corpse";
+    }
+    ""
+}

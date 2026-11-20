@@ -1,0 +1,13 @@
+// writer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_writer(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 10794014
+    if sense == 1 {
+        return "noun\twrites (books or stories or articles or the like) professionally (for pay)\tauthor\t";
+    }
+    // noun 10801291
+    if sense == 2 {
+        return "noun\ta person who is able to write and has written something\t\t";
+    }
+    ""
+}

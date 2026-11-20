@@ -1,0 +1,21 @@
+// memory — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_memory(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05935060
+    if sense == 1 {
+        return "noun\tsomething that is remembered\t\tsearch as he would, the memory was lost";
+    }
+    // noun 05760202
+    if sense == 2 {
+        return "noun\tthe cognitive processes whereby past experience is remembered\tremembering\the can do it from memory";
+    }
+    // noun 05651399
+    if sense == 3 {
+        return "noun\tthe power of retaining and recalling past experience\tretention, retentiveness, retentivity\the had a good memory when he was younger";
+    }
+    // noun 03744276
+    if sense == 4 {
+        return "noun\tan electronic memory device\tcomputer memory, storage, computer storage, store, memory board\ta memory and the CPU form the central part of a computer to which peripherals are attached";
+    }
+    ""
+}

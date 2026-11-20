@@ -1,0 +1,13 @@
+// ship — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ship(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 04194289
+    if sense == 1 {
+        return "noun\ta vessel that carries passengers or freight\t\t";
+    }
+    // verb 01950798
+    if sense == 2 {
+        return "verb\ttransport commercially\ttransport, send\t";
+    }
+    ""
+}

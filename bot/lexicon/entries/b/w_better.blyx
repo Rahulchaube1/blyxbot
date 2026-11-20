@@ -1,0 +1,41 @@
+// better — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_better(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // adj 00230335
+    if sense == 1 {
+        return "adjective\t(comparative of `good') superior to another (of the same class or set or kind) in excellence or quality or desirability or suitability; more highly skilled than another\t\tYou're a better man than I am, Gunga Din";
+    }
+    // adv 00059607
+    if sense == 2 {
+        return "adverb\tcomparative of `well'; in a better or more excellent manner or more advantageously or attractively or to a greater degree etc.\t\tShe had never sung better";
+    }
+    // adj 00231761
+    if sense == 3 {
+        return "adjective\t(comparative of `good') changed for the better in health or fitness\t\ther health is better now";
+    }
+    // adj 00067379
+    if sense == 4 {
+        return "adjective\t(comparative and superlative of `well') wiser or more advantageous and hence advisable\tbest\tit would be better to speak to him";
+    }
+    // adv 00509846
+    if sense == 5 {
+        return "adverb\tfrom a position of superiority or authority\tbest\tI know better.";
+    }
+    // noun 05143558
+    if sense == 6 {
+        return "noun\tsomething superior in quality or condition or effect\t\ta change for the better";
+    }
+    // verb 01106864
+    if sense == 7 {
+        return "verb\tsurpass in excellence\tbreak\tShe bettered her own record";
+    }
+    // verb 00205885
+    if sense == 8 {
+        return "verb\tto make better\timprove, amend, ameliorate, meliorate\t";
+    }
+    // verb 00205046
+    if sense == 9 {
+        return "verb\tget better\timprove, ameliorate, meliorate\t";
+    }
+    ""
+}

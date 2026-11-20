@@ -1,0 +1,33 @@
+// strength — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_strength(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 05029706
+    if sense == 1 {
+        return "noun\tthe property of being physically or mentally strong\t\tfatigue sapped his strength";
+    }
+    // noun 05203649
+    if sense == 2 {
+        return "noun\tcapability in terms of personnel and materiel that affect the capacity to fight a war\tmilitary capability, military strength, military posture, posture\twe faced an army of great strength";
+    }
+    // noun 05035353
+    if sense == 3 {
+        return "noun\tphysical energy or intensity\tforce, forcefulness\tit was destroyed by the strength of the gale";
+    }
+    // noun 05159225
+    if sense == 4 {
+        return "noun\tan asset of special worth or utility\tforte, strong suit, long suit, metier, specialty, speciality, strong point\t";
+    }
+    // noun 05191832
+    if sense == 5 {
+        return "noun\tthe power to induce the taking of a course of action or the embracing of a point of view by means of argument or entreaty\tpersuasiveness\tthe strength of his argument settled the matter";
+    }
+    // noun 05099796
+    if sense == 6 {
+        return "noun\tthe amount of energy transmitted (as by acoustic or electromagnetic radiation)\tintensity, intensity level\tthey measured the station's signal strength";
+    }
+    // noun 05034225
+    if sense == 7 {
+        return "noun\tcapacity to produce strong physiological or chemical effects\tpotency, effectiveness\tthe strength of the drinks";
+    }
+    ""
+}

@@ -1,0 +1,41 @@
+// share — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_share(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 13285176
+    if sense == 1 {
+        return "noun\tassets belonging to or due to or contributed by an individual person or group\tportion, part, percentage\the wanted his share in cash";
+    }
+    // verb 02718309
+    if sense == 2 {
+        return "verb\thave in common\t\tOur children share a love of music";
+    }
+    // verb 02295550
+    if sense == 3 {
+        return "verb\tuse jointly or in common\t\t";
+    }
+    // verb 02295208
+    if sense == 4 {
+        return "verb\thave, give, or receive a share of\tpartake, partake in\tWe shared the cake";
+    }
+    // noun 13342135
+    if sense == 5 {
+        return "noun\tany of the equal portions into which the capital stock of a corporation is divided and ownership of which is evidenced by a stock certificate\t\the bought 100 shares of IBM at the market price";
+    }
+    // verb 02294179
+    if sense == 6 {
+        return "verb\tgive out as one's portion or share\tdivvy up, portion out, apportion, deal\t";
+    }
+    // noun 01085098
+    if sense == 7 {
+        return "noun\tthe allotment of some amount by dividing something\tparcel, portion\tdeath gets more than its share of attention from theologians";
+    }
+    // noun 00787465
+    if sense == 8 {
+        return "noun\tthe part played by a person in bringing about a result\tcontribution, part\tthey all did their share of the work";
+    }
+    // verb 01063930
+    if sense == 9 {
+        return "verb\tcommunicate\t\tI'd like to share this idea with you";
+    }
+    ""
+}

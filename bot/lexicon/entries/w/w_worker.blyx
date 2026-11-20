@@ -1,0 +1,17 @@
+// worker — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_worker(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 09632518
+    if sense == 1 {
+        return "noun\ta person who works at a specific occupation\t\the is a good worker";
+    }
+    // noun 10481711
+    if sense == 2 {
+        return "noun\ta member of the working class (not necessarily employed)\tproletarian, prole\tworkers of the world--unite!";
+    }
+    // noun 02207449
+    if sense == 3 {
+        return "noun\tsterile member of a colony of social insects that forages for food and cares for the larvae\t\t";
+    }
+    ""
+}

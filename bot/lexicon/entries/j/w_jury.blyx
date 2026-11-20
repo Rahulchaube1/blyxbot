@@ -1,0 +1,13 @@
+// jury — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_jury(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08414119
+    if sense == 1 {
+        return "noun\ta body of citizens sworn to give a true verdict according to the evidence presented in a court of law\t\t";
+    }
+    // noun 08414807
+    if sense == 2 {
+        return "noun\ta committee appointed to judge a competition\tpanel\t";
+    }
+    ""
+}

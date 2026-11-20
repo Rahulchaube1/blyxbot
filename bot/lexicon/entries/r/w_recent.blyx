@@ -1,0 +1,13 @@
+// recent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_recent(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01642477
+    if sense == 1 {
+        return "adjective\tnew\t\trecent graduates";
+    }
+    // adj 01730444
+    if sense == 2 {
+        return "adjective\tof the immediate past or just previous to the present time\tlate\this recent trip to Africa";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// woods — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_woods(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 08438533
+    if sense == 1 {
+        return "noun\tthe trees and other plants in a large densely wooded area\tforest, wood\t";
+    }
+    ""
+}

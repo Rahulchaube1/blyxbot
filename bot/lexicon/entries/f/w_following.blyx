@@ -1,0 +1,21 @@
+// following — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_following(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00127815
+    if sense == 1 {
+        return "adjective\tabout to be mentioned or specified\tundermentioned\tthe following items";
+    }
+    // adj 00127948
+    if sense == 2 {
+        return "adjective\timmediately following in time or order\tnext\tthe following day";
+    }
+    // adj 00199569
+    if sense == 3 {
+        return "adjective\tgoing or proceeding or coming after in the same direction\t\tthe crowd of following cars made the occasion seem like a parade";
+    }
+    // noun 08223263
+    if sense == 4 {
+        return "noun\ta group of followers or enthusiasts\tfollowers\t";
+    }
+    ""
+}

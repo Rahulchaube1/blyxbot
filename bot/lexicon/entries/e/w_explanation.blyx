@@ -1,0 +1,13 @@
+// explanation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_explanation(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 06738281
+    if sense == 1 {
+        return "noun\ta statement that makes something comprehensible by describing the relevant structure or operation or circumstances etc.\taccount\tthe explanation was very simple";
+    }
+    // noun 05793000
+    if sense == 2 {
+        return "noun\tthought that makes something comprehensible\t\t";
+    }
+    ""
+}

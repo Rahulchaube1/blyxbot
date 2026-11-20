@@ -1,0 +1,17 @@
+// news — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_news(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06642138
+    if sense == 1 {
+        return "noun\tinformation about recent and important events\tintelligence, tidings, word\tthey awaited news of the outcome";
+    }
+    // noun 06681177
+    if sense == 2 {
+        return "noun\tinformation reported in a newspaper or news magazine\t\tthe news of my death was greatly exaggerated";
+    }
+    // noun 06619850
+    if sense == 3 {
+        return "noun\ta program devoted to current events, often using interviews and commentary\tnews program, news show\twe watch the 7 o'clock news every night";
+    }
+    ""
+}

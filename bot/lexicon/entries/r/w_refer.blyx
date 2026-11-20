@@ -1,0 +1,29 @@
+// refer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_refer(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01024190
+    if sense == 1 {
+        return "verb\tmake reference to\tmention, advert, bring up, cite, name\t";
+    }
+    // verb 02676054
+    if sense == 2 {
+        return "verb\tbe relevant to\tpertain, relate, concern, come to, bear on, touch, touch on, have-to doe with\tThere were lots of questions referring to her talk";
+    }
+    // verb 00655555
+    if sense == 3 {
+        return "verb\tthink of, regard, or classify under a subsuming principle or with a general group or in relation to another\t\tThis plant can be referred to a known species";
+    }
+    // verb 01952898
+    if sense == 4 {
+        return "verb\tsend or direct for treatment, information, or a decision\t\trefer a patient to a specialist";
+    }
+    // verb 00877083
+    if sense == 5 {
+        return "verb\tseek information from\tconsult, look up\trefer to your notes";
+    }
+    // verb 00931467
+    if sense == 6 {
+        return "verb\thave as a meaning\tdenote\t";
+    }
+    ""
+}

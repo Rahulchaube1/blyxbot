@@ -1,0 +1,9 @@
+// another — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_another(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 02070188
+    if sense == 1 {
+        return "adjective\tany of various alternatives; some other\tsome other\tput it off to another (or some other) day";
+    }
+    ""
+}

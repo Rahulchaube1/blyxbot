@@ -1,0 +1,29 @@
+// search — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_search(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 00945401
+    if sense == 1 {
+        return "noun\tthe activity of looking thoroughly in order to find something or someone\thunt, hunting\t";
+    }
+    // verb 01315613
+    if sense == 2 {
+        return "verb\ttry to locate or discover, or try to establish the existence of\tseek, look for\tThe police are searching for clues";
+    }
+    // verb 02153709
+    if sense == 3 {
+        return "verb\tsearch or seek\tlook\t";
+    }
+    // noun 00637354
+    if sense == 4 {
+        return "noun\tan investigation seeking answers\t\ta thorough search of the ledgers revealed nothing";
+    }
+    // verb 00648224
+    if sense == 5 {
+        return "verb\tinquire into\tresearch, explore\tHe searched for information on his relatives on the web";
+    }
+    // verb 01317723
+    if sense == 6 {
+        return "verb\tsubject to a search\t\tThe police searched the suspect";
+    }
+    ""
+}

@@ -35,7 +35,7 @@ fn page(history: arglist, name: str, topic: str) {
     // Carry the last 20 exchanges in the form. Name and topic are independent of history.
     if args_len(history) > 40 { first = args_len(history) - 40; }
     if first == args_len(history) {
-        println!("<p>Ask me about capitals, arithmetic, dates, cooking, or everyday science.</p>");
+        println!("<p>Try “define bank”, “convert 5 miles to km”, or “word quiz”. You can also ask about capitals, dates, cooking, or science.</p>");
     } else {
         println!("<h2>Conversation</h2><dl>");
         let mut i = first;

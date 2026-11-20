@@ -1,0 +1,85 @@
+// get — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_get(sense: i64) -> str {
+    if sense == 0 { return "20"; }
+    // verb 02210855
+    if sense == 1 {
+        return "verb\tcome into the possession of something concrete or abstract\tacquire\tGet your results the next day";
+    }
+    // verb 00149583
+    if sense == 2 {
+        return "verb\tenter or assume a certain state or condition\tbecome, go\tIt must be getting more serious";
+    }
+    // verb 00120796
+    if sense == 3 {
+        return "verb\tcause to move; cause to be in a certain position or condition\tlet, have\t";
+    }
+    // verb 00522751
+    if sense == 4 {
+        return "verb\treceive a specified treatment (abstract)\treceive, find, obtain, incur\t";
+    }
+    // verb 02005948
+    if sense == 5 {
+        return "verb\treach a destination; arrive by movement or progress\tarrive, come\tShe didn't get to Chicago until after midnight";
+    }
+    // verb 01433294
+    if sense == 6 {
+        return "verb\tgo or come after and bring or take back\tbring, convey, fetch\tGet me those books over there, please";
+    }
+    // verb 02108026
+    if sense == 7 {
+        return "verb\tgo through (mental or physical states or experiences)\texperience, receive, have\tget an idea";
+    }
+    // verb 01153947
+    if sense == 8 {
+        return "verb\ttake vengeance on or get even\tpay back, pay off, fix\tWe'll get them!";
+    }
+    // verb 02355596
+    if sense == 9 {
+        return "verb\tachieve a point or goal\thave, make\t";
+    }
+    // verb 00770437
+    if sense == 10 {
+        return "verb\tcause to do; cause to act in a specified manner\tinduce, stimulate, cause, have, make\t";
+    }
+    // verb 01215421
+    if sense == 11 {
+        return "verb\tsucceed in catching or seizing, especially after a chase\tcatch, capture\t";
+    }
+    // verb 00094460
+    if sense == 12 {
+        return "verb\tcome to have or undergo a change of (physical features and attributes)\tgrow, develop, produce, acquire\t";
+    }
+    // verb 00087736
+    if sense == 13 {
+        return "verb\tbe stricken by an illness, fall victim to an illness\tcontract, take\t";
+    }
+    // verb 01066036
+    if sense == 14 {
+        return "verb\tcommunicate with a place or person; establish communication with, as if by telephone\t\tThe operator couldn't get Kobe because of the earthquake";
+    }
+    // verb 00120316
+    if sense == 15 {
+        return "verb\tgive certain properties to something\tmake\tget someone mad";
+    }
+    // verb 01026975
+    if sense == 16 {
+        return "verb\tmove into a desired direction of discourse\tdrive, aim\t";
+    }
+    // verb 00589904
+    if sense == 17 {
+        return "verb\tgrasp with the mind or develop an understanding of\tcatch\tdid you get it?";
+    }
+    // verb 01505958
+    if sense == 18 {
+        return "verb\tattract and fix\tcatch, arrest\t";
+    }
+    // verb 01401115
+    if sense == 19 {
+        return "verb\treach with a blow or hit in a particular spot\tcatch\t";
+    }
+    // verb 00639849
+    if sense == 20 {
+        return "verb\treach by calculation\t\tWhat do you get when you add up these numbers?";
+    }
+    ""
+}

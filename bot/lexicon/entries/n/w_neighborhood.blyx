@@ -1,0 +1,13 @@
+// neighborhood — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_neighborhood(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08641113
+    if sense == 1 {
+        return "noun\ta surrounding or nearby region\tvicinity, locality, neighbourhood, neck of the woods\the always blames someone else in the immediate neighborhood";
+    }
+    // noun 08225090
+    if sense == 2 {
+        return "noun\tpeople living near one another\tneighbourhood\tit is a friendly neighborhood";
+    }
+    ""
+}

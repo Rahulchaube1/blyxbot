@@ -1,0 +1,21 @@
+// all right — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_all_right(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00053004
+    if sense == 1 {
+        return "adverb\tan expression of agreement normally occurring at the beginning of a sentence\tvery well, fine, alright, OK\t";
+    }
+    // adj 02081114
+    if sense == 2 {
+        return "adjective\tbeing satisfactory or in satisfactory condition\tfine, o.k., ok, okay, hunky-dory\tthe passengers were shaken up but are all right";
+    }
+    // adv 00053152
+    if sense == 3 {
+        return "adverb\twithout doubt (used to reinforce an assertion)\talright\tit's expensive all right";
+    }
+    // adv 00015471
+    if sense == 4 {
+        return "adverb\tin a satisfactory or adequate manner\tokay, O.K., alright\theld up all right under pressure";
+    }
+    ""
+}

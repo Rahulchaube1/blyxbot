@@ -1,0 +1,13 @@
+// marry — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_marry(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02488834
+    if sense == 1 {
+        return "verb\ttake in marriage\tget married, wed, conjoin, hook up with, get hitched with, espouse\t";
+    }
+    // verb 02489456
+    if sense == 2 {
+        return "verb\tperform a marriage ceremony\twed, tie, splice\tThe minister married us on Saturday";
+    }
+    ""
+}

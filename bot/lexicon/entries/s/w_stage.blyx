@@ -1,0 +1,41 @@
+// stage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stage(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 15290337
+    if sense == 1 {
+        return "noun\tany distinct time period in a sequence of events\tphase\twe are in a transitional stage in which many former ideas must be revised or rejected";
+    }
+    // noun 13939892
+    if sense == 2 {
+        return "noun\ta specific identifiable position in a continuum or series or especially in a process\tdegree, level, point\tat what stage are the social sciences?";
+    }
+    // noun 04296562
+    if sense == 3 {
+        return "noun\ta large platform on which people can stand and can be seen by an audience\t\the clambered up onto the stage and got the actors to help him into the box";
+    }
+    // verb 01711445
+    if sense == 4 {
+        return "verb\tperform (a play), especially on a stage\tpresent, represent\twe are going to stage `Othello'";
+    }
+    // noun 07006712
+    if sense == 5 {
+        return "noun\tthe theater as a profession (usually `the stage')\t\tan early movie simply showed a long kiss by two actors of the contemporary stage";
+    }
+    // verb 01648126
+    if sense == 6 {
+        return "verb\tplan, organize, and carry out (an event)\tarrange\tthe neighboring tribe staged an invasion";
+    }
+    // noun 04297098
+    if sense == 7 {
+        return "noun\ta large coach-and-four formerly used to carry passengers and mail on regular routes between towns\tstagecoach\twe went out of town together by stage about ten or twelve miles";
+    }
+    // noun 00306900
+    if sense == 8 {
+        return "noun\ta section or portion of a journey or course\tleg\tthen we embarked on the second stage of our Caribbean cruise";
+    }
+    // noun 08646566
+    if sense == 9 {
+        return "noun\tany scene regarded as a setting for exhibiting or doing something\t\tAll the world's a stage";
+    }
+    ""
+}

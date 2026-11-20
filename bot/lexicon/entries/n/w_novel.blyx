@@ -1,0 +1,13 @@
+// novel — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_novel(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 06367879
+    if sense == 1 {
+        return "noun\tan extended fictional work in prose; usually in the form of a story\t\t";
+    }
+    // adj 01687167
+    if sense == 2 {
+        return "adjective\toriginal and of a kind not seen before\tfresh, new\tthe computer produced a completely novel proof of a well-known theorem";
+    }
+    ""
+}

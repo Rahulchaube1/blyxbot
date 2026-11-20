@@ -1,0 +1,25 @@
+// standard — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_standard(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 02295998
+    if sense == 1 {
+        return "adjective\tconforming to or constituting a standard of measurement or value; or of the usual or regularized or accepted kind\t\twindows of standard width";
+    }
+    // noun 07260623
+    if sense == 2 {
+        return "noun\ta basis for comparison; a reference point against which other things can be evaluated\tcriterion, measure, touchstone\tthe schools comply with federal standards";
+    }
+    // noun 05924920
+    if sense == 3 {
+        return "noun\tthe ideal in terms of which something can be judged\tcriterion\tthey live by the standards of their community";
+    }
+    // adj 00487525
+    if sense == 4 {
+        return "adjective\tcommonly used or supplied\t\tstandard procedure";
+    }
+    // adj 02294777
+    if sense == 5 {
+        return "adjective\testablished or well-known or widely recognized as a model of authority or excellence\t\ta standard reference work";
+    }
+    ""
+}

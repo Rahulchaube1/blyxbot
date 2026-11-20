@@ -1,0 +1,68 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::v::w_vacation;
+use entries::v::w_vague;
+use entries::v::w_valley;
+use entries::v::w_valuable;
+use entries::v::w_value;
+use entries::v::w_values;
+use entries::v::w_variation;
+use entries::v::w_variety;
+use entries::v::w_various;
+use entries::v::w_vary;
+use entries::v::w_vast;
+use entries::v::w_velocity;
+use entries::v::w_very;
+use entries::v::w_veteran;
+use entries::v::w_victory;
+use entries::v::w_view;
+use entries::v::w_village;
+use entries::v::w_virginia;
+use entries::v::w_vision;
+use entries::v::w_visit;
+use entries::v::w_visual;
+use entries::v::w_vocational;
+use entries::v::w_voice;
+use entries::v::w_volume;
+use entries::v::w_vote;
+
+fn through_w_view(term: str, sense: i64) -> str {
+    if term == "vacation" { return w_vacation(sense); }
+    if term == "vague" { return w_vague(sense); }
+    if term == "valley" { return w_valley(sense); }
+    if term == "valuable" { return w_valuable(sense); }
+    if term == "value" { return w_value(sense); }
+    if term == "values" { return w_values(sense); }
+    if term == "variation" { return w_variation(sense); }
+    if term == "variety" { return w_variety(sense); }
+    if term == "various" { return w_various(sense); }
+    if term == "vary" { return w_vary(sense); }
+    if term == "vast" { return w_vast(sense); }
+    if term == "velocity" { return w_velocity(sense); }
+    if term == "very" { return w_very(sense); }
+    if term == "veteran" { return w_veteran(sense); }
+    if term == "victory" { return w_victory(sense); }
+    if term == "view" { return w_view(sense); }
+    ""
+}
+
+fn through_w_vote(term: str, sense: i64) -> str {
+    if term == "village" { return w_village(sense); }
+    if term == "virginia" { return w_virginia(sense); }
+    if term == "vision" { return w_vision(sense); }
+    if term == "visit" { return w_visit(sense); }
+    if term == "visual" { return w_visual(sense); }
+    if term == "vocational" { return w_vocational(sense); }
+    if term == "voice" { return w_voice(sense); }
+    if term == "volume" { return w_volume(sense); }
+    if term == "vote" { return w_vote(sense); }
+    ""
+}
+
+pub fn lookup_v(term: str, sense: i64) -> str {
+    if term <= "view" { return through_w_view(term, sense); }
+    through_w_vote(term, sense)
+}
+
+pub fn words_v() -> str {
+    "vacation|vague|valley|valuable|value|values|variation|variety|various|vary|vast|velocity|very|veteran|victory|view|village|virginia|vision|visit|visual|vocational|voice|volume|vote"
+}

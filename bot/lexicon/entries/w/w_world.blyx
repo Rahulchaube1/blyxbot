@@ -1,0 +1,37 @@
+// world — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_world(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 09466280
+    if sense == 1 {
+        return "noun\teverything that exists anywhere\tuniverse, existence, creation, cosmos, macrocosm\t";
+    }
+    // noun 07965937
+    if sense == 2 {
+        return "noun\tpeople in general; especially a distinctive group of people with some shared interest\tdomain\tthe Western world";
+    }
+    // noun 05809878
+    if sense == 3 {
+        return "noun\tall of your experiences that determine how things appear to you\treality\this world was shattered";
+    }
+    // noun 09270894
+    if sense == 4 {
+        return "noun\tthe 3rd planet from the sun; the planet we live on\tEarth, earth, globe\the sailed around the world";
+    }
+    // noun 08179689
+    if sense == 5 {
+        return "noun\tpeople in general considered as a whole\tpopulace, public\t";
+    }
+    // noun 09480809
+    if sense == 6 {
+        return "noun\ta part of the earth that can be considered separately\t\tthe outdoor world";
+    }
+    // noun 05670972
+    if sense == 7 {
+        return "noun\tthe concerns of this life as distinguished from heaven and the afterlife\tworldly concern, earthly concern, earth\tthey consider the church to be independent of the world";
+    }
+    // adj 01568684
+    if sense == 8 {
+        return "adjective\tinvolving the entire earth; not limited or provincial in scope\tglobal, planetary, worldwide, world-wide\ta world crisis";
+    }
+    ""
+}

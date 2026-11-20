@@ -1,0 +1,21 @@
+// idea — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_idea(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05833840
+    if sense == 1 {
+        return "noun\tthe content of cognition; the main thing you are thinking about\tthought\tit was not a good idea";
+    }
+    // noun 05982915
+    if sense == 2 {
+        return "noun\tyour intention; what you intend to do\tmind\tthe idea of the game is to capture all the pieces";
+    }
+    // noun 05837850
+    if sense == 3 {
+        return "noun\ta personal view\t\the has an idea that we don't like him";
+    }
+    // noun 05803379
+    if sense == 4 {
+        return "noun\tan approximate calculation of quantity or degree or worth\testimate, estimation, approximation\ta rough idea how long it would take";
+    }
+    ""
+}

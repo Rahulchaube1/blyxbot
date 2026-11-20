@@ -1,0 +1,61 @@
+// face — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_face(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // noun 05600637
+    if sense == 1 {
+        return "noun\tthe front of the human head from the forehead to the chin and ear to ear\thuman face\the washed his face";
+    }
+    // verb 00812298
+    if sense == 2 {
+        return "verb\tdeal with (something unpleasant) head on\tconfront, face up\tHe faced the terrible consequences of his mistakes";
+    }
+    // verb 01078783
+    if sense == 3 {
+        return "verb\toppose, as in hostility or a competition\tconfront\tJackson faced Smith in the boxing ring";
+    }
+    // noun 04679738
+    if sense == 4 {
+        return "noun\tthe feelings expressed on a person's face\texpression, look, aspect, facial expression\tan angry face";
+    }
+    // noun 04679419
+    if sense == 5 {
+        return "noun\tthe general outward appearance of something\t\tthe face of the city is changing";
+    }
+    // verb 02693319
+    if sense == 6 {
+        return "verb\tbe oriented in a certain direction, often with respect to another reference point; be opposite to\tfront, look\tThe building faces the park";
+    }
+    // noun 03313873
+    if sense == 7 {
+        return "noun\tthe striking or working surface of an implement\t\t";
+    }
+    // verb 02693691
+    if sense == 8 {
+        return "verb\tbe opposite\t\tthe facing page";
+    }
+    // verb 01908365
+    if sense == 9 {
+        return "verb\tturn so as to face; turn the face in a certain direction\t\tTurn and face your partner now";
+    }
+    // verb 01066433
+    if sense == 10 {
+        return "verb\tpresent somebody with something, usually to accuse or criticize\tconfront, present\tHe was faced with all the evidence and could no longer deny his actions";
+    }
+    // noun 09618957
+    if sense == 11 {
+        return "noun\ta part of a person that is used to refer to a person\t\the looked out at a roomful of faces";
+    }
+    // noun 08510666
+    if sense == 12 {
+        return "noun\ta surface forming part of the outside of an object\tside\tdew dripped from the face of the leaf";
+    }
+    // noun 05601198
+    if sense == 13 {
+        return "noun\tthe part of an animal corresponding to the human face\t\t";
+    }
+    // noun 03313602
+    if sense == 14 {
+        return "noun\tthe side upon which the use of a thing depends (usually the most prominent surface of an object)\t\the dealt the cards face down";
+    }
+    ""
+}

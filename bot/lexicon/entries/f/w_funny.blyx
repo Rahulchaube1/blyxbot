@@ -1,0 +1,17 @@
+// funny — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_funny(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01265308
+    if sense == 1 {
+        return "adjective\tarousing or provoking laughter\tamusing, comic, comical, laughable, mirthful, risible\tfunny stories that made everybody laugh";
+    }
+    // adj 00968010
+    if sense == 2 {
+        return "adjective\tbeyond or deviating from the usual or expected\tcurious, odd, peculiar, queer, rum, rummy, singular\ther speech has a funny twang";
+    }
+    // adj 01917594
+    if sense == 3 {
+        return "adjective\tnot as expected\tfishy, shady, suspect, suspicious\tup to some funny business";
+    }
+    ""
+}

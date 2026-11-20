@@ -1,0 +1,21 @@
+// relax — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_relax(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00026385
+    if sense == 1 {
+        return "verb\tbecome less tense, rest, or take one's ease\tloosen up, unbend, unwind, decompress, slow down\tHe relaxed in the hot tub";
+    }
+    // verb 00419685
+    if sense == 2 {
+        return "verb\tmake less taut\tunbend\trelax the tension on the rope";
+    }
+    // verb 00419137
+    if sense == 3 {
+        return "verb\tbecome loose or looser or less tight\tloosen, loose\tthe rope relaxed";
+    }
+    // verb 00025654
+    if sense == 4 {
+        return "verb\tcause to feel relaxed\tunstrain, unlax, loosen up, unwind, make relaxed\tA hot bath always relaxes me";
+    }
+    ""
+}

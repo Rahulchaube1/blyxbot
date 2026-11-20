@@ -1,0 +1,41 @@
+// escape — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_escape(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 02074677
+    if sense == 1 {
+        return "verb\trun away from confinement\tget away, break loose\tThe convicted murderer escaped from a high security prison";
+    }
+    // verb 00810557
+    if sense == 2 {
+        return "verb\tfail to experience\tmiss\t";
+    }
+    // verb 00810729
+    if sense == 3 {
+        return "verb\tescape potentially unpleasant consequences; get away with a forbidden action\tget off, get away, get by, get out\t";
+    }
+    // noun 00058743
+    if sense == 4 {
+        return "noun\tthe act of escaping physically\tflight\the made his escape from the mental hospital";
+    }
+    // noun 00429440
+    if sense == 5 {
+        return "noun\tan inclination to retreat from unpleasant realities through diversion or fantasy\tescapism\tromantic novels were her escape from the stress of daily life";
+    }
+    // verb 02723232
+    if sense == 6 {
+        return "verb\tbe incomprehensible to; escape understanding by\telude\t";
+    }
+    // noun 00740712
+    if sense == 7 {
+        return "noun\tnonperformance of something distasteful (as by deceit or trickery) that you are supposed to do\tevasion, dodging\tthat escape from the consequences is possible but unattractive";
+    }
+    // noun 00204199
+    if sense == 8 {
+        return "noun\tan avoidance of danger or difficulty\t\tthat was a narrow escape";
+    }
+    // noun 00173283
+    if sense == 9 {
+        return "noun\ta means or way of escaping\t\thard work was his escape from worry";
+    }
+    ""
+}

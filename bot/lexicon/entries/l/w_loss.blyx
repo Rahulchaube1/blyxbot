@@ -1,0 +1,33 @@
+// loss — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_loss(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 13327676
+    if sense == 1 {
+        return "noun\tsomething that is lost\t\tthe car was a total loss";
+    }
+    // noun 13509196
+    if sense == 2 {
+        return "noun\tgradual decline in amount or activity\t\tweight loss";
+    }
+    // noun 00067526
+    if sense == 3 {
+        return "noun\tthe act of losing someone or something\t\teveryone expected him to win so his loss was a shock";
+    }
+    // noun 05162985
+    if sense == 4 {
+        return "noun\tthe disadvantage that results from losing something\tdeprivation\this loss of credibility led to his resignation";
+    }
+    // noun 07287472
+    if sense == 5 {
+        return "noun\tthe experience of losing a loved one\t\the sympathized on the loss of their grandfather";
+    }
+    // noun 13327231
+    if sense == 6 {
+        return "noun\tthe amount by which the cost of a business exceeds its revenue\tred ink, red\tthe company operated at a loss last year";
+    }
+    // noun 07340725
+    if sense == 7 {
+        return "noun\tmilitary personnel lost by death or capture\tpersonnel casualty\t";
+    }
+    ""
+}

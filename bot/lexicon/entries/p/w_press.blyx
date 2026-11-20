@@ -1,0 +1,45 @@
+// press — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_press(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 01447257
+    if sense == 1 {
+        return "verb\texert pressure or force to or upon\t\tHe pressed down on the boards";
+    }
+    // verb 00765649
+    if sense == 2 {
+        return "verb\tforce or impel in an indicated direction\turge, urge on, exhort\t";
+    }
+    // verb 02646064
+    if sense == 3 {
+        return "verb\tto be oppressive or burdensome\tweigh\tSomething pressed on his mind";
+    }
+    // verb 01390616
+    if sense == 4 {
+        return "verb\tplace between two surfaces and apply weight or pressure\t\tpressed flowers";
+    }
+    // verb 01387786
+    if sense == 5 {
+        return "verb\tsqueeze or press together\tcompress, constrict, squeeze, compact, contract\t";
+    }
+    // noun 14451349
+    if sense == 6 {
+        return "noun\tthe state of demanding notice or attention\timperativeness, insistence, insistency, pressure\tthe press of business matters";
+    }
+    // noun 06263369
+    if sense == 7 {
+        return "noun\tthe print media responsible for gathering and publishing news in the form of newspapers or magazines\tpublic press\t";
+    }
+    // noun 04000311
+    if sense == 8 {
+        return "noun\ta machine used for printing\tprinting press\t";
+    }
+    // verb 02024367
+    if sense == 9 {
+        return "verb\tcrowd closely\t\tThe crowds pressed along the street";
+    }
+    // verb 01754105
+    if sense == 10 {
+        return "verb\tcreate by pressing\t\tPress little holes into the soft clay";
+    }
+    ""
+}

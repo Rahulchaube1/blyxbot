@@ -1,0 +1,25 @@
+// will — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_will(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05652593
+    if sense == 1 {
+        return "noun\tthe capability of conscious choice and decision and intention\tvolition\t";
+    }
+    // noun 05983654
+    if sense == 2 {
+        return "noun\ta fixed and persistent intent or purpose\t\twhere there's a will there's a way";
+    }
+    // noun 06544142
+    if sense == 3 {
+        return "noun\ta legal document declaring a person's wishes regarding the disposal of their property when they die\ttestament\t";
+    }
+    // verb 00746366
+    if sense == 4 {
+        return "verb\tdecree or ordain\t\tGod wills our existence";
+    }
+    // verb 00698398
+    if sense == 5 {
+        return "verb\tdetermine by choice\t\tThis action was willed and intended";
+    }
+    ""
+}

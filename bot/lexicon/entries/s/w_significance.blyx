@@ -1,0 +1,17 @@
+// significance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_significance(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05169813
+    if sense == 1 {
+        return "noun\tthe quality of being significant\t\tdo not underestimate the significance of nuclear power";
+    }
+    // noun 05920791
+    if sense == 2 {
+        return "noun\ta meaning that is not expressly stated but can be inferred\timport, implication\tthe significance of his remark became clear only later";
+    }
+    // noun 06601327
+    if sense == 3 {
+        return "noun\tthe message that is intended or expressed or signified\tmeaning, signification, import\tthe significance of a red traffic light";
+    }
+    ""
+}

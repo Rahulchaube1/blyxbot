@@ -1,0 +1,17 @@
+// inch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_inch(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13649791
+    if sense == 1 {
+        return "noun\ta unit of length equal to one twelfth of a foot\tin\t";
+    }
+    // noun 13713300
+    if sense == 2 {
+        return "noun\ta unit of measurement for advertising space\tcolumn inch\t";
+    }
+    // verb 02072501
+    if sense == 3 {
+        return "verb\tadvance slowly, as if by inches\tedge\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// twice — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_twice(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00065294
+    if sense == 1 {
+        return "adverb\ttwo times\t\tI called her twice";
+    }
+    // adv 00083393
+    if sense == 2 {
+        return "adverb\tto double the degree\tdoubly, double\t";
+    }
+    ""
+}

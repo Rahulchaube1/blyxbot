@@ -1,0 +1,9 @@
+// considerable — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_considerable(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 00624026
+    if sense == 1 {
+        return "adjective\tlarge or relatively large in number or amount or extent or degree\t\ta considerable quantity";
+    }
+    ""
+}

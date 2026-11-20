@@ -1,0 +1,29 @@
+// guess — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_guess(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00631737
+    if sense == 1 {
+        return "verb\texpect, believe, or suppose\tthink, opine, suppose, imagine, reckon\tI guess she is angry at me for standing her up";
+    }
+    // verb 00916909
+    if sense == 2 {
+        return "verb\tput forward, of a guess, in spite of possible refutation\tventure, pretend, hazard\tI am guessing that the price of real estate will rise again";
+    }
+    // verb 00672433
+    if sense == 3 {
+        return "verb\tjudge tentatively or form an estimate of (quantities or time)\testimate, gauge, approximate, judge\t";
+    }
+    // verb 00636061
+    if sense == 4 {
+        return "verb\tguess correctly; solve by guessing\tinfer\tHe guessed the right number of beans in the jar and won the prize";
+    }
+    // noun 06782680
+    if sense == 5 {
+        return "noun\ta message expressing an opinion based on incomplete evidence\tconjecture, supposition, surmise, surmisal, speculation, hypothesis\t";
+    }
+    // noun 05803938
+    if sense == 6 {
+        return "noun\tan estimate based on little or no information\tguesswork, guessing, shot, dead reckoning\t";
+    }
+    ""
+}

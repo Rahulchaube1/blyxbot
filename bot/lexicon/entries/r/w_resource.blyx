@@ -1,0 +1,17 @@
+// resource — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_resource(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13331778
+    if sense == 1 {
+        return "noun\tavailable source of wealth; a new or reserve supply that can be drawn upon when needed\t\t";
+    }
+    // noun 05154676
+    if sense == 2 {
+        return "noun\ta source of aid or support that may be drawn upon when needed\t\tthe local library is a valuable resource";
+    }
+    // noun 05633860
+    if sense == 3 {
+        return "noun\tthe ability to deal resourcefully with unusual problems\tresourcefulness, imagination\ta man of resource";
+    }
+    ""
+}

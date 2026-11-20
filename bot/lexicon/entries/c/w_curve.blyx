@@ -1,0 +1,29 @@
+// curve — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_curve(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 13867641
+    if sense == 1 {
+        return "noun\tthe trace of a point whose direction of motion changes\tcurved shape\t";
+    }
+    // noun 07000941
+    if sense == 2 {
+        return "noun\ta line on a graph representing data\t\t";
+    }
+    // verb 02033295
+    if sense == 3 {
+        return "verb\tturn sharply; change direction abruptly\tswerve, sheer, trend, veer, slue, slew, cut\t";
+    }
+    // noun 00107875
+    if sense == 4 {
+        return "noun\ta pitch of a baseball that is thrown with spin so that its path curves as it approaches the batter\tcurve ball, breaking ball, bender\t";
+    }
+    // verb 02738701
+    if sense == 5 {
+        return "verb\textend in curves and turns\twind, twist\t";
+    }
+    // verb 02034986
+    if sense == 6 {
+        return "verb\tform an arch or curve\tarch, arc\ther hips curve nicely";
+    }
+    ""
+}

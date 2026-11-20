@@ -1,0 +1,33 @@
+// book — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_book(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 06410904
+    if sense == 1 {
+        return "noun\ta written work or composition that has been published (printed on pages bound together)\t\tI am reading a good book on economics";
+    }
+    // noun 02870092
+    if sense == 2 {
+        return "noun\tphysical objects consisting of a number of pages bound together\tvolume\the used a large book as a doorstop";
+    }
+    // verb 00678777
+    if sense == 3 {
+        return "verb\tengage for a performance\t\tHer agent had booked her for several concerts in Tokyo";
+    }
+    // noun 06636524
+    if sense == 4 {
+        return "noun\ta compilation of the known facts regarding something or someone\trecord, record book\this name is in all the record books";
+    }
+    // noun 07009946
+    if sense == 5 {
+        return "noun\ta written version of a play or other dramatic composition; used in preparing for a performance\tscript, playscript\t";
+    }
+    // verb 02498320
+    if sense == 6 {
+        return "verb\tarrange for and reserve (something for someone else) in advance\treserve, hold\tThe agent booked tickets to the show for the whole family";
+    }
+    // verb 02498136
+    if sense == 7 {
+        return "verb\trecord a charge in a police register\t\tThe policeman booked her when she tried to solicit a man";
+    }
+    ""
+}

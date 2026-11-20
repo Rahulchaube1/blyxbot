@@ -1,0 +1,17 @@
+// fully — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fully(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00010466
+    if sense == 1 {
+        return "adverb\tto the greatest degree or extent; completely or entirely; (`full' in this sense is used as a combining form)\tto the full, full\tfully grown";
+    }
+    // adv 00178909
+    if sense == 2 {
+        return "adverb\tsufficiently; more than adequately\tamply\tthe evidence amply (or fully) confirms our suspicions";
+    }
+    // adv 00504620
+    if sense == 3 {
+        return "adverb\treferring to a quantity\tin full\t";
+    }
+    ""
+}

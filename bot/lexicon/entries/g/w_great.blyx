@@ -1,0 +1,21 @@
+// great — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_great(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01386883
+    if sense == 1 {
+        return "adjective\trelatively large in size or number or extent; larger than others of its kind\t\ta great juicy steak";
+    }
+    // adj 01278818
+    if sense == 2 {
+        return "adjective\tof major significance or importance\toutstanding\ta great work of art";
+    }
+    // adj 01677433
+    if sense == 3 {
+        return "adjective\tremarkable or out of the ordinary in degree or magnitude or effect\t\ta great crisis";
+    }
+    // adj 01123879
+    if sense == 4 {
+        return "adjective\tvery good\tbang-up, bully, corking, cracking, dandy, groovy, keen, neat, nifty, not bad, peachy, slap-up, swell, smashing\thad a great time at the party";
+    }
+    ""
+}

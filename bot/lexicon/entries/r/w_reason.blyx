@@ -1,0 +1,37 @@
+// reason — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reason(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 09178999
+    if sense == 1 {
+        return "noun\ta rational motive for a belief or action\tground\tthe reason that war was declared";
+    }
+    // noun 06739990
+    if sense == 2 {
+        return "noun\tan explanation of the cause of some phenomenon\t\tthe reason a steady state was never reached was that the back pressure built up too slowly";
+    }
+    // noun 05651680
+    if sense == 3 {
+        return "noun\tthe capacity for rational thought or inference or discrimination\tunderstanding, intellect\twe are told that man is endowed with reason and capable of distinguishing good from evil";
+    }
+    // verb 00634472
+    if sense == 4 {
+        return "verb\tdecide by reasoning; draw or come to a conclusion\treason out, conclude\tWe reasoned that it was cheaper to rent than to buy a house";
+    }
+    // verb 00772189
+    if sense == 5 {
+        return "verb\tpresent reasons and arguments\targue\t";
+    }
+    // noun 14379829
+    if sense == 6 {
+        return "noun\tthe state of having good sense and sound judgment\trationality, reasonableness\the had to rely less on reason than on rousing their emotions";
+    }
+    // noun 06740402
+    if sense == 7 {
+        return "noun\ta justification for something existing or happening\tcause, grounds\tthey had good reason to rejoice";
+    }
+    // verb 00632627
+    if sense == 8 {
+        return "verb\tthink logically\t\tThe children must learn to reason";
+    }
+    ""
+}

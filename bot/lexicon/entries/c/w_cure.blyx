@@ -1,0 +1,17 @@
+// cure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cure(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00081725
+    if sense == 1 {
+        return "verb\tprovide a cure for, make healthy again\tbring around, heal\tThe treatment cured the boy's acne";
+    }
+    // noun 04074482
+    if sense == 2 {
+        return "noun\ta medicine or therapy that cures disease or relieve pain\tremedy, curative, therapeutic\t";
+    }
+    // verb 00527572
+    if sense == 3 {
+        return "verb\tprepare by drying, salting, or chemical processing in order to preserve\t\tcure meats";
+    }
+    ""
+}

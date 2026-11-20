@@ -1,0 +1,9 @@
+// depend on — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_depend_on(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 02711987
+    if sense == 1 {
+        return "verb\tbe contingent on\tdevolve on, depend upon, ride, turn on, hinge on, hinge upon\t";
+    }
+    ""
+}

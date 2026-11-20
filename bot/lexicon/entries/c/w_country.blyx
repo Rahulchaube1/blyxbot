@@ -1,0 +1,25 @@
+// country — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_country(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08168978
+    if sense == 1 {
+        return "noun\ta politically organized body of people under a single government\tstate, nation, land, commonwealth, res publica, body politic\tthe country's largest manufacturer";
+    }
+    // noun 08544813
+    if sense == 2 {
+        return "noun\tthe territory occupied by a nation\tstate, land\the visited several European countries";
+    }
+    // noun 08166552
+    if sense == 3 {
+        return "noun\tthe people who live in a nation or country\tnation, land\tthe whole country worshipped him";
+    }
+    // noun 08644722
+    if sense == 4 {
+        return "noun\tan area outside of cities and towns\trural area\this poetry celebrated the slower pace of life in the country";
+    }
+    // noun 08497294
+    if sense == 5 {
+        return "noun\ta particular geographical region of indefinite boundary (usually serving some special purpose or distinguished by its people or culture or geography)\tarea\tBible country";
+    }
+    ""
+}

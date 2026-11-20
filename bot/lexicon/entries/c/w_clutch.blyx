@@ -1,0 +1,21 @@
+// clutch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_clutch(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01212572
+    if sense == 1 {
+        return "verb\ttake hold of; grab\tseize, prehend\tShe clutched her purse";
+    }
+    // noun 00812526
+    if sense == 2 {
+        return "noun\tthe act of grasping\tclasp, clench, clutches, grasp, grip, hold\t";
+    }
+    // noun 14032737
+    if sense == 3 {
+        return "noun\ta tense critical situation\t\the is a good man in the clutch";
+    }
+    // verb 01220303
+    if sense == 4 {
+        return "verb\thold firmly, usually with one's hands\tcling to, hold close, hold tight\tShe clutched my arm when she got scared";
+    }
+    ""
+}

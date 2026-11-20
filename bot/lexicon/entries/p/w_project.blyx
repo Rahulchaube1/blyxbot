@@ -1,0 +1,45 @@
+// project — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_project(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 00795720
+    if sense == 1 {
+        return "noun\tany piece of work that is undertaken or attempted\tundertaking, task, labor\t";
+    }
+    // verb 00743223
+    if sense == 2 {
+        return "verb\tcommunicate vividly\t\tHe projected his feelings";
+    }
+    // verb 02713372
+    if sense == 3 {
+        return "verb\textend out or project in space\tstick out, protrude, jut out, jut\t";
+    }
+    // verb 01436015
+    if sense == 4 {
+        return "verb\ttransfer (ideas or principles) from one domain into another\t\t";
+    }
+    // verb 02138075
+    if sense == 5 {
+        return "verb\tproject on a screen\t\tThe images are projected onto the screen";
+    }
+    // noun 05910453
+    if sense == 6 {
+        return "noun\ta planned undertaking\tprojection\t";
+    }
+    // verb 02180747
+    if sense == 7 {
+        return "verb\tcause to be heard\t\tHis voice projects well";
+    }
+    // verb 01690972
+    if sense == 8 {
+        return "verb\tdraw a projection of\t\t";
+    }
+    // verb 01638368
+    if sense == 9 {
+        return "verb\tmake or work out a plan for; devise\tplan, contrive, design\t";
+    }
+    // verb 00706243
+    if sense == 10 {
+        return "verb\tpresent for consideration, examination, criticism, etc.\tpropose\t";
+    }
+    ""
+}

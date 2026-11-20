@@ -1,0 +1,33 @@
+// conduct — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_conduct(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02445509
+    if sense == 1 {
+        return "verb\tdirect the course of; manage or control\tcarry on, deal\tYou cannot conduct business like this";
+    }
+    // verb 01732921
+    if sense == 2 {
+        return "verb\tlead, as in the performance of a composition\tlead, direct\tconduct an orchestra; Barenboim conducted the Chicago symphony for years";
+    }
+    // noun 01220984
+    if sense == 3 {
+        return "noun\tmanner of acting or controlling yourself\tbehavior, behaviour, doings\t";
+    }
+    // noun 04897762
+    if sense == 4 {
+        return "noun\t(behavioral attributes) the way a person behaves toward other people\tdemeanor, demeanour, behavior, behaviour, deportment\t";
+    }
+    // verb 02518161
+    if sense == 5 {
+        return "verb\tbehave in a certain manner\tbehave, acquit, bear, deport, comport, carry\tThey conducted themselves well during these difficult times";
+    }
+    // verb 01999798
+    if sense == 6 {
+        return "verb\ttake somebody somewhere\tlead, take, direct, guide\tHe conducted us to the palace";
+    }
+    // verb 02079933
+    if sense == 7 {
+        return "verb\ttransmit or serve as the medium for transmission\timpart, transmit, convey, carry, channel\tMany metals conduct heat";
+    }
+    ""
+}

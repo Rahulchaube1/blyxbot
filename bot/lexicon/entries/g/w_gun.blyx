@@ -1,0 +1,13 @@
+// gun — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gun(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 03467984
+    if sense == 1 {
+        return "noun\ta weapon that discharges a missile at high velocity (especially from a metal tube or barrel)\t\t";
+    }
+    // noun 02746365
+    if sense == 2 {
+        return "noun\tlarge but transportable armament\tartillery, heavy weapon, ordnance\t";
+    }
+    ""
+}

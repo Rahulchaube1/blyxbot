@@ -1,0 +1,13 @@
+// comparison — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_comparison(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00142665
+    if sense == 1 {
+        return "noun\tthe act of examining resemblances\tcomparing\tthey made a comparison of noise levels";
+    }
+    // noun 13853808
+    if sense == 2 {
+        return "noun\trelation based on similarities and differences\t\t";
+    }
+    ""
+}

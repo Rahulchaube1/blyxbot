@@ -1,0 +1,409 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::p::w_pa;
+use entries::p::w_pace;
+use entries::p::w_pack;
+use entries::p::w_page;
+use entries::p::w_pain;
+use entries::p::w_paint;
+use entries::p::w_painting;
+use entries::p::w_pair;
+use entries::p::w_pale;
+use entries::p::w_papa;
+use entries::p::w_paper;
+use entries::p::w_parallel;
+use entries::p::w_parent;
+use entries::p::w_paris;
+use entries::p::w_park;
+use entries::p::w_part;
+use entries::p::w_part_hyphen_time;
+use entries::p::w_participate;
+use entries::p::w_particle;
+use entries::p::w_particular;
+use entries::p::w_particularly;
+use entries::p::w_party;
+use entries::p::w_pass;
+use entries::p::w_pass_through;
+use entries::p::w_passage;
+use entries::p::w_past;
+use entries::p::w_path;
+use entries::p::w_patient;
+use entries::p::w_pattern;
+use entries::p::w_pause;
+use entries::p::w_pay;
+use entries::p::w_payment;
+use entries::p::w_peace;
+use entries::p::w_peer;
+use entries::p::w_people;
+use entries::p::w_perceive;
+use entries::p::w_percent;
+use entries::p::w_percentage;
+use entries::p::w_perfect;
+use entries::p::w_perform;
+use entries::p::w_performance;
+use entries::p::w_perhaps;
+use entries::p::w_period;
+use entries::p::w_permit;
+use entries::p::w_persist;
+use entries::p::w_person;
+use entries::p::w_personal;
+use entries::p::w_personnel;
+use entries::p::w_persuade;
+use entries::p::w_petitioner;
+use entries::p::w_phase;
+use entries::p::w_phenomenon;
+use entries::p::w_philosophy;
+use entries::p::w_phone;
+use entries::p::w_photograph;
+use entries::p::w_physical;
+use entries::p::w_pick;
+use entries::p::w_pick_up;
+use entries::p::w_picture;
+use entries::p::w_piece;
+use entries::p::w_pile;
+use entries::p::w_pitch;
+use entries::p::w_place;
+use entries::p::w_plan;
+use entries::p::w_plane;
+use entries::p::w_planet;
+use entries::p::w_planning;
+use entries::p::w_plant;
+use entries::p::w_play;
+use entries::p::w_player;
+use entries::p::w_please;
+use entries::p::w_pleasure;
+use entries::p::w_plenty;
+use entries::p::w_plot;
+use entries::p::w_plunge;
+use entries::p::w_pocket;
+use entries::p::w_point;
+use entries::p::w_point_out;
+use entries::p::w_police;
+use entries::p::w_policy;
+use entries::p::w_political;
+use entries::p::w_politics;
+use entries::p::w_polynomial;
+use entries::p::w_pond;
+use entries::p::w_pool;
+use entries::p::w_poor;
+use entries::p::w_popular;
+use entries::p::w_population;
+use entries::p::w_porch;
+use entries::p::w_portion;
+use entries::p::w_position;
+use entries::p::w_positive;
+use entries::p::w_possess;
+use entries::p::w_possibility;
+use entries::p::w_possible;
+use entries::p::w_possibly;
+use entries::p::w_post;
+use entries::p::w_potential;
+use entries::p::w_pound;
+use entries::p::w_pour;
+use entries::p::w_powder;
+use entries::p::w_power;
+use entries::p::w_powerful;
+use entries::p::w_practical;
+use entries::p::w_practically;
+use entries::p::w_practice;
+use entries::p::w_pray;
+use entries::p::w_precisely;
+use entries::p::w_predict;
+use entries::p::w_prefer;
+use entries::p::w_preparation;
+use entries::p::w_prepare;
+use entries::p::w_presence;
+use entries::p::w_present;
+use entries::p::w_presently;
+use entries::p::w_preserve;
+use entries::p::w_president;
+use entries::p::w_press;
+use entries::p::w_pressure;
+use entries::p::w_pretend;
+use entries::p::w_pretty;
+use entries::p::w_prevent;
+use entries::p::w_previous;
+use entries::p::w_previously;
+use entries::p::w_price;
+use entries::p::w_primarily;
+use entries::p::w_primary;
+use entries::p::w_prime_minister;
+use entries::p::w_principal;
+use entries::p::w_principle;
+use entries::p::w_prior;
+use entries::p::w_private;
+use entries::p::w_probability;
+use entries::p::w_probably;
+use entries::p::w_problem;
+use entries::p::w_procedure;
+use entries::p::w_proceed;
+use entries::p::w_process;
+use entries::p::w_proclaim;
+use entries::p::w_produce;
+use entries::p::w_product;
+use entries::p::w_production;
+use entries::p::w_professional;
+use entries::p::w_profound;
+use entries::p::w_program;
+use entries::p::w_progress;
+use entries::p::w_project;
+use entries::p::w_prominent;
+use entries::p::w_promise;
+use entries::p::w_promote;
+use entries::p::w_proper;
+use entries::p::w_properly;
+use entries::p::w_property;
+use entries::p::w_propose;
+use entries::p::w_protect;
+use entries::p::w_protection;
+use entries::p::w_protein;
+use entries::p::w_protest;
+use entries::p::w_protestant;
+use entries::p::w_prove;
+use entries::p::w_provide;
+use entries::p::w_provision;
+use entries::p::w_public;
+use entries::p::w_publish;
+use entries::p::w_pull;
+use entries::p::w_pulmonary_artery;
+use entries::p::w_purchase;
+use entries::p::w_pure;
+use entries::p::w_purpose;
+use entries::p::w_pursue;
+use entries::p::w_push;
+use entries::p::w_put;
+use entries::p::w_put_on;
+
+fn through_w_part(term: str, sense: i64) -> str {
+    if term == "pa" { return w_pa(sense); }
+    if term == "pace" { return w_pace(sense); }
+    if term == "pack" { return w_pack(sense); }
+    if term == "page" { return w_page(sense); }
+    if term == "pain" { return w_pain(sense); }
+    if term == "paint" { return w_paint(sense); }
+    if term == "painting" { return w_painting(sense); }
+    if term == "pair" { return w_pair(sense); }
+    if term == "pale" { return w_pale(sense); }
+    if term == "papa" { return w_papa(sense); }
+    if term == "paper" { return w_paper(sense); }
+    if term == "parallel" { return w_parallel(sense); }
+    if term == "parent" { return w_parent(sense); }
+    if term == "paris" { return w_paris(sense); }
+    if term == "park" { return w_park(sense); }
+    if term == "part" { return w_part(sense); }
+    ""
+}
+
+fn through_w_payment(term: str, sense: i64) -> str {
+    if term == "part-time" { return w_part_hyphen_time(sense); }
+    if term == "participate" { return w_participate(sense); }
+    if term == "particle" { return w_particle(sense); }
+    if term == "particular" { return w_particular(sense); }
+    if term == "particularly" { return w_particularly(sense); }
+    if term == "party" { return w_party(sense); }
+    if term == "pass" { return w_pass(sense); }
+    if term == "pass through" { return w_pass_through(sense); }
+    if term == "passage" { return w_passage(sense); }
+    if term == "past" { return w_past(sense); }
+    if term == "path" { return w_path(sense); }
+    if term == "patient" { return w_patient(sense); }
+    if term == "pattern" { return w_pattern(sense); }
+    if term == "pause" { return w_pause(sense); }
+    if term == "pay" { return w_pay(sense); }
+    if term == "payment" { return w_payment(sense); }
+    ""
+}
+
+fn through_w_personnel(term: str, sense: i64) -> str {
+    if term == "peace" { return w_peace(sense); }
+    if term == "peer" { return w_peer(sense); }
+    if term == "people" { return w_people(sense); }
+    if term == "perceive" { return w_perceive(sense); }
+    if term == "percent" { return w_percent(sense); }
+    if term == "percentage" { return w_percentage(sense); }
+    if term == "perfect" { return w_perfect(sense); }
+    if term == "perform" { return w_perform(sense); }
+    if term == "performance" { return w_performance(sense); }
+    if term == "perhaps" { return w_perhaps(sense); }
+    if term == "period" { return w_period(sense); }
+    if term == "permit" { return w_permit(sense); }
+    if term == "persist" { return w_persist(sense); }
+    if term == "person" { return w_person(sense); }
+    if term == "personal" { return w_personal(sense); }
+    if term == "personnel" { return w_personnel(sense); }
+    ""
+}
+
+fn through_w_plan(term: str, sense: i64) -> str {
+    if term == "persuade" { return w_persuade(sense); }
+    if term == "petitioner" { return w_petitioner(sense); }
+    if term == "phase" { return w_phase(sense); }
+    if term == "phenomenon" { return w_phenomenon(sense); }
+    if term == "philosophy" { return w_philosophy(sense); }
+    if term == "phone" { return w_phone(sense); }
+    if term == "photograph" { return w_photograph(sense); }
+    if term == "physical" { return w_physical(sense); }
+    if term == "pick" { return w_pick(sense); }
+    if term == "pick up" { return w_pick_up(sense); }
+    if term == "picture" { return w_picture(sense); }
+    if term == "piece" { return w_piece(sense); }
+    if term == "pile" { return w_pile(sense); }
+    if term == "pitch" { return w_pitch(sense); }
+    if term == "place" { return w_place(sense); }
+    if term == "plan" { return w_plan(sense); }
+    ""
+}
+
+fn through_w_policy(term: str, sense: i64) -> str {
+    if term == "plane" { return w_plane(sense); }
+    if term == "planet" { return w_planet(sense); }
+    if term == "planning" { return w_planning(sense); }
+    if term == "plant" { return w_plant(sense); }
+    if term == "play" { return w_play(sense); }
+    if term == "player" { return w_player(sense); }
+    if term == "please" { return w_please(sense); }
+    if term == "pleasure" { return w_pleasure(sense); }
+    if term == "plenty" { return w_plenty(sense); }
+    if term == "plot" { return w_plot(sense); }
+    if term == "plunge" { return w_plunge(sense); }
+    if term == "pocket" { return w_pocket(sense); }
+    if term == "point" { return w_point(sense); }
+    if term == "point out" { return w_point_out(sense); }
+    if term == "police" { return w_police(sense); }
+    if term == "policy" { return w_policy(sense); }
+    ""
+}
+
+fn through_w_possibly(term: str, sense: i64) -> str {
+    if term == "political" { return w_political(sense); }
+    if term == "politics" { return w_politics(sense); }
+    if term == "polynomial" { return w_polynomial(sense); }
+    if term == "pond" { return w_pond(sense); }
+    if term == "pool" { return w_pool(sense); }
+    if term == "poor" { return w_poor(sense); }
+    if term == "popular" { return w_popular(sense); }
+    if term == "population" { return w_population(sense); }
+    if term == "porch" { return w_porch(sense); }
+    if term == "portion" { return w_portion(sense); }
+    if term == "position" { return w_position(sense); }
+    if term == "positive" { return w_positive(sense); }
+    if term == "possess" { return w_possess(sense); }
+    if term == "possibility" { return w_possibility(sense); }
+    if term == "possible" { return w_possible(sense); }
+    if term == "possibly" { return w_possibly(sense); }
+    ""
+}
+
+fn through_w_prepare(term: str, sense: i64) -> str {
+    if term == "post" { return w_post(sense); }
+    if term == "potential" { return w_potential(sense); }
+    if term == "pound" { return w_pound(sense); }
+    if term == "pour" { return w_pour(sense); }
+    if term == "powder" { return w_powder(sense); }
+    if term == "power" { return w_power(sense); }
+    if term == "powerful" { return w_powerful(sense); }
+    if term == "practical" { return w_practical(sense); }
+    if term == "practically" { return w_practically(sense); }
+    if term == "practice" { return w_practice(sense); }
+    if term == "pray" { return w_pray(sense); }
+    if term == "precisely" { return w_precisely(sense); }
+    if term == "predict" { return w_predict(sense); }
+    if term == "prefer" { return w_prefer(sense); }
+    if term == "preparation" { return w_preparation(sense); }
+    if term == "prepare" { return w_prepare(sense); }
+    ""
+}
+
+fn through_w_prime_minister(term: str, sense: i64) -> str {
+    if term == "presence" { return w_presence(sense); }
+    if term == "present" { return w_present(sense); }
+    if term == "presently" { return w_presently(sense); }
+    if term == "preserve" { return w_preserve(sense); }
+    if term == "president" { return w_president(sense); }
+    if term == "press" { return w_press(sense); }
+    if term == "pressure" { return w_pressure(sense); }
+    if term == "pretend" { return w_pretend(sense); }
+    if term == "pretty" { return w_pretty(sense); }
+    if term == "prevent" { return w_prevent(sense); }
+    if term == "previous" { return w_previous(sense); }
+    if term == "previously" { return w_previously(sense); }
+    if term == "price" { return w_price(sense); }
+    if term == "primarily" { return w_primarily(sense); }
+    if term == "primary" { return w_primary(sense); }
+    if term == "prime minister" { return w_prime_minister(sense); }
+    ""
+}
+
+fn through_w_profound(term: str, sense: i64) -> str {
+    if term == "principal" { return w_principal(sense); }
+    if term == "principle" { return w_principle(sense); }
+    if term == "prior" { return w_prior(sense); }
+    if term == "private" { return w_private(sense); }
+    if term == "probability" { return w_probability(sense); }
+    if term == "probably" { return w_probably(sense); }
+    if term == "problem" { return w_problem(sense); }
+    if term == "procedure" { return w_procedure(sense); }
+    if term == "proceed" { return w_proceed(sense); }
+    if term == "process" { return w_process(sense); }
+    if term == "proclaim" { return w_proclaim(sense); }
+    if term == "produce" { return w_produce(sense); }
+    if term == "product" { return w_product(sense); }
+    if term == "production" { return w_production(sense); }
+    if term == "professional" { return w_professional(sense); }
+    if term == "profound" { return w_profound(sense); }
+    ""
+}
+
+fn through_w_prove(term: str, sense: i64) -> str {
+    if term == "program" { return w_program(sense); }
+    if term == "progress" { return w_progress(sense); }
+    if term == "project" { return w_project(sense); }
+    if term == "prominent" { return w_prominent(sense); }
+    if term == "promise" { return w_promise(sense); }
+    if term == "promote" { return w_promote(sense); }
+    if term == "proper" { return w_proper(sense); }
+    if term == "properly" { return w_properly(sense); }
+    if term == "property" { return w_property(sense); }
+    if term == "propose" { return w_propose(sense); }
+    if term == "protect" { return w_protect(sense); }
+    if term == "protection" { return w_protection(sense); }
+    if term == "protein" { return w_protein(sense); }
+    if term == "protest" { return w_protest(sense); }
+    if term == "protestant" { return w_protestant(sense); }
+    if term == "prove" { return w_prove(sense); }
+    ""
+}
+
+fn through_w_put_on(term: str, sense: i64) -> str {
+    if term == "provide" { return w_provide(sense); }
+    if term == "provision" { return w_provision(sense); }
+    if term == "public" { return w_public(sense); }
+    if term == "publish" { return w_publish(sense); }
+    if term == "pull" { return w_pull(sense); }
+    if term == "pulmonary artery" { return w_pulmonary_artery(sense); }
+    if term == "purchase" { return w_purchase(sense); }
+    if term == "pure" { return w_pure(sense); }
+    if term == "purpose" { return w_purpose(sense); }
+    if term == "pursue" { return w_pursue(sense); }
+    if term == "push" { return w_push(sense); }
+    if term == "put" { return w_put(sense); }
+    if term == "put on" { return w_put_on(sense); }
+    ""
+}
+
+pub fn lookup_p(term: str, sense: i64) -> str {
+    if term <= "part" { return through_w_part(term, sense); }
+    if term <= "payment" { return through_w_payment(term, sense); }
+    if term <= "personnel" { return through_w_personnel(term, sense); }
+    if term <= "plan" { return through_w_plan(term, sense); }
+    if term <= "policy" { return through_w_policy(term, sense); }
+    if term <= "possibly" { return through_w_possibly(term, sense); }
+    if term <= "prepare" { return through_w_prepare(term, sense); }
+    if term <= "prime minister" { return through_w_prime_minister(term, sense); }
+    if term <= "profound" { return through_w_profound(term, sense); }
+    if term <= "prove" { return through_w_prove(term, sense); }
+    through_w_put_on(term, sense)
+}
+
+pub fn words_p() -> str {
+    "pa|pace|pack|page|pain|paint|painting|pair|pale|papa|paper|parallel|parent|paris|park|part|part-time|participate|particle|particular|particularly|party|pass|pass through|passage|past|path|patient|pattern|pause|pay|payment|peace|peer|people|perceive|percent|percentage|perfect|perform|performance|perhaps|period|permit|persist|person|personal|personnel|persuade|petitioner|phase|phenomenon|philosophy|phone|photograph|physical|pick|pick up|picture|piece|pile|pitch|place|plan|plane|planet|planning|plant|play|player|please|pleasure|plenty|plot|plunge|pocket|point|point out|police|policy|political|politics|polynomial|pond|pool|poor|popular|population|porch|portion|position|positive|possess|possibility|possible|possibly|post|potential|pound|pour|powder|power|powerful|practical|practically|practice|pray|precisely|predict|prefer|preparation|prepare|presence|present|presently|preserve|president|press|pressure|pretend|pretty|prevent|previous|previously|price|primarily|primary|prime minister|principal|principle|prior|private|probability|probably|problem|procedure|proceed|process|proclaim|produce|product|production|professional|profound|program|progress|project|prominent|promise|promote|proper|properly|property|propose|protect|protection|protein|protest|protestant|prove|provide|provision|public|publish|pull|pulmonary artery|purchase|pure|purpose|pursue|push|put|put on"
+}

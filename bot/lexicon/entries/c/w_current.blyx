@@ -1,0 +1,21 @@
+// current — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_current(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00666058
+    if sense == 1 {
+        return "adjective\toccurring in or belonging to the present time\t\tcurrent events";
+    }
+    // noun 11443532
+    if sense == 2 {
+        return "noun\ta flow of electricity through a conductor\telectric current\tthe current was measured in amperes";
+    }
+    // noun 07406765
+    if sense == 3 {
+        return "noun\ta steady flow of a fluid (usually from natural causes)\tstream\tthe raft floated downstream on the current";
+    }
+    // noun 08461595
+    if sense == 4 {
+        return "noun\tdominant course (suggestive of running water) of successive events or ideas\tstream, flow\tthe current of history";
+    }
+    ""
+}

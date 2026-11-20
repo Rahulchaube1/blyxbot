@@ -1,0 +1,61 @@
+// develop — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_develop(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 01738774
+    if sense == 1 {
+        return "verb\tmake something new, such as a product or a mental or artistic creation\t\tHer company developed a new kind of building material that withstands all kinds of weather";
+    }
+    // verb 01738597
+    if sense == 2 {
+        return "verb\twork out\tevolve, germinate\tWe have developed a new theory of evolution";
+    }
+    // verb 00545557
+    if sense == 3 {
+        return "verb\tgain through experience\tacquire, evolve\tChildren must develop a sense of right and wrong";
+    }
+    // verb 00094460
+    if sense == 4 {
+        return "verb\tcome to have or undergo a change of (physical features and attributes)\tgrow, produce, get, acquire\tThe patient developed abdominal pains";
+    }
+    // verb 02624263
+    if sense == 5 {
+        return "verb\tcome into existence; take on form or shape\toriginate, arise, rise, uprise, spring up, grow\t";
+    }
+    // verb 00171852
+    if sense == 6 {
+        return "verb\tchange the use of and make available or usable\tbuild up\tdevelop land";
+    }
+    // verb 00925873
+    if sense == 7 {
+        return "verb\telaborate, as of theories and hypotheses\texplicate, formulate\tCould you develop the ideas in your thesis";
+    }
+    // verb 00603298
+    if sense == 8 {
+        return "verb\tcreate by training and teaching\ttrain, prepare, educate\twe develop the leaders for the future";
+    }
+    // verb 00342980
+    if sense == 9 {
+        return "verb\tbe gradually disclosed or unfolded; become manifest\t\tThe plot developed slowly";
+    }
+    // verb 00252019
+    if sense == 10 {
+        return "verb\tgrow, progress, unfold, or evolve through a process of evolution, natural growth, differentiation, or a conducive environment\t\tA flower developed on the branch";
+    }
+    // verb 00411020
+    if sense == 11 {
+        return "verb\tbecome technologically advanced\tmodernize, modernise\tMany countries in Asia are now developing at a very fast pace";
+    }
+    // verb 00253761
+    if sense == 12 {
+        return "verb\tcause to grow and differentiate in ways conforming to its natural development\tmake grow\tThe perfect climate here develops the grain";
+    }
+    // verb 01627947
+    if sense == 13 {
+        return "verb\tgenerate gradually\t\tWe must develop more potential customers";
+    }
+    // verb 00543410
+    if sense == 14 {
+        return "verb\tgrow emotionally or mature\tgrow\tThe child developed beautifully in her new kindergarten";
+    }
+    ""
+}

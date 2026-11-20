@@ -1,0 +1,13 @@
+// interested — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_interested(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01342237
+    if sense == 1 {
+        return "adjective\thaving or showing interest; especially curiosity or fascination or concern\t\tan interested audience";
+    }
+    // adj 01515692
+    if sense == 2 {
+        return "adjective\tinvolved in or affected by or having a claim to or share in\tconcerned\tthe interested parties met to discuss the business";
+    }
+    ""
+}

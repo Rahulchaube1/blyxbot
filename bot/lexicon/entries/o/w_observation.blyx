@@ -1,0 +1,25 @@
+// observation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_observation(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 01002956
+    if sense == 1 {
+        return "noun\tthe act of making and recording a measurement\t\t";
+    }
+    // noun 00879759
+    if sense == 2 {
+        return "noun\tthe act of observing; taking a patient look\tobservance, watching\t";
+    }
+    // noun 06767035
+    if sense == 3 {
+        return "noun\ta remark expressing careful consideration\treflection, reflexion\t";
+    }
+    // noun 05818741
+    if sense == 4 {
+        return "noun\tfacts learned by observing\t\the reported his observations to the mayor";
+    }
+    // noun 05703429
+    if sense == 5 {
+        return "noun\tthe act of noticing or paying attention\tnotice, observance\t";
+    }
+    ""
+}

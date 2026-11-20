@@ -1,0 +1,21 @@
+// pursue — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pursue(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02375131
+    if sense == 1 {
+        return "verb\tcarry out or participate in an activity; be involved in\tprosecute, engage\tShe pursued many activities";
+    }
+    // verb 02000868
+    if sense == 2 {
+        return "verb\tfollow in or as if in pursuit\tfollow\tThe police car pursued the suspected attacker";
+    }
+    // verb 01317533
+    if sense == 3 {
+        return "verb\tgo in search of or hunt for\tquest for, go after, quest after\tpursue a hobby";
+    }
+    // verb 02376429
+    if sense == 4 {
+        return "verb\tcarry further or advance\tfollow up on, act on\t";
+    }
+    ""
+}

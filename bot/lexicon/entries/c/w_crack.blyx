@@ -1,0 +1,53 @@
+// crack — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_crack(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // verb 00336260
+    if sense == 1 {
+        return "verb\tbecome fractured; break or crack on the surface only\tcheck, break\tThe glass cracked when it was heated";
+    }
+    // verb 02183024
+    if sense == 2 {
+        return "verb\tmake a very sharp explosive sound\t\tHis gun cracked";
+    }
+    // noun 09258715
+    if sense == 3 {
+        return "noun\ta long narrow opening\tcleft, crevice, fissure, scissure\t";
+    }
+    // noun 03416329
+    if sense == 4 {
+        return "noun\ta narrow opening\tgap\the opened the window a crack";
+    }
+    // verb 02182851
+    if sense == 5 {
+        return "verb\tmake a sharp sound\tsnap\t";
+    }
+    // verb 01401955
+    if sense == 6 {
+        return "verb\thit forcefully; deal a hard blow, making a cracking noise\t\tThe teacher cracked him across the face with a ruler";
+    }
+    // verb 00539770
+    if sense == 7 {
+        return "verb\tpass through (a barrier)\tbreak through\tRegistrations cracked through the 30,000 mark in the county";
+    }
+    // adj 02341864
+    if sense == 8 {
+        return "adjective\tof the highest quality\tace, A-one, first-rate, super, tiptop, topnotch, top-notch, tops\ta crack shot";
+    }
+    // noun 13907272
+    if sense == 9 {
+        return "noun\ta long narrow depression in a surface\tcrevice, cranny, fissure, chap\t";
+    }
+    // noun 07381423
+    if sense == 10 {
+        return "noun\ta sudden sharp noise\tcracking, snap\tthe crack of a whip";
+    }
+    // verb 00337234
+    if sense == 11 {
+        return "verb\tbreak partially but keep its integrity\t\tThe glass cracked";
+    }
+    // verb 00337065
+    if sense == 12 {
+        return "verb\tbreak suddenly and abruptly, as under tension\tsnap\t";
+    }
+    ""
+}

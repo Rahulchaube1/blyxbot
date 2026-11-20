@@ -1,0 +1,29 @@
+// liquid — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_liquid(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02261386
+    if sense == 1 {
+        return "adjective\texisting as or having characteristics of a liquid; especially tending to flow\t\twater and milk and blood are liquid substances";
+    }
+    // noun 14940386
+    if sense == 2 {
+        return "noun\ta substance that is liquid at room temperature and pressure\t\t";
+    }
+    // noun 14480420
+    if sense == 3 {
+        return "noun\tthe state in which a substance exhibits a characteristic readiness to flow with little or no tendency to disperse and relatively high incompressibility\tliquidness, liquidity, liquid state\t";
+    }
+    // noun 14940100
+    if sense == 4 {
+        return "noun\tfluid matter having no fixed shape but a fixed volume\t\t";
+    }
+    // adj 02473371
+    if sense == 5 {
+        return "adjective\tfilled or brimming with tears\tswimming\tsorrow made the eyes of many grow liquid";
+    }
+    // adj 00432453
+    if sense == 6 {
+        return "adjective\tclear and bright\tlimpid\tthe liquid air of a spring morning";
+    }
+    ""
+}

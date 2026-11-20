@@ -1,0 +1,13 @@
+// presently — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_presently(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00033922
+    if sense == 1 {
+        return "adverb\tin the near future\tsoon, shortly, before long\tshe will arrive presently";
+    }
+    // adv 00048268
+    if sense == 2 {
+        return "adverb\tat this time or period; now\tcurrently\the is presently our ambassador to the United Nations";
+    }
+    ""
+}

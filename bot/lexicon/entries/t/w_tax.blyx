@@ -1,0 +1,13 @@
+// tax — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tax(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13308999
+    if sense == 1 {
+        return "noun\tcharge against a citizen's person or property or activity for the support of government\ttaxation, revenue enhancement\t";
+    }
+    // verb 02307547
+    if sense == 2 {
+        return "verb\tlevy a tax on\t\tThe State taxes alcohol heavily";
+    }
+    ""
+}

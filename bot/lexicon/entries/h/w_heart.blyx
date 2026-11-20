@@ -1,0 +1,29 @@
+// heart — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_heart(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05919263
+    if sense == 1 {
+        return "noun\tthe locus of feelings and intuitions\tbosom\tin your heart you know it is true";
+    }
+    // noun 05388805
+    if sense == 2 {
+        return "noun\tthe hollow muscular organ located behind the sternum and between the lungs; its rhythmic contractions move the blood through the body\tpump, ticker\the stood still, his heart thumping wildly";
+    }
+    // noun 04857490
+    if sense == 3 {
+        return "noun\tthe courage to carry on\tmettle, nerve, spunk\tyou haven't got the heart for baseball";
+    }
+    // noun 08523483
+    if sense == 4 {
+        return "noun\tan area that is approximately central within some larger region\tcenter, centre, middle, eye\tthey ran forward into the heart of the struggle";
+    }
+    // noun 05921123
+    if sense == 5 {
+        return "noun\tthe choicest or most essential or most vital part of some idea or experience\tkernel, substance, core, center, centre, essence, gist, heart and soul, inwardness, marrow, meat, nub, pith, sum, nitty-gritty\tthe heart and soul of the Republican Party";
+    }
+    // noun 04624826
+    if sense == 6 {
+        return "noun\tan inclination or tendency of a certain kind\tspirit\the had a change of heart";
+    }
+    ""
+}

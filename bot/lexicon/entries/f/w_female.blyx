@@ -1,0 +1,21 @@
+// female — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_female(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 01320872
+    if sense == 1 {
+        return "noun\tan animal that produces gametes (ova) that can be fertilized by male gametes (spermatozoa)\t\t";
+    }
+    // adj 01477806
+    if sense == 2 {
+        return "adjective\tbeing the sex (of plant or animal) that produces fertilizable gametes (ova) from which offspring develop\t\ta female heir";
+    }
+    // noun 09619168
+    if sense == 3 {
+        return "noun\ta person who belongs to the sex that can have babies\tfemale person\t";
+    }
+    // adj 01484451
+    if sense == 4 {
+        return "adjective\tcharacteristic of or peculiar to a woman\tdistaff\tfemale sensitiveness";
+    }
+    ""
+}

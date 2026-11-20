@@ -1,0 +1,21 @@
+// attempt — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_attempt(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02530167
+    if sense == 1 {
+        return "verb\tmake an effort or attempt\ttry, seek, essay, assay\tThe police attempted to stop the thief";
+    }
+    // noun 00786195
+    if sense == 2 {
+        return "noun\tearnest and conscientious activity intended to do or accomplish something\teffort, endeavor, endeavour, try\t";
+    }
+    // verb 01651293
+    if sense == 3 {
+        return "verb\tenter upon an activity or enterprise\tundertake, set about\t";
+    }
+    // noun 00773814
+    if sense == 4 {
+        return "noun\tthe act of attacking\tattack\tthey made an attempt on his life";
+    }
+    ""
+}

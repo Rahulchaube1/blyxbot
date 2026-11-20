@@ -1,0 +1,41 @@
+// grow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_grow(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 00125841
+    if sense == 1 {
+        return "verb\tpass into a condition gradually, take on a specific property or attribute; become\tturn\t";
+    }
+    // verb 00230746
+    if sense == 2 {
+        return "verb\tbecome larger, greater, or bigger; expand or gain\t\t";
+    }
+    // verb 00231557
+    if sense == 3 {
+        return "verb\tincrease in size by natural process\t\tCorn doesn't grow here";
+    }
+    // verb 00245457
+    if sense == 4 {
+        return "verb\tcause to grow or develop\t\tHe grows vegetables in his backyard";
+    }
+    // verb 00250181
+    if sense == 5 {
+        return "verb\tdevelop and reach maturity; undergo maturation\tmature, maturate\t";
+    }
+    // verb 02624263
+    if sense == 6 {
+        return "verb\tcome into existence; take on form or shape\toriginate, arise, rise, develop, uprise, spring up\t";
+    }
+    // verb 01739814
+    if sense == 7 {
+        return "verb\tcultivate by growing, often involving improvements by means of agricultural techniques\traise, farm, produce\tWe grow wheat here";
+    }
+    // verb 00094460
+    if sense == 8 {
+        return "verb\tcome to have or undergo a change of (physical features and attributes)\tdevelop, produce, get, acquire\t";
+    }
+    // verb 00543410
+    if sense == 9 {
+        return "verb\tgrow emotionally or mature\tdevelop\t";
+    }
+    ""
+}

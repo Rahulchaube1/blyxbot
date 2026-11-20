@@ -1,0 +1,17 @@
+// interrupt — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_interrupt(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00778275
+    if sense == 1 {
+        return "verb\tmake a break in\tdisrupt, break up, cut off\tWe interrupt the program for the following messages";
+    }
+    // verb 00520019
+    if sense == 2 {
+        return "verb\tdestroy the peace or tranquility of\tdisturb\tDon't interrupt me when I'm reading";
+    }
+    // verb 00520357
+    if sense == 3 {
+        return "verb\tinterfere in someone else's activity\tdisrupt\tPlease don't interrupt me while I'm on the phone";
+    }
+    ""
+}

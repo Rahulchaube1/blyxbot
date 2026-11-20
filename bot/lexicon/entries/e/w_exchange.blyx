@@ -1,0 +1,37 @@
+// exchange — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_exchange(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 11409538
+    if sense == 1 {
+        return "noun\tchemical process in which one atom or ion or group changes places with another\t\t";
+    }
+    // verb 02257370
+    if sense == 2 {
+        return "verb\tgive to, and receive from, one another\tchange, interchange\tWe have been exchanging letters for a year";
+    }
+    // noun 07134706
+    if sense == 3 {
+        return "noun\ta mutual expression of views (especially an unpleasant one)\t\tthey had a bitter exchange";
+    }
+    // noun 01166258
+    if sense == 4 {
+        return "noun\tthe act of changing one thing for another thing\tinterchange\tAdam was promised immortality in exchange for his disobedience";
+    }
+    // noun 01109467
+    if sense == 5 {
+        return "noun\tthe act of giving something in return for something received\t\tdeductible losses on sales or exchanges of property are allowable";
+    }
+    // verb 00161225
+    if sense == 6 {
+        return "verb\texchange or replace with another, usually of the same kind or category\tchange, commute, convert\t";
+    }
+    // noun 02994858
+    if sense == 7 {
+        return "noun\ta workplace that serves as a telecommunications facility where lines from telephones can be connected together to permit communication\tcentral, telephone exchange\t";
+    }
+    // verb 00140751
+    if sense == 8 {
+        return "verb\tchange over, change around, as to a new order or sequence\tswitch over, switch\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// shut — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shut(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01345109
+    if sense == 1 {
+        return "verb\tmove so that an opening or passage is obstructed; make shut\tclose\tshut the window";
+    }
+    // adj 01652782
+    if sense == 2 {
+        return "adjective\tnot open\tunopen, closed\tthe door slammed shut";
+    }
+    // verb 01346978
+    if sense == 3 {
+        return "verb\tbecome closed\tclose\t";
+    }
+    // adj 01655162
+    if sense == 4 {
+        return "adjective\tused especially of mouth or eyes\tclosed\this eyes were shut against the sunlight";
+    }
+    // verb 02449340
+    if sense == 5 {
+        return "verb\tprevent from entering; shut out\texclude, keep out, shut out\tThe trees were shutting out all sunlight";
+    }
+    ""
+}

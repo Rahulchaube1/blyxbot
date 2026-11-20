@@ -1,0 +1,29 @@
+// tough — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tough(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02448437
+    if sense == 1 {
+        return "adjective\tnot given to gentleness or sentimentality\t\ta tough character";
+    }
+    // adj 00748058
+    if sense == 2 {
+        return "adjective\tvery difficult; severely testing stamina or resolution\trugged\tthe competition was tough";
+    }
+    // adj 02447344
+    if sense == 3 {
+        return "adjective\tphysically toughened\ttoughened\tthe tough bottoms of his feet";
+    }
+    // adj 00707795
+    if sense == 4 {
+        return "adjective\tsubstantially made or constructed\tsturdy\ta tough all-weather fabric";
+    }
+    // adj 02512641
+    if sense == 5 {
+        return "adjective\tviolent and lawless\truffianly\ttough street gangs";
+    }
+    // adj 00478311
+    if sense == 6 {
+        return "adjective\tfeeling physical discomfort or pain (`tough' is occasionally used colloquially for `bad')\tbad\the was feeling tough after a restless night";
+    }
+    ""
+}

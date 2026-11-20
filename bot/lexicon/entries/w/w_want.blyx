@@ -1,0 +1,37 @@
+// want — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_want(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01825237
+    if sense == 1 {
+        return "verb\tfeel or have a desire for; want strongly\tdesire\tI want to go home now";
+    }
+    // verb 01188725
+    if sense == 2 {
+        return "verb\thave need of\tneed, require\tThis piano wants the attention of a competent tuner";
+    }
+    // noun 14493426
+    if sense == 3 {
+        return "noun\ta state of extreme poverty\tprivation, deprivation, neediness\t";
+    }
+    // verb 01317064
+    if sense == 4 {
+        return "verb\thunt or look for; want for a particular reason\t\tYour former neighbor is wanted by the FBI";
+    }
+    // verb 00709205
+    if sense == 5 {
+        return "verb\twish or demand the presence of\t\tI want you here at noon!";
+    }
+    // noun 14449405
+    if sense == 6 {
+        return "noun\tthe state of needing something that is absent or unavailable\tlack, deficiency\tfor want of a nail the shoe was lost";
+    }
+    // noun 09367991
+    if sense == 7 {
+        return "noun\tanything that is necessary but lacking\tneed\tI tried to supply his wants";
+    }
+    // noun 07486229
+    if sense == 8 {
+        return "noun\ta specific feeling of desire\twish, wishing\t";
+    }
+    ""
+}

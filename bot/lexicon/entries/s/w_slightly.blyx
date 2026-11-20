@@ -1,0 +1,9 @@
+// slightly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_slightly(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00036291
+    if sense == 1 {
+        return "adverb\tto a small degree or extent\tsomewhat, more or less\tthe children argued because one slice of cake was slightly larger than the other";
+    }
+    ""
+}

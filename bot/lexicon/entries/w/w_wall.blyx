@@ -1,0 +1,17 @@
+// wall — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wall(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04546855
+    if sense == 1 {
+        return "noun\tan architectural partition with a height and length greater than its thickness; used to divide or enclose an area or to support another structure\t\tthe south wall had a small window";
+    }
+    // noun 09474162
+    if sense == 2 {
+        return "noun\tanything that suggests a wall in structure or function or effect\t\ta wall of water";
+    }
+    // noun 05604254
+    if sense == 3 {
+        return "noun\t(anatomy) a layer (a lining or membrane) that encloses a structure\tparies\tstomach walls";
+    }
+    ""
+}

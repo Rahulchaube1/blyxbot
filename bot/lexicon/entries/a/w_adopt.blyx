@@ -1,0 +1,25 @@
+// adopt — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_adopt(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02346895
+    if sense == 1 {
+        return "verb\tchoose and follow; as of theories, ideas, policies, strategies or plans\tfollow, espouse\t";
+    }
+    // verb 02346724
+    if sense == 2 {
+        return "verb\ttake up and practice as one's own\tborrow, take over, take up\t";
+    }
+    // verb 02381726
+    if sense == 3 {
+        return "verb\ttake on titles, offices, duties, responsibilities\tassume, take on, take over\t";
+    }
+    // verb 00524682
+    if sense == 4 {
+        return "verb\ttake on a certain form, attribute, or aspect\tassume, acquire, take on, take\the adopted an air of superiority";
+    }
+    // verb 00413195
+    if sense == 5 {
+        return "verb\ttake into one's family\ttake in\tThey adopted two children from Nicaragua";
+    }
+    ""
+}

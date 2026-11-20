@@ -1,0 +1,9 @@
+// high school — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_high_school(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 08409617
+    if sense == 1 {
+        return "noun\ta public secondary school usually including grades 9 through 12\tsenior high school, senior high, high, highschool\t";
+    }
+    ""
+}

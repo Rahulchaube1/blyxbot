@@ -1,0 +1,17 @@
+// protestant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_protestant(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02952622
+    if sense == 1 {
+        return "adjective\tof or relating to Protestants or Protestantism\t\tProtestant churches";
+    }
+    // noun 09679316
+    if sense == 2 {
+        return "noun\tan adherent of Protestantism\t\t";
+    }
+    // noun 08087570
+    if sense == 3 {
+        return "noun\tthe Protestant churches and denominations collectively\tProtestant Church\t";
+    }
+    ""
+}

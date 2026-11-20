@@ -1,0 +1,33 @@
+// development — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_development(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 00250259
+    if sense == 1 {
+        return "noun\tact of improving by expanding or enlarging or refining\t\the congratulated them on their development of a plan to meet the emergency";
+    }
+    // noun 13464820
+    if sense == 2 {
+        return "noun\ta process in which something passes by degrees to a different stage (especially a more advanced or mature stage)\tevolution\tthe development of his ideas took many years";
+    }
+    // noun 13489037
+    if sense == 3 {
+        return "noun\t(biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level\tgrowth, growing, maturation, ontogeny, ontogenesis\the proposed an indicator of osseous development in children";
+    }
+    // noun 07423560
+    if sense == 4 {
+        return "noun\ta recent event that has some relevance for the present situation\t\trecent developments in Iraq";
+    }
+    // noun 00948206
+    if sense == 5 {
+        return "noun\tthe act of making some area of land or water more profitable or productive or useful\texploitation\tthe development of Alaskan resources";
+    }
+    // noun 08549070
+    if sense == 6 {
+        return "noun\ta district that has been developed to serve some purpose\t\tsuch land is practical for small park developments";
+    }
+    // noun 14422871
+    if sense == 7 {
+        return "noun\ta state in which things are improving; the result of developing (as in the early part of a game of chess)\t\tafter he saw the latest development he changed his mind and became a supporter";
+    }
+    ""
+}

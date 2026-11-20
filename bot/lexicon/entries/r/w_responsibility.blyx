@@ -1,0 +1,17 @@
+// responsibility — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_responsibility(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 01129920
+    if sense == 1 {
+        return "noun\tthe social force that binds you to the courses of action demanded by that force\tduty, obligation\tevery right implies a responsibility; every opportunity, an obligation; every possession, a duty";
+    }
+    // noun 14515633
+    if sense == 2 {
+        return "noun\tthe proper sphere or extent of your activities\tprovince\t";
+    }
+    // noun 04669247
+    if sense == 3 {
+        return "noun\ta form of trustworthiness; the trait of being answerable to someone for something or being responsible for one's conduct\tresponsibleness\the holds a position of great responsibility";
+    }
+    ""
+}

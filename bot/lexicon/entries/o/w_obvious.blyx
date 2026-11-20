@@ -1,0 +1,9 @@
+// obvious — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_obvious(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01618053
+    if sense == 1 {
+        return "adjective\teasily perceived by the senses or grasped by the mind\t\tobvious errors";
+    }
+    ""
+}

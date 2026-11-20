@@ -1,0 +1,69 @@
+// back — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_back(sense: i64) -> str {
+    if sense == 0 { return "16"; }
+    // adv 00075161
+    if sense == 1 {
+        return "adverb\tin or to or toward a former location\t\tshe went back to her parents' house";
+    }
+    // noun 05558717
+    if sense == 2 {
+        return "noun\tthe posterior part of a human (or animal) body from the neck to the end of the spine\tdorsum\this back was nicely tanned";
+    }
+    // adv 00074407
+    if sense == 3 {
+        return "adverb\tat or to or toward the back or rear\tbackward, backwards, rearward, rearwards\the moved back";
+    }
+    // adv 00075269
+    if sense == 4 {
+        return "adverb\tin or to or toward an original condition\t\the went back to sleep";
+    }
+    // adj 00197576
+    if sense == 5 {
+        return "adjective\trelated to or located at the back\t\tthe back yard";
+    }
+    // adv 00074201
+    if sense == 6 {
+        return "adverb\tin or to or toward a past time\tbackward\tset the clocks back an hour";
+    }
+    // adv 00075367
+    if sense == 7 {
+        return "adverb\tin reply\t\the wrote back three days later";
+    }
+    // noun 04059701
+    if sense == 8 {
+        return "noun\tthe side that goes last or is not normally seen\trear\the wrote the date on the back of the photograph";
+    }
+    // verb 02453889
+    if sense == 9 {
+        return "verb\tbe behind; approve of\tendorse, indorse, plump for, plunk for, support\tI backed Kennedy in 1960";
+    }
+    // verb 01997119
+    if sense == 10 {
+        return "verb\ttravel backward\t\tback into the driveway";
+    }
+    // noun 08625846
+    if sense == 11 {
+        return "noun\tthe part of something that is furthest from the normal viewer\trear\the stood at the back of the stage";
+    }
+    // verb 02556817
+    if sense == 12 {
+        return "verb\tgive support or one's approval to\tsecond, endorse, indorse\tI can't back this plan";
+    }
+    // verb 01997512
+    if sense == 13 {
+        return "verb\tcause to travel backward\t\tback the car into the parking spot";
+    }
+    // verb 02217695
+    if sense == 14 {
+        return "verb\tsupport financial backing for\t\tback this enterprise";
+    }
+    // adj 00131692
+    if sense == 15 {
+        return "adjective\tlocated at or near the back of an animal\thind, hinder\tback (or hind) legs";
+    }
+    // adv 00074964
+    if sense == 16 {
+        return "adverb\tin repayment or retaliation\t\twe paid back everything we had borrowed";
+    }
+    ""
+}

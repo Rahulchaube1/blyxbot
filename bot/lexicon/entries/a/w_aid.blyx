@@ -1,0 +1,25 @@
+// aid — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_aid(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02547586
+    if sense == 1 {
+        return "verb\tgive help or assistance; be of service\thelp, assist\t";
+    }
+    // noun 05154908
+    if sense == 2 {
+        return "noun\ta resource\tassistance, help\tvisual aids in teaching";
+    }
+    // noun 01207609
+    if sense == 3 {
+        return "noun\tthe activity of contributing to the fulfillment of a need or furtherance of an effort or purpose\tassist, assistance, help\trescue party went to their aid";
+    }
+    // noun 13265904
+    if sense == 4 {
+        return "noun\tmoney to support a worthy person or cause\teconomic aid, financial aid\t";
+    }
+    // verb 00082081
+    if sense == 5 {
+        return "verb\timprove the condition of\thelp\t";
+    }
+    ""
+}

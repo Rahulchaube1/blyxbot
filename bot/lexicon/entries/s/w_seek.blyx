@@ -1,0 +1,17 @@
+// seek — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_seek(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02240481
+    if sense == 1 {
+        return "verb\ttry to get or reach\t\tseek a position";
+    }
+    // verb 01315613
+    if sense == 2 {
+        return "verb\ttry to locate or discover, or try to establish the existence of\tsearch, look for\t";
+    }
+    // verb 02530167
+    if sense == 3 {
+        return "verb\tmake an effort or attempt\ttry, attempt, essay, assay\tShe always seeks to do good in the world";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// white — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_white(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00393105
+    if sense == 1 {
+        return "adjective\tbeing of the achromatic color of maximum lightness; having little or no hue owing to reflection of almost all incident light\t\tas white as fresh snow";
+    }
+    // adj 00243180
+    if sense == 2 {
+        return "adjective\tof or belonging to a racial group having light skin coloration\t\tvoting patterns within the white population";
+    }
+    // noun 09638875
+    if sense == 3 {
+        return "noun\ta member of the Caucasoid race\tWhite person, Caucasian\t";
+    }
+    // noun 04960729
+    if sense == 4 {
+        return "noun\tthe quality or state of the achromatic color of greatest lightness (bearing the least resemblance to black)\twhiteness\t";
+    }
+    ""
+}

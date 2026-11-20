@@ -1,0 +1,29 @@
+// cloud — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cloud(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 11439690
+    if sense == 1 {
+        return "noun\tany collection of particles (e.g., smoke or dust) or gases that is visible\t\t";
+    }
+    // noun 09247410
+    if sense == 2 {
+        return "noun\ta visible mass of water or ice particles suspended at a considerable altitude\t\t";
+    }
+    // noun 13960357
+    if sense == 3 {
+        return "noun\tout of touch with reality\t\this head was in the clouds";
+    }
+    // verb 02770717
+    if sense == 4 {
+        return "verb\tmake overcast or cloudy\tovercast\t";
+    }
+    // verb 02157731
+    if sense == 5 {
+        return "verb\tmake less visible or unclear\tobscure, befog, becloud, obnubilate, haze over, fog, mist\tThe stars are obscured by the clouds";
+    }
+    // verb 02041577
+    if sense == 6 {
+        return "verb\tbillow up in the form of a cloud\t\tThe smoke clouded above the houses";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// cold — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cold(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01251128
+    if sense == 1 {
+        return "adjective\thaving a low or inadequate temperature or feeling a sensation of coldness or having been made cold by e.g. ice or refrigeration\t\ta cold climate";
+    }
+    // adj 01257612
+    if sense == 2 {
+        return "adjective\textended meanings; especially of psychological coldness; without human warmth or emotion\t\ta cold unfriendly nod";
+    }
+    // noun 14145501
+    if sense == 3 {
+        return "noun\ta mild viral infection involving the nose and respiratory passages (but not the lungs)\tcommon cold\twill they never find a cure for the common cold?";
+    }
+    // noun 05015117
+    if sense == 4 {
+        return "noun\tthe absence of heat\tcoldness, low temperature, frigidity, frigidness\tcome in out of the cold";
+    }
+    // adj 01069454
+    if sense == 5 {
+        return "adjective\thaving lost freshness through passage of time\t\ta cold trail";
+    }
+    ""
+}

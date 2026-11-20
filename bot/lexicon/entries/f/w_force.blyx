@@ -1,0 +1,65 @@
+// force — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_force(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // verb 02504562
+    if sense == 1 {
+        return "verb\tto cause to do through pressure or necessity, by physical, moral or intellectual means :\"She forced him to take a job in the city\"\tcoerce, hale, squeeze, pressure\t";
+    }
+    // noun 05194578
+    if sense == 2 {
+        return "noun\ta powerful effect or influence\t\tthe force of his eloquence easily persuaded them";
+    }
+    // noun 11458624
+    if sense == 3 {
+        return "noun\t(physics) the influence that produces a change in a physical quantity\t\tforce equals mass times acceleration";
+    }
+    // noun 05035353
+    if sense == 4 {
+        return "noun\tphysical energy or intensity\tforcefulness, strength\the hit with all the force he could muster";
+    }
+    // verb 01650425
+    if sense == 5 {
+        return "verb\turge or force (a person) to an action; constrain or motivate\timpel\t";
+    }
+    // noun 08208016
+    if sense == 6 {
+        return "noun\tgroup of people willing to obey orders\tpersonnel\ta public force is necessary to give security to the rights of citizens";
+    }
+    // verb 01871979
+    if sense == 7 {
+        return "verb\tmove with force, \"He pushed the table into a corner\"\tpush\t";
+    }
+    // noun 08198398
+    if sense == 8 {
+        return "noun\ta unit that is part of some military service\tmilitary unit, military force, military group\the sent Caesar a force of six thousand men";
+    }
+    // verb 00747418
+    if sense == 9 {
+        return "verb\timpose urgently, importunately, or inexorably\tthrust\tShe forced her diet fads on him";
+    }
+    // noun 00965404
+    if sense == 10 {
+        return "noun\tan act of aggression (as one against a person who resists)\tviolence\the may accomplish by craft in the long run what he cannot do by force and violence in the short one";
+    }
+    // verb 01527271
+    if sense == 11 {
+        return "verb\tsqueeze like a wedge into a tight space\twedge, squeeze\t";
+    }
+    // verb 01516534
+    if sense == 12 {
+        return "verb\tforce into or from an action or state, either physically or metaphorically\tdrive, ram\t";
+    }
+    // noun 10461424
+    if sense == 13 {
+        return "noun\tone possessing or exercising power or influence or authority\tpower\tmay the force be with you";
+    }
+    // verb 01448100
+    if sense == 14 {
+        return "verb\tcause to move by pulling\tpull, draw\t";
+    }
+    // verb 01350449
+    if sense == 15 {
+        return "verb\tdo forcibly; exert force\t\tDon't force it!";
+    }
+    ""
+}

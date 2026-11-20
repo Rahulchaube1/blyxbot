@@ -1,0 +1,37 @@
+// defense — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_defense(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 00954311
+    if sense == 1 {
+        return "noun\t(military) military action or resources protecting a country against potential enemies\tdefence, defensive measure\tthey died in the defense of Stalingrad";
+    }
+    // noun 00823750
+    if sense == 2 {
+        return "noun\tprotection from harm\tdefence\tsanitation is the best defense against disease";
+    }
+    // noun 08081403
+    if sense == 3 {
+        return "noun\t(sports) the team that is trying to prevent the other team from scoring\tdefence, defending team\this teams are always good on defense";
+    }
+    // noun 06740644
+    if sense == 4 {
+        return "noun\tthe justification for some act or belief\tdefence, vindication\the offered a persuasive defense of the theory";
+    }
+    // noun 13459322
+    if sense == 5 {
+        return "noun\t(psychiatry) an unconscious process that tries to reduce the anxiety associated with instinctive desires\tdefense mechanism, defense reaction, defence mechanism, defence reaction, defence\t";
+    }
+    // noun 08131530
+    if sense == 6 {
+        return "noun\tthe federal department responsible for safeguarding national security of the United States; created in 1947\tDepartment of Defense, Defense Department, United States Department of Defense, DoD\t";
+    }
+    // noun 08064523
+    if sense == 7 {
+        return "noun\tthe defendant and his legal advisors collectively\tdefence, defense team, defense lawyers\tthe defense called for a mistrial";
+    }
+    // noun 07200813
+    if sense == 8 {
+        return "noun\tthe speech act of answering an attack on your assertions\trefutation, defence\tin defense he said the other man started it";
+    }
+    ""
+}

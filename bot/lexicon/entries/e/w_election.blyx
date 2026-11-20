@@ -1,0 +1,13 @@
+// election — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_election(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00181781
+    if sense == 1 {
+        return "noun\ta vote to select the winner of a position or political office\t\tthe results of the election will be announced tonight";
+    }
+    // noun 00180962
+    if sense == 2 {
+        return "noun\tthe act of selecting someone or something; the exercise of deliberate choice\t\ther election of medicine as a profession";
+    }
+    ""
+}

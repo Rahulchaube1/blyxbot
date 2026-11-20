@@ -1,0 +1,21 @@
+// launch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_launch(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02427103
+    if sense == 1 {
+        return "verb\tset up or found\testablish, set up, found\t";
+    }
+    // verb 01514655
+    if sense == 2 {
+        return "verb\tpropel with force\t\tlaunch the space shuttle";
+    }
+    // verb 01515415
+    if sense == 3 {
+        return "verb\tlaunch for the first time; launch on a maiden voyage\t\tlaunch a ship";
+    }
+    // verb 00347918
+    if sense == 4 {
+        return "verb\tbegin with vigor\tplunge\tHe launched into a long diatribe";
+    }
+    ""
+}

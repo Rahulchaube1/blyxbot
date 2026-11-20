@@ -1,0 +1,29 @@
+// make up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_make_up(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02620587
+    if sense == 1 {
+        return "verb\tform or compose\tconstitute, represent, comprise, be\t";
+    }
+    // verb 01753465
+    if sense == 2 {
+        return "verb\tdevise or compose\t\t";
+    }
+    // verb 02253456
+    if sense == 3 {
+        return "verb\tdo or give something to somebody in return\tpay, pay off, compensate\t";
+    }
+    // verb 02520730
+    if sense == 4 {
+        return "verb\tmake up work that was missed due to absence at a later point\tcatch up with\tI have to make up a French exam";
+    }
+    // verb 01634424
+    if sense == 5 {
+        return "verb\tmake up something artificial or untrue\tfabricate, manufacture, cook up, invent\t";
+    }
+    // verb 00276068
+    if sense == 6 {
+        return "verb\tput in order or neaten\tmake\tmake up a room";
+    }
+    ""
+}

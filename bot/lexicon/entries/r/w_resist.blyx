@@ -1,0 +1,21 @@
+// resist — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_resist(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02707800
+    if sense == 1 {
+        return "verb\telude, especially in a baffling way\tdefy, refuse\t";
+    }
+    // verb 01116585
+    if sense == 2 {
+        return "verb\tstand up or offer resistance to somebody or something\thold out, withstand, stand firm\t";
+    }
+    // verb 02521410
+    if sense == 3 {
+        return "verb\texpress opposition through action or words\tprotest, dissent\t";
+    }
+    // verb 01115916
+    if sense == 4 {
+        return "verb\twithstand the force of something\tstand, fend\tThe trees resisted her";
+    }
+    ""
+}

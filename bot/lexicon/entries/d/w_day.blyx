@@ -1,0 +1,29 @@
+// day — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_day(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 15155220
+    if sense == 1 {
+        return "noun\ttime for Earth to make a complete rotation on its axis\ttwenty-four hours, twenty-four hour period, 24-hour interval, solar day, mean solar day\ttwo days later they left";
+    }
+    // noun 15123115
+    if sense == 2 {
+        return "noun\tsome point or period in time\t\tit should arrive any day now";
+    }
+    // noun 15157225
+    if sense == 3 {
+        return "noun\ta day assigned to a particular purpose or observance\t\tMother's Day";
+    }
+    // noun 15164957
+    if sense == 4 {
+        return "noun\tthe time after sunrise and before sunset while it is light outside\tdaytime, daylight\tthe dawn turned night into day";
+    }
+    // noun 15136453
+    if sense == 5 {
+        return "noun\tthe recurring hours when you are not sleeping (especially those when you are working)\t\tmy day began early this morning";
+    }
+    // noun 15249236
+    if sense == 6 {
+        return "noun\tan era of existence or influence\t\tin the day of the dinosaurs";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// persist — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_persist(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02647497
+    if sense == 1 {
+        return "verb\tcontinue to exist\tprevail, die hard, run, endure\t";
+    }
+    // verb 00350461
+    if sense == 2 {
+        return "verb\tbe persistent, refuse to stop\tpersevere, hang in, hang on, hold on\the persisted to call me every night";
+    }
+    // verb 02731024
+    if sense == 3 {
+        return "verb\tstay behind\tremain, stay\t";
+    }
+    ""
+}

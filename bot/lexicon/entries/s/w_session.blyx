@@ -1,0 +1,17 @@
+// session — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_session(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 07145508
+    if sense == 1 {
+        return "noun\ta meeting for execution of a group's functions\t\tit was the opening session of the legislature";
+    }
+    // noun 15225249
+    if sense == 2 {
+        return "noun\tthe time during which a school holds classes\tschool term, academic term, academic session\t";
+    }
+    // noun 01232091
+    if sense == 3 {
+        return "noun\ta meeting devoted to a particular activity\t\ta filming session";
+    }
+    ""
+}

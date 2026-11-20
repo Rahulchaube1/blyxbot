@@ -1,0 +1,25 @@
+// complement — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_complement(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 06315638
+    if sense == 1 {
+        return "noun\ta word or phrase used to complete a grammatical construction\t\t";
+    }
+    // verb 00455919
+    if sense == 2 {
+        return "verb\tmake complete or perfect; supply what is wanting or form the complement to\t\tI need some pepper to complement the sweet touch in the soup";
+    }
+    // noun 13591998
+    if sense == 3 {
+        return "noun\ta complete number or quantity\t\ta full complement";
+    }
+    // noun 08218212
+    if sense == 4 {
+        return "noun\tnumber needed to make up a whole force\tfull complement\ta full complement of workers";
+    }
+    // noun 05109511
+    if sense == 5 {
+        return "noun\tsomething added to complete or embellish or make perfect\taccompaniment\ta fine wine is a perfect complement to the dinner";
+    }
+    ""
+}

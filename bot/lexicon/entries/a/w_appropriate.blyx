@@ -1,0 +1,17 @@
+// appropriate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_appropriate(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00134701
+    if sense == 1 {
+        return "adjective\tsuitable for a particular person or place or condition etc\t\ta book not appropriate for children";
+    }
+    // verb 00724150
+    if sense == 2 {
+        return "verb\tgive or assign a resource to a particular person or cause\tallow, earmark, set aside, reserve\t";
+    }
+    // verb 02272549
+    if sense == 3 {
+        return "verb\ttake possession of by force, as after an invasion\tcapture, seize, conquer\t";
+    }
+    ""
+}

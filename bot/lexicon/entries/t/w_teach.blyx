@@ -1,0 +1,13 @@
+// teach — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_teach(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00829107
+    if sense == 1 {
+        return "verb\timpart skills or knowledge to\tlearn, instruct\t";
+    }
+    // verb 00273734
+    if sense == 2 {
+        return "verb\taccustom gradually to some action or attitude\t\t";
+    }
+    ""
+}

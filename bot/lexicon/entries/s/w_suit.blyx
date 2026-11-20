@@ -1,0 +1,25 @@
+// suit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_suit(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 04350905
+    if sense == 1 {
+        return "noun\ta set of garments (usually including a jacket and trousers or skirt) for outerwear all of the same fabric and color\tsuit of clothes\tthey buried him in his best suit";
+    }
+    // verb 02702830
+    if sense == 2 {
+        return "verb\tbe agreeable or acceptable to\taccommodate, fit\tThis suits my needs";
+    }
+    // noun 01182654
+    if sense == 3 {
+        return "noun\ta comprehensive term for any proceeding in a court of law whereby an individual seeks a legal remedy\tlawsuit, case, cause, causa\tthe family brought suit against the landlord";
+    }
+    // verb 02735282
+    if sense == 4 {
+        return "verb\tbe agreeable or acceptable\t\tThis time suits me";
+    }
+    // verb 02699941
+    if sense == 5 {
+        return "verb\taccord or comport with\tbefit, beseem\tThis kind of behavior does not suit a young woman!";
+    }
+    ""
+}

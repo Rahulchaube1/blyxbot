@@ -1,0 +1,9 @@
+// merely — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_merely(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00004722
+    if sense == 1 {
+        return "adverb\tand nothing more\tsimply, just, only, but\tI was merely asking";
+    }
+    ""
+}

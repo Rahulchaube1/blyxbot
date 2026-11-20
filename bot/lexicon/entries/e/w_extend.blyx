@@ -1,0 +1,45 @@
+// extend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_extend(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 00540235
+    if sense == 1 {
+        return "verb\textend in scope or range or area\twiden, broaden\tThe law was extended to all citizens";
+    }
+    // verb 02685951
+    if sense == 2 {
+        return "verb\tstretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point\trun, go, pass, lead\tMy memory extends back to my fourth year of life";
+    }
+    // verb 02687916
+    if sense == 3 {
+        return "verb\tspan an interval of distance, space or time\tcover, continue\tThe war extended over five years";
+    }
+    // verb 02297948
+    if sense == 4 {
+        return "verb\tmake available; provide\toffer\textend a loan";
+    }
+    // verb 00027705
+    if sense == 5 {
+        return "verb\tthrust or extend out\texsert, stretch out, put out, hold out, stretch forth\textend a hand";
+    }
+    // verb 02690093
+    if sense == 6 {
+        return "verb\treach outward in space\tpoke out, reach out\tThe awning extends several feet over the sidewalk";
+    }
+    // verb 02297742
+    if sense == 7 {
+        return "verb\toffer verbally\toffer\textend my greetings";
+    }
+    // verb 00027268
+    if sense == 8 {
+        return "verb\textend one's limbs or muscles, or the entire body\tstretch\tExtend your right arm above your head";
+    }
+    // verb 00540946
+    if sense == 9 {
+        return "verb\texpand the influence of\texpand\tThe King extended his rule to the Eastern part of the continent";
+    }
+    // verb 00317888
+    if sense == 10 {
+        return "verb\tlengthen in time; cause to be or last longer\tprolong, protract, draw out\tShe extended her visit by another day";
+    }
+    ""
+}

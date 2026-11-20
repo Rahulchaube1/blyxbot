@@ -1,0 +1,21 @@
+// example — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_example(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05820620
+    if sense == 1 {
+        return "noun\tan item of information that is typical of a class or group\tillustration, instance, representative\tthis patient provides a typical example of the syndrome";
+    }
+    // noun 05937112
+    if sense == 2 {
+        return "noun\ta representative form or pattern\tmodel\tI profited from his example";
+    }
+    // noun 05925366
+    if sense == 3 {
+        return "noun\tsomething to be imitated\texemplar, model, good example\t";
+    }
+    // noun 06672752
+    if sense == 4 {
+        return "noun\tpunishment intended as a warning to others\tdeterrent example, lesson, object lesson\tthey decided to make an example of him";
+    }
+    ""
+}

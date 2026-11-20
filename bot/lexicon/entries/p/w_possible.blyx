@@ -1,0 +1,17 @@
+// possible — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_possible(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01821266
+    if sense == 1 {
+        return "adjective\tcapable of happening or existing\t\ta breakthrough may be possible next year";
+    }
+    // adj 00044353
+    if sense == 2 {
+        return "adjective\texisting in possibility\tpotential\tpossible uses of nuclear power";
+    }
+    // noun 05792192
+    if sense == 3 {
+        return "noun\tsomething that can be done\t\tpolitics is the art of the possible";
+    }
+    ""
+}

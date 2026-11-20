@@ -1,0 +1,9 @@
+// england — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_england(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 08871007
+    if sense == 1 {
+        return "noun\ta division of the United Kingdom\t\t";
+    }
+    ""
+}

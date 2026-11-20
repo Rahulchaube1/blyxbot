@@ -1,0 +1,17 @@
+// discovery — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_discovery(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00043195
+    if sense == 1 {
+        return "noun\tthe act of discovering something\tfind, uncovering\t";
+    }
+    // noun 07214432
+    if sense == 2 {
+        return "noun\tsomething that is discovered\t\t";
+    }
+    // noun 05808218
+    if sense == 3 {
+        return "noun\ta productive insight\tbreakthrough, find\t";
+    }
+    ""
+}

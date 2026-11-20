@@ -1,0 +1,17 @@
+// complex — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_complex(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02176178
+    if sense == 1 {
+        return "adjective\tcomplicated in structure; consisting of interconnected parts\t\ta complex set of variations based on a simple folk melody";
+    }
+    // noun 05870365
+    if sense == 2 {
+        return "noun\ta conceptual whole made up of complicated and related parts\tcomposite\tthe complex of shopping malls, houses, and roads created a new town";
+    }
+    // noun 14817592
+    if sense == 3 {
+        return "noun\ta compound described in terms of the central atom to which other atoms are bound or coordinated\tcoordination compound\t";
+    }
+    ""
+}

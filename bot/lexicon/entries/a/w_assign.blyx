@@ -1,0 +1,25 @@
+// assign — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_assign(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02391803
+    if sense == 1 {
+        return "verb\tgive an assignment to (a person) to a post, or assign a task to (a person)\tdelegate, designate, depute\t";
+    }
+    // verb 02228698
+    if sense == 2 {
+        return "verb\tgive out\tallot, portion\tWe were assigned new uniforms";
+    }
+    // verb 00726300
+    if sense == 3 {
+        return "verb\tattribute or credit to\timpute, ascribe, attribute\t";
+    }
+    // verb 00677683
+    if sense == 4 {
+        return "verb\tselect something or someone for a specific purpose\tspecify, set apart\tThe teacher assigned him to lead his classmates in the exercise";
+    }
+    // verb 01160370
+    if sense == 5 {
+        return "verb\tattribute or give\tput\t";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// summer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_summer(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 15237250
+    if sense == 1 {
+        return "noun\tthe warmest season of the year; in the northern hemisphere it extends from the summer solstice to the autumnal equinox\tsummertime\tthey spent a lazy summer at the shore";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// tear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tear(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01573515
+    if sense == 1 {
+        return "verb\tseparate or cause to separate abruptly\trupture, snap, bust\ttear the paper";
+    }
+    // verb 01556346
+    if sense == 2 {
+        return "verb\tto separate or be separated by force\t\t";
+    }
+    // noun 05405324
+    if sense == 3 {
+        return "noun\ta drop of the clear salty saline solution secreted by the lacrimal glands\tteardrop\this story brought tears to her eyes";
+    }
+    // verb 02055267
+    if sense == 4 {
+        return "verb\tmove quickly and violently\tshoot, shoot down, charge, buck\t";
+    }
+    // noun 09410928
+    if sense == 5 {
+        return "noun\tan opening made forcibly as by pulling apart\trip, rent, snag, split\t";
+    }
+    // verb 01384275
+    if sense == 6 {
+        return "verb\tstrip of feathers\tpluck, pull, deplume, deplumate, displume\t";
+    }
+    ""
+}

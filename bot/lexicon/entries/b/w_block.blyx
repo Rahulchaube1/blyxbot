@@ -1,0 +1,41 @@
+// block — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_block(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 02852523
+    if sense == 1 {
+        return "noun\ta solid piece of something (usually having flat rectangular sides)\t\tthe pyramids were built with large stone blocks";
+    }
+    // verb 01478002
+    if sense == 2 {
+        return "verb\trender unsuitable for passage\tbarricade, blockade, stop, block off, block up, bar\tblock the way";
+    }
+    // noun 08642145
+    if sense == 3 {
+        return "noun\ta rectangular area in a city surrounded by streets and usually containing several buildings\tcity block\the lives in the next block";
+    }
+    // verb 02557199
+    if sense == 4 {
+        return "verb\thinder or prevent the progress or accomplishment of\tobstruct, blockade, hinder, stymie, stymy, embarrass\tHis brother blocked him at every turn";
+    }
+    // noun 13914608
+    if sense == 5 {
+        return "noun\ta three-dimensional shape with six square or rectangular sides\tcube\t";
+    }
+    // noun 07954014
+    if sense == 6 {
+        return "noun\ta number or quantity of related things dealt with as a unit\t\the reserved a large block of seats";
+    }
+    // noun 02853016
+    if sense == 7 {
+        return "noun\thousing in a large building that is divided into separate units\t\tthere is a block of classrooms in the west wing";
+    }
+    // verb 02559752
+    if sense == 8 {
+        return "verb\tstop from happening or developing\tstop, halt, kibosh\tBlock his election";
+    }
+    // verb 01057034
+    if sense == 9 {
+        return "verb\tinterfere with or prevent the reception of signals\tjam\tblock the signals emitted by this station";
+    }
+    ""
+}

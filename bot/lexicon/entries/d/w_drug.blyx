@@ -1,0 +1,13 @@
+// drug — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_drug(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 03247620
+    if sense == 1 {
+        return "noun\ta substance that is used as a medicine or narcotic\t\t";
+    }
+    // verb 00084738
+    if sense == 2 {
+        return "verb\tadminister a drug to\tdose\tThey drugged the kidnapped tourist";
+    }
+    ""
+}

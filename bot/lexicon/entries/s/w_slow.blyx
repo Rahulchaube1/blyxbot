@@ -1,0 +1,33 @@
+// slow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_slow(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 00980527
+    if sense == 1 {
+        return "adjective\tnot moving quickly; taking a comparatively long time\t\ta slow walker";
+    }
+    // verb 00439958
+    if sense == 2 {
+        return "verb\tlose velocity; move more slowly\tdecelerate, slow down, slow up, retard\t";
+    }
+    // adj 00982602
+    if sense == 3 {
+        return "adjective\tat a slow tempo\t\tthe band played a slow waltz";
+    }
+    // verb 00440580
+    if sense == 4 {
+        return "verb\tbecome slow or slower\tslow down, slow up, slack, slacken\tProduction slowed";
+    }
+    // adv 00161630
+    if sense == 5 {
+        return "adverb\twithout speed (`slow' is sometimes used informally for `slowly')\tslowly, easy, tardily\tplease go slow so I can see the sights";
+    }
+    // verb 00440786
+    if sense == 6 {
+        return "verb\tcause to proceed more slowly\tslow down, slow up\tThe illness slowed him down";
+    }
+    // adj 00440579
+    if sense == 7 {
+        return "adjective\tslow to learn or understand; lacking intellectual acuity\tdense, dim, dull, dumb, obtuse\tworked with the slow students";
+    }
+    ""
+}

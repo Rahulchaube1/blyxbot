@@ -1,0 +1,17 @@
+// find out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_find_out(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00918872
+    if sense == 1 {
+        return "verb\testablish after a calculation, investigation, experiment, survey, or study\tdetermine, find, ascertain\t";
+    }
+    // verb 00598954
+    if sense == 2 {
+        return "verb\tget to know or become aware of, usually accidentally\tlearn, hear, get word, get wind, pick up, get a line, discover, see\t";
+    }
+    // verb 00920336
+    if sense == 3 {
+        return "verb\tfind out, learn, or determine with certainty, usually by making an inquiry or other effort\tdetermine, check, see, ascertain, watch, learn\tfind out if he speaks Russian";
+    }
+    ""
+}

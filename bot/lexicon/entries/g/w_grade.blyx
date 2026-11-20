@@ -1,0 +1,21 @@
+// grade — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_grade(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08238463
+    if sense == 1 {
+        return "noun\ta body of students who are taught together\tclass, form, course\t";
+    }
+    // noun 14428160
+    if sense == 2 {
+        return "noun\ta relative position or degree of value in a graded group\tlevel, tier\tlumber of the highest grade";
+    }
+    // noun 05068716
+    if sense == 3 {
+        return "noun\tthe gradient of a slope or road or other surface\t\tthe road had a steep grade";
+    }
+    // verb 00658052
+    if sense == 4 {
+        return "verb\tassign a rank or rating to\trate, rank, range, order, place\t";
+    }
+    ""
+}

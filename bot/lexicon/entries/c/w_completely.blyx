@@ -1,0 +1,13 @@
+// completely — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_completely(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00008007
+    if sense == 1 {
+        return "adverb\tto a complete degree or to the full or entire extent (`whole' is often used informally for `wholly')\twholly, entirely, totally, all, altogether, whole\tit was completely different from what we expected";
+    }
+    // adv 00157624
+    if sense == 2 {
+        return "adverb\tso as to be complete; with everything necessary\t\the had filled out the form completely";
+    }
+    ""
+}

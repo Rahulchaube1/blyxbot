@@ -1,0 +1,13 @@
+// consciousness — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_consciousness(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05675130
+    if sense == 1 {
+        return "noun\tan alert cognitive state in which you are aware of yourself and your situation\t\the lost consciousness";
+    }
+    // noun 05675905
+    if sense == 2 {
+        return "noun\thaving knowledge of\tawareness, cognizance, cognisance, knowingness\this sudden consciousness of the problem he faced";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// invite — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_invite(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01760143
+    if sense == 1 {
+        return "verb\tincrease the likelihood of\task for\tinvite criticism";
+    }
+    // verb 02384686
+    if sense == 2 {
+        return "verb\tinvite someone to one's house\task over, ask round\tCan I invite you for dinner on Sunday night?";
+    }
+    // verb 01807529
+    if sense == 3 {
+        return "verb\tgive rise to a desire by being attractive or inviting\ttempt\t";
+    }
+    // verb 00793580
+    if sense == 4 {
+        return "verb\task someone in a friendly way to do something\tbid\t";
+    }
+    // verb 02384940
+    if sense == 5 {
+        return "verb\thave as a guest\tpay for\tI invited them to a restaurant";
+    }
+    // verb 01469770
+    if sense == 6 {
+        return "verb\task to enter\task in\tWe invited the neighbors in for a cup of coffee";
+    }
+    // verb 01063695
+    if sense == 7 {
+        return "verb\trequest the participation or presence of\tcall for\tThe organizers invite submissions of papers for the conference";
+    }
+    ""
+}

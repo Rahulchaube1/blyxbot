@@ -1,0 +1,25 @@
+// link — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_link(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00713167
+    if sense == 1 {
+        return "verb\tmake a logical or causal connection\tassociate, tie in, relate, colligate, link up, connect\t";
+    }
+    // noun 13792692
+    if sense == 2 {
+        return "noun\tthe means of connection between things linked in series\tnexus\t";
+    }
+    // noun 03673971
+    if sense == 3 {
+        return "noun\ta fastener that serves to join or connect\tlinkup, tie, tie-in\tthe walls are held together with metal links placed in the wet mortar during construction";
+    }
+    // verb 01354673
+    if sense == 4 {
+        return "verb\tconnect, fasten, or put together two or more pieces\tconnect, tie, link up\tLink arms";
+    }
+    // verb 02622234
+    if sense == 5 {
+        return "verb\tbe or become joined or united or linked\tconnect, link up, join, unite\tThe travelers linked up again at the airport";
+    }
+    ""
+}

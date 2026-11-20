@@ -1,0 +1,13 @@
+// freedom — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_freedom(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13991823
+    if sense == 1 {
+        return "noun\tthe condition of being free; the power to act or speak or think without externally imposed restraints\t\t";
+    }
+    // noun 14528873
+    if sense == 2 {
+        return "noun\timmunity from an obligation or duty\texemption\t";
+    }
+    ""
+}

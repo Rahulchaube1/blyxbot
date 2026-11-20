@@ -1,0 +1,69 @@
+// cut — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cut(sense: i64) -> str {
+    if sense == 0 { return "16"; }
+    // verb 01552519
+    if sense == 1 {
+        return "verb\tseparate with or as if with an instrument\t\tCut the rope";
+    }
+    // verb 00429060
+    if sense == 2 {
+        return "verb\tcut down on; make a reduction in\treduce, cut down, cut back, trim, trim down, trim back, bring down\tThe employer wants to cut back health benefits";
+    }
+    // verb 02033295
+    if sense == 3 {
+        return "verb\tturn sharply; change direction abruptly\tswerve, sheer, curve, trend, veer, slue, slew\tThe car cut to the left at the intersection";
+    }
+    // adj 00661278
+    if sense == 4 {
+        return "adjective\tseparated into parts or laid open or penetrated with a sharp edge or instrument\t\tthe cut surface was mottled";
+    }
+    // verb 01610834
+    if sense == 5 {
+        return "verb\tmake an incision or separation\t\tcut along the dotted line";
+    }
+    // noun 13289159
+    if sense == 6 {
+        return "noun\ta share of the profits\t\teveryone got a cut of the earnings";
+    }
+    // noun 06618234
+    if sense == 7 {
+        return "noun\t(film) an immediate transition from one shot to the next\t\tthe cut from the accident scene to the hospital seemed too abrupt";
+    }
+    // noun 03152619
+    if sense == 8 {
+        return "noun\ta trench resembling a furrow that was made by erosion or excavation\tgash\t";
+    }
+    // verb 02422283
+    if sense == 9 {
+        return "verb\tdischarge from a group\t\tThe coach cut two players from the team";
+    }
+    // verb 01754915
+    if sense == 10 {
+        return "verb\tform by probing, penetrating, or digging\t\tcut a hole";
+    }
+    // verb 01666717
+    if sense == 11 {
+        return "verb\tstyle and tailor in a certain fashion\ttailor\tcut a dress";
+    }
+    // verb 01413917
+    if sense == 12 {
+        return "verb\thit (a ball) with a spin so that it turns in the opposite direction\t\tcut a Ping-Pong ball";
+    }
+    // verb 01064799
+    if sense == 13 {
+        return "verb\tmake out and issue\twrite out, issue, make out\tcut a ticket";
+    }
+    // verb 00201722
+    if sense == 14 {
+        return "verb\tcut and assemble the components of\tedit, edit out\tcut recording tape";
+    }
+    // adj 00663267
+    if sense == 15 {
+        return "adjective\tfashioned or shaped by cutting\t\ta well-cut suit";
+    }
+    // adj 00004615
+    if sense == 16 {
+        return "adjective\twith parts removed\tshortened\tthe drastically cut film";
+    }
+    ""
+}

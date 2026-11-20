@@ -1,0 +1,49 @@
+// command — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_command(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // noun 07168131
+    if sense == 1 {
+        return "noun\tan authoritative direction or instruction to do something\tbid, bidding, dictation\t";
+    }
+    // noun 08190292
+    if sense == 2 {
+        return "noun\ta military unit or region under the control of a single officer\t\t";
+    }
+    // verb 00751887
+    if sense == 3 {
+        return "verb\tbe in command of\t\tThe general commanded a huge army";
+    }
+    // verb 00751567
+    if sense == 4 {
+        return "verb\tmake someone do something\trequire\t";
+    }
+    // verb 01018177
+    if sense == 5 {
+        return "verb\tdemand as one's due\t\tThis speaker commands a high fee";
+    }
+    // noun 05197797
+    if sense == 6 {
+        return "noun\tthe power or authority to command\t\tan admiral in command";
+    }
+    // noun 04719376
+    if sense == 7 {
+        return "noun\tavailability for use\t\tthe materials at the command of the potters grew";
+    }
+    // noun 13953608
+    if sense == 8 {
+        return "noun\ta position of highest authority\t\tthe corporation has just undergone a change in command";
+    }
+    // noun 05641959
+    if sense == 9 {
+        return "noun\tgreat skillfulness and knowledge of some subject or activity\tcontrol, mastery\ta good command of French";
+    }
+    // verb 02696129
+    if sense == 10 {
+        return "verb\tlook down on\tdominate, overlook, overtop\t";
+    }
+    // verb 02441022
+    if sense == 11 {
+        return "verb\texercise authoritative control or power over\tcontrol\tCommand the military forces";
+    }
+    ""
+}

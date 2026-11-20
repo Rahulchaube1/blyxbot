@@ -1,0 +1,13 @@
+// two — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_two(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02186470
+    if sense == 1 {
+        return "adjective\tbeing one more than one\t2, ii\the received two messages";
+    }
+    // noun 13743269
+    if sense == 2 {
+        return "noun\tthe cardinal number that is the sum of one and one or a numeral representing this number\t2, II, deuce\t";
+    }
+    ""
+}

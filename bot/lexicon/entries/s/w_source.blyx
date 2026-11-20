@@ -1,0 +1,29 @@
+// source — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_source(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 08507558
+    if sense == 1 {
+        return "noun\tthe place where something begins, where it springs into being\tbeginning, origin, root, rootage\tPittsburgh is the source of the Ohio River";
+    }
+    // noun 06675122
+    if sense == 2 {
+        return "noun\ta document (or organization) from which information is obtained\t\tthe reporter had two sources for the story";
+    }
+    // noun 05834758
+    if sense == 3 {
+        return "noun\tanything that provides inspiration for later work\tseed, germ\t";
+    }
+    // noun 04263614
+    if sense == 4 {
+        return "noun\ta facility where something is available\t\t";
+    }
+    // noun 10205985
+    if sense == 5 {
+        return "noun\ta person who supplies information\tinformant\t";
+    }
+    // noun 10126177
+    if sense == 6 {
+        return "noun\tsomeone who originates or causes or initiates something\tgenerator, author\t";
+    }
+    ""
+}

@@ -1,0 +1,49 @@
+// quiet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_quiet(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // adj 01922763
+    if sense == 1 {
+        return "adjective\tcharacterized by an absence or near absence of agitation or activity\t\ta quiet life";
+    }
+    // adj 01918984
+    if sense == 2 {
+        return "adjective\tfree of noise or uproar; or making little if any sound\t\ta quiet audience at the concert";
+    }
+    // adj 01849170
+    if sense == 3 {
+        return "adjective\tnot showy or obtrusive\trestrained\tclothes in quiet good taste";
+    }
+    // noun 14522956
+    if sense == 4 {
+        return "noun\ta period of calm weather\tlull\t";
+    }
+    // noun 13969101
+    if sense == 5 {
+        return "noun\tan untroubled state; free from disturbances\ttranquillity, tranquility\t";
+    }
+    // noun 04982207
+    if sense == 6 {
+        return "noun\tthe absence of sound\tsilence\tthe street was quiet";
+    }
+    // verb 02190188
+    if sense == 7 {
+        return "verb\tbecome quiet or quieter\tquieten, hush, quiesce, quiet down, pipe down\t";
+    }
+    // verb 01764800
+    if sense == 8 {
+        return "verb\tmake calm or still\tcalm, calm down, tranquilize, tranquillize, tranquillise, quieten, lull, still\tquiet the dragons of worry and fear";
+    }
+    // adj 01455540
+    if sense == 9 {
+        return "adjective\tin a softened tone\thushed, muted, subdued\ta quiet reprimand";
+    }
+    // adj 00302951
+    if sense == 10 {
+        return "adjective\t(of a body of water) free from disturbance by heavy waves\tplacid, still, tranquil, smooth, unruffled\tthe quiet waters of a lagoon";
+    }
+    // adv 00229568
+    if sense == 11 {
+        return "adverb\twith little or no activity or no agitation (`quiet' is a nonstandard variant for `quietly')\tquietly\tsit here as quiet as you can";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// assume — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_assume(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00632236
+    if sense == 1 {
+        return "verb\ttake to be the case or to be true; accept without verification or proof\tpresume, take for granted\tI assume his train was late";
+    }
+    // verb 02381726
+    if sense == 2 {
+        return "verb\ttake on titles, offices, duties, responsibilities\tadopt, take on, take over\tWhen will the new President assume office?";
+    }
+    // verb 00524682
+    if sense == 3 {
+        return "verb\ttake on a certain form, attribute, or aspect\tacquire, adopt, take on, take\tShe assumed strange manners";
+    }
+    // verb 02301825
+    if sense == 4 {
+        return "verb\ttake on as one's own the expenses or debts of another person\tbear, take over, accept\t";
+    }
+    // verb 01982395
+    if sense == 5 {
+        return "verb\toccupy or take on\ttake, strike, take up\tHe assumes the lotus position";
+    }
+    ""
+}

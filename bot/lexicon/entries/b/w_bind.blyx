@@ -1,0 +1,29 @@
+// bind — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bind(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01356750
+    if sense == 1 {
+        return "verb\tstick to firmly\tadhere, hold fast, bond, stick, stick to\t";
+    }
+    // verb 02538086
+    if sense == 2 {
+        return "verb\tcreate social or emotional ties\ttie, attach, bond\t";
+    }
+    // verb 01303242
+    if sense == 3 {
+        return "verb\tmake fast; tie or secure, with or as if with a rope\t\tThe Chinese would bind the feet of their women";
+    }
+    // verb 01303547
+    if sense == 4 {
+        return "verb\twrap around with something so as to cover or enclose\tbandage\t";
+    }
+    // verb 01286913
+    if sense == 5 {
+        return "verb\tsecure with or as if with ropes\ttie down, tie up, truss\t";
+    }
+    // verb 00885217
+    if sense == 6 {
+        return "verb\tbind by an obligation; cause to be indebted\toblige, hold, obligate\t";
+    }
+    ""
+}

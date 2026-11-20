@@ -1,0 +1,41 @@
+// help — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_help(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 02547586
+    if sense == 1 {
+        return "verb\tgive help or assistance; be of service\tassist, aid\tEveryone helped out during the earthquake";
+    }
+    // verb 00082081
+    if sense == 2 {
+        return "verb\timprove the condition of\taid\tThese pills will help the patient";
+    }
+    // noun 01207609
+    if sense == 3 {
+        return "noun\tthe activity of contributing to the fulfillment of a need or furtherance of an effort or purpose\taid, assist, assistance\toffered his help in unloading";
+    }
+    // verb 02735897
+    if sense == 4 {
+        return "verb\tbe of use\tfacilitate\tThis will help to prevent accidents";
+    }
+    // verb 02726164
+    if sense == 5 {
+        return "verb\tabstain from doing; always used with a negative\thelp oneself\tI can't help myself--I have to smoke";
+    }
+    // noun 09815790
+    if sense == 6 {
+        return "noun\ta person who contributes to the fulfillment of a need or furtherance of an effort or purpose\tassistant, helper, supporter\tthey hired additional help to finish the work";
+    }
+    // verb 01181295
+    if sense == 7 {
+        return "verb\thelp to some food; help with food or drink\tserve\tI served him three times, and after that he helped himself";
+    }
+    // noun 05154908
+    if sense == 8 {
+        return "noun\ta resource\taid, assistance\t";
+    }
+    // noun 05149832
+    if sense == 9 {
+        return "noun\ta means of serving\tavail, service\tthere's no help for it";
+    }
+    ""
+}

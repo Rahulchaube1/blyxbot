@@ -1,0 +1,61 @@
+// figure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_figure(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // noun 06999647
+    if sense == 1 {
+        return "noun\ta diagram or picture illustrating textual material\tfig\tthe area covered can be seen from Figure 2";
+    }
+    // noun 05217168
+    if sense == 2 {
+        return "noun\talternative names for the body of a human being\thuman body, physical body, material body, soma, build, physique, anatomy, shape, bod, chassis, frame, form, flesh\t";
+    }
+    // verb 00712135
+    if sense == 3 {
+        return "verb\tjudge to be probable\tcalculate, estimate, reckon, count on, forecast\t";
+    }
+    // noun 13741022
+    if sense == 4 {
+        return "noun\tone of the elements that collectively form a system of numeration\tdigit\t";
+    }
+    // noun 03335600
+    if sense == 5 {
+        return "noun\ta model of a bodily form (especially of a person)\t\the made a figure of Santa Claus";
+    }
+    // noun 10344443
+    if sense == 6 {
+        return "noun\ta well-known or notable person\tname, public figure\tshe is an important figure in modern music";
+    }
+    // noun 13862780
+    if sense == 7 {
+        return "noun\ta combination of points and lines and planes that form a visible palpable shape\t\t";
+    }
+    // noun 13331634
+    if sense == 8 {
+        return "noun\tan amount of money expressed numerically\t\ta figure of $17 was suggested";
+    }
+    // noun 04675646
+    if sense == 9 {
+        return "noun\tthe impression produced by a person\t\the cut a fine figure";
+    }
+    // verb 02722207
+    if sense == 10 {
+        return "verb\tbe or play a part of or in\tenter\tElections figure prominently in every government program";
+    }
+    // verb 01635432
+    if sense == 11 {
+        return "verb\timagine; conceive of; see in one's mind\tvisualize, visualise, envision, project, fancy, see, picture, image\t";
+    }
+    // verb 00637259
+    if sense == 12 {
+        return "verb\tmake a mathematical calculation or computation\tcalculate, cipher, cypher, compute, work out, reckon\t";
+    }
+    // noun 05121418
+    if sense == 13 {
+        return "noun\tthe property possessed by a sum or total or indefinite quantity of units or individuals\tnumber\tthe figure was about a thousand";
+    }
+    // verb 00590241
+    if sense == 14 {
+        return "verb\tunderstand\t\tHe didn't figure her";
+    }
+    ""
+}

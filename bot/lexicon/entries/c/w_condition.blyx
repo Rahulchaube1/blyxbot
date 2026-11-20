@@ -1,0 +1,33 @@
+// condition — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_condition(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 13920835
+    if sense == 1 {
+        return "noun\ta state at a particular time\tstatus\ta condition (or state) of disrepair";
+    }
+    // noun 06755568
+    if sense == 2 {
+        return "noun\tan assumption on which rests the validity or effect of something else\tprecondition, stipulation\t";
+    }
+    // noun 13920429
+    if sense == 3 {
+        return "noun\ta mode of being or form of existence of a person or thing\t\tthe human condition";
+    }
+    // verb 02571768
+    if sense == 4 {
+        return "verb\testablish a conditioned response\t\t";
+    }
+    // noun 05822746
+    if sense == 5 {
+        return "noun\tinformation that should be kept in mind when making a decision\tcircumstance, consideration\t";
+    }
+    // verb 02553697
+    if sense == 6 {
+        return "verb\tdevelop (children's) behavior by instruction and practice; especially to teach self-control\tdiscipline, train, check\t";
+    }
+    // verb 01018928
+    if sense == 7 {
+        return "verb\tspecify as a condition or requirement in a contract or agreement; make an express demand or provision in an agreement\tstipulate, qualify, specify\t";
+    }
+    ""
+}

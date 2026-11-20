@@ -1,0 +1,41 @@
+// receive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_receive(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 02210119
+    if sense == 1 {
+        return "verb\tget something; come into possession of\thave\treceive payment";
+    }
+    // verb 00522751
+    if sense == 2 {
+        return "verb\treceive a specified treatment (abstract)\tget, find, obtain, incur\tThese aspects of civilization do not find expression or receive an interpretation";
+    }
+    // verb 02107248
+    if sense == 3 {
+        return "verb\tregister (perceptual input)\tpick up\t";
+    }
+    // verb 02108026
+    if sense == 4 {
+        return "verb\tgo through (mental or physical states or experiences)\texperience, have, get\treceive injuries";
+    }
+    // verb 01470225
+    if sense == 5 {
+        return "verb\texpress willingness to have in one's home or environs\ttake in, invite\tThe community warmly received the refugees";
+    }
+    // verb 00686879
+    if sense == 6 {
+        return "verb\taccept as true or valid\t\tHe received Christ";
+    }
+    // verb 00900583
+    if sense == 7 {
+        return "verb\tbid welcome to; greet upon arrival\twelcome\t";
+    }
+    // verb 00117346
+    if sense == 8 {
+        return "verb\tconvert into sounds or pictures\t\treceive the incoming radio signals";
+    }
+    // verb 02739480
+    if sense == 9 {
+        return "verb\texperience as a reaction\tmeet, encounter\t";
+    }
+    ""
+}

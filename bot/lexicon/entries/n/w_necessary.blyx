@@ -1,0 +1,13 @@
+// necessary — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_necessary(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01580050
+    if sense == 1 {
+        return "adjective\tabsolutely essential\t\t";
+    }
+    // adj 00343552
+    if sense == 2 {
+        return "adjective\tunavoidably determined by prior circumstances\t\tthe necessary consequences of one's actions";
+    }
+    ""
+}

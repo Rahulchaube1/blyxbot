@@ -1,0 +1,29 @@
+// cast — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cast(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01632897
+    if sense == 1 {
+        return "verb\tput or send forth\tproject, contrive, throw\tcast a spell";
+    }
+    // noun 08237863
+    if sense == 2 {
+        return "noun\tthe actors in a play\tcast of characters, dramatis personae\t";
+    }
+    // verb 02236023
+    if sense == 3 {
+        return "verb\tdeposit\t\tcast a vote";
+    }
+    // verb 01710481
+    if sense == 4 {
+        return "verb\tselect to play,sing, or dance a part in a play, movie, musical, opera, or ballet\t\tHe cast a young woman in the role of Desdemona";
+    }
+    // noun 03779370
+    if sense == 5 {
+        return "noun\tcontainer into which liquid is poured to create a given shape when it hardens\tmold, mould\t";
+    }
+    // verb 01507143
+    if sense == 6 {
+        return "verb\tthrow forcefully\thurl, hurtle\t";
+    }
+    ""
+}

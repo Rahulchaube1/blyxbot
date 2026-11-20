@@ -1,0 +1,13 @@
+// erect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_erect(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01661243
+    if sense == 1 {
+        return "verb\tconstruct, build, or erect\traise, rear, set up, put up\t";
+    }
+    // adj 01235859
+    if sense == 2 {
+        return "adjective\tupright in position or posture\tvertical, upright\tan erect stature";
+    }
+    ""
+}

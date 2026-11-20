@@ -1,0 +1,17 @@
+// planning — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_planning(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 01144133
+    if sense == 1 {
+        return "noun\tan act of formulating a program for a definite course of action\t\tthe planning was more fun than the trip itself";
+    }
+    // noun 00928371
+    if sense == 2 {
+        return "noun\tthe act or process of drawing up plans or layouts for some project or enterprise\t\t";
+    }
+    // noun 05794694
+    if sense == 3 {
+        return "noun\tthe cognitive process of thinking about what you will do in the event of something happening\tpreparation, provision\this planning for retirement was hindered by several uncertainties";
+    }
+    ""
+}

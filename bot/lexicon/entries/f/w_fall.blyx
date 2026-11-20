@@ -1,0 +1,97 @@
+// fall — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fall(sense: i64) -> str {
+    if sense == 0 { return "23"; }
+    // verb 01972298
+    if sense == 1 {
+        return "verb\tdescend in free fall under the influence of gravity\t\t";
+    }
+    // verb 01970826
+    if sense == 2 {
+        return "verb\tmove downward and lower, but not necessarily all the way\tdescend, go down, come down\tThe barometer is falling";
+    }
+    // verb 00147815
+    if sense == 3 {
+        return "verb\tpass suddenly and passively into a state of body or mind\t\tfall into a trap";
+    }
+    // noun 15236859
+    if sense == 4 {
+        return "noun\tthe season when the leaves fall from the trees\tautumn\tin the fall of 1973";
+    }
+    // verb 02729963
+    if sense == 5 {
+        return "verb\tcome under, be classified or included\tcome\tfall into a category";
+    }
+    // noun 00076884
+    if sense == 6 {
+        return "noun\ta sudden drop from an upright position\tspill, tumble\t";
+    }
+    // verb 02756821
+    if sense == 7 {
+        return "verb\tfall from clouds\tprecipitate, come down\train, snow and sleet were falling";
+    }
+    // verb 02528985
+    if sense == 8 {
+        return "verb\tsuffer defeat, failure, or ruin\t\tWe must stand or fall";
+    }
+    // noun 07478531
+    if sense == 9 {
+        return "noun\tthe lapse of mankind into sinfulness because of the sin of Adam and Eve\t\twomen have been blamed ever since the Fall";
+    }
+    // verb 02620213
+    if sense == 10 {
+        return "verb\tdie, as in battle or in a hunt\t\t";
+    }
+    // verb 02611976
+    if sense == 11 {
+        return "verb\ttouch or seem as if touching visually or audibly\tshine, strike\t";
+    }
+    // verb 02304507
+    if sense == 12 {
+        return "verb\tbe captured\t\t";
+    }
+    // verb 00342443
+    if sense == 13 {
+        return "verb\toccur at a specified time or place\t\tChristmas falls on a Monday this year";
+    }
+    // verb 00151689
+    if sense == 14 {
+        return "verb\tdecrease in size, extent, or range\tdecrease, diminish, lessen\t";
+    }
+    // noun 09265620
+    if sense == 15 {
+        return "noun\ta downward slope or bend\tdescent, declivity, decline, declination, declension, downslope\t";
+    }
+    // noun 00756919
+    if sense == 16 {
+        return "noun\ta lapse into sin; a loss of innocence or of chastity\t\ta fall from virtue";
+    }
+    // verb 02565911
+    if sense == 17 {
+        return "verb\tyield to temptation or sin\t\t";
+    }
+    // verb 02385153
+    if sense == 18 {
+        return "verb\tlose office or power\t\t";
+    }
+    // verb 02358655
+    if sense == 19 {
+        return "verb\tto be given by assignment or distribution\t\t";
+    }
+    // noun 07427728
+    if sense == 20 {
+        return "noun\ta sudden decline in strength or number or importance\tdownfall\tthe fall of the House of Hapsburg";
+    }
+    // noun 07370270
+    if sense == 21 {
+        return "noun\ta movement downward\t\tthe rise and fall of the tides";
+    }
+    // noun 00067707
+    if sense == 22 {
+        return "noun\tthe act of surrendering (usually under agreed conditions)\tcapitulation, surrender\t";
+    }
+    // verb 02099413
+    if sense == 23 {
+        return "verb\tmove in a specified direction\t\tThe line of men fall forward";
+    }
+    ""
+}

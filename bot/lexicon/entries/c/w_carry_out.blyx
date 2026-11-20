@@ -1,0 +1,13 @@
+// carry out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_carry_out(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01640855
+    if sense == 1 {
+        return "verb\tput in effect\tcarry through, accomplish, execute, action, fulfill, fulfil\tcarry out a task";
+    }
+    // verb 00486018
+    if sense == 2 {
+        return "verb\tpursue to a conclusion or bring to a successful issue\tfollow through, follow up, follow out, implement, put through, go through\t";
+    }
+    ""
+}

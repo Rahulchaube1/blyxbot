@@ -1,0 +1,105 @@
+// open — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_open(sense: i64) -> str {
+    if sense == 0 { return "25"; }
+    // verb 01346003
+    if sense == 1 {
+        return "verb\tcause to open or to become open\topen up\tMary opened the car door";
+    }
+    // verb 02426171
+    if sense == 2 {
+        return "verb\tstart to operate or function or cause to start operating or functioning\topen up\topen a business";
+    }
+    // adj 01652380
+    if sense == 3 {
+        return "adjective\taffording unobstructed entrance and exit; not shut or closed\tunfastened\tan open door";
+    }
+    // verb 01346804
+    if sense == 4 {
+        return "verb\tbecome open\topen up\tThe door opened";
+    }
+    // adj 01652902
+    if sense == 5 {
+        return "adjective\taffording free passage or access\t\topen drains";
+    }
+    // verb 02425462
+    if sense == 6 {
+        return "verb\tbegin or set in action, of meetings, speeches, recitals, etc.\t\tHe opened the meeting with a long speech";
+    }
+    // adj 01886620
+    if sense == 7 {
+        return "adjective\twith no protection or shield\texposed\topen to the weather";
+    }
+    // adj 01861910
+    if sense == 8 {
+        return "adjective\topen to or in view of all\t\tan open protest";
+    }
+    // verb 01579813
+    if sense == 9 {
+        return "verb\tspread out or open from a closed or folded state\tunfold, spread, spread out\topen the map";
+    }
+    // verb 00539936
+    if sense == 10 {
+        return "verb\tmake available\topen up\tThis opens up new possibilities";
+    }
+    // adj 01654377
+    if sense == 11 {
+        return "adjective\tused of mouth or eyes\topened\tkeep your eyes open";
+    }
+    // adj 00185509
+    if sense == 12 {
+        return "adjective\tnot having been filled\t\tthe job is still open";
+    }
+    // adj 02003357
+    if sense == 13 {
+        return "adjective\taccessible to all\t\topen season";
+    }
+    // verb 00540101
+    if sense == 14 {
+        return "verb\tbecome available\topen up\tan opportunity opened up";
+    }
+    // adj 02523664
+    if sense == 15 {
+        return "adjective\tnot defended or capable of being defended\tassailable, undefendable, undefended\tan open city";
+    }
+    // adj 02232112
+    if sense == 16 {
+        return "adjective\t(of textures) full of small openings or gaps\tloose\tan open texture";
+    }
+    // adj 01659117
+    if sense == 17 {
+        return "adjective\thaving no protecting cover or enclosure\t\tan open boat";
+    }
+    // noun 08632423
+    if sense == 18 {
+        return "noun\ta clear or unobstructed space or expanse of land or water\tclear\tfinally broke out of the forest into the open";
+    }
+    // noun 08613733
+    if sense == 19 {
+        return "noun\twhere the air is unconfined\toutdoors, out-of-doors, open air\tthe concert was held in the open air";
+    }
+    // verb 02744651
+    if sense == 20 {
+        return "verb\thave an opening or passage or outlet\t\tThe bedrooms open into the hall";
+    }
+    // verb 01077887
+    if sense == 21 {
+        return "verb\tmake the opening move\t\tKasparov opened with a standard opening";
+    }
+    // adj 01659999
+    if sense == 22 {
+        return "adjective\t(set theory) of an interval that contains neither of its endpoints\t\t";
+    }
+    // adj 02130821
+    if sense == 23 {
+        return "adjective\tnot brought to a conclusion; subject to further thought\tundecided, undetermined, unresolved\tan open question";
+    }
+    // adj 02087178
+    if sense == 24 {
+        return "adjective\tnot sealed or having been unsealed\topened\tthe letter was already open";
+    }
+    // adj 01449354
+    if sense == 25 {
+        return "adjective\twithout undue constriction as from e.g. tenseness or inhibition\t\tthe clarity and resonance of an open tone";
+    }
+    ""
+}

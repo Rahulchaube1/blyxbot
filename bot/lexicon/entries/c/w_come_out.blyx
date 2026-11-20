@@ -1,0 +1,33 @@
+// come out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_come_out(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00423702
+    if sense == 1 {
+        return "verb\tappear or become visible; make a showing\tcome on, turn up, surface, show up\t";
+    }
+    // verb 00425967
+    if sense == 2 {
+        return "verb\tbe issued or published\tappear\tThe new Woody Allen film hasn't come out yet";
+    }
+    // verb 00528990
+    if sense == 3 {
+        return "verb\tcome out of\tissue, emerge, come forth, go forth, egress\tThe words seemed to come out by themselves";
+    }
+    // verb 02610845
+    if sense == 4 {
+        return "verb\tresult or end\tturn out\t";
+    }
+    // verb 02097925
+    if sense == 5 {
+        return "verb\tcome off\tfall out\t";
+    }
+    // verb 00659776
+    if sense == 6 {
+        return "verb\ttake a place in a competition; often followed by an ordinal\tplace, come in\t";
+    }
+    // verb 02089174
+    if sense == 7 {
+        return "verb\tmake oneself visible; take action\tcome to the fore, step forward, come forward, step up, step to the fore\t";
+    }
+    ""
+}

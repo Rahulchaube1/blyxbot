@@ -1,0 +1,9 @@
+// county — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_county(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 08546183
+    if sense == 1 {
+        return "noun\t(United Kingdom) a region created by territorial division for the purpose of local government\t\tthe county has a population of 12,345 people";
+    }
+    ""
+}

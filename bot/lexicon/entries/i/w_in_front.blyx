@@ -1,0 +1,9 @@
+// in front — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_in_front(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00066781
+    if sense == 1 {
+        return "adverb\tat or in the front\tahead, before\twe couldn't see over the heads of the people in front";
+    }
+    ""
+}

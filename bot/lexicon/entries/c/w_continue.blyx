@@ -1,0 +1,29 @@
+// continue — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_continue(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02684924
+    if sense == 1 {
+        return "verb\tcontinue a certain state, condition, or activity\tgo on, proceed, go along, keep\tWe continued to work into the night";
+    }
+    // verb 00781000
+    if sense == 2 {
+        return "verb\tcontinue talking\tgo on, carry on, proceed\t";
+    }
+    // verb 02679899
+    if sense == 3 {
+        return "verb\tkeep or maintain in unaltered condition; cause to remain or last\tuphold, carry on, bear on, preserve\tcontinue the family tradition";
+    }
+    // verb 01995549
+    if sense == 4 {
+        return "verb\tmove ahead; travel onward in time or space\tproceed, go forward\tShe continued in the direction of the hills";
+    }
+    // verb 02410175
+    if sense == 5 {
+        return "verb\tallow to remain in a place or position or maintain a property or feature\tretain, keep, keep on\tWe cannot continue several servants any longer";
+    }
+    // verb 02747922
+    if sense == 6 {
+        return "verb\tdo something repeatedly and showing no intention to stop\tpersist in\tWe continued our research into the cause of the illness";
+    }
+    ""
+}

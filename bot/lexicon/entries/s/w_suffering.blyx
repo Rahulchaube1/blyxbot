@@ -1,0 +1,29 @@
+// suffering — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_suffering(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 14324274
+    if sense == 1 {
+        return "noun\ta state of acute pain\tagony, excruciation\t";
+    }
+    // noun 14448910
+    if sense == 2 {
+        return "noun\tmisery resulting from affliction\twoe\t";
+    }
+    // noun 07496463
+    if sense == 3 {
+        return "noun\tpsychological suffering\tdistress, hurt\t";
+    }
+    // noun 07495327
+    if sense == 4 {
+        return "noun\tfeelings of mental or physical pain\thurt\t";
+    }
+    // adj 02458871
+    if sense == 5 {
+        return "adjective\ttroubled by pain or loss\t\tsuffering refugees";
+    }
+    // adj 01150205
+    if sense == 6 {
+        return "adjective\tvery unhappy; full of misery\tmiserable, wretched\ta message of hope for suffering humanity";
+    }
+    ""
+}

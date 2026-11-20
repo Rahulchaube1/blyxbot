@@ -1,0 +1,29 @@
+// concentration — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_concentration(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05038593
+    if sense == 1 {
+        return "noun\tthe strength of a solution; number of molecules of a substance in a given volume\t\t";
+    }
+    // noun 05088804
+    if sense == 2 {
+        return "noun\tthe spatial property of being crowded together\tdensity, denseness, tightness, compactness\t";
+    }
+    // noun 00375071
+    if sense == 3 {
+        return "noun\tstrengthening the concentration (as of a solute in a mixture) by removing diluting material\t\t";
+    }
+    // noun 07413899
+    if sense == 4 {
+        return "noun\tincrease in density\t\t";
+    }
+    // noun 05704266
+    if sense == 5 {
+        return "noun\tcomplete attention; intense mental effort\tengrossment, absorption, immersion\t";
+    }
+    // noun 01231980
+    if sense == 6 {
+        return "noun\tbringing together military forces\t\t";
+    }
+    ""
+}

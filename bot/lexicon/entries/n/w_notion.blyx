@@ -1,0 +1,17 @@
+// notion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_notion(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05916739
+    if sense == 1 {
+        return "noun\ta vague idea in which some confidence is placed\timpression, feeling, belief, opinion\t";
+    }
+    // noun 05836598
+    if sense == 2 {
+        return "noun\ta general inclusive concept\t\t";
+    }
+    // noun 05919549
+    if sense == 3 {
+        return "noun\tan odd or fanciful or capricious idea\twhim, whimsy, whimsey\tthe theatrical notion of disguise is associated with disaster in his stories";
+    }
+    ""
+}

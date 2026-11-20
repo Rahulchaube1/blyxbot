@@ -1,0 +1,17 @@
+// letter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_letter(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06624161
+    if sense == 1 {
+        return "noun\ta written message addressed to a person or organization\tmissive\tmailed an indignant letter to the editor";
+    }
+    // noun 06828818
+    if sense == 2 {
+        return "noun\tthe conventional characters of the alphabet used to represent speech\tletter of the alphabet, alphabetic character\this grandmother taught him his letters";
+    }
+    // verb 02290349
+    if sense == 3 {
+        return "verb\twin an athletic letter\t\t";
+    }
+    ""
+}

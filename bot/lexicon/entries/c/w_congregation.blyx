@@ -1,0 +1,13 @@
+// congregation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_congregation(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 07991364
+    if sense == 1 {
+        return "noun\ta group of people who adhere to a common faith and habitually attend a given church\tfold, faithful\t";
+    }
+    // noun 07976181
+    if sense == 2 {
+        return "noun\tan assemblage of people or animals or things collected together\t\ta congregation of children pleaded for his autograph";
+    }
+    ""
+}

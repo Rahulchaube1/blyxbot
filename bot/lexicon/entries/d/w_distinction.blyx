@@ -1,0 +1,21 @@
+// distinction — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_distinction(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05748285
+    if sense == 1 {
+        return "noun\ta discrimination between things as different and distinct\tdifferentiation\tit is necessary to make a distinction between love and infatuation";
+    }
+    // noun 14435445
+    if sense == 2 {
+        return "noun\thigh status importance owing to marked superiority\teminence, preeminence, note\t";
+    }
+    // noun 04806655
+    if sense == 3 {
+        return "noun\ta distinguishing quality\t\tit has the distinction of being the cheapest restaurant in town";
+    }
+    // noun 04749572
+    if sense == 4 {
+        return "noun\ta distinguishing difference\t\the learned the distinction between gold and lead";
+    }
+    ""
+}

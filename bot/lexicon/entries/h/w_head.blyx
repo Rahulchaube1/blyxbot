@@ -1,0 +1,61 @@
+// head — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_head(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // noun 05538625
+    if sense == 1 {
+        return "noun\tthe upper part of the human body or the front part of the body in animals; contains the face and brains\tcaput\the stuck his head out the window";
+    }
+    // verb 01935233
+    if sense == 2 {
+        return "verb\tto go or travel towards\t\twhere is she heading";
+    }
+    // noun 01318381
+    if sense == 3 {
+        return "noun\ta single domestic animal\t\t200 head of cattle";
+    }
+    // verb 02440244
+    if sense == 4 {
+        return "verb\tbe in charge of\tlead\tWho is heading this project?";
+    }
+    // noun 05611302
+    if sense == 5 {
+        return "noun\tthat which is responsible for one's thoughts and feelings; the seat of the faculty of reason\tmind, brain, psyche, nous\tI couldn't get his words out of my head";
+    }
+    // noun 10162991
+    if sense == 6 {
+        return "noun\ta person who is in charge\tchief, top dog\tthe head of the whole operation";
+    }
+    // noun 08482271
+    if sense == 7 {
+        return "noun\tthe front of a military formation or procession\t\tthe head of the column advanced boldly";
+    }
+    // noun 11495607
+    if sense == 8 {
+        return "noun\tthe pressure exerted by a fluid\t\ta head of steam";
+    }
+    // verb 01999423
+    if sense == 9 {
+        return "verb\ttravel in front of; go in advance of others\tlead\tThe procession was headed by John";
+    }
+    // verb 02729023
+    if sense == 10 {
+        return "verb\tbe the first or leading member of (a group) and excel\thead up\tThis student heads the class";
+    }
+    // verb 01931768
+    if sense == 11 {
+        return "verb\tdirect the course; determine the direction of travelling\tsteer, maneuver, manoeuver, manoeuvre, direct, point, guide, channelize, channelise\t";
+    }
+    // noun 08664184
+    if sense == 12 {
+        return "noun\tthe top of something\t\tthe head of the stairs";
+    }
+    // noun 08508449
+    if sense == 13 {
+        return "noun\tthe source of water from which a stream arises\tfountainhead, headspring\tthey tracked him back toward the head of the stream";
+    }
+    // noun 06291809
+    if sense == 14 {
+        return "noun\t(grammar) the word in a grammatical constituent that plays the same grammatical role as the whole constituent\thead word\t";
+    }
+    ""
+}

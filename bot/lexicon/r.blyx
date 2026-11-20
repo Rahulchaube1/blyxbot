@@ -1,0 +1,292 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::r::w_race;
+use entries::r::w_radiation;
+use entries::r::w_radio;
+use entries::r::w_rage;
+use entries::r::w_rain;
+use entries::r::w_raise;
+use entries::r::w_range;
+use entries::r::w_rank;
+use entries::r::w_rapid;
+use entries::r::w_rapidly;
+use entries::r::w_rate;
+use entries::r::w_rather;
+use entries::r::w_ratio;
+use entries::r::w_reach;
+use entries::r::w_react;
+use entries::r::w_reaction;
+use entries::r::w_read;
+use entries::r::w_reader;
+use entries::r::w_reading;
+use entries::r::w_ready;
+use entries::r::w_real;
+use entries::r::w_reality;
+use entries::r::w_realize;
+use entries::r::w_really;
+use entries::r::w_rear;
+use entries::r::w_reason;
+use entries::r::w_reasonable;
+use entries::r::w_rebel;
+use entries::r::w_recall;
+use entries::r::w_receive;
+use entries::r::w_recent;
+use entries::r::w_recently;
+use entries::r::w_recognition;
+use entries::r::w_recognize;
+use entries::r::w_recommend;
+use entries::r::w_recommendation;
+use entries::r::w_record;
+use entries::r::w_recreation;
+use entries::r::w_red;
+use entries::r::w_reduce;
+use entries::r::w_reduction;
+use entries::r::w_refer;
+use entries::r::w_reference;
+use entries::r::w_reflect;
+use entries::r::w_reflection;
+use entries::r::w_refuse;
+use entries::r::w_regard;
+use entries::r::w_regard_as;
+use entries::r::w_regiment;
+use entries::r::w_region;
+use entries::r::w_register;
+use entries::r::w_regular;
+use entries::r::w_reject;
+use entries::r::w_relate;
+use entries::r::w_related;
+use entries::r::w_relation;
+use entries::r::w_relationship;
+use entries::r::w_relative;
+use entries::r::w_relatively;
+use entries::r::w_relax;
+use entries::r::w_release;
+use entries::r::w_relief;
+use entries::r::w_relieve;
+use entries::r::w_religion;
+use entries::r::w_remain;
+use entries::r::w_remark;
+use entries::r::w_remember;
+use entries::r::w_remind;
+use entries::r::w_remove;
+use entries::r::w_render;
+use entries::r::w_repeat;
+use entries::r::w_replace;
+use entries::r::w_reply;
+use entries::r::w_report;
+use entries::r::w_represent;
+use entries::r::w_representation;
+use entries::r::w_representative;
+use entries::r::w_request;
+use entries::r::w_require;
+use entries::r::w_requirement;
+use entries::r::w_research;
+use entries::r::w_resemble;
+use entries::r::w_resist;
+use entries::r::w_resolution;
+use entries::r::w_resolve;
+use entries::r::w_resource;
+use entries::r::w_respect;
+use entries::r::w_respond;
+use entries::r::w_response;
+use entries::r::w_responsibility;
+use entries::r::w_rest;
+use entries::r::w_restrict;
+use entries::r::w_result;
+use entries::r::w_resume;
+use entries::r::w_retire;
+use entries::r::w_return;
+use entries::r::w_reveal;
+use entries::r::w_reverse;
+use entries::r::w_review;
+use entries::r::w_rich;
+use entries::r::w_ride;
+use entries::r::w_rifle;
+use entries::r::w_right;
+use entries::r::w_ring;
+use entries::r::w_rise;
+use entries::r::w_river;
+use entries::r::w_road;
+use entries::r::w_roar;
+use entries::r::w_rock;
+use entries::r::w_role;
+use entries::r::w_roll;
+use entries::r::w_roof;
+use entries::r::w_room;
+use entries::r::w_rough;
+use entries::r::w_round;
+use entries::r::w_row;
+use entries::r::w_rub;
+use entries::r::w_rule;
+use entries::r::w_run;
+use entries::r::w_rural;
+use entries::r::w_rush;
+use entries::r::w_russian;
+
+fn through_w_reaction(term: str, sense: i64) -> str {
+    if term == "race" { return w_race(sense); }
+    if term == "radiation" { return w_radiation(sense); }
+    if term == "radio" { return w_radio(sense); }
+    if term == "rage" { return w_rage(sense); }
+    if term == "rain" { return w_rain(sense); }
+    if term == "raise" { return w_raise(sense); }
+    if term == "range" { return w_range(sense); }
+    if term == "rank" { return w_rank(sense); }
+    if term == "rapid" { return w_rapid(sense); }
+    if term == "rapidly" { return w_rapidly(sense); }
+    if term == "rate" { return w_rate(sense); }
+    if term == "rather" { return w_rather(sense); }
+    if term == "ratio" { return w_ratio(sense); }
+    if term == "reach" { return w_reach(sense); }
+    if term == "react" { return w_react(sense); }
+    if term == "reaction" { return w_reaction(sense); }
+    ""
+}
+
+fn through_w_recently(term: str, sense: i64) -> str {
+    if term == "read" { return w_read(sense); }
+    if term == "reader" { return w_reader(sense); }
+    if term == "reading" { return w_reading(sense); }
+    if term == "ready" { return w_ready(sense); }
+    if term == "real" { return w_real(sense); }
+    if term == "reality" { return w_reality(sense); }
+    if term == "realize" { return w_realize(sense); }
+    if term == "really" { return w_really(sense); }
+    if term == "rear" { return w_rear(sense); }
+    if term == "reason" { return w_reason(sense); }
+    if term == "reasonable" { return w_reasonable(sense); }
+    if term == "rebel" { return w_rebel(sense); }
+    if term == "recall" { return w_recall(sense); }
+    if term == "receive" { return w_receive(sense); }
+    if term == "recent" { return w_recent(sense); }
+    if term == "recently" { return w_recently(sense); }
+    ""
+}
+
+fn through_w_regard_as(term: str, sense: i64) -> str {
+    if term == "recognition" { return w_recognition(sense); }
+    if term == "recognize" { return w_recognize(sense); }
+    if term == "recommend" { return w_recommend(sense); }
+    if term == "recommendation" { return w_recommendation(sense); }
+    if term == "record" { return w_record(sense); }
+    if term == "recreation" { return w_recreation(sense); }
+    if term == "red" { return w_red(sense); }
+    if term == "reduce" { return w_reduce(sense); }
+    if term == "reduction" { return w_reduction(sense); }
+    if term == "refer" { return w_refer(sense); }
+    if term == "reference" { return w_reference(sense); }
+    if term == "reflect" { return w_reflect(sense); }
+    if term == "reflection" { return w_reflection(sense); }
+    if term == "refuse" { return w_refuse(sense); }
+    if term == "regard" { return w_regard(sense); }
+    if term == "regard as" { return w_regard_as(sense); }
+    ""
+}
+
+fn through_w_religion(term: str, sense: i64) -> str {
+    if term == "regiment" { return w_regiment(sense); }
+    if term == "region" { return w_region(sense); }
+    if term == "register" { return w_register(sense); }
+    if term == "regular" { return w_regular(sense); }
+    if term == "reject" { return w_reject(sense); }
+    if term == "relate" { return w_relate(sense); }
+    if term == "related" { return w_related(sense); }
+    if term == "relation" { return w_relation(sense); }
+    if term == "relationship" { return w_relationship(sense); }
+    if term == "relative" { return w_relative(sense); }
+    if term == "relatively" { return w_relatively(sense); }
+    if term == "relax" { return w_relax(sense); }
+    if term == "release" { return w_release(sense); }
+    if term == "relief" { return w_relief(sense); }
+    if term == "relieve" { return w_relieve(sense); }
+    if term == "religion" { return w_religion(sense); }
+    ""
+}
+
+fn through_w_requirement(term: str, sense: i64) -> str {
+    if term == "remain" { return w_remain(sense); }
+    if term == "remark" { return w_remark(sense); }
+    if term == "remember" { return w_remember(sense); }
+    if term == "remind" { return w_remind(sense); }
+    if term == "remove" { return w_remove(sense); }
+    if term == "render" { return w_render(sense); }
+    if term == "repeat" { return w_repeat(sense); }
+    if term == "replace" { return w_replace(sense); }
+    if term == "reply" { return w_reply(sense); }
+    if term == "report" { return w_report(sense); }
+    if term == "represent" { return w_represent(sense); }
+    if term == "representation" { return w_representation(sense); }
+    if term == "representative" { return w_representative(sense); }
+    if term == "request" { return w_request(sense); }
+    if term == "require" { return w_require(sense); }
+    if term == "requirement" { return w_requirement(sense); }
+    ""
+}
+
+fn through_w_return(term: str, sense: i64) -> str {
+    if term == "research" { return w_research(sense); }
+    if term == "resemble" { return w_resemble(sense); }
+    if term == "resist" { return w_resist(sense); }
+    if term == "resolution" { return w_resolution(sense); }
+    if term == "resolve" { return w_resolve(sense); }
+    if term == "resource" { return w_resource(sense); }
+    if term == "respect" { return w_respect(sense); }
+    if term == "respond" { return w_respond(sense); }
+    if term == "response" { return w_response(sense); }
+    if term == "responsibility" { return w_responsibility(sense); }
+    if term == "rest" { return w_rest(sense); }
+    if term == "restrict" { return w_restrict(sense); }
+    if term == "result" { return w_result(sense); }
+    if term == "resume" { return w_resume(sense); }
+    if term == "retire" { return w_retire(sense); }
+    if term == "return" { return w_return(sense); }
+    ""
+}
+
+fn through_w_roof(term: str, sense: i64) -> str {
+    if term == "reveal" { return w_reveal(sense); }
+    if term == "reverse" { return w_reverse(sense); }
+    if term == "review" { return w_review(sense); }
+    if term == "rich" { return w_rich(sense); }
+    if term == "ride" { return w_ride(sense); }
+    if term == "rifle" { return w_rifle(sense); }
+    if term == "right" { return w_right(sense); }
+    if term == "ring" { return w_ring(sense); }
+    if term == "rise" { return w_rise(sense); }
+    if term == "river" { return w_river(sense); }
+    if term == "road" { return w_road(sense); }
+    if term == "roar" { return w_roar(sense); }
+    if term == "rock" { return w_rock(sense); }
+    if term == "role" { return w_role(sense); }
+    if term == "roll" { return w_roll(sense); }
+    if term == "roof" { return w_roof(sense); }
+    ""
+}
+
+fn through_w_russian(term: str, sense: i64) -> str {
+    if term == "room" { return w_room(sense); }
+    if term == "rough" { return w_rough(sense); }
+    if term == "round" { return w_round(sense); }
+    if term == "row" { return w_row(sense); }
+    if term == "rub" { return w_rub(sense); }
+    if term == "rule" { return w_rule(sense); }
+    if term == "run" { return w_run(sense); }
+    if term == "rural" { return w_rural(sense); }
+    if term == "rush" { return w_rush(sense); }
+    if term == "russian" { return w_russian(sense); }
+    ""
+}
+
+pub fn lookup_r(term: str, sense: i64) -> str {
+    if term <= "reaction" { return through_w_reaction(term, sense); }
+    if term <= "recently" { return through_w_recently(term, sense); }
+    if term <= "regard as" { return through_w_regard_as(term, sense); }
+    if term <= "religion" { return through_w_religion(term, sense); }
+    if term <= "requirement" { return through_w_requirement(term, sense); }
+    if term <= "return" { return through_w_return(term, sense); }
+    if term <= "roof" { return through_w_roof(term, sense); }
+    through_w_russian(term, sense)
+}
+
+pub fn words_r() -> str {
+    "race|radiation|radio|rage|rain|raise|range|rank|rapid|rapidly|rate|rather|ratio|reach|react|reaction|read|reader|reading|ready|real|reality|realize|really|rear|reason|reasonable|rebel|recall|receive|recent|recently|recognition|recognize|recommend|recommendation|record|recreation|red|reduce|reduction|refer|reference|reflect|reflection|refuse|regard|regard as|regiment|region|register|regular|reject|relate|related|relation|relationship|relative|relatively|relax|release|relief|relieve|religion|remain|remark|remember|remind|remove|render|repeat|replace|reply|report|represent|representation|representative|request|require|requirement|research|resemble|resist|resolution|resolve|resource|respect|respond|response|responsibility|rest|restrict|result|resume|retire|return|reveal|reverse|review|rich|ride|rifle|right|ring|rise|river|road|roar|rock|role|roll|roof|room|rough|round|row|rub|rule|run|rural|rush|russian"
+}

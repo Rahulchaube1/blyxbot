@@ -1,0 +1,61 @@
+// feel — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_feel(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 01771535
+    if sense == 1 {
+        return "verb\tundergo an emotional sensation or be in a particular state of mind\texperience\t";
+    }
+    // verb 00715239
+    if sense == 2 {
+        return "verb\tcome to believe on the basis of emotion, intuitions, or indefinite grounds\tfind\tI feel that he doesn't like me";
+    }
+    // verb 02106006
+    if sense == 3 {
+        return "verb\tperceive by a physical sensation, e.g., coming from the skin or muscles\tsense\t";
+    }
+    // verb 00105958
+    if sense == 4 {
+        return "verb\tbe conscious of a physical, mental, or emotional state\t\tMy cold is gone--I feel fine today";
+    }
+    // verb 00690305
+    if sense == 5 {
+        return "verb\thave a feeling or perception about oneself in reaction to someone's behavior or attitude\t\tYou make me feel naked";
+    }
+    // verb 02110552
+    if sense == 6 {
+        return "verb\tundergo passive experience of:\"We felt the effects of inflation\"\t\t";
+    }
+    // verb 02730471
+    if sense == 7 {
+        return "verb\tbe felt or perceived in a certain way\t\tThe ground feels shaky";
+    }
+    // noun 05677340
+    if sense == 8 {
+        return "noun\tan intuitive awareness\t\the has a feel for animals";
+    }
+    // verb 02127613
+    if sense == 9 {
+        return "verb\tgrope or feel in search of something\t\t";
+    }
+    // verb 01209678
+    if sense == 10 {
+        return "verb\texamine by touch\tfinger\tFeel this soft cloth!";
+    }
+    // verb 01210352
+    if sense == 11 {
+        return "verb\texamine (a body part) by palpation\tpalpate\t";
+    }
+    // noun 14526182
+    if sense == 12 {
+        return "noun\tthe general atmosphere of a place or situation and the effect that it has on people\tspirit, tone, feeling, flavor, flavour, look, smell\tthe feel of the city excited him";
+    }
+    // noun 04946553
+    if sense == 13 {
+        return "noun\ta property perceived by touch\ttactile property\t";
+    }
+    // verb 02286027
+    if sense == 14 {
+        return "verb\tfind by testing or cautious exploration\t\t";
+    }
+    ""
+}

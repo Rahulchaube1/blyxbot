@@ -1,0 +1,65 @@
+// drop — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_drop(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // verb 01977701
+    if sense == 1 {
+        return "verb\tlet fall to the ground\t\tDon't drop the dishes";
+    }
+    // verb 01976841
+    if sense == 2 {
+        return "verb\tto fall vertically\t\tthe bombs are dropping on enemy targets";
+    }
+    // verb 00432683
+    if sense == 3 {
+        return "verb\tgo down in value\t\tStock prices dropped";
+    }
+    // noun 13901585
+    if sense == 4 {
+        return "noun\ta shape that is spherical and small\tbead, pearl\the studied the shapes of low-viscosity drops";
+    }
+    // noun 13771404
+    if sense == 5 {
+        return "noun\ta small indefinite quantity (especially of a liquid)\tdrib, driblet\the had a drop too much to drink";
+    }
+    // verb 01985923
+    if sense == 6 {
+        return "verb\tfall or descend to a lower place or level\tsink, drop down\t";
+    }
+    // verb 02403920
+    if sense == 7 {
+        return "verb\tterminate an association with\t\tdrop him from the Republican ticket";
+    }
+    // verb 00941446
+    if sense == 8 {
+        return "verb\tutter with seeming casualness\t\tdrop a hint";
+    }
+    // verb 00363110
+    if sense == 9 {
+        return "verb\tstop pursuing or acting\tknock off\tdrop a lawsuit";
+    }
+    // verb 01489465
+    if sense == 10 {
+        return "verb\tleave or unload\tdrop off, set down, put down, unload, discharge\tdrop off the passengers at the hotel";
+    }
+    // verb 01258302
+    if sense == 11 {
+        return "verb\tcause to fall by or as if by delivering a blow\tfell, strike down, cut down\t";
+    }
+    // verb 01100008
+    if sense == 12 {
+        return "verb\tlose (a game)\t\tThe Giants dropped 11 of their first 13";
+    }
+    // noun 05111835
+    if sense == 13 {
+        return "noun\ta sudden sharp decrease in some quantity\tdip, fall, free fall\ta drop of 57 points on the Dow Jones index";
+    }
+    // verb 02267060
+    if sense == 14 {
+        return "verb\tpay out\tspend, expend\t";
+    }
+    // verb 00393534
+    if sense == 15 {
+        return "verb\tlower the pitch of (musical notes)\tflatten\t";
+    }
+    ""
+}

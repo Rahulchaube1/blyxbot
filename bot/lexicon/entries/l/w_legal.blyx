@@ -1,0 +1,21 @@
+// legal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_legal(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01400562
+    if sense == 1 {
+        return "adjective\testablished by or founded upon law or official or accepted rules\t\t";
+    }
+    // adj 02754096
+    if sense == 2 {
+        return "adjective\tof or relating to jurisprudence\t\tlegal loophole";
+    }
+    // adj 02499148
+    if sense == 3 {
+        return "adjective\thaving legal efficacy or force\tsound, effectual\t";
+    }
+    // adj 02754197
+    if sense == 4 {
+        return "adjective\trelating to or characteristic of the profession of law\t\tthe legal profession";
+    }
+    ""
+}

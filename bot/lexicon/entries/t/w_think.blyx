@@ -1,0 +1,33 @@
+// think — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_think(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00689344
+    if sense == 1 {
+        return "verb\tjudge or regard; look upon; judge\tbelieve, consider, conceive\tI think he is very smart";
+    }
+    // verb 00631737
+    if sense == 2 {
+        return "verb\texpect, believe, or suppose\topine, suppose, imagine, reckon, guess\the didn't think to find her in the kitchen";
+    }
+    // verb 00628491
+    if sense == 3 {
+        return "verb\tuse or exercise the mind or one's power of reason in order to make inferences, decisions, or arrive at a solution or judgments\tcogitate, cerebrate\tI've been thinking all day and getting nowhere";
+    }
+    // verb 00607780
+    if sense == 4 {
+        return "verb\trecall knowledge from memory; have a recollection\tremember, retrieve, recall, call back, call up, recollect\tI can't think what her last name was";
+    }
+    // verb 01637166
+    if sense == 5 {
+        return "verb\timagine or visualize\t\tJust think--you could be rich one day!";
+    }
+    // verb 00723056
+    if sense == 6 {
+        return "verb\tfocus one's attention on a certain state\t\tThink big";
+    }
+    // verb 00708538
+    if sense == 7 {
+        return "verb\thave in mind as a purpose\tintend, mean\tShe didn't think to harm me";
+    }
+    ""
+}

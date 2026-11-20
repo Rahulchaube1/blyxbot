@@ -1,0 +1,21 @@
+// explode — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_explode(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00306723
+    if sense == 1 {
+        return "verb\tcause to burst with a violent release of energy\tdetonate, blow up, set off\tWe exploded the nuclear bomb";
+    }
+    // verb 00306017
+    if sense == 2 {
+        return "verb\tburst outward, usually with noise\tburst\tThe champagne bottle exploded";
+    }
+    // verb 00719062
+    if sense == 3 {
+        return "verb\tshow a violent emotional reaction\t\tThe boss exploded when he heard of the resignation of the secretary";
+    }
+    // verb 00306539
+    if sense == 4 {
+        return "verb\tbe unleashed; emerge with violence or noise\tburst forth, break loose\tHis anger exploded";
+    }
+    ""
+}

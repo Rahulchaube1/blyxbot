@@ -1,0 +1,13 @@
+// winter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_winter(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 15237782
+    if sense == 1 {
+        return "noun\tthe coldest season of the year; in the northern hemisphere it extends from the winter solstice to the vernal equinox\twintertime\t";
+    }
+    // verb 02709573
+    if sense == 2 {
+        return "verb\tspend the winter\toverwinter\tWe wintered on the Riviera";
+    }
+    ""
+}

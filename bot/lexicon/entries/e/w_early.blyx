@@ -1,0 +1,37 @@
+// early — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_early(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 00812952
+    if sense == 1 {
+        return "adjective\tat or near the beginning of a period of time or course of events or before the usual or expected time\t\tearly morning";
+    }
+    // adj 00817424
+    if sense == 2 {
+        return "adjective\tbeing or occurring at an early stage of development\t\tin an early stage";
+    }
+    // adv 00100681
+    if sense == 3 {
+        return "adverb\tduring an early stage\tearly on\tearly on in her career";
+    }
+    // adj 01729384
+    if sense == 4 {
+        return "adjective\tbelonging to the distant past\tformer, other\tthe early inhabitants of Europe";
+    }
+    // adj 01648617
+    if sense == 5 {
+        return "adjective\tvery young\t\tat an early age";
+    }
+    // adv 00100082
+    if sense == 6 {
+        return "adverb\tbefore the usual time or the time expected\tahead of time, too soon\tshe graduated early";
+    }
+    // adj 00819852
+    if sense == 7 {
+        return "adjective\tof an early stage in the development of a language or literature\t\tthe Early Hebrew alphabetical script is that used mainly from the 11th to the 6th centuries B.C.";
+    }
+    // adv 00100592
+    if sense == 8 {
+        return "adverb\tin good time\tbetimes\t";
+    }
+    ""
+}

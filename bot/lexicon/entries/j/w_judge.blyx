@@ -1,0 +1,29 @@
+// judge — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_judge(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00672277
+    if sense == 1 {
+        return "verb\tdetermine the result of (a competition)\t\t";
+    }
+    // verb 00670261
+    if sense == 2 {
+        return "verb\tform a critical opinion of\tevaluate, pass judgment\tI cannot judge some works of modern art";
+    }
+    // noun 10225219
+    if sense == 3 {
+        return "noun\ta public official authorized to decide questions brought before a court of justice\tjustice, jurist\t";
+    }
+    // verb 00672433
+    if sense == 4 {
+        return "verb\tjudge tentatively or form an estimate of (quantities or time)\testimate, gauge, approximate, guess\t";
+    }
+    // noun 10066732
+    if sense == 5 {
+        return "noun\tan authority who is able to estimate worth or quality\tevaluator\t";
+    }
+    // verb 00971650
+    if sense == 6 {
+        return "verb\tpronounce judgment on\tpronounce, label\t";
+    }
+    ""
+}

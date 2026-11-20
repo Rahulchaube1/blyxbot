@@ -1,0 +1,21 @@
+// protection — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_protection(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00817680
+    if sense == 1 {
+        return "noun\tthe activity of protecting someone or something\t\tthe witnesses demanded police protection";
+    }
+    // noun 04014297
+    if sense == 2 {
+        return "noun\ta covering that is intend to protect from damage or injury\tprotective covering, protective cover\tthey had no protection from the fallout";
+    }
+    // noun 13344071
+    if sense == 3 {
+        return "noun\tdefense against financial failure; financial independence\tsecurity\tinsurance provided protection against loss of wages due to illness";
+    }
+    // noun 14539960
+    if sense == 4 {
+        return "noun\tthe condition of being protected\tshelter\tthey were huddled together for protection";
+    }
+    ""
+}

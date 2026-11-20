@@ -1,0 +1,13 @@
+// bottle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bottle(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 02876657
+    if sense == 1 {
+        return "noun\ta glass or plastic vessel used for storing drinks or other liquids; typically cylindrical without handles and with a narrow neck that can be plugged or capped\t\t";
+    }
+    // noun 13765396
+    if sense == 2 {
+        return "noun\tthe quantity contained in a bottle\tbottleful\t";
+    }
+    ""
+}

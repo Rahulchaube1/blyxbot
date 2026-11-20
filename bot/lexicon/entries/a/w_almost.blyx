@@ -1,0 +1,9 @@
+// almost — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_almost(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00073033
+    if sense == 1 {
+        return "adverb\t(of actions or states) slightly short of or not quite accomplished; all but\tabout, most, nearly, near, nigh, virtually, well-nigh\tthe baby was almost asleep when the alarm sounded";
+    }
+    ""
+}

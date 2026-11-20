@@ -1,0 +1,17 @@
+// relationship — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_relationship(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13780719
+    if sense == 1 {
+        return "noun\ta relation between people; (`relationship' is often used where `relation' would serve, as in `the relationship between inflation and unemployment', but the preferred usage of `relationship' is for human relations or states of relatedness)\thuman relationship\tthe relationship between mothers and their children";
+    }
+    // noun 13928388
+    if sense == 2 {
+        return "noun\ta state of connectedness between people (especially an emotional connection)\t\the didn't want his wife to know of the relationship";
+    }
+    // noun 13928668
+    if sense == 3 {
+        return "noun\ta state involving mutual dealings between people or parties or countries\t\t";
+    }
+    ""
+}

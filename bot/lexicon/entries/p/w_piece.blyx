@@ -1,0 +1,49 @@
+// piece — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_piece(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // noun 03932203
+    if sense == 1 {
+        return "noun\ta separate part of a whole\t\tan important piece of the evidence";
+    }
+    // noun 03932499
+    if sense == 2 {
+        return "noun\tan item that is an instance of some type\t\the designed a new piece of equipment";
+    }
+    // noun 09385911
+    if sense == 3 {
+        return "noun\ta portion of a natural object\tpart\the needed a piece of granite";
+    }
+    // noun 07037465
+    if sense == 4 {
+        return "noun\ta musical work that has been created\tmusical composition, opus, composition, piece of music\t";
+    }
+    // noun 07309457
+    if sense == 5 {
+        return "noun\tan instance of some kind\tbit\tit was a nice piece of work";
+    }
+    // noun 06269396
+    if sense == 6 {
+        return "noun\tan artistic or literary composition\t\the wrote an interesting piece on Iran";
+    }
+    // noun 03343853
+    if sense == 7 {
+        return "noun\ta portable gun\tfirearm, small-arm\t";
+    }
+    // noun 07654667
+    if sense == 8 {
+        return "noun\ta serving that has been cut from a larger portion\tslice\ta piece of pie";
+    }
+    // noun 05084889
+    if sense == 9 {
+        return "noun\ta distance\t\tit is down the road a piece";
+    }
+    // noun 03838535
+    if sense == 10 {
+        return "noun\ta work of art of some artistic value\tobjet d'art, art object\tit is not known who created this piece";
+    }
+    // verb 01590171
+    if sense == 11 {
+        return "verb\tto join or unite the pieces of\tpatch\t";
+    }
+    ""
+}

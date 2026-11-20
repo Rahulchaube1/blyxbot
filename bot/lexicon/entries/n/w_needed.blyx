@@ -1,0 +1,9 @@
+// needed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_needed(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01580775
+    if sense == 1 {
+        return "adjective\tnecessary for relief or supply\tneedful, required, requisite\t";
+    }
+    ""
+}

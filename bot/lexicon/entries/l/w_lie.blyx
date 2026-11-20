@@ -1,0 +1,37 @@
+// lie — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lie(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02690708
+    if sense == 1 {
+        return "verb\tbe located or situated somewhere; occupy a certain position\t\t";
+    }
+    // verb 01547001
+    if sense == 2 {
+        return "verb\tbe lying, be prostrate; be in a horizontal position\t\t";
+    }
+    // verb 02653381
+    if sense == 3 {
+        return "verb\toriginate (in)\tdwell, consist, lie in\t";
+    }
+    // verb 02734338
+    if sense == 4 {
+        return "verb\tbe and remain in a particular state or condition\t\tlie dormant";
+    }
+    // noun 06756831
+    if sense == 5 {
+        return "noun\ta statement that deviates from or perverts the truth\tprevarication\t";
+    }
+    // verb 00834259
+    if sense == 6 {
+        return "verb\ttell an untruth; pretend with intent to deceive\t\tDon't lie to your parents";
+    }
+    // verb 02731390
+    if sense == 7 {
+        return "verb\thave a place in relation to something else\trest\tThe fate of Bosnia lies in the hands of the West";
+    }
+    // verb 01985029
+    if sense == 8 {
+        return "verb\tassume a reclining position\tlie down\tlie down on the bed until you feel better";
+    }
+    ""
+}

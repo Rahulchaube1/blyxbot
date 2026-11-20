@@ -1,0 +1,13 @@
+// expert — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_expert(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09617867
+    if sense == 1 {
+        return "noun\ta person with special knowledge or ability who performs skillfully\t\t";
+    }
+    // adj 02226162
+    if sense == 2 {
+        return "adjective\thaving or showing knowledge and skill and aptitude\tadept, good, practiced, proficient, skillful, skilful\tan expert job";
+    }
+    ""
+}

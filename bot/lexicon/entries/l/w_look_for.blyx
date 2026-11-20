@@ -1,0 +1,13 @@
+// look for — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_look_for(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01315613
+    if sense == 1 {
+        return "verb\ttry to locate or discover, or try to establish the existence of\tsearch, seek\t";
+    }
+    // verb 01804961
+    if sense == 2 {
+        return "verb\tbe excited or anxious about\tanticipate, look to\t";
+    }
+    ""
+}

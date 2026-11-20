@@ -1,0 +1,21 @@
+// provide — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_provide(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02327200
+    if sense == 1 {
+        return "verb\tgive something useful or necessary to\tsupply, render, furnish\tWe provided the room with an electrical heater";
+    }
+    // verb 01182709
+    if sense == 2 {
+        return "verb\tgive what is desired or needed, especially support, food or sustenance\tsupply, ply, cater\tThe hostess provided lunch for all the guests";
+    }
+    // verb 01063188
+    if sense == 3 {
+        return "verb\tdetermine (what is to happen in certain contingencies), especially by including a proviso condition or stipulation\t\tThe will provides that each child should receive half of the money";
+    }
+    // verb 02376289
+    if sense == 4 {
+        return "verb\tmount or put up\tput up, offer\t";
+    }
+    ""
+}

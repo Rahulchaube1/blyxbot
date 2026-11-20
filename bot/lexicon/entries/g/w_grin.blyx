@@ -1,0 +1,13 @@
+// grin — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_grin(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00029025
+    if sense == 1 {
+        return "verb\tto draw back the lips and reveal the teeth, in a smile, grimace, or snarl\t\t";
+    }
+    // noun 06878071
+    if sense == 2 {
+        return "noun\ta facial expression characterized by turning up the corners of the mouth; usually shows pleasure or amusement\tsmile, smiling, grinning\t";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// stick — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stick(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 04317420
+    if sense == 1 {
+        return "noun\tan implement consisting of a length of wood\t\the collected dry sticks for a campfire";
+    }
+    // noun 13165646
+    if sense == 2 {
+        return "noun\ta small thin branch of a tree\t\t";
+    }
+    // noun 04317976
+    if sense == 3 {
+        return "noun\ta lever used by a pilot to control the ailerons and elevators of an airplane\tcontrol stick, joystick\t";
+    }
+    // verb 01528069
+    if sense == 4 {
+        return "verb\tput, fix, force, or implant\tlodge, wedge, deposit\tstick your thumb in the crack";
+    }
+    // verb 01857392
+    if sense == 5 {
+        return "verb\tstay put (in a certain place)\tstay, stick around, stay put\tStick around and you will learn something!";
+    }
+    // verb 01356750
+    if sense == 6 {
+        return "verb\tstick to firmly\tadhere, hold fast, bond, bind, stick to\t";
+    }
+    ""
+}

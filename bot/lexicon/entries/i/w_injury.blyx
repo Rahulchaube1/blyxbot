@@ -1,0 +1,13 @@
+// injury — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_injury(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 14285662
+    if sense == 1 {
+        return "noun\tany physical damage to the body caused by violence or accident or fracture etc.\thurt, harm, trauma\t";
+    }
+    // noun 07313636
+    if sense == 2 {
+        return "noun\tan accident that results in physical damage or hurt\taccidental injury\t";
+    }
+    ""
+}

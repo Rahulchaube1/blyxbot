@@ -1,0 +1,37 @@
+// submit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_submit(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00878636
+    if sense == 1 {
+        return "verb\trefer for judgment or consideration\tsubject\tThe lawyers submitted the material to the court";
+    }
+    // verb 00878136
+    if sense == 2 {
+        return "verb\tput before\tstate, put forward, posit\tI submit to you that the accused is guilty";
+    }
+    // verb 01118081
+    if sense == 3 {
+        return "verb\tyield to the control of another\t\t";
+    }
+    // verb 02262752
+    if sense == 4 {
+        return "verb\thand over formally\tpresent\t";
+    }
+    // verb 02589013
+    if sense == 5 {
+        return "verb\trefer to another person for decision or judgment\trelegate, pass on\t";
+    }
+    // verb 00878348
+    if sense == 6 {
+        return "verb\tyield to another's wish or opinion\tbow, defer, accede, give in\t";
+    }
+    // verb 00669762
+    if sense == 7 {
+        return "verb\taccept or undergo, often unwillingly\ttake\t";
+    }
+    // verb 01072641
+    if sense == 8 {
+        return "verb\tmake an application as for a job or funding\tput in\t";
+    }
+    ""
+}

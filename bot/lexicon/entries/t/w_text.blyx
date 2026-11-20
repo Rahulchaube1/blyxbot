@@ -1,0 +1,9 @@
+// text — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_text(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 06387980
+    if sense == 1 {
+        return "noun\tthe words of something written\ttextual matter\tthere were more than a thousand words of text";
+    }
+    ""
+}

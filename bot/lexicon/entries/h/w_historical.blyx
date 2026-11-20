@@ -1,0 +1,17 @@
+// historical — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_historical(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02920121
+    if sense == 1 {
+        return "adjective\tof or relating to the study of history\t\thistorical scholars";
+    }
+    // adj 01934284
+    if sense == 2 {
+        return "adjective\thaving once lived or existed or taken place in the real world as distinct from being legendary\t\tthe historical Jesus";
+    }
+    // adj 01730060
+    if sense == 3 {
+        return "adjective\tbelonging to the past; of what is important or famous in the past\thistoric\thistorical (or historic) times";
+    }
+    ""
+}

@@ -1,0 +1,41 @@
+// wave — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wave(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 07352190
+    if sense == 1 {
+        return "noun\tone of a series of ridges that moves across the surface of a liquid (especially across a large body of water)\tmoving ridge\t";
+    }
+    // verb 01041415
+    if sense == 2 {
+        return "verb\tsignal with the hands or nod\tbeckon\tShe waved to her friends";
+    }
+    // noun 00346095
+    if sense == 3 {
+        return "noun\ta movement like that of a sudden occurrence or increase in a specified phenomenon\t\ta wave of settlers";
+    }
+    // noun 07345593
+    if sense == 4 {
+        return "noun\t(physics) a movement up and down or back and forth\tundulation\t";
+    }
+    // verb 01446901
+    if sense == 5 {
+        return "verb\tmove or swing back and forth\tbrandish, flourish\tShe waved her gun";
+    }
+    // verb 01901783
+    if sense == 6 {
+        return "verb\tmove in a wavy pattern or with a rising and falling motion\troll, undulate, flap\tthe waves rolled towards the beach";
+    }
+    // noun 07352835
+    if sense == 7 {
+        return "noun\tsomething that rises rapidly\t\ta wave of emotion swept over him";
+    }
+    // noun 07274027
+    if sense == 8 {
+        return "noun\tthe act of signaling by a movement of the hand\twaving, wafture\t";
+    }
+    // noun 05259240
+    if sense == 9 {
+        return "noun\ta hairdo that creates undulations in the hair\t\t";
+    }
+    ""
+}

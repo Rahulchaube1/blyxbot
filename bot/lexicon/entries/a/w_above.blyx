@@ -1,0 +1,17 @@
+// above — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_above(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00079947
+    if sense == 1 {
+        return "adverb\tat an earlier place\tsupra\tsee above";
+    }
+    // adj 00125993
+    if sense == 2 {
+        return "adjective\tappearing earlier in the same text\t\tflaws in the above interpretation";
+    }
+    // adv 00080169
+    if sense == 3 {
+        return "adverb\tin or to a place that is higher\thigher up, in a higher place, to a higher place\t";
+    }
+    ""
+}

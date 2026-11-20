@@ -1,0 +1,25 @@
+// get into — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_get_into(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02636810
+    if sense == 1 {
+        return "verb\tget involved in or with\ttangle with\t";
+    }
+    // verb 02016523
+    if sense == 2 {
+        return "verb\tto come or go into\tenter, come in, get in, go into, go in, move into\t";
+    }
+    // verb 02239405
+    if sense == 3 {
+        return "verb\tsecure a place in a college, university, etc.\tget in\t";
+    }
+    // verb 00875000
+    if sense == 4 {
+        return "verb\tfamiliarize oneself thoroughly with\t\t";
+    }
+    // verb 00050652
+    if sense == 5 {
+        return "verb\tput clothing on one's body\twear, put on, don, assume\t";
+    }
+    ""
+}

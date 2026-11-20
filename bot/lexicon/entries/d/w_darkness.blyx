@@ -1,0 +1,21 @@
+// darkness — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_darkness(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 13983515
+    if sense == 1 {
+        return "noun\tabsence of light or illumination\tdark\t";
+    }
+    // noun 08646306
+    if sense == 2 {
+        return "noun\tan unilluminated area\tdark, shadow\the moved off into the darkness";
+    }
+    // noun 14563564
+    if sense == 3 {
+        return "noun\tabsence of moral or spiritual values\tiniquity, wickedness, dark\tthe powers of darkness";
+    }
+    // noun 05988498
+    if sense == 4 {
+        return "noun\tan unenlightened state\tdark\this lectures dispelled the darkness";
+    }
+    ""
+}

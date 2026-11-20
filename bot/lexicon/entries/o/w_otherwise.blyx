@@ -1,0 +1,13 @@
+// otherwise — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_otherwise(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00046002
+    if sense == 1 {
+        return "adverb\tin other respects or ways\t\the is otherwise normal";
+    }
+    // adv 00113082
+    if sense == 2 {
+        return "adverb\tin another and different manner\tdifferently, other than\tshe thought otherwise";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// warm — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_warm(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 02529264
+    if sense == 1 {
+        return "adjective\thaving or producing a comfortable and agreeable degree of heat or imparting or maintaining heat\t\ta warm body";
+    }
+    // adj 02530861
+    if sense == 2 {
+        return "adjective\tpsychologically warm; friendly and responsive\t\ta warm greeting";
+    }
+    // adj 02531919
+    if sense == 3 {
+        return "adjective\t(color) inducing the impression of warmth; used especially of reds and oranges and yellows\t\twarm reds and yellows and orange";
+    }
+    // verb 00373250
+    if sense == 4 {
+        return "verb\tget warm or warmer\twarm up\tThe soup warmed slowly on the stove";
+    }
+    // verb 00372958
+    if sense == 5 {
+        return "verb\tmake warm or warmer\t\tThe blanket will warm you";
+    }
+    // adj 01464700
+    if sense == 6 {
+        return "adjective\thaving or displaying warmth or affection\taffectionate, fond, lovesome, tender\ta warm embrace";
+    }
+    ""
+}

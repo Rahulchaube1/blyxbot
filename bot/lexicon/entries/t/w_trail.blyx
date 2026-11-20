@@ -1,0 +1,25 @@
+// trail — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_trail(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02058756
+    if sense == 1 {
+        return "verb\tto lag or linger behind\tdrag, get behind, hang back, drop behind, drop back\t";
+    }
+    // noun 09460312
+    if sense == 2 {
+        return "noun\ta track or mark left by something that has passed\t\tthere as a trail of blood";
+    }
+    // noun 04466613
+    if sense == 3 {
+        return "noun\ta path or track roughly blazed through wild or hilly country\t\t";
+    }
+    // verb 02001858
+    if sense == 4 {
+        return "verb\tgo after with the intent to catch\tchase, chase after, tail, tag, give chase, dog, go after, track\t";
+    }
+    // noun 05826914
+    if sense == 5 {
+        return "noun\tevidence pointing to a possible solution\tlead, track\tthe trail led straight to the perpetrator";
+    }
+    ""
+}

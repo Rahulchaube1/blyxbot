@@ -1,0 +1,25 @@
+// pile — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pile(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 07961480
+    if sense == 1 {
+        return "noun\ta collection of objects laid on top of each other\theap, mound, agglomerate, cumulation, cumulus\t";
+    }
+    // verb 01503404
+    if sense == 2 {
+        return "verb\tarrange in stacks\tstack, heap\t";
+    }
+    // noun 13774404
+    if sense == 3 {
+        return "noun\t(often followed by `of') a large number or amount or extent\tbatch, deal, flock, good deal, great deal, hatful, heap, lot, mass, mess, mickle, mint, mountain, muckle, passel, peck, plenty, pot, quite a little, raft, sight, slew, spate, stack, tidy sum, wad\t";
+    }
+    // noun 13250680
+    if sense == 4 {
+        return "noun\ta large sum of money (especially as pay or profit)\tbundle, big bucks, megabucks, big money\t";
+    }
+    // verb 02064131
+    if sense == 5 {
+        return "verb\tpress tightly together or cram\tthrong, mob, pack, jam\t";
+    }
+    ""
+}

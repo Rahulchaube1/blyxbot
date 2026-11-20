@@ -1,0 +1,65 @@
+// spread — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_spread(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // verb 01378556
+    if sense == 1 {
+        return "verb\tdistribute or disperse widely\tdistribute\tThe invaders spread their language all over the country";
+    }
+    // verb 01380122
+    if sense == 2 {
+        return "verb\tbecome distributed or widespread\tpropagate\tthe infection spread";
+    }
+    // verb 02689299
+    if sense == 3 {
+        return "verb\tspread across or over\toverspread\tA big oil spot spread across the water";
+    }
+    // verb 01579813
+    if sense == 4 {
+        return "verb\tspread out or open from a closed or folded state\tunfold, spread out, open\tspread your arms";
+    }
+    // verb 00968211
+    if sense == 5 {
+        return "verb\tcause to become widely known\tcirculate, circularize, circularise, distribute, disseminate, propagate, broadcast, diffuse, disperse, pass around\tspread information";
+    }
+    // verb 00969873
+    if sense == 6 {
+        return "verb\tbecome widely known and passed on\tgo around, circulate\tthe rumor spread";
+    }
+    // adj 00540977
+    if sense == 7 {
+        return "adjective\tdistributed or spread over a considerable extent\tdispersed\televen million Jews are spread throughout Europe";
+    }
+    // noun 07445896
+    if sense == 8 {
+        return "noun\tprocess or result of distributing or extending over a wide expanse of space\tspreading\t";
+    }
+    // noun 04752859
+    if sense == 9 {
+        return "noun\ta conspicuous disparity or difference as between two figures\tgap\tthe spread between lending and borrowing costs";
+    }
+    // verb 02082690
+    if sense == 10 {
+        return "verb\tstrew or distribute over an area\tscatter, spread out\tHe spread fertilizer over the lawn";
+    }
+    // verb 02060141
+    if sense == 11 {
+        return "verb\tmove outward\tdiffuse, spread out, fan out\t";
+    }
+    // noun 04052442
+    if sense == 12 {
+        return "noun\tfarm consisting of a large tract of land along with facilities needed to raise livestock (especially cattle)\tranch, cattle ranch, cattle farm\t";
+    }
+    // noun 05088324
+    if sense == 13 {
+        return "noun\ta haphazard distribution in all directions\tscatter\t";
+    }
+    // adj 01844858
+    if sense == 14 {
+        return "adjective\tprepared or arranged for a meal; especially having food set out\t\ta table spread with food";
+    }
+    // adj 01431938
+    if sense == 15 {
+        return "adjective\tfully extended in width\toutspread\twith arms spread wide";
+    }
+    ""
+}

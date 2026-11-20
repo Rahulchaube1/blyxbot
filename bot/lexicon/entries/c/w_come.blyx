@@ -1,0 +1,73 @@
+// come — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_come(sense: i64) -> str {
+    if sense == 0 { return "17"; }
+    // verb 01849221
+    if sense == 1 {
+        return "verb\tmove toward, travel toward something or somebody or approach something or somebody\tcome up\tCome with me to the Casbah";
+    }
+    // verb 02005948
+    if sense == 2 {
+        return "verb\treach a destination; arrive by movement or progress\tarrive, get\t";
+    }
+    // verb 00341917
+    if sense == 3 {
+        return "verb\tcome to pass; arrive, as in due course\t\tDawn comes early in June";
+    }
+    // verb 00542120
+    if sense == 4 {
+        return "verb\treach or enter a state, relation, condition, use, or position\t\tcome into contact with a terrorist group";
+    }
+    // verb 02625339
+    if sense == 5 {
+        return "verb\tto be the product or result\tfollow\tMelons come from a vine";
+    }
+    // verb 00342812
+    if sense == 6 {
+        return "verb\tbe found or available\t\tThese shoes come in three colors; The furniture comes unassembled";
+    }
+    // verb 02743921
+    if sense == 7 {
+        return "verb\tcome forth\tissue forth\t";
+    }
+    // verb 02743214
+    if sense == 8 {
+        return "verb\tbe a native of\thail\t";
+    }
+    // verb 02686805
+    if sense == 9 {
+        return "verb\textend or reach\t\tThe sleeves come to your knuckles";
+    }
+    // verb 02743565
+    if sense == 10 {
+        return "verb\texist or occur in a certain point in a series\t\t";
+    }
+    // verb 01839690
+    if sense == 11 {
+        return "verb\tcover a certain distance\t\t";
+    }
+    // verb 02729963
+    if sense == 12 {
+        return "verb\tcome under, be classified or included\tfall\tThis comes under a new heading";
+    }
+    // verb 00344886
+    if sense == 13 {
+        return "verb\thappen as a result\t\tNothing good will come of this";
+    }
+    // verb 02645007
+    if sense == 14 {
+        return "verb\tadd up in number or quantity\ttotal, number, add up, amount\t";
+    }
+    // verb 02627363
+    if sense == 15 {
+        return "verb\tdevelop into\tadd up, amount\t";
+    }
+    // verb 02006709
+    if sense == 16 {
+        return "verb\tbe received\tcome in\t";
+    }
+    // verb 00723349
+    if sense == 17 {
+        return "verb\tcome to one's mind; suggest itself\toccur\t";
+    }
+    ""
+}

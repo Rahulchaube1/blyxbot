@@ -1,0 +1,17 @@
+// local — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_local(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01106405
+    if sense == 1 {
+        return "adjective\trelating to or applicable to or concerned with the administration of a city or town or district rather than a larger area\t\tlocal taxes";
+    }
+    // adj 02756346
+    if sense == 2 {
+        return "adjective\tof or belonging to or characteristic of a particular locality or neighborhood\t\tlocal customs";
+    }
+    // noun 03680942
+    if sense == 3 {
+        return "noun\tpublic transport consisting of a bus or train that stops at all stations or stops\t\tthe local seemed to take forever to get to New York";
+    }
+    ""
+}

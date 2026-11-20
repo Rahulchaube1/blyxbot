@@ -1,0 +1,9 @@
+// apparatus — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_apparatus(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 02727825
+    if sense == 1 {
+        return "noun\tequipment designed to serve a specific function\tsetup\t";
+    }
+    ""
+}

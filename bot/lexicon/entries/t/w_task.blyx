@@ -1,0 +1,13 @@
+// task — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_task(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00795720
+    if sense == 1 {
+        return "noun\tany piece of work that is undertaken or attempted\tundertaking, project, labor\t";
+    }
+    // noun 00719705
+    if sense == 2 {
+        return "noun\ta specific piece of work required to be done as a duty or for a specific fee\tjob, chore\tthe endless task of classifying the samples";
+    }
+    ""
+}

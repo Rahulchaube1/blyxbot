@@ -1,0 +1,29 @@
+// sense — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sense(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05677504
+    if sense == 1 {
+        return "noun\ta general conscious awareness\t\ta sense of security";
+    }
+    // verb 02106006
+    if sense == 2 {
+        return "verb\tperceive by a physical sensation, e.g., coming from the skin or muscles\tfeel\t";
+    }
+    // noun 06602472
+    if sense == 3 {
+        return "noun\tthe meaning of a word or expression; the way in which a word or expression or situation can be interpreted\tsignified\tthe dictionary gave several senses for the word";
+    }
+    // noun 05651971
+    if sense == 4 {
+        return "noun\tthe faculty through which the external world is apprehended\tsensation, sentience, sentiency, sensory faculty\tin the dark he had to depend on touch and on his senses of smell and hearing";
+    }
+    // noun 05614657
+    if sense == 5 {
+        return "noun\tsound practical judgment\tcommon sense, good sense, gumption, horse sense, mother wit\tCommon sense is not so common";
+    }
+    // noun 05807012
+    if sense == 6 {
+        return "noun\ta natural appreciation or ability\t\ta keen musical sense";
+    }
+    ""
+}

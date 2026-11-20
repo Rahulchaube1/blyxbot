@@ -1,0 +1,17 @@
+// intend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_intend(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00708538
+    if sense == 1 {
+        return "verb\thave in mind as a purpose\tmean, think\t";
+    }
+    // verb 00709379
+    if sense == 2 {
+        return "verb\tdesign or destine\tdestine, designate, specify\tShe was intended to become the director";
+    }
+    // verb 00955148
+    if sense == 3 {
+        return "verb\tmean or intend to express or convey\tmean\twhat do his words intend?";
+    }
+    ""
+}

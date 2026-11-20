@@ -1,0 +1,9 @@
+// lung — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lung(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 05387544
+    if sense == 1 {
+        return "noun\teither of two saclike respiratory organs in the chest of vertebrates; serves to remove carbon dioxide and provide oxygen to the blood\t\t";
+    }
+    ""
+}

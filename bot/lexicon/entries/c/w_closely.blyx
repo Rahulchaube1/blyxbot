@@ -1,0 +1,17 @@
+// closely — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_closely(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00160440
+    if sense == 1 {
+        return "adverb\tin a close relation or position in time or space\t\tthe onsets were closely timed";
+    }
+    // adv 00505226
+    if sense == 2 {
+        return "adverb\tin an attentive manner\tclose, tight\t";
+    }
+    // adv 00160659
+    if sense == 3 {
+        return "adverb\tin a close manner\tintimately, nearly\t";
+    }
+    ""
+}

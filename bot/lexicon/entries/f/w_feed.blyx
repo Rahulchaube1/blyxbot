@@ -1,0 +1,37 @@
+// feed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_feed(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01182021
+    if sense == 1 {
+        return "verb\tprovide as food\t\tFeed the guests the nuts";
+    }
+    // noun 07800091
+    if sense == 2 {
+        return "noun\tfood for domestic livestock\tprovender\t";
+    }
+    // verb 01178565
+    if sense == 3 {
+        return "verb\tgive food to\tgive\tFeed the starving children in India";
+    }
+    // verb 01181166
+    if sense == 4 {
+        return "verb\tfeed into; supply\t\tHer success feeds her vanity";
+    }
+    // verb 00189511
+    if sense == 5 {
+        return "verb\tintroduce continuously\tfeed in\tfeed carrots into a food processor";
+    }
+    // verb 02555787
+    if sense == 6 {
+        return "verb\tsupport or promote\t\t";
+    }
+    // verb 01179865
+    if sense == 7 {
+        return "verb\ttake in food; used of animals only\teat\t";
+    }
+    // verb 01180206
+    if sense == 8 {
+        return "verb\tserve as food for; be the food for\t\tThis dish feeds six";
+    }
+    ""
+}

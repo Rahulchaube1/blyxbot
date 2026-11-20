@@ -1,0 +1,25 @@
+// relate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_relate(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00713167
+    if sense == 1 {
+        return "verb\tmake a logical or causal connection\tassociate, tie in, link, colligate, link up, connect\tI cannot relate these events at all";
+    }
+    // verb 02676054
+    if sense == 2 {
+        return "verb\tbe relevant to\trefer, pertain, concern, come to, bear on, touch, touch on, have-to doe with\t";
+    }
+    // verb 00953058
+    if sense == 3 {
+        return "verb\tgive an account of\t\tThe witness related the events";
+    }
+    // verb 02724417
+    if sense == 4 {
+        return "verb\tbe in a relationship with\tinterrelate\tHow are these two observations related?";
+    }
+    // verb 02458103
+    if sense == 5 {
+        return "verb\thave or establish a relationship to\t\tShe relates well to her peers";
+    }
+    ""
+}

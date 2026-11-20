@@ -1,0 +1,33 @@
+// bow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bow(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00898691
+    if sense == 1 {
+        return "verb\tbend one's knee or body, or lower one's head\tbow down\tHe bowed before the King";
+    }
+    // noun 02880189
+    if sense == 2 {
+        return "noun\ta knot with two loops and loose ends; used to tie shoelaces\tbowknot\t";
+    }
+    // verb 00878348
+    if sense == 3 {
+        return "verb\tyield to another's wish or opinion\tsubmit, defer, accede, give in\tThe government bowed to the military pressure";
+    }
+    // noun 02879517
+    if sense == 4 {
+        return "noun\ta slightly curved piece of resilient wood with taut horsehair strands; used in playing certain stringed instruments\t\t";
+    }
+    // noun 02880008
+    if sense == 5 {
+        return "noun\tfront part of a vessel or aircraft\tfore, prow, stem\the pointed the bow of the boat toward the finish line";
+    }
+    // noun 02879718
+    if sense == 6 {
+        return "noun\ta weapon for shooting arrows, composed of a curved piece of resilient wood with a taut cord to propel the arrow\t\t";
+    }
+    // verb 02040273
+    if sense == 7 {
+        return "verb\tbend the head or the upper part of the body in a gesture of respect or greeting\t\tHe bowed before the King";
+    }
+    ""
+}

@@ -1,0 +1,61 @@
+// raise — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_raise(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 00158503
+    if sense == 1 {
+        return "verb\traise the level or amount of something\t\traise my salary";
+    }
+    // verb 01974062
+    if sense == 2 {
+        return "verb\traise from a lower to a higher position\tlift, elevate, get up, bring up\tRaise your hands";
+    }
+    // verb 00941166
+    if sense == 3 {
+        return "verb\tcause to be heard or known; express or utter\t\traise a shout";
+    }
+    // verb 02306281
+    if sense == 4 {
+        return "verb\tcollect funds for a specific purpose\t\tThe President raised several million dollars for his college";
+    }
+    // verb 01739814
+    if sense == 5 {
+        return "verb\tcultivate by growing, often involving improvements by means of agricultural techniques\tgrow, farm, produce\tWe raise hogs here";
+    }
+    // verb 02539788
+    if sense == 6 {
+        return "verb\tbring up\trear, bring up, nurture, parent\traise a family";
+    }
+    // verb 01629958
+    if sense == 7 {
+        return "verb\tsummon into action or bring into existence, often as if by magic\tconjure, conjure up, invoke, evoke, stir, call down, arouse, bring up, put forward, call forth\traise the specter of unemployment";
+    }
+    // verb 01973759
+    if sense == 8 {
+        return "verb\tmove upwards\tlift\t";
+    }
+    // noun 05110185
+    if sense == 9 {
+        return "noun\tthe amount a salary is increased\trise, wage hike, hike, wage increase, salary increase\the got a 3% raise";
+    }
+    // verb 01661243
+    if sense == 10 {
+        return "verb\tconstruct, build, or erect\terect, rear, set up, put up\tRaise a barn";
+    }
+    // verb 01759326
+    if sense == 11 {
+        return "verb\tcall forth (emotions, feelings, and responses)\tarouse, elicit, enkindle, kindle, evoke, fire, provoke\traise a smile";
+    }
+    // verb 01755651
+    if sense == 12 {
+        return "verb\tcreate a disturbance, especially by making a great noise\t\traise hell";
+    }
+    // verb 00544549
+    if sense == 13 {
+        return "verb\traise in rank or condition\tlift, elevate\t";
+    }
+    // verb 00229605
+    if sense == 14 {
+        return "verb\tincrease\tenhance, heighten\t";
+    }
+    ""
+}

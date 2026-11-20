@@ -1,0 +1,21 @@
+// suggestion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_suggestion(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05916155
+    if sense == 1 {
+        return "noun\tan idea that is suggested\t\tthe picnic was her suggestion";
+    }
+    // noun 07162680
+    if sense == 2 {
+        return "noun\ta proposal offered for acceptance or rejection\tproposition, proffer\tit was a suggestion we couldn't refuse";
+    }
+    // noun 13773361
+    if sense == 3 {
+        return "noun\ta just detectable amount\ttrace, hint\t";
+    }
+    // noun 07246582
+    if sense == 4 {
+        return "noun\tpersuasion formulated as a suggestion\tprompting\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// expense — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_expense(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13275495
+    if sense == 1 {
+        return "noun\tamounts paid for goods and services that may be currently tax deductible (as opposed to capital expenditures)\tdisbursal, disbursement\t";
+    }
+    // noun 07420671
+    if sense == 2 {
+        return "noun\ta detriment or sacrifice\t\tat the expense of";
+    }
+    // noun 13277886
+    if sense == 3 {
+        return "noun\tmoney spent to perform work and usually reimbursed by an employer\t\the kept a careful record of his expenses at the meeting";
+    }
+    ""
+}

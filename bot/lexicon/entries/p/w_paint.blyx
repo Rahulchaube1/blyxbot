@@ -1,0 +1,21 @@
+// paint — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_paint(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01684899
+    if sense == 1 {
+        return "verb\tmake a painting\t\the painted all day in the garden";
+    }
+    // verb 01362736
+    if sense == 2 {
+        return "verb\tapply paint to; coat with paint\t\tWe painted the rooms yellow";
+    }
+    // verb 01684663
+    if sense == 3 {
+        return "verb\tmake a painting of\t\tHe painted his mistress many times";
+    }
+    // noun 03875218
+    if sense == 4 {
+        return "noun\ta substance used as a coating to protect or decorate a surface (especially a mixture of pigment suspended in a liquid); dries to form a hard coating\tpigment\tartists use `paint' and `pigment' interchangeably";
+    }
+    ""
+}

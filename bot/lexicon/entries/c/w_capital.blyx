@@ -1,0 +1,21 @@
+// capital — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_capital(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 13354420
+    if sense == 1 {
+        return "noun\tassets available for use in the production of further assets\tworking capital\t";
+    }
+    // noun 13353607
+    if sense == 2 {
+        return "noun\twealth in the form of money or property owned by a person or business and human resources of economic value\t\t";
+    }
+    // noun 08518505
+    if sense == 3 {
+        return "noun\ta seat of government\t\t";
+    }
+    // noun 06824227
+    if sense == 4 {
+        return "noun\tone of the large alphabetic characters used as the first letter in writing or printing proper names and sometimes for emphasis\tcapital letter, uppercase, upper-case letter, majuscule\tprinters once kept the type for capitals and for small letters in separate cases; capitals were kept in the upper half of the type case and so became known as upper-case letters";
+    }
+    ""
+}

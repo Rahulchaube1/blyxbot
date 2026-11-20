@@ -1,0 +1,17 @@
+// respond — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_respond(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00717358
+    if sense == 1 {
+        return "verb\tshow a response or a reaction to something\treact\t";
+    }
+    // verb 00815686
+    if sense == 2 {
+        return "verb\treact verbally\tanswer, reply\t";
+    }
+    // verb 00718737
+    if sense == 3 {
+        return "verb\trespond favorably or as hoped\t\tThe cancer responded to the aggressive therapy";
+    }
+    ""
+}

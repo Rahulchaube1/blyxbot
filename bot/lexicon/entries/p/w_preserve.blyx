@@ -1,0 +1,25 @@
+// preserve — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_preserve(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02679899
+    if sense == 1 {
+        return "verb\tkeep or maintain in unaltered condition; cause to remain or last\tcontinue, uphold, carry on, bear on\tpreserve the peace in the family";
+    }
+    // verb 02280132
+    if sense == 2 {
+        return "verb\tkeep in safety and protect from harm, decay, loss, or destruction\tconserve, maintain, keep up\tWe preserve these archeological findings";
+    }
+    // verb 02225492
+    if sense == 3 {
+        return "verb\tto keep up and reserve for personal or special use\tsave\t";
+    }
+    // noun 14515463
+    if sense == 4 {
+        return "noun\ta domain that seems to be specially reserved for someone\t\tmedicine is no longer a male preserve";
+    }
+    // verb 00212414
+    if sense == 5 {
+        return "verb\tprevent (food) from rotting\tkeep\tpreserved meats";
+    }
+    ""
+}

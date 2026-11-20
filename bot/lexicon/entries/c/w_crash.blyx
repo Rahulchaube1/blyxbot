@@ -1,0 +1,41 @@
+// crash — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_crash(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 07380144
+    if sense == 1 {
+        return "noun\ta loud resonant repeating noise\tclang, clangor, clangour, clangoring, clank, clash\t";
+    }
+    // verb 01972570
+    if sense == 2 {
+        return "verb\tfall or come down violently\t\tThe branch crashed down on my car";
+    }
+    // noun 07301950
+    if sense == 3 {
+        return "noun\ta serious accident (usually involving one or more vehicles)\twreck\tthey are still investigating the crash of the TWA plane";
+    }
+    // verb 02088627
+    if sense == 4 {
+        return "verb\tmove with, or as if with, a crashing noise\t\tThe car crashed through the glass door";
+    }
+    // verb 01561819
+    if sense == 5 {
+        return "verb\tundergo damage or destruction on impact\tram\tthe plane crashed into the ocean";
+    }
+    // noun 07477945
+    if sense == 6 {
+        return "noun\ta sudden large decline of business or the prices of stocks (especially one that causes additional failures)\tcollapse\t";
+    }
+    // noun 00126236
+    if sense == 7 {
+        return "noun\tthe act of colliding with something\tsmash\this crash through the window";
+    }
+    // verb 02019282
+    if sense == 8 {
+        return "verb\tmove violently as through a barrier\t\tThe terrorists crashed the gate";
+    }
+    // verb 01562061
+    if sense == 9 {
+        return "verb\tbreak violently or noisily; smash\tbreak up, break apart\t";
+    }
+    ""
+}

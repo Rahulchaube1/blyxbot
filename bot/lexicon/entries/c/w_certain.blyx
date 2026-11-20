@@ -1,0 +1,21 @@
+// certain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_certain(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00700884
+    if sense == 1 {
+        return "adjective\tdefinite but not specified or identified\t\tset aside a certain sum each week";
+    }
+    // adj 00336831
+    if sense == 2 {
+        return "adjective\thaving or feeling no doubt or uncertainty; confident and assured\tsure\tfelt certain of success";
+    }
+    // adj 00335421
+    if sense == 3 {
+        return "adjective\testablished beyond doubt or question; definitely known\t\twhat is certain is that every effect must have a cause";
+    }
+    // adj 00340239
+    if sense == 4 {
+        return "adjective\tcertain to occur; destined or inevitable\tsure\the was certain to fail";
+    }
+    ""
+}

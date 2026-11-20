@@ -1,0 +1,13 @@
+// catholic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_catholic(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09679925
+    if sense == 1 {
+        return "noun\ta member of a Catholic church\t\t";
+    }
+    // adj 02920951
+    if sense == 2 {
+        return "adjective\tof or relating to or supporting Catholicism\t\tthe Catholic Church";
+    }
+    ""
+}

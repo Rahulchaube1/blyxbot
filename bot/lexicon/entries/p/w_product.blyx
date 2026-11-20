@@ -1,0 +1,21 @@
+// product — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_product(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 03748886
+    if sense == 1 {
+        return "noun\tcommodities offered for sale\tmerchandise, ware\tthat store offers a variety of products";
+    }
+    // noun 04007894
+    if sense == 2 {
+        return "noun\tan artifact that has been created by someone or some process\tproduction\tthey improve their product every year";
+    }
+    // noun 05859630
+    if sense == 3 {
+        return "noun\ta quantity obtained by multiplication\tmathematical product\tthe product of 2 and 3 is 6";
+    }
+    // noun 14997699
+    if sense == 4 {
+        return "noun\ta chemical substance formed as a result of a chemical reaction\t\ta product of lime and nitric acid";
+    }
+    ""
+}

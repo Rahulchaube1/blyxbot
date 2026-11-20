@@ -1,0 +1,9 @@
+// saturday — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_saturday(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 15164570
+    if sense == 1 {
+        return "noun\tthe seventh and last day of the week; observed as the Sabbath by Jews and some Christians\tSabbatum, Sat\t";
+    }
+    ""
+}

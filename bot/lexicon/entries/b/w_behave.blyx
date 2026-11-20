@@ -1,0 +1,17 @@
+// behave — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_behave(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00010435
+    if sense == 1 {
+        return "verb\tbehave in a certain manner; show a certain behavior; conduct or comport oneself\tact, do\tDon't behave like a fool";
+    }
+    // verb 02518161
+    if sense == 2 {
+        return "verb\tbehave in a certain manner\tacquit, bear, deport, conduct, comport, carry\t";
+    }
+    // verb 02519666
+    if sense == 3 {
+        return "verb\tbehave well or properly\tcomport\tThe children must learn to behave";
+    }
+    ""
+}

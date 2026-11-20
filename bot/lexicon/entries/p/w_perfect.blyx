@@ -1,0 +1,13 @@
+// perfect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_perfect(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01749320
+    if sense == 1 {
+        return "adjective\tbeing complete of its kind and without defect or blemish\t\ta perfect circle";
+    }
+    // verb 00473572
+    if sense == 2 {
+        return "verb\tmake perfect or complete\thone\tperfect your French in Paris!";
+    }
+    ""
+}

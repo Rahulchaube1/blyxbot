@@ -1,0 +1,21 @@
+// contemplate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_contemplate(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02164825
+    if sense == 1 {
+        return "verb\tlook at thoughtfully; observe deep in thought\t\tcontemplate one's navel";
+    }
+    // verb 00703875
+    if sense == 2 {
+        return "verb\tconsider as a possibility\t\tI contemplated leaving school and taking a full-time job";
+    }
+    // verb 00704388
+    if sense == 3 {
+        return "verb\tthink intently and at length, as for spiritual purposes\tstudy, meditate\t";
+    }
+    // verb 00630380
+    if sense == 4 {
+        return "verb\treflect deeply on a subject\tchew over, think over, meditate, ponder, excogitate, muse, reflect, mull, mull over, ruminate, speculate\t";
+    }
+    ""
+}

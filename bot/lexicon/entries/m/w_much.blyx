@@ -1,0 +1,33 @@
+// much — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_much(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01553629
+    if sense == 1 {
+        return "adjective\t(quantifier used with mass nouns) great in quantity or degree or extent\t\tnot much rain";
+    }
+    // adv 00059086
+    if sense == 2 {
+        return "adverb\tto a great degree or extent\t\tshe's much better now";
+    }
+    // noun 13776621
+    if sense == 3 {
+        return "noun\ta great amount or extent\t\tthey did much for humanity";
+    }
+    // adv 00032803
+    if sense == 4 {
+        return "adverb\tvery\t\the was much annoyed";
+    }
+    // adv 00059171
+    if sense == 5 {
+        return "adverb\tto a very great degree or extent\ta lot, lots, a good deal, a great deal, very much\twe enjoyed ourselves very much";
+    }
+    // adv 00022829
+    if sense == 6 {
+        return "adverb\t(degree adverb used before a noun phrase) for all practical purposes but not completely\tpractically\tmuch the same thing happened every time";
+    }
+    // adv 00059413
+    if sense == 7 {
+        return "adverb\tfrequently or in great quantities\ta great deal, often\tI don't drink much";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// continually — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_continually(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00088931
+    if sense == 1 {
+        return "adverb\tseemingly without interruption\t\tcomplained continually that there wasn't enough money";
+    }
+    ""
+}

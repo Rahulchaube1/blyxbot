@@ -1,0 +1,13 @@
+// gaze — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_gaze(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02132745
+    if sense == 1 {
+        return "verb\tlook at with fixed eyes\tstare\t";
+    }
+    // noun 00878648
+    if sense == 2 {
+        return "noun\ta long fixed look\tregard\the fixed his paternal gaze on me";
+    }
+    ""
+}

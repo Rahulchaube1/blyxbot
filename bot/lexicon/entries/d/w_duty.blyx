@@ -1,0 +1,17 @@
+// duty — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_duty(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 01129920
+    if sense == 1 {
+        return "noun\tthe social force that binds you to the courses of action demanded by that force\tresponsibility, obligation\twe must instill a sense of duty in our children";
+    }
+    // noun 00719494
+    if sense == 2 {
+        return "noun\twork that you are obliged to perform for moral or legal reasons\t\tthe duties of the job";
+    }
+    // noun 13315999
+    if sense == 3 {
+        return "noun\ta government tax on imports or exports\ttariff\tthey signed a treaty to lower duties on trade between their countries";
+    }
+    ""
+}

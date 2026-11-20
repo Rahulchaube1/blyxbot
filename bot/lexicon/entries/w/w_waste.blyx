@@ -1,0 +1,25 @@
+// waste — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_waste(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02268351
+    if sense == 1 {
+        return "verb\tspend thoughtlessly; throw away\tblow, squander\tHe wasted his inheritance on his insincere friends";
+    }
+    // verb 01161087
+    if sense == 2 {
+        return "verb\tuse inefficiently or inappropriately\t\twaste heat";
+    }
+    // noun 14856263
+    if sense == 3 {
+        return "noun\tany materials unused and rejected as worthless or unwanted\twaste material, waste matter, waste product\tthey collect the waste once a week";
+    }
+    // noun 00742645
+    if sense == 4 {
+        return "noun\tuseless or profitless activity; using or expending or consuming thoughtlessly or carelessly\twastefulness, dissipation\tif the effort brings no compensating gain it is a waste";
+    }
+    // noun 04894964
+    if sense == 5 {
+        return "noun\tthe trait of wasting resources\tthriftlessness, wastefulness\ta life characterized by thriftlessness and waste";
+    }
+    ""
+}

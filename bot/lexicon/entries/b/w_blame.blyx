@@ -1,0 +1,25 @@
+// blame — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_blame(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00842538
+    if sense == 1 {
+        return "verb\tput or pin the blame on\tfault\t";
+    }
+    // verb 00842772
+    if sense == 2 {
+        return "verb\tharass with constant criticism\tfind fault, pick\t";
+    }
+    // verb 00727991
+    if sense == 3 {
+        return "verb\tattribute responsibility to\tcharge\tWe blamed the accident on her";
+    }
+    // noun 07237758
+    if sense == 4 {
+        return "noun\tan accusation that you are responsible for some lapse or misdeed\tincrimination, inculpation\tthe police laid the blame on the driver";
+    }
+    // noun 06713752
+    if sense == 5 {
+        return "noun\ta reproach for some lapse or misdeed\trap\the took the blame for it";
+    }
+    ""
+}

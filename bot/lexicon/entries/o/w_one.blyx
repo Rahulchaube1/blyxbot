@@ -1,0 +1,33 @@
+// one — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_one(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 02186338
+    if sense == 1 {
+        return "adjective\tused of a single unit or thing; not two or more\t1, i, ane\t";
+    }
+    // noun 13742573
+    if sense == 2 {
+        return "noun\tthe smallest whole number or a numeral representing this number\t1, I, ace, single, unity\the has the one but will need a two and three to go with it";
+    }
+    // noun 05870055
+    if sense == 3 {
+        return "noun\ta single person or thing\t\the is the best one";
+    }
+    // adj 02477885
+    if sense == 4 {
+        return "adjective\thaving the indivisible character of a unit\tunitary\tspoke with one voice";
+    }
+    // adj 02064427
+    if sense == 5 {
+        return "adjective\tof the same kind or quality\t\ttwo animals of one species";
+    }
+    // adj 01677623
+    if sense == 6 {
+        return "adjective\tused informally as an intensifier\t\tthat is one fine dog";
+    }
+    // adj 00702642
+    if sense == 7 {
+        return "adjective\tindefinite in time or position\t\the will come one day";
+    }
+    ""
+}

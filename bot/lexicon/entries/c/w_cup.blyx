@@ -1,0 +1,21 @@
+// cup — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cup(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 03147509
+    if sense == 1 {
+        return "noun\ta small open container usually used for drinking; usually has a handle\t\the put the cup back in the saucer";
+    }
+    // noun 13766733
+    if sense == 2 {
+        return "noun\tthe quantity a cup will hold\tcupful\the drank a cup of coffee";
+    }
+    // noun 13904665
+    if sense == 3 {
+        return "noun\tany cup-shaped concavity\t\tbees filled the waxen cups with honey";
+    }
+    // verb 00477828
+    if sense == 4 {
+        return "verb\tform into the shape of a cup\t\tShe cupped her hands";
+    }
+    ""
+}

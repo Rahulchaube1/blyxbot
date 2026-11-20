@@ -1,0 +1,33 @@
+// little — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_little(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01391351
+    if sense == 1 {
+        return "adjective\tlimited or below average in number or quantity or magnitude or extent\tsmall\ta little dining room";
+    }
+    // adj 01554510
+    if sense == 2 {
+        return "adjective\t(quantifier used with mass nouns) small in quantity or degree; not much or almost none or (with `a') at least some\tslight\tlittle rain fell in May";
+    }
+    // adv 00100002
+    if sense == 3 {
+        return "adverb\tnot much\t\the talked little about his family";
+    }
+    // noun 13762717
+    if sense == 4 {
+        return "noun\ta small amount or duration\t\the accepted the little they gave him";
+    }
+    // adj 01649031
+    if sense == 5 {
+        return "adjective\t(of children and animals) young, immature\tsmall\twhat a big little boy you are";
+    }
+    // adj 01280908
+    if sense == 6 {
+        return "adjective\t(informal) small and of little importance\tfiddling, footling, lilliputian, niggling, piddling, piffling, petty, picayune, trivial\ta little (or small) matter";
+    }
+    // adj 01455732
+    if sense == 7 {
+        return "adjective\t(of a voice) faint\tsmall\ta little voice";
+    }
+    ""
+}

@@ -1,0 +1,37 @@
+// mount — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mount(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01343204
+    if sense == 1 {
+        return "verb\tattach to a support\t\tThey mounted the aerator on a floating";
+    }
+    // verb 00433232
+    if sense == 2 {
+        return "verb\tgo up or advance\twax, climb, rise\t";
+    }
+    // verb 00407633
+    if sense == 3 {
+        return "verb\tfix onto a backing, setting, or support\t\tmount slides for macroscopic analysis";
+    }
+    // noun 02377703
+    if sense == 4 {
+        return "noun\ta lightweight horse kept for riding only\tsaddle horse, riding horse\t";
+    }
+    // verb 01649124
+    if sense == 5 {
+        return "verb\tput up or launch\t\tmount a campaign against pornography";
+    }
+    // verb 01923414
+    if sense == 6 {
+        return "verb\tget up on the back of\thop on, mount up, get on, jump on, climb on, bestride\tmount a horse";
+    }
+    // verb 01921964
+    if sense == 7 {
+        return "verb\tgo upward with gradual or continuous progress\tclimb, climb up, go up\t";
+    }
+    // noun 00325110
+    if sense == 8 {
+        return "noun\tthe act of climbing something\tclimb\t";
+    }
+    ""
+}

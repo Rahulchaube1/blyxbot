@@ -1,0 +1,57 @@
+// roll — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_roll(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 01866192
+    if sense == 1 {
+        return "verb\tmove by turning over or rotating\tturn over\tThe child rolled down the hill";
+    }
+    // verb 01887020
+    if sense == 2 {
+        return "verb\tmove along on or as if on wheels or a wheeled vehicle\twheel\tThe President's convoy rolled past the crowds";
+    }
+    // verb 02687251
+    if sense == 3 {
+        return "verb\toccur in soft rounded shapes\tundulate\tThe hills rolled past";
+    }
+    // verb 01391280
+    if sense == 4 {
+        return "verb\tflatten or spread with a roller\troll out\troll out the paper";
+    }
+    // noun 07441619
+    if sense == 5 {
+        return "noun\trotary motion of an object around its own axis\taxial rotation, axial motion\t";
+    }
+    // noun 06495000
+    if sense == 6 {
+        return "noun\ta list of names\troster\this name was struck off the rolls";
+    }
+    // verb 02198014
+    if sense == 7 {
+        return "verb\temit, produce, or utter with a deep prolonged reverberating sound\t\tThe thunder rolled";
+    }
+    // verb 01522276
+    if sense == 8 {
+        return "verb\tarrange or or coil around\twind, wrap, twine\troll your hair around your finger";
+    }
+    // noun 07349532
+    if sense == 9 {
+        return "noun\ta long heavy sea wave as it advances towards the shore\troller, rolling wave\t";
+    }
+    // noun 04101375
+    if sense == 10 {
+        return "noun\tphotographic film rolled up inside a container to protect it from light\t\t";
+    }
+    // verb 01526139
+    if sense == 11 {
+        return "verb\tbegin operating or running\t\tThe cameras were rolling";
+    }
+    // verb 00143204
+    if sense == 12 {
+        return "verb\tshape by rolling\t\troll a cigarette";
+    }
+    // verb 00100410
+    if sense == 13 {
+        return "verb\texecute a roll, in tumbling\t\tThe gymnasts rolled and jumped";
+    }
+    ""
+}

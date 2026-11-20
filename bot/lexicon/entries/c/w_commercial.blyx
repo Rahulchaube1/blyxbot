@@ -1,0 +1,17 @@
+// commercial — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_commercial(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00483146
+    if sense == 1 {
+        return "adjective\tconnected with or engaged in or sponsored by or used in commerce or commercial enterprises\t\tcommercial trucker";
+    }
+    // noun 07250034
+    if sense == 2 {
+        return "noun\ta commercially sponsored ad on radio or television\tcommercial message\t";
+    }
+    // adj 03137558
+    if sense == 3 {
+        return "adjective\tof or relating to commercialism\t\ta commercial attache";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// eliminate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_eliminate(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00471711
+    if sense == 1 {
+        return "verb\tterminate, end, or take out\textinguish, get rid of, do away with\tLet's eliminate the course on Akkadian hieroglyphics";
+    }
+    // verb 02629256
+    if sense == 2 {
+        return "verb\tdo away with\tobviate, rid of\t";
+    }
+    // verb 00470701
+    if sense == 3 {
+        return "verb\tkill in large numbers\tannihilate, extinguish, eradicate, wipe out, decimate, carry off\t";
+    }
+    // verb 00685419
+    if sense == 4 {
+        return "verb\tdismiss from consideration or a contest\trule out, winnow out, reject\tThis possibility can be eliminated from our consideration";
+    }
+    // verb 00072989
+    if sense == 5 {
+        return "verb\teliminate from the body\texcrete, egest, pass\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// similar — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_similar(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02071420
+    if sense == 1 {
+        return "adjective\tmarked by correspondence or resemblance\t\tsimilar food at similar prices";
+    }
+    // adj 01410606
+    if sense == 2 {
+        return "adjective\thaving the same or similar characteristics\talike, like\t";
+    }
+    ""
+}

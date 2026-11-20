@@ -1,0 +1,33 @@
+// deliver — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_deliver(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 00989602
+    if sense == 1 {
+        return "verb\tdeliver (a speech, oration, or idea)\tpresent\t";
+    }
+    // verb 01438304
+    if sense == 2 {
+        return "verb\tbring to a destination, make a delivery\t\tour local super market delivers";
+    }
+    // verb 02293321
+    if sense == 3 {
+        return "verb\tto surrender someone or something to another\thand over, fork over, fork out, fork up, turn in, render\tthe guard delivered the criminal to the police";
+    }
+    // verb 02551144
+    if sense == 4 {
+        return "verb\tfree from harm or evil\trescue\t";
+    }
+    // verb 02503365
+    if sense == 5 {
+        return "verb\thand over to the authorities of another country\textradite, deport\t";
+    }
+    // verb 01062253
+    if sense == 6 {
+        return "verb\tpass down\trender, return\tdeliver a judgment";
+    }
+    // verb 00989869
+    if sense == 7 {
+        return "verb\tutter (an exclamation, noise, etc.)\t\tThe students delivered a cry of joy";
+    }
+    ""
+}

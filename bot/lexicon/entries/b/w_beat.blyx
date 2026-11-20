@@ -1,0 +1,61 @@
+// beat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_beat(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 01101913
+    if sense == 1 {
+        return "verb\tcome out better in a competition, race, or conflict\tbeat out, crush, shell, trounce, vanquish\tAgassi beat Becker in the tennis championship";
+    }
+    // verb 01397210
+    if sense == 2 {
+        return "verb\tgive a beating to; subject to a beating, either as a punishment or as an act of aggression\tbeat up, work over\tThugs beat him up when he walked down the street late at night";
+    }
+    // verb 01398919
+    if sense == 3 {
+        return "verb\thit repeatedly\t\tbeat on the door";
+    }
+    // verb 01880113
+    if sense == 4 {
+        return "verb\tmove rhythmically\tpound, thump\tHer heart was beating fast";
+    }
+    // verb 01624897
+    if sense == 5 {
+        return "verb\tshape by beating\t\tbeat swords into ploughshares";
+    }
+    // verb 02174830
+    if sense == 6 {
+        return "verb\tmake a rhythmic sound\tdrum, thrum\tThe drums beat all night";
+    }
+    // noun 08507381
+    if sense == 7 {
+        return "noun\ta regular route for a sentry or policeman\tround\tin the old days a policeman walked a beat and knew all his people by name";
+    }
+    // noun 07400906
+    if sense == 8 {
+        return "noun\tthe rhythmic contraction and expansion of the arteries with each beat of the heart\tpulse, pulsation, heartbeat\the could feel the beat of her heart";
+    }
+    // noun 07086518
+    if sense == 9 {
+        return "noun\tthe basic rhythmic unit in a piece of music\trhythm, musical rhythm\tthe conductor set the beat";
+    }
+    // verb 02162815
+    if sense == 10 {
+        return "verb\tglare or strike with great intensity\t\tThe sun was beating down on us";
+    }
+    // verb 02093610
+    if sense == 11 {
+        return "verb\tmove with a thrashing motion\tflap\tThe eagle beat its wings and soared high into the sky";
+    }
+    // verb 01945938
+    if sense == 12 {
+        return "verb\tsail with much tacking or with difficulty\t\tThe boat beat in the strong wind";
+    }
+    // verb 01418179
+    if sense == 13 {
+        return "verb\tstir vigorously\tscramble\tbeat the egg whites";
+    }
+    // verb 01399576
+    if sense == 14 {
+        return "verb\tstrike (a part of one's own body) repeatedly, as in great emotion or in accompaniment to music\t\tbeat one's breast";
+    }
+    ""
+}

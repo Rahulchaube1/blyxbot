@@ -1,0 +1,13 @@
+// substantial — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_substantial(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00625055
+    if sense == 1 {
+        return "adjective\tfairly large\tsignificant\twon by a substantial margin";
+    }
+    // adj 00901969
+    if sense == 2 {
+        return "adjective\thaving a firm basis in reality and being therefore important, meaningful, or considerable\tsubstantive\tsubstantial equivalents";
+    }
+    ""
+}

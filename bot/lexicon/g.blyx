@@ -1,0 +1,152 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::g::w_gain;
+use entries::g::w_game;
+use entries::g::w_garden;
+use entries::g::w_gas;
+use entries::g::w_gather;
+use entries::g::w_gay;
+use entries::g::w_gaze;
+use entries::g::w_general;
+use entries::g::w_generally;
+use entries::g::w_generation;
+use entries::g::w_german;
+use entries::g::w_gesture;
+use entries::g::w_get;
+use entries::g::w_get_into;
+use entries::g::w_get_out;
+use entries::g::w_get_up;
+use entries::g::w_girl;
+use entries::g::w_give;
+use entries::g::w_give_up;
+use entries::g::w_glance;
+use entries::g::w_glass;
+use entries::g::w_glow;
+use entries::g::w_go;
+use entries::g::w_go_down;
+use entries::g::w_go_home;
+use entries::g::w_go_into;
+use entries::g::w_go_on;
+use entries::g::w_go_out;
+use entries::g::w_go_to;
+use entries::g::w_go_up;
+use entries::g::w_goal;
+use entries::g::w_god;
+use entries::g::w_gold;
+use entries::g::w_good;
+use entries::g::w_govern;
+use entries::g::w_government;
+use entries::g::w_grab;
+use entries::g::w_grade;
+use entries::g::w_gradually;
+use entries::g::w_gram;
+use entries::g::w_grant;
+use entries::g::w_grasp;
+use entries::g::w_grass;
+use entries::g::w_gray;
+use entries::g::w_great;
+use entries::g::w_greater;
+use entries::g::w_greatly;
+use entries::g::w_greek;
+use entries::g::w_green;
+use entries::g::w_greet;
+use entries::g::w_grin;
+use entries::g::w_grip;
+use entries::g::w_ground;
+use entries::g::w_group;
+use entries::g::w_grow;
+use entries::g::w_growth;
+use entries::g::w_guard;
+use entries::g::w_guess;
+use entries::g::w_guest;
+use entries::g::w_guide;
+use entries::g::w_gun;
+use entries::g::w_guy;
+
+fn through_w_get_up(term: str, sense: i64) -> str {
+    if term == "gain" { return w_gain(sense); }
+    if term == "game" { return w_game(sense); }
+    if term == "garden" { return w_garden(sense); }
+    if term == "gas" { return w_gas(sense); }
+    if term == "gather" { return w_gather(sense); }
+    if term == "gay" { return w_gay(sense); }
+    if term == "gaze" { return w_gaze(sense); }
+    if term == "general" { return w_general(sense); }
+    if term == "generally" { return w_generally(sense); }
+    if term == "generation" { return w_generation(sense); }
+    if term == "german" { return w_german(sense); }
+    if term == "gesture" { return w_gesture(sense); }
+    if term == "get" { return w_get(sense); }
+    if term == "get into" { return w_get_into(sense); }
+    if term == "get out" { return w_get_out(sense); }
+    if term == "get up" { return w_get_up(sense); }
+    ""
+}
+
+fn through_w_god(term: str, sense: i64) -> str {
+    if term == "girl" { return w_girl(sense); }
+    if term == "give" { return w_give(sense); }
+    if term == "give up" { return w_give_up(sense); }
+    if term == "glance" { return w_glance(sense); }
+    if term == "glass" { return w_glass(sense); }
+    if term == "glow" { return w_glow(sense); }
+    if term == "go" { return w_go(sense); }
+    if term == "go down" { return w_go_down(sense); }
+    if term == "go home" { return w_go_home(sense); }
+    if term == "go into" { return w_go_into(sense); }
+    if term == "go on" { return w_go_on(sense); }
+    if term == "go out" { return w_go_out(sense); }
+    if term == "go to" { return w_go_to(sense); }
+    if term == "go up" { return w_go_up(sense); }
+    if term == "goal" { return w_goal(sense); }
+    if term == "god" { return w_god(sense); }
+    ""
+}
+
+fn through_w_greek(term: str, sense: i64) -> str {
+    if term == "gold" { return w_gold(sense); }
+    if term == "good" { return w_good(sense); }
+    if term == "govern" { return w_govern(sense); }
+    if term == "government" { return w_government(sense); }
+    if term == "grab" { return w_grab(sense); }
+    if term == "grade" { return w_grade(sense); }
+    if term == "gradually" { return w_gradually(sense); }
+    if term == "gram" { return w_gram(sense); }
+    if term == "grant" { return w_grant(sense); }
+    if term == "grasp" { return w_grasp(sense); }
+    if term == "grass" { return w_grass(sense); }
+    if term == "gray" { return w_gray(sense); }
+    if term == "great" { return w_great(sense); }
+    if term == "greater" { return w_greater(sense); }
+    if term == "greatly" { return w_greatly(sense); }
+    if term == "greek" { return w_greek(sense); }
+    ""
+}
+
+fn through_w_guy(term: str, sense: i64) -> str {
+    if term == "green" { return w_green(sense); }
+    if term == "greet" { return w_greet(sense); }
+    if term == "grin" { return w_grin(sense); }
+    if term == "grip" { return w_grip(sense); }
+    if term == "ground" { return w_ground(sense); }
+    if term == "group" { return w_group(sense); }
+    if term == "grow" { return w_grow(sense); }
+    if term == "growth" { return w_growth(sense); }
+    if term == "guard" { return w_guard(sense); }
+    if term == "guess" { return w_guess(sense); }
+    if term == "guest" { return w_guest(sense); }
+    if term == "guide" { return w_guide(sense); }
+    if term == "gun" { return w_gun(sense); }
+    if term == "guy" { return w_guy(sense); }
+    ""
+}
+
+pub fn lookup_g(term: str, sense: i64) -> str {
+    if term <= "get up" { return through_w_get_up(term, sense); }
+    if term <= "god" { return through_w_god(term, sense); }
+    if term <= "greek" { return through_w_greek(term, sense); }
+    through_w_guy(term, sense)
+}
+
+pub fn words_g() -> str {
+    "gain|game|garden|gas|gather|gay|gaze|general|generally|generation|german|gesture|get|get into|get out|get up|girl|give|give up|glance|glass|glow|go|go down|go home|go into|go on|go out|go to|go up|goal|god|gold|good|govern|government|grab|grade|gradually|gram|grant|grasp|grass|gray|great|greater|greatly|greek|green|greet|grin|grip|ground|group|grow|growth|guard|guess|guest|guide|gun|guy"
+}

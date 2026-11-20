@@ -1,0 +1,37 @@
+// dress — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dress(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 03236735
+    if sense == 1 {
+        return "noun\ta one-piece garment for a woman; has skirt and bodice\tfrock\t";
+    }
+    // verb 00046534
+    if sense == 2 {
+        return "verb\tput on clothes\tget dressed\twe had to dress quickly";
+    }
+    // verb 00047945
+    if sense == 3 {
+        return "verb\tprovide with clothes or put clothes on\tclothe, enclothe, garb, raiment, tog, garment, habilitate, fit out, apparel\tParents must feed and dress their child";
+    }
+    // noun 02756098
+    if sense == 4 {
+        return "noun\tclothing of a distinctive style or for a particular occasion\tattire, garb\tbattle dress";
+    }
+    // verb 01266269
+    if sense == 5 {
+        return "verb\tput a finish on\t\tdress the surface smooth";
+    }
+    // verb 00044797
+    if sense == 6 {
+        return "verb\tdress in a certain manner\tdress up\tShe dresses in the latest Paris fashion";
+    }
+    // verb 00043683
+    if sense == 7 {
+        return "verb\tdress or groom with elaborate care\tpreen, primp, plume\tShe likes to dress when going to the opera";
+    }
+    // verb 00542809
+    if sense == 8 {
+        return "verb\tkill and prepare for market or consumption\tdress out\tdress a turkey";
+    }
+    ""
+}

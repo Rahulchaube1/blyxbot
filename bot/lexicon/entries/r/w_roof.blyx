@@ -1,0 +1,17 @@
+// roof — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_roof(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04105068
+    if sense == 1 {
+        return "noun\ta protective covering that covers or forms the top of a building\t\t";
+    }
+    // noun 04105438
+    if sense == 2 {
+        return "noun\tprotective covering on top of a motor vehicle\t\t";
+    }
+    // verb 01233993
+    if sense == 3 {
+        return "verb\tprovide a building with a roof; cover a building with a roof\t\t";
+    }
+    ""
+}

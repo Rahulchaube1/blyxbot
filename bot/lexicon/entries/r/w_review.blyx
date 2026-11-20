@@ -1,0 +1,29 @@
+// review — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_review(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00696189
+    if sense == 1 {
+        return "verb\tlook at again; examine again\treexamine\tlet's review your situation";
+    }
+    // verb 00855512
+    if sense == 2 {
+        return "verb\tappraise critically\tcritique\tShe reviews books for the New York Times";
+    }
+    // noun 05747582
+    if sense == 3 {
+        return "noun\ta new appraisal or evaluation\treappraisal, revaluation, reassessment\t";
+    }
+    // verb 00696700
+    if sense == 4 {
+        return "verb\thold a review (of troops)\tgo over, survey\t";
+    }
+    // noun 06410391
+    if sense == 5 {
+        return "noun\tan essay or article that gives a critical evaluation (as of a book or play)\tcritique, critical review, review article\t";
+    }
+    // noun 00143251
+    if sense == 6 {
+        return "noun\ta subsequent examination of a patient for the purpose of monitoring earlier treatment\tfollow-up, followup, reexamination\t";
+    }
+    ""
+}

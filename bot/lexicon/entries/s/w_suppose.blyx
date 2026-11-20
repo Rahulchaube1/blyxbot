@@ -1,0 +1,17 @@
+// suppose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_suppose(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00917300
+    if sense == 1 {
+        return "verb\texpress a supposition\tsay\t";
+    }
+    // verb 00631737
+    if sense == 2 {
+        return "verb\texpect, believe, or suppose\tthink, opine, imagine, reckon, guess\t";
+    }
+    // verb 00633443
+    if sense == 3 {
+        return "verb\tto believe especially on uncertain or tentative grounds\tspeculate, theorize, theorise, conjecture, hypothesize, hypothesise, hypothecate\tScientists supposed that large dinosaurs lived in swamps";
+    }
+    ""
+}

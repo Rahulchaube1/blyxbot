@@ -1,0 +1,21 @@
+// greet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_greet(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00897241
+    if sense == 1 {
+        return "verb\texpress greetings upon meeting someone\trecognize, recognise\t";
+    }
+    // verb 00897125
+    if sense == 2 {
+        return "verb\tsend greetings to\t\t";
+    }
+    // verb 00718907
+    if sense == 3 {
+        return "verb\treact to in a certain way\t\tThe President was greeted with catcalls";
+    }
+    // verb 02197505
+    if sense == 4 {
+        return "verb\tbe perceived by\t\tLoud music greeted him when he entered the apartment";
+    }
+    ""
+}

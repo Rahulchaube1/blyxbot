@@ -1,0 +1,13 @@
+// rub — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rub(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01249724
+    if sense == 1 {
+        return "verb\tmove over something with pressure\t\trub my hands";
+    }
+    // verb 01250908
+    if sense == 2 {
+        return "verb\tcause friction\tfray, fret, chafe, scratch\t";
+    }
+    ""
+}

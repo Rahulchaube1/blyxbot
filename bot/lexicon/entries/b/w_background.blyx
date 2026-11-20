@@ -1,0 +1,29 @@
+// background — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_background(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 04921417
+    if sense == 1 {
+        return "noun\ta person's social heritage: previous experience or training\t\the is a lawyer with a sports background";
+    }
+    // noun 05933834
+    if sense == 2 {
+        return "noun\tthe part of a scene (or picture) that lies behind objects in the foreground\tground\the posed her against a background of rolling hills";
+    }
+    // noun 05823517
+    if sense == 3 {
+        return "noun\tinformation that is essential to understanding a situation or problem\tbackground knowledge\tthe embassy filled him in on the background of the incident";
+    }
+    // noun 07430480
+    if sense == 4 {
+        return "noun\textraneous signals that can be confused with the phenomenon to be observed or measured\tbackground signal\tthey got a bad connection and could hardly hear one another over the background signals";
+    }
+    // noun 07285191
+    if sense == 5 {
+        return "noun\trelatively unimportant or inconspicuous accompanying situation\t\twhen the rain came he could hear the sound of thunder in the background";
+    }
+    // noun 14513259
+    if sense == 6 {
+        return "noun\tthe state of the environment in which a situation exists\tsetting, scope\t";
+    }
+    ""
+}

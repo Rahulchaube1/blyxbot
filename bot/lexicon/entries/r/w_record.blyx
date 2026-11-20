@@ -1,0 +1,45 @@
+// record — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_record(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 01000214
+    if sense == 1 {
+        return "verb\tmake a record of; set down in permanent form\tenter, put down\t";
+    }
+    // noun 06647206
+    if sense == 2 {
+        return "noun\tanything (such as a document or a phonograph record or a photograph) providing permanent evidence of or information about past events\t\tthe film provided a valuable record of stage techniques";
+    }
+    // noun 03924069
+    if sense == 3 {
+        return "noun\tsound recording consisting of a disk with a continuous groove; used to reproduce music by rotating while a phonograph needle tracks in the groove\tphonograph record, phonograph recording, disk, disc, platter\t";
+    }
+    // verb 00998399
+    if sense == 4 {
+        return "verb\tregister electronically\ttape\tThey recorded her singing";
+    }
+    // noun 13596986
+    if sense == 5 {
+        return "noun\tthe number of wins versus losses and ties a team has had\t\tat 9-0 they have the best record in their league";
+    }
+    // noun 00047745
+    if sense == 6 {
+        return "noun\tthe sum of recognized accomplishments\ttrack record\tthe lawyer has a good record";
+    }
+    // verb 00922867
+    if sense == 7 {
+        return "verb\tindicate a certain reading; of gauges and instruments\tread, register, show\t";
+    }
+    // noun 06636524
+    if sense == 8 {
+        return "noun\ta compilation of the known facts regarding something or someone\trecord book, book\tAl Smith used to say, `Let's look at the record'";
+    }
+    // noun 00063014
+    if sense == 9 {
+        return "noun\tan extreme attainment; the best (or worst) performance ever attested (as in a sport)\t\the tied the Olympic record";
+    }
+    // noun 13403643
+    if sense == 10 {
+        return "noun\ta document that can serve as legal evidence of a transaction\t\tthey could find no record of the purchase";
+    }
+    ""
+}

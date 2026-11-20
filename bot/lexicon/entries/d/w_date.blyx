@@ -1,0 +1,37 @@
+// date — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_date(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 15159583
+    if sense == 1 {
+        return "noun\tthe specified day of the month\tday of the month\twhat is the date today?";
+    }
+    // noun 09992538
+    if sense == 2 {
+        return "noun\ta participant in a date\tescort\this date never stopped talking";
+    }
+    // noun 08385009
+    if sense == 3 {
+        return "noun\ta meeting arranged in advance\tappointment, engagement\tshe asked how to avoid kissing at the end of a date";
+    }
+    // noun 15179888
+    if sense == 4 {
+        return "noun\ta particular but unspecified point in time\tparticular date\tthey hoped to get together at an early date";
+    }
+    // noun 15120223
+    if sense == 5 {
+        return "noun\tthe present\t\tthey are up to date";
+    }
+    // verb 02485844
+    if sense == 6 {
+        return "verb\tgo on a date with\t\tTonight she is dating a former high school sweetheart";
+    }
+    // verb 00735389
+    if sense == 7 {
+        return "verb\tstamp with a date\tdate stamp\tThe package is dated November 24";
+    }
+    // verb 00619183
+    if sense == 8 {
+        return "verb\tassign a date to; determine the (probable) date of\t\tScientists often cannot date precisely archeological or prehistorical findings";
+    }
+    ""
+}

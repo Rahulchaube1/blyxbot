@@ -1,0 +1,13 @@
+// please — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_please(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01815628
+    if sense == 1 {
+        return "verb\tgive pleasure to or be pleasing to\tdelight\tThese colors please the senses";
+    }
+    // verb 01824958
+    if sense == 2 {
+        return "verb\tbe the will of or have the will (to)\t\the could do many things if he pleased";
+    }
+    ""
+}

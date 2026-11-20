@@ -1,0 +1,13 @@
+// dirt — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dirt(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 14844693
+    if sense == 1 {
+        return "noun\tthe part of the earth's surface consisting of humus and disintegrated rock\tsoil\t";
+    }
+    // noun 14498096
+    if sense == 2 {
+        return "noun\tthe state of being covered with unclean things\tfilth, grime, soil, stain, grease, grunge\t";
+    }
+    ""
+}

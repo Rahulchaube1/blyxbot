@@ -1,0 +1,17 @@
+// breathe — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_breathe(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00001740
+    if sense == 1 {
+        return "verb\tdraw air into, and expel out of, the lungs\ttake a breath, respire, suspire\tI can breathe better when the air is clean";
+    }
+    // verb 02617083
+    if sense == 2 {
+        return "verb\tbe alive\t\tEvery creature that breathes";
+    }
+    // verb 02325272
+    if sense == 3 {
+        return "verb\timpart as if by breathing\t\tHe breathed new life into the old house";
+    }
+    ""
+}

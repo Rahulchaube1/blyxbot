@@ -1,0 +1,9 @@
+// authorize — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_authorize(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00803325
+    if sense == 1 {
+        return "verb\tgrant authorization or clearance for\tauthorise, pass, clear\tThe rock star never authorized this slanderous biography";
+    }
+    ""
+}

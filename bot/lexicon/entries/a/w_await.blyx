@@ -1,0 +1,9 @@
+// await — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_await(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00720063
+    if sense == 1 {
+        return "verb\tlook forward to the probable occurrence of\texpect, look, wait\t";
+    }
+    ""
+}

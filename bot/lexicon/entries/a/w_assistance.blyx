@@ -1,0 +1,13 @@
+// assistance — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_assistance(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 01207609
+    if sense == 1 {
+        return "noun\tthe activity of contributing to the fulfillment of a need or furtherance of an effort or purpose\taid, assist, help\tcould not walk without assistance";
+    }
+    // noun 05154908
+    if sense == 2 {
+        return "noun\ta resource\taid, help\t";
+    }
+    ""
+}

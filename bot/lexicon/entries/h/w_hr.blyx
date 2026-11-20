@@ -1,0 +1,9 @@
+// hr — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hr(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 15227846
+    if sense == 1 {
+        return "noun\ta period of time equal to 1/24th of a day\thour, 60 minutes\t";
+    }
+    ""
+}

@@ -1,0 +1,57 @@
+// settle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_settle(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 01988458
+    if sense == 1 {
+        return "verb\tsettle into a position, usually on a surface or ground\tsettle down\tdust settled on the roofs";
+    }
+    // verb 00698855
+    if sense == 2 {
+        return "verb\tbring to an end; settle conclusively\tdecide, resolve, adjudicate\t";
+    }
+    // verb 00763399
+    if sense == 3 {
+        return "verb\tsettle conclusively; come to terms\tsquare off, square up, determine\tWe finally settled the argument";
+    }
+    // verb 00413876
+    if sense == 4 {
+        return "verb\ttake up residence and become established\tlocate\tThe immigrants settled in the Midwest";
+    }
+    // verb 00764902
+    if sense == 5 {
+        return "verb\tcome to terms\treconcile, patch up, make up, conciliate\t";
+    }
+    // verb 01989873
+    if sense == 6 {
+        return "verb\tgo under, \"The raft sank and its occupants drowned\"\tsink, go down, go under\t";
+    }
+    // verb 00415398
+    if sense == 7 {
+        return "verb\tbecome settled or established and stable in one's residence or life style\troot, take root, steady down, settle down\tHe finally settled down";
+    }
+    // verb 00558673
+    if sense == 8 {
+        return "verb\tbecome resolved, fixed, established, or quiet\t\tThe roar settled to a thunder";
+    }
+    // verb 00539338
+    if sense == 9 {
+        return "verb\testablish or develop as a residence\t\tHe settled the farm 200 years ago";
+    }
+    // verb 01987058
+    if sense == 10 {
+        return "verb\tcome to rest\t\t";
+    }
+    // verb 01465921
+    if sense == 11 {
+        return "verb\tarrange or fix in the desired order\t\tShe settled the teacart";
+    }
+    // verb 00798091
+    if sense == 12 {
+        return "verb\taccept despite lack of complete satisfaction\t\tWe settled for a lower price";
+    }
+    // verb 00764032
+    if sense == 13 {
+        return "verb\tend a legal dispute by arriving at a settlement\t\tThe two parties finally settled";
+    }
+    ""
+}

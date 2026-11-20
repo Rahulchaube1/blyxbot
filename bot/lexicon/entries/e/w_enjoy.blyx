@@ -1,0 +1,25 @@
+// enjoy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_enjoy(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01820302
+    if sense == 1 {
+        return "verb\tderive or receive pleasure from; get enjoyment from; take pleasure in\tbask, relish, savor, savour\t";
+    }
+    // verb 01192510
+    if sense == 2 {
+        return "verb\thave benefit from\t\tenjoy privileges";
+    }
+    // verb 01828736
+    if sense == 3 {
+        return "verb\tget pleasure from\tlove\t";
+    }
+    // verb 02110793
+    if sense == 4 {
+        return "verb\thave for one's benefit\t\tThe industry enjoyed a boom";
+    }
+    // verb 01190948
+    if sense == 5 {
+        return "verb\ttake delight in\tdelight, revel\t";
+    }
+    ""
+}

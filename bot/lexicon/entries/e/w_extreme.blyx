@@ -1,0 +1,29 @@
+// extreme — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_extreme(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 01511520
+    if sense == 1 {
+        return "adjective\tof the greatest possible degree or extent or intensity\tutmost, uttermost\textreme cold";
+    }
+    // noun 05098099
+    if sense == 2 {
+        return "noun\tthe furthest or highest degree of something\t\the carried it to extremes";
+    }
+    // adj 01534858
+    if sense == 3 {
+        return "adjective\tfar beyond a norm in quantity or amount or degree; to an utmost degree\t\tan extreme example";
+    }
+    // noun 08569165
+    if sense == 4 {
+        return "noun\tthe point located farthest from the middle of something\textreme point, extremum\t";
+    }
+    // adj 01535082
+    if sense == 5 {
+        return "adjective\tbeyond a norm in views or actions\t\tan extreme conservative";
+    }
+    // adj 00446107
+    if sense == 6 {
+        return "adjective\tmost distant in any direction\t\tthe extreme edge of town";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// stone — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stone(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 09416076
+    if sense == 1 {
+        return "noun\ta lump or mass of hard consolidated mineral matter\trock\t";
+    }
+    // noun 04326084
+    if sense == 2 {
+        return "noun\tbuilding material consisting of a piece of rock hewn in a definite shape for a special purpose\t\the wanted a special stone to mark the site";
+    }
+    // noun 14696793
+    if sense == 3 {
+        return "noun\tmaterial consisting of the aggregate of minerals like those making up the Earth's crust\trock\tstone is abundant in New England and there are many quarries";
+    }
+    // verb 01323518
+    if sense == 4 {
+        return "verb\tkill by throwing stones at\tlapidate\tPeople wanted to stone the woman who had a child out of wedlock";
+    }
+    ""
+}

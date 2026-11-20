@@ -1,0 +1,21 @@
+// comment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_comment(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06765044
+    if sense == 1 {
+        return "noun\ta statement that expresses a personal opinion or belief or adds information\tremark, input\tfrom time to time she contributed a personal comment on his account";
+    }
+    // verb 01058574
+    if sense == 2 {
+        return "verb\tmake or write a comment on\tnotice, remark, point out\the commented the paper of his colleague";
+    }
+    // noun 06762711
+    if sense == 3 {
+        return "noun\ta written explanation or criticism or illustration that is added to a book or other textual material\tcommentary\the wrote an extended comment on the proposal";
+    }
+    // verb 01033189
+    if sense == 4 {
+        return "verb\texplain or interpret something\t\t";
+    }
+    ""
+}

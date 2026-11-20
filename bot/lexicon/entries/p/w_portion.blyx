@@ -1,0 +1,21 @@
+// portion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_portion(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 13809207
+    if sense == 1 {
+        return "noun\tsomething determined in relation to something that includes it\tpart, component part, component, constituent\tI read a portion of the manuscript";
+    }
+    // noun 03892891
+    if sense == 2 {
+        return "noun\tsomething less than the whole of a human artifact\tpart\t";
+    }
+    // noun 01085098
+    if sense == 3 {
+        return "noun\tthe allotment of some amount by dividing something\tparcel, share\t";
+    }
+    // noun 13285176
+    if sense == 4 {
+        return "noun\tassets belonging to or due to or contributed by an individual person or group\tshare, part, percentage\t";
+    }
+    ""
+}

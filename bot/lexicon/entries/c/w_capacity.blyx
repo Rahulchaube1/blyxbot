@@ -1,0 +1,25 @@
+// capacity — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_capacity(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05203397
+    if sense == 1 {
+        return "noun\tcapability to perform or produce\t\tamong his gifts is his capacity for true altruism";
+    }
+    // noun 14530836
+    if sense == 2 {
+        return "noun\tthe susceptibility of something to a particular treatment\tcapability\t";
+    }
+    // noun 13779374
+    if sense == 3 {
+        return "noun\tthe amount that can be contained\tcontent\tthe gas tank has a capacity of 12 gallons";
+    }
+    // noun 00914795
+    if sense == 4 {
+        return "noun\tthe maximum production possible\t\tthe plant is working at 80 per cent capacity";
+    }
+    // noun 00720951
+    if sense == 5 {
+        return "noun\ta specified function\t\the was employed in the capacity of director";
+    }
+    ""
+}

@@ -1,0 +1,65 @@
+// change — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_change(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // verb 00126264
+    if sense == 1 {
+        return "verb\tcause to change; make different; cause a transformation\talter, modify\tThe discussion has changed my thinking about the issue";
+    }
+    // verb 00109660
+    if sense == 2 {
+        return "verb\tundergo a change; become different in essence; losing one's or its original nature\t\tShe changed completely as she grew older";
+    }
+    // noun 07296428
+    if sense == 3 {
+        return "noun\tan event that occurs when something passes from one state or phase to another\talteration, modification\tthe change was intended to increase sales";
+    }
+    // noun 13859043
+    if sense == 4 {
+        return "noun\ta relational difference between states; especially between states before and after some event\t\the attributed the change to their marriage";
+    }
+    // noun 00191142
+    if sense == 5 {
+        return "noun\tthe action of changing something\t\tthe change of government had no impact on the economy";
+    }
+    // noun 11412727
+    if sense == 6 {
+        return "noun\tthe result of alteration or modification\t\tthere were marked changes in the lining of the lungs";
+    }
+    // verb 00123170
+    if sense == 7 {
+        return "verb\tbecome different in some particular way, without permanently losing one's or its former characteristics or essence\talter, vary\ther mood changes in accordance with the weather";
+    }
+    // verb 00550117
+    if sense == 8 {
+        return "verb\tlay aside, abandon, or leave for another\tswitch, shift\tThe car changed lanes";
+    }
+    // verb 00169458
+    if sense == 9 {
+        return "verb\tchange clothes; put on different clothes\t\tChange before you go to the opera";
+    }
+    // verb 00161225
+    if sense == 10 {
+        return "verb\texchange or replace with another, usually of the same kind or category\texchange, commute, convert\tHe changed his name";
+    }
+    // verb 02257370
+    if sense == 11 {
+        return "verb\tgive to, and receive from, one another\texchange, interchange\tWould you change places with me?";
+    }
+    // verb 02088241
+    if sense == 12 {
+        return "verb\tchange from one vehicle or transportation line to another\ttransfer\tShe changed in Chicago on her way to the East coast";
+    }
+    // noun 13387689
+    if sense == 13 {
+        return "noun\tthe balance of money received when the amount you tender is greater than the amount due\t\tI paid with a twenty and pocketed the change";
+    }
+    // noun 03005920
+    if sense == 14 {
+        return "noun\ta thing that is different\t\the inspected several changes before selecting one";
+    }
+    // noun 03005769
+    if sense == 15 {
+        return "noun\ta different or fresh set of clothes\t\tshe brought a change in her overnight bag";
+    }
+    ""
+}

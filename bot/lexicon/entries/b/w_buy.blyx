@@ -1,0 +1,13 @@
+// buy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_buy(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02207206
+    if sense == 1 {
+        return "verb\tobtain by purchase; acquire by means of a financial transaction\tpurchase\tShe buys for the big department store";
+    }
+    // verb 02284096
+    if sense == 2 {
+        return "verb\tmake illegal payments to in exchange for favors or influence\tbribe, corrupt, grease one's palms\t";
+    }
+    ""
+}

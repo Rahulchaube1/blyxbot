@@ -1,0 +1,25 @@
+// sequence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sequence(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08459252
+    if sense == 1 {
+        return "noun\tserial arrangement in which things follow in logical order or a recurrent pattern\t\tthe sequence of names was alphabetical";
+    }
+    // noun 05044822
+    if sense == 2 {
+        return "noun\ta following of one thing after another in time\tchronological sequence, succession, successiveness, chronological succession\tthe doctor saw a sequence of patients";
+    }
+    // noun 04173172
+    if sense == 3 {
+        return "noun\tfilm consisting of a succession of related shots that develop a given subject in a movie\tepisode\t";
+    }
+    // noun 01010458
+    if sense == 4 {
+        return "noun\tthe action of following in order\tsuccession\the played the trumps in sequence";
+    }
+    // verb 00660571
+    if sense == 5 {
+        return "verb\tarrange in a sequence\t\t";
+    }
+    ""
+}

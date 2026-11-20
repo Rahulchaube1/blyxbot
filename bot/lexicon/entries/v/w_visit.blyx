@@ -1,0 +1,41 @@
+// visit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_visit(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 02493030
+    if sense == 1 {
+        return "verb\tgo to see a place, as for entertainment\tsee\t";
+    }
+    // verb 01843689
+    if sense == 2 {
+        return "verb\tgo to certain places as for sightseeing\ttravel to\tDid you ever visit Paris?";
+    }
+    // verb 02487573
+    if sense == 3 {
+        return "verb\tpay a brief visit\tcall in, call\t";
+    }
+    // noun 01233156
+    if sense == 4 {
+        return "noun\tthe act of going to see some person or place or thing for a short time\t\the dropped by for a visit";
+    }
+    // noun 08385280
+    if sense == 5 {
+        return "noun\ta meeting arranged by the visitor to see someone (such as a doctor or lawyer) for treatment or advice\t\the scheduled a visit to the dentist";
+    }
+    // verb 01844048
+    if sense == 6 {
+        return "verb\tcome to see in an official or professional capacity\tinspect\tThe governor visited the prison";
+    }
+    // noun 01232842
+    if sense == 7 {
+        return "noun\tthe act of visiting in an official capacity (as for an inspection)\t\t";
+    }
+    // verb 00748282
+    if sense == 8 {
+        return "verb\timpose something unpleasant\tinflict, bring down, impose\tThe principal visited his rage on the students";
+    }
+    // verb 01038666
+    if sense == 9 {
+        return "verb\ttalk socially without exchanging too much information\tchew the fat, shoot the breeze, chat, confabulate, confab, chitchat, chit-chat, chatter, chaffer, natter, gossip, jaw, claver\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// multiply — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_multiply(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00641672
+    if sense == 1 {
+        return "verb\tcombine by multiplication\t\tmultiply 10 by 15";
+    }
+    // verb 00247390
+    if sense == 2 {
+        return "verb\tcombine or increase by multiplication\tmanifold\tHe managed to multiply his profits";
+    }
+    // verb 00056334
+    if sense == 3 {
+        return "verb\thave young (animals) or reproduce (organisms)\tbreed\t";
+    }
+    ""
+}

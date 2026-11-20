@@ -1,0 +1,69 @@
+// move — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_move(sense: i64) -> str {
+    if sense == 0 { return "16"; }
+    // verb 01835496
+    if sense == 1 {
+        return "verb\tchange location; move, travel, or proceed, also metaphorically\ttravel, go, locomote\tThe soldiers moved towards the city in an attempt to take it before night fell";
+    }
+    // verb 01850315
+    if sense == 2 {
+        return "verb\tcause to move or shift into a new position or place, both in a concrete and in an abstract sense\tdisplace\tMove those boxes into the corner, please";
+    }
+    // verb 01831531
+    if sense == 3 {
+        return "verb\tmove so as to change position, perform a nontranslational motion\t\tHe moved his hand slightly to the right";
+    }
+    // verb 01855606
+    if sense == 4 {
+        return "verb\tchange residence, affiliation, or place of employment\t\tWe moved from Idaho to Nebraska";
+    }
+    // verb 02372605
+    if sense == 5 {
+        return "verb\tfollow a procedure or take a course\tgo, proceed\t";
+    }
+    // noun 00165942
+    if sense == 6 {
+        return "noun\tthe act of deciding to do something\t\the didn't make a move to help";
+    }
+    // verb 00014549
+    if sense == 7 {
+        return "verb\tbe in a state of action\tbe active\tshe is always moving";
+    }
+    // verb 00124442
+    if sense == 8 {
+        return "verb\tgo or proceed from one point to another\t\tthe debate moved from family values to the economy";
+    }
+    // noun 00168658
+    if sense == 9 {
+        return "noun\tthe act of changing your residence or place of business\trelocation\tthey say that three moves equal one fire";
+    }
+    // verb 02367363
+    if sense == 10 {
+        return "verb\tperform an action, or work out or perform (an action)\tact\tWe must move quickly";
+    }
+    // verb 01767949
+    if sense == 11 {
+        return "verb\thave an emotional or cognitive impact upon\taffect, impress, strike\t";
+    }
+    // verb 01649999
+    if sense == 12 {
+        return "verb\tgive an incentive for action\tmotivate, actuate, propel, prompt, incite\tThis moved me to sacrifice my career";
+    }
+    // verb 01771390
+    if sense == 13 {
+        return "verb\tarouse sympathy or compassion in\t\tHer fate moved us all";
+    }
+    // noun 00331950
+    if sense == 14 {
+        return "noun\ta change of position that does not entail a change of location\tmotion, movement, motility\tan impatient move of his hand";
+    }
+    // verb 02355959
+    if sense == 15 {
+        return "verb\tdispose of by selling\t\tThe chairman of the company told the salesmen to move the computers";
+    }
+    // verb 00539110
+    if sense == 16 {
+        return "verb\tprogress by being changed\tgo, run\t";
+    }
+    ""
+}

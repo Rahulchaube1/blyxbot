@@ -1,0 +1,29 @@
+// real — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_real(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 01932973
+    if sense == 1 {
+        return "adjective\tbeing or occurring in fact or actuality; having verified existence; not illusory\texistent\treal objects";
+    }
+    // adj 01937994
+    if sense == 2 {
+        return "adjective\tno less than what is stated; worthy of the name\t\tthe real reason";
+    }
+    // adv 00031899
+    if sense == 3 {
+        return "adverb\tused as intensifiers; `real' is sometimes used informally for `really'; `rattling' is informal\tvery, really, rattling\tI'm real sorry about it";
+    }
+    // adj 02119716
+    if sense == 4 {
+        return "adjective\tnot to be taken lightly\t\tstatistics demonstrate that poverty and unemployment are very real problems";
+    }
+    // adj 00013662
+    if sense == 5 {
+        return "adjective\tcapable of being treated as fact\ttangible\this brief time as Prime Minister brought few real benefits to the poor";
+    }
+    // adj 02460964
+    if sense == 6 {
+        return "adjective\tbeing or reflecting the essential or genuine character of something\tactual, genuine, literal\t";
+    }
+    ""
+}

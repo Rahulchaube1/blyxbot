@@ -1,0 +1,21 @@
+// identity — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_identity(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04618070
+    if sense == 1 {
+        return "noun\tthe distinct personality of an individual regarded as a persisting entity\tpersonal identity, individuality\tyou can lose your identity when you join the army";
+    }
+    // noun 05763412
+    if sense == 2 {
+        return "noun\tthe individual characteristics by which a thing or person is recognized or known\t\tgeneticists only recently discovered the identity of the gene that causes it";
+    }
+    // noun 13786748
+    if sense == 3 {
+        return "noun\tan operator that leaves unchanged the element on which it operates\tidentity element, identity operator\tthe identity under numerical multiplication is 1";
+    }
+    // noun 04743024
+    if sense == 4 {
+        return "noun\texact sameness\tidenticalness, indistinguishability\tthey shared an identity of interests";
+    }
+    ""
+}

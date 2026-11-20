@@ -1,0 +1,21 @@
+// arrest — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_arrest(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01215137
+    if sense == 1 {
+        return "verb\ttake into custody\tcollar, nail, apprehend, pick up, nab, cop\t";
+    }
+    // noun 00088725
+    if sense == 2 {
+        return "noun\tthe act of apprehending (especially apprehending a criminal)\tapprehension, catch, collar, pinch, taking into custody\t";
+    }
+    // verb 01131473
+    if sense == 3 {
+        return "verb\thold back, as of a danger or an enemy; check the expansion or influence of\tcheck, turn back, stop, contain, hold back\tArrest the downward trend";
+    }
+    // verb 01505958
+    if sense == 4 {
+        return "verb\tattract and fix\tcatch, get\t";
+    }
+    ""
+}

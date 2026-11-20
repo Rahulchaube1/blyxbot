@@ -1,0 +1,29 @@
+// smell — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_smell(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02124748
+    if sense == 1 {
+        return "verb\tinhale the odor of; perceive by the olfactory sense\t\t";
+    }
+    // verb 02123672
+    if sense == 2 {
+        return "verb\temit an odor\t\tThe soup smells good";
+    }
+    // noun 05713737
+    if sense == 3 {
+        return "noun\tthe sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form\todor, odour, olfactory sensation, olfactory perception\tshe loved the smell of roses";
+    }
+    // noun 04980008
+    if sense == 4 {
+        return "noun\tany property detected by the olfactory system\tolfactory property, aroma, odor, odour, scent\t";
+    }
+    // verb 02124332
+    if sense == 5 {
+        return "verb\tsmell bad\t\tHe rarely washes, and he smells";
+    }
+    // noun 14526182
+    if sense == 6 {
+        return "noun\tthe general atmosphere of a place or situation and the effect that it has on people\tspirit, tone, feel, feeling, flavor, flavour, look\tit had the smell of treason";
+    }
+    ""
+}

@@ -1,0 +1,149 @@
+// take — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_take(sense: i64) -> str {
+    if sense == 0 { return "36"; }
+    // verb 02599636
+    if sense == 1 {
+        return "verb\tcarry out\t\ttake action";
+    }
+    // verb 02267989
+    if sense == 2 {
+        return "verb\trequire (time or space)\toccupy, use up\t";
+    }
+    // verb 01999798
+    if sense == 3 {
+        return "verb\ttake somebody somewhere\tlead, direct, conduct, guide\tcan you take me to the main entrance?";
+    }
+    // verb 01214265
+    if sense == 4 {
+        return "verb\tget into one's hands, take physically\tget hold of\tTake a cookie!";
+    }
+    // verb 00524682
+    if sense == 5 {
+        return "verb\ttake on a certain form, attribute, or aspect\tassume, acquire, adopt, take on\t";
+    }
+    // verb 00624476
+    if sense == 6 {
+        return "verb\tinterpret something in a certain way; convey a particular meaning or impression\tread\tHow should I take this message?";
+    }
+    // verb 02077656
+    if sense == 7 {
+        return "verb\ttake something or somebody with oneself somewhere\tbring, convey\tTake these letters to the boss";
+    }
+    // verb 02205272
+    if sense == 8 {
+        return "verb\ttake into one's possession\t\tWe are taking an orphan from Romania";
+    }
+    // verb 01842690
+    if sense == 9 {
+        return "verb\ttravel or go by means of a certain kind of transportation, or a certain route\t\tHe takes the bus to work";
+    }
+    // verb 00674607
+    if sense == 10 {
+        return "verb\tpick out, select, or choose from a number of alternatives\tchoose, select, pick out\tTake any one of these cards";
+    }
+    // verb 02236124
+    if sense == 11 {
+        return "verb\treceive willingly something given or offered\taccept, have\t";
+    }
+    // verb 02394183
+    if sense == 12 {
+        return "verb\tassume, as of positions or roles\tfill, occupy\t";
+    }
+    // verb 00734054
+    if sense == 13 {
+        return "verb\ttake into consideration for exemplifying purposes\tconsider, deal, look at\tTake the case of China";
+    }
+    // verb 02627934
+    if sense == 14 {
+        return "verb\trequire as useful, just, or proper\tnecessitate, ask, postulate, need, require, involve, call for, demand\tIt takes nerve to do what she did";
+    }
+    // verb 02109045
+    if sense == 15 {
+        return "verb\texperience or feel or submit to\t\tTake a test";
+    }
+    // verb 01002740
+    if sense == 16 {
+        return "verb\tmake a film or photograph of something\tfilm, shoot\ttake a scene";
+    }
+    // verb 00173338
+    if sense == 17 {
+        return "verb\tremove something concrete, as by lifting, pushing, or taking off, or remove something abstract\tremove, take away, withdraw\ttake the gun from your pocket";
+    }
+    // verb 01156834
+    if sense == 18 {
+        return "verb\tserve oneself to, or consume regularly\tconsume, ingest, take in, have\tI don't take sugar in my coffee";
+    }
+    // verb 00669762
+    if sense == 19 {
+        return "verb\taccept or undergo, often unwillingly\tsubmit\t";
+    }
+    // verb 02209936
+    if sense == 20 {
+        return "verb\tmake use of or accept for some purpose\taccept\ttake a risk";
+    }
+    // verb 02206619
+    if sense == 21 {
+        return "verb\ttake by force\t\t";
+    }
+    // verb 01982395
+    if sense == 22 {
+        return "verb\toccupy or take on\tassume, strike, take up\t";
+    }
+    // verb 02236624
+    if sense == 23 {
+        return "verb\tadmit into a group or community\taccept, admit, take on\t";
+    }
+    // verb 00523095
+    if sense == 24 {
+        return "verb\tascertain or determine by measuring, computing or take a reading from a dial\t\ttake a pulse";
+    }
+    // verb 00599992
+    if sense == 25 {
+        return "verb\tbe a student of a certain subject\tlearn, study, read\t";
+    }
+    // verb 00756076
+    if sense == 26 {
+        return "verb\ttake as an undesirable consequence of some event or state of affairs\tclaim, exact\t";
+    }
+    // verb 02075857
+    if sense == 27 {
+        return "verb\thead into a specified direction\tmake\t";
+    }
+    // verb 01151110
+    if sense == 28 {
+        return "verb\tpoint or cause to go (blows, weapons, or objects such as photographic equipment) towards\taim, train, take aim, direct\tTake a swipe at one's opponent";
+    }
+    // verb 00557404
+    if sense == 29 {
+        return "verb\tbe seized or affected in a specified way\t\ttake sick";
+    }
+    // verb 02717102
+    if sense == 30 {
+        return "verb\thave with oneself; have on one's person\tcarry, pack\tShe always takes an umbrella";
+    }
+    // verb 02208537
+    if sense == 31 {
+        return "verb\tengage for service under a term of contract\tlease, rent, hire, charter, engage\tShall we take a guide in Rome?";
+    }
+    // verb 02209745
+    if sense == 32 {
+        return "verb\treceive or obtain regularly\tsubscribe, subscribe to\tWe take the Times every day";
+    }
+    // verb 02208118
+    if sense == 33 {
+        return "verb\tbuy, select\t\tI'll take a pound of that sausage";
+    }
+    // verb 02201138
+    if sense == 34 {
+        return "verb\tto get into a position of having, e.g., safety, comfort\t\ttake shelter from the storm";
+    }
+    // verb 01427127
+    if sense == 35 {
+        return "verb\thave sex with; archaic use\thave\t";
+    }
+    // verb 00758333
+    if sense == 36 {
+        return "verb\tlay claim to; as of an idea\tclaim\t";
+    }
+    ""
+}

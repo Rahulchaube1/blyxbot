@@ -1,0 +1,21 @@
+// boy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_boy(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 10285313
+    if sense == 1 {
+        return "noun\ta youthful male person\tmale child\tthe baby was a boy";
+    }
+    // noun 09870926
+    if sense == 2 {
+        return "noun\ta friendly informal reference to a grown man\t\the likes to play golf with the boys";
+    }
+    // noun 10624074
+    if sense == 3 {
+        return "noun\ta male human offspring\tson\this boy is taller than he is";
+    }
+    // noun 09637837
+    if sense == 4 {
+        return "noun\t(ethnic slur) offensive and disparaging term for Black man\t\tget out of my way, boy";
+    }
+    ""
+}

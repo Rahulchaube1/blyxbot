@@ -1,0 +1,53 @@
+// discharge — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_discharge(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // noun 07307754
+    if sense == 1 {
+        return "noun\tthe sudden giving off of energy\t\t";
+    }
+    // noun 01253277
+    if sense == 2 {
+        return "noun\tthe act of venting\tventing\t";
+    }
+    // verb 02563724
+    if sense == 3 {
+        return "verb\tcomplete or carry out\tdispatch, complete\tdischarge one's duties";
+    }
+    // verb 01377032
+    if sense == 4 {
+        return "verb\tpour forth or release\t\tdischarge liquids";
+    }
+    // noun 14852450
+    if sense == 5 {
+        return "noun\ta substance that is emitted or released\temission\t";
+    }
+    // noun 13466586
+    if sense == 6 {
+        return "noun\tany of several bodily processes by which substances go out of the body\temission, expelling\tthe discharge of pus";
+    }
+    // noun 11511523
+    if sense == 7 {
+        return "noun\telectrical conduction through a gas in an applied electric field\tspark, arc, electric arc, electric discharge\t";
+    }
+    // verb 02422026
+    if sense == 8 {
+        return "verb\tfree from obligations or duties\tfree\t";
+    }
+    // verb 01489332
+    if sense == 9 {
+        return "verb\tremove the charge from\t\t";
+    }
+    // verb 01134238
+    if sense == 10 {
+        return "verb\tgo off or discharge\tfire, go off\t";
+    }
+    // verb 00904046
+    if sense == 11 {
+        return "verb\tpronounce not guilty of criminal charges\tacquit, assoil, clear, exonerate, exculpate\t";
+    }
+    // verb 00104868
+    if sense == 12 {
+        return "verb\teliminate (a substance)\texhaust, expel, eject, release\t";
+    }
+    ""
+}

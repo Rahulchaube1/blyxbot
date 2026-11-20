@@ -1,0 +1,17 @@
+// maturity — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_maturity(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 15152817
+    if sense == 1 {
+        return "noun\tthe period of time in your life after your physical growth has stopped and you are fully developed\tadulthood\t";
+    }
+    // noun 14424780
+    if sense == 2 {
+        return "noun\tstate of being mature; full development\tmatureness\t";
+    }
+    // noun 15153225
+    if sense == 3 {
+        return "noun\tthe date on which an obligation must be repaid\tmaturity date, due date\t";
+    }
+    ""
+}

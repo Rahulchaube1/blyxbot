@@ -1,0 +1,21 @@
+// veteran — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_veteran(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00936523
+    if sense == 1 {
+        return "adjective\trendered competent through trial and experience\tseasoned\tveteran steadiness";
+    }
+    // noun 10749528
+    if sense == 2 {
+        return "noun\ta serviceman who has seen considerable active service\tveteran soldier\tthe veterans laughed at the new recruits";
+    }
+    // noun 10749353
+    if sense == 3 {
+        return "noun\ta person who has served in the armed forces\tvet, ex-serviceman\t";
+    }
+    // noun 10749123
+    if sense == 4 {
+        return "noun\tan experienced person who has been through many battles; someone who has given long service\told-timer, oldtimer, old hand, warhorse, old stager, stager\t";
+    }
+    ""
+}

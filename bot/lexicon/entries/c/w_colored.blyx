@@ -1,0 +1,13 @@
+// colored — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_colored(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00394562
+    if sense == 1 {
+        return "adjective\thaving color or a certain color; sometimes used in combination\tcoloured, colorful\tcolored crepe paper";
+    }
+    // adj 00242575
+    if sense == 2 {
+        return "adjective\thaving skin rich in melanin pigments\tcoloured, dark, dark-skinned, non-white\tNational Association for the Advancement of Colored People";
+    }
+    ""
+}

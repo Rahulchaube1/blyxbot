@@ -1,0 +1,33 @@
+// wash — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wash(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01270199
+    if sense == 1 {
+        return "verb\tclean with some chemical process\trinse\t";
+    }
+    // verb 00036362
+    if sense == 2 {
+        return "verb\tcleanse (one's body) with soap and water\tlave\t";
+    }
+    // verb 01535246
+    if sense == 3 {
+        return "verb\tcleanse with a cleaning agent, such as soap, and water\tlaunder\tWash the towels, please!";
+    }
+    // noun 04553389
+    if sense == 4 {
+        return "noun\ta thin coat of water-base paint\t\t";
+    }
+    // noun 00255710
+    if sense == 5 {
+        return "noun\tthe work of cleansing (usually with soap and water)\twashing, lavation\t";
+    }
+    // noun 09474895
+    if sense == 6 {
+        return "noun\tthe dry bed of an intermittent stream (as at the bottom of a canyon)\tdry wash\t";
+    }
+    // verb 02098179
+    if sense == 7 {
+        return "verb\tmove by or as if by water\t\tThe swollen river washed away the footbridge";
+    }
+    ""
+}

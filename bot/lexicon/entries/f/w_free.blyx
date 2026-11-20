@@ -1,0 +1,57 @@
+// free — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_free(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // adj 01061489
+    if sense == 1 {
+        return "adjective\table to act at will; not hampered; not under compulsion or restraint\t\tfree enterprise";
+    }
+    // verb 02421374
+    if sense == 2 {
+        return "verb\tgrant freedom to; free from confinement\tliberate, release, unloose, unloosen, loose\t";
+    }
+    // adj 01058363
+    if sense == 3 {
+        return "adjective\tunconstrained or not chemically bound in a molecule or not fixed and capable of relatively unrestricted motion\t\tfree expansion";
+    }
+    // verb 02350175
+    if sense == 4 {
+        return "verb\trelieve from\trid, disembarrass\t";
+    }
+    // verb 01528522
+    if sense == 5 {
+        return "verb\tremove or force out from a position\tdislodge\tHe finally could free the legs of the earthquake victim who was buried in the rubble";
+    }
+    // adj 01710260
+    if sense == 6 {
+        return "adjective\tcosting nothing\tcomplimentary, costless, gratis, gratuitous\tfree admission";
+    }
+    // adj 01624010
+    if sense == 7 {
+        return "adjective\tnot occupied or in use\t\ta free locker";
+    }
+    // verb 02564146
+    if sense == 8 {
+        return "verb\tgrant relief or an exemption from a rule or requirement to\texempt, relieve\t";
+    }
+    // verb 02494047
+    if sense == 9 {
+        return "verb\tmake (information) available for publication\trelease\t";
+    }
+    // verb 02422026
+    if sense == 10 {
+        return "verb\tfree from obligations or duties\tdischarge\t";
+    }
+    // verb 01475953
+    if sense == 11 {
+        return "verb\tfree or remove obstruction from\tdisengage\tfree a path across the cluttered floor";
+    }
+    // verb 00902424
+    if sense == 12 {
+        return "verb\tlet off the hook\tabsolve, justify\t";
+    }
+    // adj 01060947
+    if sense == 13 {
+        return "adjective\tnot fixed in position\tdetached\the pulled his arm free and ran";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// majority — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_majority(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05122557
+    if sense == 1 {
+        return "noun\tthe property resulting from being or relating to the greater in number of two parts; the main part\tbulk\tthe majority of his customers prefer it";
+    }
+    // noun 13581067
+    if sense == 2 {
+        return "noun\t(elections) more than half of the votes\tabsolute majority\t";
+    }
+    // noun 15152062
+    if sense == 3 {
+        return "noun\tthe age at which persons are considered competent to manage their own affairs\tlegal age\t";
+    }
+    ""
+}

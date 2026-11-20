@@ -1,0 +1,89 @@
+// go — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_go(sense: i64) -> str {
+    if sense == 0 { return "21"; }
+    // verb 01835496
+    if sense == 1 {
+        return "verb\tchange location; move, travel, or proceed, also metaphorically\ttravel, move, locomote\tHow fast does your new car go?";
+    }
+    // verb 02372605
+    if sense == 2 {
+        return "verb\tfollow a procedure or take a course\tproceed, move\tWe should go farther in this matter";
+    }
+    // verb 01848718
+    if sense == 3 {
+        return "verb\tmove away from a place into another direction\tgo away, depart\tGo away before I start to cry";
+    }
+    // verb 00149583
+    if sense == 4 {
+        return "verb\tenter or assume a certain state or condition\tbecome, get\tGet going!";
+    }
+    // verb 02653862
+    if sense == 5 {
+        return "verb\tbe awarded; be allotted\t\tThe first prize goes to Mary";
+    }
+    // verb 02721284
+    if sense == 6 {
+        return "verb\thave a particular form\trun\tas the saying goes...";
+    }
+    // verb 02685951
+    if sense == 7 {
+        return "verb\tstretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point\trun, pass, lead, extend\tHis knowledge doesn't go very far";
+    }
+    // verb 00341560
+    if sense == 8 {
+        return "verb\tfollow a certain course\tproceed\thow did your interview go?";
+    }
+    // verb 00359916
+    if sense == 9 {
+        return "verb\tbe abolished or discarded\t\tThese ugly billboards have to go!";
+    }
+    // verb 02618001
+    if sense == 10 {
+        return "verb\tbe or continue to be in a certain condition\t\t";
+    }
+    // verb 02176268
+    if sense == 11 {
+        return "verb\tmake a certain noise or sound\tsound\t";
+    }
+    // verb 01525666
+    if sense == 12 {
+        return "verb\tperform as expected when applied\tfunction, work, operate, run\tThe washing machine won't go unless it's plugged in";
+    }
+    // verb 01192773
+    if sense == 13 {
+        return "verb\tto be spent or finished\trun low, run short\t";
+    }
+    // verb 00539110
+    if sense == 14 {
+        return "verb\tprogress by being changed\tmove, run\tThe speech has to go through several more drafts";
+    }
+    // verb 02618149
+    if sense == 15 {
+        return "verb\tcontinue to live through hardship or adversity\tsurvive, last, live, live on, endure, hold up, hold out\t";
+    }
+    // verb 02617798
+    if sense == 16 {
+        return "verb\tpass, fare, or elapse; of a certain state of affairs or action\t\tHow is it going?";
+    }
+    // verb 00358431
+    if sense == 17 {
+        return "verb\tpass from physical life and lose all bodily attributes and functions necessary to sustain life\tdie, decease, perish, exit, pass away, expire, pass, kick the bucket, cash in one's chips, buy the farm, conk, give-up the ghost, drop dead, pop off, choke, croak, snuff it\t";
+    }
+    // verb 02737876
+    if sense == 18 {
+        return "verb\tbe in the right place or situation\tbelong\tWhere do these books go?";
+    }
+    // verb 02729819
+    if sense == 19 {
+        return "verb\tbe ranked or compare\t\tThis violinist is as good as Juilliard-trained violinists go";
+    }
+    // verb 01864230
+    if sense == 20 {
+        return "verb\tbegin or set in motion\tstart, get going\tReady, set, go!";
+    }
+    // verb 01076615
+    if sense == 21 {
+        return "verb\thave a turn; make one's move in a game\tmove\tCan I go now?";
+    }
+    ""
+}

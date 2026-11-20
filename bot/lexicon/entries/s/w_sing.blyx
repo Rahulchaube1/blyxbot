@@ -1,0 +1,25 @@
+// sing — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sing(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01731031
+    if sense == 1 {
+        return "verb\tdeliver by singing\t\tSing Christmas carols";
+    }
+    // verb 01729431
+    if sense == 2 {
+        return "verb\tproduce tones with the voice\t\tShe was singing while she was cooking";
+    }
+    // verb 01067816
+    if sense == 3 {
+        return "verb\tto make melodious sounds\t\tThe nightingale was singing";
+    }
+    // verb 01043887
+    if sense == 4 {
+        return "verb\tmake a whining, ringing, or whistling sound\twhistle\tthe kettle was singing";
+    }
+    // verb 00937208
+    if sense == 5 {
+        return "verb\tdivulge confidential information or secrets\tspill the beans, let the cat out of the bag, talk, tattle, blab, peach, babble, babble out, blab out\t";
+    }
+    ""
+}

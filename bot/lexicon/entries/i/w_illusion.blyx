@@ -1,0 +1,17 @@
+// illusion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_illusion(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05939636
+    if sense == 1 {
+        return "noun\tan erroneous mental representation\tsemblance\t";
+    }
+    // noun 05896059
+    if sense == 2 {
+        return "noun\tsomething many people believe that is false\tfantasy, phantasy, fancy\tthey have the illusion that I am very wealthy";
+    }
+    // noun 00754767
+    if sense == 3 {
+        return "noun\tthe act of deluding; deception by creating illusory ideas\tdelusion, head game\t";
+    }
+    ""
+}

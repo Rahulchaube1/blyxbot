@@ -1,0 +1,33 @@
+// appear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_appear(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02133435
+    if sense == 1 {
+        return "verb\tgive a certain impression or have a certain outward aspect\tlook, seem\tThis appears to be a very difficult problem";
+    }
+    // verb 00422090
+    if sense == 2 {
+        return "verb\tcome into sight or view\t\tHe suddenly appeared at the wedding";
+    }
+    // verb 00425967
+    if sense == 3 {
+        return "verb\tbe issued or published\tcome out\tDid your latest book appear yet?";
+    }
+    // verb 02134672
+    if sense == 4 {
+        return "verb\tseem to be true, probable, or apparent\tseem\tIt appears that the weather in California is very bad";
+    }
+    // verb 00425071
+    if sense == 5 {
+        return "verb\tcome into being or existence, or appear on the scene\tcome along\tHomo sapiens appeared millions of years ago";
+    }
+    // verb 01721169
+    if sense == 6 {
+        return "verb\tappear as a character on stage or appear in a play, etc.\t\tGielgud appears briefly in this movie";
+    }
+    // verb 02597762
+    if sense == 7 {
+        return "verb\tpresent oneself formally, as before a (judicial) authority\t\tHe had to appear in court last month";
+    }
+    ""
+}

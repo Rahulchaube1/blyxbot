@@ -1,0 +1,21 @@
+// distribution — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_distribution(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 05729036
+    if sense == 1 {
+        return "noun\t(statistics) an arrangement of values of a variable showing their observed or theoretical frequency of occurrence\tstatistical distribution\t";
+    }
+    // noun 05087297
+    if sense == 2 {
+        return "noun\tthe spatial or geographic property of being scattered about over a range, area, or volume\tdispersion\tworldwide in distribution";
+    }
+    // noun 01083077
+    if sense == 3 {
+        return "noun\tthe act of distributing or spreading or apportioning\t\t";
+    }
+    // noun 01112885
+    if sense == 4 {
+        return "noun\tthe commercial activity of transporting and selling goods from a producer to a consumer\t\t";
+    }
+    ""
+}

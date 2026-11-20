@@ -1,0 +1,53 @@
+// solid — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_solid(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // noun 15046900
+    if sense == 1 {
+        return "noun\tmatter that is solid at room temperature and pressure\t\t";
+    }
+    // adj 01125006
+    if sense == 2 {
+        return "adjective\tcharacterized by good substantial quality\t\tsolid comfort";
+    }
+    // adj 02260035
+    if sense == 3 {
+        return "adjective\tof definite shape and volume; firm; neither liquid nor gaseous\t\tice is water in the solid state";
+    }
+    // adj 02263680
+    if sense == 4 {
+        return "adjective\tentirely of one substance with no holes inside\t\ta solid block of wood";
+    }
+    // adj 01200339
+    if sense == 5 {
+        return "adjective\tof one substance or character throughout\t\tsolid gold";
+    }
+    // adj 00291181
+    if sense == 6 {
+        return "adjective\tuninterrupted in space; having no gaps or breaks\t\ta solid line across the page";
+    }
+    // noun 14480772
+    if sense == 7 {
+        return "noun\tthe state in which a substance has no tendency to flow under moderate stress; resists forces (such as compression) that tend to deform it; and retains a definite size and shape\tsolidness, solid state\t";
+    }
+    // adj 02558528
+    if sense == 8 {
+        return "adjective\tproviding abundant nourishment\thearty, satisfying, square, substantial\tgood solid food";
+    }
+    // adj 02275412
+    if sense == 9 {
+        return "adjective\tof good quality and condition; solidly built\tstrong, substantial\ta solid foundation";
+    }
+    // adj 01151740
+    if sense == 10 {
+        return "adjective\tnot soft or yielding to pressure\tfirm\tsolid ground";
+    }
+    // adj 00658166
+    if sense == 11 {
+        return "adjective\thaving three dimensions\t\ta solid object";
+    }
+    // adj 00434597
+    if sense == 12 {
+        return "adjective\timpenetrable for the eye\t\tsolid blackness";
+    }
+    ""
+}

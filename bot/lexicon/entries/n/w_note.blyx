@@ -1,0 +1,49 @@
+// note — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_note(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 01020005
+    if sense == 1 {
+        return "verb\tmake mention of\tobserve, mention, remark\tThey noted that it was a fine day to go sailing";
+    }
+    // verb 02118476
+    if sense == 2 {
+        return "verb\tnotice or perceive\tnotice, mark\tShe noted that someone was following her";
+    }
+    // verb 02118933
+    if sense == 3 {
+        return "verb\tobserve with care or pay close attention to\ttake note, observe\tTake note of this chemical reaction";
+    }
+    // noun 06504462
+    if sense == 4 {
+        return "noun\ta brief written record\t\the made a note of the appointment";
+    }
+    // noun 06626286
+    if sense == 5 {
+        return "noun\ta short personal letter\tshort letter, line, billet\t";
+    }
+    // noun 06865345
+    if sense == 6 {
+        return "noun\ta notation representing the pitch and duration of a musical sound\tmusical note, tone\tthe singer held the note too long";
+    }
+    // noun 07082819
+    if sense == 7 {
+        return "noun\ta tone of voice that shows what the speaker is feeling\t\tthere was a note of uncertainty in his voice";
+    }
+    // verb 01020934
+    if sense == 8 {
+        return "verb\tmake a written note of\ttake down\tshe noted everything the teacher said that morning";
+    }
+    // noun 04727694
+    if sense == 9 {
+        return "noun\ta characteristic emotional quality\t\tit ended on a sour note";
+    }
+    // noun 13393762
+    if sense == 10 {
+        return "noun\ta piece of paper money (especially one issued by a central bank)\tbill, government note, bank bill, banker's bill, bank note, banknote, Federal Reserve note, greenback\the peeled off five one-thousand-zloty notes";
+    }
+    // noun 06763273
+    if sense == 11 {
+        return "noun\ta comment or instruction (usually added)\tannotation, notation\this notes were appended at the end of the article";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// produce — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_produce(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01752495
+    if sense == 1 {
+        return "verb\tbring forth or yield\tbring forth\tThe tree would not produce fruit";
+    }
+    // verb 01621555
+    if sense == 2 {
+        return "verb\tcreate or manufacture a man-made product\tmake, create\tWe produce more cars than we can sell";
+    }
+    // verb 01752884
+    if sense == 3 {
+        return "verb\tcause to happen, occur or exist\tbring about, give rise\tThis procedure produces a curious effect";
+    }
+    // verb 02141146
+    if sense == 4 {
+        return "verb\tbring out for display\tbring forth\tThe proud father produced many pictures of his baby";
+    }
+    // verb 01739814
+    if sense == 5 {
+        return "verb\tcultivate by growing, often involving improvements by means of agricultural techniques\tgrow, raise, farm\tThe Bordeaux region produces great red wines";
+    }
+    // verb 02157100
+    if sense == 6 {
+        return "verb\tbring onto the market or release\tbring on, bring out\tproduce a movie";
+    }
+    // noun 07705711
+    if sense == 7 {
+        return "noun\tfresh fruits and vegetable grown for the market\tgreen goods, green groceries, garden truck\t";
+    }
+    ""
+}

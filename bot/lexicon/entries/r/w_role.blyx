@@ -1,0 +1,21 @@
+// role — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_role(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00720565
+    if sense == 1 {
+        return "noun\tthe actions and activities assigned to or required or expected of a person or group\tfunction, office, part\tplay its role";
+    }
+    // noun 05929008
+    if sense == 2 {
+        return "noun\tan actor's portrayal of someone in a play\tcharacter, theatrical role, part, persona\t";
+    }
+    // noun 05149325
+    if sense == 3 {
+        return "noun\twhat something is used for\tfunction, purpose, use\t";
+    }
+    // noun 00722061
+    if sense == 4 {
+        return "noun\tnormal or customary activity of a person in a particular social setting\t\twhat is your role on the team?";
+    }
+    ""
+}

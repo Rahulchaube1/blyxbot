@@ -1,0 +1,45 @@
+// pay — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pay(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02251743
+    if sense == 1 {
+        return "verb\tgive money, usually in exchange for goods or services\t\tPay the waitress, please";
+    }
+    // verb 01060494
+    if sense == 2 {
+        return "verb\tconvey, as of a compliment, regards, attention, etc.; bestow\tgive\tDon't pay him any mind";
+    }
+    // noun 13279262
+    if sense == 3 {
+        return "noun\tsomething that remunerates\twage, earnings, remuneration, salary\the wasted his pay on drink";
+    }
+    // verb 02252931
+    if sense == 4 {
+        return "verb\tcancel or discharge a debt\tpay up, ante up\tpay up, please!";
+    }
+    // verb 02291708
+    if sense == 5 {
+        return "verb\tbring in\tyield, bear\tHow much does this savings certificate pay annually?";
+    }
+    // verb 02253456
+    if sense == 6 {
+        return "verb\tdo or give something to somebody in return\tpay off, make up, compensate\tDoes she pay you for the work you are doing?";
+    }
+    // verb 00732224
+    if sense == 7 {
+        return "verb\tdedicate\tgive, devote\tpay attention to";
+    }
+    // verb 02732292
+    if sense == 8 {
+        return "verb\tbe worth it\t\tIt pays to go through the trouble";
+    }
+    // verb 02488056
+    if sense == 9 {
+        return "verb\trender\t\tpay a visit";
+    }
+    // verb 00737884
+    if sense == 10 {
+        return "verb\tbear (a cost or penalty), in recompense for some action\t\tYou'll pay for this!";
+    }
+    ""
+}

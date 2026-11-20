@@ -1,0 +1,126 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::n::w_name;
+use entries::n::w_narrow;
+use entries::n::w_nation;
+use entries::n::w_national;
+use entries::n::w_natural;
+use entries::n::w_naturally;
+use entries::n::w_nature;
+use entries::n::w_near;
+use entries::n::w_nearly;
+use entries::n::w_necessary;
+use entries::n::w_neck;
+use entries::n::w_need;
+use entries::n::w_needed;
+use entries::n::w_neglect;
+use entries::n::w_negro;
+use entries::n::w_neighbor;
+use entries::n::w_neighborhood;
+use entries::n::w_nest;
+use entries::n::w_network;
+use entries::n::w_never;
+use entries::n::w_nevertheless;
+use entries::n::w_new;
+use entries::n::w_new_york;
+use entries::n::w_news;
+use entries::n::w_newspaper;
+use entries::n::w_next;
+use entries::n::w_nice;
+use entries::n::w_night;
+use entries::n::w_nine;
+use entries::n::w_no;
+use entries::n::w_no_doubt;
+use entries::n::w_no_longer;
+use entries::n::w_no_more;
+use entries::n::w_nod;
+use entries::n::w_noise;
+use entries::n::w_normal;
+use entries::n::w_normally;
+use entries::n::w_north;
+use entries::n::w_northern;
+use entries::n::w_nose;
+use entries::n::w_not;
+use entries::n::w_note;
+use entries::n::w_nothing;
+use entries::n::w_notice;
+use entries::n::w_notion;
+use entries::n::w_novel;
+use entries::n::w_november;
+use entries::n::w_now;
+use entries::n::w_number;
+
+fn through_w_neighbor(term: str, sense: i64) -> str {
+    if term == "name" { return w_name(sense); }
+    if term == "narrow" { return w_narrow(sense); }
+    if term == "nation" { return w_nation(sense); }
+    if term == "national" { return w_national(sense); }
+    if term == "natural" { return w_natural(sense); }
+    if term == "naturally" { return w_naturally(sense); }
+    if term == "nature" { return w_nature(sense); }
+    if term == "near" { return w_near(sense); }
+    if term == "nearly" { return w_nearly(sense); }
+    if term == "necessary" { return w_necessary(sense); }
+    if term == "neck" { return w_neck(sense); }
+    if term == "need" { return w_need(sense); }
+    if term == "needed" { return w_needed(sense); }
+    if term == "neglect" { return w_neglect(sense); }
+    if term == "negro" { return w_negro(sense); }
+    if term == "neighbor" { return w_neighbor(sense); }
+    ""
+}
+
+fn through_w_no_longer(term: str, sense: i64) -> str {
+    if term == "neighborhood" { return w_neighborhood(sense); }
+    if term == "nest" { return w_nest(sense); }
+    if term == "network" { return w_network(sense); }
+    if term == "never" { return w_never(sense); }
+    if term == "nevertheless" { return w_nevertheless(sense); }
+    if term == "new" { return w_new(sense); }
+    if term == "new york" { return w_new_york(sense); }
+    if term == "news" { return w_news(sense); }
+    if term == "newspaper" { return w_newspaper(sense); }
+    if term == "next" { return w_next(sense); }
+    if term == "nice" { return w_nice(sense); }
+    if term == "night" { return w_night(sense); }
+    if term == "nine" { return w_nine(sense); }
+    if term == "no" { return w_no(sense); }
+    if term == "no doubt" { return w_no_doubt(sense); }
+    if term == "no longer" { return w_no_longer(sense); }
+    ""
+}
+
+fn through_w_now(term: str, sense: i64) -> str {
+    if term == "no more" { return w_no_more(sense); }
+    if term == "nod" { return w_nod(sense); }
+    if term == "noise" { return w_noise(sense); }
+    if term == "normal" { return w_normal(sense); }
+    if term == "normally" { return w_normally(sense); }
+    if term == "north" { return w_north(sense); }
+    if term == "northern" { return w_northern(sense); }
+    if term == "nose" { return w_nose(sense); }
+    if term == "not" { return w_not(sense); }
+    if term == "note" { return w_note(sense); }
+    if term == "nothing" { return w_nothing(sense); }
+    if term == "notice" { return w_notice(sense); }
+    if term == "notion" { return w_notion(sense); }
+    if term == "novel" { return w_novel(sense); }
+    if term == "november" { return w_november(sense); }
+    if term == "now" { return w_now(sense); }
+    ""
+}
+
+fn through_w_number(term: str, sense: i64) -> str {
+    if term == "number" { return w_number(sense); }
+    ""
+}
+
+pub fn lookup_n(term: str, sense: i64) -> str {
+    if term <= "neighbor" { return through_w_neighbor(term, sense); }
+    if term <= "no longer" { return through_w_no_longer(term, sense); }
+    if term <= "now" { return through_w_now(term, sense); }
+    through_w_number(term, sense)
+}
+
+pub fn words_n() -> str {
+    "name|narrow|nation|national|natural|naturally|nature|near|nearly|necessary|neck|need|needed|neglect|negro|neighbor|neighborhood|nest|network|never|nevertheless|new|new york|news|newspaper|next|nice|night|nine|no|no doubt|no longer|no more|nod|noise|normal|normally|north|northern|nose|not|note|nothing|notice|notion|novel|november|now|number"
+}

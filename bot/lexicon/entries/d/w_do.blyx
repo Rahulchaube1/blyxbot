@@ -1,0 +1,57 @@
+// do — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_do(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 02560585
+    if sense == 1 {
+        return "verb\tengage in\tmake\tdo research";
+    }
+    // verb 01712704
+    if sense == 2 {
+        return "verb\tcarry out or perform an action\tperform, execute\t";
+    }
+    // verb 02561995
+    if sense == 3 {
+        return "verb\tget (something) done\tperform\t";
+    }
+    // verb 02617567
+    if sense == 4 {
+        return "verb\tproceed or get along\tfare, make out, come, get along\tHow is she doing in her new job?";
+    }
+    // verb 01645601
+    if sense == 5 {
+        return "verb\tgive rise to; cause to happen or occur, not always intentionally\tcause, make\t";
+    }
+    // verb 02568672
+    if sense == 6 {
+        return "verb\tcarry out or practice; as of jobs and professions\tpractice, practise, exercise\t";
+    }
+    // verb 02669789
+    if sense == 7 {
+        return "verb\tbe sufficient; be adequate, either in quality or quantity\tsuffice, answer, serve\tWill $100 do?";
+    }
+    // verb 01619014
+    if sense == 8 {
+        return "verb\tcreate or design, often in a certain way\tmake\tDo my room in blue";
+    }
+    // verb 00010435
+    if sense == 9 {
+        return "verb\tbehave in a certain manner; show a certain behavior; conduct or comport oneself\tact, behave\tWhat makes her do this way?";
+    }
+    // verb 02709107
+    if sense == 10 {
+        return "verb\tspend time in prison or in a labor camp\tserve\t";
+    }
+    // verb 02523221
+    if sense == 11 {
+        return "verb\tcarry on or function\tmanage\tWe could do with a little more help around here";
+    }
+    // verb 00038849
+    if sense == 12 {
+        return "verb\tarrange attractively\tdress, arrange, set, coif, coiffe, coiffure\t";
+    }
+    // verb 01841772
+    if sense == 13 {
+        return "verb\ttravel or traverse (a distance)\t\tThis car does 150 miles per hour";
+    }
+    ""
+}

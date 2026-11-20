@@ -1,0 +1,41 @@
+// match — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_match(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 02657219
+    if sense == 1 {
+        return "verb\tbe compatible, similar or consistent; coincide in their characteristics\tfit, correspond, check, jibe, gibe, tally, agree\tThe suspect's fingerprints don't match those on the gun";
+    }
+    // verb 02332627
+    if sense == 2 {
+        return "verb\tprovide funds complementary to\t\tThe company matched the employees' contributions";
+    }
+    // verb 01292885
+    if sense == 3 {
+        return "verb\tbring two objects, ideas, or people together\tmate, couple, pair, twin\tMatchmaker, can you match my daughter with a nice young man?";
+    }
+    // verb 02672187
+    if sense == 4 {
+        return "verb\tbe equal to in quality or ability\tequal, touch, rival\tHer persistence and ambition only matches that of her parents";
+    }
+    // noun 03728437
+    if sense == 5 {
+        return "noun\tlighter consisting of a thin piece of wood or cardboard tipped with combustible chemical; ignites with friction\tlucifer, friction match\the always carries matches to light his pipe";
+    }
+    // verb 00456740
+    if sense == 6 {
+        return "verb\tmake correspond or harmonize\tfit\tMatch my sweater";
+    }
+    // noun 07470671
+    if sense == 7 {
+        return "noun\ta formal contest in which two or more persons or teams compete\t\t";
+    }
+    // noun 03728982
+    if sense == 8 {
+        return "noun\ta burning piece of wood or cardboard\t\tif you drop a match in there the whole place will explode";
+    }
+    // noun 03728811
+    if sense == 9 {
+        return "noun\tan exact duplicate\tmate\twhen a match is found an entry is made in the notebook";
+    }
+    ""
+}

@@ -1,0 +1,61 @@
+// fit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fit(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 02702830
+    if sense == 1 {
+        return "verb\tbe agreeable or acceptable to\tsuit, accommodate\t";
+    }
+    // verb 02659763
+    if sense == 2 {
+        return "verb\tbe the right size or shape; fit correctly or as desired\tgo\tThis piece won't fit into the puzzle";
+    }
+    // verb 02667900
+    if sense == 3 {
+        return "verb\tsatisfy a condition or restriction\tmeet, conform to\t";
+    }
+    // verb 00300537
+    if sense == 4 {
+        return "verb\tmake fit\t\tfit a dress";
+    }
+    // verb 00300113
+    if sense == 5 {
+        return "verb\tinsert or adjust several objects or people\t\tCan you fit the toy into the box?";
+    }
+    // verb 02657219
+    if sense == 6 {
+        return "verb\tbe compatible, similar or consistent; coincide in their characteristics\tmatch, correspond, check, jibe, gibe, tally, agree\t";
+    }
+    // adj 01020393
+    if sense == 7 {
+        return "adjective\tmeeting adequate standards for a purpose\t\ta fit subject for discussion";
+    }
+    // adj 01931203
+    if sense == 8 {
+        return "adjective\t(usually followed by `to' or `for') on the point of or strongly disposed\tprimed, set\tin no fit state to continue";
+    }
+    // noun 14406303
+    if sense == 9 {
+        return "noun\ta display of bad temper\ttantrum, scene, conniption\the had a fit";
+    }
+    // adj 01017161
+    if sense == 10 {
+        return "adjective\tphysically and mentally sound or healthy\t\tfelt relaxed and fit after their holiday";
+    }
+    // noun 14082788
+    if sense == 11 {
+        return "noun\ta sudden uncontrollable attack\tparoxysm, convulsion\ta fit of coughing";
+    }
+    // noun 04930307
+    if sense == 12 {
+        return "noun\tthe manner in which something fits\t\tI admired the fit of her coat";
+    }
+    // verb 02735753
+    if sense == 13 {
+        return "verb\tconform to some shape or size\t\tHow does this shirt fit?";
+    }
+    // verb 02339413
+    if sense == 14 {
+        return "verb\tprovide with (something) usually for a specific purpose\tequip, fit out, outfit\t";
+    }
+    ""
+}

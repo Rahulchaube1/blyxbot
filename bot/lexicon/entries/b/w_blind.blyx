@@ -1,0 +1,37 @@
+// blind — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_blind(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 02158826
+    if sense == 1 {
+        return "adjective\tunable to see\tunsighted\ta person is blind to the extent that he must devise alternative techniques to do efficiently those things he would do with sight if he had normal vision";
+    }
+    // noun 07944408
+    if sense == 2 {
+        return "noun\tpeople who have severe visual impairments, considered as a group\t\the spent hours reading to the blind";
+    }
+    // adj 01746292
+    if sense == 3 {
+        return "adjective\tunable or unwilling to perceive or understand\t\tblind to a lover's faults";
+    }
+    // adj 01926654
+    if sense == 4 {
+        return "adjective\tnot based on reason or evidence\tunreasoning\tblind hatred";
+    }
+    // verb 02168555
+    if sense == 5 {
+        return "verb\trender unable to see\t\t";
+    }
+    // verb 02168194
+    if sense == 6 {
+        return "verb\tmake blind by putting the eyes out\t\tThe criminals were punished and blinded";
+    }
+    // noun 02851384
+    if sense == 7 {
+        return "noun\ta hiding place sometimes used by hunters (especially duck hunters)\t\the waited impatiently in the blind";
+    }
+    // noun 02851099
+    if sense == 8 {
+        return "noun\ta protective covering that keeps things out or hinders sight\tscreen\tthey had just moved in and had not put up blinds yet";
+    }
+    ""
+}

@@ -1,0 +1,57 @@
+// show — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_show(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 02148788
+    if sense == 1 {
+        return "verb\tgive an exhibition of to an interested audience\tdemo, exhibit, present, demonstrate\tShe shows her dogs frequently";
+    }
+    // verb 00664788
+    if sense == 2 {
+        return "verb\testablish the validity of something, as by an example, explanation or experiment\tprove, demonstrate, establish, shew\tThe mathematician showed the validity of the conjecture";
+    }
+    // verb 01015244
+    if sense == 3 {
+        return "verb\tprovide evidence for\ttestify, bear witness, prove, evidence\tThe blood test showed that he was the father";
+    }
+    // verb 02137132
+    if sense == 4 {
+        return "verb\tmake visible or noticeable\t\tShe showed her talent for cooking";
+    }
+    // verb 01686956
+    if sense == 5 {
+        return "verb\tshow in, or as in, a picture\tpicture, depict, render\t";
+    }
+    // verb 00943837
+    if sense == 6 {
+        return "verb\tgive expression to\texpress, evince\tShe showed her disappointment";
+    }
+    // verb 00923793
+    if sense == 7 {
+        return "verb\tindicate a place, direction, person, or thing; either spatially or figuratively\tindicate, point, designate\tI showed the customer the glove section";
+    }
+    // noun 00520257
+    if sense == 8 {
+        return "noun\tthe act of publicly exhibiting or entertaining\t\ta remarkable show of skill";
+    }
+    // verb 02139544
+    if sense == 9 {
+        return "verb\tbe or become visible or noticeable\tshow up\tHis good upbringing really shows";
+    }
+    // noun 06879521
+    if sense == 10 {
+        return "noun\tsomething intended to communicate a particular impression\tdisplay\ta show of impatience";
+    }
+    // verb 00922867
+    if sense == 11 {
+        return "verb\tindicate a certain reading; of gauges and instruments\tread, register, record\tThe thermometer showed thirteen degrees below zero";
+    }
+    // verb 00923307
+    if sense == 12 {
+        return "verb\tgive evidence of, as of records\t\tThe diary shows his distress that evening";
+    }
+    // verb 02000547
+    if sense == 13 {
+        return "verb\ttake (someone) to their seats, as in theaters or auditoriums\tusher\tThe usher showed us to our seats";
+    }
+    ""
+}

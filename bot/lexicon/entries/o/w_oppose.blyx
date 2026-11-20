@@ -1,0 +1,21 @@
+// oppose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_oppose(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00775831
+    if sense == 1 {
+        return "verb\tbe against; express opposition to\t\tWe oppose the ban on abortion";
+    }
+    // verb 01091427
+    if sense == 2 {
+        return "verb\tfight against or resist strongly\tfight, fight back, fight down, defend\tThe senator said he would oppose the bill";
+    }
+    // verb 02666531
+    if sense == 3 {
+        return "verb\tcontrast with equal weight or force\tcounterbalance\t";
+    }
+    // verb 01081152
+    if sense == 4 {
+        return "verb\tset into opposition or rivalry\tpit, match, play off\t";
+    }
+    ""
+}

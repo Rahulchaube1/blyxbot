@@ -1,0 +1,49 @@
+// look — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_look(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 02130524
+    if sense == 1 {
+        return "verb\tperceive with attention; direct one's gaze towards\t\tShe looked over the expanse of land";
+    }
+    // verb 02133435
+    if sense == 2 {
+        return "verb\tgive a certain impression or have a certain outward aspect\tappear, seem\tThis project looks fishy";
+    }
+    // verb 00033599
+    if sense == 3 {
+        return "verb\thave a certain outward or facial expression\t\tHow does she look?";
+    }
+    // noun 04679738
+    if sense == 4 {
+        return "noun\tthe feelings expressed on a person's face\texpression, aspect, facial expression, face\ta look of triumph";
+    }
+    // noun 00877127
+    if sense == 5 {
+        return "noun\tthe act of directing the eyes toward something and perceiving it visually\tlooking, looking at\the went out to have a look";
+    }
+    // noun 04674715
+    if sense == 6 {
+        return "noun\tphysical appearance\t\tI don't like the looks of this place";
+    }
+    // verb 02153709
+    if sense == 7 {
+        return "verb\tsearch or seek\tsearch\tWe looked all day and finally found the child in the forest";
+    }
+    // verb 02693319
+    if sense == 8 {
+        return "verb\tbe oriented in a certain direction, often with respect to another reference point; be opposite to\tfront, face\tThe house looks north";
+    }
+    // verb 02549581
+    if sense == 9 {
+        return "verb\ttake charge of or deal with\tattend, take care, see\t";
+    }
+    // verb 00929362
+    if sense == 10 {
+        return "verb\tconvey by one's expression\t\tShe looked her devotion to me";
+    }
+    // verb 00720063
+    if sense == 11 {
+        return "verb\tlook forward to the probable occurrence of\texpect, await, wait\tShe is looking to a promotion";
+    }
+    ""
+}

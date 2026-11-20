@@ -1,0 +1,17 @@
+// ever — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ever(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00146387
+    if sense == 1 {
+        return "adverb\tat any time\tof all time\tdid you ever smoke?";
+    }
+    // adv 00019339
+    if sense == 2 {
+        return "adverb\tat all times; all the time and on every occasion\talways, e'er\tever hoping to strike it rich";
+    }
+    // adv 00212604
+    if sense == 3 {
+        return "adverb\t(intensifier for adjectives) very\tever so\tshe was ever so friendly";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// tendency — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tendency(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06196584
+    if sense == 1 {
+        return "noun\tan attitude of mind especially one that favors one alternative over others\tinclination, disposition\ta tendency to be too strict";
+    }
+    // noun 07499113
+    if sense == 2 {
+        return "noun\tan inclination to do something\tleaning, propensity\t";
+    }
+    // noun 04944048
+    if sense == 3 {
+        return "noun\ta characteristic likelihood of or natural disposition toward a certain condition or character or effect\tinclination\tfabric with a tendency to shrink";
+    }
+    ""
+}

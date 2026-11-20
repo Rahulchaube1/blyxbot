@@ -1,0 +1,9 @@
+// latter — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_latter(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01047561
+    if sense == 1 {
+        return "adjective\treferring to the second of two things or persons mentioned (or the last one or ones of several)\t\tin the latter case";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// just — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_just(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00004722
+    if sense == 1 {
+        return "adverb\tand nothing more\tmerely, simply, only, but\tjust a scratch";
+    }
+    // adv 00158309
+    if sense == 2 {
+        return "adverb\tindicating exactness or preciseness\tprecisely, exactly\tit was just as he said--the jewel was gone";
+    }
+    // adv 00033308
+    if sense == 3 {
+        return "adverb\tonly a moment ago\tjust now\the has just arrived";
+    }
+    // adv 00246296
+    if sense == 4 {
+        return "adverb\tabsolutely\tsimply\tI just can't take it anymore";
+    }
+    // adv 00002621
+    if sense == 5 {
+        return "adverb\tonly a very short time before\tbarely, hardly, scarcely, scarce\tjust missed being hit";
+    }
+    // adj 01369663
+    if sense == 6 {
+        return "adjective\tused especially of what is legally or ethically right or proper or fitting\t\ta just and lasting peace";
+    }
+    ""
+}

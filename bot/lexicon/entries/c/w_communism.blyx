@@ -1,0 +1,13 @@
+// communism — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_communism(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08365855
+    if sense == 1 {
+        return "noun\ta form of socialism that abolishes private ownership\t\t";
+    }
+    // noun 06214744
+    if sense == 2 {
+        return "noun\ta political theory favoring collectivism in a classless society\t\t";
+    }
+    ""
+}

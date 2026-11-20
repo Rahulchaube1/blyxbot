@@ -1,0 +1,9 @@
+// river — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_river(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 09411430
+    if sense == 1 {
+        return "noun\ta large natural stream of water (larger than a creek)\t\tthe river was navigable for 50 miles";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// yell — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_yell(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00913065
+    if sense == 1 {
+        return "verb\tutter a sudden loud cry\tshout, shout out, cry, call, scream, holler, hollo, squall\tI yelled to her from the window but she couldn't hear me";
+    }
+    // noun 07120524
+    if sense == 2 {
+        return "noun\ta loud utterance; often in protest or opposition\tcry, outcry, call, shout, vociferation\t";
+    }
+    // verb 00912833
+    if sense == 3 {
+        return "verb\tutter or declare in a very loud voice\tscream\tYou don't have to yell--I can hear you just fine";
+    }
+    // noun 07121157
+    if sense == 4 {
+        return "noun\ta loud utterance of emotion (especially when inarticulate)\tcry\ta yell of pain";
+    }
+    ""
+}

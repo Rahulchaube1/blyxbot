@@ -1,0 +1,13 @@
+// religion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_religion(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05946687
+    if sense == 1 {
+        return "noun\ta strong belief in a supernatural power or powers that control human destiny\tfaith, religious belief\t";
+    }
+    // noun 08081668
+    if sense == 2 {
+        return "noun\tan institution to express belief in a divine power\tfaith, organized religion\the was raised in the Baptist religion";
+    }
+    ""
+}

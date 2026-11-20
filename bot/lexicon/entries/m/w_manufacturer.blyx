@@ -1,0 +1,13 @@
+// manufacturer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_manufacturer(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08060446
+    if sense == 1 {
+        return "noun\ta business engaged in manufacturing some product\tmaker, manufacturing business\t";
+    }
+    // noun 10292316
+    if sense == 2 {
+        return "noun\tsomeone who manufactures something\tproducer\t";
+    }
+    ""
+}

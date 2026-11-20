@@ -1,0 +1,13 @@
+// hardly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hardly(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00002621
+    if sense == 1 {
+        return "adverb\tonly a very short time before\tbarely, just, scarcely, scarce\twe hardly knew them";
+    }
+    // adv 00003093
+    if sense == 2 {
+        return "adverb\talmost not\tscarcely\the hardly ever goes fishing";
+    }
+    ""
+}

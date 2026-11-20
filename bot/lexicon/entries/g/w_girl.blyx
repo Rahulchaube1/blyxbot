@@ -1,0 +1,25 @@
+// girl — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_girl(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 10129825
+    if sense == 1 {
+        return "noun\ta young woman\tmiss, missy, young lady, young woman, fille\t";
+    }
+    // noun 10084295
+    if sense == 2 {
+        return "noun\ta youthful female person\tfemale child, little girl\tthe baby was a girl";
+    }
+    // noun 09992837
+    if sense == 3 {
+        return "noun\ta female human offspring\tdaughter\t";
+    }
+    // noun 10130686
+    if sense == 4 {
+        return "noun\ta girl or young woman with whom a man is romantically involved\tgirlfriend, lady friend\t";
+    }
+    // noun 10130447
+    if sense == 5 {
+        return "noun\ta friendly informal reference to a grown woman\t\tMrs. Smith was just one of the girls";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// prime minister — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_prime_minister(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09907196
+    if sense == 1 {
+        return "noun\tthe person who holds the position of head of the government in the United Kingdom\tPM, premier\t";
+    }
+    // noun 09906986
+    if sense == 2 {
+        return "noun\tthe person who is head of state (in several countries)\tchancellor, premier\t";
+    }
+    ""
+}

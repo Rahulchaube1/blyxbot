@@ -1,0 +1,21 @@
+// breath — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_breath(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00835032
+    if sense == 1 {
+        return "noun\tthe process of taking in and expelling air during breathing\t\the took a deep breath and dived into the pool";
+    }
+    // noun 14841770
+    if sense == 2 {
+        return "noun\tthe air that is inhaled and exhaled in respiration\t\this sour breath offended her";
+    }
+    // noun 15274695
+    if sense == 3 {
+        return "noun\ta short respite\tbreather, breathing place, breathing space, breathing spell, breathing time\t";
+    }
+    // noun 07163988
+    if sense == 4 {
+        return "noun\tan indirect suggestion\thint, intimation\tnot a breath of scandal ever touched her";
+    }
+    ""
+}

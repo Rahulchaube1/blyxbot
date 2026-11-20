@@ -1,0 +1,25 @@
+// worry — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_worry(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01767163
+    if sense == 1 {
+        return "verb\tbe worried, concerned, anxious, troubled, or uneasy\t\tI worry about my job";
+    }
+    // verb 01766748
+    if sense == 2 {
+        return "verb\tbe concerned with\tcare\tI worry about my grades";
+    }
+    // verb 01765908
+    if sense == 3 {
+        return "verb\tdisturb the peace of mind of; afflict with mental agitation or distress\tvex\tI cannot sleep--my daughter's health is worrying me";
+    }
+    // noun 05832264
+    if sense == 4 {
+        return "noun\tsomething or someone that causes anxiety; a source of unhappiness\tconcern, headache, vexation\tit's a major worry";
+    }
+    // noun 07524242
+    if sense == 5 {
+        return "noun\ta strong feeling of anxiety\ttrouble\this worry over the prospect of being fired";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// host — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_host(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 10187130
+    if sense == 1 {
+        return "noun\ta person who invites guests to a social event (such as a party in his or her own home) and who is responsible for them while they are there\t\t";
+    }
+    // noun 08182962
+    if sense == 2 {
+        return "noun\ta vast multitude\thorde, legion\t";
+    }
+    // noun 01385527
+    if sense == 3 {
+        return "noun\tan animal or plant that nourishes and supports a parasite; it does not benefit and is often harmed by the association\t\t";
+    }
+    // noun 10299250
+    if sense == 4 {
+        return "noun\ta person who acts as host at formal occasions (makes an introductory speech and introduces other speakers)\tmaster of ceremonies, emcee\t";
+    }
+    // noun 08183802
+    if sense == 5 {
+        return "noun\tarchaic terms for army\tlegion\t";
+    }
+    // noun 08481184
+    if sense == 6 {
+        return "noun\tany organization that provides resources and facilities for a function or event\t\tAtlanta was chosen to be host for the Olympic Games";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// not — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_not(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00024073
+    if sense == 1 {
+        return "adverb\tnegation of a word or group of words\tnon\the does not speak French";
+    }
+    ""
+}

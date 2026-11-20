@@ -1,0 +1,21 @@
+// pause — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pause(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02641035
+    if sense == 1 {
+        return "verb\tinterrupt temporarily an activity before continuing\thesitate\tThe speaker paused";
+    }
+    // noun 15271008
+    if sense == 2 {
+        return "noun\ta time interval during which there is a temporary cessation of something\tintermission, break, interruption, suspension\t";
+    }
+    // verb 00779061
+    if sense == 3 {
+        return "verb\tcease an action temporarily\tintermit, break\tWe pause for station identification";
+    }
+    // noun 01062817
+    if sense == 4 {
+        return "noun\ttemporary inactivity\t\t";
+    }
+    ""
+}

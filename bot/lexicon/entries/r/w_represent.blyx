@@ -1,0 +1,45 @@
+// represent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_represent(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02699497
+    if sense == 1 {
+        return "verb\ttake the place of or be parallel or equivalent to\tstand for, correspond\t";
+    }
+    // verb 00836236
+    if sense == 2 {
+        return "verb\texpress indirectly by an image, form, or model; be a symbol\ttypify, symbolize, symbolise, stand for\t";
+    }
+    // verb 02541921
+    if sense == 3 {
+        return "verb\tbe representative or typical for\t\tThis period is represented by Beethoven";
+    }
+    // verb 02541509
+    if sense == 4 {
+        return "verb\tbe a delegate or spokesperson for; represent somebody's interest or be a proxy or substitute for, as of politicians and office holders representing their constituents, or of a tenant representing other tenants in a housing dispute\t\tI represent the silent majority";
+    }
+    // verb 00988028
+    if sense == 5 {
+        return "verb\tserve as a means of expressing something\t\tThe flower represents a young girl";
+    }
+    // verb 02723733
+    if sense == 6 {
+        return "verb\tbe characteristic of\texemplify\t";
+    }
+    // verb 02620587
+    if sense == 7 {
+        return "verb\tform or compose\tconstitute, make up, comprise, be\tThis sum represents my entire income for a year";
+    }
+    // verb 02581675
+    if sense == 8 {
+        return "verb\tbe the defense counsel for someone in a trial\tdefend\tMs. Smith will represent the defendant";
+    }
+    // verb 01686132
+    if sense == 9 {
+        return "verb\tcreate an image or likeness of\tinterpret\tThe painter represented his wife as a young girl";
+    }
+    // verb 01719302
+    if sense == 10 {
+        return "verb\tplay a role or part\tact, play\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// arrange — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_arrange(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01463963
+    if sense == 1 {
+        return "verb\tput into a proper or systematic order\tset up\tarrange the books on the shelves in chronological order";
+    }
+    // verb 01021629
+    if sense == 2 {
+        return "verb\tmake arrangements for\tfix up\tCan you arrange a meeting with the President?";
+    }
+    // verb 01648126
+    if sense == 3 {
+        return "verb\tplan, organize, and carry out (an event)\tstage\t";
+    }
+    // verb 01745141
+    if sense == 4 {
+        return "verb\tset (printed matter) into a specific format\tformat\t";
+    }
+    // verb 00038849
+    if sense == 5 {
+        return "verb\tarrange attractively\tdress, set, do, coif, coiffe, coiffure\t";
+    }
+    ""
+}

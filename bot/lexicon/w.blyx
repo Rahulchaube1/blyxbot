@@ -1,0 +1,179 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::w::w_wage;
+use entries::w::w_wagon;
+use entries::w::w_wait;
+use entries::w::w_walk;
+use entries::w::w_wall;
+use entries::w::w_want;
+use entries::w::w_war;
+use entries::w::w_warm;
+use entries::w::w_warn;
+use entries::w::w_warning;
+use entries::w::w_wash;
+use entries::w::w_washington;
+use entries::w::w_waste;
+use entries::w::w_watch;
+use entries::w::w_water;
+use entries::w::w_wave;
+use entries::w::w_wavelength;
+use entries::w::w_way;
+use entries::w::w_weakness;
+use entries::w::w_weapon;
+use entries::w::w_wear;
+use entries::w::w_weather;
+use entries::w::w_week;
+use entries::w::w_weep;
+use entries::w::w_weigh;
+use entries::w::w_weight;
+use entries::w::w_welcome;
+use entries::w::w_well;
+use entries::w::w_west;
+use entries::w::w_western;
+use entries::w::w_wet;
+use entries::w::w_wheel;
+use entries::w::w_while;
+use entries::w::w_whip;
+use entries::w::w_whisper;
+use entries::w::w_white;
+use entries::w::w_whole;
+use entries::w::w_wide;
+use entries::w::w_widely;
+use entries::w::w_wife;
+use entries::w::w_wild;
+use entries::w::w_will;
+use entries::w::w_willing;
+use entries::w::w_win;
+use entries::w::w_wind;
+use entries::w::w_window;
+use entries::w::w_wing;
+use entries::w::w_winter;
+use entries::w::w_wire;
+use entries::w::w_wish;
+use entries::w::w_withdraw;
+use entries::w::w_witness;
+use entries::w::w_woman;
+use entries::w::w_wonder;
+use entries::w::w_wood;
+use entries::w::w_woods;
+use entries::w::w_word;
+use entries::w::w_words;
+use entries::w::w_work;
+use entries::w::w_work_on;
+use entries::w::w_work_out;
+use entries::w::w_worker;
+use entries::w::w_world;
+use entries::w::w_worry;
+use entries::w::w_worse;
+use entries::w::w_worship;
+use entries::w::w_worth;
+use entries::w::w_wound;
+use entries::w::w_wounded;
+use entries::w::w_write;
+use entries::w::w_writer;
+use entries::w::w_writing;
+use entries::w::w_wrong;
+
+fn through_w_wave(term: str, sense: i64) -> str {
+    if term == "wage" { return w_wage(sense); }
+    if term == "wagon" { return w_wagon(sense); }
+    if term == "wait" { return w_wait(sense); }
+    if term == "walk" { return w_walk(sense); }
+    if term == "wall" { return w_wall(sense); }
+    if term == "want" { return w_want(sense); }
+    if term == "war" { return w_war(sense); }
+    if term == "warm" { return w_warm(sense); }
+    if term == "warn" { return w_warn(sense); }
+    if term == "warning" { return w_warning(sense); }
+    if term == "wash" { return w_wash(sense); }
+    if term == "washington" { return w_washington(sense); }
+    if term == "waste" { return w_waste(sense); }
+    if term == "watch" { return w_watch(sense); }
+    if term == "water" { return w_water(sense); }
+    if term == "wave" { return w_wave(sense); }
+    ""
+}
+
+fn through_w_wheel(term: str, sense: i64) -> str {
+    if term == "wavelength" { return w_wavelength(sense); }
+    if term == "way" { return w_way(sense); }
+    if term == "weakness" { return w_weakness(sense); }
+    if term == "weapon" { return w_weapon(sense); }
+    if term == "wear" { return w_wear(sense); }
+    if term == "weather" { return w_weather(sense); }
+    if term == "week" { return w_week(sense); }
+    if term == "weep" { return w_weep(sense); }
+    if term == "weigh" { return w_weigh(sense); }
+    if term == "weight" { return w_weight(sense); }
+    if term == "welcome" { return w_welcome(sense); }
+    if term == "well" { return w_well(sense); }
+    if term == "west" { return w_west(sense); }
+    if term == "western" { return w_western(sense); }
+    if term == "wet" { return w_wet(sense); }
+    if term == "wheel" { return w_wheel(sense); }
+    ""
+}
+
+fn through_w_winter(term: str, sense: i64) -> str {
+    if term == "while" { return w_while(sense); }
+    if term == "whip" { return w_whip(sense); }
+    if term == "whisper" { return w_whisper(sense); }
+    if term == "white" { return w_white(sense); }
+    if term == "whole" { return w_whole(sense); }
+    if term == "wide" { return w_wide(sense); }
+    if term == "widely" { return w_widely(sense); }
+    if term == "wife" { return w_wife(sense); }
+    if term == "wild" { return w_wild(sense); }
+    if term == "will" { return w_will(sense); }
+    if term == "willing" { return w_willing(sense); }
+    if term == "win" { return w_win(sense); }
+    if term == "wind" { return w_wind(sense); }
+    if term == "window" { return w_window(sense); }
+    if term == "wing" { return w_wing(sense); }
+    if term == "winter" { return w_winter(sense); }
+    ""
+}
+
+fn through_w_worry(term: str, sense: i64) -> str {
+    if term == "wire" { return w_wire(sense); }
+    if term == "wish" { return w_wish(sense); }
+    if term == "withdraw" { return w_withdraw(sense); }
+    if term == "witness" { return w_witness(sense); }
+    if term == "woman" { return w_woman(sense); }
+    if term == "wonder" { return w_wonder(sense); }
+    if term == "wood" { return w_wood(sense); }
+    if term == "woods" { return w_woods(sense); }
+    if term == "word" { return w_word(sense); }
+    if term == "words" { return w_words(sense); }
+    if term == "work" { return w_work(sense); }
+    if term == "work on" { return w_work_on(sense); }
+    if term == "work out" { return w_work_out(sense); }
+    if term == "worker" { return w_worker(sense); }
+    if term == "world" { return w_world(sense); }
+    if term == "worry" { return w_worry(sense); }
+    ""
+}
+
+fn through_w_wrong(term: str, sense: i64) -> str {
+    if term == "worse" { return w_worse(sense); }
+    if term == "worship" { return w_worship(sense); }
+    if term == "worth" { return w_worth(sense); }
+    if term == "wound" { return w_wound(sense); }
+    if term == "wounded" { return w_wounded(sense); }
+    if term == "write" { return w_write(sense); }
+    if term == "writer" { return w_writer(sense); }
+    if term == "writing" { return w_writing(sense); }
+    if term == "wrong" { return w_wrong(sense); }
+    ""
+}
+
+pub fn lookup_w(term: str, sense: i64) -> str {
+    if term <= "wave" { return through_w_wave(term, sense); }
+    if term <= "wheel" { return through_w_wheel(term, sense); }
+    if term <= "winter" { return through_w_winter(term, sense); }
+    if term <= "worry" { return through_w_worry(term, sense); }
+    through_w_wrong(term, sense)
+}
+
+pub fn words_w() -> str {
+    "wage|wagon|wait|walk|wall|want|war|warm|warn|warning|wash|washington|waste|watch|water|wave|wavelength|way|weakness|weapon|wear|weather|week|weep|weigh|weight|welcome|well|west|western|wet|wheel|while|whip|whisper|white|whole|wide|widely|wife|wild|will|willing|win|wind|window|wing|winter|wire|wish|withdraw|witness|woman|wonder|wood|woods|word|words|work|work on|work out|worker|world|worry|worse|worship|worth|wound|wounded|write|writer|writing|wrong"
+}

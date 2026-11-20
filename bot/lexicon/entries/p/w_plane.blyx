@@ -1,0 +1,25 @@
+// plane — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_plane(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 02691156
+    if sense == 1 {
+        return "noun\tan aircraft that has a fixed wing and is powered by propellers or jets\tairplane, aeroplane\t";
+    }
+    // noun 13861050
+    if sense == 2 {
+        return "noun\t(mathematics) an unbounded two-dimensional shape\tsheet\twe will refer to the plane of the graph as the X-Y plane";
+    }
+    // noun 13941806
+    if sense == 3 {
+        return "noun\ta level of existence or development\t\the lived on a worldly plane";
+    }
+    // verb 01249490
+    if sense == 4 {
+        return "verb\tcut or remove with or as if with a plane\tshave\t";
+    }
+    // adj 00910101
+    if sense == 5 {
+        return "adjective\thaving a surface without slope, tilt in which no part is higher or lower than another\tflat, level\ta plane surface";
+    }
+    ""
+}

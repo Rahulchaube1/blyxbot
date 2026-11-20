@@ -1,0 +1,17 @@
+// street — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_street(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 04334599
+    if sense == 1 {
+        return "noun\ta thoroughfare (usually including sidewalks) that is lined with buildings\t\tthey walked the streets of the small town";
+    }
+    // noun 04335209
+    if sense == 2 {
+        return "noun\tthe part of a thoroughfare between the sidewalks; the part of the thoroughfare on which vehicles travel\t\tbe careful crossing the street";
+    }
+    // noun 14516256
+    if sense == 3 {
+        return "noun\tthe streets of a city viewed as a depressed environment in which there is poverty and crime and prostitution and dereliction\t\tshe tried to keep her children off the street";
+    }
+    ""
+}

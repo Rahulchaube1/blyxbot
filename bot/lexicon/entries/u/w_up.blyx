@@ -1,0 +1,29 @@
+// up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_up(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00096333
+    if sense == 1 {
+        return "adverb\tspatially or metaphorically from a lower to a higher position\tupwards, upward, upwardly\tlook up!";
+    }
+    // adj 02490170
+    if sense == 2 {
+        return "adjective\tbeing or moving higher in position or greater in some value; being above a former position or level\t\tthe anchor is up";
+    }
+    // adj 00186925
+    if sense == 3 {
+        return "adjective\tout of bed\tastir\tup by seven each morning";
+    }
+    // verb 00154966
+    if sense == 4 {
+        return "verb\traise\t\tup the ante";
+    }
+    // adj 02487108
+    if sense == 5 {
+        return "adjective\tgetting higher or more vigorous\timproving\tits an up market";
+    }
+    // adj 02485488
+    if sense == 6 {
+        return "adjective\textending or moving toward a higher place\tupward\tthe up staircase";
+    }
+    ""
+}

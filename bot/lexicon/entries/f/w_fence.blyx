@@ -1,0 +1,13 @@
+// fence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fence(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 03327234
+    if sense == 1 {
+        return "noun\ta barrier that serves to enclose an area\tfencing\t";
+    }
+    // verb 01588134
+    if sense == 2 {
+        return "verb\tenclose with a fence\tfence in\twe fenced in our yard";
+    }
+    ""
+}

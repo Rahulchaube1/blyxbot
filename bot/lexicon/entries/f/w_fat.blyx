@@ -1,0 +1,21 @@
+// fat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fat(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00986027
+    if sense == 1 {
+        return "adjective\thaving an (over)abundance of flesh\t\the hadn't remembered how fat she was";
+    }
+    // noun 14864360
+    if sense == 2 {
+        return "noun\ta soft greasy substance occurring in organic tissue and consisting of a mixture of lipids (mostly triglycerides)\t\tpizza has too much fat";
+    }
+    // adj 02411224
+    if sense == 3 {
+        return "adjective\thaving a relatively large diameter\t\ta fat rope";
+    }
+    // noun 05268965
+    if sense == 4 {
+        return "noun\ta kind of body tissue containing stored fat that serves as a source of energy; it also cushions and insulates vital organs\tadipose tissue, fatty tissue\t";
+    }
+    ""
+}

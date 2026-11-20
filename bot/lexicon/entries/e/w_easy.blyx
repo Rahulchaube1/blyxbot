@@ -1,0 +1,29 @@
+// easy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_easy(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 00749230
+    if sense == 1 {
+        return "adjective\tposing no difficulty; requiring little effort\t\tan easy job";
+    }
+    // adv 00147876
+    if sense == 2 {
+        return "adverb\twith ease (`easy' is sometimes used informally for `easily')\teasily\tsuccess came too easy";
+    }
+    // adj 01272176
+    if sense == 3 {
+        return "adjective\tnot hurried or forced\teasygoing, leisurely\tan easy walk around the block";
+    }
+    // adj 00822115
+    if sense == 4 {
+        return "adjective\tfree from worry or anxiety\t\tknowing that I had done my best, my mind was easy";
+    }
+    // adj 01808139
+    if sense == 5 {
+        return "adjective\taffording pleasure\t\teasy good looks";
+    }
+    // adj 01192035
+    if sense == 6 {
+        return "adjective\thaving little impact\tgentle, soft\tan easy pat on the shoulder";
+    }
+    ""
+}

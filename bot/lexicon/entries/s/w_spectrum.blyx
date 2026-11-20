@@ -1,0 +1,13 @@
+// spectrum — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_spectrum(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 11420831
+    if sense == 1 {
+        return "noun\tan ordered array of the components of an emission or wave\t\t";
+    }
+    // noun 05128219
+    if sense == 2 {
+        return "noun\ta broad range of related objects or values or qualities or ideas or activities\t\t";
+    }
+    ""
+}

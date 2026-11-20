@@ -1,0 +1,13 @@
+// somewhat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_somewhat(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00036291
+    if sense == 1 {
+        return "adverb\tto a small degree or extent\tslightly, more or less\this arguments were somewhat self-contradictory";
+    }
+    // adv 00035718
+    if sense == 2 {
+        return "adverb\tto a moderately sufficient extent or degree\treasonably, moderately, pretty, jolly, fairly, middling, passably\t";
+    }
+    ""
+}

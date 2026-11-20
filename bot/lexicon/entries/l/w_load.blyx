@@ -1,0 +1,37 @@
+// load — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_load(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 03679986
+    if sense == 1 {
+        return "noun\tweight to be borne or conveyed\tloading, burden\t";
+    }
+    // verb 01489989
+    if sense == 2 {
+        return "verb\tfill or place a load on\tlade, laden, load up\tload a car";
+    }
+    // noun 13772468
+    if sense == 3 {
+        return "noun\ta quantity that can be processed or transported at one time\tloading\tthe system broke down under excessive loads";
+    }
+    // verb 01490336
+    if sense == 4 {
+        return "verb\tprovide (a device) with something necessary\tcharge\tHe loaded his gun carefully";
+    }
+    // noun 02964389
+    if sense == 5 {
+        return "noun\tgoods carried by a large vehicle\tcargo, lading, freight, loading, payload, shipment, consignment\t";
+    }
+    // noun 13772313
+    if sense == 6 {
+        return "noun\tan amount of alcohol sufficient to intoxicate\t\the got a load on and started a brawl";
+    }
+    // noun 11449561
+    if sense == 7 {
+        return "noun\tthe power output of a generator or power plant\t\t";
+    }
+    // noun 05832745
+    if sense == 8 {
+        return "noun\tan onerous or difficult concern\tburden, encumbrance, incumbrance, onus\tthat's a load off my mind";
+    }
+    ""
+}

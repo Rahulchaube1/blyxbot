@@ -1,0 +1,57 @@
+// fly — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fly(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 01940403
+    if sense == 1 {
+        return "verb\ttravel through the air; be airborne\twing\tMan cannot fly";
+    }
+    // verb 01842068
+    if sense == 2 {
+        return "verb\tmove quickly or suddenly\t\t";
+    }
+    // noun 02190166
+    if sense == 3 {
+        return "noun\ttwo-winged insects characterized by active flight\t\t";
+    }
+    // verb 01941093
+    if sense == 4 {
+        return "verb\toperate an airplane\taviate, pilot\t";
+    }
+    // verb 01451842
+    if sense == 5 {
+        return "verb\ttransport by aeroplane\t\tWe fly flowers from the Caribbean to North America";
+    }
+    // verb 01848058
+    if sense == 6 {
+        return "verb\tcause to fly or float\t\tfly a kite";
+    }
+    // verb 01839404
+    if sense == 7 {
+        return "verb\tbe dispersed or disseminated\t\tRumors and accusations are flying";
+    }
+    // verb 00545292
+    if sense == 8 {
+        return "verb\tchange quickly from one emotional state to another\t\tfly into a rage";
+    }
+    // noun 04412097
+    if sense == 9 {
+        return "noun\tflap consisting of a piece of canvas that can be drawn back to provide entrance to a tent\ttent-fly, rainfly, fly sheet, tent flap\t";
+    }
+    // noun 03373060
+    if sense == 10 {
+        return "noun\tan opening in a garment that is closed by a zipper or by buttons concealed under a fold of cloth\tfly front\t";
+    }
+    // noun 00128638
+    if sense == 11 {
+        return "noun\t(baseball) a hit that flies up in the air\tfly ball\t";
+    }
+    // verb 02073065
+    if sense == 12 {
+        return "verb\tpass away rapidly\tfell, vanish\tTime flies like an arrow";
+    }
+    // verb 01840238
+    if sense == 13 {
+        return "verb\ttravel in an airplane\t\tshe is flying to Cincinnati tonight";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// environment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_environment(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13934596
+    if sense == 1 {
+        return "noun\tthe totality of surrounding conditions\t\the longed for the comfortable environment of his living room";
+    }
+    // noun 08567235
+    if sense == 2 {
+        return "noun\tthe area in which something exists or lives\tenvirons, surroundings, surround\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// apart — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_apart(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00181075
+    if sense == 1 {
+        return "adverb\tseparated or at a distance in place or position or time\t\tThese towns are many miles apart";
+    }
+    // adv 00180756
+    if sense == 2 {
+        return "adverb\tnot taken into account or excluded from consideration\taside\tthese problems apart, the country is doing well";
+    }
+    // adj 00567860
+    if sense == 3 {
+        return "adjective\tremote and separate physically or socially\tisolated, obscure\texisted over the centuries as a world apart";
+    }
+    // adv 00234389
+    if sense == 4 {
+        return "adverb\taway from another or others\t\tthey grew apart over the years";
+    }
+    ""
+}

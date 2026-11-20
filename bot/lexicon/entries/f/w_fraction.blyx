@@ -1,0 +1,17 @@
+// fraction — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fraction(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14922107
+    if sense == 1 {
+        return "noun\ta component of a mixture that has been separated by a fractional process\t\t";
+    }
+    // noun 03390207
+    if sense == 2 {
+        return "noun\ta small part or item forming a piece of a whole\t\t";
+    }
+    // noun 13732078
+    if sense == 3 {
+        return "noun\tthe quotient of two rational numbers\t\t";
+    }
+    ""
+}

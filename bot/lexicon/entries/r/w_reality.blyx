@@ -1,0 +1,17 @@
+// reality — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reality(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05809878
+    if sense == 1 {
+        return "noun\tall of your experiences that determine how things appear to you\tworld\tfor them demons were as much a part of reality as trees were";
+    }
+    // noun 13955461
+    if sense == 2 {
+        return "noun\tthe state of being actual or real\trealness, realism\tthe reality of his situation slowly dawned on him";
+    }
+    // noun 13956097
+    if sense == 3 {
+        return "noun\tthe state of the world as it really is rather than as you might want it to be\t\tbusinessmen have to face harsh realities";
+    }
+    ""
+}

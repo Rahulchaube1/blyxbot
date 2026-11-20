@@ -1,0 +1,33 @@
+// couple — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_couple(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 07985628
+    if sense == 1 {
+        return "noun\ta pair who associate with one another\ttwosome, duo, duet\tthe engaged couple";
+    }
+    // noun 07988857
+    if sense == 2 {
+        return "noun\ta pair of people who live together\tmates, match\ta married couple from Chicago";
+    }
+    // noun 13771290
+    if sense == 3 {
+        return "noun\ta small indefinite number\t\the's coming for a couple of days";
+    }
+    // verb 01292885
+    if sense == 4 {
+        return "verb\tbring two objects, ideas, or people together\tmatch, mate, pair, twin\tThis fact is coupled to the other one";
+    }
+    // noun 13743605
+    if sense == 5 {
+        return "noun\ttwo items of the same kind\tpair, twosome, twain, brace, span, yoke, couplet, distich, duo, duet, dyad, duad\t";
+    }
+    // verb 01297624
+    if sense == 6 {
+        return "verb\tlink together\tcouple on, couple up\tcan we couple these proposals?";
+    }
+    // verb 02490430
+    if sense == 7 {
+        return "verb\tform a pair or pairs\tpair, pair off, partner off\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// establishment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_establishment(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00237078
+    if sense == 1 {
+        return "noun\tthe act of forming or establishing something\tconstitution, formation, organization, organisation\tit was the establishment of his reputation";
+    }
+    // noun 08053576
+    if sense == 2 {
+        return "noun\tan organization founded and united for a specific purpose\tinstitution\t";
+    }
+    // noun 08164585
+    if sense == 3 {
+        return "noun\tthe persons (or committees or departments etc.) who make up a body for the purpose of administering something\tadministration, governance, governing body, brass, organization, organisation\the quickly became recognized as a member of the establishment";
+    }
+    // noun 03297735
+    if sense == 4 {
+        return "noun\ta public or private structure (business or governmental or educational) including buildings and equipment for business or residence\t\t";
+    }
+    // noun 08075847
+    if sense == 5 {
+        return "noun\tany large organization\t\t";
+    }
+    ""
+}

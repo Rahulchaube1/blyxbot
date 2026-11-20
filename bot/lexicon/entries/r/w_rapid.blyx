@@ -1,0 +1,9 @@
+// rapid — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rapid(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 00979697
+    if sense == 1 {
+        return "adjective\tdone or occurring in a brief period of time\t\ta rapid rise through the ranks";
+    }
+    ""
+}

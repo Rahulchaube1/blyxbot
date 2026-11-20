@@ -1,0 +1,9 @@
+// disappear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_disappear(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00426958
+    if sense == 1 {
+        return "verb\tget lost, as without warning or explanation\tvanish, go away\tHe disappeared without a trace";
+    }
+    ""
+}

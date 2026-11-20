@@ -1,0 +1,9 @@
+// advantage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_advantage(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 05155821
+    if sense == 1 {
+        return "noun\tthe quality of having a superior or more favorable position\tvantage\tthe experience gave him the advantage over me";
+    }
+    ""
+}

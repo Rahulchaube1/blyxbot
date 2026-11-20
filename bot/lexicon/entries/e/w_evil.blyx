@@ -1,0 +1,25 @@
+// evil — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_evil(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01131043
+    if sense == 1 {
+        return "adjective\tmorally bad or wrong\t\tevil purposes";
+    }
+    // noun 00745637
+    if sense == 2 {
+        return "noun\tmorally objectionable behavior\timmorality, wickedness, iniquity\t";
+    }
+    // noun 05144663
+    if sense == 3 {
+        return "noun\tthat which causes harm or destruction or misfortune\t\tthe evil that men do lives after them; the good is oft interred with their bones";
+    }
+    // noun 04852088
+    if sense == 4 {
+        return "noun\tthe quality of being morally wrong in principle or practice\tevilness\tattempts to explain the origin of evil in the world";
+    }
+    // adj 02514099
+    if sense == 5 {
+        return "adjective\thaving the nature of vice\tvicious\t";
+    }
+    ""
+}

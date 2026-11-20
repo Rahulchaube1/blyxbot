@@ -1,0 +1,9 @@
+// and then — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_and_then(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00117620
+    if sense == 1 {
+        return "adverb\tsubsequently or soon afterward (often used as sentence connectors)\tthen, so, and so\twe watched the late movie and then went to bed";
+    }
+    ""
+}

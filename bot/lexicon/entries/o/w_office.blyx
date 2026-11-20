@@ -1,0 +1,21 @@
+// office — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_office(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 03841666
+    if sense == 1 {
+        return "noun\tplace of business where professional or clerical duties are performed\tbusiness office\the rented an office in the new building";
+    }
+    // noun 08337324
+    if sense == 2 {
+        return "noun\tan administrative unit of government\tagency, federal agency, government agency, bureau, authority\tOffice of Management and Budget";
+    }
+    // noun 00720565
+    if sense == 3 {
+        return "noun\tthe actions and activities assigned to or required or expected of a person or group\tfunction, part, role\t";
+    }
+    // noun 13945102
+    if sense == 4 {
+        return "noun\t(of a government or government official) holding an office means being in power\tpower\tbeing in office already gives a candidate a great advantage";
+    }
+    ""
+}

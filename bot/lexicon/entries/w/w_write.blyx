@@ -1,0 +1,41 @@
+// write — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_write(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 01698271
+    if sense == 1 {
+        return "verb\tproduce a literary work\tcompose, pen, indite\t";
+    }
+    // verb 00993014
+    if sense == 2 {
+        return "verb\tcommunicate or express by writing\t\tPlease write to me every week";
+    }
+    // verb 01744611
+    if sense == 3 {
+        return "verb\thave (one's written work) issued for publication\tpublish\tHow many books did Georges Simenon write?";
+    }
+    // verb 01007027
+    if sense == 4 {
+        return "verb\tcommunicate (with) in writing\tdrop a line\tWrite her soon, please!";
+    }
+    // verb 01031966
+    if sense == 5 {
+        return "verb\tcommunicate by letter\t\t";
+    }
+    // verb 01705494
+    if sense == 6 {
+        return "verb\twrite music\tcompose\t";
+    }
+    // verb 01691057
+    if sense == 7 {
+        return "verb\tmark or trace on a surface\t\t";
+    }
+    // verb 00998886
+    if sense == 8 {
+        return "verb\trecord data on a computer\tsave\t";
+    }
+    // verb 01699896
+    if sense == 9 {
+        return "verb\twrite or name the letters that comprise the conventionally accepted form of (a word or part of a word)\tspell\t";
+    }
+    ""
+}

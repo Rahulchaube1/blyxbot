@@ -1,0 +1,21 @@
+// american — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_american(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 02927512
+    if sense == 1 {
+        return "adjective\tof or relating to the United States of America or its people or language or culture\t\tAmerican citizens";
+    }
+    // noun 09738708
+    if sense == 2 {
+        return "noun\ta native or inhabitant of the United States\t\t";
+    }
+    // adj 02927303
+    if sense == 3 {
+        return "adjective\tof or relating to or characteristic of the continents and islands of the Americas\t\tthe American hemisphere";
+    }
+    // noun 06947479
+    if sense == 4 {
+        return "noun\tthe English language as used in the United States\tAmerican English, American language\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// appoint — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_appoint(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02396205
+    if sense == 1 {
+        return "verb\tcreate and charge with a task or function\tname, nominate, constitute\t";
+    }
+    // verb 02475922
+    if sense == 2 {
+        return "verb\tassign a duty, responsibility or obligation to\tcharge\tHe was appointed deputy manager";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// hope — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hope(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01826723
+    if sense == 1 {
+        return "verb\texpect and wish\ttrust, desire\tI hope she understands that she cannot expect a raise";
+    }
+    // verb 01811441
+    if sense == 2 {
+        return "verb\tbe optimistic; be full of hope; have hopes\t\tI am still hoping that all will turn out well";
+    }
+    // verb 00706047
+    if sense == 3 {
+        return "verb\tintend with some possibility of fulfilment\tgo for\tI hope to have finished this work by tomorrow evening";
+    }
+    // noun 07511733
+    if sense == 4 {
+        return "noun\ta specific instance of feeling hopeful\t\tit revived their hope of winning the pennant";
+    }
+    // noun 07541053
+    if sense == 5 {
+        return "noun\tthe general feeling that some desire will be fulfilled\t\tin spite of his troubles he never gave up hope";
+    }
+    // noun 05950733
+    if sense == 6 {
+        return "noun\tgrounds for feeling hopeful about the future\tpromise\t";
+    }
+    // noun 10184946
+    if sense == 7 {
+        return "noun\tsomeone (or something) on which expectations are centered\t\the was their best hope for a victory";
+    }
+    ""
+}

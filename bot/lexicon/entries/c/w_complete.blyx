@@ -1,0 +1,33 @@
+// complete — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_complete(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 00520214
+    if sense == 1 {
+        return "adjective\thaving every necessary or normal part or component or step\t\ta complete meal";
+    }
+    // verb 00484166
+    if sense == 2 {
+        return "verb\tcome or bring to a finish or an end\tfinish\tShe completed the requirements for her Master's Degree";
+    }
+    // verb 00455750
+    if sense == 3 {
+        return "verb\tbring to a whole, with all the necessary parts or elements\t\tA child would complete the family";
+    }
+    // adj 01750386
+    if sense == 4 {
+        return "adjective\tperfect and complete in every respect; having all necessary qualities\tconsummate\ta complete gentleman";
+    }
+    // verb 02563724
+    if sense == 5 {
+        return "verb\tcomplete or carry out\tdispatch, discharge\t";
+    }
+    // verb 01117484
+    if sense == 6 {
+        return "verb\tcomplete a pass\tnail\t";
+    }
+    // verb 01020731
+    if sense == 7 {
+        return "verb\twrite all the required information onto a form\tfill out, fill in, make out\t";
+    }
+    ""
+}

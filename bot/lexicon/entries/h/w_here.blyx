@@ -1,0 +1,29 @@
+// here — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_here(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00108479
+    if sense == 1 {
+        return "adverb\tin or at this place; where the speaker or writer is\t\tI work here";
+    }
+    // adv 00108773
+    if sense == 2 {
+        return "adverb\tin this circumstance or respect or on this point or detail\t\twhat do we have here?";
+    }
+    // adv 00108647
+    if sense == 3 {
+        return "adverb\tto this place (especially toward the speaker)\thither\tcome here, please";
+    }
+    // adj 01847242
+    if sense == 4 {
+        return "adjective\tbeing here now\t\tis everyone here?";
+    }
+    // noun 08489497
+    if sense == 5 {
+        return "noun\tthe present location; this place\t\twhere do we go from here?";
+    }
+    // adv 00109021
+    if sense == 6 {
+        return "adverb\tat this time; now\t\twe'll adjourn here for lunch and discuss the remaining issues this afternoon";
+    }
+    ""
+}

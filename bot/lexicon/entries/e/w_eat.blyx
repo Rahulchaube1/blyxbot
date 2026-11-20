@@ -1,0 +1,17 @@
+// eat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_eat(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01168468
+    if sense == 1 {
+        return "verb\ttake in solid food\t\tShe was eating a banana";
+    }
+    // verb 01166351
+    if sense == 2 {
+        return "verb\teat a meal; take a meal\t\tWe did not eat until 10 P.M. because there were so many phone calls";
+    }
+    // verb 01179865
+    if sense == 3 {
+        return "verb\ttake in food; used of animals only\tfeed\tThis dog doesn't eat certain kinds of meat";
+    }
+    ""
+}

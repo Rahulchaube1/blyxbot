@@ -1,0 +1,33 @@
+// national — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_national(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 02988060
+    if sense == 1 {
+        return "adjective\tof or relating to or belonging to a nation or country\t\tnational hero";
+    }
+    // adj 01567862
+    if sense == 2 {
+        return "adjective\tlimited to or in the interests of a particular nation\t\tnational interests";
+    }
+    // adj 01105840
+    if sense == 3 {
+        return "adjective\tconcerned with or applicable to or belonging to an entire nation or country\t\tthe national government";
+    }
+    // adj 01861776
+    if sense == 4 {
+        return "adjective\towned or maintained for the public by the national government\t\tnational parks";
+    }
+    // adj 01038332
+    if sense == 5 {
+        return "adjective\tinside the country\thome, interior, internal\t";
+    }
+    // noun 09625401
+    if sense == 6 {
+        return "noun\ta person who owes allegiance to that nation\tsubject\t";
+    }
+    // adj 02988402
+    if sense == 7 {
+        return "adjective\tcharacteristic of or peculiar to the people of a nation\t\ta national trait";
+    }
+    ""
+}

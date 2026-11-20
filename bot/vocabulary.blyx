@@ -1,0 +1,111 @@
+use std::cli;
+use std::text;
+use dictionary;
+use knowledge::english;
+use understanding::text;
+
+fn verb_request(query: str) -> arglist {
+    let q = text_after(query, "what is the ");
+    let mut term = "";
+    let mut mode = "";
+    if text_starts(q, "past tense of ") { term = text_after(q, "past tense of "); mode = "past"; }
+    else if text_starts(q, "past participle of ") { term = text_after(q, "past participle of "); mode = "participle"; }
+    else if text_starts(q, "conjugate ") { term = text_after(q, "conjugate "); mode = "both"; }
+    else if text_starts(q, "verb forms of ") { term = text_after(q, "verb forms of "); mode = "both"; }
+    if mode == "" { return args_new(); }
+    term = text_after(term, "to ");
+    let forms = irregular_forms(term);
+    if forms == "" { return pair("verb-forms", "I have a reference table of 77 irregular verbs. Try “conjugate write”."); }
+    let past = text_before(forms, "|");
+    let participle = text_after(text_after(forms, past), "|");
+    if mode == "past" { return pair("verb-forms", text_concat("The simple past of ", text_concat(term, text_concat(" is ", sentence(past))))); }
+    if mode == "participle" { return pair("verb-forms", text_concat("The past participle of ", text_concat(term, text_concat(" is ", sentence(participle))))); }
+    let reply = text_concat(term, text_concat(" → ", text_concat(past, text_concat(" → ", participle))));
+    pair("verb-forms", text_concat(reply, " (base, simple past, past participle)."))
+}
+
+fn direct_request(q: str) -> arglist {
+    if text_starts(q, "define ") { return pair("meaning", text_after(q, "define ")); }
+    if text_starts(q, "look up ") { return pair("meaning", text_after(q, "look up ")); }
+    if text_starts(q, "what does ") && text_ends(q, " mean") {
+        return pair("meaning", text_before(text_after(q, "what does "), " mean"));
+    }
+    let query = text_after(q, "what is ");
+    let simple = text_after(query, "the ");
+    if text_starts(simple, "definition of ") { return pair("meaning", text_after(simple, "definition of ")); }
+    if text_starts(simple, "meaning of ") { return pair("meaning", text_after(simple, "meaning of ")); }
+    if text_starts(simple, "another word for ") { return pair("synonyms", text_after(simple, "another word for ")); }
+    let synonyms = text_after(q, "what are ");
+    if text_starts(synonyms, "synonyms for ") { return pair("synonyms", text_after(synonyms, "synonyms for ")); }
+    if text_starts(synonyms, "synonyms of ") { return pair("synonyms", text_after(synonyms, "synonyms of ")); }
+    if text_starts(simple, "a synonym for ") { return pair("synonyms", text_after(simple, "a synonym for ")); }
+    if text_starts(q, "use ") && text_ends(q, " in a sentence") {
+        return pair("example", text_before(text_after(q, "use "), " in a sentence"));
+    }
+    if text_starts(q, "example sentence for ") { return pair("example", text_after(q, "example sentence for ")); }
+    if text_starts(q, "give me an example of ") { return pair("example", text_after(q, "give me an example of ")); }
+    if text_starts(q, "what part of speech is ") { return pair("parts", text_after(q, "what part of speech is ")); }
+    args_new()
+}
+
+fn followup_mode(q: str) -> str {
+    if q == "another meaning" || q == "next meaning" || q == "next sense" || q == "another sense" { return "next"; }
+    if q == "previous meaning" || q == "previous sense" { return "previous"; }
+    if q == "give me an example" || q == "example" || q == "show an example" || q == "use it in a sentence" || q == "use that word in a sentence" { return "example"; }
+    if q == "synonyms" || q == "any synonyms" || q == "show synonyms" || q == "what are its synonyms" || q == "synonyms for it" || q == "another word for it" { return "synonyms"; }
+    if q == "what part of speech is it" || q == "part of speech" { return "parts"; }
+    if text_starts(q, "sense ") { return "numbered"; }
+    ""
+}
+
+fn followup(q: str, previous: str) -> arglist {
+    if !text_starts(previous, "vocab|") { return args_new(); }
+    let mode = followup_mode(q);
+    if mode == "" { return args_new(); }
+    let state = text_after(previous, "vocab|");
+    let term = text_before(state, "|");
+    let n = small_number(text_after(text_after(state, term), "|"));
+    let total = sense_count(term);
+    if n < 1 || n > total { return args_new(); }
+    if mode == "next" {
+        if n == total { return pair(previous, text_concat("That was the last listed meaning for ", sentence(term))); }
+        return dictionary_answer(term, "meaning", n + 1, false);
+    }
+    if mode == "previous" {
+        if n == 1 { return pair(previous, text_concat("That was the first listed meaning for ", sentence(term))); }
+        return dictionary_answer(term, "meaning", n - 1, false);
+    }
+    if mode == "numbered" {
+        let selected = small_number(text_after(q, "sense "));
+        let result = dictionary_answer(term, "meaning", selected, false);
+        if selected < 1 || selected > total { return pair(previous, args_at(result, 1)); }
+        return result;
+    }
+    dictionary_answer(term, mode, n, false)
+}
+
+pub fn vocabulary_answer(query: str, previous: str) -> arglist {
+    let next = followup(query, previous);
+    if args_len(next) != 0 { return next; }
+    let verb = verb_request(query);
+    if args_len(verb) != 0 { return verb; }
+    let request = direct_request(query);
+    if args_len(request) == 0 { return args_new(); }
+    let mode = args_at(request, 0);
+    let raw = text_after(args_at(request, 1), "the word ");
+    let term = text_before(raw, " sense ");
+    if term != raw {
+        let tail = text_after(text_after(raw, term), " sense ");
+        if digit_head(tail) >= 0 { return dictionary_answer(term, mode, small_number(tail), false); }
+    }
+    dictionary_answer(raw, mode, 1, true)
+}
+
+// General "what is ...?" questions reach this lookup after specialist handlers.
+pub fn dictionary_fallback(query: str) -> arglist {
+    if !text_starts(query, "what is ") { return args_new(); }
+    let raw = text_after(query, "what is ");
+    let noun = text_after(text_after(raw, "an "), "a ");
+    if sense_count(noun) == 0 { return args_new(); }
+    dictionary_answer(noun, "meaning", 1, true)
+}

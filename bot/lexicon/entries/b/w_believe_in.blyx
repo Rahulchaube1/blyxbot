@@ -1,0 +1,9 @@
+// believe in — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_believe_in(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00733895
+    if sense == 1 {
+        return "verb\thave a firm conviction as to the goodness of something\t\t";
+    }
+    ""
+}

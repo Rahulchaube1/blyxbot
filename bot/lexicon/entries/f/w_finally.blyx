@@ -1,0 +1,17 @@
+// finally — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_finally(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00048138
+    if sense == 1 {
+        return "adverb\tafter an unspecified period of time or an especially long delay\teventually\t";
+    }
+    // adv 00047903
+    if sense == 2 {
+        return "adverb\tas the end result of a succession or process\tultimately, in the end, at last, at long last\t";
+    }
+    // adv 00065822
+    if sense == 3 {
+        return "adverb\tthe item at the end\tlast, lastly, in conclusion\t";
+    }
+    ""
+}

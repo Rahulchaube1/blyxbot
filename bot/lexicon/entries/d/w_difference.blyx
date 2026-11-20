@@ -1,0 +1,21 @@
+// difference — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_difference(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04748836
+    if sense == 1 {
+        return "noun\tthe quality of being unlike or dissimilar\t\tthere are many differences between jazz and rock";
+    }
+    // noun 07366289
+    if sense == 2 {
+        return "noun\ta variation that deviates from the standard or norm\tdeviation, divergence, departure\t";
+    }
+    // noun 07181935
+    if sense == 3 {
+        return "noun\ta disagreement or argument about something important\tdispute, difference of opinion, conflict\tthere were irreconcilable differences";
+    }
+    // noun 13859307
+    if sense == 4 {
+        return "noun\ta significant change\t\tthe difference in her is amazing";
+    }
+    ""
+}

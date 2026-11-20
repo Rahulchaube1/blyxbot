@@ -3,6 +3,8 @@ use std::text;
 use bot::chat;
 use bot::understanding::text;
 use bot::knowledge::capitals;
+use bot::dictionary;
+use bot::lexicon::catalog;
 use tests::topics;
 use tests::replies;
 
@@ -72,13 +74,111 @@ fn check_conversation() {
     equal("unclosed group", args_at(turn("2 * (3 + 4", "", ""), 1), "fallback");
 }
 
+fn check_learning(condition: bool, label: str) {
+    if !condition { stderr_line(text_concat("Failed: ", label)); process_exit(1); }
+}
+
+// Run each prompt through the public chat entry point using the preceding turn.
+fn ask(prompt: str, state: str, expected: str) -> str {
+    let result = turn(prompt, "Mira", state);
+    let reply = args_at(result, 2);
+    check_learning(args_at(result, 0) == "Mira", prompt);
+    check_learning(text_before(reply, expected) != reply, text_concat(prompt, text_concat(" returned ", reply)));
+    args_at(result, 1)
+}
+
+fn check_learning_chat() {
+    let bank = ask("Define bank", "", "sloping land");
+    let money = ask("Another meaning", bank, "financial institution");
+    let invalid = ask("Sense 999", money, "6 numbered meanings");
+    let example = ask("Give me an example", invalid, "he cashed a check at the bank");
+    let related = ask("What are its synonyms?", example, "banking company");
+    let first = ask("Previous meaning", related, "sloping land");
+    ask("Give me an example", first, "they pulled the canoe up on the bank");
+    ask("Sense 6", first, "6 of 6");
+    ask("Synonyms for happy", "", "cheerful");
+    ask("Use book in a sentence", "", "reading a good book");
+    ask("What part of speech is bank?", "", "noun, verb");
+    ask("Define flibbertigibbetxyz", "", "no entry");
+    ask("Conjugate write", "", "write → wrote → written");
+    ask("What's the past tense of go?", "", "went");
+    ask("Past participle of see", "", "seen");
+    let page = ask("Words starting with br", "", "1–10 of");
+    let second = ask("More words", page, "11–");
+    ask("Previous page", second, "1–10 of");
+    ask("Words starting with xyz", "", "No dictionary words");
+    let quiz = ask("Word quiz", "", "1 of 24");
+    let hint = ask("Give me a hint", quiz, "5 letters");
+    let retry = ask("road", hint, "Try another word");
+    let correct = ask("river", retry, "Correct");
+    let next = ask("Next question", correct, "2 of 24");
+    let synonym = ask("instructor", next, "That fits");
+    let third = ask("next", synonym, "3 of 24");
+    let reveal = ask("reveal", third, "paper");
+    ask("Stop quiz", reveal, "Quiz ended");
+    ask("What is 17 times 24?", quiz, "408");
+    ask("5 miles to km", "", "8.04672 km");
+    ask("1,200 m to km", "", "1.2 km");
+    ask("-40 C in F", "", "-40 °F");
+    ask("32 Fahrenheit to Celsius", "", "0 °C");
+    ask("How many inches are in a foot?", "", "12 in");
+    ask("5 in to cm", "", "12.7 cm");
+    ask("1 mg to tonnes", "", "1e-9 t");
+    ask("1 US cup in mL", "", "236.5882365 mL");
+    ask("1 imperial gallon to liters", "", "4.54609 L");
+    ask("-1 K to C", "", "below absolute zero");
+    ask("5 kg to km", "", "different quantities");
+}
+
+fn check_dictionary_contents() {
+    let letters = split_text("a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z", "|");
+    let mut count = 0;
+    let mut senses = 0;
+    let mut i = 0;
+    let mut prior = "";
+    while i < args_len(letters) {
+        let letter = args_at(letters, i);
+        let wording = headwords_for(letter);
+        if wording != "" {
+            let words = split_text(wording, "|");
+            let mut j = 0;
+            while j < args_len(words) {
+                let word = args_at(words, j);
+                check_learning(word > prior && text_starts(word, letter), word);
+                let total = sense_count(word);
+                check_learning(total > 0, word);
+                let mut n = 1;
+                while n <= total {
+                    let fields = dictionary_sense(word, n);
+                    let part = item(fields, 0);
+                    let known = part == "noun" || part == "verb" || part == "adjective" || part == "adverb";
+                    check_learning(args_len(fields) == 4 && known && item(fields, 1) != "", word);
+                    n += 1;
+                }
+                check_learning(dictionary_lookup(word, n) == "", word);
+                senses += total;
+                count += 1;
+                prior = word;
+                j += 1;
+            }
+        }
+        i += 1;
+    }
+    check_learning(count == 2091, text_concat("Headword count ", integer_text(count)));
+    check_learning(senses == 9920, text_concat("Sense count ", integer_text(senses)));
+    println!(text_concat(integer_text(count), text_concat(" dictionary entries verified across ", text_concat(integer_text(senses), " meanings"))));
+}
+
 fn main() {
     let replies = check_replies();
     let topics = check_topics();
     let places = check_places();
     check_conversation();
+    check_learning_chat();
+    check_dictionary_contents();
     println!(text_concat(integer_text(replies), " exact replies passed"));
     println!(text_concat(integer_text(topics), " topic examples passed"));
     println!(text_concat(integer_text(places), " capital lookups passed"));
+    println!("Vocabulary, quiz, browsing, and unit conversion conversations passed");
     println!("Conversation memory, follow-ups, input limits, and fallback checks passed");
 }

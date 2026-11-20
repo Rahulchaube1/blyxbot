@@ -1,0 +1,17 @@
+// city — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_city(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08524735
+    if sense == 1 {
+        return "noun\ta large and densely populated urban area; may include several independent administrative districts\tmetropolis, urban center\tAncient Troy was a great city";
+    }
+    // noun 08540903
+    if sense == 2 {
+        return "noun\tan incorporated administrative district established by state charter\t\tthe city raised the tax rate";
+    }
+    // noun 08226335
+    if sense == 3 {
+        return "noun\tpeople living in a large densely populated municipality\tmetropolis\tthe city voted for Republicans in 1994";
+    }
+    ""
+}

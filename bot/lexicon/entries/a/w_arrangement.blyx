@@ -1,0 +1,25 @@
+// arrangement — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_arrangement(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05795044
+    if sense == 1 {
+        return "noun\tthe thing arranged or agreed to\tagreement\tthey made arrangements to meet in Chicago";
+    }
+    // noun 07938773
+    if sense == 2 {
+        return "noun\tan orderly grouping (of things or persons) considered as a unit; the result of arranging\t\ta flower arrangement";
+    }
+    // noun 05726596
+    if sense == 3 {
+        return "noun\tan organized structure for arranging or classifying\torganization, organisation, system\the changed the arrangement of the topics";
+    }
+    // noun 05075602
+    if sense == 4 {
+        return "noun\tthe spatial property of the way in which something is placed\tplacement\tthe arrangement of the furniture";
+    }
+    // noun 07038400
+    if sense == 5 {
+        return "noun\ta piece of music that has been adapted for performance by a particular set of voices or instruments\tmusical arrangement\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// afraid — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_afraid(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00077645
+    if sense == 1 {
+        return "adjective\tfilled with fear or apprehension\t\tafraid even to turn his head";
+    }
+    // adj 00543993
+    if sense == 2 {
+        return "adjective\tfilled with regret or concern; used often to soften an unpleasant statement\t\tI'm afraid I won't be able to come";
+    }
+    // adj 00544231
+    if sense == 3 {
+        return "adjective\tfeeling worry or concern or insecurity\t\tShe was afraid that I might be embarrassed";
+    }
+    ""
+}

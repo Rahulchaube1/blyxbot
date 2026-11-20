@@ -1,0 +1,9 @@
+// huge — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_huge(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01387319
+    if sense == 1 {
+        return "adjective\tunusually great in size or amount or degree or especially extent or scope\timmense, vast, Brobdingnagian\thuge government spending";
+    }
+    ""
+}

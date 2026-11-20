@@ -1,0 +1,33 @@
+// contract — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_contract(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 06520944
+    if sense == 1 {
+        return "noun\ta binding agreement between two or more persons that is enforceable by law\t\t";
+    }
+    // verb 00888786
+    if sense == 2 {
+        return "verb\tenter into a contractual arrangement\tundertake\t";
+    }
+    // verb 02409941
+    if sense == 3 {
+        return "verb\tengage by written agreement\tsign, sign on, sign up\t";
+    }
+    // noun 06737394
+    if sense == 4 {
+        return "noun\t(contract bridge) the highest bid becomes the contract setting the number of tricks that the bidder must make\tdeclaration\t";
+    }
+    // verb 01387786
+    if sense == 5 {
+        return "verb\tsqueeze or press together\tcompress, constrict, squeeze, compact, press\tthe spasm contracted the muscle";
+    }
+    // verb 00087736
+    if sense == 6 {
+        return "verb\tbe stricken by an illness, fall victim to an illness\ttake, get\t";
+    }
+    // verb 00240571
+    if sense == 7 {
+        return "verb\tbecome smaller or draw together\tshrink\t";
+    }
+    ""
+}

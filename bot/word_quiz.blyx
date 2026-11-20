@@ -1,0 +1,71 @@
+use std::cli;
+use std::text;
+use dictionary;
+use understanding::text;
+use understanding::characters;
+
+// These first senses give self-contained clues without naming the answer.
+fn practice_words() -> arglist {
+    split_text("river|teacher|paper|valley|roof|train|bird|speed|student|kitchen|nose|ear|house|telephone|road|tree|horse|minute|finger|book|shadow|doctor|chair|desk", "|")
+}
+
+fn quiz_state(round: i64, status: str) -> str {
+    args_join(args_push(pair("quiz", integer_text(round)), status), "|")
+}
+
+fn quiz_question(words: arglist, round: i64) -> arglist {
+    if round > args_len(words) {
+        return pair("chat", "You finished the vocabulary quiz. Say “word quiz” to play again.");
+    }
+    let term = args_at(words, round - 1);
+    let sense = dictionary_sense(term, 1);
+    let count = text_concat(integer_text(round), text_concat(" of ", integer_text(args_len(words))));
+    let clue = text_concat("Which word means “", text_concat(item(sense, 1), "”?"));
+    let mut question = text_concat(count, text_concat(". ", clue));
+    if round == 1 { question = text_concat(question, " Make a guess, ask for a hint, or say “skip”."); }
+    pair(quiz_state(round, "open"), question)
+}
+
+fn quiz_hint(term: str) -> str {
+    let chars = alphabet();
+    let first = unit(term, chars);
+    let mut rest = term;
+    let mut length = 0;
+    while rest != "" { rest = text_after(rest, unit(rest, chars)); length += 1; }
+    text_concat("It starts with “", text_concat(first, text_concat("” and has ", text_concat(integer_text(length), " letters."))))
+}
+
+pub fn quiz_answer(query: str, previous: str) -> arglist {
+    if query == "quiz me" || query == "word quiz" || query == "vocabulary quiz" || query == "quiz me on vocabulary" {
+        return quiz_question(practice_words(), 1);
+    }
+    if !text_starts(previous, "quiz|") { return args_new(); }
+    let state = text_after(previous, "quiz|");
+    let index = text_before(state, "|");
+    let round = small_number(index);
+    let status = text_after(text_after(state, index), "|");
+    let words = practice_words();
+    if round < 1 || round > args_len(words) || status != "open" && status != "done" { return args_new(); }
+    if query == "stop" || query == "stop quiz" || query == "end quiz" { return pair("chat", "Quiz ended."); }
+    if query == "skip" || query == "next" || query == "next question" { return quiz_question(words, round + 1); }
+    let term = args_at(words, round - 1);
+    if query == "reveal" || query == "give up" || query == "show answer" || query == "i give up" {
+        return pair(quiz_state(round, "done"), text_concat("The word was “", text_concat(term, "”. Say “next question” to continue.")));
+    }
+    if status == "done" { return args_new(); }
+    if query == "hint" || query == "give me a hint" { return pair(previous, quiz_hint(term)); }
+    let guess = text_after(text_after(query, "is it "), "my guess is ");
+    if guess == term { return pair(quiz_state(round, "done"), text_concat("Correct! The word is “", text_concat(term, "”. Say “next question” to continue."))); }
+    let options = split_text(item(dictionary_sense(term, 1), 2), ", ");
+    let mut i = 0;
+    while i < args_len(options) {
+        if guess != "" && guess == args_at(options, i) {
+            return pair(quiz_state(round, "done"), text_concat("That fits. The headword is “", text_concat(term, "”. Say “next question” to continue.")));
+        }
+        i += 1;
+    }
+    if guess != "" && text_before(guess, " ") == guess {
+        return pair(previous, "Try another word, ask for a hint, or say “reveal”.");
+    }
+    args_new()
+}

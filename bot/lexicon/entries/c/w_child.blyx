@@ -1,0 +1,17 @@
+// child — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_child(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 09917593
+    if sense == 1 {
+        return "noun\ta young person of either sex\tkid, youngster, minor, shaver, nipper, small fry, tiddler, tike, tyke, fry, nestling\t";
+    }
+    // noun 09918248
+    if sense == 2 {
+        return "noun\ta human offspring (son or daughter) of any age\tkid\t";
+    }
+    // noun 09918554
+    if sense == 3 {
+        return "noun\tan immature childish person\tbaby\the remained a child in practical matters as long as he lived";
+    }
+    ""
+}

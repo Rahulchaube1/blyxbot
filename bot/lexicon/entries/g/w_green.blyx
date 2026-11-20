@@ -1,0 +1,17 @@
+// green — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_green(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00375969
+    if sense == 1 {
+        return "adjective\tof the color between blue and yellow in the color spectrum; similar to the color of fresh grass\tgreenish, light-green, dark-green\ta green tree";
+    }
+    // noun 04967191
+    if sense == 2 {
+        return "noun\tgreen color or pigment; resembling the color of growing grass\tgreenness, viridity\t";
+    }
+    // noun 08615374
+    if sense == 3 {
+        return "noun\ta piece of open land for recreational use in an urban area\tpark, commons, common\t";
+    }
+    ""
+}

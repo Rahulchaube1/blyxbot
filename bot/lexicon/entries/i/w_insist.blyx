@@ -1,0 +1,17 @@
+// insist — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_insist(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00818974
+    if sense == 1 {
+        return "verb\tbe emphatic or resolute and refuse to budge\ttake a firm stand\tI must insist!";
+    }
+    // verb 00777931
+    if sense == 2 {
+        return "verb\tbeg persistently and urgently\timportune\t";
+    }
+    // verb 00717045
+    if sense == 3 {
+        return "verb\tassert to be true\tassert\t";
+    }
+    ""
+}

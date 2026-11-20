@@ -1,0 +1,21 @@
+// leap — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_leap(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01963942
+    if sense == 1 {
+        return "verb\tmove forward by leaps and bounds\tjump, bound, spring\t";
+    }
+    // noun 00120202
+    if sense == 2 {
+        return "noun\ta light, self-propelled movement upwards or forwards\tleaping, spring, saltation, bound, bounce\t";
+    }
+    // noun 07358985
+    if sense == 3 {
+        return "noun\tan abrupt transition\tjump, saltation\ta successful leap from college to the major leagues";
+    }
+    // verb 00560391
+    if sense == 4 {
+        return "verb\tpass abruptly from one state or topic to another\tjump\tleap into fame";
+    }
+    ""
+}

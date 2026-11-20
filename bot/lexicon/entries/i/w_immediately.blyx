@@ -1,0 +1,13 @@
+// immediately — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_immediately(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00048739
+    if sense == 1 {
+        return "adverb\twithout delay or hesitation; with no time intervening\tinstantly, straightaway, straight off, directly, now, right away, at once, forthwith, like a shot\the answered immediately";
+    }
+    // adv 00504043
+    if sense == 2 {
+        return "adverb\tnear or close by\t\the passed immediately behind her";
+    }
+    ""
+}

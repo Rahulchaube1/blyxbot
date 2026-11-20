@@ -1,0 +1,9 @@
+// virginia — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_virginia(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 09148970
+    if sense == 1 {
+        return "noun\ta state in the eastern United States; one of the original 13 colonies; one of the Confederate States in the American Civil War\tOld Dominion, Old Dominion State, VA\t";
+    }
+    ""
+}

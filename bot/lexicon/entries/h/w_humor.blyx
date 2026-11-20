@@ -1,0 +1,25 @@
+// humor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_humor(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 06776138
+    if sense == 1 {
+        return "noun\ta message whose ingenuity or verbal skill or incongruity has the power to evoke laughter\twit, humour, witticism, wittiness\t";
+    }
+    // noun 04650201
+    if sense == 2 {
+        return "noun\tthe trait of appreciating (and being able to express) the humorous\thumour, sense of humor, sense of humour\tshe didn't appreciate my humor";
+    }
+    // noun 07551052
+    if sense == 3 {
+        return "noun\ta characteristic (habitual or relatively temporary) state of feeling\ttemper, mood, humour\the was in a bad humor";
+    }
+    // verb 00859604
+    if sense == 4 {
+        return "verb\tput into a good mood\thumour\t";
+    }
+    // noun 05211044
+    if sense == 5 {
+        return "noun\tthe quality of being funny\thumour\tI fail to see the humor in it";
+    }
+    ""
+}

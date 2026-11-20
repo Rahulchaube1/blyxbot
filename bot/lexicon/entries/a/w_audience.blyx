@@ -1,0 +1,13 @@
+// audience — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_audience(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08221897
+    if sense == 1 {
+        return "noun\ta gathering of spectators or listeners at a (usually public) performance\t\tthe audience applauded";
+    }
+    // noun 08222293
+    if sense == 2 {
+        return "noun\tthe part of the general public interested in a source of information or entertainment\t\tevery artist needs an audience";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// relative — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_relative(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00006032
+    if sense == 1 {
+        return "adjective\testimated by comparison; not absolute or complete\tcomparative\ta relative stranger";
+    }
+    // noun 10235549
+    if sense == 2 {
+        return "noun\ta person related by blood or marriage\trelation\tpolice are searching for relatives of the deceased";
+    }
+    // noun 01328302
+    if sense == 3 {
+        return "noun\tan animal or plant that bears a relationship to another (as related by common descent or by membership in the same genus)\tcongener, congenator, congeneric\t";
+    }
+    // adj 00482673
+    if sense == 4 {
+        return "adjective\tproperly related in size or degree or other measurable characteristics; usually followed by `to'\tproportional\tearnings relative to production";
+    }
+    ""
+}

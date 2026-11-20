@@ -1,0 +1,17 @@
+// encourage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_encourage(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02554922
+    if sense == 1 {
+        return "verb\tcontribute to the progress or growth of\tpromote, advance, boost, further\t";
+    }
+    // verb 01818235
+    if sense == 2 {
+        return "verb\tinspire with confidence; give hope or courage to\t\t";
+    }
+    // verb 00771341
+    if sense == 3 {
+        return "verb\tspur on\t\tHis financial success encouraged him to look for a wife";
+    }
+    ""
+}

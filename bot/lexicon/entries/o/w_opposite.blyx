@@ -1,0 +1,41 @@
+// opposite — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_opposite(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // adj 02070887
+    if sense == 1 {
+        return "adjective\tbeing directly across from each other; facing\t\tAnd I on the opposite shore will be, ready to ride and spread the alarm";
+    }
+    // adj 01663201
+    if sense == 2 {
+        return "adjective\tof leaves etc; growing in pairs on either side of a stem\tpaired\topposite leaves";
+    }
+    // adj 02071139
+    if sense == 3 {
+        return "adjective\tmoving or facing away from each other\t\tlooking in opposite directions";
+    }
+    // adj 02070711
+    if sense == 4 {
+        return "adjective\tthe other one of a complementary pair\t\tthe opposite sex";
+    }
+    // adj 02067913
+    if sense == 5 {
+        return "adjective\taltogether different in nature or quality or significance\t\tthe medicine's effect was opposite to that intended";
+    }
+    // noun 06288024
+    if sense == 6 {
+        return "noun\ta word that expresses a meaning opposed to the meaning of another word, in which case the two words are antonyms of each other\tantonym, opposite word\t";
+    }
+    // noun 13858604
+    if sense == 7 {
+        return "noun\ta relation of direct opposition\treverse, contrary\t";
+    }
+    // noun 10379620
+    if sense == 8 {
+        return "noun\ta contestant that you are matched against\topposition, opponent\t";
+    }
+    // adj 02066312
+    if sense == 9 {
+        return "adjective\tcharacterized by opposite extremes; completely opposed\tdiametric, diametrical, polar\tdiametrical (or opposite) points of view";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// depart — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_depart(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01848718
+    if sense == 1 {
+        return "verb\tmove away from a place into another direction\tgo, go away\tThe train departs at noon";
+    }
+    // verb 02661252
+    if sense == 2 {
+        return "verb\tbe at variance with; be out of line with\tdeviate, vary, diverge\t";
+    }
+    // verb 02014165
+    if sense == 3 {
+        return "verb\tleave\tpart, start, start out, set forth, set off, set out, take off\t";
+    }
+    // verb 02008396
+    if sense == 4 {
+        return "verb\tgo away or leave\ttake leave, quit\t";
+    }
+    ""
+}

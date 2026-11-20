@@ -1,0 +1,61 @@
+// mark — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mark(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // verb 01588493
+    if sense == 1 {
+        return "verb\tattach a tag or label to\ttag, label\t";
+    }
+    // verb 00921738
+    if sense == 2 {
+        return "verb\tdesignate as if by a mark\t\tThis sign marks the border";
+    }
+    // verb 00651991
+    if sense == 3 {
+        return "verb\tbe a distinctive feature, attribute, or trait; sometimes in a very positive sense\tdistinguish, differentiate\t";
+    }
+    // verb 00612612
+    if sense == 4 {
+        return "verb\tmark by some ceremony or observation\tcommemorate\tThe citizens mark the anniversary of the revolution with a march and a parade";
+    }
+    // noun 05737153
+    if sense == 5 {
+        return "noun\ta number or letter indicating quality (especially of a student's performance)\tgrade, score\tshe made good marks in algebra";
+    }
+    // verb 00508032
+    if sense == 6 {
+        return "verb\tmake or leave a mark on\t\tthe scouts marked the trail";
+    }
+    // noun 07270179
+    if sense == 7 {
+        return "noun\ta distinguishing symbol\tmarker, marking\tthe owner's mark was on all the sheep";
+    }
+    // noun 07262108
+    if sense == 8 {
+        return "noun\ta reference point to shoot at\ttarget\this arrow hit the mark";
+    }
+    // noun 06798750
+    if sense == 9 {
+        return "noun\ta visible indication made on a surface\tprint\tsome previous reader had covered the pages with dozens of marks";
+    }
+    // noun 04676064
+    if sense == 10 {
+        return "noun\tthe impression created by doing something unusual or extraordinary that people notice and remember\t\tit was in London that he made his mark";
+    }
+    // verb 02508245
+    if sense == 11 {
+        return "verb\tto accuse or condemn or openly or formally or brand as disgraceful\tstigmatize, stigmatise, brand, denounce\t";
+    }
+    // verb 02118476
+    if sense == 12 {
+        return "verb\tnotice or perceive\tnotice, note\tmark my words";
+    }
+    // noun 06794666
+    if sense == 13 {
+        return "noun\ta symbol of disgrace or infamy\tstigma, brand, stain\tAnd the Lord set a mark upon Cain";
+    }
+    // verb 01551195
+    if sense == 14 {
+        return "verb\tmark with a scar\tscar, pock, pit\t";
+    }
+    ""
+}

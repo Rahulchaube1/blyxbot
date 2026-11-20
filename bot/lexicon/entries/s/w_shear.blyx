@@ -1,0 +1,13 @@
+// shear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shear(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 11506738
+    if sense == 1 {
+        return "noun\t(physics) a deformation of an object in which parallel planes remain parallel but are shifted in a direction parallel to themselves\t\tthe shear changed the quadrilateral into a parallelogram";
+    }
+    // verb 01320513
+    if sense == 2 {
+        return "verb\tcut with shears\t\tshear hedges";
+    }
+    ""
+}

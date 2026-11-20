@@ -1,0 +1,57 @@
+// find — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_find(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 02248465
+    if sense == 1 {
+        return "verb\tcome upon, as if by accident; meet with\thappen, chance, bump, encounter\tWe find this idea in Plato";
+    }
+    // verb 02154508
+    if sense == 2 {
+        return "verb\tdiscover or determine the existence, presence, or fact of\tdetect, observe, discover, notice\t";
+    }
+    // verb 02285629
+    if sense == 3 {
+        return "verb\tcome upon after searching; find the location of something that was missed or lost\tregain\tDid you find your glasses?";
+    }
+    // verb 00918872
+    if sense == 4 {
+        return "verb\testablish after a calculation, investigation, experiment, survey, or study\tdetermine, find out, ascertain\tfind the product of two numbers";
+    }
+    // verb 00715239
+    if sense == 5 {
+        return "verb\tcome to believe on the basis of emotion, intuitions, or indefinite grounds\tfeel\tI find him to be obnoxious";
+    }
+    // verb 02128873
+    if sense == 6 {
+        return "verb\tperceive or be contemporaneous with\twitness, see\t";
+    }
+    // verb 02213336
+    if sense == 7 {
+        return "verb\tget something or somebody for a specific purpose\tline up, get hold, come up\t";
+    }
+    // verb 01637982
+    if sense == 8 {
+        return "verb\tmake a discovery, make a new finding\tdiscover\t";
+    }
+    // verb 00721437
+    if sense == 9 {
+        return "verb\tmake a discovery\tdiscover\t";
+    }
+    // verb 02212275
+    if sense == 10 {
+        return "verb\tobtain through effort or management\t\t";
+    }
+    // verb 00971999
+    if sense == 11 {
+        return "verb\tdecide on and make a declaration about\trule\tfind someone guilty";
+    }
+    // verb 00522751
+    if sense == 12 {
+        return "verb\treceive a specified treatment (abstract)\treceive, get, obtain, incur\tThese aspects of civilization do not find expression or receive an interpretation";
+    }
+    // verb 02197781
+    if sense == 13 {
+        return "verb\tperceive oneself to be in a certain condition or place\t\t";
+    }
+    ""
+}

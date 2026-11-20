@@ -1,0 +1,9 @@
+// bullet — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bullet(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 02916350
+    if sense == 1 {
+        return "noun\ta projectile that is fired from a gun\tslug\t";
+    }
+    ""
+}

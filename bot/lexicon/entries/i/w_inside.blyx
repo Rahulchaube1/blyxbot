@@ -1,0 +1,29 @@
+// inside — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_inside(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00110533
+    if sense == 1 {
+        return "adverb\twithin a building\tindoors\tin winter we play inside";
+    }
+    // adv 00110815
+    if sense == 2 {
+        return "adverb\ton the inside\twithin\tinside, the car is a mess";
+    }
+    // noun 08588294
+    if sense == 3 {
+        return "noun\tthe region that is inside of something\tinterior\t";
+    }
+    // noun 08588152
+    if sense == 4 {
+        return "noun\tthe inner or enclosed surface of something\tinterior\t";
+    }
+    // adj 01693799
+    if sense == 5 {
+        return "adjective\trelating to or being on the side closer to the center or within a defined space\t\the reached into his inside jacket pocket";
+    }
+    // adj 00953213
+    if sense == 6 {
+        return "adjective\tbeing or applying to the inside of a building\t\tan inside wall";
+    }
+    ""
+}

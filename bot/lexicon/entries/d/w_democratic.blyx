@@ -1,0 +1,13 @@
+// democratic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_democratic(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00715140
+    if sense == 1 {
+        return "adjective\tcharacterized by or advocating or based upon the principles of democracy or social equality\t\tdemocratic government";
+    }
+    // adj 02710530
+    if sense == 2 {
+        return "adjective\tbelong to or relating to the Democratic Party\t\tDemocratic senator";
+    }
+    ""
+}

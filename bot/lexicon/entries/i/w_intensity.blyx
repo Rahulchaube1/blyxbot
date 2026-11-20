@@ -1,0 +1,13 @@
+// intensity — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_intensity(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05099796
+    if sense == 1 {
+        return "noun\tthe amount of energy transmitted (as by acoustic or electromagnetic radiation)\tstrength, intensity level\the adjusted the intensity of the sound";
+    }
+    // noun 05036394
+    if sense == 2 {
+        return "noun\thigh level or degree; the property of being intense\tintensiveness\t";
+    }
+    ""
+}

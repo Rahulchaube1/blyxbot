@@ -1,0 +1,17 @@
+// reader — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reader(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10508710
+    if sense == 1 {
+        return "noun\ta person who enjoys reading\t\t";
+    }
+    // noun 10670483
+    if sense == 2 {
+        return "noun\tsomeone who contracts to receive and pay for a service or a certain number of issues of a publication\tsubscriber\t";
+    }
+    // noun 10508862
+    if sense == 3 {
+        return "noun\ta person who can read; a literate person\t\t";
+    }
+    ""
+}

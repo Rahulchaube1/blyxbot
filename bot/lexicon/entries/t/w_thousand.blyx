@@ -1,0 +1,13 @@
+// thousand — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_thousand(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13750844
+    if sense == 1 {
+        return "noun\tthe cardinal number that is the product of 10 and 100\tone thousand, 1000, M, K, chiliad, G, grand, thou, yard\t";
+    }
+    // adj 02198752
+    if sense == 2 {
+        return "adjective\tdenoting a quantity consisting of 1,000 items or units\tone thousand, 1000, m, k\t";
+    }
+    ""
+}

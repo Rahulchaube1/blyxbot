@@ -1,0 +1,29 @@
+// reverse — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_reverse(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00138508
+    if sense == 1 {
+        return "verb\tchange to the contrary\tchange by reversal, turn\tThe trend was reversed";
+    }
+    // verb 00386715
+    if sense == 2 {
+        return "verb\tturn inside out or upside down\tturn back, invert\t";
+    }
+    // verb 00716130
+    if sense == 3 {
+        return "verb\trule against\toverrule, overturn, override, overthrow\t";
+    }
+    // noun 13858604
+    if sense == 4 {
+        return "noun\ta relation of direct opposition\tcontrary, opposite\twe thought Sue was older than Bill but just the reverse was true";
+    }
+    // noun 04085017
+    if sense == 5 {
+        return "noun\tthe gears by which the motion of a machine can be reversed\treverse gear\t";
+    }
+    // adj 00202250
+    if sense == 6 {
+        return "adjective\tdirected or moving toward the rear\trearward\t";
+    }
+    ""
+}

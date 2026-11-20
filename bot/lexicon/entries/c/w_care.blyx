@@ -1,0 +1,49 @@
+// care — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_care(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 01822936
+    if sense == 1 {
+        return "verb\tfeel concern or interest\t\tI really care about my work";
+    }
+    // noun 00654885
+    if sense == 2 {
+        return "noun\tthe work of providing treatment for or attending to someone or something\tattention, aid, tending\tno medical care was required";
+    }
+    // verb 02550296
+    if sense == 3 {
+        return "verb\tprovide care for\tgive care\tThe nurse was caring for the wounded";
+    }
+    // verb 01824736
+    if sense == 4 {
+        return "verb\tprefer or wish to do something\twish, like\tDo you care to try this dish?";
+    }
+    // noun 05615869
+    if sense == 5 {
+        return "noun\tjudiciousness in avoiding harm or danger\tcaution, precaution, forethought\the handled the vase with care";
+    }
+    // verb 02436349
+    if sense == 6 {
+        return "verb\tbe in charge of, act on, or dispose of\tmanage, deal, handle\t";
+    }
+    // noun 07524529
+    if sense == 7 {
+        return "noun\tan anxious feeling\tconcern, fear\tcare had aged him";
+    }
+    // noun 07505047
+    if sense == 8 {
+        return "noun\ta cause for feeling concern\t\this major care was the illness of his wife";
+    }
+    // noun 00829378
+    if sense == 9 {
+        return "noun\tattention and management implying responsibility for safety\tcharge, tutelage, guardianship\the is in the care of a bodyguard";
+    }
+    // noun 00267522
+    if sense == 10 {
+        return "noun\tactivity involved in maintaining something in good working order\tmaintenance, upkeep\the wrote the manual on car care";
+    }
+    // verb 01766748
+    if sense == 11 {
+        return "verb\tbe concerned with\tworry\t";
+    }
+    ""
+}

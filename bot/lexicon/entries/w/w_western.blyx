@@ -1,0 +1,21 @@
+// western — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_western(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00825089
+    if sense == 1 {
+        return "adjective\trelating to or characteristic of the western parts of the world or the West as opposed to the eastern or oriental parts\t\tthe Western world";
+    }
+    // adj 00825970
+    if sense == 2 {
+        return "adjective\tof or characteristic of regions of the United States west of the Mississippi River\t\ta Western ranch";
+    }
+    // noun 06616035
+    if sense == 3 {
+        return "noun\ta film about life in the western United States during the period of exploration and development\thorse opera\t";
+    }
+    // adj 00824631
+    if sense == 4 {
+        return "adjective\tlying toward or situated in the west\t\tour company's western office";
+    }
+    ""
+}

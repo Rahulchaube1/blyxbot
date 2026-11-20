@@ -1,0 +1,21 @@
+// literature — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_literature(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06364641
+    if sense == 1 {
+        return "noun\tcreative writing of recognized artistic value\t\t";
+    }
+    // noun 06169488
+    if sense == 2 {
+        return "noun\tthe humanistic study of a body of literature\tlit\t";
+    }
+    // noun 06365102
+    if sense == 3 {
+        return "noun\tpublished writings in a particular style on a particular subject\t\tthe technical literature";
+    }
+    // noun 00610592
+    if sense == 4 {
+        return "noun\tthe profession or art of a writer\t\ther place in literature is secure";
+    }
+    ""
+}

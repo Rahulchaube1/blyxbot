@@ -1,0 +1,13 @@
+// congress — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_congress(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 08161757
+    if sense == 1 {
+        return "noun\tthe legislature of the United States government\tUnited States Congress, U.S. Congress, US Congress\t";
+    }
+    // noun 08308800
+    if sense == 2 {
+        return "noun\ta meeting of elected or appointed representatives\t\t";
+    }
+    ""
+}

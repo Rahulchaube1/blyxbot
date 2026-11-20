@@ -1,0 +1,17 @@
+// philosophy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_philosophy(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05943300
+    if sense == 1 {
+        return "noun\ta belief (or system of beliefs) accepted as authoritative by some group or school\tdoctrine, philosophical system, school of thought, ism\t";
+    }
+    // noun 06158346
+    if sense == 2 {
+        return "noun\tthe rational investigation of questions about existence and knowledge and ethics\t\t";
+    }
+    // noun 05944686
+    if sense == 3 {
+        return "noun\tany personal belief about how to live or how to deal with a situation\t\tself-indulgence was his only philosophy";
+    }
+    ""
+}

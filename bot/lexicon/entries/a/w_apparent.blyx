@@ -1,0 +1,13 @@
+// apparent — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_apparent(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01618376
+    if sense == 1 {
+        return "adjective\tclearly revealed to the mind or the senses or judgment\tevident, manifest, patent, plain, unmistakable\tthe effects of the drought are apparent to anyone who sees the parched fields";
+    }
+    // adj 01873985
+    if sense == 2 {
+        return "adjective\tappearing as such but not necessarily so\tostensible, seeming\tfor all his apparent wealth he had no money to pay the rent";
+    }
+    ""
+}

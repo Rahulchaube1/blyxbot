@@ -1,0 +1,9 @@
+// barn — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_barn(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 02793495
+    if sense == 1 {
+        return "noun\tan outlying farm building for storing grain or animal feed and housing farm animals\t\t";
+    }
+    ""
+}

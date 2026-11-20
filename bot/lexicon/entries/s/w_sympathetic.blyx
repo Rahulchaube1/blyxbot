@@ -1,0 +1,17 @@
+// sympathetic — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sympathetic(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 03008013
+    if sense == 1 {
+        return "adjective\tof or relating to the sympathetic nervous system\t\tsympathetic neurons";
+    }
+    // adj 02374914
+    if sense == 2 {
+        return "adjective\texpressing or feeling or resulting from sympathy or compassion or friendly fellow feelings; disposed toward\t\tsympathetic to the students' cause";
+    }
+    // adj 01372948
+    if sense == 3 {
+        return "adjective\tshowing or motivated by sympathy and understanding and generosity\tcharitable, benevolent, kindly, good-hearted, openhearted, large-hearted\tsympathetic words";
+    }
+    ""
+}

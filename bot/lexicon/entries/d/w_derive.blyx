@@ -1,0 +1,25 @@
+// derive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_derive(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00636574
+    if sense == 1 {
+        return "verb\treason by deduction; establish by deduction\tdeduce, infer, deduct\t";
+    }
+    // verb 02292125
+    if sense == 2 {
+        return "verb\tobtain\tgain\tderive pleasure from one's garden";
+    }
+    // verb 00251791
+    if sense == 3 {
+        return "verb\tcome from\t\tThe present name derives from an older form";
+    }
+    // verb 00251615
+    if sense == 4 {
+        return "verb\tdevelop or evolve from a latent or potential state\teduce\t";
+    }
+    // verb 02737187
+    if sense == 5 {
+        return "verb\tcome from; be connected by a relationship of blood, for example\tcome, descend\t";
+    }
+    ""
+}

@@ -1,0 +1,41 @@
+// act — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_act(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 06532095
+    if sense == 1 {
+        return "noun\ta legal document codifying the result of deliberations of a committee or society or legislative body\tenactment\t";
+    }
+    // verb 02367363
+    if sense == 2 {
+        return "verb\tperform an action, or work out or perform (an action)\tmove\tthink before you act";
+    }
+    // noun 00030358
+    if sense == 3 {
+        return "noun\tsomething that people do or cause to happen\tdeed, human action, human activity\t";
+    }
+    // verb 00010435
+    if sense == 4 {
+        return "verb\tbehave in a certain manner; show a certain behavior; conduct or comport oneself\tbehave, do\tYou should act like an adult";
+    }
+    // noun 07009640
+    if sense == 5 {
+        return "noun\ta subdivision of a play or opera or ballet\t\t";
+    }
+    // verb 01719302
+    if sense == 6 {
+        return "verb\tplay a role or part\tplay, represent\tShe wants to act Lady Macbeth, but she is too young for the role";
+    }
+    // verb 01095899
+    if sense == 7 {
+        return "verb\tdischarge one's duties\t\tShe acts as the chair";
+    }
+    // noun 06892016
+    if sense == 8 {
+        return "noun\ta short theatrical performance that is part of a longer program\troutine, number, turn, bit\the did his act three times every evening";
+    }
+    // verb 00013615
+    if sense == 9 {
+        return "verb\tpretend to have certain qualities or state of mind\tplay, act as\tHe acted the idiot";
+    }
+    ""
+}

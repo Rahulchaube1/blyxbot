@@ -1,0 +1,21 @@
+// worship — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_worship(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 01028655
+    if sense == 1 {
+        return "noun\tthe activity of worshipping\t\t";
+    }
+    // verb 01778017
+    if sense == 2 {
+        return "verb\tlove unquestioningly and uncritically or to excess; venerate as an idol\tidolize, idolise, hero-worship, revere\t";
+    }
+    // verb 01778990
+    if sense == 3 {
+        return "verb\tshow devotion to (a deity)\t\tMany Hindus worship Shiva";
+    }
+    // verb 02613275
+    if sense == 4 {
+        return "verb\tattend religious services\t\tThey worship in the traditional manner";
+    }
+    ""
+}

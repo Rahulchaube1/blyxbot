@@ -1,0 +1,25 @@
+// whip — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_whip(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01411085
+    if sense == 1 {
+        return "verb\tbeat severely with a whip or rod\tflog, welt, lather, lash, slash, strap, trounce\t";
+    }
+    // verb 01102997
+    if sense == 2 {
+        return "verb\tdefeat thoroughly\tworst, pip, mop up, rack up\t";
+    }
+    // noun 04577769
+    if sense == 3 {
+        return "noun\tan instrument with a handle and a flexible lash that is used for whipping\t\t";
+    }
+    // verb 01891092
+    if sense == 4 {
+        return "verb\tthrash about flexibly in the manner of a whiplash\t\tThe tall grass whipped in the wind";
+    }
+    // verb 01398032
+    if sense == 5 {
+        return "verb\tstrike as if by whipping\tlash\tThe curtain whipped her face";
+    }
+    ""
+}

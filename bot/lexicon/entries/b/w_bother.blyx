@@ -1,0 +1,17 @@
+// bother — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bother(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02507464
+    if sense == 1 {
+        return "verb\ttake the trouble to do something; concern oneself\ttrouble oneself, trouble, inconvenience oneself\tDon't bother, please";
+    }
+    // verb 01787955
+    if sense == 2 {
+        return "verb\tcause annoyance in; disturb, especially by minor irritations\tannoy, rag, get to, get at, irritate, rile, nark, nettle, gravel, vex, chafe, devil\tMosquitoes buzzing in my ear really bothers me";
+    }
+    // verb 02507736
+    if sense == 3 {
+        return "verb\tto cause inconvenience or discomfort to\ttrouble, put out, inconvenience, disoblige, discommode, incommode\t";
+    }
+    ""
+}

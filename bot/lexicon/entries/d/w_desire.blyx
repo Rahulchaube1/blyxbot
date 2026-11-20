@@ -1,0 +1,29 @@
+// desire — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_desire(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 07484265
+    if sense == 1 {
+        return "noun\tthe feeling that accompanies an unsatisfied state\t\t";
+    }
+    // verb 01825237
+    if sense == 2 {
+        return "verb\tfeel or have a desire for; want strongly\twant\t";
+    }
+    // noun 04945057
+    if sense == 3 {
+        return "noun\tan inclination to want things\t\ta man of many desires";
+    }
+    // noun 14038993
+    if sense == 4 {
+        return "noun\tsomething that is desired\t\t";
+    }
+    // verb 01826723
+    if sense == 5 {
+        return "verb\texpect and wish\thope, trust\t";
+    }
+    // verb 01826378
+    if sense == 6 {
+        return "verb\texpress a desire for\t\t";
+    }
+    ""
+}

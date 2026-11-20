@@ -1,0 +1,25 @@
+// believe — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_believe(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00683280
+    if sense == 1 {
+        return "verb\taccept as true; take to be true\t\tI believed his report";
+    }
+    // verb 00689344
+    if sense == 2 {
+        return "verb\tjudge or regard; look upon; judge\tthink, consider, conceive\tI believe her to be very smart";
+    }
+    // verb 00721098
+    if sense == 3 {
+        return "verb\tbe confident about something\ttrust\tI believe that he will come back from the war";
+    }
+    // verb 00684273
+    if sense == 4 {
+        return "verb\tfollow a credo; have a faith; be a believer\t\tWhen you hear his sermons, you will be able to believe, too";
+    }
+    // verb 00684068
+    if sense == 5 {
+        return "verb\tcredit with veracity\t\tYou cannot believe this man";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// market — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_market(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 01097292
+    if sense == 1 {
+        return "noun\tthe world of commercial activity where goods and services are bought and sold\tmarketplace, market place\twithout competition there would be no market";
+    }
+    // noun 08424951
+    if sense == 2 {
+        return "noun\tthe customers for a particular product or service\t\tbefore they publish any book they try to determine the size of the market for it";
+    }
+    // noun 03461385
+    if sense == 3 {
+        return "noun\ta marketplace where groceries are sold\tgrocery store, grocery, food market\tthe grocery store included a meat market";
+    }
+    // verb 02298160
+    if sense == 4 {
+        return "verb\tengage in the commercial promotion, sale, or distribution of\t\tThe company is marketing its new line of beauty products";
+    }
+    // noun 08072837
+    if sense == 5 {
+        return "noun\tthe securities markets in the aggregate\tsecurities industry\tthe market always frustrates the small investor";
+    }
+    ""
+}

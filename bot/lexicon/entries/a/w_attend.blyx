@@ -1,0 +1,25 @@
+// attend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_attend(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02612762
+    if sense == 1 {
+        return "verb\tbe present at (meetings, church services, university), etc.\tgo to\tShe attends class regularly";
+    }
+    // verb 02549581
+    if sense == 2 {
+        return "verb\ttake charge of or deal with\ttake care, look, see\tI must attend to this matter";
+    }
+    // verb 02716567
+    if sense == 3 {
+        return "verb\tto accompany as a circumstance or follow as a result\t\tMenuhin's playing was attended by a 15-minute standing ovation";
+    }
+    // verb 02540670
+    if sense == 4 {
+        return "verb\twork for or be a servant to\tserve, attend to, wait on, assist\tShe attends the old lady in the wheelchair";
+    }
+    // verb 02170427
+    if sense == 5 {
+        return "verb\tgive heed (to)\thang, advert, pay heed, give ear\tThe children in the audience attended the recital quietly";
+    }
+    ""
+}

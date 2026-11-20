@@ -1,0 +1,13 @@
+// ability — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ability(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05200169
+    if sense == 1 {
+        return "noun\tthe quality of being able to perform; a quality that permits or facilitates achievement or accomplishment\t\t";
+    }
+    // noun 05616246
+    if sense == 2 {
+        return "noun\tpossession of the qualities (especially mental qualities) required to do something or get something done\tpower\t";
+    }
+    ""
+}

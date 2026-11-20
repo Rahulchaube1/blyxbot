@@ -1,0 +1,21 @@
+// inspire — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_inspire(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01812720
+    if sense == 1 {
+        return "verb\theighten or intensify\tanimate, invigorate, enliven, exalt\t";
+    }
+    // verb 01646682
+    if sense == 2 {
+        return "verb\tsupply the inspiration for\t\tThe article about the artist inspired the exhibition of his recent work";
+    }
+    // verb 00771961
+    if sense == 3 {
+        return "verb\tserve as the inciting cause of\tprompt, instigate\t";
+    }
+    // verb 00858781
+    if sense == 4 {
+        return "verb\tspur on or encourage especially by cheers and shouts\tcheer, root on, urge, barrack, urge on, exhort, pep up\t";
+    }
+    ""
+}

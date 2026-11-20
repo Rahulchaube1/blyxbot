@@ -1,0 +1,21 @@
+// defeat — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_defeat(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01108148
+    if sense == 1 {
+        return "verb\twin a victory over\tget the better of, overcome\tdefeat your enemies";
+    }
+    // noun 07475364
+    if sense == 2 {
+        return "noun\tan unsuccessful ending to a struggle or contest\tlicking\tit was a narrow defeat";
+    }
+    // verb 02473688
+    if sense == 3 {
+        return "verb\tthwart the passage of\tkill, shoot down, vote down, vote out\t";
+    }
+    // noun 07540866
+    if sense == 4 {
+        return "noun\tthe feeling that accompanies an experience of being thwarted in attaining your goals\tfrustration\t";
+    }
+    ""
+}

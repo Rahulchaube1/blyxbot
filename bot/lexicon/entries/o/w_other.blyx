@@ -1,0 +1,13 @@
+// other — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_other(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02069355
+    if sense == 1 {
+        return "adjective\tnot the same one or ones already mentioned or implied\t\ttoday isn't any other day";
+    }
+    // adj 01730820
+    if sense == 2 {
+        return "adjective\trecently past\t\tthe other evening";
+    }
+    ""
+}

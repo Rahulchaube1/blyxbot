@@ -1,0 +1,9 @@
+// leaf — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_leaf(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 13152742
+    if sense == 1 {
+        return "noun\tthe main organ of photosynthesis and transpiration in higher plants\tleafage, foliage\t";
+    }
+    ""
+}

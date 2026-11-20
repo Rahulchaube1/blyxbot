@@ -1,0 +1,29 @@
+// even — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_even(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adv 00017445
+    if sense == 1 {
+        return "adverb\tused as an intensive especially to indicate something unexpected\t\teven an idiot knows that";
+    }
+    // adv 00018043
+    if sense == 2 {
+        return "adverb\tin spite of; notwithstanding\t\teven when he is sick, he works";
+    }
+    // adv 00017639
+    if sense == 3 {
+        return "adverb\tto a greater degree or extent; used with comparisons\tyet, still\tlooked sick and felt even worse";
+    }
+    // adj 00913387
+    if sense == 4 {
+        return "adjective\tdivisible by two\t\t";
+    }
+    // adj 00891170
+    if sense == 5 {
+        return "adjective\tequal in degree or extent or amount; or equally matched or balanced\tfifty-fifty\teven amounts of butter and sugar";
+    }
+    // adj 00909545
+    if sense == 6 {
+        return "adjective\tbeing level or straight or regular and without variation as e.g. in shape or texture; or being in the same plane or at the same height as something else (i.e. even with)\t\tan even application of varnish";
+    }
+    ""
+}

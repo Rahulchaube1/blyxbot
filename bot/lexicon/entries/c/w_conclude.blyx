@@ -1,0 +1,17 @@
+// conclude — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_conclude(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00634472
+    if sense == 1 {
+        return "verb\tdecide by reasoning; draw or come to a conclusion\treason, reason out\t";
+    }
+    // verb 00715074
+    if sense == 2 {
+        return "verb\tbring to a close\t\tThe committee concluded the meeting";
+    }
+    // verb 01021420
+    if sense == 3 {
+        return "verb\treach a conclusion after a discussion or deliberation\tresolve\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// belief — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_belief(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05941423
+    if sense == 1 {
+        return "noun\tany cognitive content held as true\t\t";
+    }
+    // noun 05916739
+    if sense == 2 {
+        return "noun\ta vague idea in which some confidence is placed\timpression, feeling, notion, opinion\tit strengthened my belief in his sincerity";
+    }
+    ""
+}

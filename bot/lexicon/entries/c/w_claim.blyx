@@ -1,0 +1,45 @@
+// claim — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_claim(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 00756338
+    if sense == 1 {
+        return "verb\tassert or affirm strongly; state to be true or existing\t\tHe claimed that he killed the burglar";
+    }
+    // noun 06729864
+    if sense == 2 {
+        return "noun\tan assertion of a right (as to money or property)\t\this claim asked for damages";
+    }
+    // verb 02275365
+    if sense == 3 {
+        return "verb\tdemand as being one's due or property; assert one's right or title to\tlay claim, arrogate\tHe claimed his suitcases at the airline counter";
+    }
+    // noun 06730563
+    if sense == 4 {
+        return "noun\tan assertion that something is true or factual\t\this claim that he was innocent";
+    }
+    // verb 01018352
+    if sense == 5 {
+        return "verb\task for legally or make a legal claim to, as of debts, for example\t\tThey claimed on the maximum allowable amount";
+    }
+    // noun 01061945
+    if sense == 6 {
+        return "noun\tdemand for something as rightful or due\t\tthey struck in support of their claim for a shorter work day";
+    }
+    // verb 00758333
+    if sense == 7 {
+        return "verb\tlay claim to; as of an idea\ttake\t";
+    }
+    // noun 05175904
+    if sense == 8 {
+        return "noun\tan informal right to something\ttitle\this claim on her attentions";
+    }
+    // noun 05181199
+    if sense == 9 {
+        return "noun\tan established or recognized right\ttitle\ta strong legal claim to the property";
+    }
+    // verb 00756076
+    if sense == 10 {
+        return "verb\ttake as an undesirable consequence of some event or state of affairs\ttake, exact\tthe accident claimed three lives";
+    }
+    ""
+}

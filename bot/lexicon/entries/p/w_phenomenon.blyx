@@ -1,0 +1,13 @@
+// phenomenon — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_phenomenon(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00034213
+    if sense == 1 {
+        return "noun\tany state or process known through the senses rather than by intuition or reasoning\t\t";
+    }
+    // noun 07423818
+    if sense == 2 {
+        return "noun\ta remarkable development\t\t";
+    }
+    ""
+}

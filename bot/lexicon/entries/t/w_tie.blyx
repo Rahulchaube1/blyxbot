@@ -1,0 +1,45 @@
+// tie — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tie(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 01285440
+    if sense == 1 {
+        return "verb\tfasten or secure with a rope, string, or cord\tbind\tThey tied their victim to the chair";
+    }
+    // noun 03815615
+    if sense == 2 {
+        return "noun\tneckwear consisting of a long narrow piece of material worn (mostly by men) under a collar and tied in knot at the front\tnecktie\the wore a vest and tie";
+    }
+    // verb 01115190
+    if sense == 3 {
+        return "verb\tfinish a game with an equal number of points, goals, etc.\tdraw\tThe teams drew a tie";
+    }
+    // noun 13930385
+    if sense == 4 {
+        return "noun\ta social or business relationship\taffiliation, association, tie-up\the was sorry he had to sever his ties with other members of the team";
+    }
+    // verb 00234217
+    if sense == 5 {
+        return "verb\tlimit or restrict to\t\tI am tied to UNIX";
+    }
+    // noun 13947174
+    if sense == 6 {
+        return "noun\tequality of score in a contest\t\t";
+    }
+    // verb 01354673
+    if sense == 7 {
+        return "verb\tconnect, fasten, or put together two or more pieces\tconnect, link, link up\tTie the ropes together";
+    }
+    // noun 04433377
+    if sense == 8 {
+        return "noun\ta horizontal beam used to prevent two other structural members from spreading apart or separating\ttie beam\the nailed the rafters together with a tie beam";
+    }
+    // noun 03673971
+    if sense == 9 {
+        return "noun\ta fastener that serves to join or connect\tlink, linkup, tie-in\t";
+    }
+    // verb 00141632
+    if sense == 10 {
+        return "verb\tform a knot or bow in\t\ttie a necktie";
+    }
+    ""
+}

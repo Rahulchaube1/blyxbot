@@ -1,0 +1,13 @@
+// hate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hate(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01774136
+    if sense == 1 {
+        return "verb\tdislike intensely; feel antipathy or aversion towards\tdetest\tI hate Mexican food";
+    }
+    // noun 07546465
+    if sense == 2 {
+        return "noun\tthe emotion of intense dislike; a feeling of dislike so strong that it demands action\thatred\t";
+    }
+    ""
+}

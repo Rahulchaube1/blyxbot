@@ -1,0 +1,33 @@
+// pool — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pool(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 03982060
+    if sense == 1 {
+        return "noun\tan excavation that is (usually) filled with water\t\t";
+    }
+    // verb 02295842
+    if sense == 2 {
+        return "verb\tcombine into a common fund\t\tWe pooled resources";
+    }
+    // noun 09397391
+    if sense == 3 {
+        return "noun\ta small lake\tpond\t";
+    }
+    // noun 08481369
+    if sense == 4 {
+        return "noun\tan organization of people or resources that can be shared\t\ta car pool";
+    }
+    // noun 08236438
+    if sense == 5 {
+        return "noun\tan association of companies for some definite purpose\tconsortium, syndicate\t";
+    }
+    // noun 13369857
+    if sense == 6 {
+        return "noun\tany communal combination of funds\t\teveryone contributed to the pool";
+    }
+    // noun 09397607
+    if sense == 7 {
+        return "noun\ta small body of standing water (rainwater) or other liquid\tpuddle\tthe body lay in a pool of blood";
+    }
+    ""
+}

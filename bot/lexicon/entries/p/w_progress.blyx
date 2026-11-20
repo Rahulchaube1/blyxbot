@@ -1,0 +1,25 @@
+// progress — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_progress(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00249501
+    if sense == 1 {
+        return "noun\tgradual improvement or growth or development\tadvancement\tgreat progress in the arts";
+    }
+    // verb 00248659
+    if sense == 2 {
+        return "verb\tdevelop in a positive way\tcome on, come along, advance, get on, get along, shape up\tHe progressed well in school";
+    }
+    // noun 00282050
+    if sense == 3 {
+        return "noun\tthe act of moving forward (as toward a goal)\tprogression, procession, advance, advancement, forward motion, onward motion\t";
+    }
+    // noun 07445265
+    if sense == 4 {
+        return "noun\ta movement forward\tprogression, advance\the listened for the progress of the troops";
+    }
+    // verb 01992503
+    if sense == 5 {
+        return "verb\tmove forward, also in the metaphorical sense\tadvance, pass on, move on, march on, go on\t";
+    }
+    ""
+}

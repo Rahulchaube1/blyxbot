@@ -1,0 +1,21 @@
+// along — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_along(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00068368
+    if sense == 1 {
+        return "adverb\twith a forward motion\ton\twe drove along admiring the view";
+    }
+    // adv 00068577
+    if sense == 2 {
+        return "adverb\tin accompaniment or as a companion\t\this little sister came along to the movies";
+    }
+    // adv 00068986
+    if sense == 3 {
+        return "adverb\tto a more advanced state\t\tthe work is moving along";
+    }
+    // adv 00068753
+    if sense == 4 {
+        return "adverb\tin addition (usually followed by `with')\t\twe sent them food and some clothing went along in the package";
+    }
+    ""
+}

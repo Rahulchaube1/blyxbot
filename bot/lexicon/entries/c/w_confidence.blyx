@@ -1,0 +1,17 @@
+// confidence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_confidence(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05697363
+    if sense == 1 {
+        return "noun\tfreedom from doubt; belief in yourself and your abilities\tassurance, self-assurance, self-confidence, authority, sureness\tafter that failure he lost his confidence";
+    }
+    // noun 07526505
+    if sense == 2 {
+        return "noun\ta feeling of trust (in someone or something)\t\tI have confidence in our team";
+    }
+    // noun 14483744
+    if sense == 3 {
+        return "noun\ta state of confident hopefulness that events will be favorable\t\tpublic confidence in the economy";
+    }
+    ""
+}

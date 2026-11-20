@@ -1,0 +1,49 @@
+// picture — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_picture(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // noun 03931044
+    if sense == 1 {
+        return "noun\ta visual representation (of an object or scene or person or abstraction) produced on a surface\timage, icon, ikon\tthey showed us the pictures of their wedding";
+    }
+    // noun 03876519
+    if sense == 2 {
+        return "noun\tgraphic art consisting of an artistic composition made by applying paints to a surface\tpainting\this pictures hang in the Louvre";
+    }
+    // noun 05936704
+    if sense == 3 {
+        return "noun\ta clear and telling mental image\tmental picture, impression\the described his mental picture of his assailant";
+    }
+    // noun 13937075
+    if sense == 4 {
+        return "noun\ta situation treated as an observable object\tscene\tthe political picture is favorable";
+    }
+    // verb 01635432
+    if sense == 5 {
+        return "verb\timagine; conceive of; see in one's mind\tvisualize, visualise, envision, project, fancy, see, figure, image\t";
+    }
+    // verb 01686956
+    if sense == 6 {
+        return "verb\tshow in, or as in, a picture\tdepict, render, show\t";
+    }
+    // noun 06999436
+    if sense == 7 {
+        return "noun\tillustrations used to decorate or explain a text\tpictorial matter\tthe dictionary had many pictures";
+    }
+    // noun 06613686
+    if sense == 8 {
+        return "noun\ta form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement\tmovie, film, moving picture, moving-picture show, motion picture, motion-picture show, picture show, pic, flick\t";
+    }
+    // noun 06277803
+    if sense == 9 {
+        return "noun\tthe visible part of a television transmission\tvideo\tthey could still receive the sound but the picture was gone";
+    }
+    // noun 07201804
+    if sense == 10 {
+        return "noun\ta graphic or vivid verbal description\tword picture, word-painting, delineation, depiction, characterization, characterisation\ttoo often the narrative was interrupted by long word pictures";
+    }
+    // noun 05766077
+    if sense == 11 {
+        return "noun\ta typical example of some state or quality\t\tthe very picture of a modern general";
+    }
+    ""
+}

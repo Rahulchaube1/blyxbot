@@ -1,0 +1,13 @@
+// temperature — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_temperature(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05011790
+    if sense == 1 {
+        return "noun\tthe degree of hotness or coldness of a body or environment (corresponding to its molecular activity)\t\t";
+    }
+    // noun 05725378
+    if sense == 2 {
+        return "noun\tthe somatic sensation of cold or heat\t\t";
+    }
+    ""
+}

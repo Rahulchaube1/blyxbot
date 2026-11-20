@@ -1,0 +1,17 @@
+// react — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_react(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00717358
+    if sense == 1 {
+        return "verb\tshow a response or a reaction to something\trespond\t";
+    }
+    // verb 02378623
+    if sense == 2 {
+        return "verb\tact against or in opposition to\toppose\tShe reacts negatively to everything I say";
+    }
+    // verb 00446885
+    if sense == 3 {
+        return "verb\tundergo a chemical reaction; react with another substance under certain conditions\t\tThe hydrogen and the oxygen react";
+    }
+    ""
+}

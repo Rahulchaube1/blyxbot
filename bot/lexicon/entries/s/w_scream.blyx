@@ -1,0 +1,25 @@
+// scream — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_scream(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00913065
+    if sense == 1 {
+        return "verb\tutter a sudden loud cry\tshout, shout out, cry, call, yell, holler, hollo, squall\t";
+    }
+    // noun 07123012
+    if sense == 2 {
+        return "noun\tsharp piercing cry\tscreaming, shriek, shrieking, screech, screeching\ther screaming attracted the neighbors";
+    }
+    // verb 00912833
+    if sense == 3 {
+        return "verb\tutter or declare in a very loud voice\tyell\t";
+    }
+    // noun 07393161
+    if sense == 4 {
+        return "noun\ta high-pitched noise resembling a human cry\tscreech, screeching, shriek, shrieking, screaming\the heard the scream of the brakes";
+    }
+    // verb 02173336
+    if sense == 5 {
+        return "verb\tmake a loud, piercing sound\t\tFighter planes are screaming through the skies";
+    }
+    ""
+}

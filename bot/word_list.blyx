@@ -1,0 +1,53 @@
+use std::cli;
+use std::text;
+use dictionary;
+use lexicon::catalog;
+use understanding::text;
+
+fn show_page(prefix: str, page: i64) -> arglist {
+    let words = split_text(headwords_for(prefix), "|");
+    let mut matches = args_new();
+    let mut i = 0;
+    while i < args_len(words) {
+        let word = args_at(words, i);
+        if word != "" && text_starts(word, prefix) { matches = args_push(matches, word); }
+        i += 1;
+    }
+    let total = args_len(matches);
+    if total == 0 {
+        return pair("dictionary", text_concat("No dictionary words begin with “", text_concat(prefix, "”.")));
+    }
+    let pages = (total + 9) / 10;
+    let mut current = page;
+    if current < 1 { current = 1; }
+    if current > pages { current = pages; }
+    let first = (current - 1) * 10;
+    let mut last = first + 10;
+    if last > total { last = total; }
+    let mut visible = args_new();
+    i = first;
+    while i < last { visible = args_push(visible, args_at(matches, i)); i += 1; }
+    let range = text_concat(integer_text(first + 1), text_concat("–", integer_text(last)));
+    let heading = text_concat("Words starting with “", text_concat(prefix, text_concat("” (", range)));
+    let count = text_concat(" of ", text_concat(integer_text(total), ") — "));
+    let mut reply = text_concat(heading, text_concat(count, sentence(args_join(visible, ", "))));
+    if current < pages { reply = text_concat(reply, " Say “more words” for the next page."); }
+    let topic = args_join(args_push(pair("wordlist", prefix), integer_text(current)), "|");
+    pair(topic, reply)
+}
+
+pub fn word_list_answer(query: str, previous: str) -> arglist {
+    if text_starts(query, "words starting with ") { return show_page(text_after(query, "words starting with "), 1); }
+    if text_starts(query, "words beginning with ") { return show_page(text_after(query, "words beginning with "), 1); }
+    if text_starts(query, "browse words ") { return show_page(text_after(query, "browse words "), 1); }
+    if !text_starts(previous, "wordlist|") { return args_new(); }
+    let mut step = 0;
+    if query == "next page" || query == "more words" { step = 1; }
+    else if query == "previous page" { step = -1; }
+    else { return args_new(); }
+    let state = split_text(previous, "|");
+    if args_len(state) != 3 { return args_new(); }
+    let page = small_number(args_at(state, 2));
+    if page < 1 || args_at(state, 1) == "" { return args_new(); }
+    show_page(args_at(state, 1), page + step)
+}

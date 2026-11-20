@@ -1,0 +1,17 @@
+// impression — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_impression(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05916739
+    if sense == 1 {
+        return "noun\ta vague idea in which some confidence is placed\tfeeling, belief, notion, opinion\this impression of her was favorable";
+    }
+    // noun 04675314
+    if sense == 2 {
+        return "noun\tan outward appearance\teffect\the made a good impression";
+    }
+    // noun 05936704
+    if sense == 3 {
+        return "noun\ta clear and telling mental image\tmental picture, picture\tthe events left a permanent impression in his mind";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// copy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_copy(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 06505517
+    if sense == 1 {
+        return "noun\ta reproduction of a written record (e.g. of a legal or school record)\ttranscript\t";
+    }
+    // noun 03104594
+    if sense == 2 {
+        return "noun\ta thing made to be similar or identical to another thing\t\tshe made a copy of the designer dress";
+    }
+    // verb 01747374
+    if sense == 3 {
+        return "verb\tcopy down as is\t\tThe students were made to copy the alphabet over and over";
+    }
+    // verb 01742886
+    if sense == 4 {
+        return "verb\treproduce someone's behavior or looks\timitate, simulate\tChildren often copy their parents or older siblings";
+    }
+    // noun 06390512
+    if sense == 5 {
+        return "noun\tmatter to be printed; exclusive of graphical materials\twritten matter\t";
+    }
+    ""
+}

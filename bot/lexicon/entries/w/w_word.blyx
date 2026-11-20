@@ -1,0 +1,33 @@
+// word — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_word(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 06286395
+    if sense == 1 {
+        return "noun\ta unit of language that native speakers can identify\t\twords are the blocks from which sentences are made";
+    }
+    // noun 06738162
+    if sense == 2 {
+        return "noun\ta brief statement\t\the didn't say a word about it";
+    }
+    // noun 06642138
+    if sense == 3 {
+        return "noun\tinformation about recent and important events\tnews, intelligence, tidings\t";
+    }
+    // noun 07169242
+    if sense == 4 {
+        return "noun\ta verbal command for action\t\twhen I give the word, charge!";
+    }
+    // noun 07140659
+    if sense == 5 {
+        return "noun\tan exchange of views on some topic\tdiscussion, give-and-take\twe had a word or two about it";
+    }
+    // verb 00980453
+    if sense == 6 {
+        return "verb\tput into words or an expression\tgive voice, formulate, phrase, articulate\t";
+    }
+    // noun 07227301
+    if sense == 7 {
+        return "noun\ta promise\tparole, word of honor\the gave his word";
+    }
+    ""
+}

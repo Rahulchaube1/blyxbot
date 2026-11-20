@@ -1,0 +1,13 @@
+// morning — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_morning(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 15165289
+    if sense == 1 {
+        return "noun\tthe time period between dawn and noon\tmorn, morning time, forenoon\tI spent the morning running errands";
+    }
+    // noun 06632671
+    if sense == 2 {
+        return "noun\ta conventional expression of greeting or farewell\tgood morning\t";
+    }
+    ""
+}

@@ -1,0 +1,29 @@
+// put — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_put(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01494310
+    if sense == 1 {
+        return "verb\tput into a certain place or abstract location\tset, place, pose, position, lay\tPut your things here";
+    }
+    // verb 01493741
+    if sense == 2 {
+        return "verb\tcause to be in a certain state; cause to be in a certain relation\t\tThat song put me in awful good humor";
+    }
+    // verb 00981276
+    if sense == 3 {
+        return "verb\tformulate in a particular style or language\tframe, redact, cast, couch\tI wouldn't put it that way";
+    }
+    // verb 01160370
+    if sense == 4 {
+        return "verb\tattribute or give\tassign\tShe put too much emphasis on her the last statement";
+    }
+    // verb 02271137
+    if sense == 5 {
+        return "verb\tmake an investment\tinvest, commit, place\tPut money into bonds";
+    }
+    // verb 00673448
+    if sense == 6 {
+        return "verb\testimate\tplace, set\tWe put the time of arrival at 8 P.M.";
+    }
+    ""
+}

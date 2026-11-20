@@ -1,0 +1,37 @@
+// spirit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_spirit(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 10636598
+    if sense == 1 {
+        return "noun\tthe vital principle or animating force within living things\t\t";
+    }
+    // noun 14526182
+    if sense == 2 {
+        return "noun\tthe general atmosphere of a place or situation and the effect that it has on people\ttone, feel, feeling, flavor, flavour, look, smell\t";
+    }
+    // noun 04620558
+    if sense == 3 {
+        return "noun\ta fundamental emotional and activating principle determining one's character\t\t";
+    }
+    // noun 09545324
+    if sense == 4 {
+        return "noun\tany incorporeal supernatural being that can become visible (or audible) to human beings\tdisembodied spirit\t";
+    }
+    // noun 13985818
+    if sense == 5 {
+        return "noun\tthe state of a person's emotions (especially with regard to pleasure or dejection)\temotional state\the was in good spirits";
+    }
+    // noun 06605897
+    if sense == 6 {
+        return "noun\tthe intended meaning of a communication\tintent, purport\t";
+    }
+    // noun 04632157
+    if sense == 7 {
+        return "noun\tanimation and energy in action or expression\tliveliness, life, sprightliness\t";
+    }
+    // noun 04624826
+    if sense == 8 {
+        return "noun\tan inclination or tendency of a certain kind\theart\t";
+    }
+    ""
+}

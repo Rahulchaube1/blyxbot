@@ -1,0 +1,9 @@
+// doctrine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_doctrine(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 05943300
+    if sense == 1 {
+        return "noun\ta belief (or system of beliefs) accepted as authoritative by some group or school\tphilosophy, philosophical system, school of thought, ism\t";
+    }
+    ""
+}

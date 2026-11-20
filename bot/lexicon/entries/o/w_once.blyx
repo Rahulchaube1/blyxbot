@@ -1,0 +1,17 @@
+// once — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_once(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00118869
+    if sense == 1 {
+        return "adverb\ton one occasion\tone time, in one case\tonce I ran into her";
+    }
+    // adv 00181342
+    if sense == 2 {
+        return "adverb\tas soon as\t\tonce we are home, we can rest";
+    }
+    // adv 00118965
+    if sense == 3 {
+        return "adverb\tat a previous time\tformerly, at one time, erstwhile, erst\tshe was a dancer once";
+    }
+    ""
+}

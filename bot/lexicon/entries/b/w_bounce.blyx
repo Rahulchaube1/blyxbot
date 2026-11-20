@@ -1,0 +1,33 @@
+// bounce — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bounce(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01892104
+    if sense == 1 {
+        return "verb\tspring back; spring away from an impact\tresile, take a hop, spring, bound, rebound, recoil, reverberate, ricochet\tThe rubber ball bounced";
+    }
+    // verb 01404389
+    if sense == 2 {
+        return "verb\thit something so that it bounces\t\tbounce a ball";
+    }
+    // verb 01892608
+    if sense == 3 {
+        return "verb\tmove up and down repeatedly\tjounce\t";
+    }
+    // noun 05020981
+    if sense == 4 {
+        return "noun\tthe quality of a substance that is able to rebound\tbounciness\t";
+    }
+    // noun 00120202
+    if sense == 5 {
+        return "noun\ta light, self-propelled movement upwards or forwards\tleap, leaping, spring, saltation, bound\t";
+    }
+    // verb 02254923
+    if sense == 6 {
+        return "verb\tcome back after being refused\t\tthe check bounced";
+    }
+    // verb 01964788
+    if sense == 7 {
+        return "verb\tleap suddenly\t\tHe bounced to his feet";
+    }
+    ""
+}

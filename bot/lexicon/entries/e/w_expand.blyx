@@ -1,0 +1,25 @@
+// expand — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_expand(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02077148
+    if sense == 1 {
+        return "verb\textend in one or more directions\tspread out\tThe dough expands";
+    }
+    // verb 00257269
+    if sense == 2 {
+        return "verb\tbecome larger in size or volume or quantity\t\this business expanded rapidly";
+    }
+    // verb 00541163
+    if sense == 3 {
+        return "verb\tmake bigger or wider in size, volume, or quantity\t\texpand the house by adding another wing";
+    }
+    // verb 00310386
+    if sense == 4 {
+        return "verb\tgrow vigorously\tboom, thrive, flourish\t";
+    }
+    // verb 00264386
+    if sense == 5 {
+        return "verb\texaggerate or make bigger\tinflate, blow up, amplify\t";
+    }
+    ""
+}

@@ -1,0 +1,89 @@
+// cover — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cover(sense: i64) -> str {
+    if sense == 0 { return "21"; }
+    // verb 01332730
+    if sense == 1 {
+        return "verb\tprovide with a covering or cause to be covered\t\tcover her face with a handkerchief";
+    }
+    // verb 01207951
+    if sense == 2 {
+        return "verb\tform a cover over\tspread over\tThe grass covered the grave";
+    }
+    // verb 02687916
+    if sense == 3 {
+        return "verb\tspan an interval of distance, space or time\tcontinue, extend\tThe period covered the turn of the century";
+    }
+    // verb 02675935
+    if sense == 4 {
+        return "verb\tprovide for\t\tThe grant doesn't cover my salary";
+    }
+    // verb 01033527
+    if sense == 5 {
+        return "verb\tact on verbally or in some form of artistic expression\ttreat, handle, plow, deal, address\tThe course covered all of Western Civilization";
+    }
+    // verb 02629793
+    if sense == 6 {
+        return "verb\tinclude in scope; include as part of something broader; have as one's sphere or territory\tembrace, encompass, comprehend\tthis should cover everyone in the group";
+    }
+    // noun 04151940
+    if sense == 7 {
+        return "noun\ta covering that serves to conceal or shelter something\tscreen, covert, concealment\tunder cover of darkness";
+    }
+    // noun 02849154
+    if sense == 8 {
+        return "noun\tbedding that keeps a person warm in bed\tblanket\the pulled the covers over his head and went to sleep";
+    }
+    // noun 01049685
+    if sense == 9 {
+        return "noun\tthe act of concealing the existence of something by obstructing the view of it\tcovering, screening, masking\tthe cover concealed their guns from enemy aircraft";
+    }
+    // verb 01912159
+    if sense == 10 {
+        return "verb\ttravel across or pass over\ttraverse, track, cross, pass over, get over, get across, cut through, cut across\tThe caravan covered almost 100 miles each day";
+    }
+    // verb 00967098
+    if sense == 11 {
+        return "verb\tbe responsible for reporting the details of, as in journalism\treport\tThe cub reporter covered New York City";
+    }
+    // noun 02840619
+    if sense == 12 {
+        return "noun\tthe protective covering on the front, back, and spine of a book\tbinding, book binding, back\t";
+    }
+    // verb 01129201
+    if sense == 13 {
+        return "verb\thold within range of an aimed firearm\t\t";
+    }
+    // noun 09257949
+    if sense == 14 {
+        return "noun\ta natural object that covers or envelops\tcovering, natural covering\tunder a covering of dust";
+    }
+    // noun 04453910
+    if sense == 15 {
+        return "noun\tcovering for a hole (especially a hole in the top of a container)\ttop\tput the cover back on the kettle";
+    }
+    // noun 00988893
+    if sense == 16 {
+        return "noun\tfire that makes it difficult for the enemy to fire on your own individuals or formations\tcovering fire\tartillery provided covering fire for the withdrawal";
+    }
+    // verb 02395000
+    if sense == 17 {
+        return "verb\tto take an action to protect against future problems\t\tCount the cash in the drawer twice just to cover yourself";
+    }
+    // verb 02148369
+    if sense == 18 {
+        return "verb\thide from view or knowledge\tcover up\tThe President covered the fact that he bugged the offices in the White House";
+    }
+    // verb 01148296
+    if sense == 19 {
+        return "verb\tprotect or defend (a position in a game)\t\the covered left field";
+    }
+    // verb 00967455
+    if sense == 20 {
+        return "verb\tmaintain a check on; especially by patrolling\t\tThe second officer covered the top floor";
+    }
+    // verb 00891216
+    if sense == 21 {
+        return "verb\tprotect by insurance\tinsure, underwrite\tThe insurance won't cover this";
+    }
+    ""
+}

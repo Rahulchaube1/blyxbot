@@ -1,0 +1,25 @@
+// condemn — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_condemn(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00864159
+    if sense == 1 {
+        return "verb\texpress strong disapproval of\treprobate, decry, objurgate, excoriate\tWe condemn the racism in South Africa";
+    }
+    // verb 00856578
+    if sense == 2 {
+        return "verb\tdeclare or judge unfit for use or habitation\t\tThe building was condemned by the inspector";
+    }
+    // verb 02507093
+    if sense == 3 {
+        return "verb\tcompel or force into a particular state or activity\t\tHis devotion to his sick wife condemned him to a lonely existence";
+    }
+    // verb 02149302
+    if sense == 4 {
+        return "verb\tdemonstrate the guilt of (someone)\t\tHer strange behavior condemned her";
+    }
+    // verb 00906735
+    if sense == 5 {
+        return "verb\tpronounce a sentence on (somebody) in a court of law\tsentence, doom\tHe was condemned to ten years in prison";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// existing — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_existing(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01731786
+    if sense == 1 {
+        return "adjective\tpresently existing\t\tthe existing system";
+    }
+    // adj 00927017
+    if sense == 2 {
+        return "adjective\thaving existence or being or actuality\texistent\tmuch of the beluga caviar existing in the world is found in the Soviet Union and Iran";
+    }
+    // adj 01847101
+    if sense == 3 {
+        return "adjective\texisting in something specified\t\tdepletion of the oxygen existing in the bloodstream";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// carefully — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_carefully(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00153568
+    if sense == 1 {
+        return "adverb\ttaking care or paying attention\t\tthey watched carefully";
+    }
+    // adv 00282103
+    if sense == 2 {
+        return "adverb\tas if with kid gloves; with caution or prudence or tact\tcautiously\t";
+    }
+    ""
+}

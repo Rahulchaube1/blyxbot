@@ -1,0 +1,25 @@
+// join — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_join(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02434976
+    if sense == 1 {
+        return "verb\tbecome part of; become a member of a group or organization\tfall in, get together\tHe joined the Communist Party as a young man";
+    }
+    // verb 01295275
+    if sense == 2 {
+        return "verb\tcause to become joined or linked\tbring together\tjoin these two parts so that they fit together";
+    }
+    // verb 02598765
+    if sense == 3 {
+        return "verb\tcome into the company of\t\tShe joined him for a drink";
+    }
+    // verb 01291069
+    if sense == 4 {
+        return "verb\tmake contact or come together\tconjoin\tThe two roads join here";
+    }
+    // verb 02622234
+    if sense == 5 {
+        return "verb\tbe or become joined or united or linked\tconnect, link, link up, unite\tOur paths joined";
+    }
+    ""
+}

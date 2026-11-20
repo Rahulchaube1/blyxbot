@@ -1,0 +1,13 @@
+// bird — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bird(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 01503061
+    if sense == 1 {
+        return "noun\twarm-blooded egg-laying vertebrates characterized by feathers and forelimbs modified as wings\t\t";
+    }
+    // noun 07644382
+    if sense == 2 {
+        return "noun\tthe flesh of a bird or fowl (wild or domestic) used as food\tfowl\t";
+    }
+    ""
+}

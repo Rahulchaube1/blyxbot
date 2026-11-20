@@ -1,0 +1,25 @@
+// build — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_build(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01654628
+    if sense == 1 {
+        return "verb\tmake by combining materials and parts\tconstruct, make\t";
+    }
+    // verb 00252990
+    if sense == 2 {
+        return "verb\tform or accumulate steadily\tbuild up, work up, progress\tPressure is building up at the Indian-Pakistani border";
+    }
+    // verb 01655505
+    if sense == 3 {
+        return "verb\tbuild or establish something abstract\testablish\tbuild a reputation";
+    }
+    // noun 04998530
+    if sense == 4 {
+        return "noun\tconstitution of the human body\tphysique, body-build, habitus\t";
+    }
+    // verb 00447158
+    if sense == 5 {
+        return "verb\timprove the cleansing action of\t\tbuild detergents";
+    }
+    ""
+}

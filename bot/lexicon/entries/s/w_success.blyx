@@ -1,0 +1,21 @@
+// success — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_success(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 07319103
+    if sense == 1 {
+        return "noun\tan event that accomplishes its intended purpose\t\tlet's call heads a success and tails a failure";
+    }
+    // noun 00063652
+    if sense == 2 {
+        return "noun\tan attainment that is successful\t\this success in the marathon was unexpected";
+    }
+    // noun 14474894
+    if sense == 3 {
+        return "noun\ta state of prosperity or fame\t\the is enjoying great success";
+    }
+    // noun 09762821
+    if sense == 4 {
+        return "noun\ta person with a record of successes\tachiever, winner, succeeder\tif you want to be a success you have to dress like a success";
+    }
+    ""
+}

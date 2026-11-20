@@ -1,0 +1,21 @@
+// peace — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_peace(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 13970236
+    if sense == 1 {
+        return "noun\tthe state prevailing during the absence of war\t\t";
+    }
+    // noun 13969700
+    if sense == 2 {
+        return "noun\tharmonious relations; freedom from disputes\t\tthe roommates lived in peace together";
+    }
+    // noun 07515790
+    if sense == 3 {
+        return "noun\tthe absence of mental stress or anxiety\tpeacefulness, peace of mind, repose, serenity, heartsease, ataraxis\t";
+    }
+    // noun 14539524
+    if sense == 4 {
+        return "noun\tthe general security of public places\tpublic security\the was arrested for disturbing the peace";
+    }
+    ""
+}

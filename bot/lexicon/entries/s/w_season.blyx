@@ -1,0 +1,13 @@
+// season — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_season(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 15239579
+    if sense == 1 {
+        return "noun\ta period of the year marked by special events or activities in some field\t\the celebrated his 10th season with the ballet company";
+    }
+    // noun 15236475
+    if sense == 2 {
+        return "noun\tone of the natural periods into which the year is divided by the equinoxes and solstices or atmospheric conditions\ttime of year\tthe regular sequence of the seasons";
+    }
+    ""
+}

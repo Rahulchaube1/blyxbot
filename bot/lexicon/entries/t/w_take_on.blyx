@@ -1,0 +1,25 @@
+// take on — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_take_on(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00524682
+    if sense == 1 {
+        return "verb\ttake on a certain form, attribute, or aspect\tassume, acquire, adopt, take\t";
+    }
+    // verb 02381726
+    if sense == 2 {
+        return "verb\ttake on titles, offices, duties, responsibilities\tassume, adopt, take over\t";
+    }
+    // verb 02569630
+    if sense == 3 {
+        return "verb\taccept as a challenge\tundertake, tackle\t";
+    }
+    // verb 02236624
+    if sense == 4 {
+        return "verb\tadmit into a group or community\taccept, admit, take\t";
+    }
+    // verb 01079480
+    if sense == 5 {
+        return "verb\tcontend against an opponent in a sport, game, or battle\tmeet, encounter, play\t";
+    }
+    ""
+}

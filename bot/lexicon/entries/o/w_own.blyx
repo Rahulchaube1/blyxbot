@@ -1,0 +1,13 @@
+// own — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_own(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 01768724
+    if sense == 1 {
+        return "adjective\tbelonging to or on behalf of a specified person (especially yourself); preceded by a possessive\tain\tfor your own use";
+    }
+    // verb 02204692
+    if sense == 2 {
+        return "verb\thave ownership or possession of\thave, possess\tHe owns three houses in Florida";
+    }
+    ""
+}

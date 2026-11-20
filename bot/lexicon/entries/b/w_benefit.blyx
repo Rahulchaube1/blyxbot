@@ -1,0 +1,25 @@
+// benefit — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_benefit(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 13296899
+    if sense == 1 {
+        return "noun\tfinancial assistance in time of need\t\t";
+    }
+    // noun 05142641
+    if sense == 2 {
+        return "noun\tsomething that aids or promotes well-being\twelfare\tfor the benefit of all";
+    }
+    // verb 02290461
+    if sense == 3 {
+        return "verb\tderive a benefit from\tprofit, gain\t";
+    }
+    // verb 02290956
+    if sense == 4 {
+        return "verb\tbe beneficial for\tdo good\t";
+    }
+    // noun 06892534
+    if sense == 5 {
+        return "noun\ta performance to raise money for a charitable cause\t\t";
+    }
+    ""
+}

@@ -1,0 +1,33 @@
+// wire — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wire(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 04594218
+    if sense == 1 {
+        return "noun\tligament made of metal and used to fasten things or make cages or fences etc\t\t";
+    }
+    // noun 04594489
+    if sense == 2 {
+        return "noun\ta metal conductor that carries electricity over a distance\tconducting wire\t";
+    }
+    // verb 02354536
+    if sense == 3 {
+        return "verb\tprovide with electrical circuits\t\twire the addition to the house";
+    }
+    // verb 01007222
+    if sense == 4 {
+        return "verb\tsend cables, wires, or telegrams\tcable, telegraph\t";
+    }
+    // noun 08684107
+    if sense == 5 {
+        return "noun\tthe finishing line on a racetrack\t\t";
+    }
+    // noun 06622709
+    if sense == 6 {
+        return "noun\ta message transmitted by telegraph\ttelegram\t";
+    }
+    // verb 01599052
+    if sense == 7 {
+        return "verb\tfasten with wire\t\tThe columns were wired to the beams for support";
+    }
+    ""
+}

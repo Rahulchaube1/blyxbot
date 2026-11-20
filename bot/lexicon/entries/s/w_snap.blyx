@@ -1,0 +1,49 @@
+// snap — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_snap(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // verb 00916274
+    if sense == 1 {
+        return "verb\tutter in an angry, sharp, or abrupt tone\tsnarl\tThe sales clerk snapped a reply at the angry customer";
+    }
+    // verb 01573515
+    if sense == 2 {
+        return "verb\tseparate or cause to separate abruptly\ttear, rupture, bust\tThe rope snapped";
+    }
+    // verb 00337065
+    if sense == 3 {
+        return "verb\tbreak suddenly and abruptly, as under tension\tcrack\tThe pipe snapped";
+    }
+    // verb 01893771
+    if sense == 4 {
+        return "verb\tmove or strike with a noise\tclick\this arm was snapped forward";
+    }
+    // verb 00355670
+    if sense == 5 {
+        return "verb\tclose with a snapping motion\t\tThe lock snapped shut";
+    }
+    // noun 00138956
+    if sense == 6 {
+        return "noun\tthe act of catching an object with the hands\tcatch, grab, snatch\tthe infielder's snap and throw was a single motion";
+    }
+    // verb 02182851
+    if sense == 7 {
+        return "verb\tmake a sharp sound\tcrack\this fingers snapped";
+    }
+    // verb 02088949
+    if sense == 8 {
+        return "verb\tmove with a snapping sound\t\tbullets snapped past us";
+    }
+    // verb 01439745
+    if sense == 9 {
+        return "verb\tto grasp hastily or eagerly\tsnatch, snatch up\t";
+    }
+    // verb 01402872
+    if sense == 10 {
+        return "verb\tput in play with a snap\t\tsnap a football";
+    }
+    // verb 01242208
+    if sense == 11 {
+        return "verb\tcause to make a snapping sound\tclick, flick\tsnap your fingers";
+    }
+    ""
+}

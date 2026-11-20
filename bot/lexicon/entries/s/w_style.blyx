@@ -1,0 +1,25 @@
+// style — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_style(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 04928903
+    if sense == 1 {
+        return "noun\thow something is done or how it happens\tmanner, mode, way, fashion\tin the characteristic New York style";
+    }
+    // noun 07066659
+    if sense == 2 {
+        return "noun\ta way of expressing something (in language or art or music etc.) that is characteristic of a particular person or group of people or period\texpressive style\tall the reporters were expected to adopt the style of the newspaper";
+    }
+    // noun 05844105
+    if sense == 3 {
+        return "noun\ta particular kind (as to appearance)\t\tthis style of shoe is in demand";
+    }
+    // noun 05750163
+    if sense == 4 {
+        return "noun\tthe popular taste at a given time\tvogue, trend\tthe 1920s had a style of their own";
+    }
+    // verb 01028466
+    if sense == 5 {
+        return "verb\tdesignate by an identifying term\ttitle\tThey styled their nation `The Confederate States'";
+    }
+    ""
+}

@@ -1,0 +1,65 @@
+// sound — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sound(sense: i64) -> str {
+    if sense == 0 { return "15"; }
+    // verb 02134927
+    if sense == 1 {
+        return "verb\tappear in a certain way\t\tThis sounds interesting";
+    }
+    // noun 04981139
+    if sense == 2 {
+        return "noun\tthe particular auditory effect produced by a given cause\t\tthe sound of rain on the roof";
+    }
+    // noun 05718254
+    if sense == 3 {
+        return "noun\tthe subjective sensation of hearing something\tauditory sensation\the strained to hear the faint sounds";
+    }
+    // verb 02176268
+    if sense == 4 {
+        return "verb\tmake a certain noise or sound\tgo\t";
+    }
+    // noun 11480930
+    if sense == 5 {
+        return "noun\tmechanical vibrations transmitted by an elastic medium\t\tfalling trees make a sound in the forest even when no one is there to hear them";
+    }
+    // noun 07371293
+    if sense == 6 {
+        return "noun\tthe sudden occurrence of an audible event\t\tthe sound awakened them";
+    }
+    // verb 02135048
+    if sense == 7 {
+        return "verb\tgive off a certain sound or sounds\t\tThis record sounds scratchy";
+    }
+    // adj 02273326
+    if sense == 8 {
+        return "adjective\tfinancially secure and safe\t\tsound investments";
+    }
+    // noun 06278136
+    if sense == 9 {
+        return "noun\tthe audible part of a transmitted signal\taudio\t";
+    }
+    // adj 01944088
+    if sense == 10 {
+        return "adjective\texercising or showing good judgment\thealthy, intelligent, levelheaded, level-headed\ta sound approach to the problem";
+    }
+    // noun 07111047
+    if sense == 11 {
+        return "noun\t(phonetics) an individual sound unit of speech without concern as to whether or not it is a phoneme of some language\tphone, speech sound\t";
+    }
+    // verb 02180529
+    if sense == 12 {
+        return "verb\tannounce by means of a sound\t\tsound the alarm";
+    }
+    // verb 00952182
+    if sense == 13 {
+        return "verb\tutter with vibrating vocal chords\tvoice, vocalize, vocalise\t";
+    }
+    // adj 02275209
+    if sense == 14 {
+        return "adjective\tin good condition; free from defect or damage or decay\t\ta sound timber";
+    }
+    // adj 01171213
+    if sense == 15 {
+        return "adjective\tin excellent physical condition\tgood\ta sound mind in a sound body";
+    }
+    ""
+}

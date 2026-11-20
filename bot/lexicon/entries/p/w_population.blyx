@@ -1,0 +1,21 @@
+// population — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_population(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08179879
+    if sense == 1 {
+        return "noun\tthe people who inhabit a territory or state\t\tthe population seemed to be well fed and clothed";
+    }
+    // noun 08178741
+    if sense == 2 {
+        return "noun\ta group of organisms of the same species inhabiting a given area\t\tthey hired hunters to keep down the deer population";
+    }
+    // noun 06026276
+    if sense == 3 {
+        return "noun\t(statistics) the entire aggregation of items from which samples can be drawn\tuniverse\tit is an estimate of the mean of the population";
+    }
+    // noun 13779804
+    if sense == 4 {
+        return "noun\tthe number of inhabitants (either the total number or the number of a particular race or class) in a given place (country or city etc.)\t\tpeople come and go, but the population of this town has remained approximately constant for the past decade";
+    }
+    ""
+}

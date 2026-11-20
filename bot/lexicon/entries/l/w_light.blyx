@@ -1,0 +1,117 @@
+// light — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_light(sense: i64) -> str {
+    if sense == 0 { return "28"; }
+    // noun 11473954
+    if sense == 1 {
+        return "noun\t(physics) electromagnetic radiation that can produce a visual sensation\tvisible light, visible radiation\tthe light was filtered through a soft glass window";
+    }
+    // noun 03665366
+    if sense == 2 {
+        return "noun\tany device serving as a source of illumination\tlight source\the stopped the car and turned off the lights";
+    }
+    // adj 01186408
+    if sense == 3 {
+        return "adjective\tof comparatively little physical weight or density\t\ta light load";
+    }
+    // noun 06210791
+    if sense == 4 {
+        return "noun\ta particular perspective or aspect of a situation\t\talthough he saw it in a different light, he still did not understand";
+    }
+    // verb 00291873
+    if sense == 5 {
+        return "verb\tmake lighter or brighter\tillume, illumine, light up, illuminate\t";
+    }
+    // noun 05018103
+    if sense == 6 {
+        return "noun\tthe quality of being luminous; emitting or reflecting light\tluminosity, brightness, brightness level, luminance, luminousness\t";
+    }
+    // verb 01199881
+    if sense == 7 {
+        return "verb\tbegin to smoke\tlight up, fire up\t";
+    }
+    // adj 00408660
+    if sense == 8 {
+        return "adjective\t(used of color) having a relatively small amount of coloring agent\tlight-colored\tlight blue";
+    }
+    // noun 08646188
+    if sense == 9 {
+        return "noun\tan illuminated area\t\the stepped into the light";
+    }
+    // noun 14563784
+    if sense == 10 {
+        return "noun\ta condition of spiritual awareness; divine illumination\tillumination\tfollow God's light";
+    }
+    // noun 04951373
+    if sense == 11 {
+        return "noun\tthe visual effect of illumination on objects or scenes as created in pictures\tlightness\the could paint the lightest light and the darkest dark";
+    }
+    // adj 01193046
+    if sense == 12 {
+        return "adjective\tof the military or industry; using (or being) relatively small or light arms or equipment\t\tlight infantry";
+    }
+    // noun 10276659
+    if sense == 13 {
+        return "noun\ta person regarded very fondly\t\tthe light of my life";
+    }
+    // verb 01978700
+    if sense == 14 {
+        return "verb\tto come to rest, settle\talight, perch\tMisfortune lighted upon him";
+    }
+    // adj 01190993
+    if sense == 15 {
+        return "adjective\tnot great in degree or quantity or number\t\ta light sentence";
+    }
+    // adj 01190316
+    if sense == 16 {
+        return "adjective\tpsychologically light; especially free from sadness or troubles\t\ta light heart";
+    }
+    // adj 00269989
+    if sense == 17 {
+        return "adjective\tcharacterized by or emitting light\t\ta room that is light when the shutters are open";
+    }
+    // noun 13983304
+    if sense == 18 {
+        return "noun\thaving abundant light or illumination\tlighting\tthey played as long as it was light";
+    }
+    // noun 05807933
+    if sense == 19 {
+        return "noun\tmental understanding as an enlightening experience\t\the finally saw the light";
+    }
+    // noun 04953380
+    if sense == 20 {
+        return "noun\tmerriment expressed by a brightness or gleam or animation of countenance\tsparkle, twinkle, spark\t";
+    }
+    // verb 02759614
+    if sense == 21 {
+        return "verb\tcause to start burning; subject to fire or great heat\tignite\tLight a cigarette";
+    }
+    // adj 02320442
+    if sense == 22 {
+        return "adjective\t(used of vowels or syllables) pronounced with little or no stress\tunaccented, weak\ta syllable that ends in a short vowel is a light syllable";
+    }
+    // adj 01182414
+    if sense == 23 {
+        return "adjective\teasily assimilated in the alimentary canal; not rich or heavily seasoned\t\ta light diet";
+    }
+    // adj 00503527
+    if sense == 24 {
+        return "adjective\t(used of soil) loose and large-grained in consistency\t\tlight soil";
+    }
+    // noun 05612706
+    if sense == 25 {
+        return "noun\tpublic awareness\t\tit brought the scandal to light";
+    }
+    // adj 01906464
+    if sense == 26 {
+        return "adjective\t(of sound or color) free from anything that dulls or dims\tclean, clear, unclouded\ta light lilting voice like a silver bell";
+    }
+    // adj 01192393
+    if sense == 27 {
+        return "adjective\tmoving easily and quickly; nimble\tlightsome, tripping\tthe dancer was light and graceful";
+    }
+    // adj 00712186
+    if sense == 28 {
+        return "adjective\tdemanding little effort; not burdensome\t\tlight housework";
+    }
+    ""
+}

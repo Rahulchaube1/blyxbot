@@ -1,0 +1,29 @@
+// go up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_go_up(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01968569
+    if sense == 1 {
+        return "verb\tmove upward\trise, lift, arise, move up, come up, uprise\t";
+    }
+    // verb 00155143
+    if sense == 2 {
+        return "verb\tincrease in value or to a higher point\trise, climb\t";
+    }
+    // verb 02053941
+    if sense == 3 {
+        return "verb\tmove towards\tapproach, near, come on, draw near, draw close, come near\t";
+    }
+    // verb 01943949
+    if sense == 4 {
+        return "verb\tbe erected, built, or constructed\t\t";
+    }
+    // verb 01921964
+    if sense == 5 {
+        return "verb\tgo upward with gradual or continuous progress\tclimb, climb up, mount\t";
+    }
+    // verb 00377351
+    if sense == 6 {
+        return "verb\tburn completely; be consumed or destroyed by fire\tburn down, burn up\t";
+    }
+    ""
+}

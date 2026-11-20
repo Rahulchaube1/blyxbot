@@ -1,0 +1,45 @@
+// miss — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_miss(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02127853
+    if sense == 1 {
+        return "verb\tfail to perceive or to catch with the senses or the mind\tlose\tI missed that remark";
+    }
+    // verb 01805523
+    if sense == 2 {
+        return "verb\tfeel or suffer from the lack of\t\tHe misses his mother";
+    }
+    // verb 02613672
+    if sense == 3 {
+        return "verb\tfail to attend an event or activity\t\tI missed the concert";
+    }
+    // verb 00614999
+    if sense == 4 {
+        return "verb\tleave undone or leave out\tneglect, pretermit, omit, drop, leave out, overlook, overleap\tHow could I miss that typo?";
+    }
+    // verb 02022659
+    if sense == 5 {
+        return "verb\tfail to reach or get to\t\tShe missed her train";
+    }
+    // verb 02632353
+    if sense == 6 {
+        return "verb\tbe without\tlack\tThere is something missing in my jewelry box!";
+    }
+    // verb 01237901
+    if sense == 7 {
+        return "verb\tfail to reach\t\tThe arrow missed the target";
+    }
+    // noun 10129825
+    if sense == 8 {
+        return "noun\ta young woman\tgirl, missy, young lady, young woman, fille\t";
+    }
+    // noun 07319774
+    if sense == 9 {
+        return "noun\ta failure to hit (or meet or find etc)\tmisfire\t";
+    }
+    // verb 02632838
+    if sense == 10 {
+        return "verb\tbe absent\t\tThe child had been missing for a week";
+    }
+    ""
+}

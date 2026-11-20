@@ -1,0 +1,29 @@
+// correct — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_correct(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00199659
+    if sense == 1 {
+        return "verb\tmake right or correct\trectify, right\tCorrect the mistakes";
+    }
+    // verb 02519991
+    if sense == 2 {
+        return "verb\tmake reparations or amends for\tright, compensate, redress\t";
+    }
+    // adj 00631391
+    if sense == 3 {
+        return "adjective\tfree from error; especially conforming to fact or truth\tright\tthe correct answer";
+    }
+    // adj 01879261
+    if sense == 4 {
+        return "adjective\tsocially right or correct\tright\tcorrect behavior";
+    }
+    // adj 01879464
+    if sense == 5 {
+        return "adjective\tin accord with accepted standards of usage or procedure\tright\t";
+    }
+    // verb 00824292
+    if sense == 6 {
+        return "verb\tcensure severely\tchastise, castigate, objurgate, chasten\t";
+    }
+    ""
+}

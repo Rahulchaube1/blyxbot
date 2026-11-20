@@ -1,0 +1,29 @@
+// estimate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_estimate(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00672433
+    if sense == 1 {
+        return "verb\tjudge tentatively or form an estimate of (quantities or time)\tgauge, approximate, guess, judge\tI estimate this chicken to weigh three pounds";
+    }
+    // noun 05803379
+    if sense == 2 {
+        return "noun\tan approximate calculation of quantity or degree or worth\testimation, approximation, idea\tan estimate of what it would cost";
+    }
+    // verb 00712135
+    if sense == 3 {
+        return "verb\tjudge to be probable\tcalculate, reckon, count on, figure, forecast\t";
+    }
+    // noun 00875246
+    if sense == 4 {
+        return "noun\ta judgment of the qualities of something or somebody\testimation\tmany factors are involved in any estimate of human life";
+    }
+    // noun 06528783
+    if sense == 5 {
+        return "noun\ta document appraising the value of something (as for insurance or taxation)\tappraisal, estimation\t";
+    }
+    // noun 06783598
+    if sense == 6 {
+        return "noun\ta statement indicating the likely cost of some job\t\the got an estimate from the car repair shop";
+    }
+    ""
+}

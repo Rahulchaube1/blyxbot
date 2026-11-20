@@ -1,0 +1,17 @@
+// battery — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_battery(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08389572
+    if sense == 1 {
+        return "noun\tgroup of guns or missile launchers operated together at one place\t\t";
+    }
+    // noun 02810471
+    if sense == 2 {
+        return "noun\ta device that produces electricity; may have several primary or secondary cells arranged in parallel or series\telectric battery\t";
+    }
+    // noun 07953827
+    if sense == 3 {
+        return "noun\ta collection of related things intended for use together\t\ttook a battery of achievement tests";
+    }
+    ""
+}

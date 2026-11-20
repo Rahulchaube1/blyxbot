@@ -1,0 +1,41 @@
+// issue — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_issue(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 05814650
+    if sense == 1 {
+        return "noun\tan important question that is in dispute and must be settled\t\tthe issue could be settled by requiring public education for everyone";
+    }
+    // verb 00967625
+    if sense == 2 {
+        return "verb\tprepare and issue for public distribution or sale\tpublish, bring out, put out, release\t";
+    }
+    // verb 02479323
+    if sense == 3 {
+        return "verb\tcirculate or distribute or equip with\tsupply\tissue a new uniform to the children";
+    }
+    // verb 01063049
+    if sense == 4 {
+        return "verb\tbring out an official document (such as a warrant)\t\t";
+    }
+    // verb 00528990
+    if sense == 5 {
+        return "verb\tcome out of\temerge, come out, come forth, go forth, egress\tWater issued from the hole in the wall";
+    }
+    // noun 06596978
+    if sense == 6 {
+        return "noun\tone of a series published periodically\tnumber\tshe found an old issue of the magazine in her dentist's waiting room";
+    }
+    // noun 05814291
+    if sense == 7 {
+        return "noun\tsome situation or event that is thought about\ttopic, subject, matter\t";
+    }
+    // noun 01060234
+    if sense == 8 {
+        return "noun\tthe act of providing an item for general use or for official purposes (usually in quantity)\tissuing, issuance\ta new issue of stamps";
+    }
+    // verb 01064799
+    if sense == 9 {
+        return "verb\tmake out and issue\twrite out, make out, cut\t";
+    }
+    ""
+}

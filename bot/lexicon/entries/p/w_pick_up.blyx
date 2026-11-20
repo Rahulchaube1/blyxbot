@@ -1,0 +1,57 @@
+// pick up — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pick_up(sense: i64) -> str {
+    if sense == 0 { return "13"; }
+    // verb 01976089
+    if sense == 1 {
+        return "verb\ttake and lift upward\tlift up, gather up\t";
+    }
+    // verb 01207402
+    if sense == 2 {
+        return "verb\ttake up by hand\t\t";
+    }
+    // verb 01957107
+    if sense == 3 {
+        return "verb\tgive a passenger or a hitchhiker a lift\t\t";
+    }
+    // verb 02305586
+    if sense == 4 {
+        return "verb\tgather or collect\tcollect, gather up, call for\tThey pick up our trash twice a week";
+    }
+    // verb 00598954
+    if sense == 5 {
+        return "verb\tget to know or become aware of, usually accidentally\tlearn, hear, get word, get wind, find out, get a line, discover, see\t";
+    }
+    // verb 02355410
+    if sense == 6 {
+        return "verb\tget in addition, as an increase\t\t";
+    }
+    // verb 01215137
+    if sense == 7 {
+        return "verb\ttake into custody\tcollar, nail, apprehend, arrest, nab, cop\t";
+    }
+    // verb 02287041
+    if sense == 8 {
+        return "verb\tbuy casually or spontaneously\t\t";
+    }
+    // verb 02107248
+    if sense == 9 {
+        return "verb\tregister (perceptual input)\treceive\tpick up a signal";
+    }
+    // verb 00513757
+    if sense == 10 {
+        return "verb\tlift out or reflect from a background\t\t";
+    }
+    // verb 02486534
+    if sense == 11 {
+        return "verb\tmeet someone for sexual purposes\t\the always tries to pick up girls in bars";
+    }
+    // verb 01811736
+    if sense == 12 {
+        return "verb\tfill with high spirits; fill with optimism\telate, lift up, uplift, intoxicate\t";
+    }
+    // verb 00205598
+    if sense == 13 {
+        return "verb\timprove significantly; go from bad to good\tturn around\t";
+    }
+    ""
+}

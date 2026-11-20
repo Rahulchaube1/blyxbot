@@ -1,0 +1,13 @@
+// detective — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_detective(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 10009276
+    if sense == 1 {
+        return "noun\ta police officer who investigates crimes\tinvestigator, tec, police detective\t";
+    }
+    // noun 10009484
+    if sense == 2 {
+        return "noun\tan investigator engaged or employed in obtaining information not easily available to the public\t\t";
+    }
+    ""
+}

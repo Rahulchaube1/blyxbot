@@ -1,0 +1,109 @@
+// pass — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pass(sense: i64) -> str {
+    if sense == 0 { return "26"; }
+    // verb 02050132
+    if sense == 1 {
+        return "verb\tgo across or through\tgo through, go across\tWe passed the point where the police car had parked";
+    }
+    // verb 02051694
+    if sense == 2 {
+        return "verb\tmove past\ttravel by, pass by, surpass, go past, go by\tA black limousine passed by when she looked out the window";
+    }
+    // verb 02466670
+    if sense == 3 {
+        return "verb\tmake laws, bills, etc. or bring into effect by legislation\tlegislate\tThey passed the amendment";
+    }
+    // verb 02072849
+    if sense == 4 {
+        return "verb\tpass by\telapse, lapse, slip by, glide by, slip away, go by, slide by, go along\t";
+    }
+    // verb 02230772
+    if sense == 5 {
+        return "verb\tplace into the hands or custody of\thand, reach, pass on, turn over, give\t";
+    }
+    // verb 02685951
+    if sense == 6 {
+        return "verb\tstretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point\trun, go, lead, extend\t";
+    }
+    // verb 02049696
+    if sense == 7 {
+        return "verb\ttravel past\tovertake, overhaul\tThe sports car passed all the trucks";
+    }
+    // verb 00339934
+    if sense == 8 {
+        return "verb\tcome to pass\thappen, hap, go on, pass off, occur, fall out, come about, take place\t";
+    }
+    // noun 00127286
+    if sense == 9 {
+        return "noun\t(baseball) an advance to first base by a batter who receives four balls\tbase on balls, walk\t";
+    }
+    // verb 02523351
+    if sense == 10 {
+        return "verb\tgo unchallenged; be approved\tclear\t";
+    }
+    // noun 15139552
+    if sense == 11 {
+        return "noun\t(military) a written leave of absence\t\the had a pass for three days";
+    }
+    // verb 02708420
+    if sense == 12 {
+        return "verb\tpass time in a specific way\tspend\t";
+    }
+    // verb 01212230
+    if sense == 13 {
+        return "verb\tpass over, across, or through\tguide, run, draw\t";
+    }
+    // verb 00742320
+    if sense == 14 {
+        return "verb\ttransmit information\tcommunicate, pass on, pass along, put across\tpass along the good news";
+    }
+    // verb 00421691
+    if sense == 15 {
+        return "verb\tdisappear gradually\tevanesce, fade, blow over, pass off, fleet\tThe pain eventually passed off";
+    }
+    // noun 00560529
+    if sense == 16 {
+        return "noun\t(American football) a play that involves one player throwing the ball to a teammate\tpassing play, passing game, passing\tthe coach sent in a passing play on third and long";
+    }
+    // verb 02525044
+    if sense == 17 {
+        return "verb\tgo successfully through a test or a selection process\tmake it\tShe passed the new Jersey Bar Exam and can practice law now";
+    }
+    // noun 09386842
+    if sense == 18 {
+        return "noun\tthe location in a range of mountains of a geological formation that is lower than the surrounding peaks\tmountain pass, notch\twe got through the pass before it started to snow";
+    }
+    // noun 06691083
+    if sense == 19 {
+        return "noun\tany authorization to pass or go somewhere\tpassport\tthe pass to visit had a strict time limit";
+    }
+    // noun 06690408
+    if sense == 20 {
+        return "noun\ta document indicating permission to do something without restrictions\tlaissez passer\tthe media representatives had special passes";
+    }
+    // noun 00304592
+    if sense == 21 {
+        return "noun\ta flight or run by an aircraft over a target\t\tthe plane turned to make a second pass";
+    }
+    // verb 02669081
+    if sense == 22 {
+        return "verb\tbe superior or better than some standard\texceed, transcend, overstep, go past, top\t";
+    }
+    // verb 02523953
+    if sense == 23 {
+        return "verb\taccept or judge as acceptable\t\tThe teacher passed the student although he was weak";
+    }
+    // verb 02423513
+    if sense == 24 {
+        return "verb\tallow to go without comment or censure\t\tthe insult passed as if unnoticed";
+    }
+    // verb 02221635
+    if sense == 25 {
+        return "verb\ttransfer to another; of rights or property\t\tOur house passed under his official control";
+    }
+    // verb 01972131
+    if sense == 26 {
+        return "verb\tpass into a specified state or condition\tsink, lapse\t";
+    }
+    ""
+}

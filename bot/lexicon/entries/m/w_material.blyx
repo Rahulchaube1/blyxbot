@@ -1,0 +1,37 @@
+// material — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_material(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 14580897
+    if sense == 1 {
+        return "noun\tthe tangible substance that goes into the makeup of a physical object\tstuff\tcoal is a hard black material";
+    }
+    // noun 06635509
+    if sense == 2 {
+        return "noun\tinformation (data or ideas or observations) that can be used or reworked into a finished form\t\tthe archives provided rich material for a definitive biography";
+    }
+    // noun 03309808
+    if sense == 3 {
+        return "noun\tartifact made by weaving or felting or knitting or crocheting natural or synthetic fibers\tfabric, cloth, textile\tshe measured off enough material for a dress";
+    }
+    // noun 03729951
+    if sense == 4 {
+        return "noun\tthings needed for doing or making something\t\twriting materials";
+    }
+    // adj 02577734
+    if sense == 5 {
+        return "adjective\tconcerned with worldly rather than spiritual interests\t\tmaterial possessions";
+    }
+    // adj 00626800
+    if sense == 6 {
+        return "adjective\tderived from or composed of matter\t\tthe material universe";
+    }
+    // adj 01487627
+    if sense == 7 {
+        return "adjective\tdirectly relevant to a matter especially a law case\t\this support made a material difference";
+    }
+    // adj 01779193
+    if sense == 8 {
+        return "adjective\tconcerned with or affecting physical as distinct from intellectual or psychological well-being\t\tmaterial needs";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// single — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_single(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00493460
+    if sense == 1 {
+        return "adjective\tbeing or characteristic of a single thing or person\tindividual\t";
+    }
+    // noun 00132601
+    if sense == 2 {
+        return "noun\ta base hit on which the batter stops safely at first base\tbingle\t";
+    }
+    // verb 01409374
+    if sense == 3 {
+        return "verb\thit a single\t\tthe batter singled to left field";
+    }
+    ""
+}

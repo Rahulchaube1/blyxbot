@@ -1,0 +1,17 @@
+// destroy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_destroy(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01619929
+    if sense == 1 {
+        return "verb\tdo away with, cause the destruction or undoing of\tdestruct\tThe fire destroyed the house";
+    }
+    // verb 01564144
+    if sense == 2 {
+        return "verb\tdestroy completely; damage irreparably\truin\t";
+    }
+    // verb 01083373
+    if sense == 3 {
+        return "verb\tdefeat soundly\tdemolish\t";
+    }
+    ""
+}

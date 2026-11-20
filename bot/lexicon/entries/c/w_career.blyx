@@ -1,0 +1,17 @@
+// career — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_career(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00583246
+    if sense == 1 {
+        return "noun\tthe particular occupation for which you are trained\tcalling, vocation\t";
+    }
+    // noun 00282613
+    if sense == 2 {
+        return "noun\tthe general progression of your working or professional life\tlife history\tthe general had had a distinguished career";
+    }
+    // verb 02082181
+    if sense == 3 {
+        return "verb\tmove headlong at high speed\t\tThe cars careered down the road";
+    }
+    ""
+}

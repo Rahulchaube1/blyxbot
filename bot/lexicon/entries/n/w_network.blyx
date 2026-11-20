@@ -1,0 +1,17 @@
+// network — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_network(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 08434259
+    if sense == 1 {
+        return "noun\tan interconnected system of things or people\tweb\the owned a network of shops";
+    }
+    // noun 03820474
+    if sense == 2 {
+        return "noun\t(broadcasting) a communication system consisting of a group of broadcasting stations that all transmit the same programs\t\tthe networks compete to broadcast important sports events";
+    }
+    // noun 03819595
+    if sense == 3 {
+        return "noun\tan open fabric of string or rope or wire woven together at regular intervals\tnet, mesh, meshing, meshwork\t";
+    }
+    ""
+}

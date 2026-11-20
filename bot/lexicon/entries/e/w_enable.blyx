@@ -1,0 +1,9 @@
+// enable — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_enable(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00512877
+    if sense == 1 {
+        return "verb\trender capable or able for some task\t\tThis skill will enable you to find a job on Wall Street";
+    }
+    ""
+}

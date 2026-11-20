@@ -1,0 +1,13 @@
+// hesitate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hesitate(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02640440
+    if sense == 1 {
+        return "verb\tpause or hold back in uncertainty or unwillingness\twaver, waffle\tAuthorities hesitate to quote exact figures";
+    }
+    // verb 02641035
+    if sense == 2 {
+        return "verb\tinterrupt temporarily an activity before continuing\tpause\t";
+    }
+    ""
+}

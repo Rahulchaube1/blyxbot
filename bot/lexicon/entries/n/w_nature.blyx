@@ -1,0 +1,21 @@
+// nature — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_nature(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 04726724
+    if sense == 1 {
+        return "noun\tthe essential qualities or characteristics by which something is recognized\t\tit is the nature of fire to burn";
+    }
+    // noun 09503682
+    if sense == 2 {
+        return "noun\ta causal agent creating and controlling things in the universe\t\tthe laws of nature";
+    }
+    // noun 09366762
+    if sense == 3 {
+        return "noun\tthe natural physical world including plants and animals and landscapes etc.\t\tthey tried to preserve nature as they found it";
+    }
+    // noun 04623113
+    if sense == 4 {
+        return "noun\tthe complex of emotional and intellectual attributes that determine a person's characteristic actions and reactions\t\tit is his nature to help others";
+    }
+    ""
+}

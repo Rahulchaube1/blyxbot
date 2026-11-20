@@ -1,0 +1,53 @@
+// separate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_separate(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // adj 02109678
+    if sense == 1 {
+        return "adjective\tindependent; not united or joint\t\ta problem consisting of two separate issues";
+    }
+    // verb 02621853
+    if sense == 2 {
+        return "verb\tact as a barrier between; stand between\tdivide\t";
+    }
+    // verb 01556921
+    if sense == 3 {
+        return "verb\tforce, take, or pull apart\tdisunite, divide, part\tHe separated the fighting children";
+    }
+    // verb 00650353
+    if sense == 4 {
+        return "verb\tmark as different\tdistinguish, differentiate, secern, secernate, severalize, severalise, tell, tell apart\t";
+    }
+    // verb 02467662
+    if sense == 5 {
+        return "verb\tseparate into parts or portions\tdivide, split, split up, dissever, carve up\t";
+    }
+    // verb 01458973
+    if sense == 6 {
+        return "verb\tdivide into components or constituents\t\tSeparate the wheat from the chaff";
+    }
+    // verb 00654625
+    if sense == 7 {
+        return "verb\tarrange or order by classes or categories\tclassify, class, sort, assort, sort out\t";
+    }
+    // verb 02031158
+    if sense == 8 {
+        return "verb\tmake a division or separation\tdivide\t";
+    }
+    // adj 00160768
+    if sense == 9 {
+        return "adjective\tstanding apart; not attached to or supported by anything\tfreestanding\ta house with a separate garage";
+    }
+    // verb 02431320
+    if sense == 10 {
+        return "verb\tdiscontinue an association or relation; go different ways\tpart, split up, split, break, break up\tThe couple separated after 25 years of marriage";
+    }
+    // verb 02030158
+    if sense == 11 {
+        return "verb\tgo one's own way; move apart\tpart, split\tThe friends separated after the party";
+    }
+    // verb 00334186
+    if sense == 12 {
+        return "verb\tbecome separated into pieces or fragments\tbreak, split up, fall apart, come apart\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// machine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_machine(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 03699975
+    if sense == 1 {
+        return "noun\tany mechanical or electrical device that transmits or modifies energy to perform or assist in the performance of human tasks\t\t";
+    }
+    // noun 10278666
+    if sense == 2 {
+        return "noun\tan efficient person\t\tthe boxer was a magnificent fighting machine";
+    }
+    // noun 08264759
+    if sense == 3 {
+        return "noun\tan intricate organization that accomplishes its goals efficiently\t\tthe war machine";
+    }
+    // noun 03700963
+    if sense == 4 {
+        return "noun\ta device for overcoming resistance at one point by applying force at some other point\tsimple machine\t";
+    }
+    ""
+}

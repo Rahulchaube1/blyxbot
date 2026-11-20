@@ -1,0 +1,29 @@
+// conclusion — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_conclusion(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05838176
+    if sense == 1 {
+        return "noun\ta position or opinion or judgment reached after consideration\tdecision, determination\this conclusion took the evidence into account";
+    }
+    // noun 05781541
+    if sense == 2 {
+        return "noun\tan intuitive assumption\t\tjump to a conclusion";
+    }
+    // noun 15267536
+    if sense == 3 {
+        return "noun\tthe temporal end; the concluding time\tstopping point, finale, finis, finish, last, close\t";
+    }
+    // noun 07291312
+    if sense == 4 {
+        return "noun\tevent whose occurrence ends something\tending, finish\t";
+    }
+    // noun 06753030
+    if sense == 5 {
+        return "noun\tthe proposition arrived at by logical reasoning (such as the proposition that must follow from the major and minor premises of a syllogism)\tratiocination\t";
+    }
+    // noun 00209943
+    if sense == 6 {
+        return "noun\tthe act of ending something\ttermination, ending\t";
+    }
+    ""
+}

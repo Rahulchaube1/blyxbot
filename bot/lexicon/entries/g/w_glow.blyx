@@ -1,0 +1,37 @@
+// glow — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_glow(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02160944
+    if sense == 1 {
+        return "verb\temit a steady even light without flames\t\tThe fireflies were glowing and flying about in the garden";
+    }
+    // verb 02161530
+    if sense == 2 {
+        return "verb\thave a complexion with a strong bright color, such as red or pink\tbeam, radiate, shine\tHer face glowed when she came out of the sauna";
+    }
+    // noun 14051056
+    if sense == 3 {
+        return "noun\tan alert and refreshed state\tfreshness\t";
+    }
+    // noun 05018785
+    if sense == 4 {
+        return "noun\tlight from nonthermal sources\tluminescence\t";
+    }
+    // verb 02768874
+    if sense == 5 {
+        return "verb\tshine intensely, as if with heat\tburn\tThe coals were glowing in the dark";
+    }
+    // noun 11467786
+    if sense == 6 {
+        return "noun\tthe phenomenon of light emission by a body as its temperature is raised\tincandescence\t";
+    }
+    // noun 07480521
+    if sense == 7 {
+        return "noun\ta feeling of considerable warmth\t\tthe glow of new love";
+    }
+    // verb 01830042
+    if sense == 8 {
+        return "verb\tbe exuberant or high-spirited\t\tMake the people's hearts glow";
+    }
+    ""
+}

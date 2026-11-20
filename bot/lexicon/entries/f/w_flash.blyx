@@ -1,0 +1,45 @@
+// flash — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_flash(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02159890
+    if sense == 1 {
+        return "verb\tgleam or glow intermittently\tblink, wink, twinkle, winkle\tThe lights were flashing";
+    }
+    // noun 07412092
+    if sense == 2 {
+        return "noun\ta sudden intense burst of radiant energy\t\t";
+    }
+    // noun 04953186
+    if sense == 3 {
+        return "noun\ta momentary brightness\t\t";
+    }
+    // verb 00424691
+    if sense == 4 {
+        return "verb\tappear briefly\t\tThe headlines flashed on the screen";
+    }
+    // verb 02141973
+    if sense == 5 {
+        return "verb\tdisplay proudly; act ostentatiously or pretentiously\tflaunt, show off, ostentate, swank\t";
+    }
+    // verb 00929509
+    if sense == 6 {
+        return "verb\tmake known or cause to appear with great speed\t\tThe latest intelligence is flashed to all command posts";
+    }
+    // verb 02061495
+    if sense == 7 {
+        return "verb\trun or move very quickly or hastily\tdart, dash, scoot, scud, shoot\t";
+    }
+    // noun 07287088
+    if sense == 8 {
+        return "noun\ta short vivid experience\tflashing\ta flash of emotion swept over him";
+    }
+    // noun 05808442
+    if sense == 9 {
+        return "noun\ta sudden brilliant understanding\t\the had a flash of intuition";
+    }
+    // verb 02138611
+    if sense == 10 {
+        return "verb\texpose or show briefly\t\the flashed a $100 bill";
+    }
+    ""
+}

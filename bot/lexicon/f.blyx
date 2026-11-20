@@ -1,0 +1,263 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::f::w_face;
+use entries::f::w_facility;
+use entries::f::w_fact;
+use entries::f::w_factor;
+use entries::f::w_fail;
+use entries::f::w_failure;
+use entries::f::w_fairly;
+use entries::f::w_faith;
+use entries::f::w_fall;
+use entries::f::w_familiar;
+use entries::f::w_family;
+use entries::f::w_famous;
+use entries::f::w_far;
+use entries::f::w_farm;
+use entries::f::w_farmer;
+use entries::f::w_fashion;
+use entries::f::w_fast;
+use entries::f::w_fat;
+use entries::f::w_father;
+use entries::f::w_favor;
+use entries::f::w_fear;
+use entries::f::w_feature;
+use entries::f::w_federal;
+use entries::f::w_feed;
+use entries::f::w_feel;
+use entries::f::w_feeling;
+use entries::f::w_fellow;
+use entries::f::w_female;
+use entries::f::w_fence;
+use entries::f::w_few;
+use entries::f::w_field;
+use entries::f::w_fifty;
+use entries::f::w_fig;
+use entries::f::w_fight;
+use entries::f::w_fighting;
+use entries::f::w_figure;
+use entries::f::w_file;
+use entries::f::w_fill;
+use entries::f::w_filled;
+use entries::f::w_film;
+use entries::f::w_final;
+use entries::f::w_finally;
+use entries::f::w_finance;
+use entries::f::w_financial;
+use entries::f::w_find;
+use entries::f::w_find_out;
+use entries::f::w_finding;
+use entries::f::w_finger;
+use entries::f::w_finish;
+use entries::f::w_fire;
+use entries::f::w_firm;
+use entries::f::w_first;
+use entries::f::w_fist;
+use entries::f::w_fit;
+use entries::f::w_five;
+use entries::f::w_fix;
+use entries::f::w_fixed;
+use entries::f::w_flag;
+use entries::f::w_flash;
+use entries::f::w_flat;
+use entries::f::w_flee;
+use entries::f::w_flesh;
+use entries::f::w_flight;
+use entries::f::w_float;
+use entries::f::w_flood;
+use entries::f::w_floor;
+use entries::f::w_flow;
+use entries::f::w_flower;
+use entries::f::w_fluid;
+use entries::f::w_flux;
+use entries::f::w_fly;
+use entries::f::w_focus;
+use entries::f::w_fog;
+use entries::f::w_folklore;
+use entries::f::w_follow;
+use entries::f::w_following;
+use entries::f::w_food;
+use entries::f::w_fool;
+use entries::f::w_foot;
+use entries::f::w_for_example;
+use entries::f::w_for_instance;
+use entries::f::w_force;
+use entries::f::w_foreign;
+use entries::f::w_forest;
+use entries::f::w_forget;
+use entries::f::w_forgive;
+use entries::f::w_form;
+use entries::f::w_formation;
+use entries::f::w_former;
+use entries::f::w_forward;
+use entries::f::w_four;
+use entries::f::w_fourth;
+use entries::f::w_fraction;
+use entries::f::w_frame;
+use entries::f::w_free;
+use entries::f::w_freedom;
+use entries::f::w_frequency;
+use entries::f::w_frequently;
+use entries::f::w_fresh;
+use entries::f::w_friend;
+use entries::f::w_friendly;
+use entries::f::w_front;
+use entries::f::w_full;
+use entries::f::w_fully;
+use entries::f::w_function;
+use entries::f::w_fund;
+use entries::f::w_funny;
+use entries::f::w_furnish;
+use entries::f::w_further;
+use entries::f::w_future;
+
+fn through_w_fashion(term: str, sense: i64) -> str {
+    if term == "face" { return w_face(sense); }
+    if term == "facility" { return w_facility(sense); }
+    if term == "fact" { return w_fact(sense); }
+    if term == "factor" { return w_factor(sense); }
+    if term == "fail" { return w_fail(sense); }
+    if term == "failure" { return w_failure(sense); }
+    if term == "fairly" { return w_fairly(sense); }
+    if term == "faith" { return w_faith(sense); }
+    if term == "fall" { return w_fall(sense); }
+    if term == "familiar" { return w_familiar(sense); }
+    if term == "family" { return w_family(sense); }
+    if term == "famous" { return w_famous(sense); }
+    if term == "far" { return w_far(sense); }
+    if term == "farm" { return w_farm(sense); }
+    if term == "farmer" { return w_farmer(sense); }
+    if term == "fashion" { return w_fashion(sense); }
+    ""
+}
+
+fn through_w_fifty(term: str, sense: i64) -> str {
+    if term == "fast" { return w_fast(sense); }
+    if term == "fat" { return w_fat(sense); }
+    if term == "father" { return w_father(sense); }
+    if term == "favor" { return w_favor(sense); }
+    if term == "fear" { return w_fear(sense); }
+    if term == "feature" { return w_feature(sense); }
+    if term == "federal" { return w_federal(sense); }
+    if term == "feed" { return w_feed(sense); }
+    if term == "feel" { return w_feel(sense); }
+    if term == "feeling" { return w_feeling(sense); }
+    if term == "fellow" { return w_fellow(sense); }
+    if term == "female" { return w_female(sense); }
+    if term == "fence" { return w_fence(sense); }
+    if term == "few" { return w_few(sense); }
+    if term == "field" { return w_field(sense); }
+    if term == "fifty" { return w_fifty(sense); }
+    ""
+}
+
+fn through_w_finger(term: str, sense: i64) -> str {
+    if term == "fig" { return w_fig(sense); }
+    if term == "fight" { return w_fight(sense); }
+    if term == "fighting" { return w_fighting(sense); }
+    if term == "figure" { return w_figure(sense); }
+    if term == "file" { return w_file(sense); }
+    if term == "fill" { return w_fill(sense); }
+    if term == "filled" { return w_filled(sense); }
+    if term == "film" { return w_film(sense); }
+    if term == "final" { return w_final(sense); }
+    if term == "finally" { return w_finally(sense); }
+    if term == "finance" { return w_finance(sense); }
+    if term == "financial" { return w_financial(sense); }
+    if term == "find" { return w_find(sense); }
+    if term == "find out" { return w_find_out(sense); }
+    if term == "finding" { return w_finding(sense); }
+    if term == "finger" { return w_finger(sense); }
+    ""
+}
+
+fn through_w_float(term: str, sense: i64) -> str {
+    if term == "finish" { return w_finish(sense); }
+    if term == "fire" { return w_fire(sense); }
+    if term == "firm" { return w_firm(sense); }
+    if term == "first" { return w_first(sense); }
+    if term == "fist" { return w_fist(sense); }
+    if term == "fit" { return w_fit(sense); }
+    if term == "five" { return w_five(sense); }
+    if term == "fix" { return w_fix(sense); }
+    if term == "fixed" { return w_fixed(sense); }
+    if term == "flag" { return w_flag(sense); }
+    if term == "flash" { return w_flash(sense); }
+    if term == "flat" { return w_flat(sense); }
+    if term == "flee" { return w_flee(sense); }
+    if term == "flesh" { return w_flesh(sense); }
+    if term == "flight" { return w_flight(sense); }
+    if term == "float" { return w_float(sense); }
+    ""
+}
+
+fn through_w_for_example(term: str, sense: i64) -> str {
+    if term == "flood" { return w_flood(sense); }
+    if term == "floor" { return w_floor(sense); }
+    if term == "flow" { return w_flow(sense); }
+    if term == "flower" { return w_flower(sense); }
+    if term == "fluid" { return w_fluid(sense); }
+    if term == "flux" { return w_flux(sense); }
+    if term == "fly" { return w_fly(sense); }
+    if term == "focus" { return w_focus(sense); }
+    if term == "fog" { return w_fog(sense); }
+    if term == "folklore" { return w_folklore(sense); }
+    if term == "follow" { return w_follow(sense); }
+    if term == "following" { return w_following(sense); }
+    if term == "food" { return w_food(sense); }
+    if term == "fool" { return w_fool(sense); }
+    if term == "foot" { return w_foot(sense); }
+    if term == "for example" { return w_for_example(sense); }
+    ""
+}
+
+fn through_w_freedom(term: str, sense: i64) -> str {
+    if term == "for instance" { return w_for_instance(sense); }
+    if term == "force" { return w_force(sense); }
+    if term == "foreign" { return w_foreign(sense); }
+    if term == "forest" { return w_forest(sense); }
+    if term == "forget" { return w_forget(sense); }
+    if term == "forgive" { return w_forgive(sense); }
+    if term == "form" { return w_form(sense); }
+    if term == "formation" { return w_formation(sense); }
+    if term == "former" { return w_former(sense); }
+    if term == "forward" { return w_forward(sense); }
+    if term == "four" { return w_four(sense); }
+    if term == "fourth" { return w_fourth(sense); }
+    if term == "fraction" { return w_fraction(sense); }
+    if term == "frame" { return w_frame(sense); }
+    if term == "free" { return w_free(sense); }
+    if term == "freedom" { return w_freedom(sense); }
+    ""
+}
+
+fn through_w_future(term: str, sense: i64) -> str {
+    if term == "frequency" { return w_frequency(sense); }
+    if term == "frequently" { return w_frequently(sense); }
+    if term == "fresh" { return w_fresh(sense); }
+    if term == "friend" { return w_friend(sense); }
+    if term == "friendly" { return w_friendly(sense); }
+    if term == "front" { return w_front(sense); }
+    if term == "full" { return w_full(sense); }
+    if term == "fully" { return w_fully(sense); }
+    if term == "function" { return w_function(sense); }
+    if term == "fund" { return w_fund(sense); }
+    if term == "funny" { return w_funny(sense); }
+    if term == "furnish" { return w_furnish(sense); }
+    if term == "further" { return w_further(sense); }
+    if term == "future" { return w_future(sense); }
+    ""
+}
+
+pub fn lookup_f(term: str, sense: i64) -> str {
+    if term <= "fashion" { return through_w_fashion(term, sense); }
+    if term <= "fifty" { return through_w_fifty(term, sense); }
+    if term <= "finger" { return through_w_finger(term, sense); }
+    if term <= "float" { return through_w_float(term, sense); }
+    if term <= "for example" { return through_w_for_example(term, sense); }
+    if term <= "freedom" { return through_w_freedom(term, sense); }
+    through_w_future(term, sense)
+}
+
+pub fn words_f() -> str {
+    "face|facility|fact|factor|fail|failure|fairly|faith|fall|familiar|family|famous|far|farm|farmer|fashion|fast|fat|father|favor|fear|feature|federal|feed|feel|feeling|fellow|female|fence|few|field|fifty|fig|fight|fighting|figure|file|fill|filled|film|final|finally|finance|financial|find|find out|finding|finger|finish|fire|firm|first|fist|fit|five|fix|fixed|flag|flash|flat|flee|flesh|flight|float|flood|floor|flow|flower|fluid|flux|fly|focus|fog|folklore|follow|following|food|fool|foot|for example|for instance|force|foreign|forest|forget|forgive|form|formation|former|forward|four|fourth|fraction|frame|free|freedom|frequency|frequently|fresh|friend|friendly|front|full|fully|function|fund|funny|furnish|further|future"
+}

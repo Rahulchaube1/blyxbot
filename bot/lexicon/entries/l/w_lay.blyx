@@ -1,0 +1,29 @@
+// lay — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lay(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01494310
+    if sense == 1 {
+        return "verb\tput into a certain place or abstract location\tput, set, place, pose, position\t";
+    }
+    // verb 01544692
+    if sense == 2 {
+        return "verb\tput in a horizontal position\tput down, repose\tlay the books on the table";
+    }
+    // verb 01651972
+    if sense == 3 {
+        return "verb\tprepare or position for action or operation\t\tlay a fire";
+    }
+    // verb 01545079
+    if sense == 4 {
+        return "verb\tlay eggs\t\tThis hen doesn't lay";
+    }
+    // verb 02307261
+    if sense == 5 {
+        return "verb\timpose as a duty, burden, or punishment\t\tlay a responsibility on someone";
+    }
+    // adj 02057226
+    if sense == 6 {
+        return "adjective\tcharacteristic of those who are not members of the clergy\tlaic, secular\tthe lay ministry";
+    }
+    ""
+}

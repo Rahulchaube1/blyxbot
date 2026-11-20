@@ -1,0 +1,25 @@
+// general — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_general(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01101391
+    if sense == 1 {
+        return "adjective\tapplying to all or most members of a category or group\t\tthe general public";
+    }
+    // noun 10123844
+    if sense == 2 {
+        return "noun\ta general officer of the highest rank\tfull general\t";
+    }
+    // adj 00783840
+    if sense == 3 {
+        return "adjective\tnot specialized or limited to one class of things\t\tgeneral studies";
+    }
+    // verb 00752193
+    if sense == 4 {
+        return "verb\tcommand as a general\t\tWe are generaled by an incompetent!";
+    }
+    // adj 00487198
+    if sense == 5 {
+        return "adjective\tprevailing among and common to the general public\t\tthe general discontent";
+    }
+    ""
+}

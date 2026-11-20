@@ -1,0 +1,13 @@
+// phone — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_phone(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 04401088
+    if sense == 1 {
+        return "noun\telectronic equipment that converts sound into electrical signals that can be transmitted over distances and then converts received signals back into sounds\ttelephone, telephone set\t";
+    }
+    // verb 00789448
+    if sense == 2 {
+        return "verb\tget or try to get into communication (with someone) by telephone\tcall, telephone, call up, ring\t";
+    }
+    ""
+}

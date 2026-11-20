@@ -1,0 +1,13 @@
+// exception — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_exception(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05707269
+    if sense == 1 {
+        return "noun\ta deliberate act of omission\texclusion, elision\twith the exception of the children, everyone was told the news";
+    }
+    // noun 05821246
+    if sense == 2 {
+        return "noun\tan instance that does not conform to a rule or generalization\t\tall her children were brilliant; the only exception was her last child";
+    }
+    ""
+}

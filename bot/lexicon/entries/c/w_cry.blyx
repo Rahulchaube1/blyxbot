@@ -1,0 +1,37 @@
+// cry — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cry(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00913065
+    if sense == 1 {
+        return "verb\tutter a sudden loud cry\tshout, shout out, call, yell, scream, holler, hollo, squall\tshe cried with pain when the doctor inserted the needle";
+    }
+    // noun 07120524
+    if sense == 2 {
+        return "noun\ta loud utterance; often in protest or opposition\toutcry, call, yell, shout, vociferation\tthe speaker was interrupted by loud cries from the rear of the audience";
+    }
+    // verb 00066191
+    if sense == 3 {
+        return "verb\tshed tears because of sadness, rage, or pain\tweep\tShe cried bitterly when she heard the news of his death";
+    }
+    // verb 00912048
+    if sense == 4 {
+        return "verb\tutter aloud; often with surprise, horror, or joy\texclaim, cry out, outcry, call out, shout\t`Help!' she cried";
+    }
+    // noun 07121157
+    if sense == 5 {
+        return "noun\ta loud utterance of emotion (especially when inarticulate)\tyell\ta cry of rage";
+    }
+    // verb 00974786
+    if sense == 6 {
+        return "verb\tproclaim or announce in public\tblazon out\tbefore we had newspapers, a town crier would cry the news";
+    }
+    // noun 07152752
+    if sense == 7 {
+        return "noun\ta slogan used to rally support for a cause\twar cry, rallying cry, battle cry, watchword\ta cry to arms";
+    }
+    // noun 07014752
+    if sense == 8 {
+        return "noun\ta fit of weeping\t\thad a good cry";
+    }
+    ""
+}

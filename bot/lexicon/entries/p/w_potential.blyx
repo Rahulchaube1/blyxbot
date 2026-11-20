@@ -1,0 +1,17 @@
+// potential — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_potential(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14482620
+    if sense == 1 {
+        return "noun\tthe inherent capacity for coming into being\tpotentiality, potency\t";
+    }
+    // adj 00044353
+    if sense == 2 {
+        return "adjective\texisting in possibility\tpossible\ta potential problem";
+    }
+    // adj 01884176
+    if sense == 3 {
+        return "adjective\texpected to become or be; in prospect\tlikely\tpotential clients";
+    }
+    ""
+}

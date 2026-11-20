@@ -1,0 +1,9 @@
+// approximately — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_approximately(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00007015
+    if sense == 1 {
+        return "adverb\t(of quantities) imprecise but fairly close to correct\tabout, close to, just about, some, roughly, more or less, around, or so\tlasted approximately an hour";
+    }
+    ""
+}

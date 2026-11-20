@@ -1,0 +1,25 @@
+// extension — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_extension(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 15272382
+    if sense == 1 {
+        return "noun\ta mutually agreed delay in the date set for the completion of a job or payment of a debt\t\tthey applied for an extension of the loan";
+    }
+    // noun 00367768
+    if sense == 2 {
+        return "noun\tact of expanding in scope; making more widely available\t\textension of the program to all in need";
+    }
+    // noun 06253518
+    if sense == 3 {
+        return "noun\tthe spreading of something (a belief or practice) into new regions\tpropagation\t";
+    }
+    // noun 00886039
+    if sense == 4 {
+        return "noun\tan educational opportunity provided by colleges and universities to people who are not enrolled as regular students\textension service, university extension\t";
+    }
+    // noun 00369532
+    if sense == 5 {
+        return "noun\tact of stretching or straightening out a flexed limb\t\t";
+    }
+    ""
+}

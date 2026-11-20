@@ -1,0 +1,41 @@
+// score — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_score(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 05737153
+    if sense == 1 {
+        return "noun\ta number or letter indicating quality (especially of a student's performance)\tmark, grade\twhat was your score on your homework?";
+    }
+    // verb 01111816
+    if sense == 2 {
+        return "verb\tgain points in a game\thit, tally, rack up\tThe home team scored many times";
+    }
+    // verb 01275762
+    if sense == 3 {
+        return "verb\tmake small marks into the surface of\tnock, mark\tscore the clay before firing it";
+    }
+    // noun 06815714
+    if sense == 4 {
+        return "noun\ta written form of a musical composition; parts for different instruments appear on separate staves on large pages\tmusical score\the studied the score of the sonata";
+    }
+    // noun 13594585
+    if sense == 5 {
+        return "noun\ta number that expresses the accomplishment of a team or an individual in a game or contest\t\tthe score was 7 to 0";
+    }
+    // noun 08272652
+    if sense == 6 {
+        return "noun\ta set of twenty members\t\ta score were sent out but only one returned";
+    }
+    // verb 01004062
+    if sense == 7 {
+        return "verb\tmake underscoring marks\tmark\t";
+    }
+    // noun 09179382
+    if sense == 8 {
+        return "noun\tgrounds\taccount\the tried to blame the victim but his success on that score was doubtful";
+    }
+    // noun 05819338
+    if sense == 9 {
+        return "noun\tthe facts about an actual situation\t\the didn't know the score";
+    }
+    ""
+}

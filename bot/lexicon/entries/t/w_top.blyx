@@ -1,0 +1,41 @@
+// top — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_top(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 08663860
+    if sense == 1 {
+        return "noun\tthe upper part of anything\t\tthe mower cuts off the tops of the grass";
+    }
+    // noun 08663354
+    if sense == 2 {
+        return "noun\tthe highest or uppermost side of anything\ttop side, upper side, upside\tput your books on top of the desk";
+    }
+    // adj 02439949
+    if sense == 3 {
+        return "adjective\tsituated at the top or highest position\t\tthe top shelf";
+    }
+    // noun 08617963
+    if sense == 4 {
+        return "noun\tthe top or extreme point of something (usually a mountain or hill)\tpeak, crown, crest, tip, summit\t";
+    }
+    // noun 15256022
+    if sense == 5 {
+        return "noun\tthe first half of an inning; while the visiting team is at bat\ttop of the inning\ta relief pitcher took over in the top of the fifth";
+    }
+    // noun 13940456
+    if sense == 6 {
+        return "noun\tthe highest level or degree attainable; the highest stage of development\tacme, height, elevation, peak, pinnacle, summit, superlative, meridian, tiptop\tat the top of his profession";
+    }
+    // verb 02669081
+    if sense == 7 {
+        return "verb\tbe superior or better than some standard\texceed, transcend, overstep, pass, go past\tShe topped her performance of last year";
+    }
+    // noun 05037617
+    if sense == 8 {
+        return "noun\tthe greatest possible intensity\t\the screamed at the top of his lungs";
+    }
+    // verb 02081178
+    if sense == 9 {
+        return "verb\tpass by, over, or under without making contact\tclear\tthe balloon cleared the tree tops";
+    }
+    ""
+}

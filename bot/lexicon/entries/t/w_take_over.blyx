@@ -1,0 +1,33 @@
+// take over — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_take_over(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 02274482
+    if sense == 1 {
+        return "verb\tseize and take control without authority and possibly with force; take as one's right or possession\tassume, usurp, seize, arrogate\t";
+    }
+    // verb 02381726
+    if sense == 2 {
+        return "verb\ttake on titles, offices, duties, responsibilities\tassume, adopt, take on\t";
+    }
+    // verb 02412175
+    if sense == 3 {
+        return "verb\tfree someone temporarily from his or her obligations\trelieve\t";
+    }
+    // verb 02301825
+    if sense == 4 {
+        return "verb\ttake on as one's own the expenses or debts of another person\tbear, accept, assume\t";
+    }
+    // verb 02274299
+    if sense == 5 {
+        return "verb\ttake over ownership of; of corporations and companies\tbuy out, buy up\t";
+    }
+    // verb 02595662
+    if sense == 6 {
+        return "verb\tdo over\trepeat\t";
+    }
+    // verb 02346724
+    if sense == 7 {
+        return "verb\ttake up and practice as one's own\tadopt, borrow, take up\t";
+    }
+    ""
+}

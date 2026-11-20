@@ -1,0 +1,25 @@
+// award — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_award(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 00087663
+    if sense == 1 {
+        return "noun\ta grant made by a law court\tawarding\the criticized the awarding of compensation by the court";
+    }
+    // noun 06696483
+    if sense == 2 {
+        return "noun\ta tangible symbol signifying approval or distinction\taccolade, honor, honour, laurels\tan award for bravery";
+    }
+    // verb 02261888
+    if sense == 3 {
+        return "verb\tgive, especially as an honor or reward\tpresent\t";
+    }
+    // noun 13268146
+    if sense == 4 {
+        return "noun\tsomething given for victory or superiority in a contest or competition or for winning a lottery\tprize\t";
+    }
+    // verb 02262278
+    if sense == 5 {
+        return "verb\tgive as judged due or on the basis of merit\tgrant\tthe referee awarded a free kick to the team";
+    }
+    ""
+}

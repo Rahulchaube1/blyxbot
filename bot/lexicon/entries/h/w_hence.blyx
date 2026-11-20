@@ -1,0 +1,9 @@
+// hence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hence(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00043003
+    if sense == 1 {
+        return "adverb\t(used to introduce a logical conclusion) from that fact or reason or as a result\ttherefore, thence, thus, so\tthe eggs were fresh and hence satisfactory";
+    }
+    ""
+}

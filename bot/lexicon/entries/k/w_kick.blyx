@@ -1,0 +1,25 @@
+// kick — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_kick(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01371756
+    if sense == 1 {
+        return "verb\tdrive or propel with the foot\t\t";
+    }
+    // verb 01936233
+    if sense == 2 {
+        return "verb\tthrash about or strike out with the feet\t\t";
+    }
+    // verb 01370561
+    if sense == 3 {
+        return "verb\tstrike with the foot\t\tThe boy kicked the dog";
+    }
+    // noun 00136329
+    if sense == 4 {
+        return "noun\tthe act of delivering a blow with the foot\tboot, kicking\the gave the ball a powerful kick";
+    }
+    // noun 07528470
+    if sense == 5 {
+        return "noun\tthe swift release of a store of affective force\tbang, boot, charge, rush, flush, thrill\the does it for kicks";
+    }
+    ""
+}

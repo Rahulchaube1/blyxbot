@@ -1,0 +1,21 @@
+// undertake — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_undertake(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01651293
+    if sense == 1 {
+        return "verb\tenter upon an activity or enterprise\tset about, attempt\t";
+    }
+    // verb 02569630
+    if sense == 2 {
+        return "verb\taccept as a challenge\ttackle, take on\t";
+    }
+    // verb 00889555
+    if sense == 3 {
+        return "verb\tpromise to do or accomplish\tguarantee\t";
+    }
+    // verb 00888786
+    if sense == 4 {
+        return "verb\tenter into a contractual arrangement\tcontract\t";
+    }
+    ""
+}

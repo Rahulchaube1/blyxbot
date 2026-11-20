@@ -1,0 +1,9 @@
+// cooperate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cooperate(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 02416278
+    if sense == 1 {
+        return "verb\twork together on a common enterprise of project\tcollaborate, join forces, get together\t";
+    }
+    ""
+}

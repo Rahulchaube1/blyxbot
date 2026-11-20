@@ -1,0 +1,17 @@
+// words — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_words(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 07109730
+    if sense == 1 {
+        return "noun\tthe words that are spoken\t\tI listened to his words very closely";
+    }
+    // noun 07051975
+    if sense == 2 {
+        return "noun\tthe text of a popular song or musical-comedy number\tlyric, language\the wrote both words and music";
+    }
+    // noun 06283764
+    if sense == 3 {
+        return "noun\tlanguage that is spoken or written\t\the has a gift for words";
+    }
+    ""
+}

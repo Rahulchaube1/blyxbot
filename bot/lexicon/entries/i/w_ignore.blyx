@@ -1,0 +1,21 @@
+// ignore — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ignore(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01059564
+    if sense == 1 {
+        return "verb\trefuse to acknowledge\tdisregard, snub, cut\t";
+    }
+    // verb 00800930
+    if sense == 2 {
+        return "verb\tbar from attention or consideration\tdismiss, disregard, brush aside, brush off, discount, push aside\t";
+    }
+    // verb 02119241
+    if sense == 3 {
+        return "verb\tfail to notice\t\t";
+    }
+    // verb 00616857
+    if sense == 4 {
+        return "verb\tgive little or no attention to\tneglect, disregard\t";
+    }
+    ""
+}

@@ -1,0 +1,45 @@
+// thing — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_thing(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 13943968
+    if sense == 1 {
+        return "noun\ta special situation\t\tthis thing has got to end";
+    }
+    // noun 00034479
+    if sense == 2 {
+        return "noun\tan action\t\thow could you do such a thing?";
+    }
+    // noun 05855004
+    if sense == 3 {
+        return "noun\ta special abstraction\t\ta thing of the spirit";
+    }
+    // noun 04424218
+    if sense == 4 {
+        return "noun\tan artifact\t\thow does this thing work?";
+    }
+    // noun 07289831
+    if sense == 5 {
+        return "noun\tan event\t\ta funny thing happened on the way to the...";
+    }
+    // noun 05671325
+    if sense == 6 {
+        return "noun\ta vaguely specified concern\tmatter, affair\tthings are going well";
+    }
+    // noun 06723908
+    if sense == 7 {
+        return "noun\ta statement regarded as an object\t\tto say the same thing in other terms";
+    }
+    // noun 04424418
+    if sense == 8 {
+        return "noun\tan entity that is not named specifically\t\tI couldn't tell what the thing was";
+    }
+    // noun 04617289
+    if sense == 9 {
+        return "noun\tany attribute or quality considered as having its own existence\t\tthe thing I like about her is ...";
+    }
+    // noun 05984182
+    if sense == 10 {
+        return "noun\ta special objective\t\tthe thing is to stay in bounds";
+    }
+    ""
+}

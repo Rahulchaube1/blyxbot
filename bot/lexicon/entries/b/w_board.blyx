@@ -1,0 +1,25 @@
+// board — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_board(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 08322981
+    if sense == 1 {
+        return "noun\ta committee having supervisory powers\t\tthe board has seven members";
+    }
+    // noun 15101854
+    if sense == 2 {
+        return "noun\ta stout length of sawn timber; made in a wide variety of sizes and used for many purposes\tplank\t";
+    }
+    // verb 02018049
+    if sense == 3 {
+        return "verb\tget on board of (trains, buses, ships, aircraft, etc.)\tget on\t";
+    }
+    // noun 02856463
+    if sense == 4 {
+        return "noun\ta flat piece of material designed for a special purpose\t\the nailed boards across the windows";
+    }
+    // verb 02656763
+    if sense == 5 {
+        return "verb\tlive and take one's meals at or in\troom\tshe rooms in an old boarding house";
+    }
+    ""
+}

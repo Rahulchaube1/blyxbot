@@ -1,0 +1,25 @@
+// kill — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_kill(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 01323958
+    if sense == 1 {
+        return "verb\tcause to die; put to death, usually intentionally or knowingly\t\tThis man killed several people when he tried to rob a bank";
+    }
+    // noun 00219012
+    if sense == 2 {
+        return "noun\tthe act of terminating a life\tkilling, putting to death\t";
+    }
+    // noun 00217593
+    if sense == 3 {
+        return "noun\tthe destruction of an enemy plane or ship or tank or missile\t\tthe pilot reported two kills during the mission";
+    }
+    // verb 02473688
+    if sense == 4 {
+        return "verb\tthwart the passage of\tshoot down, defeat, vote down, vote out\tkill a motion";
+    }
+    // verb 00355038
+    if sense == 5 {
+        return "verb\tend or extinguish by forceful means\tstamp out\t";
+    }
+    ""
+}

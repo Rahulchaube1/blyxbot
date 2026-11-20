@@ -1,0 +1,17 @@
+// depth — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_depth(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 05134547
+    if sense == 1 {
+        return "noun\tthe extent downward or backward or inward\tdeepness\tthe depth of the water";
+    }
+    // noun 05094725
+    if sense == 2 {
+        return "noun\tdegree of psychological or intellectual profundity\t\t";
+    }
+    // noun 08500213
+    if sense == 3 {
+        return "noun\t(usually plural) the deepest and most remote part\t\tfrom the depths of darkest Africa";
+    }
+    ""
+}

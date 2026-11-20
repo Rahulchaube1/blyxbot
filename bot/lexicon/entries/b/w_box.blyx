@@ -1,0 +1,25 @@
+// box — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_box(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 02883344
+    if sense == 1 {
+        return "noun\ta (usually rectangular) container; may have a lid\t\the rummaged through a box of spare parts";
+    }
+    // noun 02884225
+    if sense == 2 {
+        return "noun\tprivate area in a theater or grandstand where a small group can watch the performance\tloge\tthe royal box was empty";
+    }
+    // noun 13765624
+    if sense == 3 {
+        return "noun\tthe quantity contained in a box\tboxful\the gave her a box of chocolates";
+    }
+    // noun 14408951
+    if sense == 4 {
+        return "noun\ta predicament from which a skillful or graceful escape is impossible\tcorner\t";
+    }
+    // verb 01485158
+    if sense == 5 {
+        return "verb\tput into a box\tpackage\tbox the gift, please";
+    }
+    ""
+}

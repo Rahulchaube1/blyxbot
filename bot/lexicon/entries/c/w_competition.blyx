@@ -1,0 +1,17 @@
+// competition — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_competition(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 13837009
+    if sense == 1 {
+        return "noun\ta business relation in which two parties compete to gain customers\t\tbusiness competition can be fiendish at times";
+    }
+    // noun 07456188
+    if sense == 2 {
+        return "noun\tan occasion on which a winner is selected from among two or more contestants\tcontest\t";
+    }
+    // noun 01168569
+    if sense == 3 {
+        return "noun\tthe act of competing as for profit or a prize\tcontention, rivalry\t";
+    }
+    ""
+}

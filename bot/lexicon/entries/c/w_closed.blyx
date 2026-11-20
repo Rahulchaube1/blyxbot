@@ -1,0 +1,25 @@
+// closed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_closed(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01653538
+    if sense == 1 {
+        return "adjective\tnot open or affording passage or access\t\tthe many closed streets made travel difficult";
+    }
+    // adj 01660135
+    if sense == 2 {
+        return "adjective\t(set theory) of an interval that contains both its endpoints\t\t";
+    }
+    // adj 01652782
+    if sense == 3 {
+        return "adjective\tnot open\tshut, unopen\t";
+    }
+    // adj 01655162
+    if sense == 4 {
+        return "adjective\tused especially of mouth or eyes\tshut\the sat quietly with closed eyes";
+    }
+    // adj 02474377
+    if sense == 5 {
+        return "adjective\trequiring union membership\t\ta closed shop";
+    }
+    ""
+}

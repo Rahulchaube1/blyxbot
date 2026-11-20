@@ -1,0 +1,49 @@
+// still — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_still(sense: i64) -> str {
+    if sense == 0 { return "11"; }
+    // adv 00031304
+    if sense == 1 {
+        return "adverb\twith reference to action or condition; without change, interruption, or cessation\t\tit's still warm outside";
+    }
+    // adv 00027384
+    if sense == 2 {
+        return "adverb\tdespite anything to the contrary (usually following a concession)\thowever, nevertheless, withal, yet, all the same, even so, nonetheless, notwithstanding\tgranted that it is dangerous, all the same I still want to go";
+    }
+    // adv 00017639
+    if sense == 3 {
+        return "adverb\tto a greater degree or extent; used with comparisons\teven, yet\tan even (or still) more interesting problem";
+    }
+    // adj 01564315
+    if sense == 4 {
+        return "adjective\tnot in physical motion\tinactive, motionless, static\t";
+    }
+    // adj 01919428
+    if sense == 5 {
+        return "adjective\tmarked by absence of sound\tsilent, soundless\tthe night was still";
+    }
+    // adj 00302951
+    if sense == 6 {
+        return "adjective\t(of a body of water) free from disturbance by heavy waves\tplacid, quiet, tranquil, smooth, unruffled\tscarcely a ripple on the still water";
+    }
+    // adv 00467269
+    if sense == 7 {
+        return "adverb\twithout moving or making a sound\tstock-still\the sat still as a statue";
+    }
+    // noun 04319248
+    if sense == 8 {
+        return "noun\ta static photograph (especially one taken from a movie and used for advertising purposes)\t\the wanted some stills for a magazine ad";
+    }
+    // adj 01565751
+    if sense == 9 {
+        return "adjective\tused of pictures; of a single or static photograph not presented so as to create the illusion of motion; or representing objects not capable of motion\t\ta still photograph";
+    }
+    // verb 01764800
+    if sense == 10 {
+        return "verb\tmake calm or still\tcalm, calm down, quiet, tranquilize, tranquillize, tranquillise, quieten, lull\t";
+    }
+    // verb 00461493
+    if sense == 11 {
+        return "verb\tcause to be quiet or not talk\thush, quieten, silence, shut up, hush up\t";
+    }
+    ""
+}

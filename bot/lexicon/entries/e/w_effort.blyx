@@ -1,0 +1,17 @@
+// effort — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_effort(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 00786195
+    if sense == 1 {
+        return "noun\tearnest and conscientious activity intended to do or accomplish something\tattempt, endeavor, endeavour, try\tmade an effort to cover all the reading material";
+    }
+    // noun 00621627
+    if sense == 2 {
+        return "noun\tuse of physical or mental energy; hard work\telbow grease, exertion, travail, sweat\the got an A for effort";
+    }
+    // noun 00036762
+    if sense == 3 {
+        return "noun\ta notable achievement\tfeat, exploit\tthe book was her finest effort";
+    }
+    ""
+}

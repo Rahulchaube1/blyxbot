@@ -1,0 +1,125 @@
+// make — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_make(sense: i64) -> str {
+    if sense == 0 { return "30"; }
+    // verb 02560585
+    if sense == 1 {
+        return "verb\tengage in\tdo\tmake love, not war";
+    }
+    // verb 00120316
+    if sense == 2 {
+        return "verb\tgive certain properties to something\tget\tDon't make this into a big deal";
+    }
+    // verb 01617192
+    if sense == 3 {
+        return "verb\tmake or cause to be or to become\tcreate\tmake a mess in one's office";
+    }
+    // verb 00770437
+    if sense == 4 {
+        return "verb\tcause to do; cause to act in a specified manner\tinduce, stimulate, cause, have, get\t";
+    }
+    // verb 01645601
+    if sense == 5 {
+        return "verb\tgive rise to; cause to happen or occur, not always intentionally\tcause, do\tmake a stir";
+    }
+    // verb 01621555
+    if sense == 6 {
+        return "verb\tcreate or manufacture a man-made product\tproduce, create\tThe company has been making toys for two centuries";
+    }
+    // verb 00730758
+    if sense == 7 {
+        return "verb\tmake, formulate, or derive in the mind\tdraw\tmake an estimate";
+    }
+    // verb 01646075
+    if sense == 8 {
+        return "verb\tcompel or make somebody or something to act in a certain way\t\tHeat makes you sweat";
+    }
+    // verb 01640207
+    if sense == 9 {
+        return "verb\tcreate by artistic means\tcreate\t";
+    }
+    // verb 02289295
+    if sense == 10 {
+        return "verb\tearn on some commercial or business transaction; earn as salary or wages\tgain, take in, clear, earn, realize, realise, pull in, bring in\tHow much do you make a month in your new job?";
+    }
+    // verb 01619014
+    if sense == 11 {
+        return "verb\tcreate or design, often in a certain way\tdo\t";
+    }
+    // verb 02621395
+    if sense == 12 {
+        return "verb\tto compose or represent:\"This wall forms the background of the stage setting\"\tform, constitute\tThis makes a fine introduction";
+    }
+    // verb 02022162
+    if sense == 13 {
+        return "verb\treach a goal, e.g., \"make the first team\"\treach, get to, progress to\tShe may not make the grade";
+    }
+    // verb 02674708
+    if sense == 14 {
+        return "verb\tbe or be capable of being changed or made into\t\tHe makes a great host";
+    }
+    // verb 01653873
+    if sense == 15 {
+        return "verb\tmake by shaping or bringing together constituents\t\tmake a dress";
+    }
+    // verb 01755816
+    if sense == 16 {
+        return "verb\tperform or carry out\t\tmake a decision";
+    }
+    // verb 01654628
+    if sense == 17 {
+        return "verb\tmake by combining materials and parts\tconstruct, build\t";
+    }
+    // verb 00556855
+    if sense == 18 {
+        return "verb\tchange from one form into another\t\tmake water into wine";
+    }
+    // verb 00012267
+    if sense == 19 {
+        return "verb\tact in a certain way so as to acquire\t\tmake friends";
+    }
+    // verb 02396716
+    if sense == 20 {
+        return "verb\tcharge with a function; charge to be\tname, nominate\t";
+    }
+    // verb 02355596
+    if sense == 21 {
+        return "verb\tachieve a point or goal\thave, get\t";
+    }
+    // verb 02020590
+    if sense == 22 {
+        return "verb\treach a destination, either real or abstract\treach, attain, hit, arrive at, gain\t";
+    }
+    // verb 00665476
+    if sense == 23 {
+        return "verb\tinstitute, enact, or establish\tlay down, establish\tmake laws";
+    }
+    // verb 02582921
+    if sense == 24 {
+        return "verb\tcarry out or commit\t\tmake a mistake";
+    }
+    // verb 02598483
+    if sense == 25 {
+        return "verb\tform by assembling individuals or constituents\t\tMake a quorum";
+    }
+    // verb 01733477
+    if sense == 26 {
+        return "verb\torganize or be responsible for\thold, throw, have, give\thave, throw, or make a party";
+    }
+    // verb 00276068
+    if sense == 27 {
+        return "verb\tput in order or neaten\tmake up\tmake the bed";
+    }
+    // noun 05845140
+    if sense == 28 {
+        return "noun\ta recognizable kind\tbrand\twhat make of car is that?";
+    }
+    // verb 02075857
+    if sense == 29 {
+        return "verb\thead into a specified direction\ttake\t";
+    }
+    // verb 00074038
+    if sense == 30 {
+        return "verb\thave a bowel movement\tstool, defecate, shit, take a shit, take a crap, ca-ca, crap\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// restrict — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_restrict(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 00236592
+    if sense == 1 {
+        return "verb\tplace restrictions on\tcurtail, curb, cut back\t";
+    }
+    // verb 02509287
+    if sense == 2 {
+        return "verb\tplace under restrictions; limit access to\t\t";
+    }
+    // verb 00233335
+    if sense == 3 {
+        return "verb\tplace limits on (extent or access)\trestrain, trammel, limit, bound, confine, throttle\trestrict the use of this parking lot";
+    }
+    // verb 00199309
+    if sense == 4 {
+        return "verb\tmake more specific\tqualify\t";
+    }
+    ""
+}

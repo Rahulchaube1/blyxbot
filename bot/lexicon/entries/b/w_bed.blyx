@@ -1,0 +1,17 @@
+// bed — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_bed(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 02818832
+    if sense == 1 {
+        return "noun\ta piece of furniture that provides a place to sleep\t\the sat on the edge of the bed";
+    }
+    // noun 02819474
+    if sense == 2 {
+        return "noun\ta plot of ground in which plants are growing\t\tthe gardener planted a bed of roses";
+    }
+    // noun 09217638
+    if sense == 3 {
+        return "noun\ta depression forming the ground under a body of water\tbottom\the searched for treasure on the ocean bed";
+    }
+    ""
+}

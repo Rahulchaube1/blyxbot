@@ -1,0 +1,29 @@
+// attention — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_attention(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05702275
+    if sense == 1 {
+        return "noun\tthe process whereby a person concentrates on some features of the environment to the (relative) exclusion of others\tattending\t";
+    }
+    // noun 00654885
+    if sense == 2 {
+        return "noun\tthe work of providing treatment for or attending to someone or something\tcare, aid, tending\tthe old car needs constant attention";
+    }
+    // noun 05853636
+    if sense == 3 {
+        return "noun\ta general interest that leads people to want to know more\t\tShe was the center of attention";
+    }
+    // noun 01228645
+    if sense == 4 {
+        return "noun\ta courteous act indicating affection\t\tshe tried to win his heart with her many attentions";
+    }
+    // noun 05650579
+    if sense == 5 {
+        return "noun\tthe faculty or power of mental concentration\t\tkeeping track of all the details requires your complete attention";
+    }
+    // noun 05082790
+    if sense == 6 {
+        return "noun\ta motionless erect stance with arms at the sides and feet together; assumed by military personnel during drill or review\t\tthe troops stood at attention";
+    }
+    ""
+}

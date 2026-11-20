@@ -1,0 +1,13 @@
+// curious — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_curious(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00968010
+    if sense == 1 {
+        return "adjective\tbeyond or deviating from the usual or expected\tfunny, odd, peculiar, queer, rum, rummy, singular\ta curious hybrid accent";
+    }
+    // adj 00664449
+    if sense == 2 {
+        return "adjective\teager to investigate and learn or learn more (sometimes about others' concerns)\t\ta curious child is a teacher's delight";
+    }
+    ""
+}

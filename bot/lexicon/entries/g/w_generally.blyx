@@ -1,0 +1,17 @@
+// generally — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_generally(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00155621
+    if sense == 1 {
+        return "adverb\tusually; as a rule\tby and large, more often than not, mostly\t";
+    }
+    // adv 00041954
+    if sense == 2 {
+        return "adverb\twithout distinction of one from others\tin general, in the main\t";
+    }
+    // adv 00221583
+    if sense == 3 {
+        return "adverb\twithout regard to specific details or exceptions\tbroadly, loosely, broadly speaking\t";
+    }
+    ""
+}

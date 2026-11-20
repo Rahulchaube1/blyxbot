@@ -1,0 +1,21 @@
+// stem — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_stem(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 06300193
+    if sense == 1 {
+        return "noun\t(linguistics) the form of a word after all affixes are removed\troot, root word, base, theme, radical\tthematic vowels are part of the stem";
+    }
+    // verb 02627753
+    if sense == 2 {
+        return "verb\tgrow out of, have roots in, originate in\t\tThe increase in the national debt stems from the last war";
+    }
+    // noun 13129165
+    if sense == 3 {
+        return "noun\ta slender or elongated structure that supports a plant or fungus or a plant part or plant organ\tstalk\t";
+    }
+    // noun 04184095
+    if sense == 4 {
+        return "noun\tcylinder forming a long narrow part of something\tshank\t";
+    }
+    ""
+}

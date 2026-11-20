@@ -1,0 +1,33 @@
+// heavy — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_heavy(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // adj 01184932
+    if sense == 1 {
+        return "adjective\tof comparatively great physical weight or density\t\ta heavy load";
+    }
+    // adj 01190683
+    if sense == 2 {
+        return "adjective\tunusually great in degree or quantity or number\t\theavy taxes";
+    }
+    // adj 01193373
+    if sense == 3 {
+        return "adjective\tof the military or industry; using (or being) the heaviest and most powerful armaments or weapons or equipment\t\theavy artillery";
+    }
+    // adj 01188762
+    if sense == 4 {
+        return "adjective\tmarked by great psychological weight; weighted down especially with sadness or troubles or weariness\t\ta heavy heart";
+    }
+    // adj 00987769
+    if sense == 5 {
+        return "adjective\tusually describes a large person who is fat but has a large frame to carry it\tfleshy, overweight\t";
+    }
+    // adj 00502487
+    if sense == 6 {
+        return "adjective\t(used of soil) compact and fine-grained\tclayey, cloggy\tthe clayey soil was heavy and easily saturated";
+    }
+    // adj 00462409
+    if sense == 7 {
+        return "adjective\tdarkened by clouds\tlowering, sullen, threatening\ta heavy sky";
+    }
+    ""
+}

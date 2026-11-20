@@ -1,0 +1,17 @@
+// contain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_contain(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02629535
+    if sense == 1 {
+        return "verb\tinclude or contain; have as a component\tincorporate, comprise\tThe record contains many old songs from the 1930's";
+    }
+    // verb 02700867
+    if sense == 2 {
+        return "verb\tcontain or hold; have within\thold, bear, carry\tThis can contains water";
+    }
+    // verb 02510337
+    if sense == 3 {
+        return "verb\tlessen the intensity of; temper; hold in restraint; hold or keep within limits\tcontrol, hold in, hold, check, curb, moderate\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// disclose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_disclose(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00933821
+    if sense == 1 {
+        return "verb\tmake known to the public information that was previously known only to a few people or that was meant to be kept a secret\tunwrap, let on, bring out, reveal, discover, expose, divulge, break, give away, let out\tThe auction house would not disclose the price at which the van Gogh had sold";
+    }
+    // verb 02137710
+    if sense == 2 {
+        return "verb\tdisclose to view as by removing a cover\texpose\tThe curtain rose to disclose a stunning set";
+    }
+    ""
+}

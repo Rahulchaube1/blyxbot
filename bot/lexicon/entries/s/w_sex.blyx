@@ -1,0 +1,13 @@
+// sex — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sex(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 00844254
+    if sense == 1 {
+        return "noun\tactivities associated with sexual intercourse\tsexual activity, sexual practice, sex activity\tthey had sex in the back seat";
+    }
+    // noun 07999291
+    if sense == 2 {
+        return "noun\teither of the two categories (male or female) into which most organisms are divided\t\tthe war between the sexes";
+    }
+    ""
+}

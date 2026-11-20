@@ -1,0 +1,17 @@
+// listen — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_listen(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02169891
+    if sense == 1 {
+        return "verb\thear with intention\t\tListen to the sound of this cello";
+    }
+    // verb 02171039
+    if sense == 2 {
+        return "verb\tlisten and pay attention\thear, take heed\tListen to your father";
+    }
+    // verb 02571901
+    if sense == 3 {
+        return "verb\tpay close attention to; give heed to\theed, mind\t";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// let — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_let(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02423183
+    if sense == 1 {
+        return "verb\tmake it possible through a specific action or lack of action for something to happen\tallow, permit\t";
+    }
+    // verb 00771490
+    if sense == 2 {
+        return "verb\tactively cause something to happen\t\tI let it be known that I was not interested";
+    }
+    // verb 00802318
+    if sense == 3 {
+        return "verb\tconsent to, give permission\tpermit, allow, countenance\tI won't let the police search her basement";
+    }
+    // verb 00120796
+    if sense == 4 {
+        return "verb\tcause to move; cause to be in a certain position or condition\tget, have\tThis let me in for a big surprise";
+    }
+    // verb 00496673
+    if sense == 5 {
+        return "verb\tleave unchanged\t\tlet it be";
+    }
+    ""
+}

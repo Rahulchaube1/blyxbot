@@ -1,0 +1,13 @@
+// kiss — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_kiss(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01431230
+    if sense == 1 {
+        return "verb\ttouch with the lips or press the lips (against someone's mouth or other body part) as an expression of love, greeting, etc.\tsnog, buss, osculate\tThe newly married couple kissed";
+    }
+    // noun 00138221
+    if sense == 2 {
+        return "noun\tthe act of caressing with the lips (or an instance thereof)\tbuss, osculation\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// treatment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_treatment(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 00658082
+    if sense == 1 {
+        return "noun\tcare provided to improve a situation (especially medical procedures or applications that are intended to relieve illness or injury)\tintervention\t";
+    }
+    // noun 01134861
+    if sense == 2 {
+        return "noun\tthe management of someone or something\thandling\tthe treatment of water sewage";
+    }
+    // noun 04929976
+    if sense == 3 {
+        return "noun\ta manner of dealing with something artistically\t\this treatment of space borrows from Italian architecture";
+    }
+    // noun 07138085
+    if sense == 4 {
+        return "noun\tan extended communication (often interactive) dealing with some particular topic\tdiscussion, discourse\this treatment of the race question is badly biased";
+    }
+    ""
+}

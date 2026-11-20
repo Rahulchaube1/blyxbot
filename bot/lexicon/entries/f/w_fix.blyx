@@ -1,0 +1,45 @@
+// fix — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_fix(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 00260648
+    if sense == 1 {
+        return "verb\trestore by replacing a part or putting together what is torn or broken\trepair, mend, bushel, doctor, furbish up, restore, touch on\t";
+    }
+    // verb 01340439
+    if sense == 2 {
+        return "verb\tcause to be firmly attached\tfasten, secure\tshe fixed her gaze on the man";
+    }
+    // verb 00947077
+    if sense == 3 {
+        return "verb\tdecide upon or fix definitely\tspecify, set, determine, define, limit\tfix the variables";
+    }
+    // verb 01664172
+    if sense == 4 {
+        return "verb\tprepare for eating by applying heat\tcook, ready, make, prepare\tfix breakfast for the guests, please";
+    }
+    // verb 01153947
+    if sense == 5 {
+        return "verb\ttake vengeance on or get even\tpay back, pay off, get\tThat'll fix him good!";
+    }
+    // noun 14409489
+    if sense == 6 {
+        return "noun\tinformal terms for a difficult situation\thole, jam, mess, muddle, pickle, kettle of fish\the got into a terrible fix";
+    }
+    // verb 01647543
+    if sense == 7 {
+        return "verb\tset or place definitely\t\tLet's fix the date for the party!";
+    }
+    // verb 00407458
+    if sense == 8 {
+        return "verb\tkill, preserve, and harden (tissue) in order to prepare for microscopic study\t\t";
+    }
+    // verb 00486998
+    if sense == 9 {
+        return "verb\tmake fixed, stable or stationary\tfixate\tlet's fix the picture to the frame";
+    }
+    // verb 00061595
+    if sense == 10 {
+        return "verb\tmake infertile\tsterilize, sterilise, desex, unsex, desexualize, desexualise\t";
+    }
+    ""
+}

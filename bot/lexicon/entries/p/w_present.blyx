@@ -1,0 +1,61 @@
+// present — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_present(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // adj 01731351
+    if sense == 1 {
+        return "adjective\ttemporal sense; intermediate between past and future; now existing or happening or in consideration\t\tthe present leader";
+    }
+    // verb 02148788
+    if sense == 2 {
+        return "verb\tgive an exhibition of to an interested audience\tshow, demo, exhibit, demonstrate\t";
+    }
+    // adj 01846413
+    if sense == 3 {
+        return "adjective\tbeing or existing in a specified place\t\tthe murderer is present in this room";
+    }
+    // verb 00772967
+    if sense == 4 {
+        return "verb\tbring forward and present to the mind\trepresent, lay out\tWe presented the arguments to him";
+    }
+    // noun 15119536
+    if sense == 5 {
+        return "noun\tthe period of time that is happening now; any continuous stretch of time including the moment of speech\tnowadays\tthat is enough for the present";
+    }
+    // verb 01711445
+    if sense == 6 {
+        return "verb\tperform (a play), especially on a stage\tstage, represent\t";
+    }
+    // verb 02262752
+    if sense == 7 {
+        return "verb\thand over formally\tsubmit\t";
+    }
+    // verb 02722663
+    if sense == 8 {
+        return "verb\tintroduce\tpose\t";
+    }
+    // noun 13268842
+    if sense == 9 {
+        return "noun\tsomething presented as a gift\t\this tie was a present from his wife";
+    }
+    // verb 02261888
+    if sense == 10 {
+        return "verb\tgive, especially as an honor or reward\taward\t";
+    }
+    // verb 02200686
+    if sense == 11 {
+        return "verb\tgive as a present; make a gift of\tgive, gift\t";
+    }
+    // verb 00989602
+    if sense == 12 {
+        return "verb\tdeliver (a speech, oration, or idea)\tdeliver\tThe commencement speaker presented a forceful speech that impressed the students";
+    }
+    // verb 00901103
+    if sense == 13 {
+        return "verb\tcause to come to know personally\tintroduce, acquaint\t";
+    }
+    // verb 01688771
+    if sense == 14 {
+        return "verb\trepresent abstractly, for example in a painting, drawing, or sculpture\tportray\t";
+    }
+    ""
+}

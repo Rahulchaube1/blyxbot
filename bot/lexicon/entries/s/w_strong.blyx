@@ -1,0 +1,17 @@
+// strong — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_strong(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 02321009
+    if sense == 1 {
+        return "adjective\thaving strength or power greater than average or expected\t\ta strong radio signal";
+    }
+    // adj 01513512
+    if sense == 2 {
+        return "adjective\tnot faint or feeble\t\ta strong odor of burning rubber";
+    }
+    // adj 01826979
+    if sense == 3 {
+        return "adjective\thaving or wielding force or authority\tpotent\t";
+    }
+    ""
+}

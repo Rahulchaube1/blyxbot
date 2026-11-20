@@ -1,0 +1,13 @@
+// cease — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_cease(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 02680814
+    if sense == 1 {
+        return "verb\tput an end to a state or an activity\tdiscontinue, stop, give up, quit, lay off\t";
+    }
+    // verb 02609764
+    if sense == 2 {
+        return "verb\thave an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical\tend, stop, finish, terminate\t";
+    }
+    ""
+}

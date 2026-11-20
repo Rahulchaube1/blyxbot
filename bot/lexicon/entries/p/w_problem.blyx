@@ -1,0 +1,17 @@
+// problem — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_problem(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 14410605
+    if sense == 1 {
+        return "noun\ta state of difficulty that needs to be resolved\tjob\tshe and her husband are having problems";
+    }
+    // noun 06784003
+    if sense == 2 {
+        return "noun\ta question raised for consideration or solution\t\tour homework consisted of ten problems to solve";
+    }
+    // noun 05687338
+    if sense == 3 {
+        return "noun\ta source of difficulty\ttrouble\twhat's the problem?";
+    }
+    ""
+}

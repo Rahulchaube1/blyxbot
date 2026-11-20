@@ -1,0 +1,29 @@
+// connect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_connect(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 01354673
+    if sense == 1 {
+        return "verb\tconnect, fasten, or put together two or more pieces\tlink, tie, link up\tCan you connect the two loudspeakers?";
+    }
+    // verb 00713167
+    if sense == 2 {
+        return "verb\tmake a logical or causal connection\tassociate, tie in, relate, link, colligate, link up\tI cannot connect these two pieces of evidence in my mind";
+    }
+    // verb 02622234
+    if sense == 3 {
+        return "verb\tbe or become joined or united or linked\tlink, link up, join, unite\tThe two streets connect to become a highway";
+    }
+    // verb 01069391
+    if sense == 4 {
+        return "verb\tjoin by means of communication equipment\t\tThe telephone company finally put in lines to connect the towns in this area";
+    }
+    // verb 01237761
+    if sense == 5 {
+        return "verb\tland on or hit solidly\t\tThe brick connected on her head, knocking her out";
+    }
+    // verb 01069190
+    if sense == 6 {
+        return "verb\tjoin for the purpose of communication\t\tOperator, could you connect me to the Raffles in Singapore?";
+    }
+    ""
+}

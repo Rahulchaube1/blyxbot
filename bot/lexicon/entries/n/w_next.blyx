@@ -1,0 +1,21 @@
+// next — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_next(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 00127948
+    if sense == 1 {
+        return "adjective\timmediately following in time or order\tfollowing\tnext in line";
+    }
+    // adj 00447472
+    if sense == 2 {
+        return "adjective\tnearest in space or position; immediately adjoining without intervening space\tadjacent, side by side\tin the next room";
+    }
+    // adv 00054212
+    if sense == 3 {
+        return "adverb\tat the time or occasion immediately following\t\tnext the doctor examined his back";
+    }
+    // adj 01294975
+    if sense == 4 {
+        return "adjective\t(of elected officers) elected but not yet serving\tfuture, succeeding\tour next president";
+    }
+    ""
+}

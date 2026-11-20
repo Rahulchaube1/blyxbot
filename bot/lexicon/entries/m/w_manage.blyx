@@ -1,0 +1,25 @@
+// manage — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_manage(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02522864
+    if sense == 1 {
+        return "verb\tbe successful; achieve a goal\tpull off, negociate, bring off, carry off\tI managed to carry the box upstairs";
+    }
+    // verb 02436349
+    if sense == 2 {
+        return "verb\tbe in charge of, act on, or dispose of\tdeal, care, handle\tShe managed her parents' affairs after they got too old";
+    }
+    // verb 02587532
+    if sense == 3 {
+        return "verb\tcome to terms with\tcope, get by, make out, make do, contend, grapple, deal\t";
+    }
+    // verb 02443049
+    if sense == 4 {
+        return "verb\twatch and direct\toversee, supervise, superintend\t";
+    }
+    // verb 02527431
+    if sense == 5 {
+        return "verb\tachieve something by means of trickery or devious methods\twangle, finagle\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// commission — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_commission(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08324514
+    if sense == 1 {
+        return "noun\ta special group delegated to consider some matter\tcommittee\t";
+    }
+    // verb 02475401
+    if sense == 2 {
+        return "verb\tput into commission; equip for service; of ships\t\t";
+    }
+    // noun 13320860
+    if sense == 3 {
+        return "noun\ta fee for services rendered based on a percentage of an amount received or collected or agreed to be paid (as distinguished from a salary)\t\the works on commission";
+    }
+    // noun 01140471
+    if sense == 4 {
+        return "noun\tthe act of granting authority to undertake certain functions\tcommissioning\t";
+    }
+    ""
+}

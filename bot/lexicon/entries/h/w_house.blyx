@@ -1,0 +1,41 @@
+// house — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_house(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 03544360
+    if sense == 1 {
+        return "noun\ta dwelling that serves as living quarters for one or more families\t\the has a house on Cape Cod";
+    }
+    // verb 02701828
+    if sense == 2 {
+        return "verb\tcontain or cover\t\tThis box houses the gears";
+    }
+    // verb 02459173
+    if sense == 3 {
+        return "verb\tprovide housing for\tput up, domiciliate\tThe immigrants were housed in a new development outside the town";
+    }
+    // noun 08059870
+    if sense == 4 {
+        return "noun\tthe members of a business organization that owns or operates one or more establishments\tfirm, business firm\the worked for a brokerage house";
+    }
+    // noun 08224580
+    if sense == 5 {
+        return "noun\tthe members of a religious community living together\t\t";
+    }
+    // noun 08222966
+    if sense == 6 {
+        return "noun\tthe audience gathered together in a theatre or cinema\t\tthe house applauded";
+    }
+    // noun 08163025
+    if sense == 7 {
+        return "noun\tan official assembly having legislative powers\t\ta bicameral legislature has two houses";
+    }
+    // noun 07971449
+    if sense == 8 {
+        return "noun\taristocratic family line\t\tthe House of York";
+    }
+    // noun 00432164
+    if sense == 9 {
+        return "noun\tplay in which children take the roles of father or mother or children and pretend to interact like adults\t\tthe children were playing house";
+    }
+    ""
+}

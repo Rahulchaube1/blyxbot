@@ -1,0 +1,9 @@
+// recreation — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_recreation(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 00426928
+    if sense == 1 {
+        return "noun\tan activity that diverts or amuses or stimulates\tdiversion\tfor recreation he wrote poetry and solved crossword puzzles";
+    }
+    ""
+}

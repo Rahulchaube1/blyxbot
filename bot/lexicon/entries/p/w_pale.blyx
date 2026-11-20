@@ -1,0 +1,29 @@
+// pale — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_pale(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // adj 00408992
+    if sense == 1 {
+        return "adjective\tvery light colored; highly diluted with white\t\tpale seagreen";
+    }
+    // adj 02325984
+    if sense == 2 {
+        return "adjective\t(of light) lacking in intensity or brightness; dim or feeble\tpallid, wan, sick\tthe pale light of a half moon";
+    }
+    // adj 00408445
+    if sense == 3 {
+        return "adjective\tlacking in vitality or interest or effectiveness\tpallid\ta pale rendition of the aria";
+    }
+    // adj 00405879
+    if sense == 4 {
+        return "adjective\tabnormally deficient in color as suggesting physical or emotional distress\tpallid, wan\t";
+    }
+    // noun 03929952
+    if sense == 5 {
+        return "noun\ta wooden strip forming part of a fence\tpicket\t";
+    }
+    // verb 00103619
+    if sense == 6 {
+        return "verb\tturn pale, as if in fear\tblanch, blench\t";
+    }
+    ""
+}

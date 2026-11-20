@@ -1,0 +1,41 @@
+// Compiled word index. The entry modules hold the dictionary content.
+use entries::k::w_keep;
+use entries::k::w_key;
+use entries::k::w_kick;
+use entries::k::w_kid;
+use entries::k::w_kill;
+use entries::k::w_kind;
+use entries::k::w_king;
+use entries::k::w_kiss;
+use entries::k::w_kitchen;
+use entries::k::w_knee;
+use entries::k::w_knock;
+use entries::k::w_know;
+use entries::k::w_knowledge;
+use entries::k::w_known;
+
+fn through_w_known(term: str, sense: i64) -> str {
+    if term == "keep" { return w_keep(sense); }
+    if term == "key" { return w_key(sense); }
+    if term == "kick" { return w_kick(sense); }
+    if term == "kid" { return w_kid(sense); }
+    if term == "kill" { return w_kill(sense); }
+    if term == "kind" { return w_kind(sense); }
+    if term == "king" { return w_king(sense); }
+    if term == "kiss" { return w_kiss(sense); }
+    if term == "kitchen" { return w_kitchen(sense); }
+    if term == "knee" { return w_knee(sense); }
+    if term == "knock" { return w_knock(sense); }
+    if term == "know" { return w_know(sense); }
+    if term == "knowledge" { return w_knowledge(sense); }
+    if term == "known" { return w_known(sense); }
+    ""
+}
+
+pub fn lookup_k(term: str, sense: i64) -> str {
+    through_w_known(term, sense)
+}
+
+pub fn words_k() -> str {
+    "keep|key|kick|kid|kill|kind|king|kiss|kitchen|knee|knock|know|knowledge|known"
+}

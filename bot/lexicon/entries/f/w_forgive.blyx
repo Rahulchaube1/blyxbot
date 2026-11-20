@@ -1,0 +1,13 @@
+// forgive — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_forgive(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 00903385
+    if sense == 1 {
+        return "verb\tstop blaming or grant forgiveness\t\tShe cannot forgive him for forgetting her birthday";
+    }
+    // verb 02564426
+    if sense == 2 {
+        return "verb\tabsolve from payment\t\tI forgive you your debt";
+    }
+    ""
+}

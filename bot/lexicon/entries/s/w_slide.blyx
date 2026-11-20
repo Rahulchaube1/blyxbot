@@ -1,0 +1,37 @@
+// slide — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_slide(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 01870275
+    if sense == 1 {
+        return "verb\tmove obliquely or sideways, usually in an uncontrolled manner\tskid, slip, slue, slew\t";
+    }
+    // verb 01886488
+    if sense == 2 {
+        return "verb\tto pass or move unobtrusively or smoothly\tslither\t";
+    }
+    // verb 02090990
+    if sense == 3 {
+        return "verb\tmove smoothly along a surface\t\t";
+    }
+    // noun 04237924
+    if sense == 4 {
+        return "noun\ta small flat rectangular piece of glass on which specimens can be mounted for microscopic study\tmicroscope slide\t";
+    }
+    // noun 07404944
+    if sense == 5 {
+        return "noun\t(geology) the descent of a large mass of earth or rocks or snow etc.\t\t";
+    }
+    // noun 06857264
+    if sense == 6 {
+        return "noun\t(music) rapid sliding up or down the musical scale\tswoop\tthe violinist was indulgent with his swoops and slides";
+    }
+    // noun 04238128
+    if sense == 7 {
+        return "noun\tplaything consisting of a sloping chute down which children can slide\tplayground slide, sliding board\t";
+    }
+    // noun 00328502
+    if sense == 8 {
+        return "noun\tthe act of moving smoothly along a surface while remaining in contact with it\tglide, coast\this slide didn't stop until the bottom of the hill";
+    }
+    ""
+}

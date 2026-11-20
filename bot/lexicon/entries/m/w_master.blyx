@@ -1,0 +1,41 @@
+// master — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_master(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // noun 10280130
+    if sense == 1 {
+        return "noun\tan artist of consummate skill\tmaestro\ta master of the violin";
+    }
+    // noun 10388440
+    if sense == 2 {
+        return "noun\ta person who has general authority over others\toverlord, lord\t";
+    }
+    // verb 00597634
+    if sense == 3 {
+        return "verb\tbe or become completely proficient or skilled in\tget the hang\tShe mastered Japanese in less than two years";
+    }
+    // verb 01108627
+    if sense == 4 {
+        return "verb\tget on top of; deal with successfully\tovercome, get over, subdue, surmount\t";
+    }
+    // noun 10752930
+    if sense == 5 {
+        return "noun\ta combatant who is able to defeat rivals\tvictor, superior\t";
+    }
+    // noun 10298647
+    if sense == 6 {
+        return "noun\tdirects the work of others\t\t";
+    }
+    // noun 10164233
+    if sense == 7 {
+        return "noun\tpresiding officer of a school\theadmaster, schoolmaster\t";
+    }
+    // noun 03727274
+    if sense == 8 {
+        return "noun\tan original creation (i.e., an audio recording) from which copies can be made\tmaster copy, original\t";
+    }
+    // verb 02539334
+    if sense == 9 {
+        return "verb\thave dominance or the power to defeat over\tdominate\tHer pain completely mastered her";
+    }
+    ""
+}

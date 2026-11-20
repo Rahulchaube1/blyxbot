@@ -1,0 +1,21 @@
+// today — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_today(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 15262921
+    if sense == 1 {
+        return "noun\tthe present time or age\t\tthe world of today";
+    }
+    // adv 00048475
+    if sense == 2 {
+        return "adverb\tin these times\tnowadays, now\ttoday almost every home has television";
+    }
+    // noun 15156001
+    if sense == 3 {
+        return "noun\tthe day that includes the present moment (as opposed to yesterday or tomorrow)\t\tToday is beautiful";
+    }
+    // adv 00207366
+    if sense == 4 {
+        return "adverb\ton this day as distinct from yesterday or tomorrow\t\tI can't meet with you today";
+    }
+    ""
+}

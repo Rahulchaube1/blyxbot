@@ -1,0 +1,37 @@
+// test — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_test(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02531625
+    if sense == 1 {
+        return "verb\tput to the test, as for its quality, or give experimental use to\tprove, try, try out, examine, essay\tTest this recipe";
+    }
+    // noun 05799212
+    if sense == 2 {
+        return "noun\ttrying something to find out about it\ttrial, trial run, tryout\t";
+    }
+    // verb 02533109
+    if sense == 3 {
+        return "verb\ttest or examine for the presence of disease or infection\tscreen\t";
+    }
+    // noun 01006675
+    if sense == 4 {
+        return "noun\tany standardized procedure for measuring sensitivity or memory or intelligence or aptitude or personality etc\tmental test, mental testing, psychometric test\tthe test was standardized on a large sample of students";
+    }
+    // verb 00786458
+    if sense == 5 {
+        return "verb\texamine someone's knowledge of something\tquiz\tThe teacher tests us every week";
+    }
+    // noun 07197021
+    if sense == 6 {
+        return "noun\ta set of questions or exercises evaluating skill or knowledge\texamination, exam\twhen the test was stolen the professor had to make a new set of questions";
+    }
+    // noun 00794367
+    if sense == 7 {
+        return "noun\tthe act of undergoing testing\ttrial\the survived the great test of battle";
+    }
+    // noun 00791078
+    if sense == 8 {
+        return "noun\tthe act of testing something\ttrial, run\t";
+    }
+    ""
+}

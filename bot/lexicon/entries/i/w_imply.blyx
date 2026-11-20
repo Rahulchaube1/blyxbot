@@ -1,0 +1,17 @@
+// imply — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_imply(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00929839
+    if sense == 1 {
+        return "verb\texpress or state indirectly\tconnote\t";
+    }
+    // verb 00930599
+    if sense == 2 {
+        return "verb\tsuggest as a logically necessary consequence; in logic\t\t";
+    }
+    // verb 02635189
+    if sense == 3 {
+        return "verb\thave as a logical consequence\tentail, mean\t";
+    }
+    ""
+}

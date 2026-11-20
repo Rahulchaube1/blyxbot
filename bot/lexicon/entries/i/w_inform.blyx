@@ -1,0 +1,17 @@
+// inform — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_inform(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 00831651
+    if sense == 1 {
+        return "verb\timpart knowledge of some fact, state or affairs, or event to\t\tI informed him of his rights";
+    }
+    // verb 00522613
+    if sense == 2 {
+        return "verb\tgive character or essence to\t\tThe principles that inform modern teaching";
+    }
+    // verb 00833199
+    if sense == 3 {
+        return "verb\tact as an informer\t\tShe had informed on her own parents for years";
+    }
+    ""
+}

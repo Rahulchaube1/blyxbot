@@ -1,0 +1,21 @@
+// mission — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_mission(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08403225
+    if sense == 1 {
+        return "noun\tan organization of missionaries in a foreign land sent to carry on religious work\tmissionary post, missionary station, foreign mission\t";
+    }
+    // noun 00970645
+    if sense == 2 {
+        return "noun\tan operation that is assigned by a higher headquarters\tmilitary mission\tthe planes were on a bombing mission";
+    }
+    // noun 00731222
+    if sense == 3 {
+        return "noun\ta special assignment that is given to a person or group\tcharge, commission\ta confidential mission to London";
+    }
+    // noun 00730984
+    if sense == 4 {
+        return "noun\tthe organized work of a religious missionary\tmissionary work\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// united states — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_united_states(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09044862
+    if sense == 1 {
+        return "noun\tNorth American republic containing 50 states - 48 conterminous states in North America plus Alaska in northwest North America and the Hawaiian Islands in the Pacific Ocean; achieved independence in 1776\tUnited States of America, America, the States, US, U.S., USA, U.S.A.\t";
+    }
+    // noun 08355791
+    if sense == 2 {
+        return "noun\tthe executive and legislative and judicial branches of the federal government of the United States\tUnited States government, U.S. government, US Government, U.S.\t";
+    }
+    ""
+}

@@ -1,0 +1,21 @@
+// personal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_personal(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01767329
+    if sense == 1 {
+        return "adjective\tconcerning or affecting a particular person or his or her private life and personality\t\ta personal favor";
+    }
+    // adj 01616157
+    if sense == 2 {
+        return "adjective\tparticular to a given individual\t\t";
+    }
+    // adj 02858816
+    if sense == 3 {
+        return "adjective\tof or arising from personality\t\tpersonal magnetism";
+    }
+    // adj 01779428
+    if sense == 4 {
+        return "adjective\tintimately concerning a person's body or physical being\t\tpersonal hygiene";
+    }
+    ""
+}

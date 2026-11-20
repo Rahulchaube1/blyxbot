@@ -1,0 +1,17 @@
+// create — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_create(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01617192
+    if sense == 1 {
+        return "verb\tmake or cause to be or to become\tmake\tcreate a furor";
+    }
+    // verb 01753788
+    if sense == 2 {
+        return "verb\tbring into existence\t\tThe company was created 25 years ago";
+    }
+    // verb 01685313
+    if sense == 3 {
+        return "verb\tpursue a creative activity; be engaged in a creative activity\t\tDon't disturb him--he is creating";
+    }
+    ""
+}

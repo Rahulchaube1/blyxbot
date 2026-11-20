@@ -1,0 +1,9 @@
+// opportunity — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_opportunity(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 14483917
+    if sense == 1 {
+        return "noun\ta possibility due to a favorable combination of circumstances\tchance\tthe holiday gave us the opportunity to visit Washington";
+    }
+    ""
+}

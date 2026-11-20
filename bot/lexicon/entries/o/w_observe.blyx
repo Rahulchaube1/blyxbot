@@ -1,0 +1,37 @@
+// observe — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_observe(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 02154508
+    if sense == 1 {
+        return "verb\tdiscover or determine the existence, presence, or fact of\tdetect, find, discover, notice\t";
+    }
+    // verb 01020005
+    if sense == 2 {
+        return "verb\tmake mention of\tnote, mention, remark\tShe observed that his presentation took up too much time";
+    }
+    // verb 02118933
+    if sense == 3 {
+        return "verb\tobserve with care or pay close attention to\tnote, take note\t";
+    }
+    // verb 02169352
+    if sense == 4 {
+        return "verb\twatch attentively\t\tPlease observe the reaction of these two chemicals";
+    }
+    // verb 02457233
+    if sense == 5 {
+        return "verb\tshow respect towards\trespect, honor, honour, abide by\t";
+    }
+    // verb 02578510
+    if sense == 6 {
+        return "verb\tbehave as expected during of holidays or rites\tcelebrate, keep\tObserve Yom Kippur";
+    }
+    // verb 02455407
+    if sense == 7 {
+        return "verb\tfollow with the eyes or the mind\twatch, follow, watch over, keep an eye on\t";
+    }
+    // verb 00732552
+    if sense == 8 {
+        return "verb\tstick to correctly or closely\tkeep, maintain\t";
+    }
+    ""
+}

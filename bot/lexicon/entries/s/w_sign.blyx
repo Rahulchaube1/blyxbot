@@ -1,0 +1,61 @@
+// sign — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sign(sense: i64) -> str {
+    if sense == 0 { return "14"; }
+    // noun 06646243
+    if sense == 1 {
+        return "noun\ta perceptible indication of something not immediately apparent (as a visible clue that something has happened)\tmark\the showed signs of strain";
+    }
+    // verb 00996485
+    if sense == 2 {
+        return "verb\tmark with one's signature; write one's name (on)\tsubscribe\tShe signed the letter and sent it off";
+    }
+    // verb 02464866
+    if sense == 3 {
+        return "verb\tapprove and express assent, responsibility, or obligation\tratify\tHave you signed your contract yet?";
+    }
+    // verb 00889229
+    if sense == 4 {
+        return "verb\tbe engaged by a written agreement\t\tHe signed to play the casino on Dec. 18";
+    }
+    // noun 06793231
+    if sense == 5 {
+        return "noun\ta public display of a message\t\the posted signs in all the shop windows";
+    }
+    // noun 06791372
+    if sense == 6 {
+        return "noun\tany nonverbal action or gesture that encodes a message\tsignal, signaling\t";
+    }
+    // noun 04217882
+    if sense == 7 {
+        return "noun\tstructure displaying a board on which advertisements can be posted\tsignboard\t";
+    }
+    // noun 08685677
+    if sense == 8 {
+        return "noun\t(astrology) one of 12 equal areas into which the zodiac is divided\tsign of the zodiac, star sign, mansion, house, planetary house\t";
+    }
+    // verb 02409941
+    if sense == 9 {
+        return "verb\tengage by written agreement\tcontract, sign on, sign up\tThey signed two new pitchers for the next season";
+    }
+    // noun 14301785
+    if sense == 10 {
+        return "noun\t(medicine) any objective evidence of the presence of a disorder or disease\t\tthere were no signs of asphyxiation";
+    }
+    // noun 13856574
+    if sense == 11 {
+        return "noun\thaving an indicated pole (as the distinction between positive and negative electric charges)\tpolarity\tcharges of opposite sign";
+    }
+    // noun 07286014
+    if sense == 12 {
+        return "noun\tan event that is experienced as indicating important things to come\taugury, foretoken, preindication\tit was a sign from God";
+    }
+    // noun 06876144
+    if sense == 13 {
+        return "noun\ta gesture that is part of a sign language\t\t";
+    }
+    // verb 01039330
+    if sense == 14 {
+        return "verb\tcommunicate silently and non-verbally by signals or signs\tsignal, signalize, signalise\tHe signed his disapproval with a dismissive hand gesture";
+    }
+    ""
+}

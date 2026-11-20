@@ -1,0 +1,9 @@
+// sunday — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sunday(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 15163797
+    if sense == 1 {
+        return "noun\tfirst day of the week; observed as a day of rest and worship by most Christians\tLord's Day, Dominicus, Sun\t";
+    }
+    ""
+}

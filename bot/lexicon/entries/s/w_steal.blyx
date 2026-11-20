@@ -1,0 +1,17 @@
+// steal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_steal(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 02321757
+    if sense == 1 {
+        return "verb\ttake without the owner's consent\t\t";
+    }
+    // verb 01888295
+    if sense == 2 {
+        return "verb\tmove stealthily\tslip\t";
+    }
+    // verb 01111458
+    if sense == 3 {
+        return "verb\tsteal a base\t\t";
+    }
+    ""
+}

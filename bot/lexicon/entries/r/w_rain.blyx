@@ -1,0 +1,17 @@
+// rain — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rain(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 11501381
+    if sense == 1 {
+        return "noun\twater falling in drops from vapor condensed in the atmosphere\trainfall\t";
+    }
+    // verb 02756558
+    if sense == 2 {
+        return "verb\tprecipitate as rain\train down\tIf it rains much more, we can expect some flooding";
+    }
+    // noun 15008607
+    if sense == 3 {
+        return "noun\tdrops of fresh water that fall as precipitation from clouds\trainwater\t";
+    }
+    ""
+}

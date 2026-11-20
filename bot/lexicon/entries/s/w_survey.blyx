@@ -1,0 +1,25 @@
+// survey — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_survey(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00646542
+    if sense == 1 {
+        return "verb\tconsider in a comprehensive way\tappraise\t";
+    }
+    // noun 00644503
+    if sense == 2 {
+        return "noun\ta detailed critical inspection\tstudy\t";
+    }
+    // verb 02150328
+    if sense == 3 {
+        return "verb\tlook over carefully or inspect\t\tHe surveyed his new classmates";
+    }
+    // noun 06469694
+    if sense == 4 {
+        return "noun\tshort descriptive summary (of events)\tsketch, resume\t";
+    }
+    // noun 00881649
+    if sense == 5 {
+        return "noun\tthe act of looking or seeing or observing\tview, sight\this survey of the battlefield was limited";
+    }
+    ""
+}

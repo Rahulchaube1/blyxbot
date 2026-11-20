@@ -1,0 +1,29 @@
+// go out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_go_out(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02015598
+    if sense == 1 {
+        return "verb\tmove out of or depart from\texit, get out, leave\t";
+    }
+    // verb 01842204
+    if sense == 2 {
+        return "verb\tleave the house to go somewhere\t\t";
+    }
+    // verb 02011437
+    if sense == 3 {
+        return "verb\ttake the field\t\t";
+    }
+    // verb 00352419
+    if sense == 4 {
+        return "verb\tbecome extinguished\t\t";
+    }
+    // verb 02667558
+    if sense == 5 {
+        return "verb\tgo out of fashion; become unfashionable\t\t";
+    }
+    // verb 02486232
+    if sense == 6 {
+        return "verb\tdate regularly; have a steady relationship with\tgo steady, date, see\t";
+    }
+    ""
+}

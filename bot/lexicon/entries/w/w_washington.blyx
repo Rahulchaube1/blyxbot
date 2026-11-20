@@ -1,0 +1,21 @@
+// washington — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_washington(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 09070793
+    if sense == 1 {
+        return "noun\tthe capital of the United States in the District of Columbia and a tourist mecca; George Washington commissioned Charles L'Enfant to lay out the city in 1791\tWashington D.C., American capital, capital of the United States\t";
+    }
+    // noun 09152944
+    if sense == 2 {
+        return "noun\ta state in northwestern United States on the Pacific\tEvergreen State, WA\t";
+    }
+    // noun 08357129
+    if sense == 3 {
+        return "noun\tthe federal government of the United States\tCapital\t";
+    }
+    // noun 11375418
+    if sense == 4 {
+        return "noun\t1st President of the United States; commander-in-chief of the Continental Army during the American Revolution (1732-1799)\tGeorge Washington, President Washington\t";
+    }
+    ""
+}

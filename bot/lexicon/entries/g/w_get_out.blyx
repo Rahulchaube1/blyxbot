@@ -1,0 +1,21 @@
+// get out — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_get_out(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 02015598
+    if sense == 1 {
+        return "verb\tmove out of or depart from\texit, go out, leave\t";
+    }
+    // verb 01214597
+    if sense == 2 {
+        return "verb\ttake out of a container or enclosed space\tbring out\tGet out your best dress--we are going to a party!";
+    }
+    // verb 02015168
+    if sense == 3 {
+        return "verb\tmove out or away\tpull out\t";
+    }
+    // verb 01009986
+    if sense == 4 {
+        return "verb\texpress with difficulty\t\tI managed to get out a few words";
+    }
+    ""
+}

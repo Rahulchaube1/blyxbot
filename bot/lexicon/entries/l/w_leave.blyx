@@ -1,0 +1,69 @@
+// leave — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_leave(sense: i64) -> str {
+    if sense == 0 { return "16"; }
+    // verb 02009433
+    if sense == 1 {
+        return "verb\tgo away from a place\tgo forth, go away\tAt what time does your train leave?";
+    }
+    // verb 00613683
+    if sense == 2 {
+        return "verb\tgo and leave behind, either intentionally or by neglect or forgetfulness\t\t";
+    }
+    // verb 02729414
+    if sense == 3 {
+        return "verb\tact or be so as to become in a specified state\t\t";
+    }
+    // verb 00136991
+    if sense == 4 {
+        return "verb\tleave unchanged or undisturbed or refrain from taking\tleave alone, leave behind\tleave it as is";
+    }
+    // verb 02015598
+    if sense == 5 {
+        return "verb\tmove out of or depart from\texit, go out, get out\tleave the room";
+    }
+    // verb 02721438
+    if sense == 6 {
+        return "verb\tmake a possibility or provide opportunity for; permit to be attainable or cause to remain\tallow for, allow, provide\tThis leaves no room for improvement";
+    }
+    // verb 02635659
+    if sense == 7 {
+        return "verb\thave as a result or residue\tresult, lead\t";
+    }
+    // verb 02383440
+    if sense == 8 {
+        return "verb\tremove oneself from an association with or participation in\tdepart, pull up stakes\tShe wants to leave";
+    }
+    // verb 02356230
+    if sense == 9 {
+        return "verb\tput into the care or protection of someone\tentrust\tleave your child the nurse's care";
+    }
+    // verb 02229055
+    if sense == 10 {
+        return "verb\tleave or give by will after one's death\tbequeath, will\t";
+    }
+    // verb 02730135
+    if sense == 11 {
+        return "verb\thave left or have as a remainder\t\t19 minus 8 leaves 11";
+    }
+    // verb 00360092
+    if sense == 12 {
+        return "verb\tbe survived by after one's death\tleave behind\t";
+    }
+    // verb 02296153
+    if sense == 13 {
+        return "verb\ttransmit (knowledge or skills)\timpart, give, pass on\tleave your name and address here";
+    }
+    // verb 00613018
+    if sense == 14 {
+        return "verb\tleave behind unintentionally\tforget\t";
+    }
+    // noun 15139130
+    if sense == 15 {
+        return "noun\tthe period of time during which you are absent from work or duty\tleave of absence\ta ten day's leave to visit his mother";
+    }
+    // noun 06690114
+    if sense == 16 {
+        return "noun\tpermission to do something\t\tshe was granted leave to speak";
+    }
+    ""
+}

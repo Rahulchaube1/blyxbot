@@ -1,0 +1,29 @@
+// past — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_past(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 15120823
+    if sense == 1 {
+        return "noun\tthe time that has elapsed\tpast times, yesteryear\tforget the past";
+    }
+    // adj 01727926
+    if sense == 2 {
+        return "adjective\tearlier than the present time; no longer current\t\ttime past";
+    }
+    // adv 00417787
+    if sense == 3 {
+        return "adverb\tso as to pass a given point\tby\tevery hour a train goes past";
+    }
+    // noun 15141693
+    if sense == 4 {
+        return "noun\ta earlier period in someone's life (especially one that they have reason to keep secret)\t\treporters dug into the candidate's past";
+    }
+    // adj 01296091
+    if sense == 5 {
+        return "adjective\tof a person who has held and relinquished a position or office\tpreceding, retiring\t";
+    }
+    // noun 06330262
+    if sense == 6 {
+        return "noun\ta verb tense that expresses actions or states in the past\tpast tense\t";
+    }
+    ""
+}

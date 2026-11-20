@@ -1,0 +1,17 @@
+// hero — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_hero(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 10325013
+    if sense == 1 {
+        return "noun\ta man distinguished by exceptional courage and nobility and strength\t\tRAF pilots were the heroes of the Battle of Britain";
+    }
+    // noun 05929670
+    if sense == 2 {
+        return "noun\tthe principal character in a play or movie or novel or poem\t\t";
+    }
+    // noun 09906538
+    if sense == 3 {
+        return "noun\tsomeone who fights for a cause\tchampion, fighter, paladin\t";
+    }
+    ""
+}

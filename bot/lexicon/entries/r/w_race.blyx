@@ -1,0 +1,29 @@
+// race — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_race(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02058994
+    if sense == 1 {
+        return "verb\tmove fast\trush, hotfoot, hasten, hie, speed, pelt along, rush along, cannonball along, bucket along, belt along, step on it\tThe cars raced down the street";
+    }
+    // noun 07472657
+    if sense == 2 {
+        return "noun\tany competition\t\tthe race for the presidency";
+    }
+    // noun 07458453
+    if sense == 3 {
+        return "noun\ta contest of speed\t\tthe race is to the swift";
+    }
+    // noun 07967982
+    if sense == 4 {
+        return "noun\tpeople who are believed to belong to the same genetic stock\t\tsome biologists doubt that there are important genetic differences between races of human beings";
+    }
+    // verb 01086103
+    if sense == 5 {
+        return "verb\tcompete in a race\trun\tlet's race and see who gets there first";
+    }
+    // noun 08110648
+    if sense == 6 {
+        return "noun\t(biology) a taxonomic group that is a division of a species; usually arises as a consequence of geographical isolation within a species\tsubspecies\t";
+    }
+    ""
+}

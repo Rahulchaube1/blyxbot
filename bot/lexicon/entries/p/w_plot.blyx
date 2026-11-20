@@ -1,0 +1,29 @@
+// plot — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_plot(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // noun 05907682
+    if sense == 1 {
+        return "noun\ta secret scheme to do something (especially something underhand or illegal)\tsecret plan, game\tthey concocted a plot to discredit the governor";
+    }
+    // noun 08674739
+    if sense == 2 {
+        return "noun\ta small area of ground covered by specific vegetation\tplot of land, plot of ground, patch\ta bean plot";
+    }
+    // verb 00708128
+    if sense == 3 {
+        return "verb\tplan secretly, usually something illegal\t\tThey plotted the overthrow of the government";
+    }
+    // noun 06373314
+    if sense == 4 {
+        return "noun\tthe story that is told in a novel or play or movie etc.\t\tthe characters were well drawn but the plot was banal";
+    }
+    // verb 01693453
+    if sense == 5 {
+        return "verb\tmake a schematic or technical drawing of that shows interactions among variables or how something is constructed\tdiagram\t";
+    }
+    // verb 00710922
+    if sense == 6 {
+        return "verb\tmake a plat of\tplat\t";
+    }
+    ""
+}

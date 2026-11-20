@@ -1,0 +1,53 @@
+// case — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_case(sense: i64) -> str {
+    if sense == 0 { return "12"; }
+    // noun 07308889
+    if sense == 1 {
+        return "noun\tan occurrence of something\tinstance, example\tit was a case of bad judgment";
+    }
+    // noun 13943400
+    if sense == 2 {
+        return "noun\ta special set of circumstances\tevent\tit may rain in which case the picnic will be canceled";
+    }
+    // noun 01182654
+    if sense == 3 {
+        return "noun\ta comprehensive term for any proceeding in a court of law whereby an individual seeks a legal remedy\tlawsuit, suit, cause, causa\t";
+    }
+    // noun 05817743
+    if sense == 4 {
+        return "noun\tthe actual state of things\t\tthat was not the case";
+    }
+    // noun 02974697
+    if sense == 5 {
+        return "noun\ta portable container for carrying several objects\t\tthe musicians left their instrument cases backstage";
+    }
+    // noun 09898892
+    if sense == 6 {
+        return "noun\ta person requiring professional services\t\ta typical case was the suburban housewife described by a marriage counselor";
+    }
+    // noun 10668666
+    if sense == 7 {
+        return "noun\ta person who is subjected to experimental or other observational procedures; someone who is an object of investigation\tsubject, guinea pig\tthe cases that we studied were drawn from two different communities";
+    }
+    // noun 06784966
+    if sense == 8 {
+        return "noun\ta problem requiring investigation\t\tPerry Mason solved the case of the missing heir";
+    }
+    // noun 06649426
+    if sense == 9 {
+        return "noun\ta statement of facts and reasons used to support an argument\t\the stated his case clearly";
+    }
+    // noun 13766436
+    if sense == 10 {
+        return "noun\tthe quantity contained in a case\tcaseful\t";
+    }
+    // noun 06310945
+    if sense == 11 {
+        return "noun\tnouns or pronouns or adjectives (often marked by inflection) related in some way to other words in a sentence\tgrammatical case\t";
+    }
+    // verb 02165982
+    if sense == 12 {
+        return "verb\tlook over, usually with the intention to rob\t\tThey men cased the housed";
+    }
+    ""
+}

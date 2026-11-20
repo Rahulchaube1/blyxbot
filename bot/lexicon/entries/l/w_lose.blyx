@@ -1,0 +1,45 @@
+// lose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_lose(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02287789
+    if sense == 1 {
+        return "verb\tfail to keep or to maintain; cease to have, either physically or in an abstract sense\t\t";
+    }
+    // verb 01099592
+    if sense == 2 {
+        return "verb\tfail to win\t\t";
+    }
+    // verb 01795082
+    if sense == 3 {
+        return "verb\tsuffer the loss of a person through death or removal\t\t";
+    }
+    // verb 01503101
+    if sense == 4 {
+        return "verb\tplace (something) where one cannot find it again\tmisplace, mislay\t";
+    }
+    // verb 02287618
+    if sense == 5 {
+        return "verb\tmiss from one's possessions; lose sight of\t\t";
+    }
+    // verb 02197091
+    if sense == 6 {
+        return "verb\tallow to go out of sight\t\t";
+    }
+    // verb 02288828
+    if sense == 7 {
+        return "verb\tfail to make money in a business; make a loss or fail to profit\tturn a loss\t";
+    }
+    // verb 02288155
+    if sense == 8 {
+        return "verb\tfail to get or obtain\t\t";
+    }
+    // verb 01113806
+    if sense == 9 {
+        return "verb\tretreat\tfall back, drop off, fall behind, recede\t";
+    }
+    // verb 02127853
+    if sense == 10 {
+        return "verb\tfail to perceive or to catch with the senses or the mind\tmiss\t";
+    }
+    ""
+}

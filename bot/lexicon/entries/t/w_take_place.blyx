@@ -1,0 +1,9 @@
+// take place — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_take_place(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // verb 00339934
+    if sense == 1 {
+        return "verb\tcome to pass\thappen, hap, go on, pass off, occur, pass, fall out, come about\t";
+    }
+    ""
+}

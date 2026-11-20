@@ -1,0 +1,37 @@
+// system — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_system(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 04377057
+    if sense == 1 {
+        return "noun\tinstrumentality that combines interrelated interacting artifacts designed to work as a coherent entity\t\the bought a new stereo system";
+    }
+    // noun 08435388
+    if sense == 2 {
+        return "noun\ta group of independent but interrelated elements comprising a unified whole\tscheme\ta vast system of production and distribution and consumption keep the country going";
+    }
+    // noun 14981183
+    if sense == 3 {
+        return "noun\t(physical chemistry) a sample of matter in which substances in different phases are in equilibrium\t\tin a static system oil cannot be replaced by water on a surface";
+    }
+    // noun 05661996
+    if sense == 4 {
+        return "noun\ta complex of methods or rules governing behavior\tsystem of rules\tthey have to operate under a system they oppose";
+    }
+    // noun 05726596
+    if sense == 5 {
+        return "noun\tan organized structure for arranging or classifying\tarrangement, organization, organisation\the tried to understand their system of classification";
+    }
+    // noun 05237227
+    if sense == 6 {
+        return "noun\ta group of physiologically or anatomically related organs or parts\t\tthe body has a system of organs for digestion";
+    }
+    // noun 05902872
+    if sense == 7 {
+        return "noun\ta procedure or process for obtaining an objective\t\tthey had to devise a system that did not depend on cooperation";
+    }
+    // noun 05219097
+    if sense == 8 {
+        return "noun\tthe living body considered as made up of interdependent components forming a unified whole\t\texercise helped him get the alcohol out of his system";
+    }
+    ""
+}

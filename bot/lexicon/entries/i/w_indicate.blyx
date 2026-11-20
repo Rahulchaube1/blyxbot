@@ -1,0 +1,25 @@
+// indicate — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_indicate(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00921300
+    if sense == 1 {
+        return "verb\tbe a signal for or a symptom of\tbespeak, betoken, point, signal\tThese symptoms indicate a serious illness";
+    }
+    // verb 00923793
+    if sense == 2 {
+        return "verb\tindicate a place, direction, person, or thing; either spatially or figuratively\tpoint, designate, show\the indicated his opponents";
+    }
+    // verb 00928015
+    if sense == 3 {
+        return "verb\tto state or express briefly\t\tindicated his wishes in a letter";
+    }
+    // verb 00772640
+    if sense == 4 {
+        return "verb\tgive evidence of\targue\tThe results indicate the need for more work";
+    }
+    // verb 00928232
+    if sense == 5 {
+        return "verb\tsuggest the necessity of an intervention; in medicine\tsuggest\tTetracycline is indicated in such cases";
+    }
+    ""
+}

@@ -1,0 +1,41 @@
+// watch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_watch(sense: i64) -> str {
+    if sense == 0 { return "9"; }
+    // verb 02150510
+    if sense == 1 {
+        return "verb\tlook attentively\t\twatch a basketball game";
+    }
+    // verb 02455407
+    if sense == 2 {
+        return "verb\tfollow with the eyes or the mind\tobserve, follow, watch over, keep an eye on\tThe world is watching Sarajevo";
+    }
+    // verb 02150948
+    if sense == 3 {
+        return "verb\tsee or watch\tview, see, catch, take in\t";
+    }
+    // verb 02128653
+    if sense == 4 {
+        return "verb\tobserve with attention\tlook on\tThey watched as the murderer was executed";
+    }
+    // noun 04555897
+    if sense == 5 {
+        return "noun\ta small portable timepiece\tticker\t";
+    }
+    // noun 15292336
+    if sense == 6 {
+        return "noun\ta period of time (4 or 2 hours) during which some of a ship's crew are on duty\t\t";
+    }
+    // noun 00880662
+    if sense == 7 {
+        return "noun\ta purposeful surveillance to guard or observe\tvigil\t";
+    }
+    // noun 15292502
+    if sense == 8 {
+        return "noun\tthe period during which someone (especially a guard) is on duty\t\t";
+    }
+    // verb 02151966
+    if sense == 9 {
+        return "verb\tbe vigilant, be on the lookout or be careful\tlook out, watch out\tWatch out for pickpockets!";
+    }
+    ""
+}

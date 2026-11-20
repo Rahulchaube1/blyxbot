@@ -1,0 +1,21 @@
+// squeeze — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_squeeze(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // verb 01593937
+    if sense == 1 {
+        return "verb\tto compress with violence, out of natural shape or condition\tsquash, crush, squelch, mash\tsqueeze a lemon";
+    }
+    // verb 01447868
+    if sense == 2 {
+        return "verb\tpress firmly\t\tHe squeezed my hand";
+    }
+    // verb 01527271
+    if sense == 3 {
+        return "verb\tsqueeze like a wedge into a tight space\twedge, force\tI squeezed myself into the corner";
+    }
+    // noun 00357023
+    if sense == 4 {
+        return "noun\tthe act of gripping and pressing firmly\tsqueezing\the gave her cheek a playful squeeze";
+    }
+    ""
+}

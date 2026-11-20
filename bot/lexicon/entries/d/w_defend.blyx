@@ -1,0 +1,25 @@
+// defend — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_defend(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00895304
+    if sense == 1 {
+        return "verb\targue or speak in defense of\tsupport, fend for\t";
+    }
+    // verb 01127795
+    if sense == 2 {
+        return "verb\tbe on the defensive; act against an attack\t\t";
+    }
+    // verb 01129876
+    if sense == 3 {
+        return "verb\tprotect against a challenge or attack\tguard, hold\t";
+    }
+    // verb 01091427
+    if sense == 4 {
+        return "verb\tfight against or resist strongly\tfight, oppose, fight back, fight down\t";
+    }
+    // verb 01149138
+    if sense == 5 {
+        return "verb\tprotect or fight for as a champion\tchampion\t";
+    }
+    ""
+}

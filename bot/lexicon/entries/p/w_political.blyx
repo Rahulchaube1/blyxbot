@@ -1,0 +1,17 @@
+// political — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_political(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01814385
+    if sense == 1 {
+        return "adjective\tinvolving or characteristic of politics or parties or politicians\t\tcalling a meeting is a political act in itself";
+    }
+    // adj 02857407
+    if sense == 2 {
+        return "adjective\tof or relating to your views about social relationships involving authority or power\t\tpolitical opinions";
+    }
+    // adj 02857587
+    if sense == 3 {
+        return "adjective\tof or relating to the profession of governing\t\tpolitical career";
+    }
+    ""
+}

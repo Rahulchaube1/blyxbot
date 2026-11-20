@@ -1,0 +1,37 @@
+// middle — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_middle(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // noun 08523483
+    if sense == 1 {
+        return "noun\tan area that is approximately central within some larger region\tcenter, centre, heart, eye\t";
+    }
+    // adj 01014953
+    if sense == 2 {
+        return "adjective\tbeing neither at the beginning nor at the end in a series\tin-between, mediate\tthe middle point on a line";
+    }
+    // adj 00330506
+    if sense == 3 {
+        return "adjective\tequally distant from the extremes\tcenter, halfway, midway\t";
+    }
+    // noun 05868272
+    if sense == 4 {
+        return "noun\tan intermediate part or section\t\tA whole is that which has beginning, middle, and end";
+    }
+    // noun 05555473
+    if sense == 5 {
+        return "noun\tthe middle area of the human torso (usually in front)\tmidriff, midsection\t";
+    }
+    // noun 15266685
+    if sense == 6 {
+        return "noun\ttime between the beginning and the end of a temporal period\t\tthe middle of the war";
+    }
+    // adj 00820458
+    if sense == 7 {
+        return "adjective\tof a stage in the development of a language or literature between earlier and later stages\t\tMiddle English is the English language from about 1100 to 1500";
+    }
+    // adj 00815941
+    if sense == 8 {
+        return "adjective\tbetween an earlier and a later period of time\t\tin the middle years";
+    }
+    ""
+}

@@ -1,0 +1,85 @@
+// touch — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_touch(sense: i64) -> str {
+    if sense == 0 { return "20"; }
+    // verb 01206218
+    if sense == 1 {
+        return "verb\tmake physical contact with, come in contact with\t\tTouch the stone for good luck";
+    }
+    // noun 07409592
+    if sense == 2 {
+        return "noun\tthe event of something coming in contact with the body\ttouching\the longed for the touch of her hand";
+    }
+    // verb 02127358
+    if sense == 3 {
+        return "verb\tperceive via the tactile sense\t\tHelen Keller felt the physical world by touching people and objects around her";
+    }
+    // verb 01770802
+    if sense == 4 {
+        return "verb\taffect emotionally\tstir\tI was touched by your kind letter of sympathy";
+    }
+    // noun 05655119
+    if sense == 5 {
+        return "noun\tthe faculty by which external objects or forces are perceived through contact with the body (especially the hands)\tsense of touch, skin senses, touch modality, cutaneous senses\tonly sight and touch enable us to locate objects in the space around us";
+    }
+    // verb 02676054
+    if sense == 6 {
+        return "verb\tbe relevant to\trefer, pertain, relate, concern, come to, bear on, touch on, have-to doe with\t";
+    }
+    // verb 01205696
+    if sense == 7 {
+        return "verb\tbe in direct physical contact with; make contact\tadjoin, meet, contact\tThe two buildings touch";
+    }
+    // verb 00137313
+    if sense == 8 {
+        return "verb\thave an effect upon\taffect, impact, bear upon, bear on, touch on\t";
+    }
+    // noun 07164163
+    if sense == 9 {
+        return "noun\ta suggestion of some quality\ttrace, ghost\tthere was a touch of sarcasm in his tone";
+    }
+    // noun 04931428
+    if sense == 10 {
+        return "noun\ta distinguishing style\tsignature\tthis room needs a woman's touch";
+    }
+    // noun 00046522
+    if sense == 11 {
+        return "noun\tthe act of putting two things together with no space between them\ttouching\tat his touch the room filled with lights";
+    }
+    // verb 02599325
+    if sense == 12 {
+        return "verb\tdeal with; usually used with a form of negation\t\tI wouldn't touch her with a ten-foot pole";
+    }
+    // verb 01206849
+    if sense == 13 {
+        return "verb\tcause to be in brief contact with\t\tHe touched his toes to the horse's flanks";
+    }
+    // noun 13774115
+    if sense == 14 {
+        return "noun\ta slight but appreciable amount\thint, tinge, mite, pinch, jot, speck, soupcon\tthis dish could use a touch of garlic";
+    }
+    // noun 07279285
+    if sense == 15 {
+        return "noun\ta communicative interaction\tcontact\the got in touch with his colleagues";
+    }
+    // verb 02685665
+    if sense == 16 {
+        return "verb\tto extend as far as\treach, extend to\tThe chair must not touch the wall";
+    }
+    // verb 02672187
+    if sense == 17 {
+        return "verb\tbe equal to in quality or ability\tequal, rival, match\tYour performance doesn't even touch that of your colleagues";
+    }
+    // verb 01207527
+    if sense == 18 {
+        return "verb\ttamper with\tdisturb\tDon't touch my CDs!";
+    }
+    // verb 01026728
+    if sense == 19 {
+        return "verb\tmake a more or less disguised reference to\tallude, advert\t";
+    }
+    // verb 00590642
+    if sense == 20 {
+        return "verb\tcomprehend\t\tHe could not touch the meaning of the poem";
+    }
+    ""
+}

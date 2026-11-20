@@ -1,0 +1,29 @@
+// assure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_assure(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 00890590
+    if sense == 1 {
+        return "verb\tmake certain of\tguarantee, ensure, insure, secure\t";
+    }
+    // verb 01019643
+    if sense == 2 {
+        return "verb\tinform positively and with certainty and confidence\ttell\t";
+    }
+    // verb 00776268
+    if sense == 3 {
+        return "verb\tassure somebody of the truth of something with the intention of giving the listener confidence\t\tI assured him that traveling to Cambodia was safe";
+    }
+    // verb 00662589
+    if sense == 4 {
+        return "verb\tbe careful or certain to do something; make certain of something\tsee, check, insure, see to it, ensure, control, ascertain\t";
+    }
+    // verb 01766407
+    if sense == 5 {
+        return "verb\tcause to feel sure; give reassurance to\treassure\t";
+    }
+    // verb 00884011
+    if sense == 6 {
+        return "verb\tmake a promise or commitment\tpromise\t";
+    }
+    ""
+}

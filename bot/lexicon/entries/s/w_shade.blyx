@@ -1,0 +1,33 @@
+// shade — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_shade(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 13984613
+    if sense == 1 {
+        return "noun\trelative darkness caused by light rays being intercepted by an opaque body\tshadiness, shadowiness\tit is much cooler in the shade";
+    }
+    // noun 04959230
+    if sense == 2 {
+        return "noun\ta quality of a given color that differs slightly from another color\ttint, tincture, tone\tafter several trials he mixed the shade of pink that she wanted";
+    }
+    // noun 04181718
+    if sense == 3 {
+        return "noun\tprotective covering that protects something from direct sunlight\t\tthey used umbrellas as shades";
+    }
+    // noun 06606191
+    if sense == 4 {
+        return "noun\ta subtle difference in meaning or opinion or attitude\tnuance, nicety, subtlety, refinement\tdon't argue about shades of meaning";
+    }
+    // verb 02768702
+    if sense == 5 {
+        return "verb\tcast a shadow over\tshadow, shade off\t";
+    }
+    // verb 01695567
+    if sense == 6 {
+        return "verb\trepresent the effect of shade or shadow on\tfill in\t";
+    }
+    // verb 01477704
+    if sense == 7 {
+        return "verb\tprotect from light, heat, or view\t\tShade your eyes when you step out into the bright sunlight";
+    }
+    ""
+}

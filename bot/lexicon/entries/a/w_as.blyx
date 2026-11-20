@@ -1,0 +1,9 @@
+// as — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_as(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00022131
+    if sense == 1 {
+        return "adverb\tto the same degree (often followed by `as')\tequally, every bit\tbirds were singing and the child sang as sweetly";
+    }
+    ""
+}

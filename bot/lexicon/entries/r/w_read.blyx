@@ -1,0 +1,37 @@
+// read — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_read(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // verb 00625119
+    if sense == 1 {
+        return "verb\tinterpret something that is written or printed\t\tread the advertisement";
+    }
+    // verb 02730813
+    if sense == 2 {
+        return "verb\thave or contain a certain wording or form\tsay\tThe passage reads as follows";
+    }
+    // verb 00626428
+    if sense == 3 {
+        return "verb\tlook at, interpret, and say out loud something that is written or printed\t\tThe King will read the proclamation at noon";
+    }
+    // verb 00627520
+    if sense == 4 {
+        return "verb\tobtain data from magnetic tapes\tscan\tThis dictionary can be read by the computer";
+    }
+    // verb 00627091
+    if sense == 5 {
+        return "verb\tinterpret the significance of, as of palms, tea leaves, intestines, the sky; also of human behavior\t\tShe read the sky and predicted rain";
+    }
+    // verb 00624476
+    if sense == 6 {
+        return "verb\tinterpret something in a certain way; convey a particular meaning or impression\ttake\tI read this address as a satire";
+    }
+    // verb 00599992
+    if sense == 7 {
+        return "verb\tbe a student of a certain subject\tlearn, study, take\tShe is reading for the bar exam";
+    }
+    // verb 00922867
+    if sense == 8 {
+        return "verb\tindicate a certain reading; of gauges and instruments\tregister, show, record\tThe gauge read `empty'";
+    }
+    ""
+}

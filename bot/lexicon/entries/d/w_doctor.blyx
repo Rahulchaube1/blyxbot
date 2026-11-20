@@ -1,0 +1,25 @@
+// doctor — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_doctor(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 10020890
+    if sense == 1 {
+        return "noun\ta licensed medical practitioner\tdoc, physician, MD, Dr., medico\tI felt so bad I went to see my doctor";
+    }
+    // noun 10022111
+    if sense == 2 {
+        return "noun\t(Roman Catholic Church) a title conferred on 33 saints who distinguished themselves through the orthodoxy of their theological teaching\tDoctor of the Church\tthe Doctors of the Church greatly influenced Christian thought down to the late Middle Ages";
+    }
+    // noun 00432356
+    if sense == 3 {
+        return "noun\tchildren take the roles of physician or patient or nurse and pretend they are at the physician's office\t\tthe children explored each other's bodies by playing the game of doctor";
+    }
+    // verb 00488430
+    if sense == 4 {
+        return "verb\talter and make impure, as with the intention to deceive\tsophisticate, doctor up\t";
+    }
+    // verb 00080304
+    if sense == 5 {
+        return "verb\tgive medical treatment to\t\t";
+    }
+    ""
+}

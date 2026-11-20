@@ -1,0 +1,45 @@
+// offer — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_offer(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 02296726
+    if sense == 1 {
+        return "verb\tmake available or accessible, provide or furnish\t\tThe conference center offers a health spa";
+    }
+    // verb 02297142
+    if sense == 2 {
+        return "verb\tpresent for acceptance or rejection\tproffer\tShe offered us all a cold drink";
+    }
+    // verb 02425112
+    if sense == 3 {
+        return "verb\tagree freely\tvolunteer\tI offered to help with the dishes but the hostess would not hear of it";
+    }
+    // verb 00706557
+    if sense == 4 {
+        return "verb\tput forward for consideration\t\tHe offered his opinion";
+    }
+    // verb 02297742
+    if sense == 5 {
+        return "verb\toffer verbally\textend\tHe offered his sympathy";
+    }
+    // verb 02297409
+    if sense == 6 {
+        return "verb\tmake available for sale\t\tThe stores are offering specials on sweaters this week";
+    }
+    // noun 07185076
+    if sense == 7 {
+        return "noun\tthe verbal act of offering\toffering\ta generous offer of assistance";
+    }
+    // noun 07164546
+    if sense == 8 {
+        return "noun\tsomething offered (as a proposal or bid)\toffering\t";
+    }
+    // verb 02298632
+    if sense == 9 {
+        return "verb\tpropose a payment\tbid, tender\tThe Swiss dealer offered $2 million for the painting";
+    }
+    // verb 02157361
+    if sense == 10 {
+        return "verb\tproduce or introduce on the stage\t\tThe Shakespeare Company is offering `King Lear' this month";
+    }
+    ""
+}

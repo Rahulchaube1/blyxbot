@@ -1,0 +1,21 @@
+// employment — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_employment(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 13968092
+    if sense == 1 {
+        return "noun\tthe state of being employed or having a job\temploy\tthey are looking for employment";
+    }
+    // noun 00584367
+    if sense == 2 {
+        return "noun\tthe occupation for which you are paid\twork\the is looking for employment";
+    }
+    // noun 01217859
+    if sense == 3 {
+        return "noun\tthe act of giving someone a job\tengagement\t";
+    }
+    // noun 00947128
+    if sense == 4 {
+        return "noun\tthe act of using\tuse, usage, utilization, utilisation, exercise\t";
+    }
+    ""
+}

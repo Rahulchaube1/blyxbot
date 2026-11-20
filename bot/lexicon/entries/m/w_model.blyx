@@ -1,0 +1,45 @@
+// model — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_model(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 05890249
+    if sense == 1 {
+        return "noun\ta hypothetical description of a complex entity or process\ttheoretical account, framework\tthe computer program was based on a model of the circulatory and respiratory systems";
+    }
+    // noun 05845652
+    if sense == 2 {
+        return "noun\ta type of product\t\this car was an old model";
+    }
+    // noun 10324560
+    if sense == 3 {
+        return "noun\ta person who poses for a photographer or painter or sculptor\tposer\tthe president didn't have time to be a model so the artist worked from photos";
+    }
+    // noun 03777283
+    if sense == 4 {
+        return "noun\trepresentation of something (sometimes on a smaller scale)\tsimulation\t";
+    }
+    // noun 05925366
+    if sense == 5 {
+        return "noun\tsomething to be imitated\texemplar, example, good example\ta model of clarity";
+    }
+    // noun 10324851
+    if sense == 6 {
+        return "noun\tsomeone worthy of imitation\trole model\tevery child needs a role model";
+    }
+    // noun 05937112
+    if sense == 7 {
+        return "noun\ta representative form or pattern\texample\t";
+    }
+    // verb 01743784
+    if sense == 8 {
+        return "verb\tplan or create according to a model or models\tpattern\t";
+    }
+    // verb 01697027
+    if sense == 9 {
+        return "verb\tform in clay, wax, etc\tmold, mould\tmodel a head with clay";
+    }
+    // adj 02586446
+    if sense == 10 {
+        return "adjective\tworthy of imitation\texemplary\tmodel citizens";
+    }
+    ""
+}

@@ -1,0 +1,25 @@
+// collect — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_collect(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 02304982
+    if sense == 1 {
+        return "verb\tget or gather together\troll up, accumulate, pile up, amass, compile, hoard\t";
+    }
+    // verb 02218173
+    if sense == 2 {
+        return "verb\tcall for and obtain payment of\ttake in\twe collected over a million dollars in outstanding debts";
+    }
+    // verb 01380638
+    if sense == 3 {
+        return "verb\tassemble or get together\tgather, garner, pull together\t";
+    }
+    // verb 01384439
+    if sense == 4 {
+        return "verb\tget or bring together\tpull in\t";
+    }
+    // verb 02305586
+    if sense == 5 {
+        return "verb\tgather or collect\tpick up, gather up, call for\t";
+    }
+    ""
+}

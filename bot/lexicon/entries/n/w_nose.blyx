@@ -1,0 +1,25 @@
+// nose — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_nose(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 05598147
+    if sense == 1 {
+        return "noun\tthe organ of smell and entrance to the respiratory tract; the prominent part of the face of man or other mammals\tolfactory organ\the has a cold in the nose";
+    }
+    // noun 03830835
+    if sense == 2 {
+        return "noun\ta front that resembles a human nose (especially the front of an aircraft)\t\tthe nose of the rocket heated up on reentry";
+    }
+    // noun 03831062
+    if sense == 3 {
+        return "noun\tthe front or forward projection of a tool or weapon\t\the ducked under the nose of the gun";
+    }
+    // verb 02169119
+    if sense == 4 {
+        return "verb\tsearch or inquire in a meddlesome way\tintrude, horn in, pry, poke\tThis guy is always nosing around the office";
+    }
+    // verb 01994128
+    if sense == 5 {
+        return "verb\tadvance the forward part of with caution\t\tShe nosed the car into the left lane";
+    }
+    ""
+}

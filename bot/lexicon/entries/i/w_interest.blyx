@@ -1,0 +1,45 @@
+// interest — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_interest(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 05682950
+    if sense == 1 {
+        return "noun\ta sense of concern with and curiosity about someone or something\tinvolvement\tan interest in music";
+    }
+    // noun 05143077
+    if sense == 2 {
+        return "noun\ta reason for wanting something done\tsake\tin the interest of safety";
+    }
+    // noun 05192451
+    if sense == 3 {
+        return "noun\tthe power of attracting or holding one's attention (because it is unusual or exciting etc.)\tinterestingness\tthey said nothing of great interest";
+    }
+    // noun 13318584
+    if sense == 4 {
+        return "noun\ta fixed charge for borrowing money; usually a percentage of the amount borrowed\t\thow much interest do you pay on your mortgage?";
+    }
+    // noun 13286801
+    if sense == 5 {
+        return "noun\t(law) a right or legal share of something; a financial involvement with something\tstake\tthey have interests all over the world";
+    }
+    // noun 07968702
+    if sense == 6 {
+        return "noun\t(usually plural) a social group whose members control some field of activity and who have common aims\tinterest group\tthe iron interests stepped up production";
+    }
+    // verb 01821423
+    if sense == 7 {
+        return "verb\texcite the curiosity of; engage the interest of\t\t";
+    }
+    // noun 00431552
+    if sense == 8 {
+        return "noun\ta diversion that occupies one's time and thoughts (usually pleasantly)\tpastime, pursuit\the counts reading among his interests";
+    }
+    // verb 02678438
+    if sense == 9 {
+        return "verb\tbe on the mind of\tconcern, occupy, worry\t";
+    }
+    // verb 02678663
+    if sense == 10 {
+        return "verb\tbe of importance or consequence\tmatter to\t";
+    }
+    ""
+}

@@ -1,0 +1,13 @@
+// in — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_in(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adv 00501990
+    if sense == 1 {
+        return "adverb\tto or toward the inside of\tinwards, inward\tcome in";
+    }
+    // noun 13649791
+    if sense == 2 {
+        return "noun\ta unit of length equal to one twelfth of a foot\tinch\t";
+    }
+    ""
+}

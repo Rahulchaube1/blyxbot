@@ -1,0 +1,13 @@
+// ice — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_ice(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 14915184
+    if sense == 1 {
+        return "noun\twater frozen in the solid state\twater ice\tAmericans like ice in their drinks";
+    }
+    // noun 09308398
+    if sense == 2 {
+        return "noun\tthe frozen part of a body of water\t\t";
+    }
+    ""
+}

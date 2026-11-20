@@ -1,0 +1,45 @@
+// subject — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_subject(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // noun 06599788
+    if sense == 1 {
+        return "noun\tthe subject matter of a conversation or discussion\ttopic, theme\the didn't want to discuss that subject";
+    }
+    // noun 04347225
+    if sense == 2 {
+        return "noun\tsomething (a person or object or scene) selected by an artist or photographer for graphic representation\tcontent, depicted object\ta moving picture of a train is more dramatic than a still picture of the same subject";
+    }
+    // noun 05996646
+    if sense == 3 {
+        return "noun\ta branch of knowledge\tdiscipline, subject area, subject field, field, field of study, study, bailiwick\tteachers should be well trained in their subject";
+    }
+    // verb 02110927
+    if sense == 4 {
+        return "verb\tcause to experience or suffer or make liable or vulnerable to\t\tHe subjected me to his awful poetry";
+    }
+    // noun 05814291
+    if sense == 5 {
+        return "noun\tsome situation or event that is thought about\ttopic, issue, matter\the had been thinking about the subject for several years";
+    }
+    // verb 01118292
+    if sense == 6 {
+        return "verb\tmake accountable for\t\tHe did not want to subject himself to the judgments of his superiors";
+    }
+    // noun 06309931
+    if sense == 7 {
+        return "noun\t(grammar) one of the two main constituents of a sentence; the grammatical constituent about which something is predicated\t\t";
+    }
+    // noun 10668666
+    if sense == 8 {
+        return "noun\ta person who is subjected to experimental or other observational procedures; someone who is an object of investigation\tcase, guinea pig\tthe subjects for this investigation were selected randomly";
+    }
+    // noun 09625401
+    if sense == 9 {
+        return "noun\ta person who owes allegiance to that nation\tnational\ta monarch has a duty to his subjects";
+    }
+    // verb 02496816
+    if sense == 10 {
+        return "verb\tmake subservient; force to submit or subdue\tsubjugate\t";
+    }
+    ""
+}

@@ -1,0 +1,17 @@
+// article — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_article(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // noun 06268096
+    if sense == 1 {
+        return "noun\tnonfictional prose forming an independent part of a publication\t\t";
+    }
+    // noun 00022903
+    if sense == 2 {
+        return "noun\tone of a class of artifacts\t\tan article of clothing";
+    }
+    // noun 06392935
+    if sense == 3 {
+        return "noun\ta separate section of a legal document (as a statute or contract or will)\tclause\t";
+    }
+    ""
+}

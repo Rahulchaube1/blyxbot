@@ -1,0 +1,37 @@
+// tight — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tight(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adj 01447302
+    if sense == 1 {
+        return "adjective\tclosely constrained or constricted or constricting\t\ttight skirts";
+    }
+    // adv 00086404
+    if sense == 2 {
+        return "adverb\tfirmly or closely\tfast\theld tight";
+    }
+    // adj 02403505
+    if sense == 3 {
+        return "adjective\tpulled or drawn tight\ttaut\ta tight drumhead";
+    }
+    // adj 02526441
+    if sense == 4 {
+        return "adjective\tset so close together as to be invulnerable to penetration\t\tin tight formation";
+    }
+    // adj 01655538
+    if sense == 5 {
+        return "adjective\tpressed tightly together\tcompressed\t";
+    }
+    // adj 01113807
+    if sense == 6 {
+        return "adjective\t(used of persons or behavior) characterized by or indicative of lack of generosity\tmean, mingy, miserly\t";
+    }
+    // adj 00017186
+    if sense == 7 {
+        return "adjective\taffected by scarcity and expensive to borrow\t\ttight money";
+    }
+    // adv 00505226
+    if sense == 8 {
+        return "adverb\tin an attentive manner\tclose, closely\t";
+    }
+    ""
+}

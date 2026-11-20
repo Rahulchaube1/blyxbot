@@ -1,0 +1,13 @@
+// valuable — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_valuable(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 02500884
+    if sense == 1 {
+        return "adjective\thaving great material or monetary value especially for use or exchange\t\ta valuable diamond";
+    }
+    // adj 02587738
+    if sense == 2 {
+        return "adjective\thaving worth or merit or value\tworthful\ta valuable friend";
+    }
+    ""
+}

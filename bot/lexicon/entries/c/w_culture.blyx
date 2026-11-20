@@ -1,0 +1,21 @@
+// culture — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_culture(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08287844
+    if sense == 1 {
+        return "noun\ta particular society at a particular time and place\tcivilization, civilisation\t";
+    }
+    // noun 05751794
+    if sense == 2 {
+        return "noun\tthe tastes in art and manners that are favored by a social group\t\t";
+    }
+    // noun 05984936
+    if sense == 3 {
+        return "noun\tall the knowledge and values shared by a society\tacculturation\t";
+    }
+    // noun 00920510
+    if sense == 4 {
+        return "noun\t(biology) the growing of microorganisms in a nutrient medium (such as gelatin or agar)\t\tthe culture of cells in a Petri dish";
+    }
+    ""
+}

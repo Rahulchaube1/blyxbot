@@ -1,0 +1,17 @@
+// unusual — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_unusual(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00490035
+    if sense == 1 {
+        return "adjective\tnot usual or common or ordinary\t\ta scene of unusual beauty";
+    }
+    // adj 00967129
+    if sense == 2 {
+        return "adjective\tbeing definitely out of the ordinary and unexpected; slightly odd or even a bit weird\tstrange\t";
+    }
+    // adj 00488857
+    if sense == 3 {
+        return "adjective\tnot commonly encountered\t\ttwo-career families are no longer unusual";
+    }
+    ""
+}

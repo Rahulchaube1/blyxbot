@@ -1,0 +1,17 @@
+// construct — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_construct(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // verb 01654628
+    if sense == 1 {
+        return "verb\tmake by combining materials and parts\tbuild, make\tSome eccentric constructed an electric brassiere warmer";
+    }
+    // verb 01653442
+    if sense == 2 {
+        return "verb\tput together out of artificial or natural components or parts\tmanufacture, fabricate\t";
+    }
+    // verb 01583142
+    if sense == 3 {
+        return "verb\tdraw with suitable instruments and under specified conditions\t\tconstruct an equilateral triangle";
+    }
+    ""
+}

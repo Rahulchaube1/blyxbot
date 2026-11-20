@@ -1,0 +1,33 @@
+// drag — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_drag(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // verb 01453433
+    if sense == 1 {
+        return "verb\tpull, as against a resistance\t\tHe dragged the big suitcase behind him";
+    }
+    // verb 01454810
+    if sense == 2 {
+        return "verb\tdraw slowly or heavily\thaul, hale, cart\t";
+    }
+    // noun 11504898
+    if sense == 3 {
+        return "noun\tthe phenomenon of resistance to motion through a fluid\tretarding force\t";
+    }
+    // verb 02677797
+    if sense == 4 {
+        return "verb\tforce into some kind of situation, condition, or course of action\tembroil, tangle, sweep, sweep up, drag in\tdon't drag me into this business";
+    }
+    // verb 02099544
+    if sense == 5 {
+        return "verb\tmove slowly and as if with great effort\t\t";
+    }
+    // verb 02058756
+    if sense == 6 {
+        return "verb\tto lag or linger behind\ttrail, get behind, hang back, drop behind, drop back\tBut in so many other areas we still are dragging";
+    }
+    // verb 01199009
+    if sense == 7 {
+        return "verb\tsuck in or take (air)\tpuff, draw\t";
+    }
+    ""
+}

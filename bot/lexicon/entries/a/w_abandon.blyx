@@ -1,0 +1,29 @@
+// abandon — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_abandon(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02228031
+    if sense == 1 {
+        return "verb\tforsake, leave behind\t\tWe abandoned the old car in the empty parking lot";
+    }
+    // verb 02227741
+    if sense == 2 {
+        return "verb\tgive up with the intent of never claiming again\tgive up\tAbandon your life to God";
+    }
+    // verb 02076676
+    if sense == 3 {
+        return "verb\tleave behind empty; move out of\tvacate, empty\t";
+    }
+    // verb 00613393
+    if sense == 4 {
+        return "verb\tstop maintaining or insisting on; of ideas or claims\tgive up\tHe abandoned the thought of asking for her hand in marriage";
+    }
+    // noun 04885398
+    if sense == 5 {
+        return "noun\tthe trait of lacking restraint or control; reckless freedom from inhibition or worry\twantonness, unconstraint\tshe danced with abandon";
+    }
+    // verb 00614057
+    if sense == 6 {
+        return "verb\tleave someone who needs or counts on you; leave in the lurch\tforsake, desolate, desert\t";
+    }
+    ""
+}

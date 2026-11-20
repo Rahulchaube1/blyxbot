@@ -1,0 +1,45 @@
+// home — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_home(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // adv 00097840
+    if sense == 1 {
+        return "adverb\tat or to or in the direction of one's home or family\t\tHe stays home on weekends";
+    }
+    // noun 08559508
+    if sense == 2 {
+        return "noun\twhere you live at a particular time\tplace\tdeliver the package to my home";
+    }
+    // noun 03259505
+    if sense == 3 {
+        return "noun\thousing that someone is living in\tdwelling, domicile, abode, habitation, dwelling house\tthey raise money to provide homes for the homeless";
+    }
+    // noun 08490199
+    if sense == 4 {
+        return "noun\tthe country or state or city where you live\t\tCanadian tariffs enabled United States lumber companies to raise prices at home";
+    }
+    // adj 01219827
+    if sense == 5 {
+        return "adjective\tused of your own ground\t\ta home game";
+    }
+    // noun 03528901
+    if sense == 6 {
+        return "noun\t(baseball) base consisting of a rubber slab where the batter stands; it must be touched by a base runner in order to score\thome plate, home base, plate\the ruled that the runner failed to touch home";
+    }
+    // adj 02742844
+    if sense == 7 {
+        return "adjective\trelating to or being where one lives or where one's roots are\t\tmy home town";
+    }
+    // noun 08490402
+    if sense == 8 {
+        return "noun\tthe place where you are stationed and from which missions start and end\tbase\t";
+    }
+    // adv 00098520
+    if sense == 9 {
+        return "adverb\ton or to the point aimed at\t\tthe arrow struck home";
+    }
+    // noun 08585158
+    if sense == 10 {
+        return "noun\tplace where something began and flourished\t\tthe United States is the home of basketball";
+    }
+    ""
+}

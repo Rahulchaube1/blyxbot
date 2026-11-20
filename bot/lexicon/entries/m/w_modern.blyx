@@ -1,0 +1,25 @@
+// modern — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_modern(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // adj 01535709
+    if sense == 1 {
+        return "adjective\tbelonging to the modern era; since the Middle Ages\t\tmodern art";
+    }
+    // adj 00972902
+    if sense == 2 {
+        return "adjective\trelating to a recently developed fashion or style\tmod, modernistic\ttheir offices are in a modern skyscraper";
+    }
+    // adj 00414354
+    if sense == 3 {
+        return "adjective\tcharacteristic of present-day art and music and literature and architecture\t\t";
+    }
+    // adj 01876261
+    if sense == 4 {
+        return "adjective\tahead of the times\tadvanced, forward-looking, innovative\t";
+    }
+    // noun 10326551
+    if sense == 5 {
+        return "noun\ta contemporary person\t\t";
+    }
+    ""
+}

@@ -1,0 +1,9 @@
+// knowledge — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_knowledge(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 00023271
+    if sense == 1 {
+        return "noun\tthe psychological result of perception and learning and reasoning\tcognition, noesis\t";
+    }
+    ""
+}

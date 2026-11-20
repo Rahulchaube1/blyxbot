@@ -1,0 +1,25 @@
+// wheel — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_wheel(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // noun 04574999
+    if sense == 1 {
+        return "noun\ta simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)\t\t";
+    }
+    // verb 02046075
+    if sense == 2 {
+        return "verb\tchange directions as if revolving on a pivot\twheel around\tThey wheeled their horses around and left";
+    }
+    // noun 04313503
+    if sense == 3 {
+        return "noun\ta handwheel that is used for steering\tsteering wheel\t";
+    }
+    // verb 02046441
+    if sense == 4 {
+        return "verb\twheel somebody or something\twheel around\t";
+    }
+    // verb 01887020
+    if sense == 5 {
+        return "verb\tmove along on or as if on wheels or a wheeled vehicle\troll\t";
+    }
+    ""
+}

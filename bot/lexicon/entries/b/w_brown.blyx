@@ -1,0 +1,17 @@
+// brown — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_brown(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 00372111
+    if sense == 1 {
+        return "adjective\tof a color similar to that of wood or earth\tbrownish, chocolate-brown, dark-brown\t";
+    }
+    // noun 04971928
+    if sense == 2 {
+        return "noun\tan orange of low brightness and saturation\tbrownness\t";
+    }
+    // verb 00320246
+    if sense == 3 {
+        return "verb\tfry in a pan until it changes color\t\tbrown the meat in the pan";
+    }
+    ""
+}

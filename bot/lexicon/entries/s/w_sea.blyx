@@ -1,0 +1,13 @@
+// sea — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sea(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 09426788
+    if sense == 1 {
+        return "noun\ta division of an ocean or a large body of salt water partially enclosed by land\t\t";
+    }
+    // noun 13776971
+    if sense == 2 {
+        return "noun\tanything apparently limitless in quantity or volume\tocean\t";
+    }
+    ""
+}

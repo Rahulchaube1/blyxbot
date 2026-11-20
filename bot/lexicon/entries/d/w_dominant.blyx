@@ -1,0 +1,9 @@
+// dominant — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_dominant(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 00791227
+    if sense == 1 {
+        return "adjective\texercising influence or control\t\ttelevision plays a dominant role in molding public opinion";
+    }
+    ""
+}

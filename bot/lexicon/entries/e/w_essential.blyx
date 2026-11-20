@@ -1,0 +1,21 @@
+// essential — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_essential(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adj 01580306
+    if sense == 1 {
+        return "adjective\tabsolutely necessary; vitally necessary\tindispensable\tessential tools and materials";
+    }
+    // adj 00900616
+    if sense == 2 {
+        return "adjective\tbasic and fundamental\t\tthe essential feature";
+    }
+    // adj 01276150
+    if sense == 3 {
+        return "adjective\tof the greatest importance\tall-important, all important, crucial, of the essence\t";
+    }
+    // noun 09367203
+    if sense == 4 {
+        return "noun\tanything indispensable\tnecessity, requirement, requisite, necessary\tthe essentials of the good life";
+    }
+    ""
+}

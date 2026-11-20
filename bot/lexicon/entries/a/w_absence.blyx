@@ -1,0 +1,13 @@
+// absence — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_absence(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 13960974
+    if sense == 1 {
+        return "noun\tthe state of being absent\t\the was surprised by the absence of any explanation";
+    }
+    // noun 01234345
+    if sense == 2 {
+        return "noun\tfailure to be present\t\t";
+    }
+    ""
+}

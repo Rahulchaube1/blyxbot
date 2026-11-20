@@ -1,0 +1,37 @@
+// away — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_away(sense: i64) -> str {
+    if sense == 0 { return "8"; }
+    // adv 00232936
+    if sense == 1 {
+        return "adverb\tfrom a particular thing or place or position (`forth' is obsolete)\toff, forth\tran away from the lion";
+    }
+    // adv 00233295
+    if sense == 2 {
+        return "adverb\tfrom one's possession\tout\tgave away the tickets";
+    }
+    // adv 00234052
+    if sense == 3 {
+        return "adverb\tout of the way (especially away from one's thoughts)\taside\tpushed all doubts away";
+    }
+    // adv 00234553
+    if sense == 4 {
+        return "adverb\tout of existence\t\tthe music faded away";
+    }
+    // adv 00235254
+    if sense == 5 {
+        return "adverb\tat a distance in space or time\toff\tthe boat was 5 miles off (or away)";
+    }
+    // adv 00234747
+    if sense == 6 {
+        return "adverb\tindicating continuing action; continuously or steadily\t\the worked away at the project for more than a year";
+    }
+    // adj 01847864
+    if sense == 7 {
+        return "adjective\tnot present; having left\t\the's away right now";
+    }
+    // adv 00235438
+    if sense == 8 {
+        return "adverb\tso as to be removed or gotten rid of\t\tcleared the mess away";
+    }
+    ""
+}

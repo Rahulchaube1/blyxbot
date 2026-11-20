@@ -1,0 +1,9 @@
+// chicago — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_chicago(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 09083390
+    if sense == 1 {
+        return "noun\tlargest city in Illinois; a bustling Great Lakes port that extends 26 miles along the southwestern shoreline of Lake Michigan\tWindy City\t";
+    }
+    ""
+}

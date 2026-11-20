@@ -1,0 +1,33 @@
+// rear — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rear(sense: i64) -> str {
+    if sense == 0 { return "7"; }
+    // noun 08482700
+    if sense == 1 {
+        return "noun\tthe back of a military formation or procession\t\tinfantrymen were in the rear";
+    }
+    // verb 01981623
+    if sense == 2 {
+        return "verb\tstand up on the hind legs, of quadrupeds\trise up\tThe horse reared in terror";
+    }
+    // noun 08629508
+    if sense == 3 {
+        return "noun\tthe side of an object that is opposite its front\tbackside, back end\this room was toward the rear of the hotel";
+    }
+    // noun 08625846
+    if sense == 4 {
+        return "noun\tthe part of something that is furthest from the normal viewer\tback\tit was hidden in the rear of the store";
+    }
+    // adj 00197891
+    if sense == 5 {
+        return "adjective\tlocated in or toward the back or rear\trearward\tthe chair's rear legs";
+    }
+    // verb 02539788
+    if sense == 6 {
+        return "verb\tbring up\traise, bring up, nurture, parent\t";
+    }
+    // verb 02696801
+    if sense == 7 {
+        return "verb\trise up\trise, lift\t";
+    }
+    ""
+}

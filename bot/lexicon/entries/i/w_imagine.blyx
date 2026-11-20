@@ -1,0 +1,13 @@
+// imagine — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_imagine(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // verb 01636397
+    if sense == 1 {
+        return "verb\tform a mental image of something that is not present or that is not the case\tconceive of, ideate, envisage\t";
+    }
+    // verb 00631737
+    if sense == 2 {
+        return "verb\texpect, believe, or suppose\tthink, opine, suppose, reckon, guess\tI imagine she earned a lot of money with her new novel";
+    }
+    ""
+}

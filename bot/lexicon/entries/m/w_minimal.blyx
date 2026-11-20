@@ -1,0 +1,9 @@
+// minimal — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_minimal(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adj 01496021
+    if sense == 1 {
+        return "adjective\tthe least possible\tminimum\tneeded to enforce minimal standards";
+    }
+    ""
+}

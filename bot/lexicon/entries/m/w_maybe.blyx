@@ -1,0 +1,9 @@
+// maybe — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_maybe(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // adv 00300247
+    if sense == 1 {
+        return "adverb\tby chance\tpossibly, perchance, perhaps, mayhap, peradventure\t";
+    }
+    ""
+}

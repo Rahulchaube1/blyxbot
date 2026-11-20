@@ -1,0 +1,13 @@
+// strange — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_strange(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // adj 00967129
+    if sense == 1 {
+        return "adjective\tbeing definitely out of the ordinary and unexpected; slightly odd or even a bit weird\tunusual\ta strange exaltation that was indefinable";
+    }
+    // adj 00966753
+    if sense == 2 {
+        return "adjective\tnot known before\tunknown\tused many strange words";
+    }
+    ""
+}

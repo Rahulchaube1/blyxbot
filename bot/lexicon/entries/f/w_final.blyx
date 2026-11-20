@@ -1,0 +1,17 @@
+// final — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_final(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adj 01010271
+    if sense == 1 {
+        return "adjective\toccurring at or forming an end or termination\tconcluding, last, terminal\tthe final chapter";
+    }
+    // adj 01579128
+    if sense == 2 {
+        return "adjective\tconclusive in a process or progression\tlast, net\tthe final answer";
+    }
+    // adj 00349894
+    if sense == 3 {
+        return "adjective\tnot to be altered or undone\tlast\tthe judge's decision is final";
+    }
+    ""
+}

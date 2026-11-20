@@ -1,0 +1,21 @@
+// institution — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_institution(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // noun 08053576
+    if sense == 1 {
+        return "noun\tan organization founded and united for a specific purpose\testablishment\t";
+    }
+    // noun 03574555
+    if sense == 2 {
+        return "noun\tan establishment consisting of a building or complex of buildings where an organization for the promotion of some cause is situated\t\t";
+    }
+    // noun 05669350
+    if sense == 3 {
+        return "noun\ta custom that for a long time has been an important feature of some group or society\t\tthe institution of marriage";
+    }
+    // noun 00240184
+    if sense == 4 {
+        return "noun\tthe act of starting something for the first time; introducing something new\tinitiation, founding, foundation, origination, creation, innovation, introduction, instauration\t";
+    }
+    ""
+}

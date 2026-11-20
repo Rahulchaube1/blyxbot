@@ -1,0 +1,29 @@
+// secure — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_secure(sense: i64) -> str {
+    if sense == 0 { return "6"; }
+    // verb 02238770
+    if sense == 1 {
+        return "verb\tget by special effort\tprocure\t";
+    }
+    // verb 01340439
+    if sense == 2 {
+        return "verb\tcause to be firmly attached\tfasten, fix\t";
+    }
+    // adj 02093305
+    if sense == 3 {
+        return "adjective\tfree from fear or doubt; easy in mind\tunafraid, untroubled\the was secure that nothing will be held against him";
+    }
+    // verb 02349706
+    if sense == 4 {
+        return "verb\tassure payment of\t\t";
+    }
+    // adj 02093888
+    if sense == 5 {
+        return "adjective\tfree from danger or risk\t\tsecure from harm";
+    }
+    // verb 00890590
+    if sense == 6 {
+        return "verb\tmake certain of\tguarantee, ensure, insure, assure\t";
+    }
+    ""
+}

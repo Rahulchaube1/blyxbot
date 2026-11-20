@@ -1,0 +1,21 @@
+// naturally — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_naturally(sense: i64) -> str {
+    if sense == 0 { return "4"; }
+    // adv 00038625
+    if sense == 1 {
+        return "adverb\tas might be expected\tof course, course\tnaturally, the lawyer sent us a huge bill";
+    }
+    // adv 00140403
+    if sense == 2 {
+        return "adverb\taccording to nature; by natural means; without artificial help\t\tnaturally grown flowers";
+    }
+    // adv 00505352
+    if sense == 3 {
+        return "adverb\tthrough inherent nature\tby nature\the was naturally lazy";
+    }
+    // adv 00488773
+    if sense == 4 {
+        return "adverb\tin a natural or normal manner\t\tspeak naturally and easily";
+    }
+    ""
+}

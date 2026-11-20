@@ -1,0 +1,9 @@
+// human being — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_human_being(sense: i64) -> str {
+    if sense == 0 { return "1"; }
+    // noun 02472293
+    if sense == 1 {
+        return "noun\tany living or extinct member of the family Hominidae characterized by superior intelligence, articulate speech, and erect carriage\thomo, man, human\t";
+    }
+    ""
+}

@@ -1,0 +1,45 @@
+// sink — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_sink(sense: i64) -> str {
+    if sense == 0 { return "10"; }
+    // verb 01985923
+    if sense == 1 {
+        return "verb\tfall or descend to a lower place or level\tdrop, drop down\t";
+    }
+    // verb 01986869
+    if sense == 2 {
+        return "verb\tcause to sink\t\t";
+    }
+    // noun 04223580
+    if sense == 3 {
+        return "noun\tplumbing fixture consisting of a water basin fixed to a wall or floor and having a drainpipe\t\t";
+    }
+    // verb 01972131
+    if sense == 4 {
+        return "verb\tpass into a specified state or condition\tpass, lapse\t";
+    }
+    // verb 01989873
+    if sense == 5 {
+        return "verb\tgo under, \"The raft sank and its occupants drowned\"\tsettle, go down, go under\t";
+    }
+    // verb 01971929
+    if sense == 6 {
+        return "verb\tdescend into or as if into some soft substance or place\tsubside\t";
+    }
+    // verb 02039679
+    if sense == 7 {
+        return "verb\tappear to move downward\tdip\t";
+    }
+    // verb 00432839
+    if sense == 8 {
+        return "verb\tfall heavily or suddenly; decline markedly\tslump, fall off\t";
+    }
+    // verb 01988886
+    if sense == 9 {
+        return "verb\tfall or sink heavily\tslump, slide down\t";
+    }
+    // verb 01530098
+    if sense == 10 {
+        return "verb\tembed deeply\tbury\t";
+    }
+    ""
+}

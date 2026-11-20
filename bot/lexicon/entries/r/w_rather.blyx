@@ -1,0 +1,17 @@
+// rather — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_rather(sense: i64) -> str {
+    if sense == 0 { return "3"; }
+    // adv 00098714
+    if sense == 1 {
+        return "adverb\ton the contrary\tinstead\trather than disappoint the children, he did two quick tricks before he left";
+    }
+    // adv 00018302
+    if sense == 2 {
+        return "adverb\tto some (great or small) extent\tkind of, kinda, sort of\tit was rather cold";
+    }
+    // adv 00115554
+    if sense == 3 {
+        return "adverb\tmore readily or willingly\tpreferably, sooner\tI'd rather be in Philadelphia";
+    }
+    ""
+}

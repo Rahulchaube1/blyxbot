@@ -1,0 +1,25 @@
+// interview — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_interview(sense: i64) -> str {
+    if sense == 0 { return "5"; }
+    // verb 00808855
+    if sense == 1 {
+        return "verb\tconduct an interview in television, newspaper, and radio reporting\tquestion\t";
+    }
+    // noun 07196075
+    if sense == 2 {
+        return "noun\tthe questioning of a person (or a conversation in which information is elicited); often conducted by journalists\t\tmy interviews with teenagers revealed a weakening of religious bonds";
+    }
+    // verb 00809248
+    if sense == 3 {
+        return "verb\tdiscuss formally with (somebody) for the purpose of an evaluation\t\tWe interviewed the job candidates";
+    }
+    // noun 07143624
+    if sense == 4 {
+        return "noun\ta conference (usually with someone important)\tconsultation, audience\t";
+    }
+    // verb 00809453
+    if sense == 5 {
+        return "verb\tgo for an interview in the hope of being hired\t\tThe job candidate interviewed everywhere";
+    }
+    ""
+}

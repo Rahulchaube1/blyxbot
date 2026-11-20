@@ -1,0 +1,13 @@
+// tissue — WordNet 3.0. See licenses/WordNet-3.0.txt.
+pub fn w_tissue(sense: i64) -> str {
+    if sense == 0 { return "2"; }
+    // noun 05267345
+    if sense == 1 {
+        return "noun\tpart of an organism consisting of an aggregate of cells having a similar structure and function\t\t";
+    }
+    // noun 15074962
+    if sense == 2 {
+        return "noun\ta soft thin (usually translucent) paper\ttissue paper\t";
+    }
+    ""
+}
