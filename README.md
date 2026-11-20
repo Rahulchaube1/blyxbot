@@ -1,5 +1,7 @@
 # BlyxBot
 
+[![Source language: Blyx](https://img.shields.io/badge/source_language-Blyx-32684d)](https://github.com/Rahulchaube1/blyxxxx)
+
 BlyxBot is a rule-based chatbot written in Blyx. You can talk to it in a terminal or a browser. Both entry points call the same conversation engine, which reads the question, picks a reply and carries your name and the current topic into the next turn.
 
 ```text
